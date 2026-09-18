@@ -1,0 +1,35 @@
+# R local dependencies and session state
+R/library/
+archive/phase2_r_partial_library/
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+
+# Python generated files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local virtual environments
+.venv/
+venv/
+env/
+
+# Temporary and runtime files
+*.tmp
+*.temp
+*.log
+*.bak
+*.swp
+*~
+~$*
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE-local settings
+.vscode/
+.idea/
