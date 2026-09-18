@@ -1,0 +1,25 @@
+﻿compound,rank_before,rank_after,rank_change,median_before,median_after,n_B1_before,n_B1_after,confidence_before,confidence_after,entered_Top20,exited_Top20,change_driver
+Quercetin,1,3,-2,11.950,8.395,2,4,Moderate,High,no,no,new independent B1 records
+Epicatechin,2,1,1,10.000,9.670,1,4,Low,High,no,no,new independent B1 records
+Catechin,3,2,1,7.880,9.000,2,5,Moderate,High,no,no,new independent B1 records
+Quercitrin,4,8,-4,6.470,6.470,1,1,Low,Low,no,no,none; existing estimate retained
+Caffeic acid,5,9,-4,6.315,6.315,2,2,Moderate,Moderate,no,no,none; existing estimate retained
+Rutin,6,6,0,6.010,6.705,1,2,Low,Moderate,no,no,new independent B1 records
+Genistein,7,7,0,5.930,6.625,1,2,Low,Moderate,no,no,new independent B1 records
+trans-Resveratrol,8,10,-2,5.811,5.811,1,1,Low,Low,no,no,none; existing estimate retained
+Gentisic acid,9,11,-2,5.475,5.475,1,1,Low,Low,no,no,none; existing estimate retained
+p-Coumaric acid,10,13,-3,3.766,4.383,1,2,Low,Moderate,no,no,new independent B1 records
+4-Hydroxybenzoic acid,11,15,-4,3.299,3.299,1,1,Low,Low,no,no,none; existing estimate retained
+Luteolin,12,16,-4,3.264,3.264,1,1,Low,Low,no,no,none; existing estimate retained
+Chlorogenic acid,13,17,-4,3.140,3.140,1,1,Low,Low,no,no,none; existing estimate retained
+Ferulic acid,14,18,-4,3.123,3.123,2,2,Moderate,Moderate,no,no,none; existing estimate retained
+Sesamol,15,19,-4,2.107,2.107,1,1,Low,Low,no,no,none; existing estimate retained
+Eugenol,16,20,-4,1.811,1.811,1,1,Low,Low,no,no,none; existing estimate retained
+Gallic acid,17,,,1.250,,1,1,Low,Low,no,yes,none; existing estimate retained
+Tyrosol,18,,,1.131,,1,1,Low,Low,no,yes,none; existing estimate retained
+Carvacrol,19,,,0.829,,1,1,Low,Low,no,yes,none; existing estimate retained
+Thymol,20,,,0.545,,1,1,Low,Low,no,yes,none; existing estimate retained
+Kaempferol,,4,,,7.035,0,2,Not ranked,Moderate,yes,no,new independent B1 records
+Naringenin,,5,,,6.820,0,2,Not ranked,Moderate,yes,no,new independent B1 records
+EGCG,,12,,,4.555,0,2,Not ranked,Moderate,yes,no,new independent B1 records
+Myricetin,,14,,,3.600,0,1,Not ranked,Low,yes,no,new independent B1 records

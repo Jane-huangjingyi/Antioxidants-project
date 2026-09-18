@@ -1,0 +1,18 @@
+﻿compound_name,chemical_class,CUPRAC_available,approximate_number_of_studies,unit_type,comparability,notes,key_source_DOI,Zotero_key
+EGCG,Polyphenolic / phenolic compounds,yes,1+,mol TE/mol or TEAC depending paper,moderate; protocol verification required,Coverage only; no CUPRAC ranking performed,10.3390/12071496,BC43GAEF
+Catechin,Polyphenolic / phenolic compounds,yes,1+,mol TE/mol or TEAC depending paper,moderate; protocol verification required,Coverage only; no CUPRAC ranking performed,10.3390/12071496,BC43GAEF
+Epicatechin,Polyphenolic / phenolic compounds,yes,1+,mol TE/mol or TEAC depending paper,moderate; protocol verification required,Coverage only; no CUPRAC ranking performed,10.3390/12071496,BC43GAEF
+Quercetin,Polyphenolic / phenolic compounds,yes,1+,mol TE/mol or TEAC depending paper,moderate; protocol verification required,Coverage only; no CUPRAC ranking performed,10.3390/12071496,BC43GAEF
+Kaempferol,Polyphenolic / phenolic compounds,unclear,0/unclear,not_applicable,not_assessed,Coverage only; no CUPRAC ranking performed,,
+Gallic acid,Polyphenolic / phenolic compounds,yes,1+,mol TE/mol or TEAC depending paper,moderate; protocol verification required,Coverage only; no CUPRAC ranking performed,10.3390/12071496,BC43GAEF
+Caffeic acid,Polyphenolic / phenolic compounds,yes,1+,mol TE/mol or TEAC depending paper,moderate; protocol verification required,Coverage only; no CUPRAC ranking performed,10.3390/12071496,BC43GAEF
+Ferulic acid,Polyphenolic / phenolic compounds,yes,1+,mol TE/mol or TEAC depending paper,moderate; protocol verification required,Coverage only; no CUPRAC ranking performed,10.3390/12071496,BC43GAEF
+Chlorogenic acid,Polyphenolic / phenolic compounds,no_identified_in_pilot,0/unclear,not_applicable,not_assessed,Coverage only; no CUPRAC ranking performed,,
+Resveratrol,Polyphenolic / phenolic compounds,no_identified_in_pilot,0/unclear,not_applicable,not_assessed,Coverage only; no CUPRAC ranking performed,,
+L-Ascorbic acid,Vitamins / vitamin-like dietary antioxidants,yes,1+,mol TE/mol or TEAC depending paper,moderate; protocol verification required,Coverage only; no CUPRAC ranking performed,10.3390/12071496,BC43GAEF
+alpha-Tocopherol,Vitamins / vitamin-like dietary antioxidants,yes,1+,mol TE/mol or TEAC depending paper,moderate; protocol verification required,Coverage only; no CUPRAC ranking performed,10.3390/12071496,BC43GAEF
+gamma-Tocopherol,Vitamins / vitamin-like dietary antioxidants,no_identified_in_pilot,0/unclear,not_applicable,not_assessed,Coverage only; no CUPRAC ranking performed,,
+Lycopene,Carotenoids,no_identified_in_pilot,0/unclear,not_applicable,not_assessed,Coverage only; no CUPRAC ranking performed,,
+beta-Carotene,Carotenoids,no_identified_in_pilot,0/unclear,not_applicable,not_assessed,Coverage only; no CUPRAC ranking performed,,
+Lutein,Carotenoids,no_identified_in_pilot,0/unclear,not_applicable,not_assessed,Coverage only; no CUPRAC ranking performed,,
+Sulforaphane,Organosulfur compounds,no_identified_in_pilot,0/unclear,not_applicable,not_assessed,Coverage only; no CUPRAC ranking performed,,

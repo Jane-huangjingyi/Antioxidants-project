@@ -1,0 +1,71 @@
+field_name,definition,data_type,allowed_values,required,source_priority,example,notes
+candidate_id,Stable project identifier,string,ANTX followed by digits,yes,project-assigned,ANTX000001,Never reuse
+preferred_compound_name,Preferred structure-specific name,string,free text,yes,PubChem then ChEBI,quercetin,Avoid ambiguous common names
+synonyms,Source-preserved synonyms,array_string,pipe-separated,yes,PubChem ChEBI source database,quercetin|meletin,Do not use for identity without structure
+chemical_class,Broad chemical class,category,polyphenol|carotenoid|tocopherol_tocotrienol|organosulfur|betalain|quinone|nitrogen_containing|other,yes,ChEBI plus expert curation,polyphenol,No class quotas
+chemical_subclass,Specific subclass,string,controlled vocabulary plus other,yes,ChEBI then curated source,flavonol,Version vocabulary
+PubChem_CID,PubChem compound identifier,integer,positive integer,conditional,PubChem,5280343,Required for main list unless audited equivalent exists
+ChEBI_ID,ChEBI identifier,string,CHEBI colon digits,no,ChEBI,CHEBI:16243,Preserve primary ID
+CAS,CAS Registry Number,string,validated CAS format,no,Primary source then PubChem,117-39-5,May be form-specific
+canonical_SMILES,Connectivity or canonical SMILES,string,valid SMILES,yes,PubChem PUG REST then ChEBI,C1=CC...,Record provider and retrieval date
+isomeric_SMILES,Stereochemistry-aware SMILES,string,valid SMILES,conditional,PubChem PUG REST then ChEBI,N/A,Required when stereochemistry applies
+InChIKey,Standard InChIKey,string,27-character key,yes,PubChem then ChEBI,REFJWTPEDVJJIY-UHFFFAOYSA-N,Primary deduplication key with structure review
+molecular_formula,Molecular formula,string,Hill notation,yes,PubChem then ChEBI,C15H10O7,Form-specific
+molecular_weight,Average molecular weight,number,greater than 0,yes,PubChem then ChEBI,302.24,g/mol in separate implicit standard
+stereochemistry_isomer_information,Stereo isomer tautomer and form notes,string,free text,conditional,PubChem ChEBI primary literature,achiral,Required when relevant
+parent_compound_id,Link to parent entity,string,candidate_id or blank,no,project-assigned,ANTX000001,Used for forms and metabolites
+entity_role,Role in ranking,category,parent_main|metabolite_secondary|extended|context_node,yes,protocol,parent_main,Controls competition layer
+structure_resolved,Whether identity is unique,boolean,true|false,yes,curation,true,False excludes main layer
+food_source_name,Reported food or beverage,string,free text,yes,food database or primary paper,onion,One row per source in normalized table preferred
+food_source_taxon,Botanical or zoological identity,string,NCBI taxon or scientific name,no,authoritative taxonomy,Allium cepa,Useful for cultivar ambiguity
+food_form_processing,Edible form and processing,string,controlled text,yes,source record,raw bulb,Do not combine raw and cooked
+food_region,Country or region represented,string,ISO country or controlled region,yes,source record,CHN,Global sources retained separately
+food_content_value,Reported central concentration,number,nonnegative,conditional,validated composition source,23.4,Required when quantitative
+food_content_low,Lower range or interval,number,nonnegative,no,source record,10.2,Same unit as value
+food_content_high,Upper range or interval,number,nonnegative,no,source record,40.1,Same unit as value
+food_content_unit,Unit and basis,string,controlled UCUM-like unit,conditional,source record,mg/100_g_fresh,Must state wet dry edible portion
+analytical_method,Food quantification method,string,controlled plus text,conditional,primary paper,targeted_LC-MS/MS,Quality grading uses method
+food_evidence_source,Database or paper supporting occurrence,string,source name or citation,yes,authoritative database,Phenol-Explorer,Database hit is not effect evidence
+food_source_record_id,Stable source record identifier,string,source-specific ID,no,source database,PE_FOOD_001,Supports traceability
+food_data_version,Source release or access date,string,version or ISO date,yes,source database,accessed_2026-09-17,Distinguish web and bulk versions
+normal_diet_occurrence,Occurs in ordinary diet,boolean,true|false|uncertain,yes,curated evidence,true,Medicinal-only sources false
+exposure_status,Meaningfulness of exposure,category,quantified_meaningful|quantified_uncertain|trace_or_unknown|supplement_dependent|none,yes,derived,quantified_uncertain,Occurrence alone is trace_or_unknown
+population_region,Population for consumption estimate,string,controlled region plus age group,no,national survey,Chinese adults,Do not generalize
+food_consumption_value,Consumption amount,number,nonnegative,no,national dietary survey,50,Use companion unit
+food_consumption_unit,Consumption unit,string,g/day|g/kg_bw/day|servings/day|other,no,national dietary survey,g/day,Record consumer-only vs all population
+typical_dietary_exposure,Estimated compound intake,number,nonnegative,no,composition times consumption,11.7,Central estimate
+typical_dietary_exposure_unit,Exposure unit,string,mg/day|mg/kg_bw/day|umol/day|other,no,derived,mg/day,Prefer molar conversion too
+exposure_uncertainty,Uncertainty and assumptions,string,free text,no,derived,processing factor unavailable,Required for modeled exposure
+human_evidence_tier,Highest quality-qualified human tier,category,H1|H2|H3|H4|H5|H6|not_searched,yes,evidence review,H5,PK kept separate from benefit
+antioxidant_evidence_tier,Highest quality-qualified redox tier,category,A1|A2|A3|A4|A5|not_searched,yes,evidence review,A3,Store study-level rows elsewhere
+mechanistic_evidence_tier,Highest quality-qualified mechanism tier,category,M1|M2|M3|M4|M5|not_searched,yes,evidence review,M2,Not direct-target status
+best_target_evidence_tier,Highest target tier after QC,category,T1|T2|T3|T4|T5|none|not_searched,yes,target review,T3,Do not infer from pathway name
+antioxidant_mechanism_category,Primary redox role,array_string,direct_antioxidant|redox_regulatory|indirect_redox_related,yes,evidence review,direct_antioxidant|redox_regulatory,Multiple allowed
+redox_endpoint_summary,Validated endpoints and direction,string,free text,no,evidence review,GSH/GSSG increased,Keep assay limitations
+major_human_metabolites,Linked metabolite IDs,array_string,candidate_id pipe-separated,yes,PK studies Phenol-Explorer HMDB,ANTX900001|ANTX900002,Empty only with missing reason
+metabolite_evidence_status,Completeness of metabolite assessment,category,reviewed|partial|not_searched,yes,curation,partial,Prevents false absence
+reported_Cmax,Parent systemic peak concentration,number,nonnegative,no,human PK,0.2,Specify matrix form and unit
+Cmax_unit,Cmax unit,string,uM|nM|ng/mL|other,no,human PK,uM,Parent and metabolite separate
+human_intervention_dose_range,Dose range in human studies,string,structured range plus unit,no,human studies,50-500 mg/day,Food matrix and formulation required
+effective_in_vitro_concentration,Concentration producing reported effect,string,structured range plus unit,no,cell studies,10-50 uM,Prefer unbound value
+dose_translation_gap,Relation of in-vitro effect to human exposure,category,matched|within_10x|10_to_100x|over_100x|unknown,yes,derived,over_100x,Use comparable molecular species
+adverse_effect_threshold,Lowest credible adverse-effect level,string,value unit context,no,safety source,1000 mg/day short-term,Not necessarily causal threshold
+known_UL_authoritative_limit,Authoritative upper limit,string,value unit authority or none,no,EFSA NIH national authority,none,No UL is not safety evidence
+special_population_risk,Known susceptible populations,string,free text,no,safety review,anticoagulant users,Include pregnancy liver kidney disease
+prooxidant_context,Conditions producing prooxidant behavior,string,free text,no,mechanistic evidence,Cu-rich aerobic system,Record concentration and pH
+safety_evidence_grade,Safety confidence,category,S1|S2|S3|S4|not_searched,yes,safety review,S2,Independent of efficacy score
+human_domain_score,Normalized human score,number,0 to 1,no,scoring engine,0.35,Generated after freeze
+antioxidant_domain_score,Normalized antioxidant score,number,0 to 1,no,scoring engine,0.50,Generated after freeze
+food_exposure_domain_score,Normalized food score,number,0 to 1,no,scoring engine,0.75,Generated after freeze
+mechanism_domain_score,Normalized mechanism score,number,0 to 1,no,scoring engine,0.75,Generated after freeze
+target_tractability_domain_score,Normalized target score,number,0 to 1,no,scoring engine,0.60,Generated after freeze
+evidence_missingness,Explicit evidence state,array_string,not_searched|searched_none|conflicting|not_applicable|complete,yes,curation,conflicting,Per-domain representation preferred
+PMID,Supporting PubMed identifiers,array_string,pipe-separated,no,PubMed,35760871,Study-level tables preferred
+DOI,Supporting DOI identifiers,array_string,lowercase normalized,no,Crossref publisher PubMed,10.1038/s42255-022-00591-z,Resolve duplicates
+Zotero_item_key,Zotero item keys,array_string,pipe-separated,no,Zotero,AB12CD34,Not BibTeX key
+BibTeX_key,BibTeX citation keys,array_string,pipe-separated,no,Zotero export,murphy_guidelines_2022,May change if regenerated
+curation_status,Workflow state,category,generated|identity_reviewed|evidence_reviewed|second_reviewed|excluded,yes,project workflow,identity_reviewed,Separate from eligibility
+reviewer,Primary curator,string,controlled initials,yes,project workflow,AB,Audit trail
+second_reviewer,Independent verifier,string,controlled initials or blank,no,project workflow,CD,Required for critical calls
+review_date,Last adjudication date,date,ISO 8601,yes,project workflow,2026-09-17,
+decision_rationale,Reason for inclusion exclusion or tier,string,free text,yes,curation,quantified in common foods,Concise auditable statement

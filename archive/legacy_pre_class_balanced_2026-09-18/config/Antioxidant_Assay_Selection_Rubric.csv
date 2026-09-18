@@ -1,0 +1,14 @@
+assay,mechanistic_relevance,standardization,molar_normalization,cross_study_comparability,coverage_food_small_molecules,cross_class_applicability,reproducibility,biological_food_relevance,total_score_out_of_24,selection_interpretation,conditions_or_caveats
+ORAC-FL,3,2,3,1,3,2,2,2,18,Primary conditional,Use one locked ORAC-FL protocol; distinguish H-ORAC and L-ORAC; no clinical inference
+H-ORAC,3,2,3,2,3,1,2,2,18,Primary hydrophilic arm,Only soluble compounds under identical aqueous conditions
+L-ORAC,3,3,3,2,2,2,3,2,20,Primary lipophilic arm,Use validated RMCD protocol; do not merge raw values with H-ORAC without bridging controls
+DPPH,1,2,2,1,3,2,2,1,14,Secondary,Fixed solvent radical concentration endpoint and expression required
+ABTS-TEAC,1,2,3,1,3,3,2,1,16,Secondary,Use preformed radical and one endpoint or kinetic specification
+FRAP,1,3,3,2,3,1,3,1,17,Secondary,Interpret solely as reducing power at specified pH and time
+CUPRAC,2,2,3,1,2,3,2,2,17,Secondary preferred ET complement,Near-neutral standardized protocol; monitor copper chelation
+TRAP,3,1,3,1,1,2,2,2,15,Secondary mechanistic confirmation,Detection format must be locked
+HORAC,1,2,2,1,1,1,2,1,11,Supportive,Interpret as hydroxyl-radical prevention/metal-context response
+TOSC,2,1,1,1,1,2,2,2,12,Supportive,Oxidant-specific and instrumentation-intensive
+superoxide_scavenging,2,1,1,0,1,2,1,2,10,Supportive,Require generator controls and preferably EPR or orthogonal detection
+hydroxyl_scavenging,1,1,1,0,1,2,1,1,8,Supportive,Separate chelation from scavenging and characterize oxidant chemistry
+lipid_peroxidation_inhibition,3,1,2,0,2,2,2,3,15,Secondary context-specific,Use a prespecified lipid matrix and kinetic endpoint; values remain matrix-specific

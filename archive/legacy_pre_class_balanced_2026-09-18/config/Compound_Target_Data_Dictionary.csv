@@ -1,0 +1,40 @@
+field_name,definition,data_type,allowed_values,required,source_priority,example,notes
+target_record_id,Stable relation record ID,string,CT followed by digits,yes,project-assigned,CT000001,One assay-level relation per row
+compound_name,Structure-specific compound name,string,free text,yes,candidate master,EGCG,Match tested form
+compound_form,Exact salt stereoisomer metabolite or probe form,string,free text,yes,primary study,(-)-epigallocatechin-3-gallate,Probe derivatives explicit
+PubChem_CID,PubChem identifier,integer,positive integer,conditional,PubChem,65064,Required when resolvable
+InChIKey,Structure key,string,27-character InChIKey,yes,PubChem ChEBI,WMBWREPUVVBILR-WIYYLYMNSA-N,
+target_gene,Approved gene symbol,string,HGNC symbol,yes,HGNC UniProt,NQO1,Species-specific symbol
+target_protein,Protein name,string,UniProt recommended name,yes,UniProt,NAD(P)H quinone dehydrogenase 1,
+UniProt_ID,UniProt accession,string,valid accession,yes,UniProt,P15559,Record reviewed status
+species,Target organism,string,NCBI taxon name and ID,yes,UniProt,Homo sapiens|9606,Do not silently map orthologs
+relation_type,Semantic relation,category,binds|inhibits|activates|substrate_of|covalently_modifies|engages|functional_dependency|regulates|pathway_associated|predicted,yes,assay adjudication,regulates,Must agree with tier
+direct_or_indirect,Directness judgment,category,direct|functional|indirect|predicted|ambiguous,yes,adjudication,indirect,T4 must be indirect
+target_evidence_tier,Evidence class,category,T1|T2|T3|T4|T5,yes,adjudication,T4,Only qualified T1/T2 direct layer
+assay_type,Experimental or computational assay,string,controlled vocabulary plus detail,yes,primary study,CETSA,Do not infer from database label
+assay_format,Purified lysate intact cell tissue or in-silico,category,purified_protein|cell_lysate|intact_cell|ex_vivo|in_vivo|in_silico|other,yes,primary study,intact_cell,Important for T2 directness
+activity_type,Reported quantitative activity type,string,Kd|Ki|IC50|EC50|kon|koff|deltaTm|enrichment|other,no,primary study,IC50,IC50 does not automatically imply binding
+activity_value,Reported value,number,numeric,no,primary study,5.2,Keep qualifiers separately
+activity_qualifier,Equality or censoring qualifier,category,=|<|>|<=|>=|approximately,no,primary study,=,
+activity_unit,Reported activity unit,string,nM|uM|M|percent|Celsius|fold|other,no,primary study,uM,Do not auto-convert without record
+direction,Direction of relation,category,increase|decrease|activate|inhibit|stabilize|destabilize|mixed|unknown,yes,primary study,decrease,
+binding_site,Reported site or residue,string,free text,no,primary study,active site,Structural evidence only when resolved
+compound_concentration_range,Tested concentration range,string,range plus unit,yes,primary study,0.1-50 uM,Record free concentration if known
+protein_construct,Protein construct and modifications,string,free text,no,primary study,full length human NQO1,Essential for T1
+biological_context,Cell tissue disease and treatment context,string,free text,yes,primary study,HepG2 oxidative challenge,Include co-treatments
+controls,Negative competition and positive controls,string,free text,conditional,primary study,competition with excess free ligand,Required for T1/T2
+orthogonal_validation,Independent method validation,string,method or none,yes,primary study,SPR,Supports high confidence
+assay_interference_checked,Interference assessment,array_string,aggregation|optical|redox_cycling|metal_chelation|nonspecific_binding|none_reported,yes,primary study,aggregation|optical,Polyphenol priority
+directness_qualified,Whether directness criteria passed,category,yes|no|ambiguous|not_applicable,yes,adjudication,ambiguous,Controls direct layer membership
+PMID,PubMed ID,string,digits,no,PubMed,12345678,
+DOI,Digital object identifier,string,normalized DOI,no,Crossref publisher PubMed,10.xxxx/xxxxx,
+database_source,Discovery or curated database,array_string,BindingDB|ChEMBL|PubChem_BioAssay|GtoPdb|DrugBank|CTD|STITCH|SwissTargetPrediction|primary_literature|other,yes,source record,ChEMBL,Does not set tier
+database_record_id,Source record identifier,string,free text,no,source database,CHEMBL_ACTIVITY_123,
+database_version_accessed,Release and retrieval date,string,free text,yes,source database,CHEMBL36 accessed 2026-09-17,
+Zotero_item_key,Zotero item key,string,8 characters when available,no,Zotero,AB12CD34,
+BibTeX_key,BibTeX key,string,free text,no,Zotero export,author_target_2024,
+confidence,Curated confidence,category,high|moderate|low|very_low,yes,rule-based adjudication,moderate,Separate from tier
+reviewer,Primary curator,string,controlled initials,yes,workflow,AB,
+second_reviewer,Second curator,string,controlled initials or blank,no,workflow,CD,Required for T1/T2
+review_status,Review state,category,extracted|primary_checked|second_checked|conflict,yes,workflow,primary_checked,
+notes,Free-text caveats,string,free text,no,curation,intact-cell shift may be indirect,

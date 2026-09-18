@@ -1,0 +1,3 @@
+# H-ORAC 常见错误手册
+
+1. ORAC ≠ ORAC-FL：必须核对探针。2. H-ORAC ≠ L-ORAC：未经桥接不混排。3. HORAC ≠ ORAC：即使使用 fluorescein，羟自由基防护也不是AAPH过氧自由基ORAC。4. β-phycoerythrin ≠ fluorescein。5. extract/food ORAC ≠ pure-compound ORAC。6. review value ≠ original record，综述只用于追索。7. glycoside ≠ aglycone，结构和MW均不同。8. same paper ≠ independent evidence，同一数据复用只计一次。9. maximum ≠ representative value，聚合用median。10. ranking magnitude ≠ confidence。11. missing data ≠ low capacity。12. publication density ≠ biological importance。13. colored compounds可产生inner-filter、自发荧光、quenching及光谱重叠。14. cyclodextrin/cosolvent可改变溶解度、自由基可及性和表观反应。15. figure-only估读不是精确值，除非作者提供数字或有预先批准的数字化规则，否则最多B2。16. 技术重复不是独立研究。17. 直接mol/mol值不要重复乘MW。18. 盐、水合物或异构体MW不可互换。19. 缺参数不能自动判C：信息不足通常先判X。20. 旧排名不可被新版本静默覆盖。

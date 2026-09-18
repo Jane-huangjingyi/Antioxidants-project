@@ -1,0 +1,488 @@
+{
+  "(+)-Catechin": {
+    "CID": 9064,
+    "MolecularFormula": "C15H14O6",
+    "MolecularWeight": "290.27",
+    "SMILES": "C1[C@@H]([C@H](OC2=CC(=CC(=C21)O)O)C3=CC(=C(C=C3)O)O)O",
+    "ConnectivitySMILES": "C1C(C(OC2=CC(=CC(=C21)O)O)C3=CC(=C(C=C3)O)O)O",
+    "InChIKey": "PFTAWBLQPZVEMU-DZGCQCFKSA-N",
+    "IUPACName": "(2R,3S)-2-(3,4-dihydroxyphenyl)-3,4-dihydro-2H-chromene-3,5,7-triol",
+    "Title": "Catechin"
+  },
+  "(-)-Epicatechin": {
+    "CID": 72276,
+    "MolecularFormula": "C15H14O6",
+    "MolecularWeight": "290.27",
+    "SMILES": "C1[C@H]([C@H](OC2=CC(=CC(=C21)O)O)C3=CC(=C(C=C3)O)O)O",
+    "ConnectivitySMILES": "C1C(C(OC2=CC(=CC(=C21)O)O)C3=CC(=C(C=C3)O)O)O",
+    "InChIKey": "PFTAWBLQPZVEMU-UKRRQHHQSA-N",
+    "IUPACName": "(2R,3R)-2-(3,4-dihydroxyphenyl)-3,4-dihydro-2H-chromene-3,5,7-triol",
+    "Title": "Epicatechin"
+  },
+  "(-)-Epigallocatechin gallate": {
+    "CID": 65064,
+    "MolecularFormula": "C22H18O11",
+    "MolecularWeight": "458.4",
+    "SMILES": "C1[C@H]([C@H](OC2=CC(=CC(=C21)O)O)C3=CC(=C(C(=C3)O)O)O)OC(=O)C4=CC(=C(C(=C4)O)O)O",
+    "ConnectivitySMILES": "C1C(C(OC2=CC(=CC(=C21)O)O)C3=CC(=C(C(=C3)O)O)O)OC(=O)C4=CC(=C(C(=C4)O)O)O",
+    "InChIKey": "WMBWREPUVVBILR-WIYYLYMNSA-N",
+    "IUPACName": "[(2R,3R)-5,7-dihydroxy-2-(3,4,5-trihydroxyphenyl)-3,4-dihydro-2H-chromen-3-yl] 3,4,5-trihydroxybenzoate",
+    "Title": "Epigallocatechin Gallate"
+  },
+  "(-)-Epigallocatechin": {
+    "CID": 72277,
+    "MolecularFormula": "C15H14O7",
+    "MolecularWeight": "306.27",
+    "SMILES": "C1[C@H]([C@H](OC2=CC(=CC(=C21)O)O)C3=CC(=C(C(=C3)O)O)O)O",
+    "ConnectivitySMILES": "C1C(C(OC2=CC(=CC(=C21)O)O)C3=CC(=C(C(=C3)O)O)O)O",
+    "InChIKey": "XMOCLSLCDHWDHP-IUODEOHRSA-N",
+    "IUPACName": "(2R,3R)-2-(3,4,5-trihydroxyphenyl)-3,4-dihydro-2H-chromene-3,5,7-triol",
+    "Title": "Epigallocatechin"
+  },
+  "(-)-Epicatechin gallate": {
+    "CID": 107905,
+    "MolecularFormula": "C22H18O10",
+    "MolecularWeight": "442.4",
+    "SMILES": "C1[C@H]([C@H](OC2=CC(=CC(=C21)O)O)C3=CC(=C(C=C3)O)O)OC(=O)C4=CC(=C(C(=C4)O)O)O",
+    "ConnectivitySMILES": "C1C(C(OC2=CC(=CC(=C21)O)O)C3=CC(=C(C=C3)O)O)OC(=O)C4=CC(=C(C(=C4)O)O)O",
+    "InChIKey": "LSHVYAFMTMFKBA-TZIWHRDSSA-N",
+    "IUPACName": "[(2R,3R)-2-(3,4-dihydroxyphenyl)-5,7-dihydroxy-3,4-dihydro-2H-chromen-3-yl] 3,4,5-trihydroxybenzoate",
+    "Title": "Epicatechin Gallate"
+  },
+  "Gallocatechin": {
+    "CID": 65084,
+    "MolecularFormula": "C15H14O7",
+    "MolecularWeight": "306.27",
+    "SMILES": "C1[C@@H]([C@H](OC2=CC(=CC(=C21)O)O)C3=CC(=C(C(=C3)O)O)O)O",
+    "ConnectivitySMILES": "C1C(C(OC2=CC(=CC(=C21)O)O)C3=CC(=C(C(=C3)O)O)O)O",
+    "InChIKey": "XMOCLSLCDHWDHP-SWLSCSKDSA-N",
+    "IUPACName": "(2R,3S)-2-(3,4,5-trihydroxyphenyl)-3,4-dihydro-2H-chromene-3,5,7-triol",
+    "Title": "Gallocatechin"
+  },
+  "Quercetin": {
+    "CID": 5280343,
+    "MolecularFormula": "C15H10O7",
+    "MolecularWeight": "302.23",
+    "SMILES": "C1=CC(=C(C=C1C2=C(C(=O)C3=C(C=C(C=C3O2)O)O)O)O)O",
+    "ConnectivitySMILES": "C1=CC(=C(C=C1C2=C(C(=O)C3=C(C=C(C=C3O2)O)O)O)O)O",
+    "InChIKey": "REFJWTPEDVJJIY-UHFFFAOYSA-N",
+    "IUPACName": "2-(3,4-dihydroxyphenyl)-3,5,7-trihydroxychromen-4-one",
+    "Title": "Quercetin"
+  },
+  "Kaempferol": {
+    "CID": 5280863,
+    "MolecularFormula": "C15H10O6",
+    "MolecularWeight": "286.24",
+    "SMILES": "C1=CC(=CC=C1C2=C(C(=O)C3=C(C=C(C=C3O2)O)O)O)O",
+    "ConnectivitySMILES": "C1=CC(=CC=C1C2=C(C(=O)C3=C(C=C(C=C3O2)O)O)O)O",
+    "InChIKey": "IYRMWMYZSQPJKC-UHFFFAOYSA-N",
+    "IUPACName": "3,5,7-trihydroxy-2-(4-hydroxyphenyl)chromen-4-one",
+    "Title": "Kaempferol"
+  },
+  "Myricetin": {
+    "CID": 5281672,
+    "MolecularFormula": "C15H10O8",
+    "MolecularWeight": "318.23",
+    "SMILES": "C1=C(C=C(C(=C1O)O)O)C2=C(C(=O)C3=C(C=C(C=C3O2)O)O)O",
+    "ConnectivitySMILES": "C1=C(C=C(C(=C1O)O)O)C2=C(C(=O)C3=C(C=C(C=C3O2)O)O)O",
+    "InChIKey": "IKMDFBPHZNJCSN-UHFFFAOYSA-N",
+    "IUPACName": "3,5,7-trihydroxy-2-(3,4,5-trihydroxyphenyl)chromen-4-one",
+    "Title": "Myricetin"
+  },
+  "Isorhamnetin": {
+    "CID": 5281654,
+    "MolecularFormula": "C16H12O7",
+    "MolecularWeight": "316.26",
+    "SMILES": "COC1=C(C=CC(=C1)C2=C(C(=O)C3=C(C=C(C=C3O2)O)O)O)O",
+    "ConnectivitySMILES": "COC1=C(C=CC(=C1)C2=C(C(=O)C3=C(C=C(C=C3O2)O)O)O)O",
+    "InChIKey": "IZQSVPBOUDKVDZ-UHFFFAOYSA-N",
+    "IUPACName": "3,5,7-trihydroxy-2-(4-hydroxy-3-methoxyphenyl)chromen-4-one",
+    "Title": "Isorhamnetin"
+  },
+  "Fisetin": {
+    "CID": 5281614,
+    "MolecularFormula": "C15H10O6",
+    "MolecularWeight": "286.24",
+    "SMILES": "C1=CC(=C(C=C1C2=C(C(=O)C3=C(O2)C=C(C=C3)O)O)O)O",
+    "ConnectivitySMILES": "C1=CC(=C(C=C1C2=C(C(=O)C3=C(O2)C=C(C=C3)O)O)O)O",
+    "InChIKey": "XHEFDIBZLJXQHF-UHFFFAOYSA-N",
+    "IUPACName": "2-(3,4-dihydroxyphenyl)-3,7-dihydroxychromen-4-one",
+    "Title": "Fisetin"
+  },
+  "Quercitrin": {
+    "CID": 5280459,
+    "MolecularFormula": "C21H20O11",
+    "MolecularWeight": "448.4",
+    "SMILES": "C[C@H]1[C@@H]([C@H]([C@H]([C@@H](O1)OC2=C(OC3=CC(=CC(=C3C2=O)O)O)C4=CC(=C(C=C4)O)O)O)O)O",
+    "ConnectivitySMILES": "CC1C(C(C(C(O1)OC2=C(OC3=CC(=CC(=C3C2=O)O)O)C4=CC(=C(C=C4)O)O)O)O)O",
+    "InChIKey": "OXGUCUVFOIWWQJ-HQBVPOQASA-N",
+    "IUPACName": "2-(3,4-dihydroxyphenyl)-5,7-dihydroxy-3-[(2S,3R,4R,5R,6S)-3,4,5-trihydroxy-6-methyloxan-2-yl]oxychromen-4-one",
+    "Title": "Quercitrin"
+  },
+  "Rutin": {
+    "CID": 5280805,
+    "MolecularFormula": "C27H30O16",
+    "MolecularWeight": "610.5",
+    "SMILES": "C[C@H]1[C@@H]([C@H]([C@H]([C@@H](O1)OC[C@@H]2[C@H]([C@@H]([C@H]([C@@H](O2)OC3=C(OC4=CC(=CC(=C4C3=O)O)O)C5=CC(=C(C=C5)O)O)O)O)O)O)O)O",
+    "ConnectivitySMILES": "CC1C(C(C(C(O1)OCC2C(C(C(C(O2)OC3=C(OC4=CC(=CC(=C4C3=O)O)O)C5=CC(=C(C=C5)O)O)O)O)O)O)O)O",
+    "InChIKey": "IKGXIBQEEMLURG-NVPNHPEKSA-N",
+    "IUPACName": "2-(3,4-dihydroxyphenyl)-5,7-dihydroxy-3-[(2S,3R,4S,5S,6R)-3,4,5-trihydroxy-6-[[(2R,3R,4R,5R,6S)-3,4,5-trihydroxy-6-methyloxan-2-yl]oxymethyl]oxan-2-yl]oxychromen-4-one",
+    "Title": "Rutin"
+  },
+  "Luteolin": {
+    "CID": 5280445,
+    "MolecularFormula": "C15H10O6",
+    "MolecularWeight": "286.24",
+    "SMILES": "C1=CC(=C(C=C1C2=CC(=O)C3=C(C=C(C=C3O2)O)O)O)O",
+    "ConnectivitySMILES": "C1=CC(=C(C=C1C2=CC(=O)C3=C(C=C(C=C3O2)O)O)O)O",
+    "InChIKey": "IQPNAANSBPBGFQ-UHFFFAOYSA-N",
+    "IUPACName": "2-(3,4-dihydroxyphenyl)-5,7-dihydroxychromen-4-one",
+    "Title": "Luteolin"
+  },
+  "Apigenin": {
+    "CID": 5280443,
+    "MolecularFormula": "C15H10O5",
+    "MolecularWeight": "270.24",
+    "SMILES": "C1=CC(=CC=C1C2=CC(=O)C3=C(C=C(C=C3O2)O)O)O",
+    "ConnectivitySMILES": "C1=CC(=CC=C1C2=CC(=O)C3=C(C=C(C=C3O2)O)O)O",
+    "InChIKey": "KZNIFHPLKGYRTM-UHFFFAOYSA-N",
+    "IUPACName": "5,7-dihydroxy-2-(4-hydroxyphenyl)chromen-4-one",
+    "Title": "Apigenin"
+  },
+  "Naringenin": {
+    "CID": 439246,
+    "MolecularFormula": "C15H12O5",
+    "MolecularWeight": "272.25",
+    "SMILES": "C1[C@H](OC2=CC(=CC(=C2C1=O)O)O)C3=CC=C(C=C3)O",
+    "ConnectivitySMILES": "C1C(OC2=CC(=CC(=C2C1=O)O)O)C3=CC=C(C=C3)O",
+    "InChIKey": "FTVWIRXFELQLPI-ZDUSSCGKSA-N",
+    "IUPACName": "(2S)-5,7-dihydroxy-2-(4-hydroxyphenyl)-2,3-dihydrochromen-4-one",
+    "Title": "Naringenin"
+  },
+  "Hesperetin": {
+    "CID": 72281,
+    "MolecularFormula": "C16H14O6",
+    "MolecularWeight": "302.28",
+    "SMILES": "COC1=C(C=C(C=C1)[C@@H]2CC(=O)C3=C(C=C(C=C3O2)O)O)O",
+    "ConnectivitySMILES": "COC1=C(C=C(C=C1)C2CC(=O)C3=C(C=C(C=C3O2)O)O)O",
+    "InChIKey": "AIONOLUJZLIMTK-AWEZNQCLSA-N",
+    "IUPACName": "(2S)-5,7-dihydroxy-2-(3-hydroxy-4-methoxyphenyl)-2,3-dihydrochromen-4-one",
+    "Title": "Hesperetin"
+  },
+  "Eriodictyol": {
+    "CID": 440735,
+    "MolecularFormula": "C15H12O6",
+    "MolecularWeight": "288.25",
+    "SMILES": "C1[C@H](OC2=CC(=CC(=C2C1=O)O)O)C3=CC(=C(C=C3)O)O",
+    "ConnectivitySMILES": "C1C(OC2=CC(=CC(=C2C1=O)O)O)C3=CC(=C(C=C3)O)O",
+    "InChIKey": "SBHXYTNGIZCORC-ZDUSSCGKSA-N",
+    "IUPACName": "(2S)-2-(3,4-dihydroxyphenyl)-5,7-dihydroxy-2,3-dihydrochromen-4-one",
+    "Title": "(+)-Eriodictyol"
+  },
+  "Hesperidin": {
+    "CID": 10621,
+    "MolecularFormula": "C28H34O15",
+    "MolecularWeight": "610.6",
+    "SMILES": "C[C@H]1[C@@H]([C@H]([C@H]([C@@H](O1)OC[C@@H]2[C@H]([C@@H]([C@H]([C@@H](O2)OC3=CC(=C4C(=O)C[C@H](OC4=C3)C5=CC(=C(C=C5)OC)O)O)O)O)O)O)O)O",
+    "ConnectivitySMILES": "CC1C(C(C(C(O1)OCC2C(C(C(C(O2)OC3=CC(=C4C(=O)CC(OC4=C3)C5=CC(=C(C=C5)OC)O)O)O)O)O)O)O)O",
+    "InChIKey": "QUQPHWDTPGMPEX-QJBIFVCTSA-N",
+    "IUPACName": "(2S)-5-hydroxy-2-(3-hydroxy-4-methoxyphenyl)-7-[(2S,3R,4S,5S,6R)-3,4,5-trihydroxy-6-[[(2R,3R,4R,5R,6S)-3,4,5-trihydroxy-6-methyloxan-2-yl]oxymethyl]oxan-2-yl]oxy-2,3-dihydrochromen-4-one",
+    "Title": "Hesperidin"
+  },
+  "Cyanidin": {
+    "CID": 128861,
+    "MolecularFormula": "C15H11O6+",
+    "MolecularWeight": "287.24",
+    "SMILES": "C1=CC(=C(C=C1C2=[O+]C3=CC(=CC(=C3C=C2O)O)O)O)O",
+    "ConnectivitySMILES": "C1=CC(=C(C=C1C2=[O+]C3=CC(=CC(=C3C=C2O)O)O)O)O",
+    "InChIKey": "VEVZSMAEJFVWIL-UHFFFAOYSA-O",
+    "IUPACName": "2-(3,4-dihydroxyphenyl)chromenylium-3,5,7-triol",
+    "Title": "2-(3,4-Dihydroxyphenyl)-3,5,7-trihydroxy-1-Benzopyrylium"
+  },
+  "Cyanidin 3-O-glucoside": {
+    "CID": 197081,
+    "MolecularFormula": "C21H21ClO11",
+    "MolecularWeight": "484.8",
+    "SMILES": "C1=CC(=C(C=C1C2=[O+]C3=CC(=CC(=C3C=C2O[C@H]4[C@@H]([C@H]([C@@H]([C@H](O4)CO)O)O)O)O)O)O)O.[Cl-]",
+    "ConnectivitySMILES": "C1=CC(=C(C=C1C2=[O+]C3=CC(=CC(=C3C=C2OC4C(C(C(C(O4)CO)O)O)O)O)O)O)O.[Cl-]",
+    "InChIKey": "YTMNONATNXDQJF-UBNZBFALSA-N",
+    "IUPACName": "(2S,3R,4S,5S,6R)-2-[2-(3,4-dihydroxyphenyl)-5,7-dihydroxychromenylium-3-yl]oxy-6-(hydroxymethyl)oxane-3,4,5-triol chloride",
+    "Title": "cyanidin 3-O-glucoside"
+  },
+  "Delphinidin": {
+    "CID": 128853,
+    "MolecularFormula": "C15H11O7+",
+    "MolecularWeight": "303.24",
+    "SMILES": "C1=C(C=C(C(=C1O)O)O)C2=[O+]C3=CC(=CC(=C3C=C2O)O)O",
+    "ConnectivitySMILES": "C1=C(C=C(C(=C1O)O)O)C2=[O+]C3=CC(=CC(=C3C=C2O)O)O",
+    "InChIKey": "JKHRCGUTYDNCLE-UHFFFAOYSA-O",
+    "IUPACName": "2-(3,4,5-trihydroxyphenyl)chromenylium-3,5,7-triol",
+    "Title": "3,5,7-Trihydroxy-2-(3,4,5-trihydroxyphenyl)-1-benzopyrylium"
+  },
+  "Pelargonidin": {
+    "CID": 440832,
+    "MolecularFormula": "C15H11O5+",
+    "MolecularWeight": "271.24",
+    "SMILES": "C1=CC(=CC=C1C2=[O+]C3=CC(=CC(=C3C=C2O)O)O)O",
+    "ConnectivitySMILES": "C1=CC(=CC=C1C2=[O+]C3=CC(=CC(=C3C=C2O)O)O)O",
+    "InChIKey": "XVFMGWDSJLBXDZ-UHFFFAOYSA-O",
+    "IUPACName": "2-(4-hydroxyphenyl)chromenylium-3,5,7-triol",
+    "Title": "Pelargonidin"
+  },
+  "Malvidin": {
+    "CID": 159287,
+    "MolecularFormula": "C17H15O7+",
+    "MolecularWeight": "331.30",
+    "SMILES": "COC1=CC(=CC(=C1O)OC)C2=[O+]C3=CC(=CC(=C3C=C2O)O)O",
+    "ConnectivitySMILES": "COC1=CC(=CC(=C1O)OC)C2=[O+]C3=CC(=CC(=C3C=C2O)O)O",
+    "InChIKey": "KZMACGJDUUWFCH-UHFFFAOYSA-O",
+    "IUPACName": "2-(4-hydroxy-3,5-dimethoxyphenyl)chromenylium-3,5,7-triol",
+    "Title": "Malvidin"
+  },
+  "Genistein": {
+    "CID": 5280961,
+    "MolecularFormula": "C15H10O5",
+    "MolecularWeight": "270.24",
+    "SMILES": "C1=CC(=CC=C1C2=COC3=CC(=CC(=C3C2=O)O)O)O",
+    "ConnectivitySMILES": "C1=CC(=CC=C1C2=COC3=CC(=CC(=C3C2=O)O)O)O",
+    "InChIKey": "TZBJGXHYKVUXJN-UHFFFAOYSA-N",
+    "IUPACName": "5,7-dihydroxy-3-(4-hydroxyphenyl)chromen-4-one",
+    "Title": "Genistein"
+  },
+  "Daidzein": {
+    "CID": 5281708,
+    "MolecularFormula": "C15H10O4",
+    "MolecularWeight": "254.24",
+    "SMILES": "C1=CC(=CC=C1C2=COC3=C(C2=O)C=CC(=C3)O)O",
+    "ConnectivitySMILES": "C1=CC(=CC=C1C2=COC3=C(C2=O)C=CC(=C3)O)O",
+    "InChIKey": "ZQSIJRDFPHDXIC-UHFFFAOYSA-N",
+    "IUPACName": "7-hydroxy-3-(4-hydroxyphenyl)chromen-4-one",
+    "Title": "Daidzein"
+  },
+  "Glycitein": {
+    "CID": 5317750,
+    "MolecularFormula": "C16H12O5",
+    "MolecularWeight": "284.26",
+    "SMILES": "COC1=C(C=C2C(=C1)C(=O)C(=CO2)C3=CC=C(C=C3)O)O",
+    "ConnectivitySMILES": "COC1=C(C=C2C(=C1)C(=O)C(=CO2)C3=CC=C(C=C3)O)O",
+    "InChIKey": "DXYUAIFZCFRPTH-UHFFFAOYSA-N",
+    "IUPACName": "7-hydroxy-3-(4-hydroxyphenyl)-6-methoxychromen-4-one",
+    "Title": "Glycitein"
+  },
+  "Gallic acid": {
+    "CID": 370,
+    "MolecularFormula": "C7H6O5",
+    "MolecularWeight": "170.12",
+    "SMILES": "C1=C(C=C(C(=C1O)O)O)C(=O)O",
+    "ConnectivitySMILES": "C1=C(C=C(C(=C1O)O)O)C(=O)O",
+    "InChIKey": "LNTHITQWFMADLM-UHFFFAOYSA-N",
+    "IUPACName": "3,4,5-trihydroxybenzoic acid",
+    "Title": "Gallic Acid"
+  },
+  "Protocatechuic acid": {
+    "CID": 72,
+    "MolecularFormula": "C7H6O4",
+    "MolecularWeight": "154.12",
+    "SMILES": "C1=CC(=C(C=C1C(=O)O)O)O",
+    "ConnectivitySMILES": "C1=CC(=C(C=C1C(=O)O)O)O",
+    "InChIKey": "YQUVCSBJEUQKSH-UHFFFAOYSA-N",
+    "IUPACName": "3,4-dihydroxybenzoic acid",
+    "Title": "Protocatechuic Acid"
+  },
+  "Vanillic acid": {
+    "CID": 8468,
+    "MolecularFormula": "C8H8O4",
+    "MolecularWeight": "168.15",
+    "SMILES": "COC1=C(C=CC(=C1)C(=O)O)O",
+    "ConnectivitySMILES": "COC1=C(C=CC(=C1)C(=O)O)O",
+    "InChIKey": "WKOLLVMJNQIZCI-UHFFFAOYSA-N",
+    "IUPACName": "4-hydroxy-3-methoxybenzoic acid",
+    "Title": "Vanillic Acid"
+  },
+  "Syringic acid": {
+    "CID": 10742,
+    "MolecularFormula": "C9H10O5",
+    "MolecularWeight": "198.17",
+    "SMILES": "COC1=CC(=CC(=C1O)OC)C(=O)O",
+    "ConnectivitySMILES": "COC1=CC(=CC(=C1O)OC)C(=O)O",
+    "InChIKey": "JMSVCTWVEWCHDZ-UHFFFAOYSA-N",
+    "IUPACName": "4-hydroxy-3,5-dimethoxybenzoic acid",
+    "Title": "Syringic Acid"
+  },
+  "Caffeic acid": {
+    "CID": 689043,
+    "MolecularFormula": "C9H8O4",
+    "MolecularWeight": "180.16",
+    "SMILES": "C1=CC(=C(C=C1/C=C/C(=O)O)O)O",
+    "ConnectivitySMILES": "C1=CC(=C(C=C1C=CC(=O)O)O)O",
+    "InChIKey": "QAIPRVGONGVQAS-DUXPYHPUSA-N",
+    "IUPACName": "(E)-3-(3,4-dihydroxyphenyl)prop-2-enoic acid",
+    "Title": "Caffeic Acid"
+  },
+  "trans-Ferulic acid": {
+    "CID": 445858,
+    "MolecularFormula": "C10H10O4",
+    "MolecularWeight": "194.18",
+    "SMILES": "COC1=C(C=CC(=C1)/C=C/C(=O)O)O",
+    "ConnectivitySMILES": "COC1=C(C=CC(=C1)C=CC(=O)O)O",
+    "InChIKey": "KSEBMYQBYZTDHS-HWKANZROSA-N",
+    "IUPACName": "(E)-3-(4-hydroxy-3-methoxyphenyl)prop-2-enoic acid",
+    "Title": "Ferulic Acid"
+  },
+  "p-Coumaric acid": {
+    "CID": 637542,
+    "MolecularFormula": "C9H8O3",
+    "MolecularWeight": "164.16",
+    "SMILES": "C1=CC(=CC=C1/C=C/C(=O)O)O",
+    "ConnectivitySMILES": "C1=CC(=CC=C1C=CC(=O)O)O",
+    "InChIKey": "NGSWKAQJJWESNS-ZZXKWVIFSA-N",
+    "IUPACName": "(E)-3-(4-hydroxyphenyl)prop-2-enoic acid",
+    "Title": "P-Coumaric Acid"
+  },
+  "Sinapic acid": {
+    "CID": 10743,
+    "MolecularFormula": "C11H12O5",
+    "MolecularWeight": "224.21",
+    "SMILES": "COC1=CC(=CC(=C1O)OC)C=CC(=O)O",
+    "ConnectivitySMILES": "COC1=CC(=CC(=C1O)OC)C=CC(=O)O",
+    "InChIKey": "PCMORTLOPMLEFB-UHFFFAOYSA-N",
+    "IUPACName": "3-(4-hydroxy-3,5-dimethoxyphenyl)prop-2-enoic acid",
+    "Title": "Sinapic acid"
+  },
+  "Rosmarinic acid": {
+    "error": "The read operation timed out"
+  },
+  "Chlorogenic acid": {
+    "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+  },
+  "Neochlorogenic acid": {
+    "CID": 5280633,
+    "MolecularFormula": "C16H18O9",
+    "MolecularWeight": "354.31",
+    "SMILES": "C1[C@H]([C@@H]([C@@H](C[C@]1(C(=O)O)O)OC(=O)/C=C/C2=CC(=C(C=C2)O)O)O)O",
+    "ConnectivitySMILES": "C1C(C(C(CC1(C(=O)O)O)OC(=O)C=CC2=CC(=C(C=C2)O)O)O)O",
+    "InChIKey": "CWVRJTMFETXNAD-NXLLHMKUSA-N",
+    "IUPACName": "(1R,3R,4S,5R)-3-[(E)-3-(3,4-dihydroxyphenyl)prop-2-enoyl]oxy-1,4,5-trihydroxycyclohexane-1-carboxylic acid",
+    "Title": "Neochlorogenic acid"
+  },
+  "Cryptochlorogenic acid": {
+    "CID": 9798666,
+    "MolecularFormula": "C16H18O9",
+    "MolecularWeight": "354.31",
+    "SMILES": "C1[C@H](C([C@@H](CC1(C(=O)O)O)O)OC(=O)/C=C/C2=CC(=C(C=C2)O)O)O",
+    "ConnectivitySMILES": "C1C(C(C(CC1(C(=O)O)O)O)OC(=O)C=CC2=CC(=C(C=C2)O)O)O",
+    "InChIKey": "GYFFKZTYYAFCTR-AVXJPILUSA-N",
+    "IUPACName": "trans-(3R,5R)-4-[(E)-3-(3,4-dihydroxyphenyl)prop-2-enoyl]oxy-1,3,5-trihydroxycyclohexane-1-carboxylic acid",
+    "Title": "Cryptochlorogenic acid"
+  },
+  "trans-Resveratrol": {
+    "CID": 445154,
+    "MolecularFormula": "C14H12O3",
+    "MolecularWeight": "228.24",
+    "SMILES": "C1=CC(=CC=C1/C=C/C2=CC(=CC(=C2)O)O)O",
+    "ConnectivitySMILES": "C1=CC(=CC=C1C=CC2=CC(=CC(=C2)O)O)O",
+    "InChIKey": "LUKBXSAWLPMMSZ-OWOJBTEDSA-N",
+    "IUPACName": "5-[(E)-2-(4-hydroxyphenyl)ethenyl]benzene-1,3-diol",
+    "Title": "Resveratrol"
+  },
+  "Piceatannol": {
+    "CID": 667639,
+    "MolecularFormula": "C14H12O4",
+    "MolecularWeight": "244.24",
+    "SMILES": "C1=CC(=C(C=C1/C=C/C2=CC(=CC(=C2)O)O)O)O",
+    "ConnectivitySMILES": "C1=CC(=C(C=C1C=CC2=CC(=CC(=C2)O)O)O)O",
+    "InChIKey": "CDRPUGZCRXZLFL-OWOJBTEDSA-N",
+    "IUPACName": "4-[(E)-2-(3,5-dihydroxyphenyl)ethenyl]benzene-1,2-diol",
+    "Title": "Piceatannol"
+  },
+  "Secoisolariciresinol": {
+    "CID": 65373,
+    "MolecularFormula": "C20H26O6",
+    "MolecularWeight": "362.4",
+    "SMILES": "COC1=C(C=CC(=C1)C[C@@H](CO)[C@@H](CC2=CC(=C(C=C2)O)OC)CO)O",
+    "ConnectivitySMILES": "COC1=C(C=CC(=C1)CC(CO)C(CC2=CC(=C(C=C2)O)OC)CO)O",
+    "InChIKey": "PUETUDUXMCLALY-HOTGVXAUSA-N",
+    "IUPACName": "(2R,3R)-2,3-bis[(4-hydroxy-3-methoxyphenyl)methyl]butane-1,4-diol",
+    "Title": "(-)-Secoisolariciresinol"
+  },
+  "Matairesinol": {
+    "CID": 119205,
+    "MolecularFormula": "C20H22O6",
+    "MolecularWeight": "358.4",
+    "SMILES": "COC1=C(C=CC(=C1)C[C@H]2COC(=O)[C@@H]2CC3=CC(=C(C=C3)O)OC)O",
+    "ConnectivitySMILES": "COC1=C(C=CC(=C1)CC2COC(=O)C2CC3=CC(=C(C=C3)O)OC)O",
+    "InChIKey": "MATGKVZWFZHCLI-LSDHHAIUSA-N",
+    "IUPACName": "(3R,4R)-3,4-bis[(4-hydroxy-3-methoxyphenyl)methyl]oxolan-2-one",
+    "Title": "(-)-Matairesinol"
+  },
+  "Sesamol": {
+    "CID": 68289,
+    "MolecularFormula": "C7H6O3",
+    "MolecularWeight": "138.12",
+    "SMILES": "C1OC2=C(O1)C=C(C=C2)O",
+    "ConnectivitySMILES": "C1OC2=C(O1)C=C(C=C2)O",
+    "InChIKey": "LUSZGTFNYDARNI-UHFFFAOYSA-N",
+    "IUPACName": "1,3-benzodioxol-5-ol",
+    "Title": "Sesamol"
+  },
+  "Curcumin": {
+    "CID": 969516,
+    "MolecularFormula": "C21H20O6",
+    "MolecularWeight": "368.4",
+    "SMILES": "COC1=C(C=CC(=C1)/C=C/C(=O)CC(=O)/C=C/C2=CC(=C(C=C2)O)OC)O",
+    "ConnectivitySMILES": "COC1=C(C=CC(=C1)C=CC(=O)CC(=O)C=CC2=CC(=C(C=C2)O)OC)O",
+    "InChIKey": "VFLDPWHFBUODDF-FCXRPNKRSA-N",
+    "IUPACName": "(1E,6E)-1,7-bis(4-hydroxy-3-methoxyphenyl)hepta-1,6-diene-3,5-dione",
+    "Title": "Curcumin"
+  },
+  "Capsaicin": {
+    "CID": 1548943,
+    "MolecularFormula": "C18H27NO3",
+    "MolecularWeight": "305.4",
+    "SMILES": "CC(C)/C=C/CCCCC(=O)NCC1=CC(=C(C=C1)O)OC",
+    "ConnectivitySMILES": "CC(C)C=CCCCCC(=O)NCC1=CC(=C(C=C1)O)OC",
+    "InChIKey": "YKPUWZUDDOIDPM-SOFGYWHQSA-N",
+    "IUPACName": "(E)-N-[(4-hydroxy-3-methoxyphenyl)methyl]-8-methylnon-6-enamide",
+    "Title": "Capsaicin"
+  },
+  "Carvacrol": {
+    "CID": 10364,
+    "MolecularFormula": "C10H14O",
+    "MolecularWeight": "150.22",
+    "SMILES": "CC1=C(C=C(C=C1)C(C)C)O",
+    "ConnectivitySMILES": "CC1=C(C=C(C=C1)C(C)C)O",
+    "InChIKey": "RECUKUPTGUEGMW-UHFFFAOYSA-N",
+    "IUPACName": "2-methyl-5-propan-2-ylphenol",
+    "Title": "Carvacrol"
+  },
+  "Thymol": {
+    "CID": 6989,
+    "MolecularFormula": "C10H14O",
+    "MolecularWeight": "150.22",
+    "SMILES": "CC1=CC(=C(C=C1)C(C)C)O",
+    "ConnectivitySMILES": "CC1=CC(=C(C=C1)C(C)C)O",
+    "InChIKey": "MGSRCZKZVOBKFT-UHFFFAOYSA-N",
+    "IUPACName": "5-methyl-2-propan-2-ylphenol",
+    "Title": "Thymol"
+  },
+  "Eugenol": {
+    "CID": 3314,
+    "MolecularFormula": "C10H12O2",
+    "MolecularWeight": "164.20",
+    "SMILES": "COC1=C(C=CC(=C1)CC=C)O",
+    "ConnectivitySMILES": "COC1=C(C=CC(=C1)CC=C)O",
+    "InChIKey": "RRAFCDWBNXTKKO-UHFFFAOYSA-N",
+    "IUPACName": "2-methoxy-4-prop-2-enylphenol",
+    "Title": "Eugenol"
+  },
+  "Tyrosol": {
+    "CID": 10393,
+    "MolecularFormula": "C8H10O2",
+    "MolecularWeight": "138.16",
+    "SMILES": "C1=CC(=CC=C1CCO)O",
+    "ConnectivitySMILES": "C1=CC(=CC=C1CCO)O",
+    "InChIKey": "YCCILVSKPBXVIP-UHFFFAOYSA-N",
+    "IUPACName": "4-(2-hydroxyethyl)phenol",
+    "Title": "Tyrosol"
+  }
+}

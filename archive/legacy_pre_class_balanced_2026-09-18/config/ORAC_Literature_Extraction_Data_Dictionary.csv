@@ -1,0 +1,56 @@
+field_name,definition,data_type,allowed_values,required,source_priority,example,notes
+record_id,Unique ORAC extraction record identifier,string,Unique project ID,yes,Project-generated,ORAC_0001,One assay arm and compound form per record
+study_id,Identifier linking records from the same independent study,string,Unique study ID,yes,Primary publication,STUDY_012,Used to avoid pseudoreplication
+compound_name,Preferred compound name,string,Controlled preferred name,yes,PubChem/ChEBI then paper,Quercetin,Must represent a single compound
+PubChem_CID,PubChem compound identifier,integer,Positive integer or not_available,yes,PubChem,5280343,Verify exact form and stereochemistry
+InChIKey,Standard InChIKey,string,27-character InChIKey or not_available,yes,PubChem/ChEBI,REFJWTPEDVJJIY-UHFFFAOYSA-N,Exact chemical entity
+compound_form,Aglycone/glycoside isomer salt hydrate oxidation state or formulation,string,Controlled text,yes,Primary paper,aglycone,Do not pool consequential forms
+stereochemistry,Stereochemical or geometric isomer information,string,Explicit form or not_applicable,conditional,Primary paper then PubChem,RRR-alpha-tocopherol,Required when applicable
+purity,Reported test-material purity,number,0-100 percent or not_reported,yes,Certificate/supplier then paper,98,Store numerical percent where possible
+purity_basis,How purity was established,string,certificate|HPLC|supplier_claim|other|not_reported,no,Primary paper,HPLC,Supports eligibility judgment
+chemical_class,Chemical class/subclass,string,Controlled project vocabulary,yes,ChEBI/PubChem then literature,flavonol,Use candidate-universe ontology
+H_or_L_ORAC,ORAC assay arm,categorical,H-ORAC|L-ORAC|other|unclear,yes,Methods,H-ORAC,Never assume arms are commutable
+ORAC_variant,Named ORAC method variant,string,ORAC-FL|other_ORAC|unclear,yes,Methods,ORAC-FL,Non-FL normally Tier C
+AAPH_concentration,AAPH concentration in final reaction mix,number,Nonnegative numeric or not_reported,yes,Methods,12,Store unit separately
+AAPH_concentration_unit,Unit for AAPH concentration,categorical,mM|uM|mg_per_mL|other|not_reported,yes,Methods,mM,Normalize only with valid chemistry
+fluorescein_concentration,Fluorescein concentration in final reaction mix,number,Nonnegative numeric or not_reported,yes,Methods,0.08,Store unit separately
+fluorescein_concentration_unit,Unit for fluorescein concentration,categorical,uM|nM|mM|other|not_reported,yes,Methods,uM,
+Trolox_concentration,Trolox calibration concentration or range,string,Numeric value/range plus not_reported,yes,Methods,6.25-50 uM,Preserve reported range
+Trolox_calibration_model,Calibration model and fit,string,linear|nonlinear|not_reported plus fit statistic,no,Methods,linear R2=0.998,Needed for conversion audit
+buffer,Buffer identity and concentration,string,Reported composition or not_reported,yes,Methods,75 mM phosphate,Record ionic strength if available
+pH,Reaction pH,number,0-14 or not_reported,yes,Methods,7.4,
+temperature,Assay temperature,number,Numeric degrees C or not_reported,yes,Methods,37,Store Celsius
+solvent,Sample and reaction solvent system,string,Reported composition or not_reported,yes,Methods,phosphate buffer with 1% ethanol,Include cosolvent proportions
+RMCD,Randomly methylated beta-cyclodextrin use/concentration,string,none|concentration/formulation|not_reported,yes,Methods,7% w/v,Especially relevant to L-ORAC
+other_solubilizer,Other detergent carrier or solubilizer,string,Reported text|none|not_reported,no,Methods,Tween 20 0.1%,
+plate_or_cuvette,Reaction vessel format,string,plate_type|cuvette|other|not_reported,no,Methods,black 96-well plate,Geometry can affect optical behavior
+excitation_emission,Fluorescence wavelengths,string,Reported Ex/Em or not_reported,no,Methods,485/520 nm,Supports optical-interference review
+reading_interval,Time between fluorescence readings,number,Positive numeric or not_reported,yes,Methods,1,Store unit separately
+reading_interval_unit,Unit for reading interval,categorical,seconds|minutes|other|not_reported,yes,Methods,minutes,
+total_duration,Total kinetic acquisition duration,number,Positive numeric or not_reported,yes,Methods,90,Store unit separately
+total_duration_unit,Unit for total duration,categorical,minutes|hours|other|not_reported,yes,Methods,minutes,
+AUC_method,Area-under-curve and blank-correction method,string,Reported equation/procedure or not_reported,yes,Methods,net AUC=AUCsample-AUCblank,Preserve exact method
+concentration_range,Tested compound concentrations,string,Reported range or not_reported,yes,Methods,0.5-5 uM,Include number of levels if known
+linearity_reported,Whether compound response linearity was demonstrated,categorical,yes|no|unclear,yes,Results/methods,yes,Record fit separately
+linearity_statistic,Linearity model/fit statistic,string,Reported value or not_reported,no,Results,R2=0.995,
+replicate_number,Technical and biological/independent replicate count,string,Reported counts or not_reported,no,Methods,n=3 independent experiments,Distinguish replicate types
+original_ORAC_value,ORAC result exactly as reported,number,Numeric or not_available,yes,Results,4.2,Never overwrite during normalization
+original_unit,Unit exactly as reported,string,Verbatim unit,yes,Results,mol TE/mol compound,Food-level units cannot rank compounds
+uncertainty_value,Reported SD SE CI IQR or range,string,Verbatim value or not_reported,no,Results,SD 0.3,Retain uncertainty type
+molecular_weight_used,Molecular weight used for conversion,number,Positive g/mol or not_applicable,conditional,Verified chemical record,302.24,Must match compound form
+conversion_formula,Explicit conversion to mol TE/mol,string,Equation or not_applicable,conditional,Project calculation,umol_TE_per_g*MW_g_per_mol/1e6,Required when original unit differs
+standardized_mol_TE_per_mol,Normalized ORAC value,number,Nonnegative numeric or not_calculable,yes,Verified calculation,4.2,Only valid conversions receive numeric value
+ORAC_source,Exact location of result,string,Table/figure/page/supplement,yes,Primary paper,Table 2 row quercetin,Supports audit
+comparability_tier,categorical eligibility decision,categorical,A|B|C|X,yes,Project adjudication,A,Apply rubric criterion by criterion
+tier_rationale,Concise reason for assigned tier,string,Structured text,yes,Project adjudication,Complete H-ORAC-FL method and valid molar unit,State failed critical criteria
+interference_QC,Optical solubility aggregation and blank controls,string,passed|failed|partial|not_reported plus detail,yes,Methods/results,passed compound blank,Especially important for carotenoids
+inclusion_in_primary_ranking,Whether record enters the primary numerical ranking,boolean,true|false,yes,Derived from tier,true,Normally true only for Tier A
+PMID,PubMed identifier,string,Numeric PMID or not_available,no,PubMed,15137849,
+DOI,Digital object identifier,string,Valid DOI or not_available,yes,Crossref/publisher,10.xxxx/xxxxx,
+Zotero_key,Zotero item key,string,8-character/local key or not_available,yes,Zotero,AB12CD34,Required for formally included sources when available
+publication_year,Publication year,integer,Four-digit year,yes,Primary paper,2004,
+extractor,Person or agent extracting the record,string,Project identifier,yes,Project metadata,reviewer_1,
+extraction_date,Date of extraction,date,YYYY-MM-DD,yes,Project metadata,2026-09-17,
+verification_status,Independent conversion and eligibility review,categorical,unverified|checked|adjudicated,yes,Project workflow,checked,Primary ranking requires checked or adjudicated
+duplicate_group,Identifier for duplicate or overlapping reports,string,Group ID|none|unclear,no,Project review,none,Count only one independent data source
+notes,Additional methodological or interpretive notes,string,Free text,no,All sources,Minor pH detail absent,Do not place core structured data only in notes

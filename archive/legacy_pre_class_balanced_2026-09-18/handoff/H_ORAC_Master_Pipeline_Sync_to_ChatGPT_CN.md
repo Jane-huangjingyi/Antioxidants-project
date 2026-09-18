@@ -1,0 +1,3 @@
+# H-ORAC Master Pipeline 同步
+
+A. MASTER pipeline 已完成，主入口为 `docs/MASTER_H_ORAC_SCREENING_PIPELINE_v1.0_CN.md`。B. 共11份统一格式中文SOP。C. 共5个CSV人工模板。D. 已建立可打印eligibility checklist。E. 已建立无AI、按工作日和Excel工作表执行的manual guide。F. 脚本覆盖聚合、排名、图和现有版本复现；检索、身份、tier、独立性仍为manual only。G. provenance链已定义到DOI/PMID、exact location、原值、换算和rank。H. 主要缺口是历史search/exclusion日志未完整回填、部分exact location不够精细、缺少通用schema validator。I. 未解决冲突包括v2.0 B与v2.1 B1/B2、旧宽candidate scope与当前H-arm范围，以及脚本High confidence未自动结合异质性。J. 文档已具备组内使用条件，但首次执行应由资深成员带教并抽查。K. 无AI可执行；最大难点为原文追溯、probe/arm识别和独立性判断。L. 下一改进优先级：回填历史检索/排除日志；修订结构化B1/B2 rubric；建立通用CSV验证与run manifest；恢复Zotero并回填item keys。

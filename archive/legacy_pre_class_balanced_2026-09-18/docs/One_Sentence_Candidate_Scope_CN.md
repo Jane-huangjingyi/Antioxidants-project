@@ -1,0 +1,1 @@
+本项目候选范围限定为正常膳食中天然存在、结构明确且可唯一映射 PubChem CID/InChIKey 的单体小分子，覆盖 phenolic/polyphenolic 各亚类、维生素 C、生育酚/生育三烯酚、类胡萝卜素、有机硫化物及少量明确的其他食源类别。候选依据理化性质进入 H-ORAC 或 L-ORAC，并对溶解、聚集、光学干扰、稳定性或非典型 redox mechanism 设置 special-case 标记；未经桥接验证不跨 H/L 强行混排。

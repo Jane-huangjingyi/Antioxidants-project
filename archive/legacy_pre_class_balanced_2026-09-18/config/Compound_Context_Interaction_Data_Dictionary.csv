@@ -1,0 +1,36 @@
+field_name,definition,data_type,allowed_values,required,source_priority,example,notes
+interaction_record_id,Stable interaction identifier,string,CI followed by digits,yes,project-assigned,CI000001,One model and endpoint per row
+node_A,First entity name,string,free text,yes,controlled entity table,quercetin,Order by study convention
+node_A_id,Stable ID for node A,string,candidate or context ID,yes,entity table,ANTX000001,
+node_A_type,Type of node A,category,parent_compound|metabolite|vitamin|mineral_ion|protein|lipid|fiber_polysaccharide|food_matrix|drug|other,yes,curation,parent_compound,
+node_B,Second entity name,string,free text,yes,controlled entity table,vitamin C,
+node_B_id,Stable ID for node B,string,candidate or context ID,yes,entity table,CTX000001,
+node_B_type,Type of node B,category,parent_compound|metabolite|vitamin|mineral_ion|protein|lipid|fiber_polysaccharide|food_matrix|drug|other,yes,curation,vitamin,
+interaction_type,Interaction classification,category,synergy|antagonism|additive|possible_synergy|possible_antagonism|antioxidant_regeneration|chelation|absorption_effect|stability_effect|prooxidant_shift|bioavailability_modification,yes,adjudication,synergy,Possible labels for descriptive studies
+direction,Direction for node B or endpoint,category,increase|decrease|bidirectional|none|unknown,yes,primary study,increase,
+endpoint,Measured outcome,string,free text,yes,primary study,lipid peroxidation,Must identify redox relevance
+model_system,Experimental system,string,cell_free|cell|organoid|ex_vivo|animal|human|food_model|other,yes,primary study,cell,
+biological_context,Cell tissue population challenge and duration,string,free text,yes,primary study,HepG2 plus H2O2 24 h,
+food_matrix,Food or formulation context,string,free text,no,primary study,oil emulsion,Blank only when absent
+concentration_A,Dose of node A,string,value range and unit,yes,primary study,10 uM,
+concentration_B,Dose of node B,string,value range and unit,yes,primary study,50 uM,
+molar_ratio,A:B molar ratio,string,ratio or not_applicable,yes,derived or source,1:5,Mass ratio must be labelled
+pH,System pH,string,value or range,no,primary study,7.4,Critical for redox chemistry
+oxygen_condition,Oxygen environment,string,normoxia|hypoxia|hyperoxia|anoxic|air_equilibrated|not_reported,yes,primary study,normoxia,
+metal_concentration,Fe Cu Zn Ca or other metal amount,string,value unit species or none,yes,primary study,Cu2+ 10 uM,Record chelator presence
+interaction_method,Null or analytical model,string,Bliss|Loewe|Combination_Index|isobologram|ZIP|HSA|factorial_interaction|descriptive|other,yes,primary study,Bliss,Descriptive cannot yield definitive synergy
+interaction_metric,Reported score and uncertainty,string,value CI or p value,conditional,primary study,Bliss=12.4 95%CI 8.1-16.7,Required for formal interaction
+dose_matrix_design,Dose grid and replicates,string,free text,conditional,primary study,6x6 matrix n=3,Required for formal interaction
+single_agent_controls,Whether both single agents were measured,boolean,true|false|unclear,yes,primary study,true,False limits to possible label
+evidence_level,Interaction evidence level,category,I1_formal_human|I2_formal_in_vivo|I3_formal_cell_ex_vivo|I4_formal_cell_free|I5_descriptive|I6_predicted,yes,adjudication,I3_formal_cell_ex_vivo,Context and quality may downgrade
+physiological_relevance,Exposure relevance,category,high|moderate|low|unknown,yes,adjudication,low,Compare concentrations with diet and PK
+prooxidant_context,Whether interaction shifts toward oxidation,string,yes|no|conditional|unknown plus explanation,yes,primary study,conditional in Cu2+,Do not encode as simple toxicity
+species,Organism,string,NCBI taxon or none,yes,primary study,Homo sapiens|9606,
+PMID,PubMed ID,string,digits,no,PubMed,12345678,
+DOI,Digital object identifier,string,normalized DOI,no,Crossref publisher PubMed,10.xxxx/xxxxx,
+Zotero_item_key,Zotero item key,string,8 characters when available,no,Zotero,AB12CD34,
+BibTeX_key,BibTeX key,string,free text,no,Zotero export,author_synergy_2024,
+source_version_accessed,Database version and retrieval date,string,free text,yes,source record,PubMed accessed 2026-09-17,
+reviewer,Primary curator,string,controlled initials,yes,workflow,AB,
+review_status,Review state,category,extracted|primary_checked|second_checked|conflict,yes,workflow,primary_checked,
+notes,Caveats and interpretation,string,free text,no,curation,formal model assumes independent action,

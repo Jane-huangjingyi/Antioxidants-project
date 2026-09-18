@@ -1,0 +1,31 @@
+# Database and Literature Source Audit (cut-off 2026-09-17)
+
+Versions reflect what could be verified in this audit. Dynamic resources require a fresh release or access date at extraction.
+
+| Source | Best use | Type and update | Access/automation | Main limitations | Recommendation |
+|---|---|---|---|---|---|
+| Phenol-Explorer | Polyphenol candidates; food content; processing; PK/metabolite leads | Curated; principal public v3.0 (2013) | Web and traceable references; limited bulk workflow | Polyphenol-centered; heterogeneous methods; aging release | Use as seed and quantitative source; update with recent/region-specific evidence |
+| USDA Flavonoid DB | Food flavonoid content | Authoritative curated release 3.3 (2018); WWEIA 2017–2018 data also available | Download | US-centered and limited chemical scope | Use for cross-validation and US intake |
+| USDA FoodData Central | Food entities and composition context | Authoritative; Foundation Foods 2026-04 and continuing updates | REST API and CSV/JSON | Sparse coverage of many specialized phytochemicals | Use for food mapping, not the antioxidant universe alone |
+| EFSA Comprehensive DB/FoodEx2 | Population-stratified European consumption and food coding | Authoritative; database update 2024-12, page reviewed 2026 | Dashboard/download; interface limits automation | Cross-survey heterogeneity and misreporting | Use for exposure with country/survey retained |
+| FooDB | Broad candidate discovery and food links | Mixed curated/predicted; bulk pre-release 1.0 (2020), spectra 2022 | CSV/XML/JSON/SQL subject to terms | Old bulk; measured and predicted content can mix; occurrence is not intake | Discovery only; verify quantitative values |
+| PubChem | Structure standardization, synonyms, BioAssay leads | Aggregated NCBI resource; continuous, 2025 update publication | PUG REST/download | Variable source quality; assay hit is not a direct target | Primary structure index; assay-level review required |
+| ChEBI 2.0 | Ontology, chemical classes, stable IDs | Curated ontology; monthly releases and nightly ontology; 2.0 launched 2025 | REST; TSV/SDF/OWL/PostgreSQL | Not a food-exposure or activity authority | Use with PubChem for identity/classification |
+| HMDB | Human metabolites, biofluids, metabolic enzymes | Curated/predicted mix; v5.0 (2022) | XML/SDF/MetaboCard | Predicted and measured content coexist; aging release | Metabolite discovery; trace concentrations to papers |
+| Exposome-Explorer | Dietary biomarkers and microbiome-derived metabolites | Manually curated; Release 4.0 cited and site actively updated | Web/downloads | Publication and population coverage bias | Strong exposure/metabolite support; not efficacy evidence |
+| BindingDB | Quantitative protein–ligand affinity | Curated plus imports; 2026-09 dump updated 2026-08-30 | TSV/SDF/MySQL | Assay and construct heterogeneity; record alone does not guarantee T1 | Strong target discovery source followed by primary review |
+| ChEMBL | Bioactivity and target candidates | Curated/standardized; ChEMBL 36 (2026-01) | API and database/SDF downloads | Requires assay and target confidence filters; IC50 is not binding | Recommended for batch discovery with primary adjudication |
+| IUPHAR/BPS GtoPdb | High-precision ligand–target pharmacology | Expert curated; release 2026.3 on 2026-09-16 | REST, CSV/TSV, RDF, PostgreSQL | Narrower natural-food coverage and pharmacology bias | Strong high-precision cross-check |
+| PubChem BioAssay | Assay/activity leads | Aggregated and continuous | PUG REST/download | Assay level, confirmation, and interference vary | Discovery only until assay/counterscreen review |
+| UniProt | Protein identity, species, function, accession | Swiss-Prot curated plus TrEMBL automated; frequent releases | REST/download | Functional annotation is not compound binding | Required normalization source, not relation proof |
+| DrugBank | Drug, metabolism, and target supplement | Curated/commercial; 5.1.22; academic bulk paused at audit | Registration/license; reproducibility constraints | Drug bias and access/license dependency | Optional only; pipeline must not depend on it |
+| CTD | Chemical–gene regulation/toxicology | Curated plus inferred associations; generally monthly | Downloadable | Many interactions are regulatory; inferred networks inflate targets | T4/association discovery only; never auto-promote to T1/T2 |
+| STITCH 5 | Chemical–protein network discovery | Integrated literature/database/prediction; major v5 (2016) | Historical download/API; current availability to verify | Old and mixed evidence; score is not binding | Discovery/cross-check only |
+| SwissTargetPrediction | Predicted target candidates | Similarity model; principal public model/data 2019 | Web and validation dataset; no guaranteed stable bulk API | Chemical-space and training-set bias | T5 only |
+| PDB | Structural binding evidence | Primary structural archive; continuous | API/download | Ligand identity, density, crystallization, and covalency require review | T1 structural evidence after manual QC |
+| PubMed | Human, mechanism, PK, safety, target literature | MEDLINE plus publisher records; continuous | E-utilities/API | Some food-chemistry journals absent; publication bias | Core source with full reproducible queries |
+| Crossref | DOI and bibliographic completion | Publisher metadata; dynamic | REST API | Not an effect-evidence database | Deduplication/metadata only |
+
+Recommended formal stack: Phenol-Explorer + USDA + FooDB + regional composition sources for generation, normalized with PubChem/ChEBI; quantitative composition multiplied by EFSA/WWEIA/national consumption for exposure; human PK papers plus Phenol-Explorer/HMDB/Exposome-Explorer for metabolites; GtoPdb, BindingDB, ChEMBL, PDB, and PubChem BioAssay followed by primary-paper review for targets; CTD/STITCH for T4/discovery; SwissTargetPrediction and docking for T5 only.
+
+New audit findings include modern REST and monthly products in ChEBI 2.0; GtoPdb 2026.3 as the newest verified expert-curated release; reproducible BindingDB 2026-09 bulk files; a materially older FooDB bulk release; temporary suspension of DrugBank academic bulk access; ROBINS-I V2 released in November 2025; and the particular value of Exposome-Explorer for dietary biomarkers and gut microbial metabolites.
