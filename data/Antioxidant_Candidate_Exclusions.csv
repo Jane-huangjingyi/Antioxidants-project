@@ -1,0 +1,13 @@
+﻿compound,proposed_class,exclusion_reason,supplement_dominant,medicinal_only,structure_unclear,mixture,endogenous_only,metabolite_only,insufficient_food_occurrence,notes
+Enterodiol,Polyphenols–Stilbenes / lignans,"human/microbial metabolite, not dietary parent",0,0,0,0,0,1,0,Keep in metabolite layer.
+Enterolactone,Polyphenols–Stilbenes / lignans,"human/microbial metabolite, not dietary parent",0,0,0,0,0,1,0,Keep in metabolite layer.
+Total polyphenols,Polyphenols,mixture/aggregate variable,0,0,1,1,0,0,0,No unique chemical identity.
+Total carotenoids,Carotenoids,mixture/aggregate variable,0,0,1,1,0,0,0,No unique chemical identity.
+Grape seed extract,Polyphenols,uncharacterized/variable mixture,1,0,0,1,0,0,0,Extract-level material.
+Green tea extract,Polyphenols–Flavonoids,uncharacterized/variable mixture,1,0,0,1,0,0,0,Individual catechins handled separately.
+Glutathione,Endogenous antioxidant,endogenous-only for main-source classification,0,0,0,0,1,0,0,"Can be context node, not dietary-parent main universe."
+Uric acid,Endogenous antioxidant,endogenous metabolite,0,0,0,0,1,1,0,Not dietary parent.
+N-acetylcysteine,Other,supplement/drug dominant,1,0,0,0,0,0,1,Not normal dietary parent.
+Baicalin,Polyphenols–Flavonoids,medicinal-plant dominant; normal dietary exposure not established,1,1,0,0,0,0,1,Excluded from main dietary universe.
+Silymarin,Other polyphenols,mixture and supplement/medicinal dominant,1,1,0,1,0,0,1,Not a single defined dietary entity.
+Resveratrol supplement blend,Other polyphenols,supplement mixture,1,0,0,1,0,0,0,trans-Resveratrol handled separately.
