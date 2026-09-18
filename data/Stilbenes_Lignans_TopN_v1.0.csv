@@ -1,0 +1,3 @@
+rank,compound,subclass,normalized_value,normalized_unit,eligible_record_count,confidence,stability,DOI,exact_location,major_caveat,ranking_status
+1,trans-Resveratrol,Stilbenes,5.811,mol TE/mol compound,1,Low,Fragile,10.1093/chromsci/bmad007,Table I; Materials/Methods and supplementary methods,single study; cosolvent/solubility-sensitive,Top available / all rankable
+2,Sesamol,Dietary parent lignans,2.107,mol TE/mol compound,1,Low,Fragile,10.1039/D1RA08918H,Table 1; standardized H-ORAC SOP,single study,Top available / all rankable

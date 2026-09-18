@@ -157,3 +157,15 @@ Phase 3 是 class-specific Top-N ranking；Phase 4A 是 Global Top Overview，�
 **Output：**aqueous candidate master 157 行；统一证据表 109 行；paper summary 25 个去重论文单元，其中 24 个有 DOI；micronutrient redox profile 7 行；建立水相 Atlas 分层图目录及 5 张 overview 图。当前数值排名没有重算或改名次，脂相数据没有删除。
 
 **Interpretation：**本阶段完成的是 active-scope reset 与 provenance consolidation，不是新的跨类别排名。只有 flavonoids、phenolic acids/conjugates 和 vitamin C 的 current ranking 可以由 record-level 数据逆向追溯；其余水相类别仍是 future staged review。**Limitation：**一个历史 figure-only supporting source 仍缺 DOI；若干 Zotero keys 仍为 `pending_local_import`；preliminary anchor literature 不等于 systematic coverage。**Next step：**完成双人复核和 Zotero 补录后，再按 class 分阶段开展 systematic primary-literature extraction。
+
+## Stage 24 — Complete Aqueous Class-Specific Ranking
+
+**Purpose：**在不改变 Stage 23 冻结候选宇宙的前提下，为所有 active aqueous classes 完成可审计的 class-specific ranking 或科学合理的 profile-only 输出，并形成统一图包。**Scope：**固定 157 个 candidates；本阶段不得新增候选，检索发现的潜在漏项仅写入 `Future_Candidate_Additions_Log.csv`。Flavonoids、phenolic acids/conjugates 与 Vitamin C 沿用已冻结主构念和排名；stilbenes/lignans 与 other aqueous phytochemicals 的方法学一致 H-ORAC subpanel允许数值排序；betalains、organosulfur、metal-ion mechanisms 与 micronutrients 保留独立 profile。暂停的 carotenoid、Vitamin E 和其他 lipid-phase outputs继续保留，但不扩展。
+
+**Primary constructs and systematic status：**H-ORAC-FL只用于方法学可比的水相direct-capacity records；betalain pigments采用 LOX-FL 与 MPO/HOCl assay-specific profile；organosulfur采用 KEAP1/NRF2、thiol chemistry、Fenton 与 radical-kinetic profile；metal层严格区分binding/chelation、metal reduction、Fenton/Fenton-like suppression与net oxidative endpoint；micronutrients按cofactor、人体验证和促氧化/毒性context呈现。Stage 24 对67个尚未完成panel candidates逐一记录检索，另外90个已完成panel candidates继承Stage23结构化证据，最终形成157行检索日志。Review只用于发现原始研究，不直接决定rank。
+
+**Ranking and figure outputs：**stilbenes/lignans仅2个候选具有B1数值，输出 trans-resveratrol、sesamol 的Top available 2；other aqueous phytochemicals仅在mechanistically coherent H-ORAC subpanel输出 zingerone、eugenol、tyrosol、carvacrol、thymol 的Top available 5。两榜均为Low/Fragile single-study evidence。Betalains与organosulfur不强制生成虚假统一榜。统一evidence master扩展至130行，paper summary扩展至34个DOI/source units。Atlas目录00–09及99_methods_qc均有图或状态说明；overview只显示within-panel位置，不产生global antioxidant scale。
+
+**Metal/mineral handling：**metal evidence master包含8条机制记录，micronutrient v2 profile包含Se、Zn、Mn、Cu、Fe、Mg、Mo共7个节点；两者均不进入ORAC排序。**Limitations：**新增可排名类别没有Tier A，且全部数值记录为single-study B1；betalain存在光学与pH依赖，organosulfur不同构念不可合并；metal oxidation state和net endpoint需要第二研究者核对；一个legacy figure-only source仍无DOI，部分Zotero key仍待本地导入。
+
+**HUMAN REVIEW REQUIRED：**Podophyllotoxin的正常膳食与aqueous-scope gate、Probetanin缺失的PubChem CID/InChIKey、Ubiquinone-10的aqueous-scope合理性均未被Codex静默修改；betalain optical QC、organosulfur dietary gates以及Fe/Cu oxidation-state annotations也需人工裁决。**Next step：**研究者先审核上述事项、single-study榜与图包，再决定是否扩充原始文献或冻结下游实验/target-mapping输入；Stage 24不自动进入target mapping、global score或lipid expansion。

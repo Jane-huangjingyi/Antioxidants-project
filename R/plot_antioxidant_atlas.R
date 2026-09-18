@@ -490,3 +490,87 @@ for(spec in list(c("Polyphenols - Flavonoids","01_flavonoids","Flavonoids"),c("P
 }
 
 message("Generated Stage 23 aqueous-atlas figures in: ",aqueous_root)
+
+# =====================================================
+# STAGE 24 — COMPLETE AQUEOUS CLASS OUTPUT PACKAGE
+# =====================================================
+stage24_overview <- read_csv(file.path(root,"data","Supervisor_Aqueous_Class_Ranking_Overview.csv"),show_col_types=FALSE)
+stage24_candidates <- read_csv(file.path(root,"data","Aqueous_Antioxidant_Candidate_Master.csv"),show_col_types=FALSE)
+stage24_papers <- read_csv(file.path(root,"data","Aqueous_Antioxidant_Paper_Summary.csv"),show_col_types=FALSE)
+stil_rank <- read_csv(file.path(root,"data","Stilbenes_Lignans_TopN_v1.0.csv"),show_col_types=FALSE)
+bet_profile <- read_csv(file.path(root,"data","Betalains_Nitrogen_Profile_Evidence.csv"),show_col_types=FALSE)
+org_profile <- read_csv(file.path(root,"data","Organosulfur_Redox_Profile.csv"),show_col_types=FALSE)
+other_rank <- read_csv(file.path(root,"data","Other_Aqueous_Phytochemicals_TopN_v1.0.csv"),show_col_types=FALSE)
+metal_evidence <- read_csv(file.path(root,"data","Aqueous_Metal_Redox_Evidence.csv"),show_col_types=FALSE)
+micro_v2 <- read_csv(file.path(root,"data","Antioxidant_Micronutrient_Redox_Profile_v2.csv"),show_col_types=FALSE)
+
+p35 <- stage24_overview %>% filter(!is.na(within_class_percentile),within_class_rank<=5) %>%
+  mutate(stability_simple=case_when(str_detect(stability,"Fragile") ~ "Fragile",str_detect(stability,"Moderate") ~ "Moderately stable",TRUE ~ "Stable")) %>%
+  mutate(compound=factor(compound,levels=rev(unique(compound[order(analysis_subpanel,within_class_rank)])))) %>%
+  ggplot(aes(within_class_percentile,compound,color=confidence,shape=stability_simple))+geom_point(size=POINT_SIZE+1)+
+  facet_wrap(~analysis_subpanel,scales="free_y",ncol=2)+scale_color_manual(values=CONFIDENCE_COLORS,drop=FALSE)+
+  scale_shape_manual(values=c(Stable=16,`Moderately stable`=17,Fragile=18),drop=FALSE)+scale_x_continuous(limits=c(0,100))+theme_atlas+
+  labs(title="Aqueous class-specific ranking overview",subtitle="Top five per rankable panel; percentiles are within panel and do not represent a global antioxidant scale",x="Within-panel percentile",y=NULL,color="Confidence",shape="Stability")
+save_aqueous(p35,"00_overview","Aqueous_All_Classes_Ranking_Overview",14,12)
+
+coverage24 <- stage24_candidates %>% count(analysis_panel,name="candidate_N") %>% left_join(stage24_overview %>% group_by(analysis_panel) %>% summarise(rankable_N=max(rankable_N),displayed_N=n(),.groups="drop"),by="analysis_panel") %>% mutate(rankable_N=replace_na(rankable_N,0),displayed_N=replace_na(displayed_N,0)) %>% pivot_longer(c(candidate_N,rankable_N,displayed_N),names_to="measure",values_to="N")
+p36 <- ggplot(coverage24,aes(N,fct_reorder(analysis_panel,N,.fun=max),fill=measure))+geom_col(position="dodge")+theme_atlas+
+  labs(title="Aqueous class coverage overview",subtitle="The frozen universe remains 157 candidates; zero rankable means a justified profile-only output",x="Count",y=NULL,fill="Coverage")
+save_aqueous(p36,"00_overview","Aqueous_Class_Coverage_Overview",14,8)
+
+paper24 <- stage24_papers %>% count(class_coverage,primary_or_supporting,name="papers")
+p37 <- ggplot(paper24,aes(papers,fct_reorder(class_coverage,papers,.fun=sum),fill=primary_or_supporting))+geom_col()+theme_atlas+
+  labs(title="Aqueous primary-literature coverage",subtitle="Paper count documents provenance and does not measure antioxidant strength",x="Original-paper units",y=NULL,fill="Paper role")
+save_aqueous(p37,"00_overview","Aqueous_Primary_Literature_Coverage",14,8)
+
+conf24 <- stage24_overview %>% count(analysis_subpanel,confidence,name="compounds")
+p38 <- ggplot(conf24,aes(compounds,fct_reorder(analysis_subpanel,compounds,.fun=sum),fill=confidence))+geom_col()+geom_text(aes(label=compounds),position=position_stack(vjust=.5),color="white",size=LABEL_SIZE)+scale_fill_manual(values=CONFIDENCE_COLORS,drop=FALSE)+theme_atlas+labs(title="Aqueous evidence-confidence overview",subtitle="Confidence is not combined with chemical-capacity magnitude",x="Ranked compounds",y=NULL,fill="Confidence")
+save_aqueous(p38,"00_overview","Aqueous_Evidence_Confidence_Overview",13,7)
+
+plot_topn <- function(d,title,subtitle,subdir,file){
+ p <- d %>% mutate(compound=fct_reorder(compound,normalized_value)) %>% ggplot(aes(normalized_value,compound,color=subclass,shape=confidence))+geom_point(size=POINT_SIZE+1)+geom_text(aes(label=paste0("n=",eligible_record_count)),nudge_x=.1,size=LABEL_SIZE-0.3)+theme_atlas+labs(title=title,subtitle=subtitle,x="H-ORAC-FL (mol TE/mol compound)",y=NULL,color="Subclass",shape="Confidence")
+ save_aqueous(p,subdir,file,11,6)
+}
+plot_topn(stil_rank,"Stilbenes / lignans: Top available","Two B1 single-study estimates; remaining frozen candidates were not assigned zero","03_stilbenes_lignans","Stilbenes_Lignans_TopN")
+p39 <- ggplot(stil_rank,aes(eligible_record_count,normalized_value,label=compound,color=confidence))+geom_point(size=POINT_SIZE+1)+geom_text(nudge_x=.03,size=LABEL_SIZE)+scale_color_manual(values=CONFIDENCE_COLORS)+theme_atlas+labs(title="Stilbenes / lignans evidence depth",subtitle="Magnitude and evidence depth remain separate",x="Eligible independent records",y="mol TE/mol")
+save_aqueous(p39,"03_stilbenes_lignans","Stilbenes_Lignans_Evidence_Depth",9,5)
+save_aqueous(p39+labs(title="Stilbenes / lignans evidence confidence"),"03_stilbenes_lignans","Stilbenes_Lignans_Evidence_Confidence",9,5)
+
+stil_cov <- read_csv(file.path(root,"data","Stilbenes_Lignans_Evidence_Master.csv"),show_col_types=FALSE) %>%
+  mutate(status=case_when(rank_eligible=="yes" ~ "B1 eligible",evidence_tier=="B2" ~ "B2 only",TRUE ~ "No eligible quantitative record")) %>% count(status,name="candidates")
+p39b <- ggplot(stil_cov,aes(candidates,fct_reorder(status,candidates),fill=status))+geom_col()+geom_text(aes(label=candidates),hjust=-.2,size=LABEL_SIZE)+theme_atlas+theme(legend.position="none")+labs(title="Stilbenes / lignans primary-literature coverage",subtitle="Frozen candidate panel; search findings do not add candidates",x="Candidates",y=NULL)
+save_aqueous(p39b,"03_stilbenes_lignans","Stilbenes_Lignans_Primary_Literature_Coverage",10,5)
+
+bet_plot <- bet_profile %>% filter(!is.na(DOI)) %>% distinct(compound,assay,construct,evidence_tier) %>% mutate(label=paste(compound,assay,sep=" | "))
+p40 <- ggplot(bet_plot,aes(evidence_tier,fct_reorder(label,evidence_tier),color=assay))+geom_point(size=POINT_SIZE+1)+theme_atlas+labs(title="Betalain assay-specific evidence profile",subtitle="No raw-value TopN: LOX-FL and MPO/HOCl kinetics answer different questions",x="Evidence tier / role",y=NULL,color="Assay")
+save_aqueous(p40,"05_betalains","Betalains_Profile_Comparison",12,6)
+
+org_plot <- org_profile %>% filter(!is.na(DOI)) %>% distinct(compound,assay,construct,evidence_tier) %>% mutate(label=paste(compound,assay,sep=" | "))
+p41 <- ggplot(org_plot,aes(evidence_tier,fct_reorder(label,evidence_tier),color=compound))+geom_point(size=POINT_SIZE+1)+theme_atlas+labs(title="Organosulfur redox-mechanism profile",subtitle="KEAP1 sensing, thiol chemistry, Fenton and radical kinetics are retained as separate constructs",x="Evidence tier / role",y=NULL,color="Compound")
+save_aqueous(p41,"06_organosulfur","Organosulfur_Redox_Mechanism_Profile",13,7)
+
+plot_topn(other_rank,"Other aqueous phytochemicals: H-ORAC-compatible subpanel","Top available five; profile-only quinones/olive phenolics/curcumin are excluded from this raw axis","07_other_aqueous_phytochemicals","Other_Aqueous_TopN")
+p42 <- ggplot(other_rank,aes(eligible_record_count,normalized_value,label=compound,color=confidence))+geom_point(size=POINT_SIZE+1)+geom_text(nudge_x=.03,size=LABEL_SIZE)+scale_color_manual(values=CONFIDENCE_COLORS)+theme_atlas+labs(title="Other aqueous phytochemicals: evidence depth",subtitle="All current H-ORAC entries are single-study estimates",x="Eligible independent records",y="mol TE/mol")
+save_aqueous(p42,"07_other_aqueous_phytochemicals","Other_Aqueous_Evidence_Depth",10,6)
+save_aqueous(p42+labs(title="Other aqueous phytochemicals: evidence confidence"),"07_other_aqueous_phytochemicals","Other_Aqueous_Evidence_Confidence",10,6)
+
+other_cov <- read_csv(file.path(root,"data","Other_Aqueous_Phytochemicals_Evidence_Master.csv"),show_col_types=FALSE) %>%
+  mutate(status=case_when(rank_eligible=="yes" ~ "B1 eligible",evidence_tier=="B2" ~ "B2 only",TRUE ~ "Profile or missing")) %>% count(status,name="candidates")
+p42b <- ggplot(other_cov,aes(candidates,fct_reorder(status,candidates),fill=status))+geom_col()+geom_text(aes(label=candidates),hjust=-.2,size=LABEL_SIZE)+theme_atlas+theme(legend.position="none")+labs(title="Other aqueous phytochemicals literature coverage",subtitle="Ranking is limited to the coherent H-ORAC subpanel",x="Candidates",y=NULL)
+save_aqueous(p42b,"07_other_aqueous_phytochemicals","Other_Aqueous_Primary_Literature_Coverage",10,5)
+
+metal_heat <- metal_evidence %>% count(compound,metal_ion,evidence_strength,name="records")
+p43 <- ggplot(metal_heat,aes(metal_ion,compound,size=records,color=evidence_strength))+geom_point()+scale_color_manual(values=CONFIDENCE_COLORS,drop=FALSE)+theme_atlas+labs(title="Metal-chelation evidence overview",subtitle="Coverage matrix; point size is record count, not effect strength",x="Metal system",y=NULL,color="Evidence",size="Records")
+save_aqueous(p43,"08_metal_chelation","Metal_Chelation_Evidence_Overview",11,7)
+p44 <- metal_evidence %>% ggplot(aes(oxidation_state,fct_reorder(compound,evidence_strength),color=evidence_strength))+geom_point(size=POINT_SIZE+1)+geom_text(aes(label=chelation_or_reduction),nudge_y=.18,size=LABEL_SIZE-0.6,color="#333333")+scale_color_manual(values=CONFIDENCE_COLORS,drop=FALSE)+theme_atlas+theme(axis.text.x=element_text(angle=20,hjust=1))+labs(title="Fe/Cu Fenton-suppression profile",subtitle="Binding, reduction and net oxidative endpoints are not interchangeable",x="Oxidation-state context",y=NULL,color="Evidence")
+save_aqueous(p44,"08_metal_chelation","Fe_Cu_Fenton_Suppression_Profile",15,8)
+file.copy(file.path(aqueous_root,"00_overview","Aqueous_Metal_Redox_Framework.png"),file.path(aqueous_root,"08_metal_chelation","Metal_Redox_Mechanism_Framework.png"),overwrite=TRUE)
+
+p45 <- micro_v2 %>% mutate(nutrient=fct_reorder(nutrient,evidence_strength)) %>% ggplot(aes(evidence_strength,nutrient,color=evidence_strength))+geom_point(size=POINT_SIZE+1)+scale_color_manual(values=CONFIDENCE_COLORS,drop=FALSE)+theme_atlas+theme(legend.position="none")+labs(title="Micronutrient redox profile",subtitle="Evidence strength describes profile support, not antioxidant capacity",x="Evidence strength",y=NULL)
+save_aqueous(p45,"09_micronutrients","Micronutrient_Redox_Profile",10,6)
+p46 <- micro_v2 %>% ggplot(aes(key_antioxidant_enzyme,fct_reorder(nutrient,key_antioxidant_enzyme),color=nutrient))+geom_point(size=POINT_SIZE+1)+theme_atlas+theme(legend.position="none",axis.text.x=element_text(angle=30,hjust=1))+labs(title="Micronutrient antioxidant-enzyme map",subtitle="Minerals are cofactors/context nodes and are not ranked by ORAC",x="Enzyme / redox system",y=NULL)
+save_aqueous(p46,"09_micronutrients","Micronutrient_Antioxidant_Enzyme_Map",12,7)
+p47 <- micro_v2 %>% ggplot(aes(prooxidant_context,fct_reorder(nutrient,prooxidant_context),color=evidence_strength))+geom_point(size=POINT_SIZE+1)+scale_color_manual(values=CONFIDENCE_COLORS,drop=FALSE)+theme_atlas+theme(axis.text.x=element_text(angle=25,hjust=1))+labs(title="Micronutrient prooxidant and toxicity context",subtitle="Dose and baseline status can reverse interpretation",x="Risk context",y=NULL,color="Evidence")
+save_aqueous(p47,"09_micronutrients","Micronutrient_Prooxidant_Context",13,7)
+
+message("Generated Stage 24 aqueous class and profile figures in: ",aqueous_root)
