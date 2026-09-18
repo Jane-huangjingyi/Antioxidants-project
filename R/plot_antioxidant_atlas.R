@@ -24,7 +24,9 @@ SUBCLASS_COLORS <- c(
   "Flavan-3-ols"="#4C78A8", "Flavonols"="#F58518", "Flavonol glycosides"="#ECA82C",
   "Flavones"="#54A24B", "Flavone glycosides"="#8CD17D", "Flavanones"="#B279A2",
   "Flavanone glycosides"="#D4A6C8", "Anthocyanidins"="#E45756", "Anthocyanins"="#FF9DA6",
-  "Isoflavones"="#79706E", "Isoflavone glycosides"="#BAB0AC"
+  "Isoflavones"="#79706E", "Isoflavone glycosides"="#BAB0AC",
+  "Hydroxybenzoic acids"="#4C78A8", "Hydroxycinnamic acids"="#F58518",
+  "Caffeoylquinic and related acids"="#54A24B", "Other defined phenolic conjugates"="#B279A2"
 )
 
 PANEL_ORDER <- c(            # facet/panel display order
@@ -50,6 +52,11 @@ CLASS_COLORS <- c(           # restrained parent-class palette
 )
 
 STATUS_COLORS <- c("eligible"="#4C956C","excluded"="#C95D63","unresolved"="#E6AA68")
+CONFIDENCE_COLORS <- c("Low"="#D98C3F","Moderate"="#4C78A8","High"="#3A8D5D","Very low"="#A6A6A6")
+STABILITY_COLORS <- c("Stable"="#3A8D5D","Moderately stable"="#4C78A8","Fragile"="#D98C3F")
+CAROTENOID_COLORS <- c("Carotenes"="#D89000","Xanthophylls"="#2A9D8F")
+ENVIRONMENT_COLORS <- c("homogeneous organic solvent"="#D89000","aqueous micelle"="#4C78A8","liposome"="#2A9D8F","membrane-like system"="#8E6C8A","biological membrane / lipoprotein"="#6B705C")
+PRIMARY_CONSTRUCT_COLORS <- c("H-ORAC-FL"="#4C78A8","singlet-oxygen kq"="#D89000")
 
 # =====================================================
 # DEPENDENCIES, INPUT AND THEME
@@ -67,6 +74,14 @@ taxonomy_path <- file.path(root,"data","Antioxidant_Taxonomy_Relationships.csv")
 exclusion_path <- file.path(root,"data","Antioxidant_Candidate_Exclusions.csv")
 top20_path <- file.path(root,"data","Polyphenols_Flavonoids_Top20_v1.0.csv")
 coverage_path <- file.path(root,"data","Flavonoid_Ranking_Coverage.csv")
+phenolic_topn_path <- file.path(root,"data","Polyphenols_PhenolicAcids_TopN_v1.0.csv")
+phenolic_coverage_path <- file.path(root,"data","PhenolicAcid_Ranking_Coverage.csv")
+global_overview_path <- file.path(root,"data","Global_Top_Overview_Master_v0.1.csv")
+global_overview_v02_path <- file.path(root,"data","Global_Top_Overview_Master_v0.2.csv")
+comparability_path <- file.path(root,"data","Cross_Class_Comparability_Matrix_v0.1.csv")
+carotenoid_topn_path <- file.path(root,"data","Carotenoids_TopN_v1.0.csv")
+carotenoid_evidence_path <- file.path(root,"data","Carotenoid_Singlet_Oxygen_Evidence_Master.csv")
+carotenoid_lipid_path <- file.path(root,"data","Carotenoid_LipidPhase_Evidence_Profile.csv")
 outdir <- file.path(root,"figures"); dir.create(outdir,showWarnings=FALSE,recursive=TRUE)
 
 candidates <- read_csv(candidate_path,show_col_types=FALSE)
@@ -74,6 +89,14 @@ taxonomy <- read_csv(taxonomy_path,show_col_types=FALSE)
 exclusions <- read_csv(exclusion_path,show_col_types=FALSE)
 top20 <- read_csv(top20_path,show_col_types=FALSE)
 coverage <- read_csv(coverage_path,show_col_types=FALSE)
+phenolic_topn <- read_csv(phenolic_topn_path,show_col_types=FALSE)
+phenolic_coverage <- read_csv(phenolic_coverage_path,show_col_types=FALSE)
+global_overview <- read_csv(global_overview_path,show_col_types=FALSE)
+global_overview_v02 <- read_csv(global_overview_v02_path,show_col_types=FALSE)
+comparability <- read_csv(comparability_path,show_col_types=FALSE)
+carotenoid_topn <- read_csv(carotenoid_topn_path,show_col_types=FALSE)
+carotenoid_evidence <- read_csv(carotenoid_evidence_path,show_col_types=FALSE)
+carotenoid_lipid <- read_csv(carotenoid_lipid_path,show_col_types=FALSE)
 
 theme_atlas <- theme_minimal(base_family=BASE_FAMILY,base_size=BASE_SIZE)+theme(plot.title=element_text(size=TITLE_SIZE,face="bold"),plot.subtitle=element_text(color="#555555"),panel.grid.minor=element_blank(),legend.position=LEGEND_POSITION,strip.text=element_text(face="bold"))
 save_atlas <- function(p,name,w=WIDTH,h=HEIGHT){ggsave(file.path(outdir,paste0(name,".",OUTPUT_FORMAT)),p,width=w,height=h,dpi=DPI,bg="white")}
@@ -147,4 +170,139 @@ p8 <- ggplot(top20,aes(eligible_record_count,median_H_ORAC,color=subclass))+
 if(LABEL_REPEL) p8 <- p8+geom_text_repel(aes(label=compound),size=LABEL_SIZE-0.5,max.overlaps=25,box.padding=.35)
 save_atlas(p8,"Flavonoid_Evidence_Depth_vs_ORAC",11,8)
 
-message("Generated Phase 2 universe and Phase 3A flavonoid figures in: ",outdir)
+# Phase 3B Figure A: all currently rankable phenolic acids/conjugates (Top available, N < 20).
+pa_plot <- phenolic_topn %>% mutate(compound=fct_reorder(compound,median_H_ORAC),label_n=paste0("n=",eligible_record_count))
+p9 <- ggplot(pa_plot,aes(median_H_ORAC,compound,color=subclass))+
+  geom_errorbar(aes(xmin=min,xmax=max),width=.18,linewidth=LINE_WIDTH,alpha=.65,orientation="y")+
+  geom_point(size=POINT_SIZE)+geom_text(aes(label=label_n),hjust=-.45,size=LABEL_SIZE-0.35,color="#333333")+
+  scale_color_manual(values=SUBCLASS_COLORS,drop=FALSE)+theme_atlas+
+  scale_x_continuous(limits=X_LIMITS,expand=expansion(mult=c(.03,.14)))+
+  labs(title="Phenolic acids / conjugates Top available v1.0",subtitle="Exploratory literature-derived H-ORAC-FL medians; eligible compounds = 18, so no Top20 is claimed",x="H-ORAC-FL (mol TE/mol compound)",y=NULL,color="Subclass")
+save_atlas(p9,"PhenolicAcid_TopN_H_ORAC",12,9)
+
+# Phase 3B Figure B: confidence is deliberately separate from ORAC magnitude.
+p10 <- phenolic_topn %>% mutate(confidence=factor(confidence,levels=confidence_levels),compound=fct_reorder(compound,rank,.desc=TRUE)) %>%
+  ggplot(aes(confidence,compound,color=confidence))+geom_point(size=POINT_SIZE+1)+
+  geom_text(aes(label=paste0("n=",eligible_record_count)),nudge_x=.18,size=LABEL_SIZE-0.3,color="#333333")+
+  scale_color_manual(values=c(Low="#D98C3F",Moderate="#4C78A8",High="#3A8D5D"),drop=FALSE)+theme_atlas+theme(legend.position="none")+
+  labs(title="Evidence confidence of phenolic-acid Top available",subtitle="Confidence reflects eligible independent evidence depth and heterogeneity",x="Evidence confidence",y=NULL)
+save_atlas(p10,"PhenolicAcid_Evidence_Confidence",10,9)
+
+# Phase 3B Figure C: subclass coverage funnel.
+pa_subclass_levels <- phenolic_coverage %>% arrange(universe_N) %>% pull(subclass)
+pa_cov_long <- phenolic_coverage %>% select(subclass,universe_N,ranking_eligible_N,TopN_N) %>%
+  pivot_longer(-subclass,names_to="stage",values_to="N") %>%
+  mutate(subclass=factor(subclass,levels=pa_subclass_levels),stage=factor(stage,levels=c("universe_N","ranking_eligible_N","TopN_N"),labels=c("Universe","Eligibility lock","Top available")))
+p11 <- ggplot(pa_cov_long,aes(N,subclass,fill=stage))+geom_col(position=position_dodge(width=.78),width=.72)+
+  scale_fill_manual(values=c(Universe="#C9D5E3","Eligibility lock"="#4C78A8","Top available"="#F58518"))+theme_atlas+
+  labs(title="Phenolic-acid subclass coverage",subtitle="Coverage is audited without imposing subclass quotas",x="Candidate count",y=NULL,fill=NULL)
+save_atlas(p11,"PhenolicAcid_Subclass_Coverage",11,7)
+
+# Phase 3B Figure D: evidence depth versus capacity.
+p12 <- ggplot(phenolic_topn,aes(eligible_record_count,median_H_ORAC,color=subclass))+geom_point(size=POINT_SIZE,alpha=.9)+
+  scale_color_manual(values=SUBCLASS_COLORS,drop=FALSE)+theme_atlas+scale_x_continuous(breaks=pretty_breaks())+
+  labs(title="Phenolic-acid evidence depth versus H-ORAC-FL",subtitle="High single-study estimates and heterogeneous medians require separate interpretation",x="Eligible independent A/B1 records",y="Median H-ORAC-FL (mol TE/mol)",color="Subclass")
+if(LABEL_REPEL) p12 <- p12+geom_text_repel(aes(label=compound),size=LABEL_SIZE-0.5,max.overlaps=25,box.padding=.35)
+save_atlas(p12,"PhenolicAcid_Evidence_Depth_vs_ORAC",11,8)
+
+# Phase 3B Figure E: simple rank sensitivity without constructing a composite score.
+s_primary <- phenolic_topn %>% transmute(compound,scenario="Primary A/B1",scenario_rank=rank)
+s_n2 <- phenolic_topn %>% filter(eligible_record_count>=2) %>% arrange(desc(median_H_ORAC)) %>% mutate(scenario_rank=row_number()) %>% transmute(compound,scenario="n >= 2 only",scenario_rank)
+s_hetero <- phenolic_topn %>% filter(heterogeneity_flag!="high") %>% arrange(desc(median_H_ORAC)) %>% mutate(scenario_rank=row_number()) %>% transmute(compound,scenario="Exclude high heterogeneity",scenario_rank)
+sensitivity <- bind_rows(s_primary,s_n2,s_hetero) %>% mutate(scenario=factor(scenario,levels=c("Primary A/B1","n >= 2 only","Exclude high heterogeneity")))
+p13 <- ggplot(sensitivity,aes(scenario,scenario_rank,group=compound,color=compound))+geom_line(linewidth=LINE_WIDTH,alpha=.55)+geom_point(size=POINT_SIZE-0.4)+
+  scale_y_reverse(breaks=pretty_breaks())+theme_atlas+theme(legend.position="none",axis.text.x=element_text(angle=15,hjust=1))+
+  labs(title="Phenolic-acid Top-N sensitivity",subtitle="Rank trajectories under evidence-depth and heterogeneity restrictions; missing points indicate exclusion",x=NULL,y="Scenario-specific rank")
+p13 <- p13+geom_text(data=sensitivity %>% filter(scenario=="Primary A/B1"),aes(label=compound),hjust=1.08,nudge_x=-.02,size=LABEL_SIZE-0.75,show.legend=FALSE)
+save_atlas(p13,"PhenolicAcid_TopN_Sensitivity",11,8)
+
+# Stage 20 Figure 1: class leaders shown on a within-class percentile axis, never on a mixed capacity axis.
+global_leaders <- global_overview %>% group_by(analysis_panel) %>% arrange(within_class_rank,.by_group=TRUE) %>% slice_head(n=5) %>% ungroup() %>%
+  mutate(compound=factor(compound,levels=rev(unique(compound[order(analysis_panel,within_class_rank)]))))
+p14 <- ggplot(global_leaders,aes(within_class_percentile,compound,color=confidence,shape=evidence_stability))+
+  geom_point(size=POINT_SIZE+1)+facet_wrap(~analysis_panel,scales="free_y",ncol=1)+
+  scale_color_manual(values=CONFIDENCE_COLORS,drop=FALSE)+scale_shape_manual(values=c(Stable=16,`Moderately stable`=17,Fragile=18),drop=FALSE)+
+  scale_x_continuous(limits=c(0,100),breaks=seq(0,100,20))+theme_atlas+
+  labs(title="Global Overview class leaders",subtitle="Top five per panel; x-axis is within-class percentile, not a cross-class antioxidant magnitude",x="Within-class percentile",y=NULL,color="Confidence",shape="Evidence stability")
+save_atlas(p14,"Global_Overview_Class_Leaders",12,8)
+
+# Stage 20 Figure 2: evidence stability across all 38 schema rows.
+global_stability <- global_overview %>% arrange(analysis_panel,desc(within_class_rank)) %>% mutate(compound=factor(compound,levels=unique(compound)))
+p15 <- ggplot(global_stability,aes(within_class_rank,compound,color=evidence_stability))+
+  geom_point(size=POINT_SIZE)+facet_wrap(~analysis_panel,scales="free_y",ncol=2)+
+  scale_color_manual(values=STABILITY_COLORS,drop=FALSE)+scale_x_continuous(breaks=pretty_breaks())+theme_atlas+
+  theme(axis.text.y=element_text(size=BASE_SIZE-2))+labs(title="Evidence stability in the Global Overview schema",subtitle="Stability describes estimate robustness and remains separate from H-ORAC magnitude",x="Within-class rank",y=NULL,color="Stability")
+save_atlas(p15,"Global_Overview_Evidence_Stability",15,10)
+
+# Stage 20 Figure 3: one categorical tile per comparison dimension.
+comparability <- comparability %>% mutate(comparison_type=factor(comparison_type,levels=c("Directly comparable","Profile comparable","Not directly comparable")),dimension=factor(dimension,levels=rev(dimension)))
+p16 <- ggplot(comparability,aes(comparison_type,dimension,fill=comparison_type))+geom_tile(width=.9,height=.82,color="white",linewidth=LINE_WIDTH)+
+  geom_text(label="APPLIES",color="white",size=LABEL_SIZE-0.35,fontface="bold")+
+  scale_fill_manual(values=c(`Directly comparable`="#3A8D5D",`Profile comparable`="#4C78A8",`Not directly comparable`="#C95D63"),drop=FALSE)+
+  theme_atlas+theme(legend.position="none",axis.text.x=element_text(angle=18,hjust=1))+labs(title="Cross-class comparability matrix",subtitle="The matrix defines valid comparison types; it does not create a global score",x=NULL,y=NULL)
+save_atlas(p16,"Cross_Class_Comparability_Matrix",12,9)
+
+# Stage 20 Figure 4: proportion of schema rows still marked Not reviewed / NA.
+missingness <- global_overview %>% transmute(analysis_panel,
+  Exposure=dietary_exposure_umol_day=="NA" | exposure_quality=="Not reviewed",
+  Bioavailability=bioavailability_summary=="Not reviewed",
+  `Human evidence`=human_evidence_level=="Not reviewed",
+  Mechanism=endogenous_defense_profile=="Not reviewed" | NRF2_GSH_GPX_profile=="Not reviewed",
+  `Direct target`=direct_target_level=="Not reviewed",
+  Safety=safety_prooxidant_context=="Not reviewed") %>%
+  pivot_longer(-analysis_panel,names_to="domain",values_to="missing") %>% group_by(analysis_panel,domain) %>% summarise(missing_pct=mean(missing)*100,.groups="drop")
+p17 <- ggplot(missingness,aes(domain,analysis_panel,fill=missing_pct))+geom_tile(color="white",linewidth=LINE_WIDTH)+geom_text(aes(label=paste0(round(missing_pct),"%")),size=LABEL_SIZE,color="#333333")+
+  scale_fill_gradient(low="#E8F0F7",high="#D98C3F",limits=c(0,100))+theme_atlas+theme(axis.text.x=element_text(angle=25,hjust=1))+
+  labs(title="Global Overview schema missingness",subtitle="Percentage of included compounds not yet systematically reviewed; Not reviewed is not No evidence",x=NULL,y=NULL,fill="Missing")
+save_atlas(p17,"Global_Overview_Schema_Missingness",12,5.5)
+
+# Phase 3C Figure A: environment-stratified direct singlet-oxygen kq.
+car_top_plot <- carotenoid_topn %>% mutate(compound=fct_reorder(compound,median_kq))
+p18 <- ggplot(car_top_plot,aes(median_kq,compound,color=subclass))+
+  geom_errorbar(aes(xmin=min,xmax=max),width=.18,linewidth=LINE_WIDTH,alpha=.65,orientation="y")+
+  geom_point(size=POINT_SIZE)+geom_text(aes(label=paste0("n=",eligible_record_count)),hjust=-.35,size=LABEL_SIZE-0.35,color="#333333")+
+  scale_color_manual(values=CAROTENOID_COLORS,drop=FALSE)+scale_x_continuous(expand=expansion(mult=c(.02,.14)))+theme_atlas+
+  labs(title="Carotenoid Top available: direct singlet-oxygen quenching",subtitle="Exploratory organic-solvent kq; environments are not pooled and N=9 does not support a Top10 claim",x=expression(paste("Median ",k[q]," (",10^9," ",M^{-1}," ",s^{-1},")")),y=NULL,color="Subclass")
+save_atlas(p18,"Carotenoid_TopN_Primary_Construct",12,7.5)
+
+# Phase 3C Figure B: confidence kept separate from magnitude.
+p19 <- carotenoid_topn %>% mutate(confidence=factor(confidence,levels=confidence_levels),compound=fct_reorder(compound,rank,.desc=TRUE)) %>%
+  ggplot(aes(confidence,compound,color=confidence))+geom_point(size=POINT_SIZE+1)+
+  geom_text(aes(label=paste0("n=",eligible_record_count)),nudge_x=.18,size=LABEL_SIZE-0.3,color="#333333")+
+  scale_color_manual(values=CONFIDENCE_COLORS,drop=FALSE)+theme_atlas+theme(legend.position="none")+
+  labs(title="Carotenoid evidence confidence",subtitle="Confidence reflects independent eligible records and heterogeneity, not kq magnitude",x="Evidence confidence",y=NULL)
+save_atlas(p19,"Carotenoid_Evidence_Confidence",10,7.5)
+
+# Phase 3C Figure C: all record environments, including the secondary membrane profile.
+env_counts <- bind_rows(
+  carotenoid_evidence %>% count(micelle_or_liposome,name="record_count") %>% rename(environment=micelle_or_liposome),
+  carotenoid_lipid %>% count(lipid_system,name="record_count") %>% transmute(environment="liposome",record_count)
+) %>% group_by(environment) %>% summarise(record_count=sum(record_count),.groups="drop")
+p20 <- ggplot(env_counts,aes(record_count,fct_reorder(environment,record_count),fill=environment))+geom_col(width=.7)+
+  geom_text(aes(label=record_count),hjust=-.25,size=LABEL_SIZE)+scale_fill_manual(values=ENVIRONMENT_COLORS,drop=FALSE)+
+  scale_x_continuous(expand=expansion(mult=c(0,.14)))+theme_atlas+theme(legend.position="none")+
+  labs(title="Carotenoid assay-environment coverage",subtitle="Only homogeneous organic-solvent direct kq currently supports a class list",x="Record/profile rows",y=NULL)
+save_atlas(p20,"Carotenoid_Environment_Coverage",10,5.5)
+
+# Phase 3C Figure D: profile-only comparison; values remain on separate facets/scales.
+profile_primary <- carotenoid_topn %>% transmute(compound,profile="Organic-solvent direct kq",value=median_kq,label=paste0(round(median_kq,3)," x10^9"))
+profile_lipid <- carotenoid_lipid %>% filter(compound %in% c("all-trans-Lycopene","all-trans-beta-Carotene")) %>%
+  separate_rows(value,sep=" / ") %>% mutate(value=as.numeric(value)) %>% group_by(compound) %>% summarise(value=median(value),.groups="drop") %>%
+  transmute(compound,profile="DPPC-liposome kq",value,label=paste0(round(value,2)," x10^9"))
+profile <- bind_rows(profile_primary,profile_lipid)
+p21 <- ggplot(profile,aes(value,fct_reorder(compound,value),color=profile))+geom_point(size=POINT_SIZE+1)+geom_text(aes(label=label),hjust=-.2,size=LABEL_SIZE-0.4)+
+  facet_wrap(~profile,scales="free",ncol=2)+scale_color_manual(values=c(`Organic-solvent direct kq`="#D89000",`DPPC-liposome kq`="#2A9D8F"))+
+  scale_x_continuous(expand=expansion(mult=c(.02,.24)))+theme_atlas+theme(legend.position="none")+
+  labs(title="Carotenoid primary and lipid-phase profiles",subtitle="Facets have independent axes; membrane and organic-solvent values are not pooled",x=expression(paste(k[q]," (",10^9," ",M^{-1}," ",s^{-1},")")),y=NULL)
+save_atlas(p21,"Carotenoid_Primary_vs_LipidPhase_Profile",13,7)
+
+# Phase 3C Figure E: mixed constructs appear only as within-class percentiles.
+global3 <- global_overview_v02 %>% group_by(analysis_panel) %>% arrange(within_class_rank,.by_group=TRUE) %>% slice_head(n=5) %>% ungroup() %>%
+  mutate(compound=factor(compound,levels=rev(unique(compound[order(analysis_panel,within_class_rank)]))))
+p22 <- ggplot(global3,aes(within_class_percentile,compound,color=confidence,shape=evidence_stability))+geom_point(size=POINT_SIZE+1)+
+  facet_wrap(~analysis_panel,scales="free_y",ncol=1)+scale_color_manual(values=CONFIDENCE_COLORS,drop=FALSE)+
+  scale_shape_manual(values=c(Stable=16,`Moderately stable`=17,Fragile=18),drop=FALSE)+scale_x_continuous(limits=c(0,100),breaks=seq(0,100,20))+theme_atlas+
+  labs(title="Global Overview with carotenoids",subtitle="Within-class percentile only; H-ORAC-FL and singlet-oxygen kq are never placed on one raw scale",x="Within-class percentile",y=NULL,color="Confidence",shape="Evidence stability")
+save_atlas(p22,"Global_Overview_With_Carotenoids",12,10)
+
+message("Generated Phase 2 through Stage 21 Phase 3C figures in: ",outdir)

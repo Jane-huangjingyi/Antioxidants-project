@@ -1,6 +1,6 @@
 # PROJECT STAGE INDEX（CN）
 
-本目录按真实科学逻辑记录 Stage 0–18。`Completed` 表示相应文件和结果确实存在；`Pilot` 或 `Provisional` 不能解释为最终结论；`Not completed` 明确保留。
+本目录按真实科学逻辑记录 Stage 0–20。`Completed` 表示相应文件和结果确实存在；`Pilot` 或 `Provisional` 不能解释为最终结论；`Not completed` 明确保留。
 
 | Stage | Stage name | Scientific question | Status | Key input | Key output | Main conclusion | Major limitation | File status |
 |---:|---|---|---|---|---|---|---|---|
@@ -23,3 +23,6 @@
 | 16 | Transition to Antioxidant Functional Factor Atlas | 本阶段如何解决其对应操作性问题？ | Framework completed; analyses not completed | Stage 0–15 历史、pilot panel 和 mechanism ledger | Antioxidant_Project_MASTER_HISTORY_AND_WORKFLOW_CN.md | 冻结 class-specific Top-N + profile-based cross-class comparison 的 Atlas 架构。 | 各类 candidate universe、正式 Top-N、完整机制综述、最终实验 panel 和 target mapping 尚未完成。 | active |
 | 17 | Phase 2 Candidate Universe Construction | 各功能类别有哪些结构明确、正常膳食来源且值得进入下一阶段的候选？ | Completed; candidate-level food reference second review pending | Taxonomy v1.0、历史 phenolic universe、PubChem identity、food-database priorities | data/Antioxidant_Class_Candidate_Master.csv | 191 candidates：178 eligible、13 unresolved；9 analysis panels 均已建立 | food occurrence 多为 class/source-level 初筛；存在地域数据库偏倚 | active |
 | 18 | Phase 3A Flavonoid Top20 Ranking | 59个膳食flavonoids中，哪些具有最高的可接受历史H-ORAC-FL chemical capacity？ | Completed / provisional class-specific ranking | Candidate master、eligibility lock、历史及补检ORAC-FL原始记录 | data/Polyphenols_Flavonoids_Top20_v1.0.csv | 57 eligible；25有A/B1；Top5为epicatechin、catechin、gallocatechin、apigenin、isorhamnetin | Tier A=0；Top20中11个single-study；anthocyanins受光学QC限制 | active |
+| 19 | Phase 3B Phenolic Acids / Conjugates Top-N | 29个候选中哪些在可接受历史H-ORAC-FL记录中具有较高chemical capacity？ | Completed / provisional Top available | Candidate master、identity/isomer lock、original ORAC-FL records | data/Polyphenols_PhenolicAcids_TopN_v1.0.csv | 25 eligible、4 hold；18有A/B1，故输出Top available 18；Top5为rosmarinic、caffeic、gentisic、protocatechuic、vanillic acid | Tier A=0；8个single-study；多个高异质性候选；chlorogenic命名与4项candidate lock待人工裁决 | active |
+| 20 | Global Top Overview Schema Pilot | 如何让不同类别保留各自primary construct并进入同一并列展示结构？ | Schema pilot completed; global comparison not completed | Phase 3A Top20、Phase 3B Top available 18 | data/Global_Top_Overview_Master_v0.1.csv | 38-row统一schema完成；保留class rank、percentile、原始metric、confidence、stability和missingness；未创建global rank/score | 仅含两个H-ORAC polyphenol panels；暴露、PK、人体、机制、target和安全尚未review | active schema pilot |
+| 21 | Phase 3C Carotenoids Top-N | 哪些膳食类胡萝卜素在同一环境层的直接singlet-oxygen quenching中具有较高kq？ | Completed / provisional Top available | 19-candidate carotenoid universe、direct kq original studies、environment audit | data/Carotenoids_TopN_v1.0.csv | 17 candidate locks；9个候选有organic-solvent A/B1，输出Top available 9；Global Overview v0.2完成首个non-H-ORAC stress test | Tier A=0；organic solvents仍有差异；membrane数据稀疏；2个dietary gates与cis identity待复核 | active |

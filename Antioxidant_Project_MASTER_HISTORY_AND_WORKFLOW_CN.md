@@ -114,6 +114,28 @@ Phase 3 是 class-specific Top-N ranking；Phase 4A 是 Global Top Overview，�
 
 **Output：**57 eligible_for_ranking、2 hold；evidence master 94 rows（A=0、B1=53、B2=5、C=7、X=29）；25 compounds具有A/B1数值，形成不降标准的 Top20。前五为 epicatechin、catechin、gallocatechin、apigenin、isorhamnetin。Top20 confidence 为 High=4、Moderate=5、Low=11。**Interpretation：**该榜只表示 broadly comparable historical H-ORAC-FL chemical capacity；高位单研究值不等于稳健，且不能外推人体效果。**Limitation：**Tier A仍为0；11个单研究估计；quercetin/catechin异质性高；anthocyanins及多类glycosides覆盖不足；新增来源待 Zotero local import。**Next step：**研究者完成第二人复核后进入 Phase 3B Phenolic acids/conjugates Top-N。
 
-## 11. Next step
+## 11. Stage 19 — Phase 3B Phenolic Acids / Conjugates Top-N
 
-下一步进入 Phase 3B：对 Polyphenols–Phenolic acids / conjugates 先执行 candidate-level food-occurrence second review 与 identity/form lock，再按冻结的 class-specific construct开展 Top-N。至少在 Flavonoids 与 Phenolic acids 两类完成并审核前，不测试 Global Top Overview；本阶段不做跨类总排名、实验 panel 或 target mapping。
+**Purpose：**在完整 29-candidate `Polyphenols - Phenolic acids / conjugates` universe 中完成候选身份与 positional-isomer lock，并按 literature-derived H-ORAC-FL 生成 class-specific Top-N。**Input：**Phase 2 candidate master、历史 audited phenolic-acid records、A/B1/B2/C/X rubric 和 Phase 3B original-paper targeted search。**Method：**free acids、esters/conjugates 和 caffeoylquinic positional isomers 分开；只纳入 identity-resolved pure-compound AAPH–fluorescein–Trolox H-arm；one independent experiment=one row；统一到 mol TE/mol；A/B1 用 compound median 排序，confidence 与 magnitude 分开；generic chlorogenic records 不静默映射。
+
+**Output：**25 eligible_for_ranking、4 hold；evidence master 47 rows（A=0、B1=34、B2=1、C=0、X=12）；18 compounds 有 A/B1，因此输出 Top available 18，不声称 Top20。前五为 rosmarinic、caffeic、gentisic、protocatechuic、vanillic acid；confidence 为 High=1、Moderate=9、Low=8。**Interpretation：**该榜仅表示 broadly comparable historical H-ORAC-FL chemical capacity；rosmarinic 的首位是 single-study estimate，不能解释为“最强抗氧化剂”。**Limitation：**Tier A=0；8个single-study；7个候选呈高历史异质性；4个candidate locks和1条chlorogenic mapping待人工裁决；单实验室覆盖集中。**Next step：**完成 Human Review Log 与第二研究者复核，优先补 single-study/high-heterogeneity/missing candidates；当前只可设计 Global Top Overview schema，不生成跨类排名。
+
+## 12. Stage 20 — Global Top Overview Schema Pilot
+
+**Purpose：**验证未来所有 class-specific Top-N 能否在不统一 assay 数值、不建立 global score 的前提下进入同一并列展示结构。**Input：**Phase 3A Flavonoids Top20 v1.0 和 Phase 3B Phenolic acids / conjugates Top available 18。**Method：**一行一个 compound；保留 identity、analysis panel、within-class rank、rankable N、类内 percentile、原始 primary construct/value/unit、evidence depth、confidence、heterogeneity、stability、assay/identity caveat 和 provenance；未来 exposure、PK、human、mechanism、target、安全与 tractability 字段统一使用 `Not reviewed`/`NA`，禁止把 missing 写成 no evidence。类内 percentile 定义为 `100 × (N-rank+1)/N`，只表示各自类内位置。
+
+**Output：**`Global_Top_Overview_Master_v0.1.csv` 含 38 行；`Cross_Class_Comparability_Matrix_v0.1.csv` 定义 16 个维度，其中 6 个在共同单位/rubric 下可较直接比较、5 个只能 profile comparison、5 个不得直接数值混排。Evidence stability 为 Stable=5、Moderately stable=5、Fragile=28。四张 schema 图展示 class leaders、stability、comparability 和 future-field missingness。**Interpretation：**统一数据结构可行，但它是 side-by-side overview，不是统一排行榜。**Limitation：**两个输入都是 H-ORAC-based polyphenol panels，不能验证 schema 对 singlet-oxygen、lipid-phase、NRF2-regulatory 或 cofactor constructs 的适配性；未来字段尚未review。**Next step：**建议先完成 Carotenoids class-specific ranking，作为首个 non-H-ORAC construct stress test；本阶段不自动执行。
+
+## 13. Next step
+
+下一步有两个可选方向：Option A 为 Vitamins ranking，需先处理 vitamin C 与 tocopherol/tocotrienol 的 H/L 与 construct 分层；Option B 为 Carotenoids ranking，可直接测试 singlet-oxygen/lipid-phase metric、光学干扰和溶解聚集风险。为验证 Global Overview 对 non-H-ORAC constructs 的兼容性，优先推荐 Option B。开始前仍需研究者审核 Stage 20 schema；不生成 global rank、跨类总分、实验 panel 或 target mapping。
+
+## 14. Stage 21 — Phase 3C Carotenoids Top-N
+
+**Purpose：**完成首个 non-H-ORAC class-specific ranking，并检验 Global Overview 能否容纳不同 primary construct。**Input：**Phase 2 中 19 个 Carotenoids candidates、direct singlet-oxygen quenching 原始研究、膜模型研究和既有 A/B1/B2/C/X 证据治理结构。**Primary construct decision：**carotenoids 以直接 singlet-oxygen physical quenching rate constant `kq` 为主，H-ORAC-FL 不作为主指标；不同 organic-solvent、micelle、liposome 与 membrane systems 不默认 pooled。
+
+**Evidence and method：**candidate lock 后有 17 个可继续审计，astaxanthin 与 fucoxanthin 因 dietary gate hold。环境审计显示 homogeneous organic-solvent `kq` 的覆盖足以产生 9-compound Top available，而 membrane/liposome quantitative evidence 仍太稀疏，故 organic-solvent layer 被选为 provisional primary environment；该选择是 chemical-quenching construct，不代表生物膜效能。只有 isomer-resolved、原始 `kq` 可追溯且环境清楚的 A/B1 records 聚合；generic names 不映射到 defined cis isomers。
+
+**Output：**`data/Carotenoid_Phase3_Eligibility_Lock.csv`、`data/Carotenoid_Singlet_Oxygen_Evidence_Master.csv`、`data/Carotenoids_TopN_v1.0.csv`、secondary lipid profile 与 `Global_Top_Overview_Master_v0.2.csv`。当前 rankable N=9，故输出 Top available 9 而不声称 Top10；前列为 all-trans-lycopene、canthaxanthin、alpha-carotene、all-trans-beta-carotene 与 zeaxanthin。英文方法学文件正式说明 unified framework 不等于 unified assay。
+
+**Limitation and interpretation：**Tier A=0；4 个候选为 single-study；有机溶剂、温度、viscosity 与生成方法仍存在差异；xanthophyll aggregation 和 membrane localization 会显著改变观察值；phytofluene 还存在 UVA photosensitization。所有结果仅表示历史环境分层 direct `kq`，不得外推人体获益或建立 global antioxidant score。**Next step：**完成第二研究者对 dietary gate、cis/trans identity 和 full-text values 的复核；随后建议进入 Vitamins class，并先拆分 vitamin C aqueous construct 与 vitamin E lipid-phase construct。
