@@ -139,3 +139,11 @@ Phase 3 是 class-specific Top-N ranking；Phase 4A 是 Global Top Overview，�
 **Output：**`data/Carotenoid_Phase3_Eligibility_Lock.csv`、`data/Carotenoid_Singlet_Oxygen_Evidence_Master.csv`、`data/Carotenoids_TopN_v1.0.csv`、secondary lipid profile 与 `Global_Top_Overview_Master_v0.2.csv`。当前 rankable N=9，故输出 Top available 9 而不声称 Top10；前列为 all-trans-lycopene、canthaxanthin、alpha-carotene、all-trans-beta-carotene 与 zeaxanthin。英文方法学文件正式说明 unified framework 不等于 unified assay。
 
 **Limitation and interpretation：**Tier A=0；4 个候选为 single-study；有机溶剂、温度、viscosity 与生成方法仍存在差异；xanthophyll aggregation 和 membrane localization 会显著改变观察值；phytofluene 还存在 UVA photosensitization。所有结果仅表示历史环境分层 direct `kq`，不得外推人体获益或建立 global antioxidant score。**Next step：**完成第二研究者对 dietary gate、cis/trans identity 和 full-text values 的复核；随后建议进入 Vitamins class，并先拆分 vitamin C aqueous construct 与 vitamin E lipid-phase construct。
+
+## 15. Stage 22 — Phase 3D Vitamins / Vitamin-like Antioxidants
+
+**Purpose：**验证同一营养 parent class 内是否可以并存多个 mechanistically coherent ranking subpanels。**Input：**Phase 2 的 10 个 vitamin candidates、历史 ascorbate H-ORAC-FL records、tocopherol/tocotrienol chain-breaking kinetics、L-ORAC 与 membrane/liposome studies。**Primary construct decisions：**Vitamin C aqueous 暂以可追溯 H-ORAC-FL 为 primary；Vitamin E lipid-phase 由研究者确认采用 vitamer-specific peroxyl-radical chain-breaking `k_inh`，L-ORAC 与 membrane assays 为 secondary profiles。
+
+**Output：**`Vitamin_Phase3_Eligibility_Lock.csv` 将 10 个候选拆为 aqueous N=2 与 lipid-phase N=8；dehydroascorbic acid 因缺少可比 primary record 且不能替代 ascorbate 而 hold。L-ascorbic acid 的两条 B1 值 median=0.74 mol TE/mol，输出 all eligible 1；singleton percentile 依研究者决定写为 NA。Vitamin E 以 α、γ、β、δ chain-breaking rate tiers 形成 Top available 8，tocopherol 与对应 tocotrienol homologues 当前并列。`Global_Top_Overview_Master_v0.3.csv` 新增 `analysis_subpanel`，只计算 subpanel percentile，不生成 Vitamins parent-class percentile。
+
+**Interpretation and limitation：**“Vitamin”是营养分类，不是统一 redox mechanism。H-ORAC-FL 与 `k_inh` 不共用 raw axis；regeneration 不进入 capacity rank。Vitamin E 的八个候选目前均 Low confidence/Fragile，原因是 eligible kinetics 集中于少量经典研究，tocotrienol values 依赖 corresponding-homologue equivalence，且天然 stereochemistry 与 generic/synthetic records 必须继续分开。**Next step：**完成全文与第二研究者 identity review；建议下一类进入 Organosulfur，以测试 causal KEAP1/NRF2 和 thiol-reactivity construct。

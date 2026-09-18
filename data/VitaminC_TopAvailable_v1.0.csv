@@ -1,0 +1,2 @@
+﻿rank,compound,chemical_form,primary_construct,primary_value,unit,eligible_record_count,confidence,stability,within_subpanel_percentile,percentile_status,caveat,provenance_record_ids
+1,L-Ascorbic acid,defined L-vitamer,H-ORAC-FL kinetic peroxyl-radical chain-breaking capacity,0.74,mol TE/mol compound,2,Moderate,Moderately stable,NA,single eligible candidate / percentile not informative,"Two broadly comparable historical protocols; value is chemical capacity, not human efficacy. Dehydroascorbic acid is not substituted or assigned zero.",VTC-E001;VTC-E002

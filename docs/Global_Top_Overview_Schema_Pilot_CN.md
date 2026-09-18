@@ -113,3 +113,7 @@ Identity、class-specific rank、primary construct/value、eligible study count�
 ## Non-H-ORAC stress test
 
 Carotenoids 是第一个使用 direct singlet-oxygen `kq` 而不是 H-ORAC-FL 的 panel。`Global_Top_Overview_Master_v0.2.csv` 证明既有 schema 可保存不同 primary construct、value 与 unit；within-class percentile 仍然只依赖类内 rank，因此可工作；confidence 和 stability 也仍由证据深度、异质性与 identity/assay risk 产生，不要求共同 assay。需要修订的是 comparability 解释：primary raw value 与 primary unit 必须明确标记为 **not directly comparable across classes**，而 percentile 只允许并列展示，不能解释为效应大小等距。此次 stress test 进一步证明无法建立 unified antioxidant score。Carotenoid organic-solvent `kq`、polyphenol H-ORAC-FL、未来 lipid-phase 或 causal regulatory evidence 应保留各自 construct，再通过 shared translational fields 做 profile comparison。
+
+## Same parent class, different constructs — stress test II
+
+Phase 3D 证明同一 parent class 也可能需要不同 primary constructs。`Vitamins / vitamin-like antioxidants` 下，Vitamin C aqueous 使用 audited H-ORAC-FL，Vitamin E lipid-phase 使用 peroxyl-radical chain-breaking `k_inh`。因此 v0.3 新增 `analysis_subpanel`，正式层级为 `parent_class → analysis_panel → analysis_subpanel`。rank、rankable N 与 percentile 必须在 mechanistically coherent ranking subpanel 内计算。研究者已确认不生成 Vitamins parent-class percentile；L-ascorbic acid 是 aqueous subpanel 唯一 eligible candidate，因此 percentile 为 `NA` 并标记 `single eligible candidate / percentile not informative`，而不是机械赋值 100%。Vitamin E 的 percentile 在八个 vitamers 内计算。该测试进一步确认 Global Overview 是结构化并列展示，不是跨 construct 数值榜。

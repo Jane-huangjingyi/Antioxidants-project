@@ -57,6 +57,10 @@ STABILITY_COLORS <- c("Stable"="#3A8D5D","Moderately stable"="#4C78A8","Fragile"
 CAROTENOID_COLORS <- c("Carotenes"="#D89000","Xanthophylls"="#2A9D8F")
 ENVIRONMENT_COLORS <- c("homogeneous organic solvent"="#D89000","aqueous micelle"="#4C78A8","liposome"="#2A9D8F","membrane-like system"="#8E6C8A","biological membrane / lipoprotein"="#6B705C")
 PRIMARY_CONSTRUCT_COLORS <- c("H-ORAC-FL"="#4C78A8","singlet-oxygen kq"="#D89000")
+VITAMIN_C_COLOR <- "#4C78A8"
+TOCOPHEROL_COLORS <- c(alpha="#3A8D5D",beta="#4C78A8",gamma="#D89000",delta="#8E6C8A")
+TOCOTRIENOL_COLORS <- c(alpha="#79B69A",beta="#8CB6D9",gamma="#F2B84B",delta="#B6A0B5")
+CONSTRUCT_COLORS <- c("H-ORAC-FL"="#4C78A8","peroxyl-radical k_inh"="#D89000","singlet-oxygen kq"="#2A9D8F")
 
 # =====================================================
 # DEPENDENCIES, INPUT AND THEME
@@ -82,6 +86,12 @@ comparability_path <- file.path(root,"data","Cross_Class_Comparability_Matrix_v0
 carotenoid_topn_path <- file.path(root,"data","Carotenoids_TopN_v1.0.csv")
 carotenoid_evidence_path <- file.path(root,"data","Carotenoid_Singlet_Oxygen_Evidence_Master.csv")
 carotenoid_lipid_path <- file.path(root,"data","Carotenoid_LipidPhase_Evidence_Profile.csv")
+vitamin_c_path <- file.path(root,"data","VitaminC_TopAvailable_v1.0.csv")
+vitamin_e_path <- file.path(root,"data","VitaminE_TopN_v1.0.csv")
+vitamin_e_evidence_path <- file.path(root,"data","VitaminE_LipidPhase_Evidence_Master.csv")
+vitamin_e_lorac_path <- file.path(root,"data","VitaminE_LORAC_Secondary_Profile.csv")
+vitamin_overview_path <- file.path(root,"data","Vitamins_ParentClass_Overview_v1.0.csv")
+global_overview_v03_path <- file.path(root,"data","Global_Top_Overview_Master_v0.3.csv")
 outdir <- file.path(root,"figures"); dir.create(outdir,showWarnings=FALSE,recursive=TRUE)
 
 candidates <- read_csv(candidate_path,show_col_types=FALSE)
@@ -97,6 +107,12 @@ comparability <- read_csv(comparability_path,show_col_types=FALSE)
 carotenoid_topn <- read_csv(carotenoid_topn_path,show_col_types=FALSE)
 carotenoid_evidence <- read_csv(carotenoid_evidence_path,show_col_types=FALSE)
 carotenoid_lipid <- read_csv(carotenoid_lipid_path,show_col_types=FALSE)
+vitamin_c <- read_csv(vitamin_c_path,show_col_types=FALSE)
+vitamin_e <- read_csv(vitamin_e_path,show_col_types=FALSE)
+vitamin_e_evidence <- read_csv(vitamin_e_evidence_path,show_col_types=FALSE)
+vitamin_e_lorac <- read_csv(vitamin_e_lorac_path,show_col_types=FALSE)
+vitamin_overview <- read_csv(vitamin_overview_path,show_col_types=FALSE)
+global_overview_v03 <- read_csv(global_overview_v03_path,show_col_types=FALSE)
 
 theme_atlas <- theme_minimal(base_family=BASE_FAMILY,base_size=BASE_SIZE)+theme(plot.title=element_text(size=TITLE_SIZE,face="bold"),plot.subtitle=element_text(color="#555555"),panel.grid.minor=element_blank(),legend.position=LEGEND_POSITION,strip.text=element_text(face="bold"))
 save_atlas <- function(p,name,w=WIDTH,h=HEIGHT){ggsave(file.path(outdir,paste0(name,".",OUTPUT_FORMAT)),p,width=w,height=h,dpi=DPI,bg="white")}
@@ -305,4 +321,52 @@ p22 <- ggplot(global3,aes(within_class_percentile,compound,color=confidence,shap
   labs(title="Global Overview with carotenoids",subtitle="Within-class percentile only; H-ORAC-FL and singlet-oxygen kq are never placed on one raw scale",x="Within-class percentile",y=NULL,color="Confidence",shape="Evidence stability")
 save_atlas(p22,"Global_Overview_With_Carotenoids",12,10)
 
-message("Generated Phase 2 through Stage 21 Phase 3C figures in: ",outdir)
+# Phase 3D Figure A: singleton evidence summary, explicitly without a percentile claim.
+vc_long <- tibble(record=c("Ou et al. 2001","Carvalho et al. 2023"),value=c(.95,.53))
+p23 <- ggplot(vc_long,aes(value,record))+geom_segment(aes(x=0,xend=value,y=record,yend=record),color="#C9D5E3",linewidth=LINE_WIDTH)+
+  geom_point(color=VITAMIN_C_COLOR,size=POINT_SIZE+1)+geom_vline(xintercept=vitamin_c$primary_value[1],linetype=2,color="#333333")+
+  annotate("text",x=vitamin_c$primary_value[1],y=2.35,label=paste0("median = ",vitamin_c$primary_value[1]),size=LABEL_SIZE,hjust=-.1)+
+  scale_x_continuous(limits=c(0,1.1),expand=expansion(mult=c(0,.08)))+theme_atlas+
+  labs(title="Vitamin C aqueous primary construct",subtitle="Two historical H-ORAC-FL records; one eligible candidate, so percentile is not informative",x="H-ORAC-FL (mol TE/mol compound)",y=NULL)
+save_atlas(p23,"VitaminC_Primary_Construct",10,5)
+
+# Phase 3D Figure B: tied homologues retain the same primary k_inh value.
+vit_e_plot <- vitamin_e %>% mutate(compound=fct_reorder(compound,primary_value),family=if_else(tocopherol_or_tocotrienol=="tocopherol","Tocopherol","Tocotrienol"))
+p24 <- ggplot(vit_e_plot,aes(primary_value,compound,color=vitamer,shape=family))+geom_point(size=POINT_SIZE+1)+
+  scale_color_manual(values=TOCOPHEROL_COLORS,drop=FALSE)+scale_shape_manual(values=c(Tocopherol=16,Tocotrienol=17))+
+  scale_x_continuous(labels=function(x)x/1e6)+theme_atlas+
+  labs(title="Vitamin E Top available: chain-breaking kinetics",subtitle="Corresponding tocopherol/tocotrienol homologues are tied; homogeneous organic-system k_inh",x=expression(paste(k[inh]," (",10^6," ",M^{-1}," ",s^{-1},")")),y=NULL,color="Vitamer",shape="Family")
+save_atlas(p24,"VitaminE_TopN_Primary_Construct",11,7)
+
+# Phase 3D Figure C: confidence is deliberately separate from magnitude.
+p25 <- vitamin_e %>% mutate(compound=fct_reorder(compound,primary_value)) %>% ggplot(aes(confidence,compound,color=confidence))+
+  geom_point(size=POINT_SIZE+1)+geom_text(aes(label=paste0("n=",eligible_record_count)),nudge_x=.15,size=LABEL_SIZE-0.3,color="#333333")+
+  scale_color_manual(values=CONFIDENCE_COLORS,drop=FALSE)+theme_atlas+theme(legend.position="none")+
+  labs(title="Vitamin E evidence confidence",subtitle="All current primary estimates remain single evidence chains and Fragile",x="Evidence confidence",y=NULL)
+save_atlas(p25,"VitaminE_Evidence_Confidence",10,7)
+
+# Phase 3D Figure D: coverage by environment/construct, not a pooled score.
+ve_env <- tibble(environment=c("Homogeneous chain-breaking kinetics","L-ORAC (vitamer-resolved)","L-ORAC (generic mixture)","Liposome/membrane qualitative profile"),candidate_coverage=c(8,3,1,8),role=c("Primary","Secondary","Secondary / unresolved","Secondary"))
+p26 <- ggplot(ve_env,aes(candidate_coverage,fct_reorder(environment,candidate_coverage),fill=role))+geom_col(width=.7)+geom_text(aes(label=candidate_coverage),hjust=-.25,size=LABEL_SIZE)+
+  scale_fill_manual(values=c(Primary="#D89000",Secondary="#4C78A8",`Secondary / unresolved`="#A6A6A6"))+scale_x_continuous(limits=c(0,9),breaks=0:9)+theme_atlas+
+  labs(title="Vitamin E assay-environment coverage",subtitle="Coverage count does not imply cross-environment comparability",x="Candidates or unresolved group reported",y=NULL,fill="Role")
+save_atlas(p26,"VitaminE_Assay_Environment_Coverage",11,5.8)
+
+# Phase 3D Figure E: independent facets prevent raw-value mixing inside the parent class.
+vit_parent_plot <- vitamin_overview %>% mutate(value_num=as.numeric(primary_value),label=if_else(grepl("aqueous",vitamin_subpanel,fixed=TRUE),paste0(round(value_num,2)," mol TE/mol"),paste0(round(value_num/1e6,2)," x10^6")))
+p27 <- ggplot(vit_parent_plot,aes(value_num,fct_reorder(compound,value_num),color=vitamin_subpanel))+geom_point(size=POINT_SIZE+1)+geom_text(aes(label=label),hjust=-.2,size=LABEL_SIZE-0.3)+
+  facet_wrap(~vitamin_subpanel,scales="free",ncol=2)+scale_color_manual(values=c(`Vitamins–aqueous antioxidant`=VITAMIN_C_COLOR,`Vitamins–lipid-phase antioxidant`="#D89000"))+
+  scale_x_continuous(expand=expansion(mult=c(.02,.28)))+theme_atlas+theme(legend.position="none")+
+  labs(title="Vitamins parent-class overview",subtitle="Independent subpanel axes; no overall vitamin rank or parent-class percentile",x="Subpanel-specific primary value",y=NULL)
+save_atlas(p27,"Vitamins_ParentClass_Overview",13,7.5)
+
+# Phase 3D Figure F: shared view uses only informative within-subpanel percentiles.
+global_vit <- global_overview_v03 %>% filter(!grepl("single eligible candidate",within_class_status,fixed=TRUE)) %>%
+  mutate(analysis_subpanel=droplevels(factor(analysis_subpanel))) %>% group_by(analysis_subpanel) %>% arrange(within_class_rank,.by_group=TRUE) %>% slice_head(n=5) %>% ungroup() %>% mutate(compound=factor(compound,levels=rev(unique(compound[order(analysis_subpanel,within_class_rank)]))))
+p28 <- ggplot(global_vit,aes(within_class_percentile,compound,color=confidence,shape=evidence_stability))+geom_point(size=POINT_SIZE+1)+
+  facet_wrap(~analysis_subpanel,scales="free_y",ncol=1)+scale_color_manual(values=CONFIDENCE_COLORS,drop=FALSE)+scale_shape_manual(values=c(Stable=16,`Moderately stable`=17,Fragile=18),drop=FALSE)+
+  scale_x_continuous(limits=c(0,100),breaks=seq(0,100,20))+theme_atlas+
+  labs(title="Global Overview with vitamin subpanels",subtitle="Percentiles are computed only within mechanistically coherent subpanels; vitamin C singleton is omitted",x="Within-subpanel percentile",y=NULL,color="Confidence",shape="Stability")
+save_atlas(p28,"Global_Overview_With_Vitamins",12,12)
+
+message("Generated Phase 2 through Stage 22 Phase 3D figures in: ",outdir)
