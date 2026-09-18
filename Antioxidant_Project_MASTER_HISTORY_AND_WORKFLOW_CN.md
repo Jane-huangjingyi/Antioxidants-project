@@ -147,3 +147,13 @@ Phase 3 是 class-specific Top-N ranking；Phase 4A 是 Global Top Overview，�
 **Output：**`Vitamin_Phase3_Eligibility_Lock.csv` 将 10 个候选拆为 aqueous N=2 与 lipid-phase N=8；dehydroascorbic acid 因缺少可比 primary record 且不能替代 ascorbate 而 hold。L-ascorbic acid 的两条 B1 值 median=0.74 mol TE/mol，输出 all eligible 1；singleton percentile 依研究者决定写为 NA。Vitamin E 以 α、γ、β、δ chain-breaking rate tiers 形成 Top available 8，tocopherol 与对应 tocotrienol homologues 当前并列。`Global_Top_Overview_Master_v0.3.csv` 新增 `analysis_subpanel`，只计算 subpanel percentile，不生成 Vitamins parent-class percentile。
 
 **Interpretation and limitation：**“Vitamin”是营养分类，不是统一 redox mechanism。H-ORAC-FL 与 `k_inh` 不共用 raw axis；regeneration 不进入 capacity rank。Vitamin E 的八个候选目前均 Low confidence/Fragile，原因是 eligible kinetics 集中于少量经典研究，tocotrienol values 依赖 corresponding-homologue equivalence，且天然 stereochemistry 与 generic/synthetic records 必须继续分开。**Next step：**完成全文与第二研究者 identity review；建议下一类进入 Organosulfur，以测试 causal KEAP1/NRF2 和 thiol-reactivity construct。
+
+## Supervisor Scope Reset — Aqueous Focus (Stage 23)
+
+**Purpose：**按导师要求把当前 active mainline 收束为 aqueous antioxidant atlas，并把既有排名值的原始文献溯源集中到统一 record-level master。**Scope decision：**Flavonoids、Phenolic acids/conjugates 和 Vitamin C 进入完整 evidence consolidation；Stilbenes/lignans、Betalains、Organosulfur、Other aqueous phytochemicals、metal-ion mechanisms 与 micronutrients 本轮只建立 candidate framework、construct proposal、assay-risk、preliminary anchor literature 和 evidence-gap list。**Paused by supervisor scope decision: current active project restricted to aqueous-phase antioxidant evidence.** Existing carotenoid and vitamin E outputs remain valid historical class-specific results and are retained as supporting/non-active results.
+
+**Method：**从既有 class masters 和 provenance IDs 重建 `Aqueous_Antioxidant_Primary_Literature_Evidence.csv`，保留 original value、unit、conversion formula、molecular weight、normalized value、DOI/PMID、exact table/figure/page、independent experiment ID 与 Zotero key；新增 anchor records 明确标为 preliminary/non-ranking。candidate generation 不按数值反向筛选，micronutrients 不进入小分子 capacity ranking，Fe/Cu chelation 与 Fenton context 作为机制维度单列。
+
+**Output：**aqueous candidate master 157 行；统一证据表 109 行；paper summary 25 个去重论文单元，其中 24 个有 DOI；micronutrient redox profile 7 行；建立水相 Atlas 分层图目录及 5 张 overview 图。当前数值排名没有重算或改名次，脂相数据没有删除。
+
+**Interpretation：**本阶段完成的是 active-scope reset 与 provenance consolidation，不是新的跨类别排名。只有 flavonoids、phenolic acids/conjugates 和 vitamin C 的 current ranking 可以由 record-level 数据逆向追溯；其余水相类别仍是 future staged review。**Limitation：**一个历史 figure-only supporting source 仍缺 DOI；若干 Zotero keys 仍为 `pending_local_import`；preliminary anchor literature 不等于 systematic coverage。**Next step：**完成双人复核和 Zotero 补录后，再按 class 分阶段开展 systematic primary-literature extraction。

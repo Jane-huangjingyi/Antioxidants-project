@@ -19,6 +19,7 @@ LABEL_ANGLE <- 35            # axis-label angle
 X_LIMITS <- NULL             # optional c(min,max) for H-ORAC plots; NULL = automatic
 LABEL_REPEL <- TRUE          # repel labels in scatter plot
 OUTPUT_FORMAT <- "png"       # output format
+FIGURE_ROOT <- file.path("figures","aqueous_antioxidant_atlas") # Stage 23 active atlas root
 SUPERVISOR_TOP_N <- 5        # rank positions shown per completed panel; ties retained
 SUPERVISOR_WIDTH <- 13       # supervisor overview width (inches)
 SUPERVISOR_HEIGHT <- 10      # supervisor overview height (inches)
@@ -65,6 +66,7 @@ VITAMIN_C_COLOR <- "#4C78A8"
 TOCOPHEROL_COLORS <- c(alpha="#3A8D5D",beta="#4C78A8",gamma="#D89000",delta="#8E6C8A")
 TOCOTRIENOL_COLORS <- c(alpha="#79B69A",beta="#8CB6D9",gamma="#F2B84B",delta="#B6A0B5")
 CONSTRUCT_COLORS <- c("H-ORAC-FL"="#4C78A8","peroxyl-radical k_inh"="#D89000","singlet-oxygen kq"="#2A9D8F")
+METAL_COLORS <- c("Fe"="#9C6644","Cu"="#4C78A8","Zn"="#7A9E9F","Se"="#6A994E","Mn"="#BC6C25","Mg"="#8E6C8A","Mo"="#6C757D")
 
 # =====================================================
 # DEPENDENCIES, INPUT AND THEME
@@ -412,3 +414,79 @@ p29 <- ggplot(supervisor_plot,aes(y=compound))+
 save_atlas(p29,"Supervisor_Class_Specific_Ranking_Overview",SUPERVISOR_WIDTH,SUPERVISOR_HEIGHT)
 
 message("Generated Phase 2 through Stage 22 Phase 3D figures in: ",outdir)
+
+# =====================================================
+# STAGE 23 — AQUEOUS ANTIOXIDANT ATLAS RESET
+# This layer consolidates existing flavonoid, phenolic-acid/conjugate and
+# vitamin-C evidence. Other aqueous classes remain framework-only.
+# =====================================================
+aqueous_root <- file.path(root,FIGURE_ROOT)
+aqueous_dirs <- c("00_overview","01_flavonoids","02_phenolic_acids","03_stilbenes_lignans",
+                  "04_water_soluble_vitamins","05_betalains","06_organosulfur",
+                  "07_other_aqueous_phytochemicals","08_metal_chelation","09_micronutrients","99_methods_qc")
+invisible(lapply(file.path(aqueous_root,aqueous_dirs),dir.create,showWarnings=FALSE,recursive=TRUE))
+save_aqueous <- function(plot,subdir,name,w=WIDTH,h=HEIGHT){
+  ggsave(file.path(aqueous_root,subdir,paste0(name,".png")),plot,width=w,height=h,dpi=DPI,bg="white")
+}
+
+aqueous_candidates <- read_csv(file.path(root,"data","Aqueous_Antioxidant_Candidate_Master.csv"),show_col_types=FALSE)
+aqueous_evidence <- read_csv(file.path(root,"data","Aqueous_Antioxidant_Primary_Literature_Evidence.csv"),show_col_types=FALSE)
+aqueous_papers <- read_csv(file.path(root,"data","Aqueous_Antioxidant_Paper_Summary.csv"),show_col_types=FALSE)
+micronutrients <- read_csv(file.path(root,"data","Antioxidant_Micronutrient_Redox_Profile.csv"),show_col_types=FALSE)
+
+class_overview <- aqueous_candidates %>% count(analysis_panel,evidence_status,name="n")
+p30 <- ggplot(class_overview,aes(n,fct_reorder(analysis_panel,n,.fun=sum),fill=evidence_status))+
+  geom_col()+geom_text(aes(label=n),position=position_stack(vjust=.5),size=LABEL_SIZE,color="white")+
+  theme_atlas+labs(title="Aqueous Antioxidant Atlas: candidate scope",subtitle="Completed evidence consolidation is separated from framework-only classes",x="Candidate count",y=NULL,fill="Evidence status")
+save_aqueous(p30,"00_overview","Aqueous_Antioxidant_Class_Overview",12,7)
+
+leaders <- bind_rows(
+  top20 %>% transmute(panel="Flavonoids",compound,rank,value=median_H_ORAC,confidence) %>% slice_min(rank,n=5),
+  phenolic_topn %>% transmute(panel="Phenolic acids / conjugates",compound,rank,value=median_H_ORAC,confidence) %>% slice_min(rank,n=5),
+  vitamin_c %>% transmute(panel="Vitamin C - aqueous",compound,rank,value=primary_value,confidence)
+) %>% mutate(label=paste0("#",rank,"  ",compound),label=factor(label,levels=rev(unique(label))))
+p31 <- ggplot(leaders,aes(value,label,color=confidence))+geom_point(size=POINT_SIZE+1)+facet_wrap(~panel,scales="free_y",ncol=1)+
+  scale_color_manual(values=CONFIDENCE_COLORS,drop=FALSE)+theme_atlas+
+  labs(title="Current aqueous class-ranking leaders",subtitle="Values are compared only inside their frozen class/subpanel; no global aqueous score",x="Primary construct value (H-ORAC-FL, mol TE/mol compound)",y=NULL,color="Confidence")
+save_aqueous(p31,"00_overview","Aqueous_Class_Ranking_Leaders",12,10)
+
+paper_cov <- aqueous_papers %>% count(class_coverage,primary_or_supporting,name="papers")
+p32 <- ggplot(paper_cov,aes(papers,fct_reorder(class_coverage,papers,.fun=sum),fill=primary_or_supporting))+geom_col()+
+  geom_text(aes(label=papers),position=position_stack(vjust=.5),size=LABEL_SIZE,color="white")+theme_atlas+
+  labs(title="Aqueous primary-literature coverage",subtitle="Paper units are deduplicated by DOI or source identity",x="Original-paper units",y=NULL,fill="Role")
+save_aqueous(p32,"00_overview","Aqueous_Primary_Literature_Coverage",12,7)
+
+ev_conf <- aqueous_evidence %>% filter(rank_eligible=="yes") %>% count(analysis_panel,evidence_tier,name="records")
+p33 <- ggplot(ev_conf,aes(records,fct_reorder(analysis_panel,records,.fun=sum),fill=evidence_tier))+geom_col()+
+  geom_text(aes(label=records),position=position_stack(vjust=.5),size=LABEL_SIZE,color="white")+
+  scale_fill_manual(values=c(A="#3A8D5D",B1="#4C78A8",B2="#D98C3F"),drop=FALSE)+theme_atlas+
+  labs(title="Evidence tiers of active aqueous ranking records",subtitle="Record comparability is displayed separately from compound-level confidence and capacity magnitude",x="Rank-eligible record count",y=NULL,fill="Evidence tier")
+save_aqueous(p33,"00_overview","Aqueous_Evidence_Confidence_Overview",12,6.5)
+
+metal_nodes <- tibble(
+  label=c("Aqueous small molecule","Direct radical scavenging","Fe/Cu chelation","Fe/Cu-mediated ROS suppression",
+          "Micronutrient","Antioxidant-enzyme cofactor","GPX / TXNRD / SOD","Excess Fe/Cu","Prooxidant / Fenton chemistry"),
+  x=c(1,3,3,5,1,3,5,1,3), y=c(3.5,4.4,2.7,2.7,1.5,1.5,1.5,.3,.3),
+  type=c("small molecule","outcome","metal mechanism","outcome","micronutrient","cofactor","enzyme","excess metal","prooxidant"))
+metal_edges <- tibble(x=c(1.5,1.5,3.5,1.5,3.5,1.5),y=c(3.5,3.5,2.7,1.5,1.5,.3),
+                      xend=c(2.5,2.5,4.5,2.5,4.5,2.5),yend=c(4.4,2.7,2.7,1.5,1.5,.3))
+p34 <- ggplot()+geom_segment(data=metal_edges,aes(x=x,y=y,xend=xend,yend=yend),linewidth=LINE_WIDTH,color="#7A7A7A",arrow=arrow(length=unit(.15,"inches")))+
+  geom_point(data=metal_nodes,aes(x=x,y=y,color=type),size=7)+geom_text(data=metal_nodes,aes(x=x,y=y,label=label),nudge_y=-.28,size=LABEL_SIZE,fontface="bold")+
+  scale_color_manual(values=c(`small molecule`="#4C78A8",outcome="#3A8D5D",`metal mechanism`="#9C6644",micronutrient="#6A994E",cofactor="#8E6C8A",enzyme="#2A9D8F",`excess metal`="#BC6C25",prooxidant="#C95D63"))+
+  coord_cartesian(xlim=c(.5,5.5),ylim=c(-.1,4.9),clip="off")+theme_void(base_size=BASE_SIZE)+theme(legend.position="none",plot.title=element_text(size=TITLE_SIZE,face="bold"),plot.subtitle=element_text(size=BASE_SIZE+1,color="#555555"),plot.margin=margin(20,30,25,30))+
+  labs(title="Metal-dependent redox mechanisms in the aqueous Atlas",subtitle="Small-molecule chelation and micronutrient cofactor biology are distinct; excess Fe/Cu can be prooxidant")
+save_aqueous(p34,"00_overview","Aqueous_Metal_Redox_Framework",12,6.5)
+
+# Preserve frozen class figures in the new atlas tree and add DOI-coverage panels.
+file.copy(file.path(outdir,c("Flavonoid_Top20_H_ORAC.png","Flavonoid_Evidence_Depth_vs_ORAC.png","Flavonoid_Top20_Evidence_Confidence.png")),file.path(aqueous_root,"01_flavonoids",c("Flavonoids_TopN.png","Flavonoids_Evidence_Depth.png","Flavonoids_Evidence_Confidence.png")),overwrite=TRUE)
+file.copy(file.path(outdir,c("PhenolicAcid_TopN_H_ORAC.png","PhenolicAcid_Evidence_Depth_vs_ORAC.png","PhenolicAcid_Evidence_Confidence.png")),file.path(aqueous_root,"02_phenolic_acids",c("PhenolicAcids_TopN.png","PhenolicAcids_Evidence_Depth.png","PhenolicAcids_Evidence_Confidence.png")),overwrite=TRUE)
+file.copy(file.path(outdir,"VitaminC_Primary_Construct.png"),file.path(aqueous_root,"04_water_soluble_vitamins","VitaminC_TopN.png"),overwrite=TRUE)
+
+for(spec in list(c("Polyphenols - Flavonoids","01_flavonoids","Flavonoids"),c("Polyphenols - Phenolic acids / conjugates","02_phenolic_acids","PhenolicAcids"),c("Vitamin C — aqueous","04_water_soluble_vitamins","VitaminC"))){
+  z <- aqueous_evidence %>% filter(analysis_panel==spec[1],rank_eligible=="yes") %>% mutate(doi_status=if_else(is.na(DOI)|DOI=="","DOI missing","DOI recorded")) %>% count(compound,doi_status,name="records")
+  p <- ggplot(z,aes(records,fct_reorder(compound,records,.fun=sum),fill=doi_status))+geom_col()+theme_atlas+
+    labs(title=paste(spec[3],"primary-literature coverage"),subtitle="Every bar resolves to record-level provenance and exact source location",x="Rank-eligible records",y=NULL,fill="Traceability")
+  save_aqueous(p,spec[2],paste0(spec[3],"_Primary_Literature_Coverage"),11,max(5,0.28*n_distinct(z$compound)+2))
+}
+
+message("Generated Stage 23 aqueous-atlas figures in: ",aqueous_root)

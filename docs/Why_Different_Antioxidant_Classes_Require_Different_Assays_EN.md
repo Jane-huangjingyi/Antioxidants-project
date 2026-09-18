@@ -6,6 +6,15 @@ A unified screening framework does not imply a universal antioxidant assay. The 
 
 Antioxidant capacity may describe hydrogen-atom transfer, electron transfer, peroxyl-radical chain breaking, singlet-oxygen quenching, lipid-oxidation inhibition, electrophile sensing, or enzyme-dependent redox defense. Solubility, aggregation, optical absorption, and matrix localization can change the observed response. Pooling these constructs by z scores or simple averages destroys their chemical meaning and creates an arbitrary result.
 
+
+## Current supervisor-defined scope
+
+The active Atlas mainline is currently restricted to aqueous antioxidant factors. Flavonoids, phenolic acids/conjugates, and vitamin C undergo full record-level evidence consolidation. Stilbenes/lignans, betalains, organosulfur compounds, other aqueous phytochemicals, and metal-dependent mechanisms currently receive only a candidate framework, construct proposal, assay-risk summary, preliminary anchor literature, and evidence-gap list. This staged scope must not be interpreted as evidence that the deferred classes are weaker. Carotenoid and vitamin E outputs remain retained historical class-specific results, but their lipid-soluble branches are paused and excluded from the active aqueous ranking mainline.
+
+## Metal-dependent redox mechanisms
+
+Metal interactions require a separate mechanism layer. Chelation of catalytic Fe or Cu can suppress Fenton or Fenton-like radical generation, yet the same compound–metal system may become prooxidant when stoichiometry, pH, oxygen, ligand concentration, or redox cycling changes. Zn is usually evaluated through structural and regulatory redox roles rather than direct radical trapping; Se, Mn, and Cu are interpreted through their enzyme-cofactor biology; Fe is treated as an essential nutrient and a catalytic oxidative-risk context. Consequently, metal-chelation endpoints and micronutrient status must be stored as profiles with ion, assay, stoichiometry, and dose context, never converted into ORAC-equivalent values or a mineral antioxidant rank.
+
 ## Class-specific rationale
 
 For many aqueous phenolic compounds, H-ORAC-FL is a reasonable primary chemical construct because it integrates inhibition of AAPH-derived peroxyl-radical oxidation of fluorescein over time. Values must be protocol-audited and expressed on a molar basis. H-ORAC does not measure bioavailability, cellular signaling, or clinical efficacy, and colored phenolics still require optical quality control (Ou et al., 2001; Huang et al., 2005; Prior et al., 2005).
