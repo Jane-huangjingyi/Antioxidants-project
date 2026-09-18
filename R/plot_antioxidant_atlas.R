@@ -19,6 +19,10 @@ LABEL_ANGLE <- 35            # axis-label angle
 X_LIMITS <- NULL             # optional c(min,max) for H-ORAC plots; NULL = automatic
 LABEL_REPEL <- TRUE          # repel labels in scatter plot
 OUTPUT_FORMAT <- "png"       # output format
+SUPERVISOR_TOP_N <- 5        # rank positions shown per completed panel; ties retained
+SUPERVISOR_WIDTH <- 13       # supervisor overview width (inches)
+SUPERVISOR_HEIGHT <- 10      # supervisor overview height (inches)
+SUPERVISOR_LABEL_SIZE <- 3.1 # supervisor overview annotation size
 
 SUBCLASS_COLORS <- c(
   "Flavan-3-ols"="#4C78A8", "Flavonols"="#F58518", "Flavonol glycosides"="#ECA82C",
@@ -92,6 +96,7 @@ vitamin_e_evidence_path <- file.path(root,"data","VitaminE_LipidPhase_Evidence_M
 vitamin_e_lorac_path <- file.path(root,"data","VitaminE_LORAC_Secondary_Profile.csv")
 vitamin_overview_path <- file.path(root,"data","Vitamins_ParentClass_Overview_v1.0.csv")
 global_overview_v03_path <- file.path(root,"data","Global_Top_Overview_Master_v0.3.csv")
+supervisor_overview_path <- file.path(root,"data","Supervisor_Class_Specific_Ranking_Overview.csv")
 outdir <- file.path(root,"figures"); dir.create(outdir,showWarnings=FALSE,recursive=TRUE)
 
 candidates <- read_csv(candidate_path,show_col_types=FALSE)
@@ -113,6 +118,7 @@ vitamin_e_evidence <- read_csv(vitamin_e_evidence_path,show_col_types=FALSE)
 vitamin_e_lorac <- read_csv(vitamin_e_lorac_path,show_col_types=FALSE)
 vitamin_overview <- read_csv(vitamin_overview_path,show_col_types=FALSE)
 global_overview_v03 <- read_csv(global_overview_v03_path,show_col_types=FALSE)
+supervisor_overview <- read_csv(supervisor_overview_path,show_col_types=FALSE)
 
 theme_atlas <- theme_minimal(base_family=BASE_FAMILY,base_size=BASE_SIZE)+theme(plot.title=element_text(size=TITLE_SIZE,face="bold"),plot.subtitle=element_text(color="#555555"),panel.grid.minor=element_blank(),legend.position=LEGEND_POSITION,strip.text=element_text(face="bold"))
 save_atlas <- function(p,name,w=WIDTH,h=HEIGHT){ggsave(file.path(outdir,paste0(name,".",OUTPUT_FORMAT)),p,width=w,height=h,dpi=DPI,bg="white")}
@@ -368,5 +374,41 @@ p28 <- ggplot(global_vit,aes(within_class_percentile,compound,color=confidence,s
   scale_x_continuous(limits=c(0,100),breaks=seq(0,100,20))+theme_atlas+
   labs(title="Global Overview with vitamin subpanels",subtitle="Percentiles are computed only within mechanistically coherent subpanels; vitamin C singleton is omitted",x="Within-subpanel percentile",y=NULL,color="Confidence",shape="Stability")
 save_atlas(p28,"Global_Overview_With_Vitamins",12,12)
+
+# Supervisor overview: a presentation layer over frozen class/subpanel outputs.
+# Raw H-ORAC, singlet-oxygen kq and peroxyl-radical k_inh values are never pooled.
+supervisor_panel_labels <- c(
+  "Polyphenols - Flavonoids"="Flavonoids",
+  "Polyphenols - Phenolic acids / conjugates"="Phenolic acids / conjugates",
+  "Carotenoids"="Carotenoids",
+  "Vitamins–aqueous antioxidant"="Vitamin C (aqueous)",
+  "Vitamins–lipid-phase antioxidant"="Vitamin E (lipid phase)"
+)
+supervisor_plot <- supervisor_overview %>%
+  filter(within_class_rank<=SUPERVISOR_TOP_N | analysis_subpanel=="Vitamins–aqueous antioxidant") %>%
+  mutate(panel=case_when(
+           analysis_subpanel=="Polyphenols - Flavonoids" ~ "Flavonoids",
+           analysis_subpanel=="Polyphenols - Phenolic acids / conjugates" ~ "Phenolic acids / conjugates",
+           analysis_subpanel=="Carotenoids" ~ "Carotenoids",
+           grepl("aqueous",analysis_subpanel,fixed=TRUE) ~ "Vitamin C (aqueous)",
+           grepl("lipid-phase",analysis_subpanel,fixed=TRUE) ~ "Vitamin E (lipid phase)",
+           TRUE ~ NA_character_),
+         panel=factor(panel,levels=unname(supervisor_panel_labels)),
+         compound=factor(compound,levels=rev(unique(compound[order(panel,within_class_rank)]))))
+supervisor_points <- supervisor_plot %>% filter(!is.na(within_class_percentile))
+supervisor_singleton <- supervisor_plot %>% filter(is.na(within_class_percentile)) %>% mutate(plot_x=50)
+p29 <- ggplot(supervisor_plot,aes(y=compound))+
+  geom_point(data=supervisor_points,aes(x=within_class_percentile,color=confidence,shape=evidence_stability),size=POINT_SIZE+0.8)+
+  geom_text(data=supervisor_singleton,aes(x=plot_x,label="Single eligible candidate; percentile not informative"),
+            size=SUPERVISOR_LABEL_SIZE,color="#555555",fontface="italic")+
+  facet_wrap(~panel,scales="free_y",ncol=2)+
+  scale_color_manual(values=CONFIDENCE_COLORS,drop=FALSE)+
+  scale_shape_manual(values=c(Stable=16,`Moderately stable`=17,Fragile=18),drop=FALSE)+
+  scale_x_continuous(limits=c(0,100),breaks=seq(0,100,20))+
+  theme_atlas+theme(axis.text.y=element_text(size=BASE_SIZE-1),strip.text=element_text(size=BASE_SIZE+0.5,face="bold"))+
+  labs(title="Current class-specific rankings of dietary antioxidant functional factors",
+       subtitle="Each class uses a mechanism-appropriate primary construct; percentiles are within-class and not cross-class antioxidant magnitudes",
+       x="Within-class / within-subpanel percentile",y=NULL,color="Confidence",shape="Stability")
+save_atlas(p29,"Supervisor_Class_Specific_Ranking_Overview",SUPERVISOR_WIDTH,SUPERVISOR_HEIGHT)
 
 message("Generated Phase 2 through Stage 22 Phase 3D figures in: ",outdir)
