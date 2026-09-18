@@ -1,0 +1,119 @@
+# Antioxidants Project：MASTER HISTORY AND WORKFLOW（CN）
+
+**版本：Atlas framework v1.0｜日期：2026-09-18｜用途：项目历史、当前状态与后续入口**
+
+## 1. Project origin
+
+项目最初希望从常见食源性抗氧化小分子中建立候选全集，并依据人体相关性、抗氧化生物学、食物暴露、机制、direct-target evidence 与实验可开发性形成 Top20。早期 framework 的重要贡献是定义正常膳食原型单体、保留 major human metabolites、区分人体 PK 与 efficacy、建立 T1–T5 target hierarchy，并明确论文数量不能替代证据质量。其不足是“综合科学价值”与“抗氧化能力”混在同一 100 分体系，无法给导师一个统一、可操作的主排序标准。
+
+## 2. Major conceptual changes
+
+### Change 1：综合多维评分 → chemical antioxidant capacity
+
+导师要求用一句话说明“按什么能力排序”，触发了结构重构。Stage 1 被定义为 chemical capacity，Stage 2 被重新命名为 translational priority。原 Human 25 / Antioxidant biological 25 / Food exposure 20 / Mechanistic 15 / Target-tractability 15 仍可作为 Stage 2 的历史起点，但不再产生基础 antioxidant-capacity Top20。保留的是人体、暴露、安全、代谢物和 target evidence 的重要性；改变的是它们不再与化学能力混成同一概念。
+
+### Change 2：multiple assays → ORAC-FL primary
+
+系统 assay audit 表明 DPPH、ABTS、FRAP、CUPRAC、TRAP 和 ORAC 测量不同 constructs，不能简单平均。ORAC-FL 被有条件地选为酚类水相候选的 primary metric，操作性定义为 AAPH-derived peroxyl radicals 引起 fluorescein 氧化时的 kinetic integrated chain-breaking capacity，以 mol TE/mol compound 表示。CUPRAC、DPPH、ABTS、FRAP、TRAP 被降为机制互补证据。该改变由方法学审计而非文献数量触发。
+
+### Change 3：H/L mixed candidates → H/L separation
+
+Tocopherols 和 carotenoids 的溶解、聚集、光学行为与水相多酚不同，H-ORAC 和 L-ORAC 不能天然视为同尺度。项目因此分臂：水溶性酚类进入 H-arm，脂溶性维生素和类胡萝卜素进入 L-arm 或 special-case。保留统一的身份、暴露和证据字段，但停止强行混排。
+
+### Change 4：strict Tier A → exploratory B1 framework
+
+Tier A 要求足以支持正式高置信比较，但 17-compound pilot 中 Tier A=0，无法满足导师对历史趋势图的需求。项目保留 Tier A 不降级，同时把原 Tier B 拆为 B1 exploratory comparable 与 B2 quantitative/low-comparability。A+B1 可以进入明确标注的 exploratory literature-derived comparison；B2 仅用于补充。该变化改变用途层级，不改变正式标准。
+
+### Change 5：small pilot → 50-candidate universe
+
+17 个候选的 H-ORAC 数据不足以形成 20 个 eligible phenolics，项目扩展到 50 个 food-derived phenolic/polyphenolic compounds，并严格区分 aglycone/glycoside、立体异构体与 conjugate。保留候选生成不能按 ORAC 高低反向选择的原则。
+
+### Change 6：provisional Top20 → evidence consolidation
+
+初始 provisional Top20 中多数是 single-study estimates。针对 Top10 单研究候选和 EGCG、kaempferol、myricetin、anthocyanin、flavanone、lignan 等重要缺失项进行 targeted consolidation。新增独立 B1 后，排序前五从 quercetin、epicatechin、catechin、quercitrin、caffeic acid 更新为 epicatechin、catechin、quercetin、kaempferol、naringenin；quercetin、catechin、epicatechin 获得 High confidence。保留了 Tier A=0 和“无 eligible ORAC-FL 不等于低能力”的限制。
+
+### Change 7：phenolic-only ranking → class-balanced dietary antioxidant factors
+
+导师要求明确跨类别候选范围并避免多酚检索起点垄断，项目构建了 20 个有机因子加 5 个 mineral context nodes 的 class-balanced pilot。该面板覆盖多酚、酚酸、维生素、类胡萝卜素、有机硫和香辛料酚类；12 个 core candidates 的 intake range 为 3.5–65.4 µmol/day，约 18.62 倍。其用途是测试 taxonomy、暴露、机制矩阵和 visualization，现正式重命名为 **Cross-Class Pilot Panel v1.0**，不得解释为最终 20 种。
+
+### Change 8：one total Top20 → class-specific Top-N + cross-class comparison
+
+跨类别统一用 ORAC 排名在科学上不可成立：vitamin E 是脂相 chain terminator，carotenoids 依赖 singlet-oxygen/lipid-phase construct，organosulfur 主要是 KEAP1/thiol/GSH regulation，minerals 是状态依赖的 enzyme cofactors。当前项目升级为 **Antioxidant Functional Factor Atlas**：各类先用 class-specific construct 产生 Top-N/Top available，再用不加总的 profile matrix 做跨类比较，最后依据暴露、机制互补、PK、安全和 tractability 选择实验代表。
+
+## 3. Stage 0–16 总表
+
+| Stage | Question | Input | Method | Key Output | Main Finding | Limitation | Next Step |
+|---:|---|---|---|---|---|---|---|
+| 0 | 研究问题是什么？ | 初始目标 | protocol definition | Phase 0–1 protocol | 化学能力、人体/转化与 target 必须分层 | 无数值 ranking | 建候选框架 |
+| 1 | 如何筛“综合科学价值”？ | protocol、数据库审计 | 100 分框架与数据字典 | Evidence rubric | 建立可追溯字段和 T1–T5 | 综合分不够统一 | assay audit |
+| 2 | assays 各测什么？ | 方法学文献 | HAT/ET 与 assay audit | Assay audit | assays 不可简单平均 | 不产生 compound rank | 选 primary metric |
+| 3 | 是否采用 ORAC？ | audit | v2.0 two-stage design | ORAC-FL decision | 酚类 chemical capacity 用 ORAC-FL | 不适配所有类别 | H/L 分臂 |
+| 4 | H/L 能否混排？ | physicochemical/QC rules | arm separation | H/L framework | 未桥接不混排 | L 数据少 | eligibility |
+| 5 | 历史数据如何判级？ | protocol metadata | A/B1/B2/C/X | Eligibility rubric | A formal；A+B1 exploratory | A=0 | pilot |
+| 6 | 排哪些候选？ | food/identity scope | taxonomy + H/L compatibility | Candidate scope | 正常膳食定义单体 | ORAC-centric | 17-compound pilot |
+| 7 | 历史 ORAC 能否作图？ | 17 candidates | original-value extraction | 11 initial records | Tier A=0 | 9 candidates missing | B1 policy |
+| 8 | B1 后能否探索比较？ | 16 reclassified records | exploratory aggregation | H-ORAC exploratory plots | 有限趋势可见 | 非标准化真值 | expand universe |
+| 9 | 多酚 universe 是否充分？ | scope + identities | systematic candidate generation | 50 candidates | 覆盖主要 phenolic subclasses | publication bias | provisional Top20 |
+| 10 | 可否形成 phenolic Top20？ | A/B1 records | median + confidence | provisional Top20 | 历史数据支持有限榜单 | single-study 多 | consolidate |
+| 11 | Top20 稳定吗？ | targeted searches | independent B1 + before/after | consolidated ranking | 前五更新；3 个 High | Tier A=0 | readiness |
+| 12 | 谁可进入 target pilot？ | rank + assay risk | Ready/Conditional/Not ready | 20-row shortlist | readiness 与 rank 分开 | 尚未 mapping | SOP |
+| 13 | 能否无 AI 重现？ | 全部 H-ORAC files | master SOP + templates | H-ORAC pipeline | phenolic workflow 可复现 | 只适用于 H-arm | cross-class pilot |
+| 14 | 如何覆盖多类别？ | shortlist + exposure | class coverage → exposure → mechanism | 20 organic + 5 minerals | core exposure 18.62-fold | pilot，非最终 | mechanism ledger |
+| 15 | 机制证据如何组织？ | pilot panel + selected literature | compound×mechanism ledger | 25 evidence rows | 最小可审计 ledger | 未系统穷尽；blank=not reviewed | Atlas framework |
+| 16 | 如何继续扩展所有类别？ | Stage 0–15 | class-specific rules + profile comparison | Atlas v1.0 framework | one Top20 被 class Top-N 替代 | 分类别 Top-N 未执行 | roadmap Phase 1–4 |
+
+## 4. Current Atlas workflow
+
+`Functional class → Candidate universe → Class-specific Top-N → Mechanism profile → Dietary exposure → Evidence strength → Cross-class comparison → Representative experimental panel → Target mapping`。每个箭头都有 stop condition：身份和 food occurrence 未核实不得进入 universe；primary construct 未冻结不得排名；系统检索未完成不得把空白写成 no evidence；class-specific Top-N 未完成不得冻结跨类实验 panel；T1/T2 与 pathway effects 未完成 pilot 不得批量 target mapping。
+
+## 5. Output 与 Interpretation 的统一规则
+
+Stage 10 的 output 是 H-ORAC provisional Top20；它说明历史 ORAC-FL 文献可支持有限 phenolic ranking，不说明跨类别最强 Top20。Stage 14 的 output 是 Cross-Class Pilot Panel v1.0；它说明 taxonomy、暴露窗口和机制可视化可以在共同结构中测试，不说明这 20 个是最终实验因子。Stage 15 的 output 是 pilot mechanism evidence ledger；它说明证据可以按实验设计分级并连接到 compound/pathway，不说明空白 cell 无证据。
+
+## 6. File status and provenance
+
+历史 protocol、原始抽取、ranking、change logs、SOP、Python scripts 和旧 figures 全部保存在 `archive/legacy_pre_class_balanced_2026-09-18/`。Phase 2 的 active data 是统一 candidate master、taxonomy relationships 和 exclusion log；Phase 3A 新增 flavonoid eligibility lock、record-level H-ORAC evidence master、Top20 v1.0 与 coverage audit。原始 class-balanced panel、旧 phenolic ranking 和机制表保留为历史输入，未删除或静默覆盖。R 脚本是正式图的唯一主入口。
+
+## 7. Current project status
+
+### Completed
+
+Stage 0–13 的 protocol、assay audit、H/L 分臂、A/B1/B2/C/X、17-compound pilot、50-candidate H-arm universe、phenolic provisional Top20、evidence consolidation、readiness shortlist 和无 AI H-ORAC SOP 均有结构化文件；Atlas taxonomy、class-specific ranking rules、cross-class profile framework 和未来四阶段 roadmap 已完成框架冻结。
+
+### Provisional
+
+Cross-Class Pilot Panel v1.0、25-row mechanism evidence ledger、所有基于 B1 的 H-ORAC 数值和 target readiness 均为 provisional/pilot。R 4.5.3 已可用，Phase 2 universe 图与 Phase 3A flavonoid 图均已在本机渲染并完成视觉检查。
+
+### Superseded
+
+100 分综合框架不再产生 chemical capacity rank；ORAC 不再承担 all-class ranking；phenolic Top20 不再称为项目最终 Top20；旧 Python 图不再作为正式 Atlas 绘图主流程。
+
+### Not yet completed
+
+除 Flavonoids 外的 class-specific Top-N、完整机制系统综述、正式 cross-class comparison、Global Top Overview、最终 experimental representative panel、批量 target mapping、pathway knowledge graph 及统一实验复测均未完成。
+
+## 8. Stage 17 — Phase 2 Candidate Universe Construction
+
+**Purpose：**为 Atlas 的 9 个 analysis panels 建立统一、结构明确、正常膳食来源且与 antioxidant performance 无关的候选宇宙。**Input：**taxonomy v1.0、历史 50-candidate phenolic universe、Cross-Class Pilot Panel、PubChem 身份信息和权威食物数据库优先级。**Method：**先按 chemical class 和 normal dietary relevance 生成候选，再批量核对 PubChem CID、InChIKey、分子式和分子量；glycoside/aglycone、cis/trans isomer、parent/conjugate、dietary parent/metabolite 分开；无法唯一解析或食物证据薄弱者标记 unresolved，失败者保留 exclusion log。ORAC、DPPH、ABTS、FRAP、CUPRAC、NRF2 potency、target/publication count 和期刊影响因子均未用于 candidate generation。
+
+**Output：**`data/Antioxidant_Class_Candidate_Master.csv` 收录 191 个候选，其中 178 eligible、13 unresolved；`data/Antioxidant_Taxonomy_Relationships.csv` 有 36 条 panel/subclass relationship；`data/Antioxidant_Candidate_Exclusions.csv` 保留 12 个排除项；`docs/Phase2_Candidate_Universe_Summary_CN.md` 完成 coverage/bias audit。9 个 analysis panels 的候选数为 Flavonoids 59、Phenolic acids/conjugates 29、Stilbenes/lignans 15、Vitamins 10、Carotenoids 19、Organosulfur 15、Betalains/nitrogen-containing 11、Other phytochemicals 26、Minerals 7。
+
+**Interpretation：**taxonomy 已从 pilot 结构升级为可供 Phase 3 使用的统一 candidate universe。Flavonoids、phenolic acids 和 other phytochemicals 可支持 Top20 起始筛选；其余类别应采用 Top10 或 all eligible，除非后续食物数据库审计新增足够候选。**Limitation：**多数 food-occurrence references 仍是 class/source-level 初筛，Phase 3 前必须完成 candidate-level 第二研究者核验；数据库存在明显地域偏倚。**Next step：**进入 Phase 3，在完成 candidate-level food-occurrence second review 和 identity/form lock 后，按 class-specific primary construct 开始 Top-N ranking。第一批从 Polyphenols–Flavonoids 开始。
+
+### Future phases frozen in the workflow
+
+Phase 3 是 class-specific Top-N ranking；Phase 4A 是 Global Top Overview，只并列展示 class-specific rank、within-class percentile、primary metric、confidence、dietary exposure 和 mechanism profile；Phase 4B 是 Cross-Class Comparability Matrix，明确可直接比较、仅可 profile 比较和不可数值混排的维度；Phase 4C 才从各类 Top-N 选择 Representative Cross-Class Experimental Panel。任何阶段都不得创建 ORAC z-score + carotenoid score + NRF2 score、assay simple average、ORAC × exposure 或 journal-IF-weighted global score。
+
+## 9. Updated current project status
+
+**Completed：**taxonomy v1.0、Stage 0–16 历史整理、Phase 2 candidate universe、taxonomy relationships、exclusion audit，以及 Phase 3A Flavonoid Top20 v1.0。**Provisional：**Flavonoid榜基于 A/B1 历史 ORAC-FL；Tier A=0，且11个Top20候选为单研究估计。**Not completed：**其余类别 Top-N、Global Top Overview、cross-class comparability result、final experimental panel、target mapping 和完整机制 ledger。
+
+## 10. Stage 18 — Phase 3A Flavonoid Top20 Ranking
+
+**Purpose：**在完整 59-candidate Polyphenols–Flavonoids universe 中完成候选级 eligibility lock，并按 literature-derived H-ORAC-FL 建立当前 class-specific Top20。**Input：**Phase 2 candidate master、历史 H-ORAC evidence、A/B1/B2/C/X rubric，以及系统补检得到的原始 pure-compound records。**Method：**逐项锁定 identity/form/food occurrence；只用 AAPH–fluorescein–Trolox H-arm；保留 original value、单位、转换、independent experiment ID 和 exact location；A/B1 按 compound median 排序，confidence 独立标注；anthocyanins因未解决 optical interference 最高 B2。
+
+**Output：**57 eligible_for_ranking、2 hold；evidence master 94 rows（A=0、B1=53、B2=5、C=7、X=29）；25 compounds具有A/B1数值，形成不降标准的 Top20。前五为 epicatechin、catechin、gallocatechin、apigenin、isorhamnetin。Top20 confidence 为 High=4、Moderate=5、Low=11。**Interpretation：**该榜只表示 broadly comparable historical H-ORAC-FL chemical capacity；高位单研究值不等于稳健，且不能外推人体效果。**Limitation：**Tier A仍为0；11个单研究估计；quercetin/catechin异质性高；anthocyanins及多类glycosides覆盖不足；新增来源待 Zotero local import。**Next step：**研究者完成第二人复核后进入 Phase 3B Phenolic acids/conjugates Top-N。
+
+## 11. Next step
+
+下一步进入 Phase 3B：对 Polyphenols–Phenolic acids / conjugates 先执行 candidate-level food-occurrence second review 与 identity/form lock，再按冻结的 class-specific construct开展 Top-N。至少在 Flavonoids 与 Phenolic acids 两类完成并审核前，不测试 Global Top Overview；本阶段不做跨类总排名、实验 panel 或 target mapping。
