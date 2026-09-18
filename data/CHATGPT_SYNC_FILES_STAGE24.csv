@@ -1,0 +1,39 @@
+﻿priority,file_path,file_type,purpose,required_yes_no,why_needed,supersedes,upload_to_chatgpt
+1,docs/Supervisor_Aqueous_Ranking_Progress_CN.md,md,Stage 24 scientific summary,yes,Stage 24 scientific summary,NA,yes
+1,data/Supervisor_Aqueous_Class_Ranking_Overview.csv,csv,Class/subpanel ranking overview,yes,Class/subpanel ranking overview,NA,yes
+1,data/Aqueous_Antioxidant_Primary_Literature_Evidence.csv,csv,Record-level DOI-traceable evidence,yes,Record-level DOI-traceable evidence,NA,yes
+1,data/Aqueous_Antioxidant_Paper_Summary.csv,csv,Paper-level evidence summary,yes,Paper-level evidence summary,NA,yes
+1,data/Stilbenes_Lignans_Evidence_Master.csv,csv,New class evidence master,yes,New class evidence master,NA,yes
+1,data/Stilbenes_Lignans_TopN_v1.0.csv,csv,Stilbenes/lignans Top available,yes,Stilbenes/lignans Top available,NA,yes
+1,data/Betalains_Nitrogen_Profile_Evidence.csv,csv,Betalain profile evidence,yes,Betalain profile evidence,NA,yes
+1,data/Organosulfur_Redox_Profile.csv,csv,Organosulfur redox profile,yes,Organosulfur redox profile,NA,yes
+1,data/Other_Aqueous_Phytochemicals_Evidence_Master.csv,csv,Other-aqueous evidence master,yes,Other-aqueous evidence master,NA,yes
+1,data/Other_Aqueous_Phytochemicals_TopN_v1.0.csv,csv,Other-aqueous coherent-subpanel Top available,yes,Other-aqueous coherent-subpanel Top available,NA,yes
+1,data/Aqueous_Metal_Redox_Evidence.csv,csv,Metal mechanism evidence,yes,Metal mechanism evidence,NA,yes
+1,data/Antioxidant_Micronutrient_Redox_Profile_v2.csv,csv,Micronutrient profile,yes,Micronutrient profile,NA,yes
+1,figures/aqueous_antioxidant_atlas/FIGURE_INDEX_CN.md,md,Canonical figure definitions and caveats,yes,Canonical figure definitions and caveats,NA,yes
+2,figures/aqueous_antioxidant_atlas/00_overview/Aqueous_All_Classes_Ranking_Overview.png,png,Canonical scientific figure,no,Canonical scientific figure,See Figure Index/manifest,optional
+2,figures/aqueous_antioxidant_atlas/00_overview/Aqueous_Class_Coverage_Overview.png,png,Canonical scientific figure,no,Canonical scientific figure,See Figure Index/manifest,optional
+2,figures/aqueous_antioxidant_atlas/00_overview/Aqueous_Metal_Redox_Framework.png,png,Canonical scientific figure,no,Canonical scientific figure,See Figure Index/manifest,optional
+2,figures/aqueous_antioxidant_atlas/00_overview/Aqueous_Primary_Literature_Coverage.png,png,Canonical scientific figure,no,Canonical scientific figure,See Figure Index/manifest,optional
+2,figures/aqueous_antioxidant_atlas/03_stilbenes_lignans/Stilbenes_Lignans_TopN.png,png,Canonical scientific figure,no,Canonical scientific figure,See Figure Index/manifest,optional
+2,figures/aqueous_antioxidant_atlas/05_betalains/Betalains_Profile_Comparison.png,png,Canonical scientific figure,no,Canonical scientific figure,See Figure Index/manifest,optional
+2,figures/aqueous_antioxidant_atlas/06_organosulfur/Organosulfur_Redox_Mechanism_Profile.png,png,Canonical scientific figure,no,Canonical scientific figure,See Figure Index/manifest,optional
+2,figures/aqueous_antioxidant_atlas/07_other_aqueous_phytochemicals/Other_Aqueous_TopN.png,png,Canonical scientific figure,no,Canonical scientific figure,See Figure Index/manifest,optional
+2,figures/aqueous_antioxidant_atlas/08_metal_chelation/Metal_Chelation_or_Fenton_Evidence_Profile.png,png,Canonical scientific figure,no,Canonical scientific figure,See Figure Index/manifest,optional
+2,figures/aqueous_antioxidant_atlas/09_micronutrients/Micronutrient_Redox_Profile.png,png,Canonical scientific figure,no,Canonical scientific figure,See Figure Index/manifest,optional
+3,Antioxidant_Project_MASTER_HISTORY_AND_WORKFLOW_CN.md,md,Method evolution and project history,no,Method evolution and project history,NA,optional
+3,docs/PROJECT_STAGE_INDEX_CN.md,md,Stage status audit,no,Stage status audit,NA,optional
+3,R/plot_antioxidant_atlas.R,R,Canonical plotting logic,no,Canonical plotting logic,NA,optional
+3,figures/aqueous_antioxidant_atlas/FIGURE_INVENTORY_AUDIT.csv,csv,Figure-level deduplication audit,no,Figure-level deduplication audit,NA,optional
+3,archive/figure_redundancy_stage24/ARCHIVED_FIGURES_MANIFEST.csv,csv,Archived-figure provenance,no,Archived-figure provenance,NA,optional
+DO NOT SEND,archive/figure_redundancy_stage24/00_overview/Aqueous_Antioxidant_Class_Overview.png,png,Archived redundant figure,no,Superseded by canonical active figure,NA,no
+DO NOT SEND,archive/figure_redundancy_stage24/00_overview/Aqueous_Class_Ranking_Leaders.png,png,Archived redundant figure,no,Superseded by canonical active figure,NA,no
+DO NOT SEND,archive/figure_redundancy_stage24/00_overview/Aqueous_Evidence_Confidence_Overview.png,png,Archived redundant figure,no,Superseded by canonical active figure,NA,no
+DO NOT SEND,archive/figure_redundancy_stage24/01_flavonoids/Flavonoids_Evidence_Confidence.png,png,Archived redundant figure,no,Superseded by canonical active figure,NA,no
+DO NOT SEND,archive/figure_redundancy_stage24/02_phenolic_acids/PhenolicAcids_Evidence_Confidence.png,png,Archived redundant figure,no,Superseded by canonical active figure,NA,no
+DO NOT SEND,archive/figure_redundancy_stage24/03_stilbenes_lignans/Stilbenes_Lignans_Evidence_Confidence.png,png,Archived redundant figure,no,Superseded by canonical active figure,NA,no
+DO NOT SEND,archive/figure_redundancy_stage24/04_water_soluble_vitamins/VitaminC_TopN.png,png,Archived redundant figure,no,Superseded by canonical active figure,NA,no
+DO NOT SEND,archive/figure_redundancy_stage24/07_other_aqueous_phytochemicals/Other_Aqueous_Evidence_Confidence.png,png,Archived redundant figure,no,Superseded by canonical active figure,NA,no
+DO NOT SEND,archive/figure_redundancy_stage24/08_metal_chelation/Metal_Chelation_Evidence_Overview.png,png,Archived redundant figure,no,Superseded by canonical active figure,NA,no
+DO NOT SEND,archive/figure_redundancy_stage24/08_metal_chelation/Metal_Redox_Mechanism_Framework.png,png,Archived redundant figure,no,Superseded by canonical active figure,NA,no
