@@ -1,0 +1,18 @@
+# Antioxidant Functional Factor Taxonomy（冻结版 v1.0）
+
+本 taxonomy 将“抗氧化功能因子”定义为正常膳食来源、结构明确并具有直接化学抗氧化、内源性防御调节、ROS 形成抑制、脂质氧化控制或必需 redox-enzyme cofactor 作用的化合物/微量营养素。一级分类是化学与功能组织工具，不是统一强度排名；每类采用适配的 primary ranking construct。
+
+| 一级类别 | 定义与主要亚类 | 代表物及膳食来源 | 主要机制 | Primary / secondary assay | 不适用或高风险 assay | 暴露与人体证据 | 技术限制 | 预计 universe 与 Top-N |
+|---|---|---|---|---|---|---|---|---|
+| 1. Flavonoids | C6–C3–C6 flavonoid scaffold；flavan-3-ols、flavonols、flavones、flavanones、anthocyanins、isoflavones | catechin/EGCG（茶）、quercetin（洋葱/苹果）、naringenin（柑橘）、genistein（大豆） | peroxyl-radical chain breaking、ET、螯合；部分 NRF2/NOX | H-ORAC-FL；secondary CUPRAC、lipid oxidation、causal mechanism | 未校正光学干扰的 anthocyanin fluorescence assays | 摄入调查较多，人体机制常由代谢物介导 | glycoside/aglycone、异构体、培养浓度与 Cmax gap | 约 30–80；资料充分时 Top20 |
+| 2. Phenolic acids / conjugates | hydroxybenzoic、hydroxycinnamic acids 与 caffeoylquinic conjugates | caffeic/ferulic/chlorogenic/gallic acids；咖啡、谷物、水果 | HAT/ET、metal interaction、lipid oxidation | H-ORAC-FL；secondary CUPRAC、chelation、lipid oxidation | 把总酚/food extract ORAC 当纯单体 | 摄入可高，但常以 hydrolysis-derived equivalents 报告 | 游离体/结合体定义、肠代谢、异构体 | 约 20–50；Top10–20 |
+| 3. Other polyphenols | stilbenes、lignans、结构明确 tannin-related compounds | resveratrol（葡萄/酒）、sesamin/lignans（芝麻/亚麻） | subclass-dependent chain breaking、membrane action、NRF2 | 根据亚类用 H-ORAC 或 lipid assay；secondary CUPRAC/mechanism | 将聚合 tannin mixture 当单一结构 | 摄入普遍较低且代谢快 | parent lignan 与 enterolignan 不能替代 | 约 10–30；Top10 或 all eligible |
+| 4. Vitamins / vitamin-like | vitamin C、tocopherols、tocotrienols及有明确膳食维生素作用者 | ascorbate（果蔬）、alpha/gamma-tocopherol（油/坚果） | 水相 electron donation/regeneration；脂相 chain termination | C：H-ORAC/reducing/regeneration；E：L-ORAC/lipid peroxidation | 用单一水相 assay 混排 C 与 E | 人体摄入与干预证据丰富 | vitamer、立体化学、补充剂剂量与膳食剂量 | 数量有限；all eligible 或 Top5–10 |
+| 5. Carotenoids | carotenes 与 xanthophylls | beta-carotene、lycopene、lutein、zeaxanthin；彩色果蔬/蛋 | singlet-oxygen quenching、膜相 radical control | validated singlet-oxygen quenching 或 lipid-phase assay；secondary lipid oxidation/L-ORAC | 常规 H-ORAC；未校正溶解/聚集/吸光的荧光法 | 有较多人群/干预证据，但 formulation 重要 | 氧张力、顺反异构、光学干扰、吸收饱和 | 约 10–20；Top10 或 all eligible |
+| 6. Organosulfur compounds | isothiocyanates、thiosulfinates、含硫挥发物 | sulforaphane（十字花科）、allicin（蒜） | KEAP1–NRF2、thiol reactivity、GSH、ROS modulation | 因果 NRF2/thiol/redox endpoint evidence；secondary chemical reactivity | ORAC 作为核心排名 | parent exposure 不稳定；human feeding/PK 依加工而变 | myrosinase、化学不稳定、electrophile dose | 约 10–30；Top10 或 all eligible |
+| 7. Betalains / nitrogen-containing phytochemicals | betalains、结构明确含氮食源色素/生物碱 | betanin（甜菜）、indicaxanthin（仙人掌果） | radical scavenging、redox chemistry、膜/炎症相关 redox | fixed-protocol radical/redox assay + optical QC；secondary biological endpoints | 未做 inner-filter/self-fluorescence QC 的荧光 assay | 饮食暴露和人体证据较少 | 强色、pH 转化、稳定性 | 约 5–20；Top10 或 all eligible |
+| 8. Other food-derived redox-active phytochemicals | curcuminoids、capsaicinoids、spice phenolics、膳食相关 quinones | curcumin、capsaicin、eugenol、carvacrol；香辛料 | subclass-specific radical chemistry、NRF2、lipid oxidation | 按亚类选择；机制证据优先 | 用知名度或 docking 统一排名 | 暴露通常低且高度依饮食文化 | 低 bioavailability、混合物、补充剂偏倚 | 约 20–50；Top10–20，需严格 dietary gate |
+| 9. Antioxidant-related micronutrients / mineral cofactors | Se、Zn、Mn、Cu、Fe 等 redox enzyme cofactors | 海产/谷物/肉/坚果等 | GPX/TXNRD、SOD1/SOD2、heme enzymes；Fe/Cu 兼具促氧化 | biological cofactor relevance、requirement、deficiency/supplementation | 任何“molar antioxidant capacity”统一排名 | 人体营养证据丰富，常呈 U 形 | 化学形态、状态依赖、毒性、Fenton chemistry | 不做 antioxidant Top-N；按功能与营养状态分层 |
+
+冻结规则：第 9 类永久单列；H-ORAC 只适用于方法学相容的水相单体；类胡萝卜素、tocopherols、有机硫和矿物质不得因缺少 H-ORAC 被判为低抗氧化价值；所有 Top-N 均先报告 `N eligible`，候选不足时使用 Top10 或 all eligible。
+
