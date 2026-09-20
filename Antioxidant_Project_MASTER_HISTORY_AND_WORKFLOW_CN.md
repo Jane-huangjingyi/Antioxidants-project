@@ -169,3 +169,13 @@ Phase 3 是 class-specific Top-N ranking；Phase 4A 是 Global Top Overview，�
 **Metal/mineral handling：**metal evidence master包含8条机制记录，micronutrient v2 profile包含Se、Zn、Mn、Cu、Fe、Mg、Mo共7个节点；两者均不进入ORAC排序。**Limitations：**新增可排名类别没有Tier A，且全部数值记录为single-study B1；betalain存在光学与pH依赖，organosulfur不同构念不可合并；metal oxidation state和net endpoint需要第二研究者核对；一个legacy figure-only source仍无DOI，部分Zotero key仍待本地导入。
 
 **HUMAN REVIEW REQUIRED：**Podophyllotoxin的正常膳食与aqueous-scope gate、Probetanin缺失的PubChem CID/InChIKey、Ubiquinone-10的aqueous-scope合理性均未被Codex静默修改；betalain optical QC、organosulfur dietary gates以及Fe/Cu oxidation-state annotations也需人工裁决。**Next step：**研究者先审核上述事项、single-study榜与图包，再决定是否扩充原始文献或冻结下游实验/target-mapping输入；Stage 24不自动进入target mapping、global score或lipid expansion。
+
+## Stage 25A — Unified Literature-Evidence Screening
+
+**Purpose：**在冻结的157个aqueous candidates中，用统一、与抗氧化强度分离的文献指标描述research maturity，为后续Stage 25B H-ORAC检索缩小工作范围。**Method：**Europe PMC执行候选标题identity anchor与antioxidant/redox题名/摘要检索；排除review及非original类型、docking-only、不可归因extract和重复索引；DOI/PMID/规范化标题去重后的publication count作为当前independent-publication proxy。OpenAlex前置coverage audit为37/37 matched、37/37 citation metadata available，因而冻结为sole citation source。
+
+**Output：**157行screening master、45,643行candidate×publication provenance（其中41,967条纳入primary metric）、检索日志、cutoff/class sensitivity、OpenAlex unmatched与分层coverage表，以及6张R图。全量有标识符记录40,233条，OpenAlex matched 40,193条，matching rate 99.90%；matched-work citation availability为100%，class/年代/identity strata均通过95%。主榜前五为Curcumin、L-Ascorbic acid、Quercetin、Epigallocatechin、Gallic acid；这表示research density，不表示抗氧化能力。
+
+**Cutoff recommendation：**Top50累计覆盖91.42%的publication proxy，primary-vs-citation重叠49/50、primary-vs-recent重叠46/50，并保留七个aqueous panels，因此建议作为provisional Stage25B retrieval frame。该建议没有class quota，且不自动使不适合H-ORAC的候选获得资格。Stage25B readiness为Ready 86、Conditional 45、Not suitable 24、Insufficient identity 2；11个candidate-universe问题继续标记HUMAN REVIEW REQUIRED。
+
+**Limitations and stop point：**元数据自动筛选不能完全确认candidate experimental exposure、same cohort/experiment拆分发表或全文redox endpoint，因此`antioxidant_independent_publication_N`仍是provisional metadata-level proxy。进入Stage25B前应对Top50进行双人分层抽样和rank-changing error audit。本阶段不启动H-ORAC批量抽取，不建立composite score，也不把publication/citation density解释为potency、quality或human efficacy。

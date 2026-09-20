@@ -277,3 +277,7 @@
 - **Supersedes：**None
 - **Major caveat：**Class-specific construct; raw values must not be compared across incompatible panels.
 - **Recommended use：**supervisor/manuscript
+
+## Stage 25A — `10_unified_literature_screening/`
+
+该目录的六张图使用`Stage25A_Unified_Literature_Screening_Master.csv`、publication provenance及cutoff/class sensitivity tables生成。`Stage25A_Research_Evidence_Density_Ranking.png`显示Top50 metadata-deduplicated antioxidant/redox publication proxy；`Stage25A_Publications_vs_Citations.png`比较publication density与OpenAlex citations；`Stage25A_Recent_vs_Historical_Evidence.png`区分历史积累和2022–2026活跃度；`Stage25A_Shortlist_Stability.png`显示不同cutoff在citation、citation/year、recent和human metrics下的retention；`Stage25A_Class_Representation.png`显示未设quota时的类别保留；`Stage25A_Evidence_Domain_Breadth.png`显示Top30的chemical、cellular、animal、human和mechanism元数据标签覆盖。所有图均描述research maturity/evidence density，不表示antioxidant strength、evidence quality或human efficacy；same-cohort independence和full-text endpoint仍需人工复核。

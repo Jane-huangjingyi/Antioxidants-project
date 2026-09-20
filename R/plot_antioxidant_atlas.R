@@ -568,3 +568,43 @@ p47 <- micro_v2 %>% ggplot(aes(prooxidant_context,fct_reorder(nutrient,prooxidan
 save_aqueous(p47,"09_micronutrients","Micronutrient_Prooxidant_Context",13,7)
 
 message("Generated Stage 24 aqueous class and profile figures in: ",aqueous_root)
+
+# =====================================================
+# STAGE 25A — UNIFIED LITERATURE / EVIDENCE SCREENING
+# =====================================================
+stage25_dir <- file.path(aqueous_root,"10_unified_literature_screening")
+dir.create(stage25_dir,recursive=TRUE,showWarnings=FALSE)
+save25 <- function(p,file,w=12,h=8) ggsave(file.path(stage25_dir,file),p,width=w,height=h,dpi=320,bg="white")
+s25 <- read_csv(file.path(root,"data","Stage25A_Unified_Literature_Screening_Master.csv"),show_col_types=FALSE)
+s25_cut <- read_csv(file.path(root,"data","Stage25A_Shortlist_Cutoff_Sensitivity.csv"),show_col_types=FALSE)
+s25_cls <- read_csv(file.path(root,"data","Stage25A_Class_Representation_Sensitivity.csv"),show_col_types=FALSE)
+s25_pub <- read_csv(file.path(root,"data","Stage25A_Publication_Provenance.csv"),show_col_types=FALSE)
+
+p48 <- s25 %>% slice_min(primary_rank,n=50) %>% mutate(canonical_name=fct_reorder(canonical_name,antioxidant_independent_publication_N)) %>%
+  ggplot(aes(antioxidant_independent_publication_N,canonical_name,color=class))+geom_point(size=POINT_SIZE)+theme_atlas+
+  labs(title="Stage 25A research-evidence density ranking",subtitle="Top 50 of the frozen 157; counts measure research maturity, not antioxidant strength",x="Metadata-deduplicated antioxidant/redox original publications",y=NULL,color="Class")
+save25(p48,"Stage25A_Research_Evidence_Density_Ranking.png",14,13)
+
+lab25 <- s25 %>% filter(primary_rank<=15 | citation_rank<=10)
+p49 <- ggplot(s25,aes(antioxidant_independent_publication_N,total_citation_N,color=class))+geom_point(alpha=.65,size=2.5)+
+  geom_text(data=lab25,aes(label=canonical_name),size=LABEL_SIZE-0.6,nudge_y=max(s25$total_citation_N,na.rm=TRUE)*.018,check_overlap=TRUE)+
+  scale_x_log10()+scale_y_log10()+theme_atlas+labs(title="Stage 25A publications versus OpenAlex citations",subtitle="Log axes; OpenAlex is the frozen sole citation source",x="Independent-publication proxy (log10)",y="OpenAlex citations (log10)",color="Class")
+save25(p49,"Stage25A_Publications_vs_Citations.png",13,9)
+
+p50 <- ggplot(s25,aes(antioxidant_publication_N,recent_5y_publication_N,color=class))+geom_point(alpha=.7,size=2.7)+
+  geom_text(data=s25 %>% slice_min(primary_rank,n=15),aes(label=canonical_name),size=LABEL_SIZE-0.6,nudge_y=25,check_overlap=TRUE)+
+  scale_x_log10()+scale_y_log10()+theme_atlas+labs(title="Stage 25A recent versus historical evidence",subtitle="Recent window: 2022–2026; axes use log10",x="All included original publications",y="Recent five-year publications",color="Class")
+save25(p50,"Stage25A_Recent_vs_Historical_Evidence.png",13,9)
+
+stab25 <- s25_cut %>% transmute(cutoff_N,Publication=citation_metric_overlap_N/cutoff_N,`Citation/year`=citation_per_year_overlap_N/cutoff_N,Recent=recent_5y_overlap_N/cutoff_N,Human=human_evidence_overlap_N/cutoff_N) %>% pivot_longer(-cutoff_N,names_to="metric",values_to="retention")
+p51 <- ggplot(stab25,aes(factor(cutoff_N),metric,fill=retention))+geom_tile(color="white")+geom_text(aes(label=scales::percent(retention,accuracy=1)),size=LABEL_SIZE)+scale_fill_gradient(limits=c(0,1),low="#F2E8CF",high="#2A9D8F",labels=scales::percent)+theme_atlas+labs(title="Stage 25A shortlist stability",subtitle="Retention of primary-ranking candidates under supporting metrics",x="Shortlist size",y=NULL,fill="Retention")
+save25(p51,"Stage25A_Shortlist_Stability.png",10,6)
+
+class25long <- s25_cls %>% select(class,starts_with("Top")) %>% pivot_longer(-class,names_to="cutoff",values_to="retained_N") %>% mutate(cutoff=factor(cutoff,levels=paste0("Top",c(20,30,40,50,60),"_N"),labels=paste0("Top",c(20,30,40,50,60))))
+p52 <- ggplot(class25long,aes(cutoff,retained_N,fill=class))+geom_col()+theme_atlas+labs(title="Stage 25A class representation",subtitle="Observed retention without class quotas",x="Primary shortlist cutoff",y="Candidates retained",fill="Class")
+save25(p52,"Stage25A_Class_Representation.png",13,8)
+
+domain25 <- s25_pub %>% filter(include_primary_metric=="yes") %>% mutate(across(c(chemical_assay,cellular,animal,human,redox_mechanism),~.x=="yes")) %>% group_by(canonical_name) %>% summarise(Chemical=sum(chemical_assay),Cellular=sum(cellular),Animal=sum(animal),Human=sum(human),Mechanism=sum(redox_mechanism),.groups="drop") %>% inner_join(s25 %>% filter(primary_rank<=30) %>% select(canonical_name,primary_rank),by="canonical_name") %>% pivot_longer(c(Chemical,Cellular,Animal,Human,Mechanism),names_to="domain",values_to="N")
+p53 <- ggplot(domain25,aes(domain,fct_reorder(canonical_name,-primary_rank),fill=log10(N+1)))+geom_tile(color="white")+scale_fill_gradient(low="#F2E8CF",high="#5F0F40")+theme_atlas+labs(title="Stage 25A evidence-domain breadth",subtitle="Top 30 primary candidates; fill is log10(publication count + 1)",x=NULL,y=NULL,fill="log10(N+1)")
+save25(p53,"Stage25A_Evidence_Domain_Breadth.png",11,10)
+message("Generated Stage 25A figures in: ",stage25_dir)
