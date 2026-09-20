@@ -189,3 +189,9 @@ Phase 3 是 class-specific Top-N ranking；Phase 4A 是 Global Top Overview，�
 **Reproducibility and output：**旧的monolithic plotting script迁入`archive/R_legacy/plot_antioxidant_atlas_pre_modularization.R`，active绘图改为common helpers、按科学模块分拆的R scripts和薄入口`R/render_all_active_figures.R`。29/29张active canonical figures均由登记输入成功重建。两张异常图的根因是log10坐标下数值型label nudge造成二次尺度失真；错误版本保留在`archive/figure_qc_stage25A1/`，canonical replacements仅使用一次log transform。当前active组织以candidate universe、class-specific antioxidant、literature screening、metal/micronutrients、methods/QC、supervisor、sync与references为主；Stage编号继续保留在本文件、`docs/PROJECT_STAGE_INDEX_CN.md`和provenance metadata中。
 
 **Stop point：**Stage25B未启动。下一步必须先由研究者处理4个HUMAN REVIEW scope/dietary gates并确认43-candidate retrieval frame，再按冻结的H-ORAC eligibility规则开展定量文献检索。
+
+## Stage 25A.2 — Final Project Information Architecture Audit
+
+本阶段只审计logic、redundancy、canonicality、traceability与archive hygiene，不改变科学结果。审计基线为411个tracked files（active 239、archive 172）；active exact与normalized-text semantic duplicate均为0。发现的一个canonicality conflict是micronutrient v1/v2同时active，另有三个已被Stage25A.1取代的历史sync assets仍在active区；四项均可逆归档并更新migration map。当前62项canonical registry路径唯一存在，29张canonical figures分别承担独立的magnitude、robustness、coverage、mechanism、risk或screening-sensitivity信息，没有新增figure/R redundancy。
+
+Archive保留177个tracked files，其中5组byte-identical pairs标记`HUMAN REVIEW REQUIRED — ARCHIVE RETENTION`，未自动删除。Figure→R→direct Data为29/29完整；candidate food occurrence缺逐行authority identifier以及Stage25A未完成全文same-experiment adjudication继续作为科学provenance limitation保留。结论是active project architecture可以冻结；Stage25B仍未启动。
