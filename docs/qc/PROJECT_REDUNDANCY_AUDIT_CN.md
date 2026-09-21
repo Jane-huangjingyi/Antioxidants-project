@@ -16,4 +16,4 @@ Migration map共有362条原始迁移记录，所有`proposed_new_path`均实际
 
 README职责没有发现需要合并的重复：root README是入口，PROJECT FILE INDEX是当前逻辑地图，PROJECT STAGE INDEX是时间线，MASTER HISTORY是科学决策史，DATA DICTIONARY定义字段，FIGURE INDEX和FIGURE CODE/DATA MAP分别承担图导航与机器可复现映射。目录深度整体合理；`literature_screening/master/`和`provenance/`虽然各只有一个核心文件，但它们明确标识source of truth与大体量ledger，保留该层能降低误用风险。
 
-结论是：当前active project architecture可以冻结。所有关键canonical assets已唯一明确，active区没有确认的exact、semantic或未处理functional redundancy；无需继续大规模调整目录。后续只建议由研究者决定5组archive exact pairs是否保留双份，并可在有维护需求时为8个旧archive package补局部README。现有4个Stage25B候选scope/dietary-gate human-review事项仍然存在，但属于科学资格判断，不属于本次信息架构冲突。Stage25B在这些事项获裁决前仍不应自动启动。
+结论是：当前active project architecture可以冻结。所有关键canonical assets已唯一明确，active区没有确认的exact、semantic或未处理functional redundancy；无需继续大规模调整目录。后续只建议由研究者决定5组archive exact pairs是否保留双份，并可在有维护需求时为8个旧archive package补局部README。本报告完成时仍存在的4个Stage25B候选scope/dietary-gate事项，已在后续Stage25A.1 Human Review Resolution中由研究者全部裁决为INCLUDE；该状态变化不改变本报告的文件架构结论。

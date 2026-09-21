@@ -16,3 +16,4 @@
 
 冻结规则：第 9 类永久单列；H-ORAC 只适用于方法学相容的水相单体；类胡萝卜素、tocopherols、有机硫和矿物质不得因缺少 H-ORAC 被判为低抗氧化价值；所有 Top-N 均先报告 `N eligible`，候选不足时使用 Top10 或 all eligible。
 
+Candidate-universe food-source gate采用宽来源规则：具有明确化学身份且存在可追溯food-derived origin的具体化学实体即可纳入候选宇宙。食品含量、habitual intake、dose realism、主要药用植物来源、补充剂或药理剂量依赖、生物利用度、安全性、促氧化风险与translational relevance均为后续评价维度，不是candidate-generation hard exclusion。进入候选宇宙不等于nutritional importance、dietary achievability、安全、抗氧化优越性或H-ORAC方法适用性；candidate-universe status与assay-specific eligibility必须分别裁决。

@@ -8,6 +8,6 @@ OpenAlex 继续冻结为唯一 citation source：前置 audit 37/37 matched、37
 
 Top50 targeted QC逐候选检查 identity、synonym specificity、glycoside/aglycone、positional isomer、generic-name risk、duplicate indexing、redox relevance metadata、same-study risk和H-ORAC eligibility。没有发现可由当前metadata证据确认、且足以改变Top20/30/40/50/60 membership的 contamination；因此保留原research-density Top50，不重算、不补位。限制是未对41,967条records逐篇全文 adjudicate；高密度、人群研究和复杂form候选仍需后续抽样复核。
 
-Top50的H-ORAC分流为：Ready 31；方法学Conditional且可按预定义QC进入检索12；`HUMAN REVIEW REQUIRED — CANDIDATE UNIVERSE` 4（Thymoquinone、Baicalein、Chrysin、Plumbagin）；Not suitable 3（Sulforaphane、Caffeine、Allicin）。因此当前实际 Stage25B retrieval-eligible set 为43，另有4个hold，不用第51名补位。Top50 research-density status与H-ORAC eligibility始终分开。
+研究者随后正式解除Thymoquinone、Baicalein、Chrysin和Plumbagin的candidate-universe hold：四者均以明确化学身份及可追溯food-derived origin纳入候选宇宙；低膳食暴露、药用植物主导、剂量可达性、安全性和translation concern继续作为下游维度。严格依据已有canonical records与既定rubric，四者的H-ORAC eligibility均判为Conditional，需要受控cosolvent/solubility、浓度、聚集及光学干扰QC；Plumbagin另保留redox cycling、促氧化和细胞毒性风险。当前Top50分流更新为Ready 31、Conditional 16、Not suitable 3、unresolved human review 0；Stage25B retrieval-eligible set由43增至47，不用第51名补位。Top50 research-density status与H-ORAC eligibility始终分开。
 
-项目已按科学功能重构，Stage history保留在stage index和migration map。29张aqueous active canonical figures已由16个modular R scripts从项目根目录全部重建；长脚本移入`archive/R_legacy/`。建议在研究者裁决四个hold candidates并接受当前metadata-level独立性限制后启动Stage25B；本阶段不执行H-ORAC systematic retrieval。
+项目已按科学功能重构，Stage history保留在stage index和migration map。29张aqueous active canonical figures已由16个modular R scripts从项目根目录全部重建；长脚本移入`archive/R_legacy/`。四个candidate-universe hold已经关闭，Stage25B输入在方法学层面READY；本阶段仍未执行H-ORAC systematic retrieval，必须等待研究者下一条明确指令。

@@ -22,6 +22,8 @@
 | Provisional Top50 | `data/literature_screening/shortlist/Literature_Screening_Provisional_Top50.csv` |
 | Stage25B retrieval candidates | `data/literature_screening/shortlist/Stage25B_HORAC_Retrieval_Eligible_Candidates.csv` |
 | Top50 targeted QC | `data/literature_screening/qc/Top50_PreStage25B_QC.csv` |
+| Stage25A.1 Human Review Resolution | `docs/qc/Stage25A1_Human_Review_Resolution_CN.md` |
+| Append-only human review history | `data/class_specific_antioxidant/Human_Review_Log.csv` |
 | Metal/redox 与 micronutrients | `data/metal_and_micronutrients/` |
 | 当前方法与 taxonomy | `docs/methods/` |
 | 早期仍有效的 H-ORAC SOP | `docs/methods/h_orac_framework/` |

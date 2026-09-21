@@ -195,3 +195,9 @@ Phase 3 是 class-specific Top-N ranking；Phase 4A 是 Global Top Overview，�
 本阶段只审计logic、redundancy、canonicality、traceability与archive hygiene，不改变科学结果。审计基线为411个tracked files（active 239、archive 172）；active exact与normalized-text semantic duplicate均为0。发现的一个canonicality conflict是micronutrient v1/v2同时active，另有三个已被Stage25A.1取代的历史sync assets仍在active区；四项均可逆归档并更新migration map。当前62项canonical registry路径唯一存在，29张canonical figures分别承担独立的magnitude、robustness、coverage、mechanism、risk或screening-sensitivity信息，没有新增figure/R redundancy。
 
 Archive保留177个tracked files，其中5组byte-identical pairs标记`HUMAN REVIEW REQUIRED — ARCHIVE RETENTION`，未自动删除。Figure→R→direct Data为29/29完整；candidate food occurrence缺逐行authority identifier以及Stage25A未完成全文same-experiment adjudication继续作为科学provenance limitation保留。结论是active project architecture可以冻结；Stage25B仍未启动。
+
+## Stage 25A.1 Human Review Resolution
+
+研究者确认candidate-universe采用宽food-source provenance gate：明确化学身份与可追溯food-derived origin足以纳入；暴露量、habitual intake、dose realism、药用植物主导、安全性、促氧化风险和translation value均转入下游评价。Thymoquinone、Baicalein、Chrysin和Plumbagin因此由`HUMAN REVIEW REQUIRED — CANDIDATE UNIVERSE`全部更新为INCLUDE，冻结的157-candidate membership没有增删。
+
+本轮不新增检索，只依据既有canonical records与H-ORAC rubric裁决方法适用性。四者均为Conditional：Baicalein与Chrysin需解决aglycone identity、有限水溶性/cosolvent及fluorescence interference；Thymoquinone与Plumbagin需受控cosolvent、浓度、聚集和光学QC，Plumbagin另保留redox cycling、促氧化、细胞毒性及dose-translation风险。四者进入Stage25B retrieval set但不被改写为Ready。Stage25A ranking/count hash前后完全一致，Top20/30/40/50/60 membership不变；retrieval set由43增至47（Ready 31、Conditional 16、Not suitable 3、unresolved review 0）。Stage25B状态为READY但尚未执行。
