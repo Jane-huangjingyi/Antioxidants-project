@@ -31,3 +31,7 @@ Tyrosol abstract报告 0.83 ± 0.03（无 HPβCD）和 1.20 ± 0.11（0.8 mM HP�
 ## Conclusion
 
 当前完成状态：`STAGE25B.1 HUMAN REVIEW REQUIRED`。Primary A+B1 Top20 membership 在本轮没有变化，但 rank 15–25 尚未稳定，B2 inclusion 仍改变三项 membership，且存在共享 cutoff source 未恢复、Tier A feasibility 与 second-review coverage 问题。剩余 1,641 条 priority queue records 继续保留为未裁决证据；不声称 systematic full-text review complete，也不进入 target mapping、mechanism prioritization 或 final translational Top20。
+
+## Cutoff-critical recovery follow-up
+
+2026-09-22 对 DOI `10.1089/jmf.2009.0024` 与 `10.1021/jf0208132` 进行了单独的合法来源恢复复核。前者虽被 OpenAlex 标为 green OA，但其 AECID/LA Referencia submitted-version handles 已失效；后者被标为 closed 且没有 repository full text。两篇均继续保留 `SOURCE_NOT_RECOVERED / X`，没有使用二手数值。重算后 primary rank 15–25 与 A+B1 Top20 membership 均不变；A+B1+B2 sensitivity 仍增加 Cyanidin 3-O-glucoside、Baicalein、Cyanidin，并移出 Luteolin、Naringin、Ferulic acid。详见 `docs/qc/Stage25B1_Cutoff_Critical_Recovery_Report_CN.md`。Tier A rubric 未修改，feasibility 仍为 `HUMAN REVIEW REQUIRED`，本轮没有继续处理剩余 1,641 条记录。

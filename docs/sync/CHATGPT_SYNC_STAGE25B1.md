@@ -14,4 +14,6 @@ A-only ranking仍不可计算。69/69 B1 records 均缺至少一项 compound bla
 
 Stopping rule：无 A/B1 改变 primary Top20 membership通过；rank 15–25 stability、B2-insensitivity、无 unresolved rank-changing issue均未通过。最终状态为：`STAGE25B.1 HUMAN REVIEW REQUIRED`。没有生成正式 Top20 figure，没有进入 target mapping 或 translational ranking。
 
+Cutoff-critical recovery follow-up（2026-09-22）：仅复核 DOI `10.1089/jmf.2009.0024` 与 `10.1021/jf0208132`。Zotero 客户端未运行；前者的出版社 PDF 仍不可取，OpenAlex 所列 AECID/LA Referencia green-OA submitted-version handles 全部失效；后者为 closed 且无 repository full text。两篇均维持 `SOURCE_NOT_RECOVERED / X`，未使用摘要或二手数值。重算 primary rank 15–25 与 A+B1 Top20 membership 均不变；A+B1+B2 sensitivity 仍增加 Cyanidin 3-O-glucoside、Baicalein、Cyanidin并移出 Luteolin、Naringin、Ferulic acid。Tier A feasibility 继续 `HUMAN REVIEW REQUIRED`，frozen rubric 未修改，剩余 1,641 条未继续处理。完整记录见 `docs/qc/Stage25B1_Cutoff_Critical_Recovery_Report_CN.md`。
+
 完成 commit + push 后，请通知 ChatGPT：`Antioxidants Project 已推送 GitHub，请读取最新版本并审核 Stage25B.1。`
