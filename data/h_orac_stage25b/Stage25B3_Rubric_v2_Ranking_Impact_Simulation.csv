@@ -1,0 +1,30 @@
+﻿candidate_id,candidate,current_rank,current_median,current_Top20,simulated_v2_rank,simulated_v2_median,simulated_v2_Top20,membership_change,causal_tier_decision,interpretation
+AFF-0084,Rosmarinic Acid,1,18.72,yes,1,18.72,yes,none,none,SIMULATION ONLY; canonical ranking unchanged
+AFF-0002,Epicatechin,2,9.37,yes,2,9.37,yes,none,none,SIMULATION ONLY; canonical ranking unchanged
+AFF-0001,Catechin,3,8.45,yes,3,8.45,yes,none,none,SIMULATION ONLY; canonical ranking unchanged
+AFF-0069,Caffeic Acid,4,8.26,yes,4,8.26,yes,none,none,SIMULATION ONLY; canonical ranking unchanged
+AFF-0022,Apigenin,5,8.2065,yes,5,8.2065,yes,none,none,SIMULATION ONLY; canonical ranking unchanged
+AFF-0030,Naringenin,6,8.04,yes,6,8.04,yes,none,none,SIMULATION ONLY; canonical ranking unchanged
+AFF-0010,Kaempferol,7,7.6965,yes,7,7.6965,yes,none,none,SIMULATION ONLY; canonical ranking unchanged
+AFF-0053,Daidzein,8,7.66,yes,8,7.66,yes,none,none,SIMULATION ONLY; canonical ranking unchanged
+AFF-0031,Hesperetin,9,7.4575,yes,9,7.4575,yes,none,none,SIMULATION ONLY; canonical ranking unchanged
+AFF-0061,Protocatechuic Acid,10,7.36,yes,10,7.359999999999999,yes,none,none,SIMULATION ONLY; canonical ranking unchanged
+AFF-0052,Genistein,11,7.32,yes,11,7.32,yes,none,none,SIMULATION ONLY; canonical ranking unchanged
+AFF-0009,Quercetin,12,7.2255,yes,12,7.2255,yes,none,none,SIMULATION ONLY; canonical ranking unchanged
+AFF-0013,Fisetin,13,7.092,yes,13,7.092,yes,none,none,SIMULATION ONLY; canonical ranking unchanged
+AFF-0017,Rutin,14,6.705,yes,14,6.705,yes,none,none,SIMULATION ONLY; canonical ranking unchanged
+AFF-0072,Sinapic acid,15,5.99,yes,15,5.989999999999999,yes,none,none,SIMULATION ONLY; canonical ranking unchanged
+AFF-0071,P-Coumaric Acid,16,5.01,yes,16,5.01,yes,none,none,SIMULATION ONLY; canonical ranking unchanged
+AFF-0036,Hesperidin,17,4.5,yes,17,4.5,yes,none,none,SIMULATION ONLY; canonical ranking unchanged
+AFF-0021,Luteolin,18,4.136,yes,18,4.136,yes,none,none,SIMULATION ONLY; canonical ranking unchanged
+AFF-0034,Naringin,19,4.11,yes,19,4.11,yes,none,none,SIMULATION ONLY; canonical ranking unchanged
+AFF-0070,Ferulic Acid,20,4.032,yes,20,4.032,yes,none,none,SIMULATION ONLY; canonical ranking unchanged
+AFF-0014,Morin,21,3.8745,no,21,3.8745000000000003,no,none,none,SIMULATION ONLY; canonical ranking unchanged
+AFF-0011,Myricetin,22,3.416,no,22,3.4160000000000004,no,none,none,SIMULATION ONLY; canonical ranking unchanged
+AFF-0005,Epigallocatechin,23,3.252,no,23,3.252,no,none,none,SIMULATION ONLY; canonical ranking unchanged
+AFF-0167,Eugenol,25,2.12,no,24,2.12,no,none,none,SIMULATION ONLY; canonical ranking unchanged
+AFF-0085,Ellagic Acid,26,1.8324,no,25,1.8324,no,none,none,SIMULATION ONLY; canonical ranking unchanged
+AFF-0173,Vanillin,27,1.81,no,26,1.81,no,none,none,SIMULATION ONLY; canonical ranking unchanged
+AFF-0162,Capsaicin,28,1.6,no,27,1.6,no,none,none,SIMULATION ONLY; canonical ranking unchanged
+AFF-0060,Gallic Acid,29,1.25,no,28,1.25,no,none,none,SIMULATION ONLY; canonical ranking unchanged
+AFF-0076,Chlorogenic Acid,24,2.21,no,,,no,none,HORAC_EXP_0067 simulated B1→B2,SIMULATION ONLY; canonical ranking unchanged

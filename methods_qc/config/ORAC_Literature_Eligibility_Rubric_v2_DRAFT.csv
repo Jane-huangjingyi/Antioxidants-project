@@ -1,0 +1,20 @@
+﻿criterion,draft_requirement,requirement_nature,applies_to,failure_consequence,notes
+architecture,Universal core + objective compound-risk profile + triggered enhanced QC + tier assignment + independent flags,ESSENTIAL,All,Tier and flags are evaluated separately,DRAFT; NOT YET CANONICAL
+identity_and_form,Unique chemical identity and chemically consequential form support a molar denominator,ESSENTIAL,A/B1,Unresolved material identity is X; mixture/extract is C,Pure-compound gate
+assay_construct,AAPH + fluorescein + Trolox in an aqueous/buffer reaction environment,ESSENTIAL,A/B1,Non-FL/non-AAPH/unbridgeable arm is C; unknown construct is X,Universal core
+reaction_conditions,"Buffer identity, pH, temperature and reagent concentrations are EXPLICITLY_REPORTED, DERIVABLE_FROM_METHOD, or exactly TRACEABLE_TO_REFERENCED_PROTOCOL",ESSENTIAL,A/B1,Material unknowns prevent A; unresolved comparability may be B2/X,A citation alone is not traceability
+candidate_exposure,Candidate concentration/range and dose-response/linearity context are interpretable,ESSENTIAL,A/B1,Saturation/nonlinearity is B2/C; missing but nonmaterial context may remain B1,Universal core
+solvent_interpretability,Stock solvent and final reaction solvent are explicit or unambiguously derivable,ESSENTIAL,A/B1,Unknown or materially perturbing solvent without control is B2/X,Explicit and derived values remain distinct
+kinetic_readout,Kinetic fluorescence decay with net AUC or a scientifically equivalent kinetic ORAC calculation,ESSENTIAL,A/B1,Endpoint-only/noncomparable readout is C; unknown readout is X,Universal core
+quantitative_traceability,"Original value, unit and mol TE/mol conversion are reproducible",ESSENTIAL,A/B1,Figure-only/nonrecoverable value is B2 or X and cannot enter primary ranking,Universal core
+replication_precision,Replicate information or precision measure is sufficiently interpretable,IMPORTANT,A/B1,Missing precision prevents A but does not automatically force B2,Independent reporting flag retained
+purity,Numerical/certified purity preferred; grade/supplier documented separately,IMPORTANT,A/B1,Missing numerical purity alone does not force B2 unless material impurity risk exists,Independent purity flag retained
+R1_optical,Enhanced optical QC is mandatory only when objective R1 trigger is MODERATE/HIGH,RISK-DEPENDENT,A,Unaddressed material optical risk is B2,"Low-risk compounds need a general assay blank, not universal compound-only blank"
+R2_solubility_aggregation,Enhanced solubility/aggregation QC is mandatory only when objective R2 trigger is MODERATE/HIGH,RISK-DEPENDENT,A,Unaddressed material precipitation/aggregation risk is B2,DLS is not universally required
+R3_cosolvent,Matched solvent control and kinetic comparability are required when organic cosolvent is material,RISK-DEPENDENT,A,Material unmatched cosolvent is B2; incompatible arm is C,Final percentage may be derived only without dilution ambiguity
+R4_redox,Enhanced mechanistic controls are required for objective redox/probe-interaction triggers,RISK-DEPENDENT,A,Unresolved material redox/probe interference is B2,Quinone-like/prooxidant cases require review
+tier_A,Universal core fully satisfied; every triggered enhanced QC addressed; quantitative traceability high,ASSIGNMENT,A,No unresolved material risk,Draft definition
+tier_B1,Universal core sufficiently satisfied for quantitative comparison; no unresolved material risk likely to invalidate ranking; reporting limitations remain,ASSIGNMENT,B1,Eligible for primary A+B1,Draft definition
+tier_B2,Quantitative H-ORAC-like value exists but one or more material comparability risks remain unresolved,ASSIGNMENT,B2,Sensitivity only,Draft definition
+tier_C,Assay construct or normalization is known incompatible with H-ORAC-FL ranking,ASSIGNMENT,C,Exclude from quantitative ranking,Draft definition
+tier_X,Information/source/provenance is insufficient to adjudicate method identity or quantitative value,ASSIGNMENT,X,Hold pending evidence,Draft definition
