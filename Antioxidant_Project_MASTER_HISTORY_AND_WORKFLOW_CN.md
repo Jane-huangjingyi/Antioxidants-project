@@ -201,3 +201,11 @@ Archive保留177个tracked files，其中5组byte-identical pairs标记`HUMAN RE
 研究者确认candidate-universe采用宽food-source provenance gate：明确化学身份与可追溯food-derived origin足以纳入；暴露量、habitual intake、dose realism、药用植物主导、安全性、促氧化风险和translation value均转入下游评价。Thymoquinone、Baicalein、Chrysin和Plumbagin因此由`HUMAN REVIEW REQUIRED — CANDIDATE UNIVERSE`全部更新为INCLUDE，冻结的157-candidate membership没有增删。
 
 本轮不新增检索，只依据既有canonical records与H-ORAC rubric裁决方法适用性。四者均为Conditional：Baicalein与Chrysin需解决aglycone identity、有限水溶性/cosolvent及fluorescence interference；Thymoquinone与Plumbagin需受控cosolvent、浓度、聚集和光学QC，Plumbagin另保留redox cycling、促氧化、细胞毒性及dose-translation风险。四者进入Stage25B retrieval set但不被改写为Ready。Stage25A ranking/count hash前后完全一致，Top20/30/40/50/60 membership不变；retrieval set由43增至47（Ready 31、Conditional 16、Not suitable 3、unresolved review 0）。Stage25B状态为READY但尚未执行。
+
+## Stage 25B — Systematic H-ORAC-FL Retrieval（current audit stop）
+
+2026-09-21对冻结的47个候选执行统一Europe PMC检索，并将既有H-ORAC evidence master迁移为publication-level与experiment-level两层数据。当前形成3,115条candidate×publication screening rows和71条experiment rows；A=0、B1=66、B2=4、X=1，基于已核查A/B1的interim rankable candidate N=26。新增Baicalein全文证据数值为5.41±0.33 mol TE/mol，但因chromophore optical blank/correction及solubility/aggregation QC不足按冻结rubric判为B2，不进入primary rank。加入B2会改变Top20 membership，且仍有1,657条命中待全文方法裁决与第二审核，因此当前`TOP20 CUTOFF UNSTABLE`，Stage25B不得冻结。冻结的157 candidate universe、Top50、47 retrieval input及Stage25A rank/count均保持不变；当前停止状态为`STAGE25B BLOCKED — METHOD / IDENTITY / PROVENANCE ISSUE`。
+
+## Stage 25B.1 — Rank-Relevant Full-Text Adjudication
+
+Stage25B checkpoint以九个文件副本和SHA-256 manifest冻结后，对1,657条pending records建立互斥Priority 1–5。两个高信息增益batch实际改变16条原queue rows的adjudication status，并对Baicalein等已出queue但rank-changing的记录复核。开放全文`10.3390/foods10081807`新增Eugenol、Capsaicin、Vanillin三条B1，experiment rows 71→74、B1 66→69、rankable candidates 26→29；三者均低于Top20 cutoff，primary membership不变，但Eugenol进入rank25并使Ellagic acid移至26。Baicalein维持B2；若单独纳入会替换primary rank20 Ferulic acid，完整B2 sensitivity仍改变3个Top20成员。共享cutoff来源仍有SOURCE_NOT_RECOVERED，A=0的feasibility需研究者判断且rubric未修改。停止规则未满足，状态为`STAGE25B.1 HUMAN REVIEW REQUIRED`；不生成正式Top20 figure。
