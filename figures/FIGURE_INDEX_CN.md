@@ -320,3 +320,10 @@
 - R script：`R/03_unified_literature_screening/05_evidence_breadth/plot_evidence_domain_breadth.R`
 - Caveat：metadata labels are not evidence-quality grades
 - Use：QC/internal
+
+## Stage25B.5 canonical H-ORAC figures
+
+- `aqueous_antioxidant_atlas/HORAC_Primary_Top20_Frozen.png` / `.svg` — frozen A+B1 Top20, median H-ORAC with evidence depth and heterogeneity display.
+- `aqueous_antioxidant_atlas/HORAC_Top20_B2_Sensitivity.png` / `.svg` — B2 sensitivity membership changes only (3 enter/3 leave), not a second formal ranking.
+
+Deduplication audit found no pre-existing active Top20/ranking/sensitivity/cutoff figure carrying the same scientific message; therefore no archive move was required. Both canonical figures are reproducible from `R/stage25b5/` and the frozen CSV inputs.

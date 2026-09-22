@@ -1,0 +1,10 @@
+# Stage25B.5 reproducibility QC: frozen input, canonical ranking, cutoff and B2 membership changes.
+args <- commandArgs(trailingOnly=FALSE); script_arg <- sub("--file=", "", args[grep("--file=", args)])
+root <- normalizePath(file.path(dirname(script_arg),"..",".."),winslash="/",mustWork=TRUE)
+f <- read.csv(file.path(root,"data/h_orac_stage25b/frozen/Stage25B_Frozen_Primary_HORAC_Top20.csv"),check.names=FALSE)
+r <- read.csv(file.path(root,"data/h_orac_stage25b/Stage25B_HORAC_Quantitative_Ranking.csv"),check.names=FALSE)
+q <- read.csv(file.path(root,"data/h_orac_stage25b/frozen/Stage25B_Frozen_Top20_B2_Sensitivity_Qualification.csv"),check.names=FALSE)
+stopifnot(nrow(f)==20,length(unique(f$candidate_id))==20,identical(f$candidate_id,r$candidate_id[1:20]))
+stopifnot(f$canonical_name[20]=="Ferulic acid",r$canonical_name[21]=="Morin",abs(f$median_H_ORAC_mol_TE_per_mol[20]-r$median_H_ORAC_mol_TE_per_mol[21]-0.1575)<1e-9)
+stopifnot(all(f$eligible_A_B1_N==f$eligible_A_N+f$eligible_B1_N),sum(q$membership_change=="ENTER")==3,sum(q$membership_change=="LEAVE")==3)
+cat("PASS: Stage25B.5 frozen ranking and B2 membership integrity checks\n")

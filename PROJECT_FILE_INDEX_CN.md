@@ -39,3 +39,12 @@
 | 历史与被替代文件 | `archive/` |
 
 当前 active mainline来自 Stage 23、24、24B、25A、25A.1、架构审计25A.2及Stage25B–25B.4工作包。Stage25B.4已canonicalize H-ORAC rubric v2并迁移74条已裁决experiments；post-migration A/B1/B2/X=7/61/4/2、rankable N=28，primary Top20 membership不变，但freeze仍需人工决定。剩余1,641条pending records未处理。Stage 0–22 的仍有效方法资产已进入对应 current module；历史或被替代版本进入archive。
+
+## Stage25B.5 frozen package
+
+- Frozen tables: `data/h_orac_stage25b/frozen/`
+- Final method: `docs/methods/h_orac_framework/Stage25B_HORAC_Selection_and_Ranking_Method_Final_CN.md`
+- Freeze/closure: `docs/qc/Stage25B5_Primary_Top20_Freeze_Decision_CN.md`, `docs/qc/Stage25B5_Final_Freeze_and_Closure_Report_CN.md`
+- Canonical figures: `figures/aqueous_antioxidant_atlas/HORAC_Primary_Top20_Frozen.*`, `HORAC_Top20_B2_Sensitivity.*`
+- Downstream skeleton: `data/top20_characterization/Top20_Downstream_Handoff_Master.csv`
+- Status: STAGE25B CLOSED — PRIMARY H-ORAC TOP20 FROZEN WITH EXPLICIT B2 SENSITIVITY QUALIFICATION.

@@ -213,3 +213,7 @@ Stage25B checkpoint以九个文件副本和SHA-256 manifest冻结后，对1,657�
 ## Stage25B.4 — Rubric v2 canonicalization + evidence migration
 
 2026-09-22按APPROVE WITH MODIFICATIONS决定正式canonicalize universal-core + risk-triggered-QC rubric，并迁移74条已裁决experiments。Tier由0/69/4/1变为7/61/4/2；Chlorogenic `HORAC_EXP_0067`正式B1→B2，figure-only Sinapic `HORAC_EXP_0070`正式B2→X。Rankable N 29→28，primary Top20 membership、rank20 Ferulic Acid与rank21 Morin均不变；B2 sensitivity仍三进三出。1,641条pending未处理，Top20等待人工freeze决定。
+
+## 2026-09-22 — Stage25B.5 — Primary H-ORAC Top20 Freeze
+
+Researcher selected Option C. The canonical eligibility-defined A+B1 Top20 was frozen as Stage25B Frozen Top20 v1.0 after all integrity checks passed. Rubric v2.0 migration retained primary membership; B2 sensitivity produced three enters/three leaves and is explicitly qualified. The 1,641 pending publication records were not processed. Stage25B is closed and the downstream multidimensional characterization skeleton is ready; no target/mechanism/human/food/PK/safety work was initiated.
