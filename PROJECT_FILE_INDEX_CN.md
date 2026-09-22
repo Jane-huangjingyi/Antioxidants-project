@@ -38,4 +38,4 @@
 | 文件迁移记录 | `PROJECT_FILE_MIGRATION_MAP.csv` |
 | 历史与被替代文件 | `archive/` |
 
-当前 active mainline来自 Stage 23、24、24B、25A、25A.1、架构审计25A.2及尚未冻结的Stage25B/25B.1工作包。Stage25B.1已对1,657条队列建立优先级并完成两个rank-relevant batch；rankable N为29，但B2 sensitivity继续改变Top20且shared cutoff sources未恢复，因此状态为HUMAN REVIEW REQUIRED，不得把当前interim ranking解释为正式Top20。Stage 0–22 的仍有效方法资产已进入对应 current module；旧排名和跨类结果若仍有解释价值则标为 supporting，纯历史或被替代版本进入 archive。Stage编号不是active目录组织原则。
+当前 active mainline来自 Stage 23、24、24B、25A、25A.1、架构审计25A.2及Stage25B–25B.4工作包。Stage25B.4已canonicalize H-ORAC rubric v2并迁移74条已裁决experiments；post-migration A/B1/B2/X=7/61/4/2、rankable N=28，primary Top20 membership不变，但freeze仍需人工决定。剩余1,641条pending records未处理。Stage 0–22 的仍有效方法资产已进入对应 current module；历史或被替代版本进入archive。

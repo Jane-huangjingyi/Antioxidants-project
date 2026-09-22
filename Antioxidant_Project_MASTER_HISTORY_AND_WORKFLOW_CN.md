@@ -209,3 +209,7 @@ Archive保留177个tracked files，其中5组byte-identical pairs标记`HUMAN RE
 ## Stage 25B.1 — Rank-Relevant Full-Text Adjudication
 
 Stage25B checkpoint以九个文件副本和SHA-256 manifest冻结后，对1,657条pending records建立互斥Priority 1–5。两个高信息增益batch实际改变16条原queue rows的adjudication status，并对Baicalein等已出queue但rank-changing的记录复核。开放全文`10.3390/foods10081807`新增Eugenol、Capsaicin、Vanillin三条B1，experiment rows 71→74、B1 66→69、rankable candidates 26→29；三者均低于Top20 cutoff，primary membership不变，但Eugenol进入rank25并使Ellagic acid移至26。Baicalein维持B2；若单独纳入会替换primary rank20 Ferulic acid，完整B2 sensitivity仍改变3个Top20成员。共享cutoff来源仍有SOURCE_NOT_RECOVERED，A=0的feasibility需研究者判断且rubric未修改。停止规则未满足，状态为`STAGE25B.1 HUMAN REVIEW REQUIRED`；不生成正式Top20 figure。
+
+## Stage25B.4 — Rubric v2 canonicalization + evidence migration
+
+2026-09-22按APPROVE WITH MODIFICATIONS决定正式canonicalize universal-core + risk-triggered-QC rubric，并迁移74条已裁决experiments。Tier由0/69/4/1变为7/61/4/2；Chlorogenic `HORAC_EXP_0067`正式B1→B2，figure-only Sinapic `HORAC_EXP_0070`正式B2→X。Rankable N 29→28，primary Top20 membership、rank20 Ferulic Acid与rank21 Morin均不变；B2 sensitivity仍三进三出。1,641条pending未处理，Top20等待人工freeze决定。

@@ -1,6 +1,8 @@
 ﻿scientific_module,asset_role,asset_name,canonical_path,source_of_truth,derived_from,used_by,stage_origin,current_status,replacement_for,notes
 Project navigation,PROJECT NAVIGATION,Root project entry,README_CN.md,yes,,all users,25A.1,ACTIVE_CANONICAL,,
 Project navigation,PROJECT NAVIGATION,Current file index,PROJECT_FILE_INDEX_CN.md,yes,canonical registry + current structure,all users,25A.1,ACTIVE_CANONICAL,,
+H-ORAC methodology,METHOD RUBRIC,H-ORAC Evidence Rubric v2.0,docs/methods/h_orac_framework/H_ORAC_Evidence_Rubric_v2.0_CN.md,yes,Stage25B.2 audit + Stage25B.3 validation,Stage25B4 migration,25B.4,ACTIVE_CANONICAL,ORAC_Literature_Eligibility_Rubric.csv,Universal core plus risk-triggered QC
+H-ORAC evidence,EVIDENCE MASTER,Stage25B4 migrated experiment evidence,data/h_orac_stage25b/Stage25B_HORAC_Experiment_Evidence.csv,yes,74 adjudicated experiments + rubric v2.0,ranking and sensitivity,25B.4,ACTIVE_CANONICAL,,A/B1/B2/X=7/61/4/2
 Project navigation,PROJECT NAVIGATION,Historical stage index,docs/PROJECT_STAGE_INDEX_CN.md,yes,stage outputs,historical lookup,0–25A.1,ACTIVE_CANONICAL,,
 Project navigation,PROJECT NAVIGATION,Scientific decision history,Antioxidant_Project_MASTER_HISTORY_AND_WORKFLOW_CN.md,yes,stage decisions,method interpretation,0–25A.1,ACTIVE_CANONICAL,,
 Project navigation,QC,Migration map,PROJECT_FILE_MIGRATION_MAP.csv,yes,pre-migration inventory,path/provenance audit,25A.1,ACTIVE_CANONICAL,,
