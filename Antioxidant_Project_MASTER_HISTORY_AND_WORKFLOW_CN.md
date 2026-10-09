@@ -217,3 +217,7 @@ Stage25B checkpoint以九个文件副本和SHA-256 manifest冻结后，对1,657�
 ## 2026-09-22 — Stage25B.5 — Primary H-ORAC Top20 Freeze
 
 Researcher selected Option C. The canonical eligibility-defined A+B1 Top20 was frozen as Stage25B Frozen Top20 v1.0 after all integrity checks passed. Rubric v2.0 migration retained primary membership; B2 sensitivity produced three enters/three leaves and is explicitly qualified. The 1,641 pending publication records were not processed. Stage25B is closed and the downstream multidimensional characterization skeleton is ready; no target/mechanism/human/food/PK/safety work was initiated.
+
+## 2026-10-09 — Stage25B.6A — Supervisor Feedback Evidence Audit
+
+Audited independent evidence units, precision, 157-candidate research history and vitamin eligibility; simulated ≥2-record and ≥2-independent-study gates. The record gate leaves only 19 eligible candidates; study independence is unresolved. Frozen Top20 v1.0 and canonical rubric remain unchanged. See `docs/qc/stage25b6a/Stage25B6A_Supervisor_Feedback_Assessment_CN.md`.

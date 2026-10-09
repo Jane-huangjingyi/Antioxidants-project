@@ -40,3 +40,7 @@
 ## Stage25B.5 — CLOSED / FROZEN FOR DOWNSTREAM USE
 
 Option C completed. Primary A+B1 H-ORAC Top20 frozen as v1.0 with explicit B2 sensitivity qualification. B2 robustness is LIMITED; exhaustive literature completeness is NOT ACHIEVED (1,641 pending untouched). Ready for Top20 translational characterization; no downstream search or scoring was performed in this stage.
+
+## Stage25B.6A — SUPERVISOR FEEDBACK AUDIT COMPLETE
+
+Evidence independence, error coverage, research history, vitamins and minimum-evidence scenarios are audited in `docs/qc/stage25b6a/` and `data/h_orac_stage25b/stage25b6a/`. Frozen Top20 v1.0 remains unchanged; v1.1 requires separate human decision and change control.

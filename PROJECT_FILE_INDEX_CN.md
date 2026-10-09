@@ -48,3 +48,7 @@
 - Canonical figures: `figures/aqueous_antioxidant_atlas/HORAC_Primary_Top20_Frozen.*`, `HORAC_Top20_B2_Sensitivity.*`
 - Downstream skeleton: `data/top20_characterization/Top20_Downstream_Handoff_Master.csv`
 - Status: STAGE25B CLOSED — PRIMARY H-ORAC TOP20 FROZEN WITH EXPLICIT B2 SENSITIVITY QUALIFICATION.
+
+## Stage25B.6A supervisor feedback audit
+
+Diagnostic CSVs: `data/h_orac_stage25b/stage25b6a/`. Scientific assessment and draft framework: `docs/qc/stage25b6a/`. ChatGPT handoff: `docs/sync/CHATGPT_SYNC_STAGE25B6A.md`. Stage25B Frozen Top20 v1.0 remains the current formal version.
