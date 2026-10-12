@@ -1,0 +1,29 @@
+﻿candidate_id,candidate_name,canonical_rank,confirmed_independent_study_N,possible_independent_study_N,distinct_original_publication_N,distinct_DOI_publication_proxy_N,quantitative_record_N,independence_unresolved_N,duplicate_or_nonindependent_N,proposed_minimum_study_threshold_status,interpretation
+AFF-0084,Rosmarinic acid,1,1,0,1,1,1,0,0,FAIL_ON_AVAILABLE_EVIDENCE,One available canonical source; absence of other studies not proved
+AFF-0002,Epicatechin,2,1,4,1,5,5,4,0,UNRESOLVED,Multiple DOI proxies; source-pair independence unresolved
+AFF-0001,Catechin,3,1,5,1,6,6,5,0,UNRESOLVED,Multiple DOI proxies; source-pair independence unresolved
+AFF-0069,Caffeic acid,4,2,1,2,3,3,1,0,PASS_VERIFIED,At least two distinct original experimental studies verified; other DOI unresolved
+AFF-0022,Apigenin,5,1,1,1,2,2,1,0,UNRESOLVED,Multiple DOI proxies; source-pair independence unresolved
+AFF-0030,Naringenin,6,1,2,1,3,3,2,0,UNRESOLVED,Multiple DOI proxies; source-pair independence unresolved
+AFF-0010,Kaempferol,7,1,3,1,4,4,3,0,UNRESOLVED,Multiple DOI proxies; source-pair independence unresolved
+AFF-0053,Daidzein,8,0,1,0,1,1,1,0,FAIL_ON_AVAILABLE_EVIDENCE,One available canonical source; absence of other studies not proved
+AFF-0031,Hesperetin,9,1,1,1,2,2,1,0,UNRESOLVED,Multiple DOI proxies; source-pair independence unresolved
+AFF-0061,Protocatechuic acid,10,1,1,1,2,2,1,0,UNRESOLVED,Multiple DOI proxies; source-pair independence unresolved
+AFF-0052,Genistein,11,1,2,1,3,3,2,0,UNRESOLVED,Multiple DOI proxies; source-pair independence unresolved
+AFF-0009,Quercetin,12,2,4,2,6,6,4,0,PASS_VERIFIED,At least two distinct original experimental studies verified; other DOI unresolved
+AFF-0013,Fisetin,13,1,0,1,1,1,0,0,FAIL_ON_AVAILABLE_EVIDENCE,One available canonical source; absence of other studies not proved
+AFF-0017,Rutin,14,0,2,0,2,2,2,0,UNRESOLVED,Multiple DOI proxies; source-pair independence unresolved
+AFF-0072,Sinapic acid,15,1,1,1,2,2,1,0,UNRESOLVED,Multiple DOI proxies; source-pair independence unresolved
+AFF-0071,p-Coumaric acid,16,1,3,1,4,4,3,0,UNRESOLVED,Multiple DOI proxies; source-pair independence unresolved
+AFF-0036,Hesperidin,17,0,1,0,1,1,1,0,FAIL_ON_AVAILABLE_EVIDENCE,One available canonical source; absence of other studies not proved
+AFF-0021,Luteolin,18,1,1,1,2,2,1,0,UNRESOLVED,Multiple DOI proxies; source-pair independence unresolved
+AFF-0034,Naringin,19,0,1,0,1,1,1,0,FAIL_ON_AVAILABLE_EVIDENCE,One available canonical source; absence of other studies not proved
+AFF-0070,Ferulic acid,20,1,3,1,4,4,3,0,UNRESOLVED,Multiple DOI proxies; source-pair independence unresolved
+AFF-0014,Morin,21,1,1,1,2,2,1,0,UNRESOLVED,Multiple DOI proxies; source-pair independence unresolved
+AFF-0011,Myricetin,22,1,1,1,2,2,1,0,UNRESOLVED,Multiple DOI proxies; source-pair independence unresolved
+AFF-0005,Epigallocatechin,23,1,1,1,2,2,1,0,UNRESOLVED,Multiple DOI proxies; source-pair independence unresolved
+AFF-0167,Eugenol,24,1,0,1,1,1,0,0,FAIL_ON_AVAILABLE_EVIDENCE,One available canonical source; absence of other studies not proved
+AFF-0085,Ellagic acid,25,0,1,0,1,1,1,0,FAIL_ON_AVAILABLE_EVIDENCE,One available canonical source; absence of other studies not proved
+AFF-0173,Vanillin,26,1,0,1,1,1,0,0,FAIL_ON_AVAILABLE_EVIDENCE,One available canonical source; absence of other studies not proved
+AFF-0162,Capsaicin,27,1,0,1,1,1,0,0,FAIL_ON_AVAILABLE_EVIDENCE,One available canonical source; absence of other studies not proved
+AFF-0060,Gallic acid,28,2,1,2,3,3,1,0,PASS_VERIFIED,At least two distinct original experimental studies verified; other DOI unresolved

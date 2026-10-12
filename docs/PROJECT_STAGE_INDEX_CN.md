@@ -44,3 +44,7 @@ Option C completed. Primary A+B1 H-ORAC Top20 frozen as v1.0 with explicit B2 se
 ## Stage25B.6A — SUPERVISOR FEEDBACK AUDIT COMPLETE
 
 Evidence independence, error coverage, research history, vitamins and minimum-evidence scenarios are audited in `docs/qc/stage25b6a/` and `data/h_orac_stage25b/stage25b6a/`. Frozen Top20 v1.0 remains unchanged; v1.1 requires separate human decision and change control.
+
+## Stage25B.6B — BLOCKED BY SPECIFIC EVIDENCE GAPS
+
+68 条 A/B1 记录归于 16 个 DOI；逐来源核查确认 Caffeic Acid、Quercetin 和 Gallic Acid 各有两项独立原始研究，其余 25 种未达到已核实双研究门槛。明确误差类型 3/68，任意原文数值误差 26/68。已建定点来源、VC 衔接、研究成熟度、情景和变更请求审计资产，见 `data/h_orac_stage25b/stage25b6b/`、`docs/qc/stage25b6b/`、`docs/sync/CHATGPT_SYNC_STAGE25B6B.md`。Frozen Top20 v1.0、Rubric v2.0 和 canonical 证据未变；v1.1 未冻结。
