@@ -1,0 +1,13 @@
+﻿candidate_id,candidate_name,DOI,provisional_rubric_grade,pure_compound_endpoint_verified,primary_eligible_now,rubric_version,decision_basis,human_review
+AFF-0084,Rosmarinic acid,10.3390/molecules28207199,PROPOSED_X,NO,NO_NEW_CANONICAL_ADMISSION,v2.0_UNCHANGED,Perilla material ORAC correlates with rosmarinic content; not pure rosmarinic-acid H-ORAC,PENDING_HUMAN_REVIEW
+AFF-0053,Daidzein,10.1021/jf053112o,NOT_ASSESSABLE,NO,NO_NEW_CANONICAL_ADMISSION,v2.0_UNCHANGED,Isoflavone assays reported; original pure-compound ORAC-FL result and unit not verified,PENDING_HUMAN_REVIEW
+AFF-0013,Fisetin,10.1038/s41598-025-32257-7,PROPOSED_X,NO,NO_NEW_CANONICAL_ADMISSION,v2.0_UNCHANGED,Pithecellobium extract/isolate paper; no verified pure fisetin H-ORAC endpoint,PENDING_HUMAN_REVIEW
+AFF-0036,Hesperidin,10.1111/j.1750-3841.2010.01717.x,NOT_ASSESSABLE,NO,NO_NEW_CANONICAL_ADMISSION,v2.0_UNCHANGED,Orange phenolic interactions; pure hesperidin endpoint/table not verified,PENDING_HUMAN_REVIEW
+AFF-0034,Naringin,10.1016/j.foodchem.2021.130605,NOT_ASSESSABLE,NO,NO_NEW_CANONICAL_ADMISSION,v2.0_UNCHANGED,Citrus pulp flavonoids; pure naringin H-ORAC-FL endpoint not verified,PENDING_HUMAN_REVIEW
+AFF-0070,Ferulic acid,,NOT_ASSESSABLE,NO,NO_NEW_CANONICAL_ADMISSION,v2.0_UNCHANGED,No additional qualified pure-compound source verified in targeted 6C search,PENDING_HUMAN_REVIEW
+AFF-0014,Morin,10.3389/fnut.2022.882458,PROPOSED_X,NO,NO_NEW_CANONICAL_ADMISSION,v2.0_UNCHANGED,QSPR model is not a second direct H-ORAC measurement,PENDING_HUMAN_REVIEW
+AFF-0011,Myricetin,10.1111/j.1750-3841.2010.01717.x,NOT_ASSESSABLE,NO,NO_NEW_CANONICAL_ADMISSION,v2.0_UNCHANGED,Orange phenolic interactions; pure myricetin endpoint/table not verified,PENDING_HUMAN_REVIEW
+AFF-0005,Epigallocatechin,,NOT_ASSESSABLE,NO,NO_NEW_CANONICAL_ADMISSION,v2.0_UNCHANGED,No additional qualified pure-compound source verified in targeted 6C search,PENDING_HUMAN_REVIEW
+AFF-0060,Gallic acid,,NOT_ASSESSABLE,NO,NO_NEW_CANONICAL_ADMISSION,v2.0_UNCHANGED,No additional qualified pure-compound source verified in targeted 6C search,PENDING_HUMAN_REVIEW
+AFF-0104,Vitamin C,10.1021/jf010586o,NOT_ASSESSABLE,NO,NO_NEW_CANONICAL_ADMISSION,v2.0_UNCHANGED,Original Table 4 blocked; 0.95 historical value not reverified,PENDING_HUMAN_REVIEW
+AFF-0104,Vitamin C,10.3390/antiox12020505,PROPOSED_B1,YES,NO_NEW_CANONICAL_ADMISSION,v2.0_UNCHANGED,Table 3 original L-ascorbic acid 0.53±0.03 TE_AUC; ± type unresolved; source-level rubric review remains pending,PENDING_HUMAN_REVIEW

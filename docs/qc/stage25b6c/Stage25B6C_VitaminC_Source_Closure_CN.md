@@ -1,0 +1,3 @@
+# Vitamin C 来源闭环
+
+L-Ascorbic acid（AFF-0104）历史值为 Ou 2001 0.95、Carvalho 2023 0.53 mol TE/mol，历史中位数 0.74；这些不是本轮新计算或 canonical 纳入。Ou [出版商原文入口](https://pubs.acs.org/doi/10.1021/jf010586o)仅能查到书目/摘要，Table 4 未合法取得，状态 `SOURCE_ACCESS_BLOCKED`，故 0.95 仍为历史转录而非原表复核。Carvalho [原文 Methods/Table 3](https://pmc.ncbi.nlm.nih.gov/articles/PMC9951910/)报告 L-ascorbic acid 0.53 ± 0.03 TE_AUC，使用 AAPH、fluorescein、Trolox；± 的统计定义未从原文明确恢复，不能当 SD。两文作者、年代与实验场景不同，支持不同研究组的初步判断，但 Ou 数据未复核，AFF-0104 的双研究资格仍为 `UNRESOLVED`。Stage25B 未迁移原因是迁移/来源逐项裁决尚未完成；不能推断为科学排除。建议正式 CR 后取得 Ou Table 4 并逐项套用原 rubric v2.0；目前不迁移、不改排名。H-ORAC 是特定体外化学测定，不能解释为人体抗氧化或临床效力。

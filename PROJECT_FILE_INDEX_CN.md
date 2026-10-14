@@ -52,3 +52,7 @@
 ## Stage25B.6A supervisor feedback audit
 
 Diagnostic CSVs: `data/h_orac_stage25b/stage25b6a/`. Scientific assessment and draft framework: `docs/qc/stage25b6a/`. ChatGPT handoff: `docs/sync/CHATGPT_SYNC_STAGE25B6A.md`. Stage25B Frozen Top20 v1.0 remains the current formal version.
+
+## Stage25B.6C source independence and targeted adjudication
+
+16 个既有 DOI 的原文/来源核查、28 种候选的逐对独立性及资格表、定点新来源、误差、研究历史、情景与变更请求见 `data/h_orac_stage25b/stage25b6c/`。导师汇报与 QC 见 `docs/qc/stage25b6c/`；交接见 `docs/sync/CHATGPT_SYNC_STAGE25B6C.md`。7 个既有来源定位原始纯品结果，9 种候选满足拟议双独立研究门槛；正式 Top20 v1.0、Rubric v2.0 与 canonical 表不变，v1.1 未建立。

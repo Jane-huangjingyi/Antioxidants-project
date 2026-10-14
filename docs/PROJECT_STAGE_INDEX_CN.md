@@ -48,3 +48,7 @@ Evidence independence, error coverage, research history, vitamins and minimum-ev
 ## Stage25B.6B — BLOCKED BY SPECIFIC EVIDENCE GAPS
 
 68 条 A/B1 记录归于 16 个 DOI；逐来源核查确认 Caffeic Acid、Quercetin 和 Gallic Acid 各有两项独立原始研究，其余 25 种未达到已核实双研究门槛。明确误差类型 3/68，任意原文数值误差 26/68。已建定点来源、VC 衔接、研究成熟度、情景和变更请求审计资产，见 `data/h_orac_stage25b/stage25b6b/`、`docs/qc/stage25b6b/`、`docs/sync/CHATGPT_SYNC_STAGE25B6B.md`。Frozen Top20 v1.0、Rubric v2.0 和 canonical 证据未变；v1.1 未冻结。
+
+## Stage25B.6C — SOURCE INDEPENDENCE CLOSURE / HUMAN REVIEW REQUIRED
+
+16 个既有 DOI 中 7 个完成原始纯品实验结果定位，9 个保留原表或数据归属缺口；28 种候选中 9 种满足拟议双独立研究门槛，仍不足 20 种。见 `data/h_orac_stage25b/stage25b6c/`、`docs/qc/stage25b6c/`、`docs/sync/CHATGPT_SYNC_STAGE25B6C.md`。新证据与资格变更均待人工审批；Frozen Top20 v1.0、Rubric v2.0、canonical 主表未变，v1.1 未生成。
