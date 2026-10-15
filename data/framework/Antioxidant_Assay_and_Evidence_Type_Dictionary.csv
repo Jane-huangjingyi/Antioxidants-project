@@ -1,0 +1,9 @@
+﻿assay_method,reaction_mechanism,experimental_system,endpoint,unit_rule,evidence_type,claim_boundary,required_source
+ORAC-FL,Peroxyl radical scavenging,AAPH; fluorescein kinetic decay,Net AUC relative to Trolox,mol TE/mol if valid,HAT-dominant chemical assay,Only same aqueous pure-compound construct comparable,Original Methods and results; compound identity; conditions
+DPPH,Stable radical reduction,DPPH absorbance,IC50 or percent inhibition,original,"SET/HAT mixed, solvent dependent",Do not combine numerically with ORAC,Original Methods and results; compound identity; conditions
+ABTS,Radical cation reduction,ABTS radical cation absorbance,TEAC or IC50,original,SET/HAT mixed,Do not combine numerically with ORAC,Original Methods and results; compound identity; conditions
+FRAP,Ferric reduction,Fe3+-TPTZ absorbance,Fe2+ equivalents,original,SET,Not a peroxyl scavenging measure,Original Methods and results; compound identity; conditions
+CUPRAC,Cupric reduction,Cu2+ complex absorbance,Trolox equivalents or original,original,SET,Not interchangeable with FRAP,Original Methods and results; compound identity; conditions
+CAA,Cellular oxidative-stress proxy,Cell DCF fluorescence with exposure,Cellular antioxidant activity,original,cell model,Requires cytotoxicity and exposure context,Original Methods and results; compound identity; conditions
+OTHER_OX_STRESS,Model-specific oxidative stress,Defined cell/animal/human marker,Specific biomarker,original,biological,No universal potency conversion,Original Methods and results; compound identity; conditions
+HORAC_HYDROXYL,Hydroxyl radical absorbance capacity,Hydroxyl radical source,Method-specific endpoint,original,chemical,Acronym HORAC here is not hydrophilic H-ORAC-FL,Original Methods and results; compound identity; conditions

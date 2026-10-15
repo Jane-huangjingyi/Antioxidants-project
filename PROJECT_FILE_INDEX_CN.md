@@ -1,5 +1,7 @@
 # 项目逻辑地图
 
+2026-10-15 当前入口：[`current_review/PROJECT_NAVIGATION.md`](current_review/PROJECT_NAVIGATION.md) 提供全部当前权威文件的直链、状态和冻结标记；[`current_review/LATEST_PROJECT_STATUS_CN.md`](current_review/LATEST_PROJECT_STATUS_CN.md) 概述 Stage25B.6D 与综合框架 Phase 1。Stage25B.5 Frozen Top20 v1.0 仍是正式版本；Stage25B.6D 仅为待审证据诊断，未建立 v1.1。Track B 157 候选、三个应用场景的未评分 v0.1 框架见 `docs/framework/` 和 `data/framework/`；双轨映射见 `docs/dual_track_phase1/` 和 `data/dual_track_phase1/`。以下旧时间线保留历史语境，不应覆盖本段最新状态。
+
 当前科学主线为：Candidate Universe → Class-specific Antioxidant Characterization → Unified Literature Research-density Screen → Provisional Top50 → H-ORAC Eligibility QC → Stage25B Retrieval Set → Future H-ORAC Quantitative Ranking → Future Top20 → Future Target / Mechanism Prioritization。Stage25B及其后节点尚未执行。本文件回答“当前文件在哪里、哪个是 canonical”；完整机器可读登记见 `CANONICAL_ASSET_REGISTRY.csv`，历史顺序见 `docs/PROJECT_STAGE_INDEX_CN.md`，科学决策变化见根目录 MASTER HISTORY。
 
 | 科学节点 | Canonical data | Canonical method / QC | Canonical figure / R |

@@ -1,0 +1,786 @@
+﻿candidate_id,candidate_name,evidence_dimension,availability_status,coverage_basis,verified_original_study_N,data_source,missing_interpretation,last_verified_date
+AFF-0159,Curcumin,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0159,Curcumin,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0159,Curcumin,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0159,Curcumin,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0159,Curcumin,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0104,L-Ascorbic acid,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0104,L-Ascorbic acid,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0104,L-Ascorbic acid,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0104,L-Ascorbic acid,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0104,L-Ascorbic acid,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0009,Quercetin,D1,AVAILABLE_UNVERIFIED,H-ORAC-specific source audit: VERIFIED means every A/B1 source for this candidate was checked against its original report; no cross-assay completeness implied,2,Stage25B6D audit,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0009,Quercetin,D2,AVAILABLE_UNVERIFIED,H-ORAC-specific independence/precision partial,2,Stage25B6D audit,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0009,Quercetin,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0009,Quercetin,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0009,Quercetin,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0005,Epigallocatechin,D1,AVAILABLE_UNVERIFIED,H-ORAC-specific source audit: VERIFIED means every A/B1 source for this candidate was checked against its original report; no cross-assay completeness implied,1,Stage25B6D audit,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0005,Epigallocatechin,D2,AVAILABLE_UNVERIFIED,H-ORAC-specific independence/precision partial,1,Stage25B6D audit,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0005,Epigallocatechin,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0005,Epigallocatechin,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0005,Epigallocatechin,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0060,Gallic acid,D1,AVAILABLE_UNVERIFIED,H-ORAC-specific source audit: VERIFIED means every A/B1 source for this candidate was checked against its original report; no cross-assay completeness implied,2,Stage25B6D audit,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0060,Gallic acid,D2,AVAILABLE_UNVERIFIED,H-ORAC-specific independence/precision partial,2,Stage25B6D audit,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0060,Gallic acid,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0060,Gallic acid,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0060,Gallic acid,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0003,Epigallocatechin gallate,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0003,Epigallocatechin gallate,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0003,Epigallocatechin gallate,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0003,Epigallocatechin gallate,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0003,Epigallocatechin gallate,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0066,Salicylic acid,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0066,Salicylic acid,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0066,Salicylic acid,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0066,Salicylic acid,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0066,Salicylic acid,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0017,Rutin,D1,AVAILABLE_UNVERIFIED,H-ORAC-specific source audit: VERIFIED means every A/B1 source for this candidate was checked against its original report; no cross-assay completeness implied,1,Stage25B6D audit,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0017,Rutin,D2,AVAILABLE_UNVERIFIED,H-ORAC-specific independence/precision partial,1,Stage25B6D audit,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0017,Rutin,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0017,Rutin,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0017,Rutin,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0069,Caffeic acid,D1,AVAILABLE_UNVERIFIED,H-ORAC-specific source audit: VERIFIED means every A/B1 source for this candidate was checked against its original report; no cross-assay completeness implied,2,Stage25B6D audit,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0069,Caffeic acid,D2,AVAILABLE_UNVERIFIED,H-ORAC-specific independence/precision partial,2,Stage25B6D audit,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0069,Caffeic acid,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0069,Caffeic acid,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0069,Caffeic acid,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0070,Ferulic acid,D1,AVAILABLE_UNVERIFIED,H-ORAC-specific source audit: VERIFIED means every A/B1 source for this candidate was checked against its original report; no cross-assay completeness implied,2,Stage25B6D audit,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0070,Ferulic acid,D2,AVAILABLE_UNVERIFIED,H-ORAC-specific independence/precision partial,2,Stage25B6D audit,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0070,Ferulic acid,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0070,Ferulic acid,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0070,Ferulic acid,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0076,Chlorogenic acid,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0076,Chlorogenic acid,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0076,Chlorogenic acid,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0076,Chlorogenic acid,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0076,Chlorogenic acid,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0021,Luteolin,D1,AVAILABLE_VERIFIED,H-ORAC-specific source audit: VERIFIED means every A/B1 source for this candidate was checked against its original report; no cross-assay completeness implied,2,Stage25B6D audit,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0021,Luteolin,D2,AVAILABLE_UNVERIFIED,H-ORAC-specific independence/precision partial,2,Stage25B6D audit,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0021,Luteolin,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0021,Luteolin,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0021,Luteolin,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0133,Sulforaphane,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0133,Sulforaphane,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0133,Sulforaphane,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0133,Sulforaphane,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0133,Sulforaphane,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0179,Thymoquinone,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0179,Thymoquinone,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0179,Thymoquinone,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0179,Thymoquinone,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0179,Thymoquinone,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0036,Hesperidin,D1,AVAILABLE_UNVERIFIED,H-ORAC-specific source audit: VERIFIED means every A/B1 source for this candidate was checked against its original report; no cross-assay completeness implied,0,Stage25B6D audit,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0036,Hesperidin,D2,AVAILABLE_UNVERIFIED,H-ORAC-specific independence/precision partial,0,Stage25B6D audit,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0036,Hesperidin,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0036,Hesperidin,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0036,Hesperidin,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0001,Catechin,D1,AVAILABLE_UNVERIFIED,H-ORAC-specific source audit: VERIFIED means every A/B1 source for this candidate was checked against its original report; no cross-assay completeness implied,2,Stage25B6D audit,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0001,Catechin,D2,AVAILABLE_UNVERIFIED,H-ORAC-specific independence/precision partial,2,Stage25B6D audit,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0001,Catechin,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0001,Catechin,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0001,Catechin,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0085,Ellagic acid,D1,AVAILABLE_VERIFIED,H-ORAC-specific source audit: VERIFIED means every A/B1 source for this candidate was checked against its original report; no cross-assay completeness implied,1,Stage25B6D audit,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0085,Ellagic acid,D2,AVAILABLE_UNVERIFIED,H-ORAC-specific independence/precision partial,1,Stage25B6D audit,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0085,Ellagic acid,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0085,Ellagic acid,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0085,Ellagic acid,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0030,Naringenin,D1,AVAILABLE_UNVERIFIED,H-ORAC-specific source audit: VERIFIED means every A/B1 source for this candidate was checked against its original report; no cross-assay completeness implied,1,Stage25B6D audit,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0030,Naringenin,D2,AVAILABLE_UNVERIFIED,H-ORAC-specific independence/precision partial,1,Stage25B6D audit,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0030,Naringenin,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0030,Naringenin,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0030,Naringenin,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0084,Rosmarinic acid,D1,AVAILABLE_VERIFIED,H-ORAC-specific source audit: VERIFIED means every A/B1 source for this candidate was checked against its original report; no cross-assay completeness implied,1,Stage25B6D audit,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0084,Rosmarinic acid,D2,AVAILABLE_UNVERIFIED,H-ORAC-specific independence/precision partial,1,Stage25B6D audit,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0084,Rosmarinic acid,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0084,Rosmarinic acid,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0084,Rosmarinic acid,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0180,Hydroxytyrosol,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0180,Hydroxytyrosol,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0180,Hydroxytyrosol,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0180,Hydroxytyrosol,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0180,Hydroxytyrosol,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0022,Apigenin,D1,AVAILABLE_UNVERIFIED,H-ORAC-specific source audit: VERIFIED means every A/B1 source for this candidate was checked against its original report; no cross-assay completeness implied,1,Stage25B6D audit,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0022,Apigenin,D2,AVAILABLE_UNVERIFIED,H-ORAC-specific independence/precision partial,1,Stage25B6D audit,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0022,Apigenin,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0022,Apigenin,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0022,Apigenin,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0052,Genistein,D1,AVAILABLE_UNVERIFIED,H-ORAC-specific source audit: VERIFIED means every A/B1 source for this candidate was checked against its original report; no cross-assay completeness implied,1,Stage25B6D audit,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0052,Genistein,D2,AVAILABLE_UNVERIFIED,H-ORAC-specific independence/precision partial,1,Stage25B6D audit,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0052,Genistein,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0052,Genistein,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0052,Genistein,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0010,Kaempferol,D1,AVAILABLE_UNVERIFIED,H-ORAC-specific source audit: VERIFIED means every A/B1 source for this candidate was checked against its original report; no cross-assay completeness implied,1,Stage25B6D audit,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0010,Kaempferol,D2,AVAILABLE_UNVERIFIED,H-ORAC-specific independence/precision partial,1,Stage25B6D audit,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0010,Kaempferol,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0010,Kaempferol,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0010,Kaempferol,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0169,Carvacrol,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0169,Carvacrol,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0169,Carvacrol,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0169,Carvacrol,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0169,Carvacrol,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0034,Naringin,D1,AVAILABLE_UNVERIFIED,H-ORAC-specific source audit: VERIFIED means every A/B1 source for this candidate was checked against its original report; no cross-assay completeness implied,0,Stage25B6D audit,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0034,Naringin,D2,AVAILABLE_UNVERIFIED,H-ORAC-specific independence/precision partial,0,Stage25B6D audit,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0034,Naringin,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0034,Naringin,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0034,Naringin,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0157,Caffeine,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0157,Caffeine,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0157,Caffeine,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0157,Caffeine,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0157,Caffeine,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0167,Eugenol,D1,AVAILABLE_VERIFIED,H-ORAC-specific source audit: VERIFIED means every A/B1 source for this candidate was checked against its original report; no cross-assay completeness implied,1,Stage25B6D audit,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0167,Eugenol,D2,AVAILABLE_UNVERIFIED,H-ORAC-specific independence/precision partial,1,Stage25B6D audit,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0167,Eugenol,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0167,Eugenol,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0167,Eugenol,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0024,Baicalein,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0024,Baicalein,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0024,Baicalein,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0024,Baicalein,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0024,Baicalein,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0170,Thymol,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0170,Thymol,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0170,Thymol,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0170,Thymol,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0170,Thymol,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0023,Chrysin,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0023,Chrysin,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0023,Chrysin,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0023,Chrysin,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0023,Chrysin,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0092,Pterostilbene,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0092,Pterostilbene,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0092,Pterostilbene,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0092,Pterostilbene,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0092,Pterostilbene,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0039,Cyanidin,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0039,Cyanidin,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0039,Cyanidin,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0039,Cyanidin,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0039,Cyanidin,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0011,Myricetin,D1,AVAILABLE_UNVERIFIED,H-ORAC-specific source audit: VERIFIED means every A/B1 source for this candidate was checked against its original report; no cross-assay completeness implied,1,Stage25B6D audit,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0011,Myricetin,D2,AVAILABLE_UNVERIFIED,H-ORAC-specific independence/precision partial,1,Stage25B6D audit,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0011,Myricetin,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0011,Myricetin,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0011,Myricetin,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0162,Capsaicin,D1,AVAILABLE_VERIFIED,H-ORAC-specific source audit: VERIFIED means every A/B1 source for this candidate was checked against its original report; no cross-assay completeness implied,1,Stage25B6D audit,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0162,Capsaicin,D2,AVAILABLE_UNVERIFIED,H-ORAC-specific independence/precision partial,1,Stage25B6D audit,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0162,Capsaicin,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0162,Capsaicin,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0162,Capsaicin,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0182,Oleuropein,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0182,Oleuropein,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0182,Oleuropein,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0182,Oleuropein,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0182,Oleuropein,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0002,Epicatechin,D1,AVAILABLE_UNVERIFIED,H-ORAC-specific source audit: VERIFIED means every A/B1 source for this candidate was checked against its original report; no cross-assay completeness implied,2,Stage25B6D audit,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0002,Epicatechin,D2,AVAILABLE_UNVERIFIED,H-ORAC-specific independence/precision partial,2,Stage25B6D audit,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0002,Epicatechin,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0002,Epicatechin,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0002,Epicatechin,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0013,Fisetin,D1,AVAILABLE_VERIFIED,H-ORAC-specific source audit: VERIFIED means every A/B1 source for this candidate was checked against its original report; no cross-assay completeness implied,1,Stage25B6D audit,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0013,Fisetin,D2,AVAILABLE_UNVERIFIED,H-ORAC-specific independence/precision partial,1,Stage25B6D audit,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0013,Fisetin,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0013,Fisetin,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0013,Fisetin,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0014,Morin,D1,AVAILABLE_UNVERIFIED,H-ORAC-specific source audit: VERIFIED means every A/B1 source for this candidate was checked against its original report; no cross-assay completeness implied,1,Stage25B6D audit,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0014,Morin,D2,AVAILABLE_UNVERIFIED,H-ORAC-specific independence/precision partial,1,Stage25B6D audit,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0014,Morin,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0014,Morin,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0014,Morin,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0061,Protocatechuic acid,D1,AVAILABLE_VERIFIED,H-ORAC-specific source audit: VERIFIED means every A/B1 source for this candidate was checked against its original report; no cross-assay completeness implied,2,Stage25B6D audit,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0061,Protocatechuic acid,D2,AVAILABLE_UNVERIFIED,H-ORAC-specific independence/precision partial,2,Stage25B6D audit,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0061,Protocatechuic acid,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0061,Protocatechuic acid,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0061,Protocatechuic acid,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0031,Hesperetin,D1,AVAILABLE_UNVERIFIED,H-ORAC-specific source audit: VERIFIED means every A/B1 source for this candidate was checked against its original report; no cross-assay completeness implied,1,Stage25B6D audit,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0031,Hesperetin,D2,AVAILABLE_UNVERIFIED,H-ORAC-specific independence/precision partial,1,Stage25B6D audit,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0031,Hesperetin,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0031,Hesperetin,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0031,Hesperetin,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0173,Vanillin,D1,AVAILABLE_VERIFIED,H-ORAC-specific source audit: VERIFIED means every A/B1 source for this candidate was checked against its original report; no cross-assay completeness implied,1,Stage25B6D audit,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0173,Vanillin,D2,AVAILABLE_UNVERIFIED,H-ORAC-specific independence/precision partial,1,Stage25B6D audit,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0173,Vanillin,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0173,Vanillin,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0173,Vanillin,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0139,Allicin,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0139,Allicin,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0139,Allicin,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0139,Allicin,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0139,Allicin,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0174,Gingerol,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0174,Gingerol,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0174,Gingerol,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0174,Gingerol,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0174,Gingerol,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0102,Sesamol,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0102,Sesamol,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0102,Sesamol,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0102,Sesamol,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0102,Sesamol,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0045,Cyanidin 3-O-glucoside,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0045,Cyanidin 3-O-glucoside,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0045,Cyanidin 3-O-glucoside,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0045,Cyanidin 3-O-glucoside,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0045,Cyanidin 3-O-glucoside,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0177,Plumbagin,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0177,Plumbagin,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0177,Plumbagin,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0177,Plumbagin,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0177,Plumbagin,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0053,Daidzein,D1,AVAILABLE_UNVERIFIED,H-ORAC-specific source audit: VERIFIED means every A/B1 source for this candidate was checked against its original report; no cross-assay completeness implied,0,Stage25B6D audit,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0053,Daidzein,D2,AVAILABLE_UNVERIFIED,H-ORAC-specific independence/precision partial,0,Stage25B6D audit,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0053,Daidzein,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0053,Daidzein,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0053,Daidzein,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0071,p-Coumaric acid,D1,AVAILABLE_UNVERIFIED,H-ORAC-specific source audit: VERIFIED means every A/B1 source for this candidate was checked against its original report; no cross-assay completeness implied,2,Stage25B6D audit,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0071,p-Coumaric acid,D2,AVAILABLE_UNVERIFIED,H-ORAC-specific independence/precision partial,2,Stage25B6D audit,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0071,p-Coumaric acid,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0071,p-Coumaric acid,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0071,p-Coumaric acid,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0072,Sinapic acid,D1,AVAILABLE_UNVERIFIED,H-ORAC-specific source audit: VERIFIED means every A/B1 source for this candidate was checked against its original report; no cross-assay completeness implied,1,Stage25B6D audit,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0072,Sinapic acid,D2,AVAILABLE_UNVERIFIED,H-ORAC-specific independence/precision partial,1,Stage25B6D audit,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0072,Sinapic acid,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0072,Sinapic acid,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0072,Sinapic acid,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0181,Tyrosol,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0181,Tyrosol,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0181,Tyrosol,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0181,Tyrosol,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0181,Tyrosol,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0091,Piceatannol,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0091,Piceatannol,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0091,Piceatannol,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0091,Piceatannol,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0091,Piceatannol,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0100,Sesamin,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0100,Sesamin,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0100,Sesamin,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0100,Sesamin,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0100,Sesamin,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0089,trans-Resveratrol,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0089,trans-Resveratrol,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0089,trans-Resveratrol,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0089,trans-Resveratrol,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0089,trans-Resveratrol,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0063,Vanillic acid,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0063,Vanillic acid,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0063,Vanillic acid,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0063,Vanillic acid,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0063,Vanillic acid,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0012,Isorhamnetin,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0012,Isorhamnetin,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0012,Isorhamnetin,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0012,Isorhamnetin,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0012,Isorhamnetin,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0018,Hyperoside,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0018,Hyperoside,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0018,Hyperoside,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0018,Hyperoside,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0018,Hyperoside,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0064,Syringic acid,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0064,Syringic acid,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0064,Syringic acid,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0064,Syringic acid,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0064,Syringic acid,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0148,Betanin,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0148,Betanin,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0148,Betanin,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0148,Betanin,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0148,Betanin,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0176,Zingerone,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0176,Zingerone,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0176,Zingerone,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0176,Zingerone,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0176,Zingerone,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0055,Formononetin,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0055,Formononetin,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0055,Formononetin,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0055,Formononetin,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0055,Formononetin,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0178,Juglone,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0178,Juglone,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0178,Juglone,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0178,Juglone,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0178,Juglone,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0056,Biochanin A,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0056,Biochanin A,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0056,Biochanin A,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0056,Biochanin A,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0056,Biochanin A,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0016,Isoquercitrin,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0016,Isoquercitrin,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0016,Isoquercitrin,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0016,Isoquercitrin,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0016,Isoquercitrin,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0040,Delphinidin,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0040,Delphinidin,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0040,Delphinidin,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0040,Delphinidin,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0040,Delphinidin,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0175,Shogaol,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0175,Shogaol,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0175,Shogaol,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0175,Shogaol,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0175,Shogaol,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0143,Diallyl trisulfide,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0143,Diallyl trisulfide,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0143,Diallyl trisulfide,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0143,Diallyl trisulfide,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0143,Diallyl trisulfide,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0171,Anethole,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0171,Anethole,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0171,Anethole,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0171,Anethole,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0171,Anethole,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0142,Diallyl disulfide,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0142,Diallyl disulfide,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0142,Diallyl disulfide,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0142,Diallyl disulfide,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0142,Diallyl disulfide,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0146,S-Allyl-L-cysteine,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0146,S-Allyl-L-cysteine,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0146,S-Allyl-L-cysteine,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0146,S-Allyl-L-cysteine,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0146,S-Allyl-L-cysteine,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0105,Dehydroascorbic acid,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0105,Dehydroascorbic acid,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0105,Dehydroascorbic acid,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0105,Dehydroascorbic acid,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0105,Dehydroascorbic acid,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0137,Phenethyl isothiocyanate,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0137,Phenethyl isothiocyanate,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0137,Phenethyl isothiocyanate,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0137,Phenethyl isothiocyanate,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0137,Phenethyl isothiocyanate,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0094,Secoisolariciresinol,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0094,Secoisolariciresinol,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0094,Secoisolariciresinol,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0094,Secoisolariciresinol,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0094,Secoisolariciresinol,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0032,Eriodictyol,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0032,Eriodictyol,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0032,Eriodictyol,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0032,Eriodictyol,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0032,Eriodictyol,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0135,Allyl isothiocyanate,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0135,Allyl isothiocyanate,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0135,Allyl isothiocyanate,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0135,Allyl isothiocyanate,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0135,Allyl isothiocyanate,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0136,Benzyl isothiocyanate,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0136,Benzyl isothiocyanate,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0136,Benzyl isothiocyanate,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0136,Benzyl isothiocyanate,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0136,Benzyl isothiocyanate,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0086,Chicoric acid,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0086,Chicoric acid,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0086,Chicoric acid,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0086,Chicoric acid,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0086,Chicoric acid,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0158,Trigonelline,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0158,Trigonelline,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0158,Trigonelline,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0158,Trigonelline,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0158,Trigonelline,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0103,Podophyllotoxin,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0103,Podophyllotoxin,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0103,Podophyllotoxin,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0103,Podophyllotoxin,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0103,Podophyllotoxin,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0020,Myricitrin,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0020,Myricitrin,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0020,Myricitrin,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0020,Myricitrin,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0020,Myricitrin,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0004,Epicatechin gallate,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0004,Epicatechin gallate,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0004,Epicatechin gallate,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0004,Epicatechin gallate,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0004,Epicatechin gallate,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0042,Malvidin,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0042,Malvidin,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0042,Malvidin,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0042,Malvidin,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0042,Malvidin,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0038,Neohesperidin,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0038,Neohesperidin,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0038,Neohesperidin,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0038,Neohesperidin,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0038,Neohesperidin,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0161,Bisdemethoxycurcumin,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0161,Bisdemethoxycurcumin,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0161,Bisdemethoxycurcumin,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0161,Bisdemethoxycurcumin,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0161,Bisdemethoxycurcumin,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0041,Pelargonidin,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0041,Pelargonidin,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0041,Pelargonidin,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0041,Pelargonidin,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0041,Pelargonidin,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0015,Quercitrin,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0015,Quercitrin,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0015,Quercitrin,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0015,Quercitrin,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0015,Quercitrin,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0141,Diallyl sulfide,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0141,Diallyl sulfide,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0141,Diallyl sulfide,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0141,Diallyl sulfide,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0141,Diallyl sulfide,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0065,Gentisic acid,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0065,Gentisic acid,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0065,Gentisic acid,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0065,Gentisic acid,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0065,Gentisic acid,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0183,Oleocanthal,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0183,Oleocanthal,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0183,Oleocanthal,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0183,Oleocanthal,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0183,Oleocanthal,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0037,Eriocitrin,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0037,Eriocitrin,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0037,Eriocitrin,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0037,Eriocitrin,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0037,Eriocitrin,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0160,Demethoxycurcumin,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0160,Demethoxycurcumin,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0160,Demethoxycurcumin,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0160,Demethoxycurcumin,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0160,Demethoxycurcumin,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0184,Ubiquinone-10,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0184,Ubiquinone-10,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0184,Ubiquinone-10,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0184,Ubiquinone-10,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0184,Ubiquinone-10,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0168,Isoeugenol,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0168,Isoeugenol,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0168,Isoeugenol,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0168,Isoeugenol,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0168,Isoeugenol,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0134,Erucin,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0134,Erucin,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0134,Erucin,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0134,Erucin,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0134,Erucin,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0097,Pinoresinol,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0097,Pinoresinol,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0097,Pinoresinol,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0097,Pinoresinol,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0097,Pinoresinol,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0152,Indicaxanthin,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0152,Indicaxanthin,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0152,Indicaxanthin,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0152,Indicaxanthin,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0152,Indicaxanthin,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0093,Piceid,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0093,Piceid,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0093,Piceid,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0093,Piceid,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0093,Piceid,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0025,Tricin,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0025,Tricin,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0025,Tricin,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0025,Tricin,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0025,Tricin,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0099,Syringaresinol,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0099,Syringaresinol,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0099,Syringaresinol,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0099,Syringaresinol,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0099,Syringaresinol,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0163,Dihydrocapsaicin,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0163,Dihydrocapsaicin,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0163,Dihydrocapsaicin,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0163,Dihydrocapsaicin,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0163,Dihydrocapsaicin,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0054,Glycitein,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0054,Glycitein,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0054,Glycitein,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0054,Glycitein,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0054,Glycitein,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0077,Neochlorogenic acid,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0077,Neochlorogenic acid,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0077,Neochlorogenic acid,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0077,Neochlorogenic acid,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0077,Neochlorogenic acid,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0101,Sesamolin,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0101,Sesamolin,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0101,Sesamolin,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0101,Sesamolin,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0101,Sesamolin,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0044,Petunidin,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0044,Petunidin,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0044,Petunidin,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0044,Petunidin,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0044,Petunidin,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0058,Daidzin,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0058,Daidzin,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0058,Daidzin,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0058,Daidzin,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0058,Daidzin,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0140,Ajoene,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0140,Ajoene,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0140,Ajoene,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0140,Ajoene,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0140,Ajoene,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0035,Narirutin,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0035,Narirutin,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0035,Narirutin,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0035,Narirutin,D4,NOT_SEARCHED,No outcome-level biological audit,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0035,Narirutin,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0147,S-Allylmercaptocysteine,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0147,S-Allylmercaptocysteine,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0147,S-Allylmercaptocysteine,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0147,S-Allylmercaptocysteine,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0147,S-Allylmercaptocysteine,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0067,"2,3-Dihydroxybenzoic acid",D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0067,"2,3-Dihydroxybenzoic acid",D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0067,"2,3-Dihydroxybenzoic acid",D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0067,"2,3-Dihydroxybenzoic acid",D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0067,"2,3-Dihydroxybenzoic acid",D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0057,Genistin,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0057,Genistin,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0057,Genistin,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0057,Genistin,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0057,Genistin,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0172,Estragole,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0172,Estragole,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0172,Estragole,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0172,Estragole,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0172,Estragole,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0075,Isoferulic acid,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0075,Isoferulic acid,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0075,Isoferulic acid,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0075,Isoferulic acid,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0075,Isoferulic acid,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0026,Luteolin 7-O-glucoside,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0026,Luteolin 7-O-glucoside,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0026,Luteolin 7-O-glucoside,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0026,Luteolin 7-O-glucoside,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0026,Luteolin 7-O-glucoside,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0043,Peonidin,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0043,Peonidin,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0043,Peonidin,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0043,Peonidin,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0043,Peonidin,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0006,Gallocatechin,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0006,Gallocatechin,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0006,Gallocatechin,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0006,Gallocatechin,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0006,Gallocatechin,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0138,Iberin,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0138,Iberin,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0138,Iberin,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0138,Iberin,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0138,Iberin,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0095,Matairesinol,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0095,Matairesinol,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0095,Matairesinol,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0095,Matairesinol,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0095,Matairesinol,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0062,4-Hydroxybenzoic acid,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0062,4-Hydroxybenzoic acid,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0062,4-Hydroxybenzoic acid,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0062,4-Hydroxybenzoic acid,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0062,4-Hydroxybenzoic acid,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0090,cis-Resveratrol,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0090,cis-Resveratrol,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0090,cis-Resveratrol,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0090,cis-Resveratrol,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0090,cis-Resveratrol,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0080,"3,5-Dicaffeoylquinic acid",D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0080,"3,5-Dicaffeoylquinic acid",D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0080,"3,5-Dicaffeoylquinic acid",D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0080,"3,5-Dicaffeoylquinic acid",D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0080,"3,5-Dicaffeoylquinic acid",D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0059,Glycitin,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0059,Glycitin,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0059,Glycitin,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0059,Glycitin,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0059,Glycitin,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0027,Apigenin 7-O-glucoside,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0027,Apigenin 7-O-glucoside,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0027,Apigenin 7-O-glucoside,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0027,Apigenin 7-O-glucoside,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0027,Apigenin 7-O-glucoside,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0096,Lariciresinol,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0096,Lariciresinol,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0096,Lariciresinol,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0096,Lariciresinol,D4,NOT_SEARCHED,No outcome-level biological audit,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0096,Lariciresinol,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0087,Caftaric acid,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0087,Caftaric acid,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0087,Caftaric acid,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0087,Caftaric acid,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0087,Caftaric acid,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0078,Cryptochlorogenic acid,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0078,Cryptochlorogenic acid,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0078,Cryptochlorogenic acid,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0078,Cryptochlorogenic acid,D4,NOT_SEARCHED,No outcome-level biological audit,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0078,Cryptochlorogenic acid,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0033,Isosakuranetin,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0033,Isosakuranetin,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0033,Isosakuranetin,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0033,Isosakuranetin,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0033,Isosakuranetin,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0047,Pelargonidin 3-O-glucoside,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0047,Pelargonidin 3-O-glucoside,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0047,Pelargonidin 3-O-glucoside,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0047,Pelargonidin 3-O-glucoside,D4,NOT_SEARCHED,No outcome-level biological audit,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0047,Pelargonidin 3-O-glucoside,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0008,Catechin gallate,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0008,Catechin gallate,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0008,Catechin gallate,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0008,Catechin gallate,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0008,Catechin gallate,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0046,Delphinidin 3-O-glucoside,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0046,Delphinidin 3-O-glucoside,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0046,Delphinidin 3-O-glucoside,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0046,Delphinidin 3-O-glucoside,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0046,Delphinidin 3-O-glucoside,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0007,Gallocatechin gallate,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0007,Gallocatechin gallate,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0007,Gallocatechin gallate,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0007,Gallocatechin gallate,D4,NOT_SEARCHED,No outcome-level biological audit,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0007,Gallocatechin gallate,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0098,Medioresinol,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0098,Medioresinol,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0098,Medioresinol,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0098,Medioresinol,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0098,Medioresinol,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0049,Peonidin 3-O-glucoside,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0049,Peonidin 3-O-glucoside,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0049,Peonidin 3-O-glucoside,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0049,Peonidin 3-O-glucoside,D4,NOT_SEARCHED,No outcome-level biological audit,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0049,Peonidin 3-O-glucoside,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0165,Homocapsaicin,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0165,Homocapsaicin,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0165,Homocapsaicin,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0165,Homocapsaicin,D4,NOT_SEARCHED,No outcome-level biological audit,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0165,Homocapsaicin,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0073,o-Coumaric acid,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0073,o-Coumaric acid,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0073,o-Coumaric acid,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0073,o-Coumaric acid,D4,NOT_SEARCHED,No outcome-level biological audit,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0073,o-Coumaric acid,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0081,"4,5-Dicaffeoylquinic acid",D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0081,"4,5-Dicaffeoylquinic acid",D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0081,"4,5-Dicaffeoylquinic acid",D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0081,"4,5-Dicaffeoylquinic acid",D4,NOT_SEARCHED,No outcome-level biological audit,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0081,"4,5-Dicaffeoylquinic acid",D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0153,Vulgaxanthin I,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0153,Vulgaxanthin I,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0153,Vulgaxanthin I,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0153,Vulgaxanthin I,D4,NOT_SEARCHED,No outcome-level biological audit,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0153,Vulgaxanthin I,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0028,Apigenin 6-C-glucoside,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0028,Apigenin 6-C-glucoside,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0028,Apigenin 6-C-glucoside,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0028,Apigenin 6-C-glucoside,D4,NOT_SEARCHED,No outcome-level biological audit,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0028,Apigenin 6-C-glucoside,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0048,Malvidin 3-O-glucoside,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0048,Malvidin 3-O-glucoside,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0048,Malvidin 3-O-glucoside,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0048,Malvidin 3-O-glucoside,D4,AVAILABLE_UNVERIFIED,Human-study metadata count only; outcomes not adjudicated,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0048,Malvidin 3-O-glucoside,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0156,Dopaxanthin,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0156,Dopaxanthin,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0156,Dopaxanthin,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0156,Dopaxanthin,D4,NOT_SEARCHED,No outcome-level biological audit,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0156,Dopaxanthin,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0079,"3,4-Dicaffeoylquinic acid",D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0079,"3,4-Dicaffeoylquinic acid",D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0079,"3,4-Dicaffeoylquinic acid",D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0079,"3,4-Dicaffeoylquinic acid",D4,NOT_SEARCHED,No outcome-level biological audit,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0079,"3,4-Dicaffeoylquinic acid",D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0050,Cyanidin 3-O-rutinoside,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0050,Cyanidin 3-O-rutinoside,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0050,Cyanidin 3-O-rutinoside,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0050,Cyanidin 3-O-rutinoside,D4,NOT_SEARCHED,No outcome-level biological audit,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0050,Cyanidin 3-O-rutinoside,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0029,Apigenin 8-C-glucoside,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0029,Apigenin 8-C-glucoside,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0029,Apigenin 8-C-glucoside,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0029,Apigenin 8-C-glucoside,D4,NOT_SEARCHED,No outcome-level biological audit,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0029,Apigenin 8-C-glucoside,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0151,Neobetanin,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0151,Neobetanin,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0151,Neobetanin,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0151,Neobetanin,D4,NOT_SEARCHED,No outcome-level biological audit,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0151,Neobetanin,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0019,Kaempferol 3-O-glucoside,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0019,Kaempferol 3-O-glucoside,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0019,Kaempferol 3-O-glucoside,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0019,Kaempferol 3-O-glucoside,D4,NOT_SEARCHED,No outcome-level biological audit,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0019,Kaempferol 3-O-glucoside,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0149,Isobetanin,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0149,Isobetanin,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0149,Isobetanin,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0149,Isobetanin,D4,NOT_SEARCHED,No outcome-level biological audit,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0149,Isobetanin,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0068,"3,4,5-Trimethoxybenzoic acid",D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0068,"3,4,5-Trimethoxybenzoic acid",D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0068,"3,4,5-Trimethoxybenzoic acid",D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0068,"3,4,5-Trimethoxybenzoic acid",D4,NOT_SEARCHED,No outcome-level biological audit,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0068,"3,4,5-Trimethoxybenzoic acid",D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0088,Coutaric acid,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0088,Coutaric acid,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0088,Coutaric acid,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0088,Coutaric acid,D4,NOT_SEARCHED,No outcome-level biological audit,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0088,Coutaric acid,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0145,Dipropyl disulfide,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0145,Dipropyl disulfide,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0145,Dipropyl disulfide,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0145,Dipropyl disulfide,D4,NOT_SEARCHED,No outcome-level biological audit,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0145,Dipropyl disulfide,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0082,Feruloylquinic acid,D1,IDENTITY_UNRESOLVED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0082,Feruloylquinic acid,D2,IDENTITY_UNRESOLVED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0082,Feruloylquinic acid,D3,IDENTITY_UNRESOLVED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0082,Feruloylquinic acid,D4,IDENTITY_UNRESOLVED,No outcome-level biological audit,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0082,Feruloylquinic acid,D5,IDENTITY_UNRESOLVED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0166,Homodihydrocapsaicin,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0166,Homodihydrocapsaicin,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0166,Homodihydrocapsaicin,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0166,Homodihydrocapsaicin,D4,NOT_SEARCHED,No outcome-level biological audit,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0166,Homodihydrocapsaicin,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0051,"Malvidin 3,5-diglucoside",D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0051,"Malvidin 3,5-diglucoside",D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0051,"Malvidin 3,5-diglucoside",D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0051,"Malvidin 3,5-diglucoside",D4,NOT_SEARCHED,No outcome-level biological audit,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0051,"Malvidin 3,5-diglucoside",D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0144,Methyl allyl sulfide,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0144,Methyl allyl sulfide,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0144,Methyl allyl sulfide,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0144,Methyl allyl sulfide,D4,NOT_SEARCHED,No outcome-level biological audit,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0144,Methyl allyl sulfide,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0155,Miraxanthin V,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0155,Miraxanthin V,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0155,Miraxanthin V,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0155,Miraxanthin V,D4,NOT_SEARCHED,No outcome-level biological audit,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0155,Miraxanthin V,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0164,Nordihydrocapsaicin,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0164,Nordihydrocapsaicin,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0164,Nordihydrocapsaicin,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0164,Nordihydrocapsaicin,D4,NOT_SEARCHED,No outcome-level biological audit,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0164,Nordihydrocapsaicin,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0150,Probetanin,D1,IDENTITY_UNRESOLVED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0150,Probetanin,D2,IDENTITY_UNRESOLVED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0150,Probetanin,D3,IDENTITY_UNRESOLVED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0150,Probetanin,D4,IDENTITY_UNRESOLVED,No outcome-level biological audit,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0150,Probetanin,D5,IDENTITY_UNRESOLVED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0154,Vulgaxanthin II,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0154,Vulgaxanthin II,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0154,Vulgaxanthin II,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0154,Vulgaxanthin II,D4,NOT_SEARCHED,No outcome-level biological audit,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0154,Vulgaxanthin II,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0074,m-Coumaric acid,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0074,m-Coumaric acid,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0074,m-Coumaric acid,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0074,m-Coumaric acid,D4,NOT_SEARCHED,No outcome-level biological audit,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0074,m-Coumaric acid,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0083,p-Coumaroylquinic acid,D1,NOT_SEARCHED,No full cross-assay evaluation in v0.1,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0083,p-Coumaroylquinic acid,D2,NOT_SEARCHED,No endpoint-specific reliability audit,,,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0083,p-Coumaroylquinic acid,D3,AVAILABLE_UNVERIFIED,Stage25A metadata publication history; original-study dedup not complete,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0083,p-Coumaroylquinic acid,D4,NOT_SEARCHED,No outcome-level biological audit,,Stage25A metadata,Missing or unsearched does not imply ineffectiveness,2026-10-15
+AFF-0083,p-Coumaroylquinic acid,D5,NOT_SEARCHED,Food source metadata alone is not application feasibility,,,Missing or unsearched does not imply ineffectiveness,2026-10-15

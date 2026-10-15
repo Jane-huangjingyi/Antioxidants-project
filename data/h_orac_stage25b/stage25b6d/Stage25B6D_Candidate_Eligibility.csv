@@ -1,0 +1,29 @@
+﻿candidate_id,candidate_name,canonical_rank,quantitative_record_N,distinct_DOI_N,confirmed_independent_study_N,confirmed_source_DOIs,unresolved_source_N,eligibility_status,eligibility_interpretation,formal_v11_status,source_basis
+AFF-0084,Rosmarinic acid,1,1,1,1,10.3390/antiox11091784,0,FAIL_ON_AVAILABLE_EVIDENCE,Only one canonical source available; other studies not proven absent,NOT_CREATED,Stage25B.6D Source Closure; Stage25B.6C pairwise audit
+AFF-0002,Epicatechin,2,5,5,2,10.1007/s00217-022-04135-3;10.3390/ijms20092328,3,PASS_VERIFIED,At least two original pure-compound studies verified,NOT_CREATED,Stage25B.6D Source Closure; Stage25B.6C pairwise audit
+AFF-0001,Catechin,3,6,6,2,10.1007/s00217-022-04135-3;10.3390/ijms20092328,4,PASS_VERIFIED,At least two original pure-compound studies verified,NOT_CREATED,Stage25B.6D Source Closure; Stage25B.6C pairwise audit
+AFF-0069,Caffeic acid,4,3,3,2,10.3390/antiox11091784;10.3390/antiox12020505,1,PASS_VERIFIED,At least two original pure-compound studies verified,NOT_CREATED,Stage25B.6D Source Closure; Stage25B.6C pairwise audit
+AFF-0022,Apigenin,5,2,2,1,10.3390/ijms20092328,1,UNRESOLVED,One or more original source tables/data origins unresolved,NOT_CREATED,Stage25B.6D Source Closure; Stage25B.6C pairwise audit
+AFF-0030,Naringenin,6,3,3,1,10.3390/ijms20092328,2,UNRESOLVED,One or more original source tables/data origins unresolved,NOT_CREATED,Stage25B.6D Source Closure; Stage25B.6C pairwise audit
+AFF-0010,Kaempferol,7,4,4,1,10.3390/ijms20092328,3,UNRESOLVED,One or more original source tables/data origins unresolved,NOT_CREATED,Stage25B.6D Source Closure; Stage25B.6C pairwise audit
+AFF-0053,Daidzein,8,1,1,0,,1,FAIL_ON_AVAILABLE_EVIDENCE,Only one canonical source available; other studies not proven absent,NOT_CREATED,Stage25B.6D Source Closure; Stage25B.6C pairwise audit
+AFF-0031,Hesperetin,9,2,2,1,10.3390/ijms20092328,1,UNRESOLVED,One or more original source tables/data origins unresolved,NOT_CREATED,Stage25B.6D Source Closure; Stage25B.6C pairwise audit
+AFF-0061,Protocatechuic acid,10,2,2,2,10.3389/fphys.2022.1047916;10.3390/antiox11091784,0,PASS_VERIFIED,At least two original pure-compound studies verified,NOT_CREATED,Stage25B.6D Source Closure; Stage25B.6C pairwise audit
+AFF-0052,Genistein,11,3,3,1,10.3390/ijms20092328,2,UNRESOLVED,One or more original source tables/data origins unresolved,NOT_CREATED,Stage25B.6D Source Closure; Stage25B.6C pairwise audit
+AFF-0009,Quercetin,12,6,6,2,10.3390/antiox12020505;10.3390/ijms20092328,4,PASS_VERIFIED,At least two original pure-compound studies verified,NOT_CREATED,Stage25B.6D Source Closure; Stage25B.6C pairwise audit
+AFF-0013,Fisetin,13,1,1,1,10.3390/ijms20092328,0,FAIL_ON_AVAILABLE_EVIDENCE,Only one canonical source available; other studies not proven absent,NOT_CREATED,Stage25B.6D Source Closure; Stage25B.6C pairwise audit
+AFF-0017,Rutin,14,2,2,1,10.1007/s00217-022-04135-3,1,UNRESOLVED,One or more original source tables/data origins unresolved,NOT_CREATED,Stage25B.6D Source Closure; Stage25B.6C pairwise audit
+AFF-0072,Sinapic acid,15,2,2,1,10.3390/antiox11091784,1,UNRESOLVED,One or more original source tables/data origins unresolved,NOT_CREATED,Stage25B.6D Source Closure; Stage25B.6C pairwise audit
+AFF-0071,p-Coumaric acid,16,4,4,2,10.1007/s00217-022-04135-3;10.3390/antiox11091784,2,PASS_VERIFIED,At least two original pure-compound studies verified,NOT_CREATED,Stage25B.6D Source Closure; Stage25B.6C pairwise audit
+AFF-0036,Hesperidin,17,1,1,0,,1,FAIL_ON_AVAILABLE_EVIDENCE,Only one canonical source available; other studies not proven absent,NOT_CREATED,Stage25B.6D Source Closure; Stage25B.6C pairwise audit
+AFF-0021,Luteolin,18,2,2,2,10.1093/chromsci/bmad007;10.3390/ijms20092328,0,PASS_VERIFIED,At least two original pure-compound studies verified,NOT_CREATED,Stage25B.6D Source Closure; Stage25B.6C pairwise audit
+AFF-0034,Naringin,19,1,1,0,,1,FAIL_ON_AVAILABLE_EVIDENCE,Only one canonical source available; other studies not proven absent,NOT_CREATED,Stage25B.6D Source Closure; Stage25B.6C pairwise audit
+AFF-0070,Ferulic acid,20,4,4,2,10.1093/chromsci/bmad007;10.3390/antiox11091784,2,PASS_VERIFIED,At least two original pure-compound studies verified,NOT_CREATED,Stage25B.6D Source Closure; Stage25B.6C pairwise audit
+AFF-0014,Morin,21,2,2,1,10.3390/ijms20092328,1,UNRESOLVED,One or more original source tables/data origins unresolved,NOT_CREATED,Stage25B.6D Source Closure; Stage25B.6C pairwise audit
+AFF-0011,Myricetin,22,2,2,1,10.3390/ijms20092328,1,UNRESOLVED,One or more original source tables/data origins unresolved,NOT_CREATED,Stage25B.6D Source Closure; Stage25B.6C pairwise audit
+AFF-0005,Epigallocatechin,23,2,2,1,10.3390/ijms20092328,1,UNRESOLVED,One or more original source tables/data origins unresolved,NOT_CREATED,Stage25B.6D Source Closure; Stage25B.6C pairwise audit
+AFF-0167,Eugenol,24,1,1,1,10.3390/foods10081807,0,FAIL_ON_AVAILABLE_EVIDENCE,Only one canonical source available; other studies not proven absent,NOT_CREATED,Stage25B.6D Source Closure; Stage25B.6C pairwise audit
+AFF-0085,Ellagic acid,25,1,1,1,10.1016/j.foodchem.2010.11.092,0,FAIL_ON_AVAILABLE_EVIDENCE,Only one canonical source available; other studies not proven absent,NOT_CREATED,Stage25B.6D Source Closure; Stage25B.6C pairwise audit
+AFF-0173,Vanillin,26,1,1,1,10.3390/foods10081807,0,FAIL_ON_AVAILABLE_EVIDENCE,Only one canonical source available; other studies not proven absent,NOT_CREATED,Stage25B.6D Source Closure; Stage25B.6C pairwise audit
+AFF-0162,Capsaicin,27,1,1,1,10.3390/foods10081807,0,FAIL_ON_AVAILABLE_EVIDENCE,Only one canonical source available; other studies not proven absent,NOT_CREATED,Stage25B.6D Source Closure; Stage25B.6C pairwise audit
+AFF-0060,Gallic acid,28,3,3,2,10.3390/antiox11091784;10.3390/antiox12020505,1,PASS_VERIFIED,At least two original pure-compound studies verified,NOT_CREATED,Stage25B.6D Source Closure; Stage25B.6C pairwise audit

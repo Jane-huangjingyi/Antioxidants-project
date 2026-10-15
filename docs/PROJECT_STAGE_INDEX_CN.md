@@ -1,5 +1,7 @@
 # PROJECT STAGE INDEX（CN）
 
+最新阶段为 Stage25B.6D／Dual-Track Phase 1（2026-10-15）：16 个既有 DOI 中 8 个原始来源已核实，9 种候选满足拟议双研究门槛，正式 Frozen Top20 v1.0 未变；157 候选综合框架 v0.1 为证据结构，不含评分或综合排名。成果入口见 `current_review/PROJECT_NAVIGATION.md`，阶段交接见 `docs/sync/CHATGPT_SYNC_DUAL_TRACK_PHASE1.md`。以下表格与既有阶段段落为当时记录，非当前替代判定。
+
 本目录按真实科学逻辑记录 Stage 0–25A.2。`Completed` 表示相应文件和结果确实存在；`Pilot` 或 `Provisional` 不能解释为最终结论；`Not completed` 明确保留。Stage 编号用于时间线与 provenance；active 文件按当前科学功能组织，实际位置及 canonical status 以根目录 `PROJECT_FILE_INDEX_CN.md`、`CANONICAL_ASSET_REGISTRY.csv` 和 `PROJECT_FILE_MIGRATION_MAP.csv` 为准。
 
 | Stage | Stage name | Scientific question | Status | Key input | Key output | Main conclusion | Major limitation | File status |
