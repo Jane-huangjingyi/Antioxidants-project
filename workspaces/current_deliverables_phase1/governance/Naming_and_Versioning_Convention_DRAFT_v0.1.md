@@ -1,0 +1,11 @@
+# Naming and Versioning Convention
+
+DRAFT v0.1 | 2026-10-16
+
+采用稳定对象名、必要版本及语言。Stage表示科研历史流程，如Stage25B5或Stage25B6D；Phase表示跨模块实施计划，如DualTrack_Phase1；Version分别标识科学规则、数据产品、文档和发布包，互不自动继承。Date表示真实快照、审计或发布日期，文件名用YYYYMMDD，正文与元数据用YYYY-MM-DD。科学状态、验证状态及发布状态分别进入Manifest，避免频繁按DRAFT或REVIEWED重命名。
+
+活跃主表保留稳定文件名，版本由提交、数据快照及Manifest共同定位；实际快照使用Evidence_Snapshot_YYYYMMDD并指明rule_version。科学方法使用HORAC_VSIR_Rules_v1.0_CN，使用说明书使用Antioxidant_Database_User_Guide_v0.1_CN或EN，论文工作稿使用Methods_Draft_v0.1_CN等独立稿版本。不要把Stage、Phase、日期、发布状态和科学版本全部拼成一个长文件名。
+
+重大科学范围、资格或统计规则改变需要明确兼容性评审及规则新版本；兼容的数据新增、来源纠错和文档勘误分别登记数据与文档变化，不据阶段号推断版本升级。规则VSIR v1.0可保持不变而证据快照更新；数据变化不表示论文重新分析完成。正式发布后保留不可变产品及其哈希和替代关系，草稿阶段允许在本受控目录修订。
+
+Frozen Top20 v1.0、其冻结清单和既有历史文件保留原名与原内容。历史路径通过已有迁移索引关联现路径；不为统一外观修改历史证据描述。历史文件存在、哈希一致、来源链可定位、脚本语法有效和分析可实际重跑分别记录。本轮没有实施Phase 2目录治理或正式Release。
