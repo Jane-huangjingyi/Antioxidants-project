@@ -38,10 +38,10 @@ def append_csv_once(path, key_field, key_value, row):
     rows.append(row)
     write_csv(path, fields, rows)
 
-rank = read_csv("data/h_orac_stage25b/Stage25B_HORAC_Quantitative_Ranking.csv")
-summary = {r["candidate_id"]: r for r in read_csv("data/h_orac_stage25b/Stage25B_HORAC_Candidate_Summary.csv")}
-evidence = read_csv("data/h_orac_stage25b/Stage25B_HORAC_Experiment_Evidence.csv")
-sensitivity = read_csv("data/h_orac_stage25b/Stage25B4_B2_Sensitivity.csv")
+rank = read_csv("data/h_orac_stage25b/stage25b/Stage25B_HORAC_Quantitative_Ranking.csv")
+summary = {r["candidate_id"]: r for r in read_csv("data/h_orac_stage25b/stage25b/Stage25B_HORAC_Candidate_Summary.csv")}
+evidence = read_csv("data/h_orac_stage25b/stage25b/Stage25B_HORAC_Experiment_Evidence.csv")
+sensitivity = read_csv("data/h_orac_stage25b/stage25b4/Stage25B4_B2_Sensitivity.csv")
 master = {r["candidate_id"]: r for r in read_csv("data/literature_screening/master/Literature_Screening_Candidate_Master.csv")}
 
 expected = ["Rosmarinic acid","Epicatechin","Catechin","Caffeic acid","Apigenin","Naringenin","Kaempferol","Daidzein","Hesperetin","Protocatechuic acid","Genistein","Quercetin","Fisetin","Rutin","Sinapic acid","p-Coumaric acid","Hesperidin","Luteolin","Naringin","Ferulic acid"]
@@ -87,7 +87,7 @@ prov=[]
 for r in frozen:
     ev=[x for x in evidence if x["candidate_id"]==r["candidate_id"] and x["H_ORAC_tier"] in ("A","B1")]
     def uniq(field): return ";".join(dict.fromkeys(x[field] for x in ev if x.get(field)))
-    prov.append({"candidate":r["canonical_name"],"candidate_id":r["candidate_id"],"primary_rank":r["primary_rank"],"experiment_ids_used":uniq("independent_experiment_id"),"source_ids_used":uniq("publication_id"),"DOIs":uniq("DOI"),"A_experiment_N":r["eligible_A_N"],"B1_experiment_N":r["eligible_B1_N"],"median_value":r["median_H_ORAC_mol_TE_per_mol"],"ranking_version":VERSION,"rubric_version":"H-ORAC Evidence Rubric v2.0","source_candidate_summary_file":"data/h_orac_stage25b/Stage25B_HORAC_Candidate_Summary.csv","source_ranking_file":"data/h_orac_stage25b/Stage25B_HORAC_Quantitative_Ranking.csv","freeze_decision":"OPTION C — FREEZE WITH EXPLICIT B2 SENSITIVITY QUALIFICATION","freeze_commit":"see Git commit containing this manifest; baseline=a042dce2eaffe6431d4122d16435441fa3b83327"})
+    prov.append({"candidate":r["canonical_name"],"candidate_id":r["candidate_id"],"primary_rank":r["primary_rank"],"experiment_ids_used":uniq("independent_experiment_id"),"source_ids_used":uniq("publication_id"),"DOIs":uniq("DOI"),"A_experiment_N":r["eligible_A_N"],"B1_experiment_N":r["eligible_B1_N"],"median_value":r["median_H_ORAC_mol_TE_per_mol"],"ranking_version":VERSION,"rubric_version":"H-ORAC Evidence Rubric v2.0","source_candidate_summary_file":"data/h_orac_stage25b/stage25b/Stage25B_HORAC_Candidate_Summary.csv","source_ranking_file":"data/h_orac_stage25b/stage25b/Stage25B_HORAC_Quantitative_Ranking.csv","freeze_decision":"OPTION C — FREEZE WITH EXPLICIT B2 SENSITIVITY QUALIFICATION","freeze_commit":"see Git commit containing this manifest; baseline=a042dce2eaffe6431d4122d16435441fa3b83327"})
 write_csv("data/h_orac_stage25b/frozen/Stage25B_Top20_Freeze_Provenance.csv", list(prov[0]), prov)
 
 qual=[]

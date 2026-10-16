@@ -1,8 +1,8 @@
 param([string]$ProjectRoot=(Resolve-Path (Join-Path $PSScriptRoot '..')).Path)
 $ErrorActionPreference='Stop'
 $base=Join-Path $ProjectRoot 'data/h_orac_stage25b'
-$priorityPath=Join-Path $base 'Stage25B1_FullText_Adjudication_Priority.csv'
-$pubPath=Join-Path $base 'Stage25B_HORAC_Publication_Screening.csv'
+$priorityPath=Join-Path $base 'stage25b1/Stage25B1_FullText_Adjudication_Priority.csv'
+$pubPath=Join-Path $base 'stage25b/Stage25B_HORAC_Publication_Screening.csv'
 $priority=Import-Csv $priorityPath
 $pub=Import-Csv $pubPath
 
@@ -28,7 +28,7 @@ $log=for($i=0;$i -lt $decisions.Count;$i++){
   $d=$decisions[$i]
   [pscustomobject]@{adjudication_id=('S25B1-ADJ-{0:D3}' -f ($i+1));batch=$d.batch;priority_tier=$d.priority;candidate=$d.candidates;DOI=$d.doi;PMID='';selection_reason='Rank-relevant cutoff, B2/X, fragile-evidence or Conditional-candidate priority';full_text_retrieval_status=if($d.outcome -match 'SOURCE_NOT_RECOVERED'){'not recovered'}elseif($d.outcome -match 'QUANTITATIVE_VALUE_NOT_EXTRACTABLE'){'full/partial primary source assessed'}else{'primary source assessed'};assay_identity=$d.outcome;quantitative_value=if($d.doi -eq '10.3390/foods10081807'){switch($d.candidates){'Eugenol'{'2.12 ± 0.08'}'Capsaicin'{'1.60 ± 0.25'}'Vanillin'{'1.81 ± 0.19'}}}elseif($d.candidates -eq 'Baicalein'){'5.41 ± 0.33'}else{''};unit=if($d.doi -in @('10.3390/foods10081807','10.3390/pharmaceutics14102141')){'mol TE/mol'}else{''};adjudicated_tier=$d.tier;eligibility_status=$d.outcome;decision_reason=$d.reason;second_review_status=if($d.candidates -eq 'Baicalein'){'focused second review completed; B2 retained'}elseif($d.tier -eq 'B1'){'rule reapplication completed; independent human second reviewer still pending'}else{'not applicable or source unresolved'};rank_effect=$d.rank;adjudication_date='2026-09-22'}
 }
-$log|Export-Csv (Join-Path $base 'Stage25B1_Rank_Relevant_Adjudication_Log.csv') -NoTypeInformation -Encoding utf8
+$log|Export-Csv (Join-Path $base 'stage25b1/Stage25B1_Rank_Relevant_Adjudication_Log.csv') -NoTypeInformation -Encoding utf8
 
 foreach($row in $priority){
   $match=@($log|Where-Object{$_.DOI -eq $row.DOI -and ($_.candidate -split '; ' -contains $row.candidate)})
@@ -51,8 +51,8 @@ foreach($row in $pub){
 }
 $pub|Export-Csv $pubPath -NoTypeInformation -Encoding utf8
 
-$summary=Import-Csv (Join-Path $base 'Stage25B_HORAC_Candidate_Summary.csv')
-$experiment=Import-Csv (Join-Path $base 'Stage25B_HORAC_Experiment_Evidence.csv')
+$summary=Import-Csv (Join-Path $base 'stage25b/Stage25B_HORAC_Candidate_Summary.csv')
+$experiment=Import-Csv (Join-Path $base 'stage25b/Stage25B_HORAC_Experiment_Evidence.csv')
 foreach($s in $summary){
   $cp=@($pub|Where-Object candidate_id -eq $s.candidate_id)
   $pendingN=@($cp|Where-Object method_screen_status -eq 'PENDING_FULL_TEXT_ADJUDICATION').Count
@@ -63,7 +63,7 @@ foreach($s in $summary){
   elseif(!$s.major_method_caveat){$s.major_method_caveat='No pending rank-relevant publication identified in current queue'}
   $s.human_review_required=if($pendingN -or @($experiment|Where-Object{$_.candidate_id -eq $s.candidate_id -and $_.second_reviewer_status -match 'HUMAN|PENDING'}).Count){'yes'}else{'no'}
 }
-$summary|Export-Csv (Join-Path $base 'Stage25B_HORAC_Candidate_Summary.csv') -NoTypeInformation -Encoding utf8
+$summary|Export-Csv (Join-Path $base 'stage25b/Stage25B_HORAC_Candidate_Summary.csv') -NoTypeInformation -Encoding utf8
 $checkpointSummary=Import-Csv (Join-Path $base 'checkpoints/stage25b_initial_2026-09-21/Stage25B_HORAC_Candidate_Summary.csv')
 $rows=[System.Collections.Generic.List[object]]::new()
 foreach($batchSpec in @(@{name='Frozen Stage25B checkpoint';data=$checkpointSummary},@{name='After Batch 1';data=$checkpointSummary},@{name='After Batch 2';data=$summary})){
@@ -77,7 +77,7 @@ foreach($batchSpec in @(@{name='Frozen Stage25B checkpoint';data=$checkpointSumm
     }
   }
 }
-$rows|Export-Csv (Join-Path $base 'Stage25B1_Top20_Cutoff_Sensitivity.csv') -NoTypeInformation -Encoding utf8
+$rows|Export-Csv (Join-Path $base 'stage25b1/Stage25B1_Top20_Cutoff_Sensitivity.csv') -NoTypeInformation -Encoding utf8
 
 $log|Group-Object batch,priority_tier|Select-Object Name,Count|Format-Table -AutoSize
 Write-Output "ADJUDICATION_LOG_ROWS=$($log.Count)"

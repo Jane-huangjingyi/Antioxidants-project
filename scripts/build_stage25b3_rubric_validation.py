@@ -14,9 +14,9 @@ def write(path, rows):
         w = csv.DictWriter(f, fieldnames=list(rows[0]))
         w.writeheader(); w.writerows(rows)
 
-audit = read(DATA / "Stage25B2_TierA_Feasibility_Audit.csv")
-evidence = read(DATA / "Stage25B_HORAC_Experiment_Evidence.csv")
-ranking = read(DATA / "Stage25B_HORAC_Quantitative_Ranking.csv")
+audit = read(DATA / "stage25b2/Stage25B2_TierA_Feasibility_Audit.csv")
+evidence = read(DATA / "stage25b/Stage25B_HORAC_Experiment_Evidence.csv")
+ranking = read(DATA / "stage25b/Stage25B_HORAC_Quantitative_Ranking.csv")
 e_by_id = {r["independent_experiment_id"]: r for r in evidence}
 
 rubric = [
@@ -102,7 +102,7 @@ for exp_id, p in profiles.items():
         "potential_rank_effect":"Chlorogenic Acid rankable evidence removed; current Top20 unaffected" if exp_id=="HORAC_EXP_0067" else "No direct primary-set change",
         "human_review_required":"YES" if old!=sim or sim in {"B2","X"} else "NO",
     })
-write(DATA / "Stage25B3_Rubric_v2_Validation.csv", rows)
+write(DATA / "stage25b3/Stage25B3_Rubric_v2_Validation.csv", rows)
 
 # Ranking simulation is deliberately performed only after tier simulation.
 remove_exp={r["experiment_id"] for r in rows if r["would_enter_or_leave_primary_A_B1_set"]=="LEAVE"}
@@ -121,5 +121,5 @@ impact=[]
 for cid in sorted(set(current)|set(sim_rank), key=lambda x:(sim_rank.get(x,999), int(current.get(x,{"rank":"999"})["rank"]))):
     cr=int(current[cid]["rank"]) if cid in current else None; sr=sim_rank.get(cid)
     impact.append({"candidate_id":cid,"candidate":names.get(cid,current.get(cid,{}).get("canonical_name","")),"current_rank":cr or "","current_median":current.get(cid,{}).get("median_H_ORAC_mol_TE_per_mol",""),"current_Top20":"yes" if cr and cr<=20 else "no","simulated_v2_rank":sr or "","simulated_v2_median":sim_val.get(cid,""),"simulated_v2_Top20":"yes" if sr and sr<=20 else "no","membership_change":"none" if bool(cr and cr<=20)==bool(sr and sr<=20) else ("enter" if sr and sr<=20 else "leave"),"causal_tier_decision":"HORAC_EXP_0067 simulated B1→B2" if cid=="AFF-0076" else "none","interpretation":"SIMULATION ONLY; canonical ranking unchanged"})
-write(DATA / "Stage25B3_Rubric_v2_Ranking_Impact_Simulation.csv", impact)
+write(DATA / "stage25b3/Stage25B3_Rubric_v2_Ranking_Impact_Simulation.csv", impact)
 print(f"wrote rubric={len(rubric)}, risk_rules={len(risk_rules)}, validation={len(rows)}, impact={len(impact)}")

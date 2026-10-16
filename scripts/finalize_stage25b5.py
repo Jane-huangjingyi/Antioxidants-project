@@ -10,7 +10,7 @@ def append_text(p,marker,text):
  q=ROOT/p; old=q.read_text(encoding='utf-8-sig') if q.exists() else ''
  if marker not in old:q.write_text(old.rstrip()+'\n\n'+text.rstrip()+'\n',encoding='utf-8')
 snapshot='data/h_orac_stage25b/frozen/Stage25B5_Canonical_Ranking_Snapshot.csv'
-shutil.copyfile(ROOT/'data/h_orac_stage25b/Stage25B_HORAC_Quantitative_Ranking.csv',ROOT/snapshot)
+shutil.copyfile(ROOT/'data/h_orac_stage25b/stage25b/Stage25B_HORAC_Quantitative_Ranking.csv',ROOT/snapshot)
 
 audit=read('figures/FIGURE_INVENTORY_AUDIT.csv'); existing={r['figure_file'] for r in audit}
 audit_new=[

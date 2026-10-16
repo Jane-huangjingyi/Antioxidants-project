@@ -24,12 +24,12 @@ def write(name, fields, rows):
 
 def md(name, body): (DOC / name).write_text(body.strip()+'\n', encoding='utf-8')
 
-evidence = read('data/h_orac_stage25b/Stage25B_HORAC_Experiment_Evidence.csv')
-rank = read('data/h_orac_stage25b/Stage25B_HORAC_Quantitative_Ranking.csv')
+evidence = read('data/h_orac_stage25b/stage25b/Stage25B_HORAC_Experiment_Evidence.csv')
+rank = read('data/h_orac_stage25b/stage25b/Stage25B_HORAC_Quantitative_Ranking.csv')
 frozen = read('data/h_orac_stage25b/frozen/Stage25B_Frozen_Primary_HORAC_Top20.csv')
 err6 = read('data/h_orac_stage25b/stage25b6a/Stage25B6A_HORAC_Error_Data_Audit.csv')
 history = read('data/h_orac_stage25b/stage25b6a/Stage25B6A_Research_History_Indicators.csv')
-screen = read('data/h_orac_stage25b/Stage25B_HORAC_Publication_Screening.csv')
+screen = read('data/h_orac_stage25b/stage25b/Stage25B_HORAC_Publication_Screening.csv')
 manifest = read('data/h_orac_stage25b/frozen/Stage25B5_Frozen_Asset_SHA256_Manifest.csv')
 eligible = [r for r in evidence if r['H_ORAC_tier'] in ('A','B1')]
 assert len(evidence)==74 and len(eligible)==68 and len(rank)==28 and len(frozen)==20

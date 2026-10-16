@@ -25,8 +25,8 @@ def csvout(name, rows):
 def md(name, body, directory=DOC):
     (directory / name).write_text(body.strip()+'\n', encoding='utf-8')
 
-evidence = rd('data/h_orac_stage25b/Stage25B_HORAC_Experiment_Evidence.csv')
-rank = rd('data/h_orac_stage25b/Stage25B_HORAC_Quantitative_Ranking.csv')
+evidence = rd('data/h_orac_stage25b/stage25b/Stage25B_HORAC_Experiment_Evidence.csv')
+rank = rd('data/h_orac_stage25b/stage25b/Stage25B_HORAC_Quantitative_Ranking.csv')
 frozen = rd('data/h_orac_stage25b/frozen/Stage25B_Frozen_Primary_HORAC_Top20.csv')
 sources6 = rd('data/h_orac_stage25b/stage25b6b/Stage25B6B_Source_Independence_Registry.csv')
 errors6 = rd('data/h_orac_stage25b/stage25b6b/Stage25B6B_Error_Recovery_Master.csv')

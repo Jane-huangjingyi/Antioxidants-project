@@ -1,9 +1,9 @@
 param([string]$ProjectRoot=(Resolve-Path (Join-Path $PSScriptRoot '..')).Path)
 $ErrorActionPreference='Stop'
 $base=Join-Path $ProjectRoot 'data/h_orac_stage25b'
-$pub=Import-Csv (Join-Path $base 'Stage25B_HORAC_Publication_Screening.csv')
-$summary=Import-Csv (Join-Path $base 'Stage25B_HORAC_Candidate_Summary.csv')
-$rank=Import-Csv (Join-Path $base 'Stage25B_HORAC_Quantitative_Ranking.csv')
+$pub=Import-Csv (Join-Path $base 'stage25b/Stage25B_HORAC_Publication_Screening.csv')
+$summary=Import-Csv (Join-Path $base 'stage25b/Stage25B_HORAC_Candidate_Summary.csv')
+$rank=Import-Csv (Join-Path $base 'stage25b/Stage25B_HORAC_Quantitative_Ranking.csv')
 $raw=Import-Csv (Join-Path $base '_working/EuropePMC_Discovery_Raw.csv')
 
 $rankMap=@{};foreach($r in $rank){$rankMap[$r.candidate_id]=[int]$r.rank}
@@ -31,7 +31,7 @@ foreach($p in ($pub|Where-Object method_screen_status -eq 'PENDING_FULL_TEXT_ADJ
     potential_H_ORAC_relevance=$method;potential_quantitative_value=$quant;potential_eligibility_tier=$potentialTier;potential_effect_on_candidate_median=if($isFragile -or $quant -ne 'unclear'){'possible'}else{'low/unknown'};potential_effect_on_evidence_confidence=if([int]$s.independent_eligible_experiment_N -le 2){'possible upgrade if independent eligible'}else{'limited unless method/independence changes'};potential_effect_on_Top20_membership=if($isCutoff){'direct'}elseif($cr -and $cr -le 30){'possible'}elseif($quant -eq 'likely'){'possible if large value'}else{'low/unknown'};priority_tier=$tier;reason=$reason;adjudication_status='PENDING_PRIORITY_REVIEW'
   })
 }
-$path=Join-Path $base 'Stage25B1_FullText_Adjudication_Priority.csv'
+$path=Join-Path $base 'stage25b1/Stage25B1_FullText_Adjudication_Priority.csv'
 $out|Sort-Object @{Expression={switch($_.priority_tier){'Priority 1'{1}'Priority 2'{2}'Priority 3'{3}'Priority 4'{4}default{5}}}},current_provisional_H_ORAC_rank,candidate,title|Export-Csv $path -NoTypeInformation -Encoding utf8
 $out|Group-Object priority_tier|Sort-Object Name|Select-Object Name,Count|Format-Table -AutoSize
 Write-Output "TOTAL=$($out.Count)"

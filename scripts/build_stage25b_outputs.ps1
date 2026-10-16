@@ -73,7 +73,7 @@ for($i=0;$i -lt $experiments.Count;$i++){
   $experiments[$i].independent_experiment_id=('HORAC_EXP_{0:D4}' -f ($i+1))
 }
 
-$experiments | Export-Csv (Join-Path $dataDir 'Stage25B_HORAC_Experiment_Evidence.csv') -NoTypeInformation -Encoding utf8
+$experiments | Export-Csv (Join-Path $dataDir 'stage25b/Stage25B_HORAC_Experiment_Evidence.csv') -NoTypeInformation -Encoding utf8
 
 # Candidate × publication discovery ledger. Raw query duplicates are collapsed within candidate.
 $oldByCandPub=@{}
@@ -112,10 +112,10 @@ foreach($g in ($old|Group-Object {"$($_.candidate_id)|$($_.paper_id)"})){
     $pub.Add([pscustomobject]@{candidate_id=$r.candidate_id;canonical_name=$r.canonical_name;PubChem_CID=$r.PubChem_CID;InChIKey=$r.InChIKey;publication_id=$r.paper_id;DOI=$doi;PMID=$pmid;title=$r.paper_title;year=$r.year;journal=$r.journal;authors=$r.first_author;database_source='Existing canonical evidence master';discovery_query='existing evidence provenance revalidation';original_or_review=$r.review_or_original;full_text_available='source previously retrieved';candidate_identity_match='confirmed';H_ORAC_mentioned='yes';AAPH_confirmed=if($r.radical_or_oxidant_system -match 'AAPH'){'yes'}else{'no_or_unresolved'};fluorescein_confirmed=if($r.probe -match 'fluorescein'){'yes'}else{'no_or_unresolved'};Trolox_confirmed=if($r.reference_standard -match 'Trolox'){'yes'}else{'no_or_unresolved'};pure_compound_tested='yes';quantitative_result_present=if($r.original_value){'yes'}else{'no'};unit_reported=$r.original_unit;method_screen_status='FULL_TEXT_REVALIDATED_EXISTING';H_ORAC_tier=(@($g.Group.evidence_tier|Select-Object -Unique)-join ';');exclusion_reason='';full_text_checked='yes';reviewer='Stage25B migration from canonical full-text extraction';notes='Not rediscovered by the calibrated title/abstract query; retained through existing evidence provenance.'})
   }
 }
-$pub | Export-Csv (Join-Path $dataDir 'Stage25B_HORAC_Publication_Screening.csv') -NoTypeInformation -Encoding utf8
+$pub | Export-Csv (Join-Path $dataDir 'stage25b/Stage25B_HORAC_Publication_Screening.csv') -NoTypeInformation -Encoding utf8
 
 $prov=$experiments|ForEach-Object{[pscustomobject]@{candidate=$_.canonical_name;experiment_id=$_.independent_experiment_id;DOI=$_.DOI;PMID=$_.PMID;title=if($_.publication_id -eq 'S25B-P001'){'Comparative Evaluation of the Antiglycation and Anti-α-Glucosidase Activities of Baicalein, Baicalin and Metformin'}else{($master|Where-Object independent_experiment_id -eq $_.independent_experiment_id|Select-Object -First 1).paper_title};year=$_.year;source_location=(@($_.source_page,$_.source_table,$_.source_figure)|Where-Object{$_})-join '; ';full_text_source=if($_.publication_id -eq 'S25B-P001'){'Europe PMC fullTextXML PMC9612222'}else{'canonical evidence master / DOI source'};retrieval_date='2026-09-21';original_source_verified=if($_.provenance_status -in @('existing_validated','new_full_text_verified')){'yes'}else{'no'};notes=$_.major_method_caveat}}
-$prov|Export-Csv (Join-Path $dataDir 'Stage25B_HORAC_Source_Provenance.csv') -NoTypeInformation -Encoding utf8
+$prov|Export-Csv (Join-Path $dataDir 'stage25b/Stage25B_HORAC_Source_Provenance.csv') -NoTypeInformation -Encoding utf8
 
 $summary=[System.Collections.Generic.List[object]]::new()
 foreach($c in $cand){
@@ -125,16 +125,16 @@ foreach($c in $cand){
   $pending=@($p|Where-Object method_screen_status -eq 'PENDING_FULL_TEXT_ADJUDICATION').Count
   $summary.Add([pscustomobject]@{candidate_id=$c.candidate_id;canonical_name=$c.canonical_name;Stage25A_primary_rank=$c.primary_rank;Stage25B_status=$c.Stage25B_status;publication_screened_N=$p.Count;full_text_assessed_N=@($p|Where-Object full_text_checked -eq 'yes').Count;method_compatible_publication_N=@($p|Where-Object{$_.H_ORAC_tier -in @('A','B1','B2')}).Count;eligible_A_N=@($x|Where-Object H_ORAC_tier -eq 'A').Count;eligible_B1_N=@($x|Where-Object H_ORAC_tier -eq 'B1').Count;eligible_B2_N=@($x|Where-Object H_ORAC_tier -eq 'B2').Count;C_N=@($x|Where-Object H_ORAC_tier -eq 'C').Count;X_N=@($x|Where-Object H_ORAC_tier -eq 'X').Count;independent_eligible_experiment_N=$vals.Count;median_H_ORAC_mol_TE_per_mol=Med $vals;min=$min;max=$max;IQR=$iqr;max_min_ratio=$ratio;A_only_median=Med @($x|? H_ORAC_tier -eq A|%{[double]$_.converted_value_mol_TE_per_mol});A_B1_median=Med $vals;A_B1_B2_median=Med @($vals+$b2);heterogeneity_flag=if($ratio -gt 2){'HIGH_HETEROGENEITY'}else{'no'};evidence_confidence=$conf;major_method_caveat=if($pending){"$pending publication(s) remain pending full-text adjudication"}else{(@($x.major_method_caveat|Where-Object{$_}|Select-Object -Unique)-join ' | ')};quantitative_rank_eligible=if($vals.Count){'yes'}else{'no'};reason_not_rankable=if($vals.Count){''}elseif(@($x|? H_ORAC_tier -eq B2).Count){'B2 evidence only'}elseif(@($x|? H_ORAC_tier -eq X).Count){'INSUFFICIENT_METHOD_INFORMATION'}else{'SEARCHED_NO_CURRENTLY_ADJUDICATED_ELIGIBLE_HORAC'};human_review_required=if($pending -or @($x|? second_reviewer_status -match 'HUMAN').Count){'yes'}else{'second reviewer pending'}})
 }
-$summary|Export-Csv (Join-Path $dataDir 'Stage25B_HORAC_Candidate_Summary.csv') -NoTypeInformation -Encoding utf8
+$summary|Export-Csv (Join-Path $dataDir 'stage25b/Stage25B_HORAC_Candidate_Summary.csv') -NoTypeInformation -Encoding utf8
 
 $ranking=@($summary|Where-Object quantitative_rank_eligible -eq 'yes'|Sort-Object @{Expression={[double]$_.median_H_ORAC_mol_TE_per_mol};Descending=$true},canonical_name)
 for($i=0;$i -lt $ranking.Count;$i++){$ranking[$i]|Add-Member rank ($i+1);$ranking[$i]|Add-Member ranking_statistic 'median A+B1 mol TE/mol';$ranking[$i]|Add-Member provisional_status 'INTERIM_PENDING_FULL_TEXT_COMPLETION'}
-$ranking|Select-Object rank,candidate_id,canonical_name,median_H_ORAC_mol_TE_per_mol,independent_eligible_experiment_N,evidence_confidence,heterogeneity_flag,Stage25A_primary_rank,Stage25B_status,ranking_statistic,provisional_status|Export-Csv (Join-Path $dataDir 'Stage25B_HORAC_Quantitative_Ranking.csv') -NoTypeInformation -Encoding utf8
-$summary|Select-Object candidate_id,canonical_name,A_only_median,A_B1_median,A_B1_B2_median,independent_eligible_experiment_N,heterogeneity_flag,quantitative_rank_eligible,human_review_required|Export-Csv (Join-Path $dataDir 'Stage25B_HORAC_Sensitivity_Analysis.csv') -NoTypeInformation -Encoding utf8
+$ranking|Select-Object rank,candidate_id,canonical_name,median_H_ORAC_mol_TE_per_mol,independent_eligible_experiment_N,evidence_confidence,heterogeneity_flag,Stage25A_primary_rank,Stage25B_status,ranking_statistic,provisional_status|Export-Csv (Join-Path $dataDir 'stage25b/Stage25B_HORAC_Quantitative_Ranking.csv') -NoTypeInformation -Encoding utf8
+$summary|Select-Object candidate_id,canonical_name,A_only_median,A_B1_median,A_B1_B2_median,independent_eligible_experiment_N,heterogeneity_flag,quantitative_rank_eligible,human_review_required|Export-Csv (Join-Path $dataDir 'stage25b/Stage25B_HORAC_Sensitivity_Analysis.csv') -NoTypeInformation -Encoding utf8
 
 $search=foreach($s in $searchRaw){$p=@($pub|? candidate_id -eq $s.candidate_id);[pscustomobject]@{candidate_id=$s.candidate_id;candidate=$s.candidate;database=$s.database;exact_search_query=$s.exact_search_query;search_date=$s.search_date;number_retrieved=$s.number_retrieved;number_screened=$p.Count;number_full_text_assessed=@($p|? full_text_checked -eq yes).Count;number_method_compatible=@($p|?{$_.H_ORAC_tier -in @('A','B1','B2')}).Count;number_quantitative_extractable=@($experiments|?{$_.candidate_id -eq $s.candidate_id -and $_.converted_value_mol_TE_per_mol -ne ''}).Count;search_status=if(@($p|? method_screen_status -eq PENDING_FULL_TEXT_ADJUDICATION).Count){'METADATA_SCREEN_COMPLETE_FULL_TEXT_PENDING'}else{'METADATA_SCREEN_COMPLETE'}}}
-$search|Export-Csv (Join-Path $dataDir 'Stage25B_HORAC_Search_Log.csv') -NoTypeInformation -Encoding utf8
-$pub|Where-Object exclusion_reason|Select-Object candidate_id,canonical_name,publication_id,DOI,PMID,title,method_screen_status,exclusion_reason,reviewer,notes|Export-Csv (Join-Path $dataDir 'Stage25B_HORAC_Exclusion_Log.csv') -NoTypeInformation -Encoding utf8
+$search|Export-Csv (Join-Path $dataDir 'stage25b/Stage25B_HORAC_Search_Log.csv') -NoTypeInformation -Encoding utf8
+$pub|Where-Object exclusion_reason|Select-Object candidate_id,canonical_name,publication_id,DOI,PMID,title,method_screen_status,exclusion_reason,reviewer,notes|Export-Csv (Join-Path $dataDir 'stage25b/Stage25B_HORAC_Exclusion_Log.csv') -NoTypeInformation -Encoding utf8
 
 $pendingZRows=@($experiments|Where-Object{
   $exp=$_
@@ -146,7 +146,7 @@ $pendingZ=@($pendingZRows|Group-Object DOI|ForEach-Object{
   $g=$_.Group
   [pscustomobject]@{DOI=$_.Name;PMID=(@($g.PMID|Where-Object{$_}|Select-Object -Unique)-join ';');canonical_name=(@($g.canonical_name|Select-Object -Unique)-join '; ');publication_id=(@($g.publication_id|Select-Object -Unique)-join ';');import_status='pending_local_import';notes='Zotero helper unavailable because no Python runtime was found; do not invent a Zotero key.'}
 })
-$pendingZ|Export-Csv (Join-Path $dataDir 'Stage25B_Zotero_Pending_Import.csv') -NoTypeInformation -Encoding utf8
+$pendingZ|Export-Csv (Join-Path $dataDir 'stage25b/Stage25B_Zotero_Pending_Import.csv') -NoTypeInformation -Encoding utf8
 
 Write-Output "PUBLICATION_ROWS=$($pub.Count)"
 Write-Output "EXPERIMENT_ROWS=$($experiments.Count)"

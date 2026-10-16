@@ -13,6 +13,9 @@ __pycache__/
 .mypy_cache/
 .ruff_cache/
 .tmp_stage25a/
+# Stage25A local retrieval cache, relocated during 2026-10-16 organization
+archive/stage25a_local_cache/*
+!archive/stage25a_local_cache/README_CN.md
 
 # Local virtual environments
 .venv/

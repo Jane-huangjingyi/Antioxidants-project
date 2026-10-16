@@ -41,9 +41,9 @@ def year(s):
     n = number(s)
     return int(n) if n is not None and n.is_integer() and 1900 <= n <= CURRENT_YEAR else None
 
-ev = read("data/h_orac_stage25b/Stage25B_HORAC_Experiment_Evidence.csv")
-rank = read("data/h_orac_stage25b/Stage25B_HORAC_Quantitative_Ranking.csv")
-summ = {r["candidate_id"]:r for r in read("data/h_orac_stage25b/Stage25B_HORAC_Candidate_Summary.csv")}
+ev = read("data/h_orac_stage25b/stage25b/Stage25B_HORAC_Experiment_Evidence.csv")
+rank = read("data/h_orac_stage25b/stage25b/Stage25B_HORAC_Quantitative_Ranking.csv")
+summ = {r["candidate_id"]:r for r in read("data/h_orac_stage25b/stage25b/Stage25B_HORAC_Candidate_Summary.csv")}
 master = read("data/literature_screening/master/Literature_Screening_Candidate_Master.csv")
 master_by_id = {r["candidate_id"]:r for r in master}
 pub = read("data/literature_screening/provenance/Literature_Screening_Publication_Provenance.csv")
@@ -102,7 +102,7 @@ for r in eligible:
         "error_extractable":"yes_type_unresolved" if pm else ("yes" if r["SD"] or r["SE"] or r["CI"] else "not established"),
         "error_source_location":"Table 3, TE_AUC" if pm else (r["source_table"] if has_error else ""),
         "error_provenance_status":"ORIGINAL_ARTICLE_TABLE_3_VERIFIED_TYPE_UNCLEAR" if pm else (r["provenance_status"] if has_error else "NOT_EXTRACTED"),
-        "source_path":"https://pmc.ncbi.nlm.nih.gov/articles/PMC9951910/" if pm else "data/h_orac_stage25b/Stage25B_HORAC_Experiment_Evidence.csv",
+        "source_path":"https://pmc.ncbi.nlm.nih.gov/articles/PMC9951910/" if pm else "data/h_orac_stage25b/stage25b/Stage25B_HORAC_Experiment_Evidence.csv",
         "independence_status":"UNCLEAR",
         "CI_status":"CI_NOT_ESTIMABLE"
     })
@@ -260,7 +260,7 @@ L-Ascorbic acid 是 157 种候选物之一（AFF-0104），Stage25A 排名第 2�
 
 以现有 28 种 canonical rankable candidates 比较，0.74 低于第 28 名 Gallic acid 的 1.25 mol TE/mol。因此，即使将历史两值在未来通过 v2.0 逐项复核并纳入，它也不会因当前中位数直接进入 Top20；但不得在未经 re-adjudication 和 change control 的情况下写入正式排名。VC 的 H-ORAC 化学容量、体内抗氧化作用及营养重要性属于不同构念。Dehydroascorbic acid 为另一个候选（AFF-0105，Stage25A 第 70），不能与 L-ascorbic acid 合并。自然 tocopherol/tocotrienol 在项目维生素锁定表中属于 lipid-phase panel；本轮无可比的 canonical aqueous H-ORAC A/B1 证据，不能为了导师问题临时改变水相纳入规则。
 
-原始来源：Ou 等，[DOI 10.1021/jf010586o](https://doi.org/10.1021/jf010586o)；Carvalho 等，[原始全文 Table 3](https://pmc.ncbi.nlm.nih.gov/articles/PMC9951910/)。本地逐条记录：`data/class_specific_antioxidant/VitaminC_Aqueous_Evidence_Master.csv`；当前 canonical 状态：`data/h_orac_stage25b/Stage25B_HORAC_Candidate_Summary.csv`。
+原始来源：Ou 等，[DOI 10.1021/jf010586o](https://doi.org/10.1021/jf010586o)；Carvalho 等，[原始全文 Table 3](https://pmc.ncbi.nlm.nih.gov/articles/PMC9951910/)。本地逐条记录：`data/class_specific_antioxidant/VitaminC_Aqueous_Evidence_Master.csv`；当前 canonical 状态：`data/h_orac_stage25b/stage25b/Stage25B_HORAC_Candidate_Summary.csv`。
 """)
 
 method_table="""| 方法 | 数据需求及当前满足程度 | 结论 |

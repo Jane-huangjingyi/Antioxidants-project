@@ -5,9 +5,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data" / "h_orac_stage25b"
 
-with (DATA / "Stage25B_HORAC_Experiment_Evidence.csv").open(encoding="utf-8-sig", newline="") as f:
+with (DATA / "stage25b/Stage25B_HORAC_Experiment_Evidence.csv").open(encoding="utf-8-sig", newline="") as f:
     evidence = {r["independent_experiment_id"]: r for r in csv.DictReader(f)}
-with (DATA / "Stage25B_HORAC_Quantitative_Ranking.csv").open(encoding="utf-8-sig", newline="") as f:
+with (DATA / "stage25b/Stage25B_HORAC_Quantitative_Ranking.csv").open(encoding="utf-8-sig", newline="") as f:
     ranking = {r["candidate_id"]: r for r in csv.DictReader(f)}
 
 P = "CONFIRMED_PRESENT"
@@ -131,7 +131,7 @@ for exp_id, profile_id in sample:
     })
     rows.append(row)
 
-audit_path = DATA / "Stage25B2_TierA_Feasibility_Audit.csv"
+audit_path = DATA / "stage25b2/Stage25B2_TierA_Feasibility_Audit.csv"
 with audit_path.open("w", encoding="utf-8-sig", newline="") as f:
     w = csv.DictWriter(f, fieldnames=list(rows[0]))
     w.writeheader(); w.writerows(rows)
@@ -178,7 +178,7 @@ for c in criteria:
         "human_review_required": "YES" if scope != "UNIVERSAL" or c in {"compound_purity_reported", "final_cosolvent_percent_reported"} else "NO",
     })
 
-with (DATA / "Stage25B2_TierA_Criterion_Summary.csv").open("w", encoding="utf-8-sig", newline="") as f:
+with (DATA / "stage25b2/Stage25B2_TierA_Criterion_Summary.csv").open("w", encoding="utf-8-sig", newline="") as f:
     w = csv.DictWriter(f, fieldnames=list(summary[0]))
     w.writeheader(); w.writerows(summary)
 

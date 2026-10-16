@@ -41,9 +41,9 @@ def value(x):
     try: return float(x)
     except (TypeError,ValueError): return None
 
-evidence=read('data/h_orac_stage25b/Stage25B_HORAC_Experiment_Evidence.csv')
+evidence=read('data/h_orac_stage25b/stage25b/Stage25B_HORAC_Experiment_Evidence.csv')
 eligible=[r for r in evidence if r['H_ORAC_tier'] in ('A','B1')]
-ranking=read('data/h_orac_stage25b/Stage25B_HORAC_Quantitative_Ranking.csv')
+ranking=read('data/h_orac_stage25b/stage25b/Stage25B_HORAC_Quantitative_Ranking.csv')
 candidate=read('data/literature_screening/master/Literature_Screening_Candidate_Master.csv')
 source6=read('data/h_orac_stage25b/stage25b6c/Stage25B6C_Source_Fulltext_Verification.csv')
 close6=read('data/h_orac_stage25b/stage25b6c/Stage25B6C_Candidate_Independence_Closure.csv')
@@ -56,7 +56,7 @@ assert len(evidence)==74 and len(eligible)==68 and len(ranking)==28 and len(cand
 assert len(close6)==28 and len(error6)==68 and len(history6)==157 and len(cr6)==14
 assert all(sha(ROOT/r['asset_path'])==r['sha256'] for r in manifest)
 rubric=ROOT/'docs/methods/h_orac_framework/H_ORAC_Evidence_Rubric_v2.0_CN.md'
-protected_before={p:sha(p) for p in [rubric,ROOT/'data/h_orac_stage25b/Stage25B_HORAC_Experiment_Evidence.csv',ROOT/'data/h_orac_stage25b/frozen/Stage25B_Frozen_Primary_HORAC_Top20.csv']}
+protected_before={p:sha(p) for p in [rubric,ROOT/'data/h_orac_stage25b/stage25b/Stage25B_HORAC_Experiment_Evidence.csv',ROOT/'data/h_orac_stage25b/frozen/Stage25B_Frozen_Primary_HORAC_Top20.csv']}
 by_candidate=defaultdict(list)
 for r in eligible: by_candidate[r['candidate_id']].append(r)
 rank_by_id={r['candidate_id']:r for r in ranking}
