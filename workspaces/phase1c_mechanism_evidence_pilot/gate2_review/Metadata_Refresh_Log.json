@@ -1,0 +1,7 @@
+{
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&retmode=xml&id=32520409,37482908,39589556,41594941,42170612,37025617,42413844,32007785,11023549,11714376",
+  "utc": "2026-10-16T11:46:45.148370+00:00",
+  "local_cache": "sources/Current_10_Study_PubMed.xml",
+  "bytes": 270358,
+  "sha256": "68b085f910fef7b9f9f8fbca3d71342664061f6aa8b69fe03bcb69e41d4cd247"
+}

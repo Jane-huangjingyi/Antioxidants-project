@@ -1,0 +1,27 @@
+# 机制证据分级与抗氧化相关性提案 v0.1
+
+本提案不是批准规则，也未更改原21条或66字段。研究任务为定向科学复核，执行者为Codex，不是独立人工审稿人。五类关系保持DIRECT_BINDING、FUNCTIONAL_CAUSAL、PATHWAY_MODULATION、OMICS_ASSOCIATION、COMPUTATIONAL_PREDICTION；它们描述观察关系，不是单轴证据分数。必须同时读取来源层级、特定蛋白确认程度和具体模型，不能以标题或类别名自动认定验证。
+
+## 独立的蛋白靶点确认维度
+
+DIRECT_BINDING_SUPPORTED：明确物种、亚型、构建物和化合物形式的具体蛋白，具有可追溯的实验结合结果及适当阴性/背景控制、剂量与模型拟合。候选方法可包括ITC、SPR、MST或结构证据；方法名称不是充分条件，热稳定性/光谱变化须审查聚集、内滤效应、非特异及正交证据。只有摘要报告、未明制备物或仅对接不进入此类。本轮无记录达到此类。
+
+FUNCTIONAL_PARTICIPATION_SUPPORTED：已定位蛋白/基因，在具体实验中有遗传丧失功能、回补/救援或充分正交干预支持其参与。此类不证明小分子直接结合；全身敲除与基线表型、发育适应及相互作用统计仍有适用边界。回补须核对同一基因背景、空载体、剂量、时序及结局，不能从不同模型搬运。
+
+READOUT_ONLY：仅观察表达、磷酸化、定位或特定读数改变。须注明transcript/protein/activity/localization层级，qPCR不能被计作蛋白实测。蛋白–蛋白Co-IP不能替代PCA–蛋白结合。
+
+OMICS_ASSOCIATED：转录组、蛋白组等关联候选，需统计对照和多重校正；不自动获得功能验证。通路富集不能生成已验证蛋白靶点。
+
+COMPUTATIONAL_ONLY：对接、MD及结构预测；有UniProt/PDB标识也不升级实验。UNRESOLVED_PROTEIN_OR_EVIDENCE：身份、物种、制备物、来源或关键设计不足；可同时保留作者报告的关系，不声称其已证实。另用NOT_APPLICABLE_NO_PROTEIN_TARGET处理GSH/通路富集等真正无蛋白对象的观察，不将不适用与未解决混同。
+
+这些是名义分类，不是可直接加总的1–6分。更强的来源不能从同论文其他行借用。对于单一抑制剂，建议保留药理参与子标签，默认不足以支持特定蛋白的必要性；Akt与摘要TYR行提出收窄关系建议。这是拟议保守规则，不是断言药理观察本身错误。
+
+## 抗氧化相关性：逐观察判定
+
+DIRECT_REDOX_OUTCOME：本行实际测ROS、脂质过氧化、GSH或其他明确红氧终点，并记录具体指标及方向；不是抗氧化蛋白机制已验证。ANTIOXIDANT_FUNCTIONAL_MECHANISM：本行对红氧结局有可核查的干预–机制关系；单纯命中Nrf2/SIRT家族名不够。INDIRECT_OXIDATIVE_STRESS_ASSOCIATION：与氧化应激有研究情境或组学关联，但本行没有充分功能红氧验证。OTHER_BIOLOGICAL_FUNCTION：涩感、脂肪变、增殖、单纯炎症/定位等其他观察；不因与抗氧化无直接关系而删除。PROOXIDANT_OR_ADVERSE_RESPONSE：实测促氧化或不利响应，保留剂量/时序/模型；不可把肿瘤细胞存活增加自动外推成临床危害。UNRESOLVED：原始信息不足，不能由通路名称推断。
+
+建议一个primary值，加可选secondary标签。原图6L可primary=DIRECT_REDOX_OUTCOME、secondary=ANTIOXIDANT_FUNCTIONAL_MECHANISM；GSH耗竭可primary=PROOXIDANT_OR_ADVERSE_RESPONSE、secondary=DIRECT_REDOX_OUTCOME。分类归属与来源可核查度分列：摘要明确报告GSH耗竭，可提出相关性分类，但记录仍HOLD，不能因此声称全文已验证。
+
+SIRT3脂肪变及Kmo转录观察不借用同论文其他ROS读数；eNOS磷酸化只作间接关联。NRF2补回细胞实验不移用于动物行。DPPH/ORAC化学实验若另有数据，只能支持化学结局，不自动成为蛋白机制。高剂量体内给药或高浓度体外暴露均不能直接标为正常膳食可达。未检出显著差异不是等效、无作用或零效应。
+
+来源、直接结合、功能参与、抗氧化相关性与人工批准必须正交记录。本轮只提出分类和验证边界，不执行任何重新分级写回。

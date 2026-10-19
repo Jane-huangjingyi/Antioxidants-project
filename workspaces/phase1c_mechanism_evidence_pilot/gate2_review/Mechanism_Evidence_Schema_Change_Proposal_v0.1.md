@@ -1,0 +1,15 @@
+# 66字段扩展性与修改建议 v0.1
+
+已逐项检查现有66字段，结果见Existing_66_Field_Review_Coverage.csv。保留一行“候选物×关系×具体观察”的粒度；原21行和字典未变。无需把数据库扩为不断增加的宽表，优先细化既有字段语义，并用关联表承载重复结构。逐字段的OPTIONAL_FUTURE只表示目前没有必须修改的定义，不表示该字段可以删除或不再必填；三个优先级仅针对修改建议。
+
+MUST_CHANGE_BEFORE_SCALE_UP：增加独立target_confirmation_class与antioxidant_relevance_primary，允许受控secondary标签；必须经人工批准后实施。复用已有observation_endpoint而不再新增同义终点字段。对终点建立旁表定义redox endpoint/非红氧、测量层级、方向与统计解释；GSH为代谢物，不填成蛋白。dose_unit保留纯单位，建议单独dose_basis区分给药量、培养最终浓度、注射器浓度和饮水百分比。原形式/参考CID必须明确是母体锚还是实验样品鉴定，先修订语义，不自动新增结构ID或补值。
+
+MUST_CHANGE_BEFORE_SCALE_UP：experiment_id须可将同一实验/样本多个检测关联，不能每行一个ID就称独立实验；多个剂量、时间点、模型分别观察，重复实验与同一样本不同readout分开。CONTROL/挑战参数若多值复杂，建议实验实体/干预关联表，不把不同处理拼成一个可计算字段。基因型×药物、单一药理、平行表型和真正回补分开标注；可用现有target_validation_status受控词汇及review旁表，不强制再加多列。target_effect_direction不能混合变化方向、是否依赖、是否有结合及显著性，至少先通过规则将这些语义分开，不把NS编码为真实NO_CHANGE。
+
+MUST_CHANGE_BEFORE_SCALE_UP：现有枚举多为观察值集合，不足以覆盖未来合法状态。例如publication_date_precision当前仅DAY/MONTH、publication_status仅无撤稿链接、human_review_status仅未审；扩展规则应容纳YEAR、更正/关注声明/撤稿及真实有据的人工事件，绝不能自动置HUMAN_APPROVED。审核历史及更正采用独立Review_Event/Change_Log旁表，保留对象ID、旧值/新值、理由、来源、审核者类型、日期及批准状态，不覆盖旧证据。来源层级须区分仅摘要、正文、图像、补充材料及局部冲突；FULL_TEXT_VERIFIED不能暗示原始图像已验。
+
+RECOMMENDED：复用UniProt_ID、target_species、pathway_ID/database，但增加可追溯映射依据/版本于受控旁表；家族/物种未决不得强制指定accession。作者命名轴与KEGG/Reactome标准通路明确分开；富集过程不直接冒用通路ID。补充结构化效应量、单位、n含义、区间及检验，放Endpoint_Result旁表，仅在来源确有信息时填入。浓度/剂量可达性作为独立exposure_relevance判定，缺人体PK/摄入证据时UNRESOLVED，不能仅凭nM/µM或标题physiological宣称膳食可达。
+
+OPTIONAL_FUTURE：标准单位换算、标准术语本体及跨论文实验/队列关联需要成熟原始数据和明确规则后再做；不要求本轮算法、网络分析或增加未核实的ID。样品批次、抗体、补充材料和原始图像的详细资产管理可放实验/来源实体，不把全部内容塞入每个观察行。
+
+本轮字段审查优先级计数：{"MUST_CHANGE_BEFORE_SCALE_UP": 17, "OPTIONAL_FUTURE": 28, "RECOMMENDED": 21}。此计数是现有字段治理审查优先级，不是要求新增相同数量字段。所有建议未应用。先解决TRAF2/ITC来源问题和审核规则，再考虑扩大其他候选物。
