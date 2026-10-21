@@ -1,0 +1,250 @@
+{
+  "date": "2026-10-21",
+  "timezone": "Asia/Shanghai",
+  "phase": "GOVERNANCE_DOCUMENT_QC_NOT_GATE_APPROVAL",
+  "branch": "codex/phase1c-governance-v0.1",
+  "head_at_check": "d29a6936603886e654b3cdfb24ccd3a1e76cee23",
+  "baseline_head": "d29a6936603886e654b3cdfb24ccd3a1e76cee23",
+  "tracked_checked": 685,
+  "cache_checked": 41,
+  "governance_files_expected": 8,
+  "decision_count": 24,
+  "decision_readiness": {
+    "DISCUSSION_REQUIRED": 9,
+    "READY_FOR_HUMAN_APPROVAL": 15
+  },
+  "vocabulary_rows": 153,
+  "gate2_review_status": {
+    "HOLD_SOURCE_VERIFICATION": 7,
+    "KEEP_PROVISIONAL": 12,
+    "RECLASSIFICATION_PROPOSED": 2
+  },
+  "gate2_target_classes": {
+    "COMPUTATIONAL_ONLY": 3,
+    "FUNCTIONAL_PARTICIPATION_SUPPORTED": 2,
+    "NOT_APPLICABLE_NO_PROTEIN_TARGET": 3,
+    "OMICS_ASSOCIATED": 1,
+    "READOUT_ONLY": 6,
+    "UNRESOLVED_PROTEIN_OR_EVIDENCE": 6
+  },
+  "gate2_antioxidant_primary": {
+    "DIRECT_REDOX_OUTCOME": 1,
+    "INDIRECT_OXIDATIVE_STRESS_ASSOCIATION": 3,
+    "OTHER_BIOLOGICAL_FUNCTION": 14,
+    "PROOXIDANT_OR_ADVERSE_RESPONSE": 3
+  },
+  "checks": [
+    {
+      "id": "legacy_tracked_hashes",
+      "pass": true,
+      "detail": {
+        "count": 685,
+        "changed": []
+      }
+    },
+    {
+      "id": "legacy_source_cache_hashes",
+      "pass": true,
+      "detail": {
+        "count": 41,
+        "changed": []
+      }
+    },
+    {
+      "id": "legacy_counts",
+      "pass": true,
+      "detail": {
+        "observations": 21,
+        "fields": 66,
+        "coverage": 191,
+        "publication_register": 15
+      }
+    },
+    {
+      "id": "master_byte_identity",
+      "pass": true,
+      "detail": "Master and compound CSV remain byte-identical"
+    },
+    {
+      "id": "stable_evidence_id",
+      "pass": true,
+      "detail": "21 stable unique IDs"
+    },
+    {
+      "id": "publication_counts",
+      "pass": true,
+      "detail": "15 publication register entries; 10 with included observations; not independent experiment counts"
+    },
+    {
+      "id": "unsearched_not_zero",
+      "pass": true,
+      "detail": "190 unsearched candidates keep blank counts, not zero"
+    },
+    {
+      "id": "original_json_unchanged",
+      "pass": true,
+      "detail": "all 66 original attributes in Gate2 snapshots equal legacy evidence"
+    },
+    {
+      "id": "zero_human_approvals",
+      "pass": true,
+      "detail": "No approval or scientific writeback"
+    },
+    {
+      "id": "governance_decisions",
+      "pass": true,
+      "detail": {
+        "DISCUSSION_REQUIRED": 9,
+        "READY_FOR_HUMAN_APPROVAL": 15
+      }
+    },
+    {
+      "id": "decision_readiness_counts",
+      "pass": true,
+      "detail": "15 ready recommendations and 9 discussions; none approved"
+    },
+    {
+      "id": "vocabulary_uniqueness",
+      "pass": true,
+      "detail": {
+        "rows": 153,
+        "fields": 40
+      }
+    },
+    {
+      "id": "enum_evidence_relation_type",
+      "pass": true,
+      "detail": {
+        "expected": 5
+      }
+    },
+    {
+      "id": "enum_target_confirmation_class",
+      "pass": true,
+      "detail": {
+        "expected": 7
+      }
+    },
+    {
+      "id": "enum_antioxidant_relevance_primary",
+      "pass": true,
+      "detail": {
+        "expected": 6
+      }
+    },
+    {
+      "id": "enum_review_state",
+      "pass": true,
+      "detail": {
+        "expected": 6
+      }
+    },
+    {
+      "id": "vocabulary_primary_membership",
+      "pass": true,
+      "detail": "all Gate2 proposed primary categories allowed; does not apply them"
+    },
+    {
+      "id": "vocabulary_target_membership",
+      "pass": true,
+      "detail": "all Gate2 proposed target classes allowed; does not apply them"
+    },
+    {
+      "id": "all_66_fields_mapped",
+      "pass": true,
+      "detail": "each original field mapped once in original dictionary order"
+    },
+    {
+      "id": "17_must_fields_consistent",
+      "pass": true,
+      "detail": {
+        "must_change_fields": [
+          "InChIKey",
+          "PubChem_CID",
+          "compound_form",
+          "direct_target_status",
+          "dose",
+          "dose_unit",
+          "effect_context",
+          "evidence_relation_type",
+          "experiment_id",
+          "functional_outcome",
+          "human_review_status",
+          "publication_date_precision",
+          "publication_status",
+          "source_verification_status",
+          "target_experimental_support",
+          "target_role",
+          "target_validation_status"
+        ]
+      }
+    },
+    {
+      "id": "all_21_impact_examples",
+      "pass": true,
+      "detail": "21 stable IDs covered without reclassification writeback"
+    },
+    {
+      "id": "eight_deliverables",
+      "pass": true,
+      "detail": {
+        "missing": []
+      }
+    },
+    {
+      "id": "four_permission_scopes",
+      "pass": true,
+      "detail": "all four permissions separately proposed and not authorized"
+    },
+    {
+      "id": "only_governance_changes",
+      "pass": true,
+      "detail": {
+        "outside": []
+      }
+    },
+    {
+      "id": "task_branch",
+      "pass": true,
+      "detail": {
+        "branch": "codex/phase1c-governance-v0.1",
+        "head": "d29a6936603886e654b3cdfb24ccd3a1e76cee23",
+        "baseline_head": "d29a6936603886e654b3cdfb24ccd3a1e76cee23"
+      }
+    },
+    {
+      "id": "csv_no_error_tokens_decision_matrix",
+      "pass": true,
+      "detail": "literal cell scan and saved Artifact inspection; no spreadsheet formulas delivered"
+    },
+    {
+      "id": "artifact_csv_decision_matrix",
+      "pass": true,
+      "detail": {
+        "rows": 24,
+        "columns": 10,
+        "inspection": "qc_previews/decision_matrix_inspection.json",
+        "preview": "qc_previews/decision_matrix.png",
+        "note": "CSV only; no formulas or production workbook exported"
+      }
+    },
+    {
+      "id": "csv_no_error_tokens_controlled_vocabulary",
+      "pass": true,
+      "detail": "literal cell scan and saved Artifact inspection; no spreadsheet formulas delivered"
+    },
+    {
+      "id": "artifact_csv_controlled_vocabulary",
+      "pass": true,
+      "detail": {
+        "rows": 153,
+        "columns": 9,
+        "inspection": "qc_previews/controlled_vocabulary_inspection.json",
+        "preview": "qc_previews/controlled_vocabulary.png",
+        "note": "CSV only; no formulas or production workbook exported"
+      }
+    }
+  ],
+  "pass": 29,
+  "fail": 0
+}
