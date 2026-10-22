@@ -1,0 +1,317 @@
+{
+  "date": "2026-10-22",
+  "record_type": "GOVERNANCE_APPROVAL_QC",
+  "source_commit": "9c6be49bac03a16bab1aa49790124dbdaf7a6af0",
+  "branch": "codex/phase1c-governance-v0.2-approval",
+  "passed": 61,
+  "failed": 0,
+  "protected_tracked_files": 735,
+  "protected_cache_files": 41,
+  "checks": [
+    {
+      "name": "24 exact approved v0.2 rules with identity and scope separation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "15 basic principles / 9 implementation policies",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "manifest metadata record_type",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "manifest metadata governance_version",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "manifest metadata approval_date",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "manifest metadata approval_source",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "manifest metadata approver_role",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "manifest metadata approver_name",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "manifest metadata approval_scope",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "manifest metadata signature_method",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "manifest metadata identity_verification",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "manifest metadata signature_time",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "manifest metadata approval_time_precision",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "manifest complete decision IDs",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "10 scoped hash references; no scientific tables frozen",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "rule hash workspaces/phase1c_mechanism_evidence_pilot/governance_v0.2_dryrun/Governance_Decision_Record_v0.2.md",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "rule hash workspaces/phase1c_mechanism_evidence_pilot/governance_v0.2_dryrun/Governance_Decision_Diff_v0.1_to_v0.2.csv",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "rule hash workspaces/phase1c_mechanism_evidence_pilot/governance_v0.1/Mechanism_Evidence_Governance_Decision_v0.1.md",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "rule hash workspaces/phase1c_mechanism_evidence_pilot/governance_v0.1/Mechanism_Evidence_Controlled_Vocabulary_v0.1.csv",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "rule hash workspaces/phase1c_mechanism_evidence_pilot/governance_v0.1/Mechanism_Evidence_Gate_Criteria_v0.1.md",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "rule hash workspaces/phase1c_mechanism_evidence_pilot/governance_v0.1/Mechanism_Evidence_Entity_Relationship_Design_v0.1.md",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "rule hash workspaces/phase1c_mechanism_evidence_pilot/governance_v0.2_dryrun/schema/Mechanism_Evidence_Schema_v0.2.md",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "rule hash workspaces/phase1c_mechanism_evidence_pilot/governance_v0.2_dryrun/schema/Table_Contract_v0.2.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "archive hash workspaces/phase1c_mechanism_evidence_pilot/governance_approval_v0.2/Governance_Formal_Approval_Record_v0.2.md",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "archive hash workspaces/phase1c_mechanism_evidence_pilot/governance_approval_v0.2/Governance_Approved_Decision_Matrix_v0.2.csv",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "user declaration matches captured source attachment",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "735 existing tracked files unchanged",
+      "pass": true,
+      "detail": "[]"
+    },
+    {
+      "name": "41 local source caches unchanged",
+      "pass": true,
+      "detail": "[]"
+    },
+    {
+      "name": "original 21 evidence rows NOT_REVIEWED",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "original dictionary 66 fields",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "257 scientific proposals not approved/applied",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "257 review events remain unsigned and pending",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "dryrun 21 observations unapproved / 7 source HOLD",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "historical Gate2 KEEP_PROVISIONAL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "historical Gate2 RECLASSIFICATION_PROPOSED",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "historical Gate2 HOLD_SOURCE_VERIFICATION",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "historical scientific matrix remains unreviewed",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "empty nonproduction Verified_Direct_Targets",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "empty nonproduction Verified_Antioxidant_Mechanisms",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "empty nonproduction Verified_Evidence_Support",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "old governance history not rewritten",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "exact nine gate/authorization states",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "readiness covers exact 21 IDs once",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "readiness A9 B5 C7 and historical states",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "14 per-row review dimensions",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "future review identity/source/change controls",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "formal metadata exact and no inferred identity/time",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "NON_PRODUCTION_DRYRUN maintained",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "task branch correct / main and merge base unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "no changes outside new approval directory",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "negative fixture rejected: missing ID",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "negative fixture rejected: duplicate ID",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "negative fixture rejected: changed rule",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "negative fixture rejected: inferred name",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "negative fixture rejected: fabricated time",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "negative fixture rejected: scientific scope",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "negative fixture rejected: production implementation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "negative fixture rejected: scientific approval",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "artifact inspect completed",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "no spreadsheet error tokens",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "bounded artifact preview rendered",
+      "pass": true,
+      "detail": "Visual inspection is reported separately by the operator."
+    }
+  ]
+}
