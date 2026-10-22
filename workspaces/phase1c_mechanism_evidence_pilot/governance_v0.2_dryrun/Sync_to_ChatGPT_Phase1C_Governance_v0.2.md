@@ -1,0 +1,93 @@
+# 同步ChatGPT：Governance v0.2与隔离迁移演练
+
+2026-10-22。完成24项v0.1→v0.2逐项决策记录，v0.1历史文件不改。指定15项基础原则记录SCIENTIFIC_RECOMMENDATION_ACCEPTED_PENDING_FORMAL_SIGNOFF，其余9项记录IMPLEMENTATION_POLICY_PROPOSED_PENDING_FORMAL_SIGNOFF；全部正式批准PENDING_FORMAL_SIGNOFF，没有指定具名签署者，没有HUMAN_APPROVED或生产实施。
+
+方案B实例为13张数据/审计表＋3个空验证视图。原21观察和21旧比较ID完整保留，不把旧比较当独立实验。原66字段/1386原值可恢复，含剂量、单位、形式、关系、状态及来源定位。15出版物登记/10篇有纳入观察保持，不将出版物数当独立实验数。
+
+257项分类/映射建议和257个待审事件与事实表隔离；12新字段各21项，其余5项为Akt/TYR关系2项、HDAC1措辞1项及SIRT3模型元数据2项。所有建议PROPOSED_NOT_APPROVED，不应用到正式Observation。7条来源HOLD在隔离层过滤，三个验证视图均0行，12 KEEP_PROVISIONAL不转人工批准。NRF2 S2仅待提取事项，不新造第22条或借细胞补回升级动物6L。
+
+23项未决映射含21个真实设计/材料关联以及NRF2 S2/MN；此外TRAF2全文、amylase对象身份、跨文复用、部分最终浓度基准、对照臂解析、原儿茶酸未完筛选及Phase1B风险继续待审。未取得实际材料依据，不构造共享Material/Arm或统一靶点实体。
+
+迁移最终QC为91项通过、0项失败，逐项明细见qc/Migration_Validation.json及QC报告。已覆盖主外键、动态映射与语义关联、枚举、原值恢复、原始剂量、HOLD、审核零越权、三案例、桥表去重、10类拒绝性内存测试、确定性重建及回滚；19份CSV代表范围均已查看，另以PowerShell独立复核行数及关键提案。技术通过不等于正式Gate通过。建议Gate1=HOLD，Gate2=HUMAN_SCIENTIFIC_REVIEW_REQUIRED，Scale-up四权限=NOT_AUTHORIZED，Release=HOLD。下一步只审阅政策、schema与演练报告，指定具名审核责任，再另行决定实施/扩展。
+
+起始HEAD 7e62d3b6fcebda2d4941d8e93631d96959fc9581，v0.1未合并main；main为d29a6936603886e654b3cdfb24ccd3a1e76cee23。任务分支codex/phase1c-governance-v0.2-dryrun，只新增本目录文件。697个既有跟踪文件和41个来源缓存按Start_Baseline核hash全部不变，不上传论文全文/原图。实际提交SHA、push及干净状态由最终回复核实，不伪造提交前自指哈希。本轮仅Git归档，不创建正式科学数据版本。
+
+## 文件转交清单（完整相对路径）
+
+P0 workspaces/phase1c_mechanism_evidence_pilot/governance_v0.2_dryrun/Governance_Decision_Record_v0.2.md
+
+P0 workspaces/phase1c_mechanism_evidence_pilot/governance_v0.2_dryrun/Governance_Decision_Diff_v0.1_to_v0.2.csv
+
+P0 workspaces/phase1c_mechanism_evidence_pilot/governance_v0.2_dryrun/Migration_Dry_Run_Report_v0.1.md
+
+P0 workspaces/phase1c_mechanism_evidence_pilot/governance_v0.2_dryrun/Sync_to_ChatGPT_Phase1C_Governance_v0.2.md
+
+P1 workspaces/phase1c_mechanism_evidence_pilot/governance_v0.2_dryrun/schema/Mechanism_Evidence_Schema_v0.2.md
+
+P1 workspaces/phase1c_mechanism_evidence_pilot/governance_v0.2_dryrun/schema/Schema_Field_Mapping_v0.2.csv
+
+P1 workspaces/phase1c_mechanism_evidence_pilot/governance_v0.2_dryrun/schema/Controlled_Vocabulary_Snapshot_v0.1.csv
+
+P1 workspaces/phase1c_mechanism_evidence_pilot/governance_v0.2_dryrun/schema/Table_Contract_v0.2.json
+
+P1 workspaces/phase1c_mechanism_evidence_pilot/governance_v0.2_dryrun/dryrun/Observation.csv
+
+P1 workspaces/phase1c_mechanism_evidence_pilot/governance_v0.2_dryrun/dryrun/Publication.csv
+
+P1 workspaces/phase1c_mechanism_evidence_pilot/governance_v0.2_dryrun/dryrun/Experiment.csv
+
+P1 workspaces/phase1c_mechanism_evidence_pilot/governance_v0.2_dryrun/dryrun/Review_Event.csv
+
+P1 workspaces/phase1c_mechanism_evidence_pilot/governance_v0.2_dryrun/dryrun/Legacy_ID_Map.csv
+
+P1 workspaces/phase1c_mechanism_evidence_pilot/governance_v0.2_dryrun/dryrun/Source_Check.csv
+
+P1 workspaces/phase1c_mechanism_evidence_pilot/governance_v0.2_dryrun/dryrun/Legacy_Field_Value.csv
+
+P1 workspaces/phase1c_mechanism_evidence_pilot/governance_v0.2_dryrun/dryrun/Scientific_Proposal.csv
+
+P1 workspaces/phase1c_mechanism_evidence_pilot/governance_v0.2_dryrun/dryrun/Observation_Tag.csv
+
+P1 workspaces/phase1c_mechanism_evidence_pilot/governance_v0.2_dryrun/dryrun/Observation_Target.csv
+
+P1 workspaces/phase1c_mechanism_evidence_pilot/governance_v0.2_dryrun/dryrun/Intervention.csv
+
+P1 workspaces/phase1c_mechanism_evidence_pilot/governance_v0.2_dryrun/dryrun/Independence_Assessment.csv
+
+P1 workspaces/phase1c_mechanism_evidence_pilot/governance_v0.2_dryrun/dryrun/Unresolved_Mapping.csv
+
+P1 workspaces/phase1c_mechanism_evidence_pilot/governance_v0.2_dryrun/dryrun/Verified_Direct_Targets.csv
+
+P1 workspaces/phase1c_mechanism_evidence_pilot/governance_v0.2_dryrun/dryrun/Verified_Antioxidant_Mechanisms.csv
+
+P1 workspaces/phase1c_mechanism_evidence_pilot/governance_v0.2_dryrun/dryrun/Verified_Evidence_Support.csv
+
+P2 workspaces/phase1c_mechanism_evidence_pilot/governance_v0.2_dryrun/qc/Migration_Dry_Run_QC_Report.md
+
+P2 workspaces/phase1c_mechanism_evidence_pilot/governance_v0.2_dryrun/qc/Migration_Validation.json
+
+P2 workspaces/phase1c_mechanism_evidence_pilot/governance_v0.2_dryrun/qc/Protected_Asset_Integrity_Report.md
+
+P2 workspaces/phase1c_mechanism_evidence_pilot/governance_v0.2_dryrun/qc/Start_Baseline.json
+
+P2 workspaces/phase1c_mechanism_evidence_pilot/governance_v0.2_dryrun/qc/Input_Snapshot.json
+
+P2 workspaces/phase1c_mechanism_evidence_pilot/governance_v0.2_dryrun/qc/Build_Manifest.json
+
+P2 workspaces/phase1c_mechanism_evidence_pilot/governance_v0.2_dryrun/qc/Rollback_Reconstruction.json
+
+P2 workspaces/phase1c_mechanism_evidence_pilot/governance_v0.2_dryrun/scripts/validate_migration.mjs
+
+P2 workspaces/phase1c_mechanism_evidence_pilot/governance_v0.2_dryrun/scripts/build_dryrun.mjs
+
+P2 workspaces/phase1c_mechanism_evidence_pilot/governance_v0.2_dryrun/scripts/reconstruct_legacy.mjs
+
+P2 workspaces/phase1c_mechanism_evidence_pilot/governance_v0.2_dryrun/scripts/migration_lib.mjs
+
+P2 workspaces/phase1c_mechanism_evidence_pilot/governance_v0.2_dryrun/scripts/policy_v02.mjs
+
+P2 workspaces/phase1c_mechanism_evidence_pilot/governance_v0.2_dryrun/scripts/capture_baseline.mjs
+
+P2 workspaces/phase1c_mechanism_evidence_pilot/governance_v0.2_dryrun/.gitignore
+
+所有新文件共38个。依赖junction、代表范围预览和第二次重建输出本地忽略，不提交。完成后停止，等待用户/ChatGPT审阅；此文件可供转交，未自动向其他聊天发消息。

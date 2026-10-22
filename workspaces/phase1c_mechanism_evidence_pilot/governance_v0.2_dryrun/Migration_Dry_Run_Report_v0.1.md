@@ -1,0 +1,37 @@
+# 方案B隔离副本迁移演练报告 v0.1
+
+2026-10-22。NON_PRODUCTION_DRYRUN。源HEAD 7e62d3b6fcebda2d4941d8e93631d96959fc9581，独立分支codex/phase1c-governance-v0.2-dryrun；main保持d29a6936603886e654b3cdfb24ccd3a1e76cee23，v0.1没有合并。原证据、原66字段字典、Master、Gate2及v0.1历史文件均只读。本报告的迁移是结构演练，不是生产发布或科学批准。
+
+## 结构与保留结果
+
+最小运行实例为13张数据/审计表＋3个验证视图，共16个dryrun CSV；决策差异、66字段映射及词表快照另3个CSV，总计19个CSV。每份含NON_PRODUCTION_DRYRUN角色列及schema版本；空验证视图保留非生产表头并由manifest明确用途。完整schema和机器合同见schema目录。
+
+原21个evidence_id与21个旧experiment_id保留；Experiment只承载旧比较范围，不把它们当21个独立实验。Publication保留Study_Register全部15登记条目，其中10篇有纳入观察。18个Observation_Target行保留原蛋白对象，3条无蛋白观察不伪造Target。4个secondary标签通过桥表维护，原21观察不因展开重复计数。未确认材料与对照臂不创建虚构共享实体。
+
+原66字段通过1386个Legacy_Field_Value精确恢复，兼有Publication/Experiment/Observation等实体投影；Schema_Field_Mapping逐字段指向恢复键和实际存在的投影列。原始剂量、单位、形式、关系、审核状态、缺失哨兵及来源定位均不以新建议覆盖。Input_Snapshot保留8项输入文件的原字节和SHA256，包括原证据CSV，回滚演练同时验证单元格语义恢复与原字节快照。
+
+## 新字段与审核隔离
+
+12个字段各在21条上演示，252项建议加5项特定历史提案共257项Scientific_Proposal，与257个Review_Event一一对应。其来源区分Gate2导入提案与本次结构化映射建议。每项PROPOSED_NOT_APPROVED、applied_to_production=NO；所有事件PENDING_HUMAN_REVIEW、decision=PENDING、change_applied=NO，没有具名签署。Observation不承载这些新字段的生效分类。
+
+dose_basis对于mg/kg、mg/kg/day、明确注射器浓度、局部nmol和饮水百分比只提出原基准映射；普通体外浓度单位不单独证明final或stock，保持null＋UNRESOLVED。未结构化提取的显著性也保持null，而不从方向推p值；计算观察的剂量基准null＋NOT_APPLICABLE。无数值缺失被填为0，无单位转换或膳食可达性推定。
+
+来源映射仅导入既往范围，不称新全文/原图审核；摘要仍ABSTRACT_ONLY并标记关键全文未恢复，amylase冲突未关闭。7条Gate2来源HOLD只在sandbox隔离，原evidence_status仍按原值保留，包括原表中暂定但Gate2建议HOLD的SIRT1/TYR/GSH。不能以保留原值为由让这些记录进入验证视图；三个视图当前均0行。
+
+## 三个案例
+
+Akt与TYR两条原FUNCTIONAL_CAUSAL保存，PATHWAY_MODULATION重分类仅提案。TYR总体先来源HOLD，与Akt重分类状态不同。HDAC1-005的原NO_ADDITIONAL_CHANGE保留；建议的未检出显著增量措辞、规范result_direction未决及result_significance未显著分开记录，不产生零效应或等效断言。NRF2动物6L保持原IN_VIVO实验；S2细胞补回只在Unresolved_Mapping登记待提取任务，无新观察/实验ID，明确禁止关联动物6L救援。若未来获权提取S2，需另建细胞实验和材料；M/N标签冲突另列任务，不取值。
+
+## 校验、重建与回滚
+
+scripts/validate_migration.mjs检查稳定ID、主外键、合法枚举、缺失原因、原值和剂量、来源定位、HOLD隔离、零自动批准、桥表计数、24治理决策、三案例、保护资产、重建和回滚。故意制造重复PK、孤立FK、动态映射孤键、错连其他观察来源、非法枚举、伪人工批准、缺失伪零、关系覆盖、HOLD混入及猜测共享材料的10种内存副本，应触发预期拒绝。签署过滤器还有纯假设正例及来源冲突/提案未批/错版本/撤稿/读数越级负例；合成数据不写入科学表。
+
+确定性重建在忽略的qc/rebuild_check重新生成全部19个CSV和2个JSON载荷，比较Build_Manifest所列SHA256，同时重算实际首轮导出文件hash，防止只比较两份清单。回滚脚本从1386原值恢复21×66，输出本地Rollback_Reconstruction.json，不写回生产；原字节单独与输入快照比hash。最终程序检查91项通过、0项失败，逐项结果见qc/Migration_Validation.json及Migration_Dry_Run_QC_Report.md。2026-10-22已查看19份CSV的A1:D4代表范围（空视图为表头范围）；角色、版本、ID和所查中文标签可读，无所查范围截断。另用PowerShell Import-Csv独立复核各表行数及重点提案值；不声称全单元格视觉审核或原论文图像审查。
+
+## 仍未解决的关系与扩展边界
+
+21个设计/材料待审映射加S2、M/N共23项未决；跨论文复用尚未逐对审查，不能因不同DOI就赋独立。原复合control_group/challenge参数保留作原始文本，并明确Arm解析未完成，不声称已经标准化全部多臂处理。真正Material/Arm/统一Target和跨文桥表需后续来源支持，不靠本次脚本猜填。
+
+13表实例展示可链接、可逆、提案隔离与受控派生视图；双候选键测试仅为内存smoke test，不证明191候选性能、并发、科学覆盖或自动扩展成熟。没有新候选检索，没有网络医学、排名、训练或正式迁移。
+
+保护范围为697个起始跟踪文件与41个来源缓存，逐项SHA检查详见保护报告；包含T002/T004/T110、原21证据/66字典、Master、Phase1B、临时crosswalk、Frozen Top20、157×5矩阵及v0.1全部历史文档。正式Gate1保持HOLD，Gate2保持HUMAN_SCIENTIFIC_REVIEW_REQUIRED，Scale-up四权限未授权，Release HOLD。下一步仅由用户/ChatGPT审核治理与演练结果，再指定具名审核者决定后续授权。

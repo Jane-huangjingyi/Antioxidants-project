@@ -1,0 +1,694 @@
+{
+  "dataset_role": "NON_PRODUCTION_DRYRUN",
+  "date": "2026-10-22",
+  "timezone": "Asia/Shanghai",
+  "branch": "codex/phase1c-governance-v0.2-dryrun",
+  "head_at_validation": "7e62d3b6fcebda2d4941d8e93631d96959fc9581",
+  "source_head": "7e62d3b6fcebda2d4941d8e93631d96959fc9581",
+  "main_unchanged": "d29a6936603886e654b3cdfb24ccd3a1e76cee23",
+  "table_count": 13,
+  "view_count": 3,
+  "csv_count": 19,
+  "observation_count": 21,
+  "legacy_field_count": 66,
+  "legacy_cell_count": 1386,
+  "proposal_count": 257,
+  "review_event_count": 257,
+  "unresolved_mapping_count": 23,
+  "legacy_experiment_scope_count": 21,
+  "independent_experiment_count": "UNRESOLVED_NOT_21",
+  "protected_tracked_count": 697,
+  "protected_cache_count": 41,
+  "pass": 91,
+  "fail": 0,
+  "checks": [
+    {
+      "id": "pk_Publication",
+      "pass": true,
+      "detail": {
+        "rows": 15,
+        "key": [
+          "publication_id"
+        ]
+      }
+    },
+    {
+      "id": "pk_Experiment",
+      "pass": true,
+      "detail": {
+        "rows": 21,
+        "key": [
+          "experiment_id"
+        ]
+      }
+    },
+    {
+      "id": "pk_Source_Check",
+      "pass": true,
+      "detail": {
+        "rows": 21,
+        "key": [
+          "source_check_id"
+        ]
+      }
+    },
+    {
+      "id": "pk_Intervention",
+      "pass": true,
+      "detail": {
+        "rows": 21,
+        "key": [
+          "intervention_id"
+        ]
+      }
+    },
+    {
+      "id": "pk_Observation",
+      "pass": true,
+      "detail": {
+        "rows": 21,
+        "key": [
+          "evidence_id"
+        ]
+      }
+    },
+    {
+      "id": "pk_Observation_Target",
+      "pass": true,
+      "detail": {
+        "rows": 18,
+        "key": [
+          "observation_target_id"
+        ]
+      }
+    },
+    {
+      "id": "pk_Legacy_Field_Value",
+      "pass": true,
+      "detail": {
+        "rows": 1386,
+        "key": [
+          "evidence_id",
+          "field_name"
+        ]
+      }
+    },
+    {
+      "id": "pk_Legacy_ID_Map",
+      "pass": true,
+      "detail": {
+        "rows": 57,
+        "key": [
+          "map_id"
+        ]
+      }
+    },
+    {
+      "id": "pk_Independence_Assessment",
+      "pass": true,
+      "detail": {
+        "rows": 21,
+        "key": [
+          "assessment_id"
+        ]
+      }
+    },
+    {
+      "id": "pk_Scientific_Proposal",
+      "pass": true,
+      "detail": {
+        "rows": 257,
+        "key": [
+          "proposal_id"
+        ]
+      }
+    },
+    {
+      "id": "pk_Review_Event",
+      "pass": true,
+      "detail": {
+        "rows": 257,
+        "key": [
+          "review_event_id"
+        ]
+      }
+    },
+    {
+      "id": "pk_Observation_Tag",
+      "pass": true,
+      "detail": {
+        "rows": 4,
+        "key": [
+          "tag_id"
+        ]
+      }
+    },
+    {
+      "id": "pk_Unresolved_Mapping",
+      "pass": true,
+      "detail": {
+        "rows": 23,
+        "key": [
+          "issue_id"
+        ]
+      }
+    },
+    {
+      "id": "pk_Verified_Direct_Targets",
+      "pass": true,
+      "detail": {
+        "rows": 0,
+        "key": [
+          "evidence_id"
+        ]
+      }
+    },
+    {
+      "id": "pk_Verified_Antioxidant_Mechanisms",
+      "pass": true,
+      "detail": {
+        "rows": 0,
+        "key": [
+          "evidence_id"
+        ]
+      }
+    },
+    {
+      "id": "pk_Verified_Evidence_Support",
+      "pass": true,
+      "detail": {
+        "rows": 0,
+        "key": [
+          "evidence_id"
+        ]
+      }
+    },
+    {
+      "id": "all_foreign_keys_enums_and_scientific_guards",
+      "pass": true,
+      "detail": {
+        "violations": []
+      }
+    },
+    {
+      "id": "original_ids_exact",
+      "pass": true,
+      "detail": "21 original IDs; no invented 22nd observation"
+    },
+    {
+      "id": "experiment_ids_preserved",
+      "pass": true,
+      "detail": "21 legacy comparisons retained without material merging or independent-n claim"
+    },
+    {
+      "id": "publication_register_preserved",
+      "pass": true,
+      "detail": "15 complete register entries, including excluded/background/held entries, 10 with observations"
+    },
+    {
+      "id": "legacy_cell_count",
+      "pass": true,
+      "detail": "1386 legacy cells stored as exact text"
+    },
+    {
+      "id": "legacy_cells_identical",
+      "pass": true,
+      "detail": "every original scientific relationship, identity, unit, status and locator retained"
+    },
+    {
+      "id": "missing_reason_no_false_zero",
+      "pass": true,
+      "detail": "legacy sentinels preserved; absent normalized proposals use JSON null plus reason"
+    },
+    {
+      "id": "66_field_mapping",
+      "pass": true,
+      "detail": "66 original dictionary fields map deterministically"
+    },
+    {
+      "id": "semantic_columns_exist",
+      "pass": true,
+      "detail": "all semantic projection references point to actual table columns; EAV remains authoritative for restoration"
+    },
+    {
+      "id": "dynamic_legacy_foreign_keys",
+      "pass": true,
+      "detail": "all 57 dynamic mappings point to real destination keys"
+    },
+    {
+      "id": "raw_entity_projections_exact",
+      "pass": true,
+      "detail": "raw projections match their observation source, not just the audit EAV copy"
+    },
+    {
+      "id": "candidate_and_entity_links",
+      "pass": true,
+      "detail": "candidate reference and observation-level source/exposure links remain unchanged"
+    },
+    {
+      "id": "source_locators_retained",
+      "pass": true,
+      "detail": "no new fulltext/image verification claimed"
+    },
+    {
+      "id": "hold_isolation",
+      "pass": true,
+      "detail": "Gate2 7 source holds quarantined only in sandbox; original evidence_status retained"
+    },
+    {
+      "id": "no_autoapproval",
+      "pass": true,
+      "detail": "zero unauthorized HUMAN_APPROVED records or signed events"
+    },
+    {
+      "id": "12_new_fields_segregated",
+      "pass": true,
+      "detail": "252 required field demonstrations plus 5 preserved specific proposals; none effective production facts"
+    },
+    {
+      "id": "proposal_event_bijection",
+      "pass": true,
+      "detail": "one pending event per field proposal"
+    },
+    {
+      "id": "old_value_presence_unambiguous",
+      "pass": true,
+      "detail": "new-field absence is not falsely represented as a prior measured value; legacy context is separate"
+    },
+    {
+      "id": "akt_tyr_case",
+      "pass": true,
+      "detail": "two original FUNCTIONAL_CAUSAL facts + separate proposed PATHWAY_MODULATION"
+    },
+    {
+      "id": "hdac_ns_case",
+      "pass": true,
+      "detail": "old wording retained; significance proposal not equivalence"
+    },
+    {
+      "id": "nrf2_s2_not_6l",
+      "pass": true,
+      "detail": "S2 is a pending extraction task only; no cell rescue assigned to animal 6L"
+    },
+    {
+      "id": "no_prediction_or_readout_upgrade",
+      "pass": true,
+      "detail": "3 computational rows remain computational; no direct-binding promotion"
+    },
+    {
+      "id": "bridge_no_count_inflation",
+      "pass": true,
+      "detail": "4 secondary tags; count DISTINCT evidence_id, never bridge rows"
+    },
+    {
+      "id": "multitag_distinct_fixture",
+      "pass": true,
+      "detail": "synthetic extra tag changes joined-row multiplicity without changing unique evidence count; fixture not saved as evidence"
+    },
+    {
+      "id": "all_24_decisions",
+      "pass": true,
+      "detail": "v0.1 rule text retained; v0.2 separate file"
+    },
+    {
+      "id": "15_accepted_9_proposed",
+      "pass": true,
+      "detail": "exact authorized IDs and 9 draft implementation policies"
+    },
+    {
+      "id": "governance_signoff_not_invented",
+      "pass": true,
+      "detail": "no formal approval or signer invented"
+    },
+    {
+      "id": "negative_fixture_duplicate_pk",
+      "pass": true,
+      "detail": {
+        "expected_rejection": "DUPLICATE_OR_EMPTY_PK",
+        "detected": [
+          "DUPLICATE_OR_EMPTY_PK:Observation"
+        ]
+      }
+    },
+    {
+      "id": "negative_fixture_orphan_fk",
+      "pass": true,
+      "detail": {
+        "expected_rejection": "ORPHAN_FK",
+        "detected": [
+          "ORPHAN_FK:Observation.publication_id",
+          "CROSS_ENTITY_SEMANTIC_LINK"
+        ]
+      }
+    },
+    {
+      "id": "negative_fixture_dynamic_orphan_fk",
+      "pass": true,
+      "detail": {
+        "expected_rejection": "DYNAMIC_ORPHAN_FK",
+        "detected": [
+          "DYNAMIC_ORPHAN_FK"
+        ]
+      }
+    },
+    {
+      "id": "negative_fixture_wrong_observation_source",
+      "pass": true,
+      "detail": {
+        "expected_rejection": "CROSS_ENTITY_SEMANTIC_LINK",
+        "detected": [
+          "CROSS_ENTITY_SEMANTIC_LINK"
+        ]
+      }
+    },
+    {
+      "id": "negative_fixture_illegal_enum",
+      "pass": true,
+      "detail": {
+        "expected_rejection": "INVALID_ENUM",
+        "detected": [
+          "INVALID_ENUM:dose_basis"
+        ]
+      }
+    },
+    {
+      "id": "negative_fixture_fake_approval",
+      "pass": true,
+      "detail": {
+        "expected_rejection": "UNAUTHORIZED_APPROVAL",
+        "detected": [
+          "UNAUTHORIZED_APPROVAL"
+        ]
+      }
+    },
+    {
+      "id": "negative_fixture_missing_as_zero",
+      "pass": true,
+      "detail": {
+        "expected_rejection": "MISSING_AS_ZERO",
+        "detected": [
+          "DOSE_OVERWRITE_OR_MISSING_AS_ZERO",
+          "MISSING_AS_ZERO"
+        ]
+      }
+    },
+    {
+      "id": "negative_fixture_overwrite_relation",
+      "pass": true,
+      "detail": {
+        "expected_rejection": "SCIENTIFIC_OVERWRITE",
+        "detected": [
+          "SCIENTIFIC_OVERWRITE"
+        ]
+      }
+    },
+    {
+      "id": "negative_fixture_hold_in_view",
+      "pass": true,
+      "detail": {
+        "expected_rejection": "UNAPPROVED_OR_HOLD_IN_VERIFIED_VIEW",
+        "detected": [
+          "UNAPPROVED_OR_HOLD_IN_VERIFIED_VIEW"
+        ]
+      }
+    },
+    {
+      "id": "negative_fixture_claim_shared_material",
+      "pass": true,
+      "detail": {
+        "expected_rejection": "AUTOMATIC_EXPERIMENT_OR_MATERIAL_MERGE",
+        "detected": [
+          "AUTOMATIC_EXPERIMENT_OR_MATERIAL_MERGE"
+        ]
+      }
+    },
+    {
+      "id": "verified_filter_positive_fixture",
+      "pass": true,
+      "detail": "hypothetical signed exact-version/scoped approved combination works; no real HUMAN_APPROVED row created"
+    },
+    {
+      "id": "verified_filter_source_hold_fixture",
+      "pass": true,
+      "detail": "even hypothetical signature cannot override source conflict"
+    },
+    {
+      "id": "verified_filter_proposed_only_fixture",
+      "pass": true,
+      "detail": "proposed classification cannot populate a verified view"
+    },
+    {
+      "id": "verified_filter_wrong_version_fixture",
+      "pass": true,
+      "detail": "signature scoped to another version rejected"
+    },
+    {
+      "id": "verified_filter_retracted_fixture",
+      "pass": true,
+      "detail": "retracted publication rejected"
+    },
+    {
+      "id": "verified_antioxidant_scoped_fixture",
+      "pass": true,
+      "detail": "hypothetical signed direct-redox primary plus functional-mechanism secondary and functional participation are compatible"
+    },
+    {
+      "id": "verified_antioxidant_readout_rejected_fixture",
+      "pass": true,
+      "detail": "readout-only cannot become a verified antioxidant mechanism even with relevance labels"
+    },
+    {
+      "id": "multi_candidate_key_fixture",
+      "pass": true,
+      "detail": "two synthetic compound contexts do not require merging evidence IDs; this is a key-design smoke test, not evidence retrieval or full scale-up validation"
+    },
+    {
+      "id": "rollback_cells_recoverable",
+      "pass": true,
+      "detail": "reconstruction from EAV equals every source cell in original row/column order"
+    },
+    {
+      "id": "rollback_byte_snapshot",
+      "pass": true,
+      "detail": "byte-exact source snapshot plus semantic reconstruction; no production write"
+    },
+    {
+      "id": "actual_output_manifest_hashes",
+      "pass": true,
+      "detail": {
+        "altered": []
+      }
+    },
+    {
+      "id": "deterministic_regeneration",
+      "pass": true,
+      "detail": "independent rebuild of 19 CSV and two JSON payloads yields identical SHA256 manifest"
+    },
+    {
+      "id": "saved_output_hashes",
+      "pass": true,
+      "detail": "rebuild file set and content equal"
+    },
+    {
+      "id": "protected_tracked_sha256",
+      "pass": true,
+      "detail": {
+        "count": 697,
+        "changed": []
+      }
+    },
+    {
+      "id": "protected_cache_sha256",
+      "pass": true,
+      "detail": {
+        "count": 41,
+        "changed": []
+      }
+    },
+    {
+      "id": "task_branch_not_main",
+      "pass": true,
+      "detail": {
+        "branch": "codex/phase1c-governance-v0.2-dryrun",
+        "head": "7e62d3b6fcebda2d4941d8e93631d96959fc9581",
+        "main": "d29a6936603886e654b3cdfb24ccd3a1e76cee23"
+      }
+    },
+    {
+      "id": "only_new_workspace_changes",
+      "pass": true,
+      "detail": {
+        "outside": []
+      }
+    },
+    {
+      "id": "csv_role_dryrun/Publication.csv",
+      "pass": true,
+      "detail": {
+        "rows": 15,
+        "columns": 24
+      }
+    },
+    {
+      "id": "csv_role_dryrun/Experiment.csv",
+      "pass": true,
+      "detail": {
+        "rows": 21,
+        "columns": 13
+      }
+    },
+    {
+      "id": "csv_role_dryrun/Source_Check.csv",
+      "pass": true,
+      "detail": {
+        "rows": 21,
+        "columns": 19
+      }
+    },
+    {
+      "id": "csv_role_dryrun/Intervention.csv",
+      "pass": true,
+      "detail": {
+        "rows": 21,
+        "columns": 18
+      }
+    },
+    {
+      "id": "csv_role_dryrun/Observation.csv",
+      "pass": true,
+      "detail": {
+        "rows": 21,
+        "columns": 41
+      }
+    },
+    {
+      "id": "csv_role_dryrun/Observation_Target.csv",
+      "pass": true,
+      "detail": {
+        "rows": 18,
+        "columns": 17
+      }
+    },
+    {
+      "id": "csv_role_dryrun/Legacy_Field_Value.csv",
+      "pass": true,
+      "detail": {
+        "rows": 1386,
+        "columns": 10
+      }
+    },
+    {
+      "id": "csv_role_dryrun/Legacy_ID_Map.csv",
+      "pass": true,
+      "detail": {
+        "rows": 57,
+        "columns": 9
+      }
+    },
+    {
+      "id": "csv_role_dryrun/Independence_Assessment.csv",
+      "pass": true,
+      "detail": {
+        "rows": 21,
+        "columns": 9
+      }
+    },
+    {
+      "id": "csv_role_dryrun/Scientific_Proposal.csv",
+      "pass": true,
+      "detail": {
+        "rows": 257,
+        "columns": 18
+      }
+    },
+    {
+      "id": "csv_role_dryrun/Review_Event.csv",
+      "pass": true,
+      "detail": {
+        "rows": 257,
+        "columns": 23
+      }
+    },
+    {
+      "id": "csv_role_dryrun/Observation_Tag.csv",
+      "pass": true,
+      "detail": {
+        "rows": 4,
+        "columns": 8
+      }
+    },
+    {
+      "id": "csv_role_dryrun/Unresolved_Mapping.csv",
+      "pass": true,
+      "detail": {
+        "rows": 23,
+        "columns": 12
+      }
+    },
+    {
+      "id": "csv_role_dryrun/Verified_Direct_Targets.csv",
+      "pass": true,
+      "detail": {
+        "rows": 0,
+        "columns": 5
+      }
+    },
+    {
+      "id": "csv_role_dryrun/Verified_Antioxidant_Mechanisms.csv",
+      "pass": true,
+      "detail": {
+        "rows": 0,
+        "columns": 5
+      }
+    },
+    {
+      "id": "csv_role_dryrun/Verified_Evidence_Support.csv",
+      "pass": true,
+      "detail": {
+        "rows": 0,
+        "columns": 5
+      }
+    },
+    {
+      "id": "csv_role_Governance_Decision_Diff_v0.1_to_v0.2.csv",
+      "pass": true,
+      "detail": {
+        "rows": 24,
+        "columns": 17
+      }
+    },
+    {
+      "id": "csv_role_schema/Schema_Field_Mapping_v0.2.csv",
+      "pass": true,
+      "detail": {
+        "rows": 66,
+        "columns": 13
+      }
+    },
+    {
+      "id": "csv_role_schema/Controlled_Vocabulary_Snapshot_v0.1.csv",
+      "pass": true,
+      "detail": {
+        "rows": 153,
+        "columns": 11
+      }
+    },
+    {
+      "id": "csv_count",
+      "pass": true,
+      "detail": "16 table/view CSV plus decision diff, field mapping and vocabulary snapshot"
+    },
+    {
+      "id": "required_narratives_exist",
+      "pass": true,
+      "detail": {
+        "missing": []
+      }
+    }
+  ],
+  "formal_gate1": "HOLD",
+  "formal_gate2": "HUMAN_SCIENTIFIC_REVIEW_REQUIRED",
+  "scale_up": "NOT_AUTHORIZED_ALL_FOUR",
+  "release": "HOLD",
+  "production_changes": 0
+}

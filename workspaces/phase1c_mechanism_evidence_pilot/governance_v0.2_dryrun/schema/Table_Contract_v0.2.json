@@ -1,0 +1,567 @@
+{
+  "dataset_role": "NON_PRODUCTION_DRYRUN",
+  "version": "0.2_DRYRUN",
+  "tables": {
+    "Publication": {
+      "path": "dryrun/Publication.csv",
+      "columns": [
+        "dataset_role",
+        "schema_version",
+        "publication_id",
+        "legacy_study_id",
+        "raw_study_id",
+        "raw_PMID",
+        "raw_DOI",
+        "raw_PMCID",
+        "raw_article_title",
+        "raw_journal",
+        "raw_publication_date",
+        "raw_publication_date_type",
+        "raw_publication_date_precision",
+        "raw_article_url",
+        "raw_retraction_status",
+        "raw_raw_date_metadata",
+        "raw_bibliographic_verification",
+        "raw_publication_independence",
+        "raw_screening_decision",
+        "raw_screening_reason_CN",
+        "raw_evidence_record_count",
+        "raw_source_review_status",
+        "raw_human_review_status",
+        "scientific_approval_status"
+      ],
+      "primary_key": [
+        "publication_id"
+      ],
+      "foreign_keys": [],
+      "row_count": 15
+    },
+    "Experiment": {
+      "path": "dryrun/Experiment.csv",
+      "columns": [
+        "dataset_role",
+        "schema_version",
+        "experiment_id",
+        "publication_id",
+        "legacy_experiment_id",
+        "entity_scope",
+        "identity_mapping_status",
+        "material_id",
+        "material_missing_reason",
+        "raw_experimental_model",
+        "raw_species",
+        "raw_cell_line_or_tissue",
+        "raw_experiment_independence_status"
+      ],
+      "primary_key": [
+        "experiment_id"
+      ],
+      "foreign_keys": [
+        {
+          "column": "publication_id",
+          "table": "Publication",
+          "target": "publication_id",
+          "nullable": false
+        }
+      ],
+      "row_count": 21
+    },
+    "Source_Check": {
+      "path": "dryrun/Source_Check.csv",
+      "columns": [
+        "dataset_role",
+        "schema_version",
+        "source_check_id",
+        "evidence_id",
+        "publication_id",
+        "source_scope",
+        "source_issue",
+        "mapping_status",
+        "check_mode",
+        "historical_check_date",
+        "date_missing_reason",
+        "import_date",
+        "source_sha256",
+        "raw_source_figure_or_table",
+        "raw_source_verification_status",
+        "raw_source_local_path",
+        "raw_source_locator",
+        "raw_source_result_paraphrase_CN",
+        "raw_source_review_mode"
+      ],
+      "primary_key": [
+        "source_check_id"
+      ],
+      "foreign_keys": [
+        {
+          "column": "evidence_id",
+          "table": "Observation",
+          "target": "evidence_id",
+          "nullable": false
+        },
+        {
+          "column": "publication_id",
+          "table": "Publication",
+          "target": "publication_id",
+          "nullable": false
+        }
+      ],
+      "row_count": 21
+    },
+    "Intervention": {
+      "path": "dryrun/Intervention.csv",
+      "columns": [
+        "dataset_role",
+        "schema_version",
+        "intervention_id",
+        "evidence_id",
+        "experiment_id",
+        "candidate_id",
+        "intervention_role",
+        "parsed_control_arm_id",
+        "control_mapping_status",
+        "raw_control_group",
+        "raw_dose",
+        "raw_dose_unit",
+        "raw_treatment_duration",
+        "raw_administration_route",
+        "raw_pretreatment_duration",
+        "raw_challenge_agent",
+        "raw_challenge_dose",
+        "raw_challenge_duration"
+      ],
+      "primary_key": [
+        "intervention_id"
+      ],
+      "foreign_keys": [
+        {
+          "column": "evidence_id",
+          "table": "Observation",
+          "target": "evidence_id",
+          "nullable": false
+        },
+        {
+          "column": "experiment_id",
+          "table": "Experiment",
+          "target": "experiment_id",
+          "nullable": false
+        }
+      ],
+      "row_count": 21
+    },
+    "Observation": {
+      "path": "dryrun/Observation.csv",
+      "columns": [
+        "dataset_role",
+        "schema_version",
+        "evidence_id",
+        "candidate_id",
+        "publication_id",
+        "experiment_id",
+        "source_check_id",
+        "intervention_id",
+        "raw_study_id",
+        "raw_experiment_id",
+        "legacy_row_order",
+        "record_version",
+        "scientific_approval_status",
+        "sandbox_review_state",
+        "material_id",
+        "material_missing_reason",
+        "raw_candidate_id",
+        "raw_compound_name",
+        "raw_compound_form",
+        "raw_PubChem_CID",
+        "raw_InChIKey",
+        "raw_pathway_name",
+        "raw_pathway_ID",
+        "raw_pathway_database",
+        "raw_pathway_effect_direction",
+        "raw_assay_method",
+        "raw_control_group",
+        "raw_evidence_id",
+        "raw_evidence_relation_type",
+        "raw_functional_outcome",
+        "raw_effect_context",
+        "raw_evidence_status",
+        "raw_notes",
+        "raw_compound_form_as_reported",
+        "raw_identity_mapping_status",
+        "raw_identity_reference_url",
+        "raw_observation_endpoint",
+        "raw_search_source_ids",
+        "raw_extraction_date",
+        "raw_extracted_by",
+        "raw_human_review_status"
+      ],
+      "primary_key": [
+        "evidence_id"
+      ],
+      "foreign_keys": [
+        {
+          "column": "publication_id",
+          "table": "Publication",
+          "target": "publication_id",
+          "nullable": false
+        },
+        {
+          "column": "experiment_id",
+          "table": "Experiment",
+          "target": "experiment_id",
+          "nullable": false
+        },
+        {
+          "column": "source_check_id",
+          "table": "Source_Check",
+          "target": "source_check_id",
+          "nullable": false
+        },
+        {
+          "column": "intervention_id",
+          "table": "Intervention",
+          "target": "intervention_id",
+          "nullable": false
+        }
+      ],
+      "row_count": 21
+    },
+    "Observation_Target": {
+      "path": "dryrun/Observation_Target.csv",
+      "columns": [
+        "dataset_role",
+        "schema_version",
+        "observation_target_id",
+        "evidence_id",
+        "target_entity_id",
+        "identity_status",
+        "raw_target_gene",
+        "raw_target_protein",
+        "raw_UniProt_ID",
+        "raw_target_species",
+        "raw_target_role",
+        "raw_target_effect_direction",
+        "raw_target_validation_status",
+        "raw_target_experimental_support",
+        "raw_direct_target_status",
+        "raw_target_identifier_status",
+        "raw_target_identifier_source"
+      ],
+      "primary_key": [
+        "observation_target_id"
+      ],
+      "foreign_keys": [
+        {
+          "column": "evidence_id",
+          "table": "Observation",
+          "target": "evidence_id",
+          "nullable": false
+        }
+      ],
+      "row_count": 18
+    },
+    "Legacy_Field_Value": {
+      "path": "dryrun/Legacy_Field_Value.csv",
+      "columns": [
+        "dataset_role",
+        "schema_version",
+        "evidence_id",
+        "field_name",
+        "field_order",
+        "raw_value",
+        "raw_missing_token",
+        "missing_reason",
+        "value_type",
+        "source_row_sha256"
+      ],
+      "primary_key": [
+        "evidence_id",
+        "field_name"
+      ],
+      "foreign_keys": [
+        {
+          "column": "evidence_id",
+          "table": "Observation",
+          "target": "evidence_id",
+          "nullable": false
+        }
+      ],
+      "row_count": 1386
+    },
+    "Legacy_ID_Map": {
+      "path": "dryrun/Legacy_ID_Map.csv",
+      "columns": [
+        "dataset_role",
+        "schema_version",
+        "map_id",
+        "legacy_entity",
+        "legacy_id",
+        "new_table",
+        "new_id",
+        "mapping_status",
+        "reason"
+      ],
+      "primary_key": [
+        "map_id"
+      ],
+      "foreign_keys": [],
+      "row_count": 57
+    },
+    "Independence_Assessment": {
+      "path": "dryrun/Independence_Assessment.csv",
+      "columns": [
+        "dataset_role",
+        "schema_version",
+        "assessment_id",
+        "evidence_id",
+        "experiment_id",
+        "independence_relation",
+        "assessment_scope",
+        "basis",
+        "mapping_status"
+      ],
+      "primary_key": [
+        "assessment_id"
+      ],
+      "foreign_keys": [
+        {
+          "column": "evidence_id",
+          "table": "Observation",
+          "target": "evidence_id",
+          "nullable": false
+        },
+        {
+          "column": "experiment_id",
+          "table": "Experiment",
+          "target": "experiment_id",
+          "nullable": false
+        }
+      ],
+      "row_count": 21
+    },
+    "Scientific_Proposal": {
+      "path": "dryrun/Scientific_Proposal.csv",
+      "columns": [
+        "dataset_role",
+        "schema_version",
+        "proposal_id",
+        "evidence_id",
+        "field_name",
+        "old_value_presence",
+        "old_value_json",
+        "legacy_related_value_json",
+        "proposed_value",
+        "proposed_value_json",
+        "missing_reason",
+        "proposal_status",
+        "proposal_origin",
+        "basis",
+        "source_reference",
+        "review_event_id",
+        "approval_event_id",
+        "applied_to_production"
+      ],
+      "primary_key": [
+        "proposal_id"
+      ],
+      "foreign_keys": [
+        {
+          "column": "evidence_id",
+          "table": "Observation",
+          "target": "evidence_id",
+          "nullable": false
+        },
+        {
+          "column": "review_event_id",
+          "table": "Review_Event",
+          "target": "review_event_id",
+          "nullable": false
+        }
+      ],
+      "row_count": 257
+    },
+    "Review_Event": {
+      "path": "dryrun/Review_Event.csv",
+      "columns": [
+        "dataset_role",
+        "schema_version",
+        "review_event_id",
+        "evidence_id",
+        "proposal_id",
+        "reviewer_type",
+        "reviewer",
+        "review_date",
+        "review_action",
+        "field_name",
+        "old_value_presence",
+        "old_value",
+        "legacy_related_value_json",
+        "proposed_value",
+        "decision",
+        "decision_reason",
+        "source_reference",
+        "approval_status",
+        "change_applied",
+        "record_version",
+        "signed_by",
+        "signoff_reference",
+        "rule_version"
+      ],
+      "primary_key": [
+        "review_event_id"
+      ],
+      "foreign_keys": [
+        {
+          "column": "evidence_id",
+          "table": "Observation",
+          "target": "evidence_id",
+          "nullable": false
+        },
+        {
+          "column": "proposal_id",
+          "table": "Scientific_Proposal",
+          "target": "proposal_id",
+          "nullable": false
+        }
+      ],
+      "row_count": 257
+    },
+    "Observation_Tag": {
+      "path": "dryrun/Observation_Tag.csv",
+      "columns": [
+        "dataset_role",
+        "schema_version",
+        "tag_id",
+        "evidence_id",
+        "tag",
+        "proposal_id",
+        "proposal_status",
+        "applied_to_production"
+      ],
+      "primary_key": [
+        "tag_id"
+      ],
+      "foreign_keys": [
+        {
+          "column": "evidence_id",
+          "table": "Observation",
+          "target": "evidence_id",
+          "nullable": false
+        },
+        {
+          "column": "proposal_id",
+          "table": "Scientific_Proposal",
+          "target": "proposal_id",
+          "nullable": false
+        }
+      ],
+      "row_count": 4
+    },
+    "Unresolved_Mapping": {
+      "path": "dryrun/Unresolved_Mapping.csv",
+      "columns": [
+        "dataset_role",
+        "schema_version",
+        "issue_id",
+        "publication_id",
+        "evidence_id",
+        "experiment_id",
+        "issue_type",
+        "status",
+        "source_reference",
+        "detail",
+        "required_action",
+        "forbidden_link"
+      ],
+      "primary_key": [
+        "issue_id"
+      ],
+      "foreign_keys": [
+        {
+          "column": "publication_id",
+          "table": "Publication",
+          "target": "publication_id",
+          "nullable": false
+        },
+        {
+          "column": "evidence_id",
+          "table": "Observation",
+          "target": "evidence_id",
+          "nullable": true
+        },
+        {
+          "column": "experiment_id",
+          "table": "Experiment",
+          "target": "experiment_id",
+          "nullable": true
+        }
+      ],
+      "row_count": 23
+    },
+    "Verified_Direct_Targets": {
+      "path": "dryrun/Verified_Direct_Targets.csv",
+      "columns": [
+        "dataset_role",
+        "schema_version",
+        "evidence_id",
+        "candidate_id",
+        "view_scope"
+      ],
+      "primary_key": [
+        "evidence_id"
+      ],
+      "foreign_keys": [
+        {
+          "column": "evidence_id",
+          "table": "Observation",
+          "target": "evidence_id",
+          "nullable": false
+        }
+      ],
+      "row_count": 0
+    },
+    "Verified_Antioxidant_Mechanisms": {
+      "path": "dryrun/Verified_Antioxidant_Mechanisms.csv",
+      "columns": [
+        "dataset_role",
+        "schema_version",
+        "evidence_id",
+        "candidate_id",
+        "view_scope"
+      ],
+      "primary_key": [
+        "evidence_id"
+      ],
+      "foreign_keys": [
+        {
+          "column": "evidence_id",
+          "table": "Observation",
+          "target": "evidence_id",
+          "nullable": false
+        }
+      ],
+      "row_count": 0
+    },
+    "Verified_Evidence_Support": {
+      "path": "dryrun/Verified_Evidence_Support.csv",
+      "columns": [
+        "dataset_role",
+        "schema_version",
+        "evidence_id",
+        "candidate_id",
+        "view_scope"
+      ],
+      "primary_key": [
+        "evidence_id"
+      ],
+      "foreign_keys": [
+        {
+          "column": "evidence_id",
+          "table": "Observation",
+          "target": "evidence_id",
+          "nullable": false
+        }
+      ],
+      "row_count": 0
+    }
+  }
+}

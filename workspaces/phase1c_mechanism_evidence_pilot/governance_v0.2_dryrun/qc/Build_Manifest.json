@@ -1,0 +1,95 @@
+{
+  "dataset_role": "NON_PRODUCTION_DRYRUN",
+  "build_date": "2026-10-22",
+  "source_head": "7e62d3b6fcebda2d4941d8e93631d96959fc9581",
+  "table_count": 13,
+  "view_count": 3,
+  "observations": 21,
+  "scientific_proposals": 257,
+  "files": [
+    {
+      "path": "dryrun/Publication.csv",
+      "sha256": "6f08386a02ca19c90e76f05d376f711c2baf8f56876153837937546295b06f49"
+    },
+    {
+      "path": "dryrun/Experiment.csv",
+      "sha256": "b272c68457427c0d2cd8a3a97bdf4015150d8da753cea19244d24daa797b9f70"
+    },
+    {
+      "path": "dryrun/Source_Check.csv",
+      "sha256": "e430d40704978f9dbcb94b87c14d059cec34cfd4a516e7af3dea6f1323ef8622"
+    },
+    {
+      "path": "dryrun/Intervention.csv",
+      "sha256": "76c49e4c1cd2fad0de47ad55ed4617e6d5bba6e0859ea7a03f3f4fd9b8dbea62"
+    },
+    {
+      "path": "dryrun/Observation.csv",
+      "sha256": "b3c0fe8b990b631af31177f5e0f3baa6979e5357f7adc0f12cf64fc8d72f8c66"
+    },
+    {
+      "path": "dryrun/Observation_Target.csv",
+      "sha256": "9d9d34712713369e41afe08b89c9ce8cca17778fef2a568cc01358028da08ccc"
+    },
+    {
+      "path": "dryrun/Legacy_Field_Value.csv",
+      "sha256": "a2cf9b29198643612bd0d5f9583dd68d78148a3ea59d1d15c1e88426564a6cfa"
+    },
+    {
+      "path": "dryrun/Legacy_ID_Map.csv",
+      "sha256": "d959c8b38be70d8c88df37b800ea9c657de20766b3703ace46bd6f19ead10fd3"
+    },
+    {
+      "path": "dryrun/Independence_Assessment.csv",
+      "sha256": "5b569074160968bfc77e336d4cb55fa63fe1764688d7ed2f04d017bc41a1ab06"
+    },
+    {
+      "path": "dryrun/Scientific_Proposal.csv",
+      "sha256": "541d9b655d80c9e5566992ba3162bc80f5bf01480d5f398cf0cdb2a8d4fc1462"
+    },
+    {
+      "path": "dryrun/Review_Event.csv",
+      "sha256": "95e804ff1d36af17e44eec4100420503504a0770bc147a5d7cf8a747cdc8224c"
+    },
+    {
+      "path": "dryrun/Observation_Tag.csv",
+      "sha256": "eabfb05433004c0852dd727b75eeacd0157c5cdcc520ae2bf046035a63256f96"
+    },
+    {
+      "path": "dryrun/Unresolved_Mapping.csv",
+      "sha256": "ad12b812cfec1744e1c92159fdebd30ccfa47ced1353a8a43b95819c765bc1aa"
+    },
+    {
+      "path": "dryrun/Verified_Direct_Targets.csv",
+      "sha256": "f455bdca3dd7cfab3788d9c3a181fb8f1169e5d3ceae40075a47fcd288fe920d"
+    },
+    {
+      "path": "dryrun/Verified_Antioxidant_Mechanisms.csv",
+      "sha256": "f455bdca3dd7cfab3788d9c3a181fb8f1169e5d3ceae40075a47fcd288fe920d"
+    },
+    {
+      "path": "dryrun/Verified_Evidence_Support.csv",
+      "sha256": "f455bdca3dd7cfab3788d9c3a181fb8f1169e5d3ceae40075a47fcd288fe920d"
+    },
+    {
+      "path": "Governance_Decision_Diff_v0.1_to_v0.2.csv",
+      "sha256": "74bf5030ab0660e52ee4f316dbc051a6fb93d5071cd08a31f530401ed5ae49e7"
+    },
+    {
+      "path": "schema/Schema_Field_Mapping_v0.2.csv",
+      "sha256": "1dd932cc0be942999f524df9807df38444c7dc17ee7734b22a353ee3a930594f"
+    },
+    {
+      "path": "schema/Controlled_Vocabulary_Snapshot_v0.1.csv",
+      "sha256": "4f2337fe0b40f80ca518d39aeccd588e690ec16c72163c2f82746abed19e1b0a"
+    },
+    {
+      "path": "schema/Table_Contract_v0.2.json",
+      "sha256": "2f3c6df1912354a45ba9a1a321d8094c90cd1d5689917366a6a79f457617dc65"
+    },
+    {
+      "path": "qc/Input_Snapshot.json",
+      "sha256": "b83a04e467eac67f0bdc05e8b5bf1c5a849cc2dd2b818e917d9bae0ac0d9b9b2"
+    }
+  ]
+}
