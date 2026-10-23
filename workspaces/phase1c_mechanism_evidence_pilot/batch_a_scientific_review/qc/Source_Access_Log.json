@@ -1,0 +1,107 @@
+{
+  "date": "2026-10-23",
+  "raw_distribution": "LOCAL_ONLY_EXCLUDED",
+  "entries": [
+    {
+      "paper": "PMC10424289",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10424289/",
+      "status": 200,
+      "usable_article_html": true,
+      "sha256": "931ce49fdaff7a264ca4e7aad045d602be946bef6cb2dd73a5d0009664e4f010",
+      "local_file": "local_sources/PMC10424289.html"
+    },
+    {
+      "paper": "PMC10424289",
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/829d/10424289/99c3a09e129a/JCMM-27-2290-g002.jpg",
+      "status": 200,
+      "usable_image": true,
+      "sha256": "4478454808c1075288a59d05121ee7ccaf77a4b5863b62f2f0aa898516ed7d26",
+      "local_file": "local_sources/PMC10424289_JCMM-27-2290-g002.jpg"
+    },
+    {
+      "paper": "PMC10424289",
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/829d/10424289/829c903a18a6/JCMM-27-2290-g001.jpg",
+      "status": 200,
+      "usable_image": true,
+      "sha256": "a54334826012e0acd2915f269b251e9102df6ef019b3e344150d17078773a460",
+      "local_file": "local_sources/PMC10424289_JCMM-27-2290-g001.jpg"
+    },
+    {
+      "paper": "PMC11599353",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11599353/",
+      "status": 200,
+      "usable_article_html": true,
+      "sha256": "1dfeccb6bb057833b2180708bf1a4474596aea94b4a4c513f18545912a74c786",
+      "local_file": "local_sources/PMC11599353.html"
+    },
+    {
+      "paper": "PMC11599353",
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/4677/11599353/b46c46eaa743/10565_2024_9953_Fig2_HTML.jpg",
+      "status": 200,
+      "usable_image": true,
+      "sha256": "a9017e4993cc0df0d5c2870c643e3c822e6e736d7c031588809bbefcf8c234b6",
+      "local_file": "local_sources/PMC11599353_10565_2024_9953_Fig2_HTML.jpg"
+    },
+    {
+      "paper": "PMC12837532",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12837532/",
+      "status": 200,
+      "usable_article_html": true,
+      "sha256": "f27fcf51586f574059fe44588b50b9411fd06626e50a26021efb98bfb5169de3",
+      "local_file": "local_sources/PMC12837532.html"
+    },
+    {
+      "paper": "PMC12837532",
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/5761/12837532/948061d23ab5/biology-15-00206-g004.jpg",
+      "status": 200,
+      "usable_image": true,
+      "sha256": "53baa4fa48202c619f7d2eb1fdfaf2fb3847ff16b7da3ef6563d8a0bea5d21e0",
+      "local_file": "local_sources/PMC12837532_biology-15-00206-g004.jpg"
+    },
+    {
+      "paper": "PMC12837532",
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/5761/12837532/fd07e34cca68/biology-15-00206-g006.jpg",
+      "status": 200,
+      "usable_image": true,
+      "sha256": "0bb7c00a2a4dae87609f179e1a546a0d637b20b975db443244819607b0c345ff",
+      "local_file": "local_sources/PMC12837532_biology-15-00206-g006.jpg"
+    },
+    {
+      "paper": "PMC13187579",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13187579/",
+      "status": 200,
+      "usable_article_html": true,
+      "sha256": "aefd6f1b5590e9f26f0cdfa0e084291fa36f6cfc3ef6f17f0aa4dca9cb9f1a68",
+      "local_file": "local_sources/PMC13187579.html"
+    },
+    {
+      "paper": "PMC13187579",
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/d61d/13187579/cff7f85ee811/gr6.jpg",
+      "status": 200,
+      "usable_image": true,
+      "sha256": "62ce53f85725c2a8cad70161647f8a002111ce5377f084e99bdc4e34648c556d",
+      "local_file": "local_sources/PMC13187579_gr6.jpg"
+    },
+    {
+      "paper": "PMC10070727",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10070727/",
+      "status": 200,
+      "usable_article_html": true,
+      "sha256": "93046edeff7345aab811c439b0505065bf0f233e23127909a4dc430491a608fd",
+      "local_file": "local_sources/PMC10070727.html"
+    },
+    {
+      "paper": "PMC10070727",
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/e05f/10070727/30da832c382b/fnut-10-1060226-g004.jpg",
+      "status": 200,
+      "usable_image": true,
+      "sha256": "86089da5a02d1e99f71102932839b5450400dc8848a68705802d59ea7bfe368b",
+      "local_file": "local_sources/PMC10070727_fnut-10-1060226-g004.jpg"
+    },
+    {
+      "paper": "PMC10070727",
+      "asset": "Image_2.jpg",
+      "result": "URL_NOT_DISCOVERED_NO_CONTENT_CLAIM"
+    }
+  ]
+}

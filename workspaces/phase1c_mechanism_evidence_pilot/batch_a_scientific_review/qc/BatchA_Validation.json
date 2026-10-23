@@ -1,0 +1,700 @@
+{
+  "date": "2026-10-23",
+  "scope": "A_GROUP_9_SCIENTIFIC_RECOMMENDATIONS_ONLY",
+  "passed": 138,
+  "failed": 0,
+  "tracked_assets": 747,
+  "previous_cache_assets": 41,
+  "checks": [
+    {
+      "name": "exact nine A IDs; no B/C records",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "five publications not nine independent studies",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "59 column schema / no duplicate headers",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-37482908-001 all 14 dimensions plus source and human status",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-37482908-001 exact legacy66 snapshot",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-37482908-001 three dimensions valid vocabulary",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-37482908-001 absent columns not confused with legacy validation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-37482908-001 source hash / ID / DOI match",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-37482908-001 historic suggestions preserved independently",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-37482908-001 field-level old/new mapping and unapplied state",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-37482908-001 no human decision or formal status change",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-37482908-001 gates remain restricted",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-37482908-002 all 14 dimensions plus source and human status",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-37482908-002 exact legacy66 snapshot",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-37482908-002 three dimensions valid vocabulary",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-37482908-002 absent columns not confused with legacy validation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-37482908-002 source hash / ID / DOI match",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-37482908-002 historic suggestions preserved independently",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-37482908-002 field-level old/new mapping and unapplied state",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-37482908-002 no human decision or formal status change",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-37482908-002 gates remain restricted",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-39589556-002 all 14 dimensions plus source and human status",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-39589556-002 exact legacy66 snapshot",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-39589556-002 three dimensions valid vocabulary",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-39589556-002 absent columns not confused with legacy validation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-39589556-002 source hash / ID / DOI match",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-39589556-002 historic suggestions preserved independently",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-39589556-002 field-level old/new mapping and unapplied state",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-39589556-002 no human decision or formal status change",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-39589556-002 gates remain restricted",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-41594941-001 all 14 dimensions plus source and human status",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-41594941-001 exact legacy66 snapshot",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-41594941-001 three dimensions valid vocabulary",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-41594941-001 absent columns not confused with legacy validation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-41594941-001 source hash / ID / DOI match",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-41594941-001 historic suggestions preserved independently",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-41594941-001 field-level old/new mapping and unapplied state",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-41594941-001 no human decision or formal status change",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-41594941-001 gates remain restricted",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-41594941-002 all 14 dimensions plus source and human status",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-41594941-002 exact legacy66 snapshot",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-41594941-002 three dimensions valid vocabulary",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-41594941-002 absent columns not confused with legacy validation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-41594941-002 source hash / ID / DOI match",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-41594941-002 historic suggestions preserved independently",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-41594941-002 field-level old/new mapping and unapplied state",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-41594941-002 no human decision or formal status change",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-41594941-002 gates remain restricted",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-41594941-003 all 14 dimensions plus source and human status",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-41594941-003 exact legacy66 snapshot",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-41594941-003 three dimensions valid vocabulary",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-41594941-003 absent columns not confused with legacy validation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-41594941-003 source hash / ID / DOI match",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-41594941-003 historic suggestions preserved independently",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-41594941-003 field-level old/new mapping and unapplied state",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-41594941-003 no human decision or formal status change",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-41594941-003 gates remain restricted",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-41594941-004 all 14 dimensions plus source and human status",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-41594941-004 exact legacy66 snapshot",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-41594941-004 three dimensions valid vocabulary",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-41594941-004 absent columns not confused with legacy validation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-41594941-004 source hash / ID / DOI match",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-41594941-004 historic suggestions preserved independently",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-41594941-004 field-level old/new mapping and unapplied state",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-41594941-004 no human decision or formal status change",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-41594941-004 gates remain restricted",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-42170612-002 all 14 dimensions plus source and human status",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-42170612-002 exact legacy66 snapshot",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-42170612-002 three dimensions valid vocabulary",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-42170612-002 absent columns not confused with legacy validation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-42170612-002 source hash / ID / DOI match",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-42170612-002 historic suggestions preserved independently",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-42170612-002 field-level old/new mapping and unapplied state",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-42170612-002 no human decision or formal status change",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-42170612-002 gates remain restricted",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-37025617-001 all 14 dimensions plus source and human status",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-37025617-001 exact legacy66 snapshot",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-37025617-001 three dimensions valid vocabulary",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-37025617-001 absent columns not confused with legacy validation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-37025617-001 source hash / ID / DOI match",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-37025617-001 historic suggestions preserved independently",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-37025617-001 field-level old/new mapping and unapplied state",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-37025617-001 no human decision or formal status change",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-37025617-001 gates remain restricted",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "target recommendations 1 omics 5 readout 2 computational 1 no protein",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "relation suggestions preserve all nine original relationships",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "no direct binding or direct redox upgrade",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "747 pre-existing tracked assets unchanged",
+      "pass": true,
+      "detail": "[]"
+    },
+    {
+      "name": "41 previous local source caches unchanged",
+      "pass": true,
+      "detail": "[]"
+    },
+    {
+      "name": "all 21 original observations NOT_REVIEWED",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "other 12 observations untouched",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "original 66-field dictionary unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "257 historic scientific proposals not applied",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "257 historic review events unsigned",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "7 original source HOLD unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Verified_Direct_Targets remains empty",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Verified_Antioxidant_Mechanisms remains empty",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Verified_Evidence_Support remains empty",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "18 source objects traced; raw excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "source intact workspaces/phase1c_mechanism_evidence_pilot/search_logs/raw/PMC10424289.xml",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "source intact workspaces/phase1c_mechanism_evidence_pilot/search_logs/raw/PMC11599353.xml",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "source intact workspaces/phase1c_mechanism_evidence_pilot/search_logs/raw/PMC12837532.xml",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "source intact workspaces/phase1c_mechanism_evidence_pilot/search_logs/raw/PMC13187579.xml",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "source intact workspaces/phase1c_mechanism_evidence_pilot/search_logs/raw/PMC10070727.xml",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "source intact workspaces/phase1c_mechanism_evidence_pilot/batch_a_scientific_review/local_sources/PMC10424289.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "source intact workspaces/phase1c_mechanism_evidence_pilot/batch_a_scientific_review/local_sources/PMC10424289_JCMM-27-2290-g002.jpg",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "source intact workspaces/phase1c_mechanism_evidence_pilot/batch_a_scientific_review/local_sources/PMC10424289_JCMM-27-2290-g001.jpg",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "source intact workspaces/phase1c_mechanism_evidence_pilot/batch_a_scientific_review/local_sources/PMC11599353.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "source intact workspaces/phase1c_mechanism_evidence_pilot/batch_a_scientific_review/local_sources/PMC11599353_10565_2024_9953_Fig2_HTML.jpg",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "source intact workspaces/phase1c_mechanism_evidence_pilot/batch_a_scientific_review/local_sources/PMC12837532.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "source intact workspaces/phase1c_mechanism_evidence_pilot/batch_a_scientific_review/local_sources/PMC12837532_biology-15-00206-g004.jpg",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "source intact workspaces/phase1c_mechanism_evidence_pilot/batch_a_scientific_review/local_sources/PMC12837532_biology-15-00206-g006.jpg",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "source intact workspaces/phase1c_mechanism_evidence_pilot/batch_a_scientific_review/local_sources/PMC13187579.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "source intact workspaces/phase1c_mechanism_evidence_pilot/batch_a_scientific_review/local_sources/PMC13187579_gr6.jpg",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "source intact workspaces/phase1c_mechanism_evidence_pilot/batch_a_scientific_review/local_sources/PMC10070727.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "source intact workspaces/phase1c_mechanism_evidence_pilot/batch_a_scientific_review/local_sources/PMC10070727_fnut-10-1060226-g004.jpg",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "source intact workspaces/phase1c_mechanism_evidence_pilot/gate2_review/sources/NRF2_Supplement.pdf",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "5 current HTML and 7 actual figure images",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "HTML attachment responses never counted as valid supplements",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "fresh HTML related anchors PMC10424289",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "fresh HTML related anchors PMC11599353",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "fresh HTML related anchors PMC12837532",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "fresh HTML related anchors PMC13187579",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "fresh HTML related anchors PMC10070727",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "assessment covers all nine IDs",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "new source issues disclosed across artifacts",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "unread supplementary/raw scope disclosed",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "source branch / main protected",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "all changes limited to new batch directory",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "negative fixture rejected missing record",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "negative fixture rejected duplicate ID",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "negative fixture rejected out of batch",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "negative fixture rejected automatic human approval",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "negative fixture rejected applied change",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "negative fixture rejected forged signer",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "negative fixture rejected invented approval date",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "negative fixture rejected invalid category",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CSV readback contains no spreadsheet error tokens",
+      "pass": true,
+      "detail": ""
+    }
+  ]
+}

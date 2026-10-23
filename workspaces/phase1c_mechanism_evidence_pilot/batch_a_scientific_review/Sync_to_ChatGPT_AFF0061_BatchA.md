@@ -1,0 +1,31 @@
+# 同步给ChatGPT：AFF-0061 A组9条科学审核准备
+
+截至2026-10-23，仅完成用户指定A组9条观察的科学核查建议，涉及5篇论文；不等于9项独立研究。来源基准为Governance批准分支提交8177aebfa22d68945254ee836ec662985e5da265，独立分支codex/phase1c-aff0061-batch-a-review。已有Gate2建议被保留并与本轮建议分列，没有另建重复正式证据、没有应用257项历史提案。全部human_review_status=NOT_REVIEWED、change_applied=NO，具名审核者、人工决定和批准日期为空。
+
+三维建议组合与历史Gate2相同，但增加本轮原图/补表核查及更具体的字段建议：关系为2条OMICS_ASSOCIATION、5条PATHWAY_MODULATION、2条COMPUTATIONAL_PREDICTION；靶点确认建议为1条OMICS_ASSOCIATED、5条READOUT_ONLY、2条COMPUTATIONAL_ONLY、1条NOT_APPLICABLE_NO_PROTEIN_TARGET。抗氧化相关性为7条OTHER_BIOLOGICAL_FUNCTION、2条INDIRECT_OXIDATIVE_STRESS_ASSOCIATION。没有将任何一条升级直接结合、功能因果确认或本行直接redox测量。旧表没有target_confirmation_class、antioxidant_relevance_primary，矩阵明确标记旧字段不存在，保留原target_validation_status及原66字段完整JSON。
+
+Kmo RNA-seq支持候选转录关联、qPCR支持Kmo/Gapdh转录响应，不能解释为蛋白结合；Fig5D无ISO时NS保留，RNA-seq的Kmo特异FC/校正p和RNA-seq/qPCR样本复用未解决。MHCC97-H富集行是5µM PCA/16h与未处理比较，不是脂毒rescue；补充Table5已恢复部分GO/Reactome ID、30293背景基因、1644命中列表及Log(q-value)，旧“全部缺失”已收窄为部分恢复。混合集合富集不指认NRF2蛋白、不赋予激活方向，1800差异基因到1644映射与生物重复仍需核实。
+
+HDAC1/GATA4丰度行支持100µM PCA在AngII预处理后对蛋白/GAPDH读数的响应；p65行支持定位解释，但未恢复专门核/胞质比例统计。方法声称6组却只列5组，n=3单位及vehicle需明确。500µM细胞毒性属于不同剂量边界，不能搬到100µM，也不能宣称所有浓度安全。HDAC1 docking/MD为计算证据；正文MM-PBSA -12.21kJ/mol而图6G为kcal/mol，单位冲突未解决，PDB/物种/构建体及重复轨迹未恢复。建议保留定性预测、暂不做能量定量比较，而不是任选单位。
+
+TAS2R16为100ns计算轨迹，不是受体激活/结合实验；配体中途RMSD偏移，后段趋稳不证明充分收敛，结构模板/膜设置仍待核。p-eNOS行是mBMEC在IL-1β背景、PCA100nM overnight后的磷酸化/总蛋白比值恢复；Fig4B p-eNOS/eNOS与图注relative to GAPDH的精确算法需研究者确认，不重复除GAPDH；overnight不补造小时数。Fig3 DHE及B组Akt阻断不转为本行结果。
+
+建议ChatGPT和研究者优先裁决：HDAC1单位/结构身份、p-eNOS归一化公式、RNA-seq统计与实验单位、p65定量充分性，以及单行终点与间接红氧关联的边界。分类词表和阈值不为推进进度修改。每项采纳/拒绝/补证要求应针对精确evidence_id、字段和版本记录，随后由项目指定具名研究者另行签署，ChatGPT/Codex不代签。
+
+实际来源范围为5个旧XML、5个本轮PMC HTML、7张主图及1份既有补充PDF。主图实际视觉阅读；49页PDF只做页级文本筛查与第14/17页表5视觉核对，不称全部页审核。3个补充链接返回HTML而非附件，均判未取得。主原始测序、Ct、完整blot、densitometry及MD轨迹未再分析。论文动态通知关联未全部完成，本轮不发布“截至今日无撤稿”结论。来源文件全部本地忽略，不上传全文及图像。
+
+QC：138 PASS / 0 FAIL；747个既有跟踪文件及41个旧来源缓存SHA256不变。原21条及其余12条、66字段字典、257项科学提案/待审事件、7条来源HOLD、治理规则、Master及H-ORAC Top20冻结资产未修改。Gate1=HOLD，Gate2=HUMAN_SCIENTIFIC_REVIEW_REQUIRED，Scale-up S1–S4与生产迁移NOT_AUTHORIZED，Release=HOLD。
+
+转交以下5份主交付；CSV应与两个科学说明文件一起审查，不能只看类别列。下列为完整项目相对路径，项目根D:\JANE\GitHub\antioxidants project。
+
+```text
+P0 workspaces/phase1c_mechanism_evidence_pilot/batch_a_scientific_review/AFF0061_BatchA_Scientific_Review_Matrix.csv
+P0 workspaces/phase1c_mechanism_evidence_pilot/batch_a_scientific_review/AFF0061_BatchA_Scientific_Assessment.md
+P0 workspaces/phase1c_mechanism_evidence_pilot/batch_a_scientific_review/Sync_to_ChatGPT_AFF0061_BatchA.md
+P1 workspaces/phase1c_mechanism_evidence_pilot/batch_a_scientific_review/AFF0061_BatchA_Source_Verification.md
+P2 workspaces/phase1c_mechanism_evidence_pilot/batch_a_scientific_review/AFF0061_BatchA_QC_Report.md
+```
+
+可附的机器可读复核材料为本目录qc/Reviewed_Source_Manifest.json与qc/BatchA_Validation.json；其他qc基线和脚本供本地复现，不是需要人工签署的新数据库。Git仅归档准备材料，最终提交SHA、push和工作树状态见最终交付消息及Git历史；本文件不自引用未来提交，也不表示已向外部ChatGPT会话发送消息。
+
+完成后停止。下一步只建议对A组逐条提出人工裁决或补证要求；不自动启动B组、C组、191候选物检索、正式迁移、网络医学分析、排名或发布。

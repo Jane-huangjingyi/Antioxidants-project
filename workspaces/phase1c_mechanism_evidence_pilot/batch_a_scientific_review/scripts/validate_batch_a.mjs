@@ -1,0 +1,76 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import {root,pilot,csv,sha,git} from '../../governance_approval_v0.2/scripts/archive_approval.mjs';
+const dir=path.join(pilot,'batch_a_scientific_review');
+const expected=['ME-AFF0061-37482908-001','ME-AFF0061-37482908-002','ME-AFF0061-39589556-002','ME-AFF0061-41594941-001','ME-AFF0061-41594941-002','ME-AFF0061-41594941-003','ME-AFF0061-41594941-004','ME-AFF0061-42170612-002','ME-AFF0061-37025617-001'];
+const checks=[];const check=(name,pass,detail='')=>checks.push({name,pass:Boolean(pass),detail});
+const json=async p=>JSON.parse(await fs.readFile(path.join(dir,p),'utf8'));
+const baseline=await json('qc/Start_Baseline.json');
+const parsed=await csv(path.join(dir,'AFF0061_BatchA_Scientific_Review_Matrix.csv'));const rows=parsed.rows;
+const legacy=(await csv(path.join(pilot,'compounds/AFF-0061_Protocatechuic_Acid_Mechanism_Evidence.csv'))).rows;
+const gate=(await csv(path.join(pilot,'gate2_review/AFF-0061_Gate2_Evidence_Review_Matrix.csv'))).rows;
+const vocab=(await csv(path.join(pilot,'governance_v0.1/Mechanism_Evidence_Controlled_Vocabulary_v0.1.csv'))).rows;
+const vocabFor=f=>new Set(vocab.filter(r=>r.field===f).map(r=>r.value));
+const allPresent=rows.length===9&&new Set(rows.map(r=>r.evidence_id)).size===9&&expected.every(id=>rows.some(r=>r.evidence_id===id));
+check('exact nine A IDs; no B/C records',allPresent);
+check('five publications not nine independent studies',new Set(rows.map(r=>r.PMID)).size===5&&rows.every(r=>r.independence_and_duplicates_review));
+check('59 column schema / no duplicate headers',parsed.headers.length===59&&new Set(parsed.headers).size===59);
+const required=['compound_identity_and_form_review','model_species_material_review','dose_time_exposure_review','comparison_control_normalization_review','protein_or_pathway_identity_review','actual_evidence_review','classification_rationale','negative_adverse_or_null_review','source_verification_scope','independence_and_duplicates_review','unresolved_issues','researcher_decision_required','suggested_field_changes_json','source_locator_reviewed'];
+for(const r of rows){
+ const original=legacy.find(l=>l.evidence_id===r.evidence_id);const historic=gate.find(l=>l.evidence_id===r.evidence_id);
+ check(r.evidence_id+' all 14 dimensions plus source and human status',required.every(f=>r[f])&&r.human_review_status==='NOT_REVIEWED');
+ check(r.evidence_id+' exact legacy66 snapshot',Object.keys(original).length===66&&JSON.stringify(original)===r.original_record_66_fields_json&&sha(r.original_record_66_fields_json)===r.original_record_json_sha256);
+ check(r.evidence_id+' three dimensions valid vocabulary', ['evidence_relation_type','target_confirmation_class','antioxidant_relevance_primary'].every(f=>vocabFor(f).has(r['suggested_'+f])));
+ check(r.evidence_id+' absent columns not confused with legacy validation',r.original_target_confirmation_class==='NOT_PRESENT_IN_LEGACY_SCHEMA'&&r.original_antioxidant_relevance_primary==='NOT_PRESENT_IN_LEGACY_SCHEMA'&&r.original_target_validation_status_legacy===original.target_validation_status);
+ check(r.evidence_id+' source hash / ID / DOI match',sha(await fs.readFile(path.join(root,r.source_local_path)))===r.source_file_sha256&&r.DOI===original.DOI&&r.PMID===original.PMID&&r.PMCID===original.PMCID);
+ check(r.evidence_id+' historic suggestions preserved independently',r.historical_gate2_proposal_status===historic.review_status&&r.historical_gate2_relation_suggestion===historic.proposed_relation_type&&r.historical_gate2_target_suggestion===historic.protein_target_confirmation_proposed&&r.historical_gate2_redox_suggestion===historic.antioxidant_relevance_proposed);
+ const changes=JSON.parse(r.suggested_field_changes_json);
+ check(r.evidence_id+' field-level old/new mapping and unapplied state',changes.length>=3&&new Set(changes.map(c=>c.field)).size===changes.length&&changes.every(c=>c.change_applied==='NO'&&c.reason&&(Object.hasOwn(original,c.field)?c.old_value===original[c.field]&&c.old_value_presence==='PRESENT':c.old_value===null&&c.old_value_presence==='NOT_PRESENT_IN_LEGACY_SCHEMA')));
+ check(r.evidence_id+' no human decision or formal status change',r.change_applied==='NO'&&r.formal_evidence_status_change==='NO'&&r.recommendation_status==='PENDING_RESEARCHER_ADJUDICATION'&&!r.human_reviewer_name&&!r.human_decision&&!r.human_approval_date&&r.evidence_status_original===original.evidence_status);
+ check(r.evidence_id+' gates remain restricted',r.gate1_status==='HOLD'&&r.gate2_status==='HUMAN_SCIENTIFIC_REVIEW_REQUIRED'&&r.scale_up_status==='NOT_AUTHORIZED'&&r.production_migration_status==='NOT_AUTHORIZED'&&r.release_status==='HOLD');
+}
+check('target recommendations 1 omics 5 readout 2 computational 1 no protein', ['OMICS_ASSOCIATED','READOUT_ONLY','COMPUTATIONAL_ONLY','NOT_APPLICABLE_NO_PROTEIN_TARGET'].every((k,i)=>rows.filter(r=>r.suggested_target_confirmation_class===k).length===[1,5,2,1][i]));
+check('relation suggestions preserve all nine original relationships',rows.every(r=>r.suggested_evidence_relation_type===r.original_evidence_relation_type));
+check('no direct binding or direct redox upgrade',rows.every(r=>!['DIRECT_BINDING_SUPPORTED','FUNCTIONAL_PARTICIPATION_SUPPORTED'].includes(r.suggested_target_confirmation_class)&&!['DIRECT_REDOX_OUTCOME','ANTIOXIDANT_FUNCTIONAL_MECHANISM'].includes(r.suggested_antioxidant_relevance_primary)));
+const changed=[];for(const f of baseline.tracked)if(sha(await fs.readFile(path.join(root,f.path)))!==f.sha256)changed.push(f.path);
+check('747 pre-existing tracked assets unchanged',baseline.tracked.length===747&&changed.length===0,JSON.stringify(changed));
+const cacheChanged=[];for(const f of baseline.local_source_cache)if(sha(await fs.readFile(f.path))!==f.sha256)cacheChanged.push(f.path);
+check('41 previous local source caches unchanged',baseline.local_source_cache.length===41&&cacheChanged.length===0,JSON.stringify(cacheChanged));
+check('all 21 original observations NOT_REVIEWED',legacy.length===21&&legacy.every(r=>r.human_review_status==='NOT_REVIEWED'));
+check('other 12 observations untouched',legacy.filter(r=>!expected.includes(r.evidence_id)).length===12&&changed.length===0);
+check('original 66-field dictionary unchanged',(await csv(path.join(pilot,'dictionaries/Mechanism_Evidence_Field_Dictionary.csv'))).rows.length===66&&changed.length===0);
+const proposal=(await csv(path.join(pilot,'governance_v0.2_dryrun/dryrun/Scientific_Proposal.csv'))).rows;
+check('257 historic scientific proposals not applied',proposal.length===257&&proposal.every(r=>r.proposal_status==='PROPOSED_NOT_APPROVED'&&r.applied_to_production==='NO'&&!r.approval_event_id));
+const review=(await csv(path.join(pilot,'governance_v0.2_dryrun/dryrun/Review_Event.csv'))).rows;
+check('257 historic review events unsigned',review.length===257&&review.every(r=>r.change_applied==='NO'&&r.approval_status==='PENDING_HUMAN_REVIEW'&&!r.signed_by&&!r.signoff_reference));
+check('7 original source HOLD unchanged',gate.filter(r=>r.review_status==='HOLD_SOURCE_VERIFICATION').length===7&&changed.length===0);
+for(const view of ['Verified_Direct_Targets','Verified_Antioxidant_Mechanisms','Verified_Evidence_Support'])check(view+' remains empty',(await csv(path.join(pilot,'governance_v0.2_dryrun/dryrun/'+view+'.csv'))).rows.length===0);
+const manifest=await json('qc/Reviewed_Source_Manifest.json');
+check('18 source objects traced; raw excluded',manifest.sources.length===18&&manifest.sources.every(s=>s.distribution==='LOCAL_ONLY_EXCLUDED'));
+for(const f of manifest.sources)check('source intact '+f.path,sha(await fs.readFile(path.join(root,f.path)))===f.sha256);
+const access=await json('qc/Source_Access_Log.json');const supp=await json('qc/Supplement_Access_Log.json');
+check('5 current HTML and 7 actual figure images',access.entries.filter(e=>e.usable_article_html).length===5&&access.entries.filter(e=>e.usable_image).length===7);
+check('HTML attachment responses never counted as valid supplements',supp.entries.length===3&&supp.entries.every(e=>!e.usable&&!e.local_file&&e.content_type.includes('text/html')));
+for(const [pmc,anchors]of Object.entries({PMC10424289:['DRA014580','Kmo'],PMC11599353:['RNA sequencing','1644'],PMC12837532:['Gromacs','12.21'],PMC13187579:['OPLS4','TAS2R16'],PMC10070727:['Ser1177','overnight']})){
+ const html=await fs.readFile(path.join(dir,'local_sources',pmc+'.html'),'utf8');
+ // 1644 is in the supplement, not necessarily article HTML; compare relevant method tokens instead.
+ const wanted=pmc==='PMC11599353'?['RNA sequencing','MHCC97-H']:anchors;
+ check('fresh HTML related anchors '+pmc,wanted.every(a=>html.includes(a)));
+}
+const assessment=await fs.readFile(path.join(dir,'AFF0061_BatchA_Scientific_Assessment.md'),'utf8');
+const sources=await fs.readFile(path.join(dir,'AFF0061_BatchA_Source_Verification.md'),'utf8');
+check('assessment covers all nine IDs',expected.every(id=>assessment.includes(id)));
+check('new source issues disclosed across artifacts',['kJ/mol','kcal/mol','GAPDH','1644','6组','5组'].every(s=>assessment.includes(s)&&sources.includes(s)));
+check('unread supplementary/raw scope disclosed',sources.includes('未视觉审核全部49页')&&sources.includes('未取得附件')&&sources.includes('未下载原始测序'));
+check('source branch / main protected',baseline.source_commit==='8177aebfa22d68945254ee836ec662985e5da265'&&git('branch','--show-current')==='codex/phase1c-aff0061-batch-a-review'&&git('rev-parse','main')===baseline.main);
+const diffs=git('diff','--name-only',baseline.source_commit).split(/\r?\n/).filter(Boolean);
+check('all changes limited to new batch directory',diffs.every(p=>p.startsWith('workspaces/phase1c_mechanism_evidence_pilot/batch_a_scientific_review/')));
+const schemaValid=test=>test.length===9&&new Set(test.map(r=>r.evidence_id)).size===9&&test.every(r=>expected.includes(r.evidence_id)&&r.human_review_status==='NOT_REVIEWED'&&r.change_applied==='NO'&&!r.human_reviewer_name&&!r.human_decision&&!r.human_approval_date&&vocabFor('target_confirmation_class').has(r.suggested_target_confirmation_class));
+for(const [name,change]of [['missing record',r=>r.pop()],['duplicate ID',r=>r[1].evidence_id=r[0].evidence_id],['out of batch',r=>r[0].evidence_id='ME-AFF0061-32520409-001'],['automatic human approval',r=>r[0].human_review_status='HUMAN_APPROVED'],['applied change',r=>r[0].change_applied='YES'],['forged signer',r=>r[0].human_reviewer_name='INFERRED'],['invented approval date',r=>r[0].human_approval_date='2026-10-23'],['invalid category',r=>r[0].suggested_target_confirmation_class='STRONG_TARGET']]){const fixture=structuredClone(rows);change(fixture);check('negative fixture rejected '+name,!schemaValid(fixture));}
+check('CSV readback contains no spreadsheet error tokens',!/#REF!|#DIV\/0!|#VALUE!|#NUM!|#SPILL!|#CALC!/.test(await fs.readFile(path.join(dir,'AFF0061_BatchA_Scientific_Review_Matrix.csv'),'utf8')));
+const result={date:'2026-10-23',scope:'A_GROUP_9_SCIENTIFIC_RECOMMENDATIONS_ONLY',passed:checks.filter(c=>c.pass).length,failed:checks.filter(c=>!c.pass).length,tracked_assets:747,previous_cache_assets:41,checks};
+await fs.writeFile(path.join(dir,'qc/BatchA_Validation.json'),JSON.stringify(result,null,2)+'\n');
+const failed=checks.filter(c=>!c.pass);
+await fs.writeFile(path.join(dir,'AFF0061_BatchA_QC_Report.md'),`# AFF-0061 A组QC\n\n2026-10-23。自动检查${result.passed} PASS / ${result.failed} FAIL；逐项结果见qc/BatchA_Validation.json。此结果是准备材料的完整性与边界检查，不是9条证据的科学批准。\n\n9个ID完整唯一，59列覆盖14项逐行要求；每行保存原66字段JSON、来源哈希、历史建议及独立本轮建议，三维枚举均通过已批准词表核对。target_confirmation_class与antioxidant_relevance_primary原本不在旧表，未把旧target_validation_status冒充新类别。建议关系2组学、5响应、2计算；靶点建议1组学关联、5读数、2计算、1无蛋白对象；红氧建议7其他功能、2间接关联。全部NOT_REVIEWED / change_applied=NO，具名裁决和批准日期为空。\n\n747个既有跟踪文件与41个旧本地缓存SHA256均比对；原21条观察、其余12条、66字段字典、257项科学提案、257项待审事件、7条来源HOLD、三张空Verified视图及治理/冻结文件保持不变。未迁移、扩展候选物或改Top20。\n\n18项来源对象有SHA256及用途记录：5个旧XML、5个当前HTML、7张主图、1份既有49页补充PDF。主图均实际视觉阅读；补充PDF仅页级文本筛查及p14/p17视觉核对，不称全部页读毕。3个附件响应为HTML而非目标二进制，已判未取得。QC不认证原始实验、图像完整性、统计有效性或永久无撤稿。\n\n8种内存负例覆盖缺失/重复/越界ID、自动批准、实施变更、推断签署人、伪造日期和无效类别；均不得写入原数据。Artifact Tool完成矩阵作者值写入/读回、recalculate、inspection、错误扫描及A1:C10预览；CSV无公式，重新计算不是实验复现。预览仅便于检查状态/ID，不替代全59列读回。\n\n独立分支codex/phase1c-aff0061-batch-a-review。Git提交与推送结果以最终交付消息和Git历史为准；不自引用未来提交SHA。可使用配置的捆绑Node运行scripts/validate_batch_a.mjs复核；该脚本不运行检索/作者脚本、不改旧资产，仅更新本目录QC。\n${failed.length?'\n失败项：'+failed.map(c=>c.name).join('; '):''}`);
+console.log(JSON.stringify({passed:result.passed,failed:result.failed,failures:failed}));
+if(failed.length)process.exitCode=1;

@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-23",
+  "entries": [
+    {
+      "paper": "PMC12837532",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/12837532/bin/biology-15-00206-s001.zip",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "usable": false,
+      "sha256": "b7d001e19abc6cc5556ff1c0f07c68818a773f7b094ace2be49db9067d50eb4b",
+      "local_file": null
+    },
+    {
+      "paper": "PMC13187579",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/13187579/bin/mmc1.docx",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "usable": false,
+      "sha256": "249e89447f2000adebe57a7610ca630b78e90952c3a086cba52ced5ac1e2f6e8",
+      "local_file": null
+    },
+    {
+      "paper": "PMC10070727",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/10070727/bin/Image_2.jpg",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "usable": false,
+      "sha256": "6795455743752ae2df3561118f3b4a09f5427b515550667f7749f1ab35a2580d",
+      "local_file": null
+    }
+  ]
+}
