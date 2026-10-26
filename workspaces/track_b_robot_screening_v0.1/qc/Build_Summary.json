@@ -1,0 +1,315 @@
+{
+  "universe_N": 191,
+  "framework_N": 157,
+  "outside157": [
+    {
+      "candidate_id": "AFF-0106",
+      "name": "alpha-Tocopherol",
+      "construct": "vitamer-specific: H-ORAC/regeneration or L-ORAC/lipid termination"
+    },
+    {
+      "candidate_id": "AFF-0107",
+      "name": "Beta-Tocopherol",
+      "construct": "vitamer-specific: H-ORAC/regeneration or L-ORAC/lipid termination"
+    },
+    {
+      "candidate_id": "AFF-0108",
+      "name": "(+)-gamma-Tocopherol",
+      "construct": "vitamer-specific: H-ORAC/regeneration or L-ORAC/lipid termination"
+    },
+    {
+      "candidate_id": "AFF-0109",
+      "name": "Delta-Tocopherol",
+      "construct": "vitamer-specific: H-ORAC/regeneration or L-ORAC/lipid termination"
+    },
+    {
+      "candidate_id": "AFF-0110",
+      "name": "Alpha-Tocotrienol",
+      "construct": "vitamer-specific: H-ORAC/regeneration or L-ORAC/lipid termination"
+    },
+    {
+      "candidate_id": "AFF-0111",
+      "name": "beta-Tocotrienol",
+      "construct": "vitamer-specific: H-ORAC/regeneration or L-ORAC/lipid termination"
+    },
+    {
+      "candidate_id": "AFF-0112",
+      "name": "Gamma-Tocotrienol",
+      "construct": "vitamer-specific: H-ORAC/regeneration or L-ORAC/lipid termination"
+    },
+    {
+      "candidate_id": "AFF-0113",
+      "name": "Delta-Tocotrienol",
+      "construct": "vitamer-specific: H-ORAC/regeneration or L-ORAC/lipid termination"
+    },
+    {
+      "candidate_id": "AFF-0114",
+      "name": "Beta-Carotene",
+      "construct": "singlet-oxygen quenching or validated lipid-phase assay"
+    },
+    {
+      "candidate_id": "AFF-0115",
+      "name": "Alpha-Carotene",
+      "construct": "singlet-oxygen quenching or validated lipid-phase assay"
+    },
+    {
+      "candidate_id": "AFF-0116",
+      "name": "Lycopene",
+      "construct": "singlet-oxygen quenching or validated lipid-phase assay"
+    },
+    {
+      "candidate_id": "AFF-0117",
+      "name": "Phytoene",
+      "construct": "singlet-oxygen quenching or validated lipid-phase assay"
+    },
+    {
+      "candidate_id": "AFF-0118",
+      "name": "All-Trans-Phytofluene",
+      "construct": "singlet-oxygen quenching or validated lipid-phase assay"
+    },
+    {
+      "candidate_id": "AFF-0119",
+      "name": "Lutein A",
+      "construct": "singlet-oxygen quenching or validated lipid-phase assay"
+    },
+    {
+      "candidate_id": "AFF-0120",
+      "name": "Zeaxanthin",
+      "construct": "singlet-oxygen quenching or validated lipid-phase assay"
+    },
+    {
+      "candidate_id": "AFF-0121",
+      "name": "Cryptoxanthin",
+      "construct": "singlet-oxygen quenching or validated lipid-phase assay"
+    },
+    {
+      "candidate_id": "AFF-0122",
+      "name": "Astaxanthin",
+      "construct": "singlet-oxygen quenching or validated lipid-phase assay"
+    },
+    {
+      "candidate_id": "AFF-0123",
+      "name": "Canthaxanthin",
+      "construct": "singlet-oxygen quenching or validated lipid-phase assay"
+    },
+    {
+      "candidate_id": "AFF-0124",
+      "name": "Capsanthin",
+      "construct": "singlet-oxygen quenching or validated lipid-phase assay"
+    },
+    {
+      "candidate_id": "AFF-0125",
+      "name": "Capsorubin",
+      "construct": "singlet-oxygen quenching or validated lipid-phase assay"
+    },
+    {
+      "candidate_id": "AFF-0126",
+      "name": "Violaxanthin",
+      "construct": "singlet-oxygen quenching or validated lipid-phase assay"
+    },
+    {
+      "candidate_id": "AFF-0127",
+      "name": "Neoxanthin",
+      "construct": "singlet-oxygen quenching or validated lipid-phase assay"
+    },
+    {
+      "candidate_id": "AFF-0128",
+      "name": "Fucoxanthin",
+      "construct": "singlet-oxygen quenching or validated lipid-phase assay"
+    },
+    {
+      "candidate_id": "AFF-0129",
+      "name": "9-Cis-Beta-Carotene",
+      "construct": "singlet-oxygen quenching or validated lipid-phase assay"
+    },
+    {
+      "candidate_id": "AFF-0130",
+      "name": "(13Z)-beta-Carotene",
+      "construct": "singlet-oxygen quenching or validated lipid-phase assay"
+    },
+    {
+      "candidate_id": "AFF-0131",
+      "name": "9-cis-Lycopene",
+      "construct": "singlet-oxygen quenching or validated lipid-phase assay"
+    },
+    {
+      "candidate_id": "AFF-0132",
+      "name": "(13Z)-Lycopene",
+      "construct": "singlet-oxygen quenching or validated lipid-phase assay"
+    },
+    {
+      "candidate_id": "AFF-0185",
+      "name": "Selenium",
+      "construct": "biological cofactor relevance; no capacity rank"
+    },
+    {
+      "candidate_id": "AFF-0186",
+      "name": "Zinc",
+      "construct": "biological cofactor relevance; no capacity rank"
+    },
+    {
+      "candidate_id": "AFF-0187",
+      "name": "Manganese",
+      "construct": "biological cofactor relevance; no capacity rank"
+    },
+    {
+      "candidate_id": "AFF-0188",
+      "name": "Copper",
+      "construct": "biological cofactor relevance; no capacity rank"
+    },
+    {
+      "candidate_id": "AFF-0189",
+      "name": "Iron",
+      "construct": "biological cofactor relevance; no capacity rank"
+    },
+    {
+      "candidate_id": "AFF-0190",
+      "name": "Magnesium",
+      "construct": "biological cofactor relevance; no capacity rank"
+    },
+    {
+      "candidate_id": "AFF-0191",
+      "name": "Molybdenum",
+      "construct": "biological cofactor relevance; no capacity rank"
+    }
+  ],
+  "coverage": {
+    "D1:NOT_SEARCHED": 127,
+    "D2:NOT_SEARCHED": 127,
+    "D3:AVAILABLE_UNVERIFIED": 155,
+    "D4:AVAILABLE_UNVERIFIED": 126,
+    "D5:NOT_SEARCHED": 155,
+    "D1:AVAILABLE_UNVERIFIED": 20,
+    "D2:AVAILABLE_UNVERIFIED": 28,
+    "D1:AVAILABLE_VERIFIED": 8,
+    "D4:NOT_SEARCHED": 29,
+    "D1:IDENTITY_UNRESOLVED": 2,
+    "D2:IDENTITY_UNRESOLVED": 2,
+    "D3:IDENTITY_UNRESOLVED": 2,
+    "D4:IDENTITY_UNRESOLVED": 2,
+    "D5:IDENTITY_UNRESOLVED": 2
+  },
+  "counts": {
+    "需要补证后再评估": 133,
+    "暂缓进入首批实验": 58
+  },
+  "panel4": [
+    "AFF-0002",
+    "AFF-0069",
+    "AFF-0061",
+    "AFF-0071"
+  ],
+  "panel6": [
+    "AFF-0002",
+    "AFF-0069",
+    "AFF-0061",
+    "AFF-0071",
+    "AFF-0001",
+    "AFF-0070"
+  ],
+  "future_year_flags": [
+    "AFF-0009",
+    "AFF-0010",
+    "AFF-0061",
+    "AFF-0069",
+    "AFF-0084",
+    "AFF-0104",
+    "AFF-0159"
+  ],
+  "outputs": [
+    {
+      "name": "Candidate_Multidimensional_Triage_v0.1.csv",
+      "rows": 191,
+      "columns": 30,
+      "sha256": "179f0489df7f780dfca9313a7abb340a3d70b5fa5422db99deac6f5d89e1ff24"
+    },
+    {
+      "name": "Robot_Screening_Feasibility_and_Interference_Matrix.csv",
+      "rows": 191,
+      "columns": 26,
+      "sha256": "408cef9465e4d4c9aeff049753d811170581c2597b45e7bd7378f18107c14279"
+    }
+  ],
+  "input_manifest": [
+    {
+      "key": "universe",
+      "path": "data/candidate_universe/Antioxidant_Class_Candidate_Master.csv",
+      "sha256": "8e6da7266b4388cff48a648a49a5daefaccfb71c45e6c7efee78c65f23ca86e7"
+    },
+    {
+      "key": "aqueous",
+      "path": "data/candidate_universe/Aqueous_Antioxidant_Candidate_Master.csv",
+      "sha256": "d10fe7f33d473b22558864da719e5cb675a5a580fdb723b0750f58b6a48abb8d"
+    },
+    {
+      "key": "literature",
+      "path": "data/literature_screening/master/Literature_Screening_Candidate_Master.csv",
+      "sha256": "4e87c999270aea2aab70e2d49724a05fdb80eec739e907c11a2b5ef89af8a0b2"
+    },
+    {
+      "key": "dictionary",
+      "path": "data/framework/Comprehensive_Antioxidant_Indicator_Dictionary_v0.1.csv",
+      "sha256": "1708e0ec322a399f2a3775f94dc7ed9a1292cd768c2ccacb7e4fbeee66d8648b"
+    },
+    {
+      "key": "availability",
+      "path": "data/framework/Candidate_157_Data_Availability_Matrix.csv",
+      "sha256": "dff487831dd32972f021696de6e281a012e4c36ace9a7d659798f5c1a7b573dc"
+    },
+    {
+      "key": "profile",
+      "path": "data/dual_track_phase1/Candidate_Multidimensional_Evidence_Profile_v0.1.csv",
+      "sha256": "09fa6138163f7394c3b6e635c14f16c825726cd790509edd8cfd23138c3608e6"
+    },
+    {
+      "key": "identity",
+      "path": "data/framework/Candidate_Identity_and_Synonym_Audit.csv",
+      "sha256": "84f5f2e6a3d128a84b6504dd6bc5be4f2918a4250563fa401d31c911f15e79ce"
+    },
+    {
+      "key": "frozen",
+      "path": "data/h_orac_stage25b/frozen/Stage25B_Frozen_Primary_HORAC_Top20.csv",
+      "sha256": "cf74a1d8f262abb6cf42a7f031209942fecbc1ee05b47d6debc06f91097fdd90"
+    },
+    {
+      "key": "qualification",
+      "path": "data/h_orac_stage25b/frozen/Stage25B_Frozen_Top20_B2_Sensitivity_Qualification.csv",
+      "sha256": "ec07750c49a71ab1bb8ee7791c8b464b915e48e004507cd556c0eafaf7598dc2"
+    },
+    {
+      "key": "freeze_manifest",
+      "path": "data/h_orac_stage25b/frozen/Stage25B5_Frozen_Asset_SHA256_Manifest.csv",
+      "sha256": "d8dbf090c8da7c3feea5b79e0bac317450fd61095f8eb11c36a57afc19ebb21a"
+    },
+    {
+      "key": "eligibility",
+      "path": "data/h_orac_stage25b/stage25b6d/Stage25B6D_Candidate_Eligibility.csv",
+      "sha256": "0a331492c61ae1bf36b3e97ccefef53cd2fec7a90308163b4ab230bdaff68298"
+    },
+    {
+      "key": "evidence_profile",
+      "path": "data/h_orac_stage25b/stage25b6d/Stage25B6D_HORAC_Evidence_Profile.csv",
+      "sha256": "baa92b9325d64c846a0fdfa9425fa8177a83db27956f2d305be2de1eeb16f654"
+    },
+    {
+      "key": "source_closure",
+      "path": "data/h_orac_stage25b/stage25b6d/Stage25B6D_Source_Closure.csv",
+      "sha256": "cb25c8587cef3b3d1f80ad53983b22282c45b48465e77a2627efbdb9827f78aa"
+    },
+    {
+      "key": "experiments",
+      "path": "data/h_orac_stage25b/stage25b/Stage25B_HORAC_Experiment_Evidence.csv",
+      "sha256": "57d7037ea844541c9eb08b0611bec1f588f57d34831bbc18012425e2e6b23c14"
+    },
+    {
+      "key": "error_audit",
+      "path": "data/h_orac_stage25b/stage25b6d/Stage25B6D_Error_and_Replicate_Audit.csv",
+      "sha256": "34b0e49db7d8780ad07587b8db67dbbe63dcd5169d6dfbfdc7bae13420a2cfa1"
+    },
+    {
+      "key": "mechanism",
+      "path": "workspaces/phase1c_mechanism_evidence_pilot/compounds/AFF-0061_Protocatechuic_Acid_Mechanism_Evidence.csv",
+      "sha256": "90213d26ebb059f903e50e8d4daad4bd2a272eca5002e9b7b64d973d73c094f5"
+    }
+  ]
+}
