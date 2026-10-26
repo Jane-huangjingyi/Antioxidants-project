@@ -1,0 +1,329 @@
+{
+  "date": "2026-10-26",
+  "source_baseline_commit": "48b34a7314b1d5914c4bb70f770e7e6d2fe939fe",
+  "sources": [
+    {
+      "name": "HDAC1_publisher.html",
+      "url": "https://www.mdpi.com/2079-7737/15/2/206",
+      "status": 403,
+      "content_type": "text/html",
+      "bytes": 400,
+      "sha256": "4e67c3eb257c8fd2c857befccba9b6d262aa60ecf7ef90f85452cd3010fc51f2",
+      "usable_response": false,
+      "binary_signature_valid": null,
+      "local_path": "local_sources/HDAC1_publisher.html",
+      "role": "FAILED_RESPONSE_NOT_SOURCE_EVIDENCE",
+      "raw_distribution": "LOCAL_ONLY_EXCLUDED"
+    },
+    {
+      "name": "HDAC1_supplement.zip",
+      "url": "https://mdpi-res.com/d_attachment/biology/biology-15-00206/article_deploy/biology-15-00206-s001.zip",
+      "status": 403,
+      "content_type": "text/plain; charset=UTF-8",
+      "bytes": 17,
+      "sha256": "2938e9f1284180959e33ab1718d0793a72ff6e4cdb8108c34dcd14e69446de5c",
+      "usable_response": false,
+      "binary_signature_valid": false,
+      "local_path": "local_sources/HDAC1_supplement.zip",
+      "role": "FAILED_RESPONSE_NOT_SOURCE_EVIDENCE",
+      "raw_distribution": "LOCAL_ONLY_EXCLUDED"
+    },
+    {
+      "name": "eNOS_publisher.html",
+      "url": "https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2023.1060226/full",
+      "status": 200,
+      "content_type": "text/html;charset=utf-8",
+      "bytes": 814363,
+      "sha256": "05e65fdc74a547a2847da5e7c087c9e5026abd510e40e9c633a038b81dc6f863",
+      "usable_response": true,
+      "binary_signature_valid": null,
+      "local_path": "local_sources/eNOS_publisher.html",
+      "role": "RECOVERED_SOURCE_CONTENT_OR_METADATA",
+      "raw_distribution": "LOCAL_ONLY_EXCLUDED"
+    },
+    {
+      "name": "Kmo_publisher.html",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1111/jcmm.17869",
+      "status": 403,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 5511,
+      "sha256": "dadeda9286b435c778a75d14a3ee1c50905748ee94fcbef38e5154b2230da2a8",
+      "usable_response": false,
+      "binary_signature_valid": null,
+      "local_path": "local_sources/Kmo_publisher.html",
+      "role": "FAILED_RESPONSE_NOT_SOURCE_EVIDENCE",
+      "raw_distribution": "LOCAL_ONLY_EXCLUDED"
+    },
+    {
+      "name": "Kmo_DataS1.doc",
+      "url": "https://onlinelibrary.wiley.com/doi/suppl/10.1111/jcmm.17869/supinfo/jcmm17869-sup-0006-supinfo.doc",
+      "status": 403,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 5710,
+      "sha256": "ebfda1e23d523b99747ef1ef95984e78c79cfcfb12f05a34559704dfa1a37ce2",
+      "usable_response": false,
+      "binary_signature_valid": false,
+      "local_path": "local_sources/Kmo_DataS1.doc",
+      "role": "FAILED_RESPONSE_NOT_SOURCE_EVIDENCE",
+      "raw_distribution": "LOCAL_ONLY_EXCLUDED"
+    },
+    {
+      "name": "DRA014580_DDBJ.html",
+      "url": "https://ddbj.nig.ac.jp/resource/sra-submission/DRA014580",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 4774,
+      "sha256": "8fbfc74ab001066c4a7108086794caa39a6f1a583bf05e7a96fc0f2ed5243810",
+      "usable_response": true,
+      "binary_signature_valid": null,
+      "local_path": "local_sources/DRA014580_DDBJ.html",
+      "role": "DDBJ_APPLICATION_SHELL_NOT_RECORD_METADATA",
+      "raw_distribution": "LOCAL_ONLY_EXCLUDED"
+    },
+    {
+      "name": "DRA014580_ENA.xml",
+      "url": "https://www.ebi.ac.uk/ena/browser/api/xml/DRA014580",
+      "status": 200,
+      "content_type": "application/xml",
+      "bytes": 1027,
+      "sha256": "210fdaa9ba10ce633a03c457842fc784f7fd72ca899a8f057705ad01fb01ee48",
+      "usable_response": true,
+      "binary_signature_valid": null,
+      "local_path": "local_sources/DRA014580_ENA.xml",
+      "role": "RECOVERED_SOURCE_CONTENT_OR_METADATA",
+      "raw_distribution": "LOCAL_ONLY_EXCLUDED"
+    },
+    {
+      "name": "DRA014580_runs.tsv",
+      "url": "https://www.ebi.ac.uk/ena/portal/api/filereport?accession=DRA014580&result=read_run&fields=run_accession,study_accession,sample_accession,experiment_accession,scientific_name,sample_title,experiment_title,library_strategy&format=tsv",
+      "status": 200,
+      "content_type": "text/plain",
+      "bytes": 718,
+      "sha256": "064774aa84e81c4d028ba982306a17c6832e702888e94bd4af12c8e2200e0d52",
+      "usable_response": true,
+      "binary_signature_valid": null,
+      "local_path": "local_sources/DRA014580_runs.tsv",
+      "role": "RECOVERED_SOURCE_CONTENT_OR_METADATA",
+      "raw_distribution": "LOCAL_ONLY_EXCLUDED"
+    },
+    {
+      "name": "SAMD00517030.xml",
+      "url": "https://www.ebi.ac.uk/ena/browser/api/xml/SAMD00517030",
+      "status": 200,
+      "content_type": "application/xml",
+      "bytes": 2825,
+      "sha256": "1916a953f6af9fdf8ae51838a3aa5aa26a79ee606caff34b1b25bad481455933",
+      "usable_response": true,
+      "binary_signature_valid": null,
+      "local_path": "local_sources/SAMD00517030.xml",
+      "role": "RECOVERED_SOURCE_CONTENT_OR_METADATA",
+      "raw_distribution": "LOCAL_ONLY_EXCLUDED"
+    },
+    {
+      "name": "SAMD00517031.xml",
+      "url": "https://www.ebi.ac.uk/ena/browser/api/xml/SAMD00517031",
+      "status": 200,
+      "content_type": "application/xml",
+      "bytes": 2823,
+      "sha256": "df77257bbc7edffc9019a08ff071a99ebb9fec4bac059da81bb051e4e4b6da24",
+      "usable_response": true,
+      "binary_signature_valid": null,
+      "local_path": "local_sources/SAMD00517031.xml",
+      "role": "RECOVERED_SOURCE_CONTENT_OR_METADATA",
+      "raw_distribution": "LOCAL_ONLY_EXCLUDED"
+    },
+    {
+      "name": "SAMD00517032.xml",
+      "url": "https://www.ebi.ac.uk/ena/browser/api/xml/SAMD00517032",
+      "status": 200,
+      "content_type": "application/xml",
+      "bytes": 2831,
+      "sha256": "d226409c90ea27eb0deeae3723305f75ed93e4cab6ccb253758355889f479825",
+      "usable_response": true,
+      "binary_signature_valid": null,
+      "local_path": "local_sources/SAMD00517032.xml",
+      "role": "RECOVERED_SOURCE_CONTENT_OR_METADATA",
+      "raw_distribution": "LOCAL_ONLY_EXCLUDED"
+    },
+    {
+      "name": "DRX381958.xml",
+      "url": "https://www.ebi.ac.uk/ena/browser/api/xml/DRX381958",
+      "status": 200,
+      "content_type": "application/xml",
+      "bytes": 3295,
+      "sha256": "c81f4b5a07205c345c65ead17bfa8b24f781da7fbc063cbdde204883123e879c",
+      "usable_response": true,
+      "binary_signature_valid": null,
+      "local_path": "local_sources/DRX381958.xml",
+      "role": "RECOVERED_SOURCE_CONTENT_OR_METADATA",
+      "raw_distribution": "LOCAL_ONLY_EXCLUDED"
+    },
+    {
+      "name": "DRX381959.xml",
+      "url": "https://www.ebi.ac.uk/ena/browser/api/xml/DRX381959",
+      "status": 200,
+      "content_type": "application/xml",
+      "bytes": 3295,
+      "sha256": "4a64894cce34b44fa3c0ff4d7273660891e3d842ad8e070dce4c6d05c463fe38",
+      "usable_response": true,
+      "binary_signature_valid": null,
+      "local_path": "local_sources/DRX381959.xml",
+      "role": "RECOVERED_SOURCE_CONTENT_OR_METADATA",
+      "raw_distribution": "LOCAL_ONLY_EXCLUDED"
+    },
+    {
+      "name": "DRX381960.xml",
+      "url": "https://www.ebi.ac.uk/ena/browser/api/xml/DRX381960",
+      "status": 200,
+      "content_type": "application/xml",
+      "bytes": 3295,
+      "sha256": "c8e8209db79be672ff1cb4a1d822f3048b461dd6cb939dd89948eb6722ea8490",
+      "usable_response": true,
+      "binary_signature_valid": null,
+      "local_path": "local_sources/DRX381960.xml",
+      "role": "RECOVERED_SOURCE_CONTENT_OR_METADATA",
+      "raw_distribution": "LOCAL_ONLY_EXCLUDED"
+    },
+    {
+      "name": "PRJDB14081.xml",
+      "url": "https://www.ebi.ac.uk/ena/browser/api/xml/PRJDB14081",
+      "status": 200,
+      "content_type": "application/xml",
+      "bytes": 2464,
+      "sha256": "4f3f0f5067d80141f04fef8402b237c67c8c97c06836860ae36a1ede198138bb",
+      "usable_response": true,
+      "binary_signature_valid": null,
+      "local_path": "local_sources/PRJDB14081.xml",
+      "role": "RECOVERED_SOURCE_CONTENT_OR_METADATA",
+      "raw_distribution": "LOCAL_ONLY_EXCLUDED"
+    },
+    {
+      "name": "HDAC1_EPMC_supplement.zip",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12837532/supplementaryFiles",
+      "status": 200,
+      "content_type": "application/zip",
+      "bytes": 3560172,
+      "sha256": "8b09cf158cf4bc94e03ee5ebf547d7d689bc169f9089ff7b1ab2fcf9821b010b",
+      "usable_response": true,
+      "binary_signature_valid": true,
+      "local_path": "local_sources/HDAC1_EPMC_supplement.zip",
+      "role": "RECOVERED_SOURCE_CONTENT_OR_METADATA",
+      "raw_distribution": "LOCAL_ONLY_EXCLUDED"
+    },
+    {
+      "name": "Kmo_PMC_DataS1.doc",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/10424289/bin/JCMM-27-2290-s006.doc",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 21438,
+      "sha256": "5db047c199ed518d35c9b4a095f61efeb7c67209ba53ea4d8e4901c1f6a3ce3b",
+      "usable_response": false,
+      "binary_signature_valid": false,
+      "local_path": "local_sources/Kmo_PMC_DataS1.doc",
+      "role": "FAILED_RESPONSE_NOT_SOURCE_EVIDENCE",
+      "raw_distribution": "LOCAL_ONLY_EXCLUDED"
+    },
+    {
+      "name": "Kmo_EPMC_supplement.zip",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10424289/supplementaryFiles",
+      "status": 200,
+      "content_type": "application/zip",
+      "bytes": 12479754,
+      "sha256": "12a26e42b9959cbb31ce198d92a37302dfd51f381877914774ab82034ab081c5",
+      "usable_response": true,
+      "binary_signature_valid": true,
+      "local_path": "local_sources/Kmo_EPMC_supplement.zip",
+      "role": "RECOVERED_SOURCE_CONTENT_OR_METADATA",
+      "raw_distribution": "LOCAL_ONLY_EXCLUDED"
+    },
+    {
+      "name": "PRJDB14081_runs.tsv",
+      "url": "https://www.ebi.ac.uk/ena/portal/api/filereport?accession=PRJDB14081&result=read_run&fields=run_accession,study_accession,sample_accession,experiment_accession,scientific_name,sample_title,library_strategy&format=tsv",
+      "status": 200,
+      "content_type": "text/plain",
+      "bytes": 386,
+      "sha256": "91538cff78738e791b3c59b0fb6508c6a3e6d3ff117edbb5146abedf26739d5f",
+      "usable_response": true,
+      "binary_signature_valid": null,
+      "local_path": "local_sources/PRJDB14081_runs.tsv",
+      "role": "RECOVERED_SOURCE_CONTENT_OR_METADATA",
+      "raw_distribution": "LOCAL_ONLY_EXCLUDED"
+    },
+    {
+      "name": "DRP011843.xml",
+      "url": "https://www.ebi.ac.uk/ena/browser/api/xml/DRP011843",
+      "status": 200,
+      "content_type": "application/xml",
+      "bytes": 2464,
+      "sha256": "4f3f0f5067d80141f04fef8402b237c67c8c97c06836860ae36a1ede198138bb",
+      "usable_response": true,
+      "binary_signature_valid": null,
+      "local_path": "local_sources/DRP011843.xml",
+      "role": "RECOVERED_SOURCE_CONTENT_OR_METADATA",
+      "raw_distribution": "LOCAL_ONLY_EXCLUDED"
+    },
+    {
+      "local_path": "local_sources/HDAC1_supplement_member_0.pdf",
+      "sha256": "25408727fcb297519162ea2df39802c7df40462f0c2d5042d341ba9b1a7a43dc",
+      "role": "EXTRACTED_SUPPLEMENT_INVENTORY_AND_P2_VISUAL_CHECK",
+      "raw_distribution": "LOCAL_ONLY_EXCLUDED"
+    },
+    {
+      "local_path": "local_sources/Kmo_DataS1_recovered.doc",
+      "sha256": "9ede1aaa09989f17a136dcbfbccfeed00c2106af13e9cbba8bef3a5566bff9af",
+      "role": "EXTRACTED_DATAS1_READ_ONLY_WORD",
+      "raw_distribution": "LOCAL_ONLY_EXCLUDED"
+    },
+    {
+      "local_path": "local_sources/Kmo_DataS1_readonly_text.txt",
+      "sha256": "21f12795264fdcd6ea38bcfc8560ae898aa4608e66b5c261a012fe943b341273",
+      "role": "READ_ONLY_WORD_TEXT_EXTRACTION_NOT_GENE_TABLE",
+      "raw_distribution": "LOCAL_ONLY_EXCLUDED"
+    },
+    {
+      "project_relative_path": "workspaces/phase1c_mechanism_evidence_pilot/search_logs/raw/PMC12837532.xml",
+      "sha256": "47228ea22fa1adac5809e752d15d35f5b313f698e34326ab77e43f7c7d67af7c",
+      "role": "PREVIOUS_SOURCE_RECHECKED_FOR_TARGETED_QUESTIONS",
+      "raw_distribution": "LOCAL_ONLY_EXCLUDED"
+    },
+    {
+      "project_relative_path": "workspaces/phase1c_mechanism_evidence_pilot/search_logs/raw/PMC10070727.xml",
+      "sha256": "0dface6afec4aabfa3e1d9a5318985815d254a0bc4309b2cdedf84f03d8fe124",
+      "role": "PREVIOUS_SOURCE_RECHECKED_FOR_TARGETED_QUESTIONS",
+      "raw_distribution": "LOCAL_ONLY_EXCLUDED"
+    },
+    {
+      "project_relative_path": "workspaces/phase1c_mechanism_evidence_pilot/search_logs/raw/PMC10424289.xml",
+      "sha256": "f31fca10332b963e1420c181e223e7f4a0d7a31972e7b93ff671bc114b00131f",
+      "role": "PREVIOUS_SOURCE_RECHECKED_FOR_TARGETED_QUESTIONS",
+      "raw_distribution": "LOCAL_ONLY_EXCLUDED"
+    },
+    {
+      "project_relative_path": "workspaces/phase1c_mechanism_evidence_pilot/batch_a_scientific_review/local_sources/PMC12837532_biology-15-00206-g006.jpg",
+      "sha256": "0bb7c00a2a4dae87609f179e1a546a0d637b20b975db443244819607b0c345ff",
+      "role": "PREVIOUS_SOURCE_RECHECKED_FOR_TARGETED_QUESTIONS",
+      "raw_distribution": "LOCAL_ONLY_EXCLUDED"
+    },
+    {
+      "project_relative_path": "workspaces/phase1c_mechanism_evidence_pilot/batch_a_scientific_review/local_sources/PMC10070727_fnut-10-1060226-g004.jpg",
+      "sha256": "86089da5a02d1e99f71102932839b5450400dc8848a68705802d59ea7bfe368b",
+      "role": "PREVIOUS_SOURCE_RECHECKED_FOR_TARGETED_QUESTIONS",
+      "raw_distribution": "LOCAL_ONLY_EXCLUDED"
+    },
+    {
+      "project_relative_path": "workspaces/phase1c_mechanism_evidence_pilot/batch_a_scientific_review/local_sources/PMC10424289_JCMM-27-2290-g002.jpg",
+      "sha256": "4478454808c1075288a59d05121ee7ccaf77a4b5863b62f2f0aa898516ed7d26",
+      "role": "PREVIOUS_SOURCE_RECHECKED_FOR_TARGETED_QUESTIONS",
+      "raw_distribution": "LOCAL_ONLY_EXCLUDED"
+    },
+    {
+      "project_relative_path": "workspaces/phase1c_mechanism_evidence_pilot/batch_a_scientific_review/local_sources/PMC10424289_JCMM-27-2290-g001.jpg",
+      "sha256": "a54334826012e0acd2915f269b251e9102df6ef019b3e344150d17078773a460",
+      "role": "PREVIOUS_SOURCE_RECHECKED_FOR_TARGETED_QUESTIONS",
+      "raw_distribution": "LOCAL_ONLY_EXCLUDED"
+    }
+  ],
+  "raw_sequence_downloaded": false,
+  "rna_seq_reanalysis_performed": false,
+  "scope_note": "Only A1/A2/A3 newly investigated; other A observations explicitly carried forward"
+}

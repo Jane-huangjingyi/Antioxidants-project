@@ -1,0 +1,94 @@
+{
+  "date": "2026-10-26",
+  "scope": "THREE_TARGETED_QUESTIONS_ONLY",
+  "entries": [
+    {
+      "name": "HDAC1_publisher.html",
+      "url": "https://www.mdpi.com/2079-7737/15/2/206",
+      "status": 403,
+      "content_type": "text/html",
+      "bytes": 400,
+      "sha256": "4e67c3eb257c8fd2c857befccba9b6d262aa60ecf7ef90f85452cd3010fc51f2",
+      "usable_response": false,
+      "binary_signature_valid": null,
+      "local_path": "local_sources/HDAC1_publisher.html"
+    },
+    {
+      "name": "HDAC1_supplement.zip",
+      "url": "https://mdpi-res.com/d_attachment/biology/biology-15-00206/article_deploy/biology-15-00206-s001.zip",
+      "status": 403,
+      "content_type": "text/plain; charset=UTF-8",
+      "bytes": 17,
+      "sha256": "2938e9f1284180959e33ab1718d0793a72ff6e4cdb8108c34dcd14e69446de5c",
+      "usable_response": false,
+      "binary_signature_valid": false,
+      "local_path": "local_sources/HDAC1_supplement.zip"
+    },
+    {
+      "name": "eNOS_publisher.html",
+      "url": "https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2023.1060226/full",
+      "status": 200,
+      "content_type": "text/html;charset=utf-8",
+      "bytes": 814363,
+      "sha256": "05e65fdc74a547a2847da5e7c087c9e5026abd510e40e9c633a038b81dc6f863",
+      "usable_response": true,
+      "binary_signature_valid": null,
+      "local_path": "local_sources/eNOS_publisher.html"
+    },
+    {
+      "name": "Kmo_publisher.html",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1111/jcmm.17869",
+      "status": 403,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 5511,
+      "sha256": "dadeda9286b435c778a75d14a3ee1c50905748ee94fcbef38e5154b2230da2a8",
+      "usable_response": false,
+      "binary_signature_valid": null,
+      "local_path": "local_sources/Kmo_publisher.html"
+    },
+    {
+      "name": "Kmo_DataS1.doc",
+      "url": "https://onlinelibrary.wiley.com/doi/suppl/10.1111/jcmm.17869/supinfo/jcmm17869-sup-0006-supinfo.doc",
+      "status": 403,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 5710,
+      "sha256": "ebfda1e23d523b99747ef1ef95984e78c79cfcfb12f05a34559704dfa1a37ce2",
+      "usable_response": false,
+      "binary_signature_valid": false,
+      "local_path": "local_sources/Kmo_DataS1.doc"
+    },
+    {
+      "name": "DRA014580_DDBJ.html",
+      "url": "https://ddbj.nig.ac.jp/resource/sra-submission/DRA014580",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 4774,
+      "sha256": "8fbfc74ab001066c4a7108086794caa39a6f1a583bf05e7a96fc0f2ed5243810",
+      "usable_response": true,
+      "binary_signature_valid": null,
+      "local_path": "local_sources/DRA014580_DDBJ.html"
+    },
+    {
+      "name": "DRA014580_ENA.xml",
+      "url": "https://www.ebi.ac.uk/ena/browser/api/xml/DRA014580",
+      "status": 200,
+      "content_type": "application/xml",
+      "bytes": 1027,
+      "sha256": "210fdaa9ba10ce633a03c457842fc784f7fd72ca899a8f057705ad01fb01ee48",
+      "usable_response": true,
+      "binary_signature_valid": null,
+      "local_path": "local_sources/DRA014580_ENA.xml"
+    },
+    {
+      "name": "DRA014580_runs.tsv",
+      "url": "https://www.ebi.ac.uk/ena/portal/api/filereport?accession=DRA014580&result=read_run&fields=run_accession,study_accession,sample_accession,experiment_accession,scientific_name,sample_title,experiment_title,library_strategy&format=tsv",
+      "status": 200,
+      "content_type": "text/plain",
+      "bytes": 718,
+      "sha256": "064774aa84e81c4d028ba982306a17c6832e702888e94bd4af12c8e2200e0d52",
+      "usable_response": true,
+      "binary_signature_valid": null,
+      "local_path": "local_sources/DRA014580_runs.tsv"
+    }
+  ]
+}

@@ -1,0 +1,659 @@
+{
+  "date": "2026-10-26",
+  "passed": 130,
+  "failed": 0,
+  "protected_tracked_files": 763,
+  "protected_cache_files": 53,
+  "checks": [
+    {
+      "name": "exact nine A IDs and no B/C",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "governance rules approved for governance only",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-37482908-001 exact bounded candidate",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-37482908-001 no human decision/signature/date or applied changes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-37482908-001 complete original66 retained",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-37482908-001 complete prior59 review retained",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-37482908-001 three dimensions unchanged and valid",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-37482908-001 trace and uncertainty links valid",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-37482908-001 gate/scale/release unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-37482908-002 exact bounded candidate",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-37482908-002 no human decision/signature/date or applied changes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-37482908-002 complete original66 retained",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-37482908-002 complete prior59 review retained",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-37482908-002 three dimensions unchanged and valid",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-37482908-002 trace and uncertainty links valid",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-37482908-002 gate/scale/release unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-39589556-002 exact bounded candidate",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-39589556-002 no human decision/signature/date or applied changes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-39589556-002 complete original66 retained",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-39589556-002 complete prior59 review retained",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-39589556-002 three dimensions unchanged and valid",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-39589556-002 trace and uncertainty links valid",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-39589556-002 gate/scale/release unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-41594941-001 exact bounded candidate",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-41594941-001 no human decision/signature/date or applied changes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-41594941-001 complete original66 retained",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-41594941-001 complete prior59 review retained",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-41594941-001 three dimensions unchanged and valid",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-41594941-001 trace and uncertainty links valid",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-41594941-001 gate/scale/release unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-41594941-002 exact bounded candidate",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-41594941-002 no human decision/signature/date or applied changes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-41594941-002 complete original66 retained",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-41594941-002 complete prior59 review retained",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-41594941-002 three dimensions unchanged and valid",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-41594941-002 trace and uncertainty links valid",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-41594941-002 gate/scale/release unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-41594941-003 exact bounded candidate",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-41594941-003 no human decision/signature/date or applied changes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-41594941-003 complete original66 retained",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-41594941-003 complete prior59 review retained",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-41594941-003 three dimensions unchanged and valid",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-41594941-003 trace and uncertainty links valid",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-41594941-003 gate/scale/release unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-41594941-004 exact bounded candidate",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-41594941-004 no human decision/signature/date or applied changes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-41594941-004 complete original66 retained",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-41594941-004 complete prior59 review retained",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-41594941-004 three dimensions unchanged and valid",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-41594941-004 trace and uncertainty links valid",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-41594941-004 gate/scale/release unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-42170612-002 exact bounded candidate",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-42170612-002 no human decision/signature/date or applied changes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-42170612-002 complete original66 retained",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-42170612-002 complete prior59 review retained",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-42170612-002 three dimensions unchanged and valid",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-42170612-002 trace and uncertainty links valid",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-42170612-002 gate/scale/release unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-37025617-001 exact bounded candidate",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-37025617-001 no human decision/signature/date or applied changes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-37025617-001 complete original66 retained",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-37025617-001 complete prior59 review retained",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-37025617-001 three dimensions unchanged and valid",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-37025617-001 trace and uncertainty links valid",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ME-AFF0061-37025617-001 gate/scale/release unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "4 accept / 3 revision / 2 source pending recommendations",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "15 unique residuals with sources and action boundaries",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "DRA and project reports both return same three runs",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "SAMD00517030 metadata describes mouse male heart not pooling confirmation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "SAMD00517031 metadata describes mouse male heart not pooling confirmation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "SAMD00517032 metadata describes mouse male heart not pooling confirmation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "HDAC1 supplement is single 7-page blot PDF",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Kmo DataS1 actually recovered and text read",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "source hash HDAC1_publisher.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "source hash HDAC1_supplement.zip",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "source hash eNOS_publisher.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "source hash Kmo_publisher.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "source hash Kmo_DataS1.doc",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "source hash DRA014580_DDBJ.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "source hash DRA014580_ENA.xml",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "source hash DRA014580_runs.tsv",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "source hash SAMD00517030.xml",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "source hash SAMD00517031.xml",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "source hash SAMD00517032.xml",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "source hash DRX381958.xml",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "source hash DRX381959.xml",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "source hash DRX381960.xml",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "source hash PRJDB14081.xml",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "source hash HDAC1_EPMC_supplement.zip",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "source hash Kmo_PMC_DataS1.doc",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "source hash Kmo_EPMC_supplement.zip",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "source hash PRJDB14081_runs.tsv",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "source hash DRP011843.xml",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "source hash local_sources/HDAC1_supplement_member_0.pdf",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "source hash local_sources/Kmo_DataS1_recovered.doc",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "source hash local_sources/Kmo_DataS1_readonly_text.txt",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "source hash workspaces/phase1c_mechanism_evidence_pilot/search_logs/raw/PMC12837532.xml",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "source hash workspaces/phase1c_mechanism_evidence_pilot/search_logs/raw/PMC10070727.xml",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "source hash workspaces/phase1c_mechanism_evidence_pilot/search_logs/raw/PMC10424289.xml",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "source hash workspaces/phase1c_mechanism_evidence_pilot/batch_a_scientific_review/local_sources/PMC12837532_biology-15-00206-g006.jpg",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "source hash workspaces/phase1c_mechanism_evidence_pilot/batch_a_scientific_review/local_sources/PMC10070727_fnut-10-1060226-g004.jpg",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "source hash workspaces/phase1c_mechanism_evidence_pilot/batch_a_scientific_review/local_sources/PMC10424289_JCMM-27-2290-g002.jpg",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "source hash workspaces/phase1c_mechanism_evidence_pilot/batch_a_scientific_review/local_sources/PMC10424289_JCMM-27-2290-g001.jpg",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "DDBJ app shell not claimed as record metadata",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "failed binaries never counted as valid supplement",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "new raw sequence download and RNAseq reanalysis explicitly false",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "all763 previous tracked assets SHA256 unchanged",
+      "pass": true,
+      "detail": "[]"
+    },
+    {
+      "name": "53 previous source caches SHA256 unchanged",
+      "pass": true,
+      "detail": "[]"
+    },
+    {
+      "name": "21 original observations unreviewed; 12 outside A unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "257 scientific proposals still unapproved/unapplied",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "257 historic review events still unsigned",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "7 original source HOLD preserved",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "66-field dictionary preserved",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "resolution distinguishes archive count from animal count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "energy and formula not silently repaired",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "all9 recommendation IDs present in resolution",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "scope no automatic B/C or migration",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "negative fixture rejected missing row",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "negative fixture rejected duplicate",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "negative fixture rejected out of scope",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "negative fixture rejected approve automatically",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "negative fixture rejected applied yes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "negative fixture rejected fake name",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "negative fixture rejected fake approval date",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "negative fixture rejected candidate treated as decision",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "negative fixture rejected wrong candidate",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "no spreadsheet error tokens BatchA_Human_Adjudication_Preparation.csv",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "no spreadsheet error tokens BatchA_Residual_Uncertainty_Register.csv",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "independent branch and main unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "diff only new directory",
+      "pass": true,
+      "detail": ""
+    }
+  ]
+}

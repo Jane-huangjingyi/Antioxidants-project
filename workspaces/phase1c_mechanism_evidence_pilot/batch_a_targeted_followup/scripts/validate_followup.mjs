@@ -1,0 +1,74 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import {root,pilot,csv,sha,git} from '../../governance_approval_v0.2/scripts/archive_approval.mjs';
+const dir=path.join(pilot,'batch_a_targeted_followup');
+const read=p=>fs.readFile(path.join(dir,p),'utf8');const json=async p=>JSON.parse(await read(p));
+const baseline=await json('qc/Start_Baseline.json');
+const batch=(await csv(path.join(pilot,'batch_a_scientific_review/AFF0061_BatchA_Scientific_Review_Matrix.csv'))).rows;
+const approvedPath=path.join(pilot,'governance_approval_v0.2/Governance_Approved_Decision_Matrix_v0.2.csv');
+const governance=(await csv(approvedPath)).rows;
+const original=(await csv(path.join(pilot,'compounds/AFF-0061_Protocatechuic_Acid_Mechanism_Evidence.csv'))).rows;
+const prep=(await csv(path.join(dir,'BatchA_Human_Adjudication_Preparation.csv'))).rows;
+const residual=(await csv(path.join(dir,'BatchA_Residual_Uncertainty_Register.csv'))).rows;
+const vocab=(await csv(path.join(pilot,'governance_v0.1/Mechanism_Evidence_Controlled_Vocabulary_v0.1.csv'))).rows;
+const expected=['ME-AFF0061-37482908-001','ME-AFF0061-37482908-002','ME-AFF0061-39589556-002','ME-AFF0061-41594941-001','ME-AFF0061-41594941-002','ME-AFF0061-41594941-003','ME-AFF0061-41594941-004','ME-AFF0061-42170612-002','ME-AFF0061-37025617-001'];
+const states=['SOURCE_PENDING_CANDIDATE','ACCEPT_PROPOSAL_CANDIDATE','ACCEPT_PROPOSAL_CANDIDATE','ACCEPT_PROPOSAL_CANDIDATE','ACCEPT_PROPOSAL_CANDIDATE','REVISION_REQUIRED_CANDIDATE','SOURCE_PENDING_CANDIDATE','REVISION_REQUIRED_CANDIDATE','REVISION_REQUIRED_CANDIDATE'];
+const checks=[];const check=(name,pass,detail='')=>checks.push({name,pass:Boolean(pass),detail});
+check('exact nine A IDs and no B/C',prep.length===9&&new Set(prep.map(r=>r.evidence_id)).size===9&&expected.every(id=>prep.some(r=>r.evidence_id===id)));
+check('governance rules approved for governance only',governance.length===24&&governance.every(r=>r.governance_approval_status==='APPROVED'&&r.approval_scope==='GOVERNANCE_RULES_ONLY'&&r.implemented_in_production==='NO'));
+for(const r of prep){
+ const b=batch.find(x=>x.evidence_id===r.evidence_id);const o=original.find(x=>x.evidence_id===r.evidence_id);
+ check(r.evidence_id+' exact bounded candidate',r.codex_adjudication_candidate===states[expected.indexOf(r.evidence_id)]&&r.candidate_reason&&r.scientific_interpretation_boundary&&r.quantitative_use_to_defer);
+ check(r.evidence_id+' no human decision/signature/date or applied changes',r.human_review_status==='NOT_REVIEWED'&&r.change_applied==='NO'&&r.formal_status_change==='NO'&&!r.human_reviewer_name&&!r.human_decision&&!r.human_approval_date);
+ check(r.evidence_id+' complete original66 retained',Object.keys(o).length===66&&r.original_record_66_fields_json===JSON.stringify(o)&&r.original_record_json_sha256===sha(JSON.stringify(o)));
+ check(r.evidence_id+' complete prior59 review retained',Object.keys(b).length===59&&r.batch_a_record_json===JSON.stringify(b)&&r.batch_a_record_json_sha256===sha(JSON.stringify(b))&&r.batch_a_suggested_field_changes_json===b.suggested_field_changes_json);
+ check(r.evidence_id+' three dimensions unchanged and valid', ['evidence_relation_type','target_confirmation_class','antioxidant_relevance_primary'].every(f=>r['suggested_'+f]===b['suggested_'+f]&&vocab.some(v=>v.field===f&&v.value===r['suggested_'+f])));
+ check(r.evidence_id+' trace and uncertainty links valid',r.source_baseline_commit===baseline.source_commit&&r.batch_a_matrix_sha256===sha(await fs.readFile(path.join(pilot,'batch_a_scientific_review/AFF0061_BatchA_Scientific_Review_Matrix.csv')))&&JSON.parse(r.unresolved_uncertainty_ids_json).every(id=>residual.some(u=>u.uncertainty_id===id&&u.evidence_ids.split(';').includes(r.evidence_id))));
+ check(r.evidence_id+' gate/scale/release unchanged',r.gate1==='HOLD'&&r.gate2==='HUMAN_SCIENTIFIC_REVIEW_REQUIRED'&&r.scale_up==='NOT_AUTHORIZED'&&r.production_migration==='NOT_AUTHORIZED'&&r.release==='HOLD');
+}
+check('4 accept / 3 revision / 2 source pending recommendations',prep.filter(r=>r.codex_adjudication_candidate==='ACCEPT_PROPOSAL_CANDIDATE').length===4&&prep.filter(r=>r.codex_adjudication_candidate==='REVISION_REQUIRED_CANDIDATE').length===3&&prep.filter(r=>r.codex_adjudication_candidate==='SOURCE_PENDING_CANDIDATE').length===2);
+check('15 unique residuals with sources and action boundaries',residual.length===15&&new Set(residual.map(r=>r.uncertainty_id)).size===15&&residual.every(r=>r.source_locator&&r.latest_finding&&r.scientific_use_boundary&&r.needed_to_resolve&&r.human_review_status==='NOT_REVIEWED'&&r.change_applied==='NO'&&!r.reviewer_name&&!r.approval_date&&r.evidence_ids.split(';').every(id=>expected.includes(id))));
+const metadata=async name=>{const lines=(await read('local_sources/'+name)).trim().split(/\r?\n/);const h=lines.shift().split('\t');return lines.map(line=>Object.fromEntries(line.split('\t').map((v,i)=>[h[i],v])));};
+const runs=await metadata('DRA014580_runs.tsv');const projectRuns=await metadata('PRJDB14081_runs.tsv');
+const mapping=[['SAMD00517030','DRX381960','DRR396181','sham'],['SAMD00517031','DRX381959','DRR396180','ISO'],['SAMD00517032','DRX381958','DRR396179','ISO_PCA']];
+check('DRA and project reports both return same three runs',runs.length===3&&projectRuns.length===3&&mapping.every(([sample,experiment,run])=>runs.some(r=>r.sample_accession===sample&&r.experiment_accession===experiment&&r.run_accession===run&&r.study_accession==='PRJDB14081')&&projectRuns.some(r=>r.sample_accession===sample&&r.experiment_accession===experiment&&r.run_accession===run)));
+for(const [sample,experiment,,arm]of mapping){
+ const sx=await read('local_sources/'+sample+'.xml');const ex=await read('local_sources/'+experiment+'.xml');
+ check(sample+' metadata describes mouse male heart not pooling confirmation',sx.includes('<VALUE>male</VALUE>')&&sx.includes('<VALUE>heart</VALUE>')&&sx.includes('<VALUE>'+ (arm==='sham'?'Sham':arm)+'</VALUE>')&&!/<TAG>(pool|pooling|biological replicate|individual animal id)<\/TAG>/i.test(sx)&&ex.includes('DRA014580')&&ex.includes('PRJDB14081'));
+}
+const inventory=await json('qc/HDAC1_Supplement_Inventory.json');
+check('HDAC1 supplement is single 7-page blot PDF',inventory.length===1&&inventory[0].pages===7&&inventory[0].member==='File S1 Full-length, uncropped Western Blots.pdf');
+const doc=await read('local_sources/Kmo_DataS1_readonly_text.txt');
+check('Kmo DataS1 actually recovered and text read',doc.includes('SUPPORTING INFORMATION')&&doc.includes('Figure S1.')&&doc.includes('Figure S5.')&&!doc.includes('DRA014580')&&!/fold change|adjusted p|FDR|DESeq/i.test(doc));
+const manifest=await json('qc/Followup_Source_Manifest.json');
+for(const s of manifest.sources){const p=s.project_relative_path?path.join(root,s.project_relative_path):path.join(dir,s.local_path);check('source hash '+(s.name||s.local_path||s.project_relative_path),sha(await fs.readFile(p))===s.sha256&&s.raw_distribution==='LOCAL_ONLY_EXCLUDED');}
+check('DDBJ app shell not claimed as record metadata',manifest.sources.find(s=>s.name==='DRA014580_DDBJ.html')?.role==='DDBJ_APPLICATION_SHELL_NOT_RECORD_METADATA');
+check('failed binaries never counted as valid supplement',manifest.sources.filter(s=>s.name&&/HDAC1_supplement.zip|Kmo_DataS1.doc|Kmo_PMC_DataS1.doc/.test(s.name)).every(s=>s.usable_response===false&&s.binary_signature_valid===false));
+check('new raw sequence download and RNAseq reanalysis explicitly false',manifest.raw_sequence_downloaded===false&&manifest.rna_seq_reanalysis_performed===false&&manifest.sources.every(s=>!s.url||!s.url.includes('fastq_ftp')));
+const changed=[];for(const f of baseline.tracked)if(sha(await fs.readFile(path.join(root,f.path)))!==f.sha256)changed.push(f.path);
+check('all763 previous tracked assets SHA256 unchanged',baseline.tracked.length===763&&changed.length===0,JSON.stringify(changed));
+const cacheChanged=[];for(const f of baseline.local_source_cache)if(sha(await fs.readFile(f.path))!==f.sha256)cacheChanged.push(f.path);
+check('53 previous source caches SHA256 unchanged',baseline.local_source_cache.length===53&&cacheChanged.length===0,JSON.stringify(cacheChanged));
+check('21 original observations unreviewed; 12 outside A unchanged',original.length===21&&original.every(r=>r.human_review_status==='NOT_REVIEWED')&&original.filter(r=>!expected.includes(r.evidence_id)).length===12&&changed.length===0);
+const proposals=(await csv(path.join(pilot,'governance_v0.2_dryrun/dryrun/Scientific_Proposal.csv'))).rows;
+check('257 scientific proposals still unapproved/unapplied',proposals.length===257&&proposals.every(r=>r.proposal_status==='PROPOSED_NOT_APPROVED'&&r.applied_to_production==='NO'&&!r.approval_event_id));
+const events=(await csv(path.join(pilot,'governance_v0.2_dryrun/dryrun/Review_Event.csv'))).rows;
+check('257 historic review events still unsigned',events.length===257&&events.every(r=>r.approval_status==='PENDING_HUMAN_REVIEW'&&r.change_applied==='NO'&&!r.signed_by&&!r.signoff_reference));
+const gate=(await csv(path.join(pilot,'gate2_review/AFF-0061_Gate2_Evidence_Review_Matrix.csv'))).rows;
+check('7 original source HOLD preserved',gate.filter(r=>r.review_status==='HOLD_SOURCE_VERIFICATION').length===7&&changed.length===0);
+check('66-field dictionary preserved',(await csv(path.join(pilot,'dictionaries/Mechanism_Evidence_Field_Dictionary.csv'))).rows.length===66&&changed.length===0);
+const resolution=await read('BatchA_Targeted_Source_Resolution.md');
+check('resolution distinguishes archive count from animal count',resolution.includes('不能推出每组1只动物')&&resolution.includes('未给pooling')&&resolution.includes('UNRESOLVED_REUSE'));
+check('energy and formula not silently repaired',resolution.includes('kJ/mol')&&resolution.includes('kcal/mol')&&resolution.includes('不换算')&&resolution.includes('完整公式UNRESOLVED')&&resolution.includes('不补算'));
+check('all9 recommendation IDs present in resolution',expected.every(id=>resolution.includes(id)));
+check('scope no automatic B/C or migration',resolution.includes('未审核B组')&&resolution.includes('没有下载FASTQ')&&resolution.includes('不应用257项历史提案'));
+const valid=test=>test.length===9&&new Set(test.map(r=>r.evidence_id)).size===9&&test.every(r=>expected.includes(r.evidence_id)&&r.codex_adjudication_candidate===states[expected.indexOf(r.evidence_id)]&&r.human_review_status==='NOT_REVIEWED'&&r.change_applied==='NO'&&!r.human_reviewer_name&&!r.human_decision&&!r.human_approval_date);
+for(const [name,mutate]of [['missing row',r=>r.pop()],['duplicate',r=>r[1].evidence_id=r[0].evidence_id],['out of scope',r=>r[0].evidence_id='ME-AFF0061-32520409-001'],['approve automatically',r=>r[0].human_review_status='HUMAN_APPROVED'],['applied yes',r=>r[0].change_applied='YES'],['fake name',r=>r[0].human_reviewer_name='INFERRED'],['fake approval date',r=>r[0].human_approval_date='2026-10-26'],['candidate treated as decision',r=>r[0].human_decision='ACCEPT_PROPOSAL_CANDIDATE'],['wrong candidate',r=>r[0].codex_adjudication_candidate='APPROVED']]){const fixture=structuredClone(prep);mutate(fixture);check('negative fixture rejected '+name,!valid(fixture));}
+for(const file of ['BatchA_Human_Adjudication_Preparation.csv','BatchA_Residual_Uncertainty_Register.csv'])check('no spreadsheet error tokens '+file,!/#REF!|#DIV\/0!|#VALUE!|#NUM!|#SPILL!|#CALC!/.test(await read(file)));
+check('independent branch and main unchanged',git('branch','--show-current')==='codex/phase1c-aff0061-batch-a-targeted-followup'&&git('rev-parse','main')===baseline.main&&baseline.source_commit==='48b34a7314b1d5914c4bb70f770e7e6d2fe939fe');
+check('diff only new directory',git('diff','--name-only',baseline.source_commit).split(/\r?\n/).filter(Boolean).every(p=>p.startsWith('workspaces/phase1c_mechanism_evidence_pilot/batch_a_targeted_followup/')));
+const result={date:'2026-10-26',passed:checks.filter(c=>c.pass).length,failed:checks.filter(c=>!c.pass).length,protected_tracked_files:763,protected_cache_files:53,checks};
+await fs.writeFile(path.join(dir,'qc/Followup_Validation.json'),JSON.stringify(result,null,2)+'\n');
+await fs.writeFile(path.join(dir,'BatchA_Targeted_Followup_QC.md'),`# Batch A定点补核QC\n\n日期2026-10-26。${result.passed} PASS / ${result.failed} FAIL；逐项结果见qc/Followup_Validation.json。这是材料完整性、追溯与权限检查，不是科学证据批准。\n\n9个ID唯一且与Batch A一致。4条ACCEPT_PROPOSAL_CANDIDATE、3条REVISION_REQUIRED_CANDIDATE、2条SOURCE_PENDING_CANDIDATE仅为Codex准备意见。每条保留原66字段、原Batch A完整59字段、原建议字段变更、三维分类、来源、具体用途限制及剩余问题关联；三维分类未升级。15项不确定性有来源和所需补证。全部NOT_REVIEWED、change_applied=NO，人审姓名/决定/批准日期为空。\n\n763个既有跟踪文件、53个既有来源缓存逐文件SHA256不变。21条原观察及其余12条、66字段字典、257项科学提案、257项待审事件、7条来源HOLD、治理规则、Master和H-ORAC Top20资产均保留。新来源与失败响应本地忽略，不提交全文、图像、PDF、DOC、ZIP或序列数据。\n\nDRA与项目run清单均核对同3条映射，样本/run不等同生物重复；HDAC1有效补充包只有7页blot PDF，DataS1已只读取得并核对文本。失败附件按签名/内容类型排除，DDBJ应用壳不冒称元数据。没有RNA-seq重分析、剂量补算或能量单位择一换算。\n\n两张CSV使用Artifact Tool作者值写入及读回、recalculate、inspection、错误扫描和有界PNG预览。CSV是无公式文本记录，重新计算不代表实验复现；全列内容由读回及JSON快照核对，预览只检查主要ID和状态。9种内存负例拒绝越界、重复、漏项、自动批准、伪造签署与错误候选；不写入原证据。\n\n分支codex/phase1c-aff0061-batch-a-targeted-followup，来源提交48b34a7314b1d5914c4bb70f770e7e6d2fe939fe。正式Gate/Scale-up/Release权限不变。归档提交SHA和push状态见最终交付与Git历史，文件不自引用未来SHA。复核可用捆绑Node运行scripts/validate_followup.mjs，仅读旧资产并更新本目录QC；不调用检索或重分析。\n`);
+console.log(JSON.stringify({passed:result.passed,failed:result.failed,failures:checks.filter(c=>!c.pass)}));
+if(result.failed)process.exitCode=1;
