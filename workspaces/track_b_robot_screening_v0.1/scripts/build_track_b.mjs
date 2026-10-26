@@ -28,4 +28,3 @@ const counts={};for(const r of tri)counts[r.preparation_tier]=(counts[r.preparat
 const manifest=[];for(const [k,p]of Object.entries(P))manifest.push({key:k,path:p,sha256:sha(await fs.readFile(path.join(root,p)))});
 const summary={universe_N:ids.size,framework_N:lit.size,outside157:tri.filter(r=>r.framework157_scope==='NO').map(r=>({candidate_id:r.candidate_id,name:r.candidate_name,construct:r.reported_primary_construct})),coverage,counts,panel4:[...panel4],panel6:[...panel6],future_year_flags:tri.filter(r=>r.future_year_metadata_flag).map(r=>r.candidate_id),outputs,input_manifest:manifest};
 await fs.writeFile(path.join(dir,'qc/Build_Summary.json'),JSON.stringify(summary,null,2));console.log(JSON.stringify({counts,coverage,outputs},null,2));
-
