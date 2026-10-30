@@ -1,11 +1,15 @@
-# Antioxidants Project 最新成果阅读入口
+# 最新成果与证据核查入口
 
-2026-10-16 文件治理更新：[移动影响核查](File_Reorganization_Audit_2026-10-16_CN.md)、[本轮路径对照](File_Reorganization_Migration_2026-10-16.csv)、[历史版本总索引](HISTORICAL_VERSION_INDEX.csv)及[历史查找说明](../archive/HISTORY_NAVIGATION_CN.md)。当前文件入口已适配分阶段数据目录；前一轮盘点 CSV 是 2026-10-15 的基线快照，当前实存文件见 `Repository_File_Inventory_Current.csv`。
+更新：2026-10-30。本目录提供分类导航，所有链接指向各文件的唯一原始位置，不集中复制科学数据。**从[最新状态](LATEST_PROJECT_STATUS_CN.md)开始；查所有文件用[分类导航](PROJECT_NAVIGATION.md)，查证据用[Excel证据目录](../outputs/review_20261030/Evidence_Catalog_2026-10-30.xlsx)。** 日期较新不代表已经批准，冻结结果、工作稿和建议分别标识。
 
-项目目标：基于原始研究证据，分别评价抗氧化活性、证据可靠性、研究成熟度、生物学相关性和应用可行性，为食品配料、营养健康干预及机制研究提供可解释的候选优选依据。本目录是唯一的最新成果**阅读入口**，不是新的权威数据目录；正式源文件仍在 `data/`、`docs/`、`scripts/` 等原路径。
+|人工查找目的|入口|
+|---|---|
+|查191种全集、157种框架、维度定义|[191种索引](../data/candidate_universe/Antioxidant_Class_Candidate_Master.csv)、[五维框架](../docs/framework/Comprehensive_Antioxidant_Framework_v0.1_CN.md)、[157×5覆盖](../data/framework/Candidate_157_Data_Availability_Matrix.csv)|
+|查正式H-ORAC Top20与后续质量审计|[冻结Top20 v1.0](../data/h_orac_stage25b/frozen/Stage25B_Frozen_Primary_HORAC_Top20.csv)、[6D独立研究资格](../data/h_orac_stage25b/stage25b6d/Stage25B6D_Candidate_Eligibility.csv)、[来源闭环](../data/h_orac_stage25b/stage25b6d/Stage25B6D_Source_Closure.csv)|
+|查当前交付草稿、表和字段核查|[Phase1草稿入口](../workspaces/current_deliverables_phase1/README_CURRENT_REVIEW_DRAFT_v0.1.md)、[T002只读核查](../workspaces/phase1b_t002_readonly_audit/README_Audit_Scope_v0.1.md)|
+|查机制治理批准与9条定点补核|[治理批准状态](../workspaces/phase1c_mechanism_evidence_pilot/governance_approval_v0.2/Governance_Approval_Gate_and_Authorization_Status.md)、[最新补核同步](../workspaces/phase1c_mechanism_evidence_pilot/batch_a_targeted_followup/Sync_to_ChatGPT_BatchA_Targeted_Followup.md)、[待裁决矩阵](../workspaces/phase1c_mechanism_evidence_pilot/batch_a_targeted_followup/BatchA_Human_Adjudication_Preparation.csv)|
+|查机器人准备与小面板|[Track B同步](../workspaces/track_b_robot_screening_v0.1/Sync_to_ChatGPT_TrackB.md)、[候选分层](../workspaces/track_b_robot_screening_v0.1/Candidate_Multidimensional_Triage_v0.1.csv)、[实验草案](../workspaces/track_b_robot_screening_v0.1/Robot_Screening_Experimental_Design_v0.1_CN.md)|
+|查图片、完整R代码及PNG/SVG|[图片与复现索引](VISUALIZATION_REPRODUCIBILITY_CN.md)|
+|查历史版本、移动和清理记录|[历史命名与清理说明](HISTORY_AND_CLEANUP_CN.md)、[历史索引](HISTORICAL_VERSION_INDEX.csv)、[逐文件操作台账](../workspaces/repository_review_20261030/File_Actions.json)|
 
-当前阶段为双轨 Phase 1（2026-10-15）。Track A 的 Stage25B.6D 条件完成，原始来源 8/16 已核实，双独立研究 9/28 达标；Vitamin C 原表缺口仍在。Track B 框架 v0.1 与 157 种候选覆盖矩阵已完成，但许多生物和应用指标尚未检索。最新**正式**排名仍为 Stage25B.5 Frozen Top20 v1.0；所有 6D 与综合框架文件是审计/方法版本，不是新的 Top20。
-
-阅读顺序：第一步看 [最新状态](LATEST_PROJECT_STATUS_CN.md)；第二步看 [Track A 证据准备度](../docs/qc/stage25b6d/Stage25B6D_Ranking_Readiness_CN.md) 和 [Track B 框架](../docs/framework/Comprehensive_Antioxidant_Framework_v0.1_CN.md)；第三步查 [资格表](../data/h_orac_stage25b/stage25b6d/Stage25B6D_Candidate_Eligibility.csv)、[指标字典](../data/framework/Comprehensive_Antioxidant_Indicator_Dictionary_v0.1.csv) 与 [157×5 覆盖矩阵](../data/framework/Candidate_157_Data_Availability_Matrix.csv)；第四步看 [当前决策](CURRENT_DECISIONS_AND_GAPS.md)、[双轨 QC](../docs/dual_track_phase1/Dual_Track_Integration_QC_Report_CN.md) 和 [清理建议](Proposed_File_Cleanup_Plan_CN.md)。完整资产路径见 [项目导航](PROJECT_NAVIGATION.md)。
-
-可向导师汇报核查进展、双研究门槛及五维框架原则。暂不能宣称 v1.1、综合 Top20、人体疗效或统计显著性。建议先补关键原表、审批科学 CR 和场景门槛；不自动进入评分或文件清理。
+[如何使用Excel](EVIDENCE_CATALOG_GUIDE_CN.md)说明文献ID、具体观察、元数据、证据等级、文章章节和期刊指标的区别。[本轮QC](REVIEW_QC_2026-10-30_CN.md)记录保护检查、来源缺口和绘图验证。旧入口与治理报告已保留日期化快照，原始证据与重要过程记录不因整理而删除。

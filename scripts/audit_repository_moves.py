@@ -151,7 +151,7 @@ def main(apply=False):
         tracked_set = set(tracked)
         for name in current_names:
             if name in (self_inventory, 'current_review/CURRENT_DELIVERABLES_INDEX.csv',
-                        'current_review/File_Reorganization_Validation_2026-10-16.json'):
+                        'archive/history/2026-10-16/review_governance/2026-10-16_File_Reorganization_Validation_2026-10-16.json'):
                 continue
             path = ROOT / name
             inventory.append(dict(file_path=name, file_size=path.stat().st_size, sha256=digest(path.read_bytes()),
@@ -169,8 +169,8 @@ def main(apply=False):
         additions = [
             ('历史版本总索引', 'Historical version index', 'current_review/HISTORICAL_VERSION_INDEX.csv'),
             ('当前文件实存清单', 'Current repository inventory', self_inventory),
-            ('本轮文件迁移对照', '2026-10-16 file relocation ledger', 'current_review/File_Reorganization_Migration_2026-10-16.csv'),
-            ('文件移动影响核查', 'File reorganization audit', 'current_review/File_Reorganization_Audit_2026-10-16_CN.md'),
+            ('本轮文件迁移对照', '2026-10-16 file relocation ledger', 'archive/history/2026-10-16/review_governance/2026-10-16_File_Reorganization_Migration_2026-10-16.csv'),
+            ('文件移动影响核查', 'File reorganization audit', 'archive/history/2026-10-16/review_governance/2026-10-16_File_Reorganization_Audit_2026-10-16_CN.md'),
             ('历史版本查找说明', 'Archive navigation', 'archive/HISTORY_NAVIGATION_CN.md'),
             ('H-ORAC 分阶段目录说明', 'H-ORAC data navigation', 'data/h_orac_stage25b/README_CN.md')]
         for title, english, name in additions:

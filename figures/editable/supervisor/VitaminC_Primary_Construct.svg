@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='720.00pt' height='360.00pt' viewBox='0 0 720.00 360.00'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHw3MjAuMDB8MC4wMHwzNjAuMDA='>
+    <rect x='0.00' y='0.00' width='720.00' height='360.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHw3MjAuMDB8MC4wMHwzNjAuMDA=)'>
+<rect x='0.00' y='0.00' width='720.00' height='360.00' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpNzkuMzN8NzE0LjUyfDQwLjU0fDMyOC41MA=='>
+    <rect x='79.33' y='40.54' width='635.19' height='287.97' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpNzkuMzN8NzE0LjUyfDQwLjU0fDMyOC41MA==)'>
+<polyline points='79.33,249.97 714.52,249.97 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='79.33,119.07 714.52,119.07 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='79.33,328.50 79.33,40.54 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='239.73,328.50 239.73,40.54 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='400.13,328.50 400.13,40.54 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='560.54,328.50 560.54,40.54 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<line x1='79.33' y1='249.97' x2='587.27' y2='249.97' style='stroke-width: 1.49; stroke: #C9D5E3; stroke-linecap: butt;' />
+<line x1='79.33' y1='119.07' x2='362.71' y2='119.07' style='stroke-width: 1.49; stroke: #C9D5E3; stroke-linecap: butt;' />
+<circle cx='587.27' cy='249.97' r='4.84' style='stroke-width: 0.71; stroke: #4C78A8; fill: #4C78A8;' />
+<circle cx='362.71' cy='119.07' r='4.84' style='stroke-width: 0.71; stroke: #4C78A8; fill: #4C78A8;' />
+<line x1='474.99' y1='328.50' x2='474.99' y2='40.54' style='stroke-width: 1.07; stroke: #333333; stroke-dasharray: 5.69,5.69; stroke-linecap: butt;' />
+<text x='480.78' y='76.51' style='font-size: 9.10px; font-family: "Arial";' textLength='57.94px' lengthAdjust='spacingAndGlyphs'>median = 0.74</text>
+</g>
+<g clip-path='url(#cpMC4wMHw3MjAuMDB8MC4wMHwzNjAuMDA=)'>
+<text x='74.40' y='253.12' text-anchor='end' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='68.92px' lengthAdjust='spacingAndGlyphs'>VTC-E001 (2001)</text>
+<text x='74.40' y='122.22' text-anchor='end' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='68.92px' lengthAdjust='spacingAndGlyphs'>VTC-E002 (2023)</text>
+<text x='79.33' y='339.74' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='12.22px' lengthAdjust='spacingAndGlyphs'>0.0</text>
+<text x='239.73' y='339.74' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='12.22px' lengthAdjust='spacingAndGlyphs'>0.3</text>
+<text x='400.13' y='339.74' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='12.22px' lengthAdjust='spacingAndGlyphs'>0.6</text>
+<text x='560.54' y='339.74' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='12.22px' lengthAdjust='spacingAndGlyphs'>0.9</text>
+<text x='396.93' y='352.20' text-anchor='middle' style='font-size: 11.00px; font-family: "Arial";' textLength='179.73px' lengthAdjust='spacingAndGlyphs'>H-ORAC-FL (mol TE/mol compound)</text>
+<text x='79.33' y='32.74' style='font-size: 11.00px;fill: #555555; font-family: "Arial";' textLength='442.84px' lengthAdjust='spacingAndGlyphs'>Historical source-table values; original-source closure remains pending; no percentile claim</text>
+<text x='79.33' y='16.22' style='font-size: 15.00px; font-weight: bold; font-family: "Arial";' textLength='278.14px' lengthAdjust='spacingAndGlyphs'>Vitamin C aqueous historical construct</text>
+</g>
+</g>
+</svg>

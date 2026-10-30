@@ -1,0 +1,1512 @@
+[
+  {
+    "old_path": "archive/superseded_outputs/figures/Flavonoid_Top20_Evidence_Confidence.png",
+    "new_path": "archive/history/2026-09-18/figure_redundancy_stage24/01_flavonoids/2026-09-18_Flavonoids_Evidence_Confidence.png",
+    "action": "DELETE_BYTE_IDENTICAL_REDUNDANT_FIGURE_COPY",
+    "sha256": "313eaeab2da48d9c6b52672f6ba67a2f879f314a2f09e43f29f4c0df278ff8cb",
+    "reason": "保留同字节历史图；引用仅见旧治理清单，由本映射保留路径解释；无独立实验/审核/过程信息"
+  },
+  {
+    "old_path": "archive/superseded_outputs/figures/PhenolicAcid_Evidence_Confidence.png",
+    "new_path": "archive/history/2026-09-18/figure_redundancy_stage24/02_phenolic_acids/2026-09-18_PhenolicAcids_Evidence_Confidence.png",
+    "action": "DELETE_BYTE_IDENTICAL_REDUNDANT_FIGURE_COPY",
+    "sha256": "4cff0c1cfb9b0b439926fa450c74f162648809f2c1ee92c15596a068ea94fdec",
+    "reason": "保留同字节历史图；引用仅见旧治理清单，由本映射保留路径解释；无独立实验/审核/过程信息"
+  },
+  {
+    "old_path": "archive/aqueous_reset_build_outputs.py",
+    "new_path": "archive/history/2026-09-18/2026-09-18_aqueous_reset_build_outputs.py",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "91389d58e258df23e4fba8e3646567820a8546517e715499ec408284cb11d4d2",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/aqueous_reset_qc.py",
+    "new_path": "archive/history/2026-09-18/2026-09-18_aqueous_reset_qc.py",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "113123055afd35489b087034017ef20fe66444d727a4f049158003ac1e9d6c19",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/atlas_transition_2026-09-18/Antioxidant_Mechanism_Evidence_Master.csv",
+    "new_path": "archive/history/2026-09-18/atlas_transition_2026-09-18/2026-09-18_Antioxidant_Mechanism_Evidence_Master.csv",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "28741b9467dab737dbd35550f18beeca6e9b1e94605d2bb8dbde5d5244e67adf",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/atlas_transition_2026-09-18/Antioxidant_Panel_Master.csv",
+    "new_path": "archive/history/2026-09-18/atlas_transition_2026-09-18/2026-09-18_Antioxidant_Panel_Master.csv",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "fea5b6718e2d418362432351c16f3e600183f1c90e774f47881c673c31ade542",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/atlas_transition_2026-09-18/Antioxidant_Project_MASTER_Report_v1.0_CN.md",
+    "new_path": "archive/history/2026-09-18/atlas_transition_2026-09-18/2026-09-18_Antioxidant_Project_MASTER_Report_v1.0_CN.md",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "e0c7faa6c01060ed89e785b7ac4b58fb15636a258771b027d8a60f9299400f65",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/atlas_transition_2026-09-18/build_atlas_framework.py",
+    "new_path": "archive/history/2026-09-18/atlas_transition_2026-09-18/2026-09-18_build_atlas_framework.py",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "ea59f0655f713dc027c4fe02740de8a12697518408e4fc6eeefa48a95b7b5fde",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/atlas_transition_2026-09-18/figures/Antioxidant_Evidence_Map.png",
+    "new_path": "archive/history/2026-09-18/atlas_transition_2026-09-18/figures/2026-09-18_Antioxidant_Evidence_Map.png",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "04c34108f27483296b9ecabece4c5144ddd46e28e748fc258822cf63bfd09777",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/atlas_transition_2026-09-18/figures/Class_Balanced_Antioxidant_Panel.png",
+    "new_path": "archive/history/2026-09-18/atlas_transition_2026-09-18/figures/2026-09-18_Class_Balanced_Antioxidant_Panel.png",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "df9bc19e9f73b656ff616b6804839182143fde82fd909b9c34991389ddaf9fce",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/atlas_transition_2026-09-18/figures/Compound_Pathway_Evidence_Heatmap.png",
+    "new_path": "archive/history/2026-09-18/atlas_transition_2026-09-18/figures/2026-09-18_Compound_Pathway_Evidence_Heatmap.png",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "cf7e131b4f5002a8ea88ec88e4ef71a67d028fe4b24858ae38f73794881a7ac6",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/atlas_transition_2026-09-18/figures/Dietary_Exposure_Range.png",
+    "new_path": "archive/history/2026-09-18/atlas_transition_2026-09-18/figures/2026-09-18_Dietary_Exposure_Range.png",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "c77ca01d3384f815a16d03eb67203f3f512f8448cc8e93066ef9e90214ea57b2",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/atlas_transition_2026-09-18/scripts/make_antioxidant_figures.py",
+    "new_path": "archive/history/2026-09-18/atlas_transition_2026-09-18/scripts/2026-09-18_make_antioxidant_figures.py",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "2bff0af6150c2bbc1de3cc973514151990cd6736f68f67e316a74eecbc8c4fb5",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/figure_qc_stage25A1/FIGURE_QC_MANIFEST.csv",
+    "new_path": "archive/history/2026-09-20/figure_qc_stage25A1/2026-09-20_FIGURE_QC_MANIFEST.csv",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "d8cf8c4003034e48dfca1ffb0e39770a20f2411d7de84ec78e5b70325c63a5bd",
+    "date": "2026-09-20",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/figure_qc_stage25A1/Stage25A_Publications_vs_Citations_AXIS_ERROR.png",
+    "new_path": "archive/history/2026-09-20/figure_qc_stage25A1/2026-09-20_Stage25A_Publications_vs_Citations_AXIS_ERROR.png",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "789efa1ca0fc178809a6bbe268fc4d3c55a55177fe78a25858332a47b0752bb4",
+    "date": "2026-09-20",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/figure_qc_stage25A1/Stage25A_Recent_vs_Historical_Evidence_AXIS_ERROR.png",
+    "new_path": "archive/history/2026-09-20/figure_qc_stage25A1/2026-09-20_Stage25A_Recent_vs_Historical_Evidence_AXIS_ERROR.png",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "a45b5faa0afe93bd64f94a33bf2dfa87b2f83001ad19879198a74b4782cbf685",
+    "date": "2026-09-20",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/figure_redundancy_stage24/00_overview/Aqueous_Antioxidant_Class_Overview.png",
+    "new_path": "archive/history/2026-09-18/figure_redundancy_stage24/00_overview/2026-09-18_Aqueous_Antioxidant_Class_Overview.png",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "6b53ca506b67fdd357b28383b5f961a131adca59a1b2f3957548e2a88c722249",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/figure_redundancy_stage24/00_overview/Aqueous_Class_Ranking_Leaders.png",
+    "new_path": "archive/history/2026-09-18/figure_redundancy_stage24/00_overview/2026-09-18_Aqueous_Class_Ranking_Leaders.png",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "06285536e68bc0ef58f737580c70e8008b851f7f7a362836968dbf08c6f6299c",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/figure_redundancy_stage24/00_overview/Aqueous_Evidence_Confidence_Overview.png",
+    "new_path": "archive/history/2026-09-18/figure_redundancy_stage24/00_overview/2026-09-18_Aqueous_Evidence_Confidence_Overview.png",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "68597a2a8d2d02a1964528bb83c8b7945ac6b635970294aedcc9da4ac04ec368",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/figure_redundancy_stage24/01_flavonoids/Flavonoids_Evidence_Confidence.png",
+    "new_path": "archive/history/2026-09-18/figure_redundancy_stage24/01_flavonoids/2026-09-18_Flavonoids_Evidence_Confidence.png",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "313eaeab2da48d9c6b52672f6ba67a2f879f314a2f09e43f29f4c0df278ff8cb",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/figure_redundancy_stage24/02_phenolic_acids/PhenolicAcids_Evidence_Confidence.png",
+    "new_path": "archive/history/2026-09-18/figure_redundancy_stage24/02_phenolic_acids/2026-09-18_PhenolicAcids_Evidence_Confidence.png",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "4cff0c1cfb9b0b439926fa450c74f162648809f2c1ee92c15596a068ea94fdec",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/figure_redundancy_stage24/03_stilbenes_lignans/Class_Status_Summary.md",
+    "new_path": "archive/history/2026-09-18/figure_redundancy_stage24/03_stilbenes_lignans/2026-09-18_Class_Status_Summary.md",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "1702bde254420ae62a1268dba20025c3cab099a127770d0049e6c2d4397f9578",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/figure_redundancy_stage24/03_stilbenes_lignans/Stilbenes_Lignans_Evidence_Confidence.png",
+    "new_path": "archive/history/2026-09-18/figure_redundancy_stage24/03_stilbenes_lignans/2026-09-18_Stilbenes_Lignans_Evidence_Confidence.png",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "2c26d3ba3de86a025d200ceadebb97b07f61d5ebd3cf5f24c7b6061ce45d88f6",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/figure_redundancy_stage24/04_water_soluble_vitamins/VitaminC_TopN.png",
+    "new_path": "archive/history/2026-09-18/figure_redundancy_stage24/04_water_soluble_vitamins/2026-09-18_VitaminC_TopN.png",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "30b3d8d34077ba82c5b8e8e173ccd34f2a24ef8cc29375c270be1c5b3d198351",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/figure_redundancy_stage24/07_other_aqueous_phytochemicals/Class_Status_Summary.md",
+    "new_path": "archive/history/2026-09-18/figure_redundancy_stage24/07_other_aqueous_phytochemicals/2026-09-18_Class_Status_Summary.md",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "90b0cc3df1a673ce61c11c4f794b024940e26503d84c3e2b14f8222b73b5fca4",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/figure_redundancy_stage24/07_other_aqueous_phytochemicals/Other_Aqueous_Evidence_Confidence.png",
+    "new_path": "archive/history/2026-09-18/figure_redundancy_stage24/07_other_aqueous_phytochemicals/2026-09-18_Other_Aqueous_Evidence_Confidence.png",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "d96acf2f7cefe08d78b30c4ad2c4c5104d9b91c27df4bee12df3cfb19c967d3d",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/figure_redundancy_stage24/08_metal_chelation/Metal_Chelation_Evidence_Overview.png",
+    "new_path": "archive/history/2026-09-18/figure_redundancy_stage24/08_metal_chelation/2026-09-18_Metal_Chelation_Evidence_Overview.png",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "022366ae60b7bdeb726cc957c9a44caeb19ad90884327ececd54a806defb8892",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/figure_redundancy_stage24/08_metal_chelation/Metal_Redox_Mechanism_Framework.png",
+    "new_path": "archive/history/2026-09-18/figure_redundancy_stage24/08_metal_chelation/2026-09-18_Metal_Redox_Mechanism_Framework.png",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "d8a055044a57876f977b816345f31eda28406ec69b64837117901bc67de73045",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/figure_redundancy_stage24/ARCHIVED_FIGURES_MANIFEST.csv",
+    "new_path": "archive/history/2026-09-20/figure_redundancy_stage24/2026-09-20_ARCHIVED_FIGURES_MANIFEST.csv",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "b2c9a8fdbc1caabbb53b5db7ed154b817971aa7b64a9d8cb55ab84fdfa428ea0",
+    "date": "2026-09-20",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/global_overview_schema_pilot.py",
+    "new_path": "archive/history/2026-09-18/2026-09-18_global_overview_schema_pilot.py",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "9a401d295f80878016e0e6a9c9e335587154201087418944b1031e4752439ab6",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/historical_stage_summaries/Stage_00_Scientific_Question_CN.md",
+    "new_path": "archive/history/2026-09-18/historical_stage_summaries/2026-09-18_Stage_00_Scientific_Question_CN.md",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "e15d5d23c01c13fc862a5c5e423d91ea0412cf5577249db253eb34b1161ab1b8",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/historical_stage_summaries/Stage_01_Initial_Candidate_Framework_CN.md",
+    "new_path": "archive/history/2026-09-18/historical_stage_summaries/2026-09-18_Stage_01_Initial_Candidate_Framework_CN.md",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "b0a6f4d72275d67480f46bb211d457821ec50daf6355577241b74d0d6e817e28",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/historical_stage_summaries/Stage_02_Antioxidant_Assay_Comparison_CN.md",
+    "new_path": "archive/history/2026-09-18/historical_stage_summaries/2026-09-18_Stage_02_Antioxidant_Assay_Comparison_CN.md",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "42c5159a4e715d2670f12691fc8e7213c0855faabf75ad2a0b6afbd608f3a5e5",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/historical_stage_summaries/Stage_03_ORAC_Primary_Metric_Decision_CN.md",
+    "new_path": "archive/history/2026-09-18/historical_stage_summaries/2026-09-18_Stage_03_ORAC_Primary_Metric_Decision_CN.md",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "1b5d481bb1cf6510b4e2dac4a39ae79f5854513179582b521cbf2715eec055fc",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/historical_stage_summaries/Stage_04_H_vs_L_ORAC_Framework_CN.md",
+    "new_path": "archive/history/2026-09-18/historical_stage_summaries/2026-09-18_Stage_04_H_vs_L_ORAC_Framework_CN.md",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "42aae2a3f0de0de7b5c7670416a62b9ebf98c919ccff91ddfb9d2df2b9c4296f",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/historical_stage_summaries/Stage_05_Literature_Eligibility_and_Tiering_CN.md",
+    "new_path": "archive/history/2026-09-18/historical_stage_summaries/2026-09-18_Stage_05_Literature_Eligibility_and_Tiering_CN.md",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "c907cf4cbe3f8dcf382847769ee1bca367c25a727d5e63a3f51a3b25751be7d7",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/historical_stage_summaries/Stage_06_Candidate_Scope_Definition_CN.md",
+    "new_path": "archive/history/2026-09-18/historical_stage_summaries/2026-09-18_Stage_06_Candidate_Scope_Definition_CN.md",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "6b3121dc56e26cc6ab405c471081418810f7e9417d68f202d5c9b5b43fe01d70",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/historical_stage_summaries/Stage_07_ORAC_Pilot_CN.md",
+    "new_path": "archive/history/2026-09-18/historical_stage_summaries/2026-09-18_Stage_07_ORAC_Pilot_CN.md",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "2dd325ec69b383a53d6be5083c863611e371a056b31e0b18781c817716a490cb",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/historical_stage_summaries/Stage_08_Exploratory_ORAC_Ranking_CN.md",
+    "new_path": "archive/history/2026-09-18/historical_stage_summaries/2026-09-18_Stage_08_Exploratory_ORAC_Ranking_CN.md",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "71dfb34571a6f349d5046f49b63e67ba886016af956fa30a22827ba45ce50855",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/historical_stage_summaries/Stage_09_H_ORAC_Candidate_Universe_CN.md",
+    "new_path": "archive/history/2026-09-18/historical_stage_summaries/2026-09-18_Stage_09_H_ORAC_Candidate_Universe_CN.md",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "02b7e9d2575a9db6e8ca623a0094a087cd6c14d5e54eaa50ec4e27bf62df48fc",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/historical_stage_summaries/Stage_10_Provisional_Top20_CN.md",
+    "new_path": "archive/history/2026-09-18/historical_stage_summaries/2026-09-18_Stage_10_Provisional_Top20_CN.md",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "7c0ff777380c77a5a7f97a079fe2d9ca6da5d7d62f12e85f67ed29e69e6fe2e5",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/historical_stage_summaries/Stage_11_Evidence_Consolidation_CN.md",
+    "new_path": "archive/history/2026-09-18/historical_stage_summaries/2026-09-18_Stage_11_Evidence_Consolidation_CN.md",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "e2c62d9c3b9948415e5d50f4a10bc79edd924bb184cff3565ede4e32d6507082",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/historical_stage_summaries/Stage_12_Target_Mapping_Readiness_CN.md",
+    "new_path": "archive/history/2026-09-18/historical_stage_summaries/2026-09-18_Stage_12_Target_Mapping_Readiness_CN.md",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "d007f504b3c0b968a87a274f0b1f6fadd65a538dcb35ac89e4709000dbdc846d",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/historical_stage_summaries/Stage_13_MASTER_Pipeline_CN.md",
+    "new_path": "archive/history/2026-09-18/historical_stage_summaries/2026-09-18_Stage_13_MASTER_Pipeline_CN.md",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "97384b3b46e312c5744b1862498892d0ee4e82c157df4496372a2d3635667939",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/historical_stage_summaries/Stage_14_Class_Balanced_Panel_Pilot_CN.md",
+    "new_path": "archive/history/2026-09-18/historical_stage_summaries/2026-09-18_Stage_14_Class_Balanced_Panel_Pilot_CN.md",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "9b994f389a77d1912b93a94668b0dba8e0f3c4567227ff2f86e1a3d70f018fc0",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/historical_stage_summaries/Stage_15_Mechanism_Evidence_Framework_CN.md",
+    "new_path": "archive/history/2026-09-18/historical_stage_summaries/2026-09-18_Stage_15_Mechanism_Evidence_Framework_CN.md",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "adcf86d95cc9976dbf3bb0c56010e901ec0b0cab2ef1ca83d80accbb3798f123",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/historical_stage_summaries/Stage_16_Current_Transition_to_Functional_Factor_Atlas_CN.md",
+    "new_path": "archive/history/2026-09-18/historical_stage_summaries/2026-09-18_Stage_16_Current_Transition_to_Functional_Factor_Atlas_CN.md",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "d943a91e55f32471a5c5dd9fd9ec2229f40abf3415d2c0ea5491b647c508b04a",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/historical_stage_summaries/Stage_17_Phase2_Candidate_Universe_CN.md",
+    "new_path": "archive/history/2026-09-18/historical_stage_summaries/2026-09-18_Stage_17_Phase2_Candidate_Universe_CN.md",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "5ebb0836599d5dca5e421974210ddc51304e82281e8ad3197a1beffa2d8ef5b9",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/historical_sync/CHATGPT_SYNC_FILES_STAGE24.csv",
+    "new_path": "archive/history/2026-09-20/historical_sync/2026-09-20_CHATGPT_SYNC_FILES_STAGE24.csv",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "c87d779e1e545f99aa0395d735914f5b090231598b07eb16d41982477b32ca63",
+    "date": "2026-09-20",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/historical_sync/CHATGPT_SYNC_MANIFEST_STAGE24.md",
+    "new_path": "archive/history/2026-09-20/historical_sync/2026-09-20_CHATGPT_SYNC_MANIFEST_STAGE24.md",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "905b88c0200ec5edad15bc87a33e3ce2eefb5a8db13e773ac1a8e8c082c4b7a2",
+    "date": "2026-09-20",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/historical_sync/CHATGPT_SYNC_STAGE25A.md",
+    "new_path": "archive/history/2026-09-20/historical_sync/2026-09-20_CHATGPT_SYNC_STAGE25A.md",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "7b189ea79aed6bb4151014ba37ebf4be8f839b23776d4cc8e6e834d1d26c2752",
+    "date": "2026-09-20",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/build_class_balanced_panel.py",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/2026-09-18_build_class_balanced_panel.py",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "110fa9ca9adca30bcfdd4ba0146dee3455b26646758a31847efeffef930e611d",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/data/CUPRAC_Coverage_Summary.csv",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/data/2026-09-18_CUPRAC_Coverage_Summary.csv",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "447d5f42b9ad821fa0cc8481526a08b8a85ef6bae262696b1eeae02660e33540",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/data/High_Importance_Missing_ORAC_Candidates.csv",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/data/2026-09-18_High_Importance_Missing_ORAC_Candidates.csv",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "e5727487ef8e542d29afc1df1c994e992f493a60cae8b2a1fb3412c659ba8f3d",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/data/H_ORAC_Phenolic_Candidate_Universe.csv",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/data/2026-09-18_H_ORAC_Phenolic_Candidate_Universe.csv",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "c63b6633fa86a2bc18f5d0c5127edbb81a7a478da7395d44f7e5b37421758f02",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/data/H_ORAC_Phenolic_Literature_Records.csv",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/data/2026-09-18_H_ORAC_Phenolic_Literature_Records.csv",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "a8eebed6f8602a5c3630b3aa4b83d822ae0a74b62cbcd13ceb46605b32be369b",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/data/H_ORAC_Provisional_Ranking.csv",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/data/2026-09-18_H_ORAC_Provisional_Ranking.csv",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "249d75943b2e42749bbb6c3fc3c343076c77acc83ac25599a3df813ce0e8a642",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/data/ORAC_Exploratory_Compound_Summary.csv",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/data/2026-09-18_ORAC_Exploratory_Compound_Summary.csv",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "cc5d0be7d9de4dbd801c91125d45790e67c9073e6dd3171bb285cb6f0138ce9d",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/data/ORAC_Pilot_Raw_Extraction.csv",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/data/2026-09-18_ORAC_Pilot_Raw_Extraction.csv",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "b8f211eec2908a55ec18bec62792fa2418ba98563bab7d1fe0aa18fa34335ae5",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/data/ORAC_Pilot_Reclassified_A_B1_B2.csv",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/data/2026-09-18_ORAC_Pilot_Reclassified_A_B1_B2.csv",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "04df0c486860f6106dfa522721430a21fb060fc578cbe970f172a224e24336f4",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/data/ORAC_Pilot_TierA_Analysis.csv",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/data/2026-09-18_ORAC_Pilot_TierA_Analysis.csv",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "f0f8db5bd6551f70b11749c8744a92e9a839fb5e21ef6992fbec50c23ef0ef72",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/data/orac_review_fulltext.xml",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/data/2026-09-18_orac_review_fulltext.xml",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "200427c1055bcc72938cf0134e30109eb21c9c03677e90988064ed30c6797488",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/data/pubchem_h_orac_phenolics.json",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/data/2026-09-18_pubchem_h_orac_phenolics.json",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "563ce7716b7e0dfa535d065a0f1828b8c3cb3c85b0d4207180fd4861180bcfef",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/data/pubchem_pilot_compounds.json",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/data/2026-09-18_pubchem_pilot_compounds.json",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "39dd67ef357c6942aa96b246394373130099b03df5c08358f662af81268b67d4",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/data/Target_Mapping_Shortlist_v0.1.csv",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/data/2026-09-18_Target_Mapping_Shortlist_v0.1.csv",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "9ed2fcdf8d093660303d23a3480465d05d9c7c1e7081422e908f02f9726221c0",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/data/Top20_Evidence_Consolidation_Records.csv",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/data/2026-09-18_Top20_Evidence_Consolidation_Records.csv",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "8f6be4e16ace1f4f40b2eabc27eaba8c9e922d09e10b652349d7a0508915377c",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/data/Top20_Ranking_Before_After.csv",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/data/2026-09-18_Top20_Ranking_Before_After.csv",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "3ac7c9c4f12235b8569b784edf7ea8976e2024f2dcc8cf027758a309c8c9779d",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/docs/Antioxidant_Screening_Protocol_CN.md",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/docs/2026-09-18_Antioxidant_Screening_Protocol_CN.md",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "14df26d30c190ebc753e4a0fd5176b2d66807328e0231a0821682b3b7d9a6738",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/docs/Antioxidant_Screening_Protocol_EN.md",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/docs/2026-09-18_Antioxidant_Screening_Protocol_EN.md",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "2bbf98163b2920da6930a8ebd2a98c53ab423de3c1eab8c69a30dcfb2f841b6e",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/docs/One_Sentence_Candidate_Scope_CN.md",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/docs/2026-09-18_One_Sentence_Candidate_Scope_CN.md",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "61eadfadcb7e7108bc91c0f6519de041e1b8a19377252ba425f24d4807915b22",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/docs/One_Sentence_Candidate_Scope_EN.md",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/docs/2026-09-18_One_Sentence_Candidate_Scope_EN.md",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "bc50fe86c93eb134eb025ac8373b1d4b75368c692f9ea004220e6ee0f1a723ea",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/docs/One_Sentence_Screening_Standard_CN.md",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/docs/2026-09-18_One_Sentence_Screening_Standard_CN.md",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "09a63639f366f54f17097f19d9a5b96649264174b46d14a8a475908b04dce3f7",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/docs/One_Sentence_Screening_Standard_EN.md",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/docs/2026-09-18_One_Sentence_Screening_Standard_EN.md",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "9427a2b752b1e15e157a755d5a70a1a36363febc32f1874659dc78f54f71556b",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/docs/One_Sentence_Screening_Standard_v2_CN.md",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/docs/2026-09-18_One_Sentence_Screening_Standard_v2_CN.md",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "7af907e82a3650b844fc5b19d381af26ae2101b16a15c87897e91365ba2fe74f",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/docs/ORAC_Exploratory_Results_CN.md",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/docs/2026-09-18_ORAC_Exploratory_Results_CN.md",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "1a39f8faddafff9847c0db6ef9aeb0e4177abb59541817c5e31028b6b67a4cd8",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/docs/ORAC_Exploratory_Results_EN.md",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/docs/2026-09-18_ORAC_Exploratory_Results_EN.md",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "9b312305a3ad5a763931ecf732a03dd9c351f8779520f86479e62625ab540c43",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/docs/ORAC_Pilot_Results_CN.md",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/docs/2026-09-18_ORAC_Pilot_Results_CN.md",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "e275e9b2bcf5d309137c616a1aa45c1c324ae188ce663d0e6a3e72fcebbca5e5",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/docs/ORAC_Pilot_Results_EN.md",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/docs/2026-09-18_ORAC_Pilot_Results_EN.md",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "3175497b4a66cd6b77c603d760d7853b2857e9cf25476b2d0bafe3a56cbd56f7",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/docs/Phase_0_1_Decision_Log_CN.md",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/docs/2026-09-18_Phase_0_1_Decision_Log_CN.md",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "53bc038bcc1982d4294dcf9bfe47a119123ac86064194af386c5efcdcb450331",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/docs/Phase_0_1_Decision_Log_EN.md",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/docs/2026-09-18_Phase_0_1_Decision_Log_EN.md",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "b3c9ed6eeac3517d53ac2aa3d975a201e12ae1e1452b87be998c2e2315d72f32",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/docs/Protocol_v1_to_v2_Change_Log_CN.md",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/docs/2026-09-18_Protocol_v1_to_v2_Change_Log_CN.md",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "6b5510f2e6990651c04a760bbdd34bb253bc5d99182b7a429cf2acd562431948",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/docs/Protocol_v1_to_v2_Change_Log_EN.md",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/docs/2026-09-18_Protocol_v1_to_v2_Change_Log_EN.md",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "b53a2c65158fecd10e32c10e276fe7a1a53849ff5e00f5d65e3fbb6075210d35",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/docs/Recommended_Project_Folder_Structure_CN.md",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/docs/2026-09-18_Recommended_Project_Folder_Structure_CN.md",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "ce815417d17d9f1a522f390dda3bc2236ed3ec72e5b5865600714e4e1a411c74",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/docs/Supervisor_H_ORAC_Top20_Update_CN.md",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/docs/2026-09-18_Supervisor_H_ORAC_Top20_Update_CN.md",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "8a1f2c629ffabf25545c5d5b9f260e1f853285eb7eb7c951b7906df2435acfaf",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/docs/Supervisor_ORAC_Pilot_Update_CN.md",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/docs/2026-09-18_Supervisor_ORAC_Pilot_Update_CN.md",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "eb7ccdbcbca6ecc9999b7ef78e956ba47fb347b0c750dca50e2512b27da3116f",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/docs/Supervisor_Protocol_Summary_CN.md",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/docs/2026-09-18_Supervisor_Protocol_Summary_CN.md",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "1271a26c2556c91ed5fc270a82f4af6d05ba9dcb1c2d52ba0489ec23978e4896",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/docs/Supervisor_Top20_Evidence_Consolidation_CN.md",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/docs/2026-09-18_Supervisor_Top20_Evidence_Consolidation_CN.md",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "4610e5edcef9d60bc586a24945e6085ce082dfc627fadca20c7f3b73b08bf604",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/docs/Top20_Evidence_Change_Log_CN.md",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/docs/2026-09-18_Top20_Evidence_Change_Log_CN.md",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "1bf7fd04536d827dacd664c8ea2127ee4285ea421180f16a5e3057fa57bbc097",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/docs/Top20_Evidence_Change_Log_EN.md",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/docs/2026-09-18_Top20_Evidence_Change_Log_EN.md",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "c9b23f82f4459c356fe04f80ce8b275a098e5d84223cea70e0ebea9fbb51a0b4",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/docs/Top20_Evidence_Consolidation_Results_CN.md",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/docs/2026-09-18_Top20_Evidence_Consolidation_Results_CN.md",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "cd65598bd6e12b24e3feb111a3c97e3ae5c4010016c5df0326de42e8d8601b07",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/docs/Top20_Evidence_Consolidation_Results_EN.md",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/docs/2026-09-18_Top20_Evidence_Consolidation_Results_EN.md",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "83131d49b7e14811d874b22bd53228b591e12867e92c8fe79ca8147d96cddbfe",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/figures/H_ORAC_Evidence_Confidence.png",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/figures/2026-09-18_H_ORAC_Evidence_Confidence.png",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "e7b200ce0388e636dd31d21afa468ca2c04cc57b09435da35bb956aa8393f308",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/figures/H_ORAC_Exploratory_Historical_Comparison.png",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/figures/2026-09-18_H_ORAC_Exploratory_Historical_Comparison.png",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "75503c10ea1374ae6ce1808411b3e18e0bb7ed16eb620d93d4d614d229321c61",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/figures/H_ORAC_Historical_Distribution.png",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/figures/2026-09-18_H_ORAC_Historical_Distribution.png",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "82cb6028b54d2755f81766a84185af7ac0f1ec6aa504fb9026d6353c9bc4e80e",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/figures/H_ORAC_Provisional_Top20.png",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/figures/2026-09-18_H_ORAC_Provisional_Top20.png",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "b792925c18393ddc36c6480252dd90b0fbfe710676ea7c3ce005e880bb71559b",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/figures/H_ORAC_SCREENING_PIPELINE_FLOWCHART.png",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/figures/2026-09-18_H_ORAC_SCREENING_PIPELINE_FLOWCHART.png",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "06e2f9fd330761f6e019cef61195282565db4f443777ed91756eb40be574f5a9",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/figures/H_ORAC_Subclass_Coverage.png",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/figures/2026-09-18_H_ORAC_Subclass_Coverage.png",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "61504e543c6837b8f524f50a9ff5c9579fc5a220fb1a201106ba573fe8e79cab",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/figures/L_ORAC_Exploratory_Historical_Comparison.png",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/figures/2026-09-18_L_ORAC_Exploratory_Historical_Comparison.png",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "f8b9f3c43e48cd893ae137ccb8a6c02180d2f5068591e0750276465f3e82321b",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/figures/L_ORAC_Historical_Distribution.png",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/figures/2026-09-18_L_ORAC_Historical_Distribution.png",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "ee90af8bd0f4ba4a1a0055b226070fd348d65434618b6bffb61859f726bb59f0",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/figures/Missing_Key_Phenolics_ORAC_Status.png",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/figures/2026-09-18_Missing_Key_Phenolics_ORAC_Status.png",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "a8fe5316d76cd48294197738cfc903c437d18a4f20222c290eeb505f8edec26a",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/figures/ORAC_Evidence_Coverage_Matrix.png",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/figures/2026-09-18_ORAC_Evidence_Coverage_Matrix.png",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "096dfab33615a1b98d43fd0fcd87d57969bf4c8ccb9ebd19a629b5e7277ce9dc",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/figures/ORAC_Literature_Coverage.png",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/figures/2026-09-18_ORAC_Literature_Coverage.png",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "ba9cce665d701bffd78e7e4a62c73499d06ca0cd16b565b92e41ebdcb7e6601e",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/figures/ORAC_Method_Heterogeneity.png",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/figures/2026-09-18_ORAC_Method_Heterogeneity.png",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "70e6ac7acb24b6740d113b59601302ec64404c2abe327794abb371063286ab05",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/figures/Top20_B1_Evidence_Depth.png",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/figures/2026-09-18_Top20_B1_Evidence_Depth.png",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "51e47e53b0d709f9799264bc16c8568267430a5de66896f52bc44108e59e3354",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/figures/Top20_Before_After_Rank_Comparison.png",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/figures/2026-09-18_Top20_Before_After_Rank_Comparison.png",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "edbc73059067308456a7eeaa4942bc2b13a04429b6a1142d7987490cbc33039c",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/handoff/Assay_Audit_Files_to_Upload_to_ChatGPT.md",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/handoff/2026-09-18_Assay_Audit_Files_to_Upload_to_ChatGPT.md",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "e69651592849daea8106c4cdb8d6b0666b4dd1f986c0a3665aa92190ce6f617c",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/handoff/assay_methodology_import.bib",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/handoff/2026-09-18_assay_methodology_import.bib",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "1298564fe566b450596d764e80b60d0858b6ddd3acc99e7600a13181cbe90796",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/handoff/Assay_Method_Audit_Sync_to_ChatGPT_CN.md",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/handoff/2026-09-18_Assay_Method_Audit_Sync_to_ChatGPT_CN.md",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "146701553e6ea8a31a8af0b08b8f8b26f43f4271ad0ab102279069e98d3a6a81",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/handoff/core_methodology_import.bib",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/handoff/2026-09-18_core_methodology_import.bib",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "df21d0566824b51bb6a215617788a89746bd9abe3c7c010e40515cb96ca77f97",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/handoff/Files_to_Upload_to_ChatGPT.md",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/handoff/2026-09-18_Files_to_Upload_to_ChatGPT.md",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "45a319db95c89989d468ebbbe2ad5825f2e0235137b28d83d313514bce1f712f",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/handoff/H_ORAC_Master_Pipeline_Files_to_Upload_to_ChatGPT.md",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/handoff/2026-09-18_H_ORAC_Master_Pipeline_Files_to_Upload_to_ChatGPT.md",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "a59aa5ccf90586a1645517ec107ebe2c10917805a043124158254236c52a2ab4",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/handoff/H_ORAC_Master_Pipeline_Sync_to_ChatGPT_CN.md",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/handoff/2026-09-18_H_ORAC_Master_Pipeline_Sync_to_ChatGPT_CN.md",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "6601e23b217ff7669e76183f171b8c459af12e09a1d85f79ae69d214dcedb079",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/handoff/H_ORAC_Top20_Files_to_Upload_to_ChatGPT.md",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/handoff/2026-09-18_H_ORAC_Top20_Files_to_Upload_to_ChatGPT.md",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "b17a4199fda9e1f33625c89a165f8a1b5bcafdb136fa997df1dbcd4b1f67caff",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/handoff/h_orac_top20_pending_zotero_import.bib",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/handoff/2026-09-18_h_orac_top20_pending_zotero_import.bib",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "8959c8c5c5b7b90293c72db58e642dab81baad6fa43852815bbf242b291519c3",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/handoff/H_ORAC_Top20_Sync_to_ChatGPT_CN.md",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/handoff/2026-09-18_H_ORAC_Top20_Sync_to_ChatGPT_CN.md",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "13aafe670070966f3d2b319f7517c2f6228f285510a8ab2467714dac4590bed4",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/handoff/orac_exploratory_pending_zotero_import.bib",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/handoff/2026-09-18_orac_exploratory_pending_zotero_import.bib",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "046405353d4e3336fa3cbc94bfb31ca7fe29428df817edc330b992b5db2526ea",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/handoff/ORAC_Exploratory_Ranking_Files_to_Upload_to_ChatGPT.md",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/handoff/2026-09-18_ORAC_Exploratory_Ranking_Files_to_Upload_to_ChatGPT.md",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "b2897b52a5fae7a1e1def129711858ef31f5cd0761f9eba9d96d106ebc599da0",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/handoff/ORAC_Exploratory_Ranking_Sync_to_ChatGPT_CN.md",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/handoff/2026-09-18_ORAC_Exploratory_Ranking_Sync_to_ChatGPT_CN.md",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "a2972ef3dae5cfb4442e922cbae0297f7a0f5a3e795d2bdeac5fda9e82858955",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/handoff/ORAC_Pilot_Files_to_Upload_to_ChatGPT.md",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/handoff/2026-09-18_ORAC_Pilot_Files_to_Upload_to_ChatGPT.md",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "d7a727e0f7c52a32150abad6dcbb26bbf503de46b43d1eca47d11d98aec2cb3f",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/handoff/orac_pilot_import.bib",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/handoff/2026-09-18_orac_pilot_import.bib",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "c577f72a67c81430a5e72af26fb12c7011438c0bb5b18abbcdc021c6861306d0",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/handoff/ORAC_Pilot_Sync_to_ChatGPT_CN.md",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/handoff/2026-09-18_ORAC_Pilot_Sync_to_ChatGPT_CN.md",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "20270def0396150b500a3dac8dd2b0eaf6bd132a5b6a79f99120b43f105d52f8",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/handoff/Protocol_v2_Files_to_Upload_to_ChatGPT.md",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/handoff/2026-09-18_Protocol_v2_Files_to_Upload_to_ChatGPT.md",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "281d616962548b8d3874394701f2411ad6ba9f9465d327b5e86655f81fb658f4",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/handoff/Protocol_v2_Sync_to_ChatGPT_CN.md",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/handoff/2026-09-18_Protocol_v2_Sync_to_ChatGPT_CN.md",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "2d33f0ae81980df4f23d2202ea72188a52ba0237884a72cab9e26fcd3069521d",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/handoff/Sync_to_ChatGPT_CN.md",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/handoff/2026-09-18_Sync_to_ChatGPT_CN.md",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "892f2f5b0266f115586a2445267c5429b66427fa9f6962fa95a560ff6bb8f72b",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/handoff/top20_consolidation_pending_zotero_import.bib",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/handoff/2026-09-18_top20_consolidation_pending_zotero_import.bib",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "594d0e74e2e34e087ef12789e7f8fbeb0308d1128d043987bea7b9431db4f711",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/handoff/Top20_Evidence_Consolidation_Files_to_Upload_to_ChatGPT.md",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/handoff/2026-09-18_Top20_Evidence_Consolidation_Files_to_Upload_to_ChatGPT.md",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "c3bc1e52585d08b92a17948a5f5d5398dd9de86e3d10bd1020c13c9752c7e163",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/handoff/Top20_Evidence_Consolidation_Sync_to_ChatGPT_CN.md",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/handoff/2026-09-18_Top20_Evidence_Consolidation_Sync_to_ChatGPT_CN.md",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "ca5a1a4da64577520334596ca7f6baf56e8c90fbaddb7f992d390a021f84bc38",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/scripts/build_h_orac_top20.py",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/scripts/2026-09-18_build_h_orac_top20.py",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "29f1d28576883cf697e79d731b8745a88bff74d1a38153388f3036ee59b4d3d3",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/scripts/build_master_pipeline_docs.py",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/scripts/2026-09-18_build_master_pipeline_docs.py",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "f0cc7ff8a8fe38167175975286ab8963254dc7747e093552d0da4f8e325959d7",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/scripts/build_orac_exploratory.py",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/scripts/2026-09-18_build_orac_exploratory.py",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "d869c37a4c841e19df5801aaeee501c0f17e06cd9ceeae1c507c9dfca79d1891",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/scripts/build_orac_pilot.py",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/scripts/2026-09-18_build_orac_pilot.py",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "0c54954d9f90ce2cbce81a94179329d8d809105b315fcd50e3cbac2478db2e26",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/scripts/build_top20_consolidation.py",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/scripts/2026-09-18_build_top20_consolidation.py",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "f83eae7e66753e6b39d77d535c2aa2c74c3a5bc97d42fe68889ab663b1687294",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/scripts/fetch_h_orac_pubchem.py",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/scripts/2026-09-18_fetch_h_orac_pubchem.py",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "876ad08c80f95be0b8edaf93564f605c7d2147d565d54bcb9b253aabc611cc70",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/_build_staging/Antioxidant_Mechanism_Evidence_Master.csv",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/_build_staging/2026-09-18_Antioxidant_Mechanism_Evidence_Master.csv",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "28741b9467dab737dbd35550f18beeca6e9b1e94605d2bb8dbde5d5244e67adf",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/_build_staging/Antioxidant_Panel_Master.csv",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/_build_staging/2026-09-18_Antioxidant_Panel_Master.csv",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "fea5b6718e2d418362432351c16f3e600183f1c90e774f47881c673c31ade542",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/_build_staging/Antioxidant_Project_MASTER_Report_v1.0_CN.md",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/_build_staging/2026-09-18_Antioxidant_Project_MASTER_Report_v1.0_CN.md",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "e0c7faa6c01060ed89e785b7ac4b58fb15636a258771b027d8a60f9299400f65",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/legacy_pre_class_balanced_2026-09-18/_build_staging/make_antioxidant_figures.py",
+    "new_path": "archive/history/2026-09-18/legacy_pre_class_balanced_2026-09-18/_build_staging/2026-09-18_make_antioxidant_figures.py",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "2007e5b3e9ced423a46e7f34a6d6d9c9003c83f0f4c555b7719ab6a0650fb9ab",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/phase2_candidate_universe_2026-09-18/Antioxidant_Class_Ranking_Master.csv",
+    "new_path": "archive/history/2026-09-18/phase2_candidate_universe_2026-09-18/2026-09-18_Antioxidant_Class_Ranking_Master.csv",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "c2e3e520cc7dfbd07fc90f63630c8cfc2bfc4131ea1b5cbf6420ec8fc162d43d",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/phase2_candidate_universe_2026-09-18/Antioxidant_Mechanism_Evidence_Master.csv",
+    "new_path": "archive/history/2026-09-18/phase2_candidate_universe_2026-09-18/2026-09-18_Antioxidant_Mechanism_Evidence_Master.csv",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "1eb9c93a817afb015f5789e13d8b9caca249f6d9b9b7ed2a1e6fd208982ee463",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/phase2_candidate_universe_2026-09-18/build_phase2_summary.py",
+    "new_path": "archive/history/2026-09-18/phase2_candidate_universe_2026-09-18/2026-09-18_build_phase2_summary.py",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "6ad5104d97b6a60a72b986e9d7528fede5fd251be5f45a37be60e92b4ed60a73",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/phase2_candidate_universe_2026-09-18/build_phase2_universe.py",
+    "new_path": "archive/history/2026-09-18/phase2_candidate_universe_2026-09-18/2026-09-18_build_phase2_universe.py",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "e34183817364b886840ba3e925b936aae3dacb56a351de0ac655c2fe1229b8ea",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/phase3_historical_scripts/phase3a_build_outputs.py",
+    "new_path": "archive/history/2026-09-18/phase3_historical_scripts/2026-09-18_phase3a_build_outputs.py",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "458c48f544ee9e8ee89ea92e62a9f88de5714bea46875a0d69dc6fff67f61721",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/phase3_historical_scripts/phase3a_qc.py",
+    "new_path": "archive/history/2026-09-18/phase3_historical_scripts/2026-09-18_phase3a_qc.py",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "58a92cca2d57cbe7b45a13c0e5296fd7f0a3e9514f8e039fa943219979b6098e",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/phase3_historical_scripts/phase3b_build_outputs.py",
+    "new_path": "archive/history/2026-09-18/phase3_historical_scripts/2026-09-18_phase3b_build_outputs.py",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "da65ad5f9d16858aafab10bf0fdbedc4d8edb6baf7ff36105d9196b59dc2ece4",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/phase3_historical_scripts/phase3b_qc.py",
+    "new_path": "archive/history/2026-09-18/phase3_historical_scripts/2026-09-18_phase3b_qc.py",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "376c65db66d6eb59bb40777aaff21bf2740a4fdc3f2c624ffd952553be383816",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/phase3_historical_scripts/phase3c_build_outputs.py",
+    "new_path": "archive/history/2026-09-18/phase3_historical_scripts/2026-09-18_phase3c_build_outputs.py",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "692c1ae5759981a81711b967a2a598b459a96e63b739f3c961e8ffcf742709ed",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/phase3_historical_scripts/phase3c_qc.py",
+    "new_path": "archive/history/2026-09-18/phase3_historical_scripts/2026-09-18_phase3c_qc.py",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "8e40bc0ed90df1eab8e1e81f1ae307246d5d199ed68357643b569e2d9afa4a4a",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/phase3_historical_scripts/phase3d_build_outputs.py",
+    "new_path": "archive/history/2026-09-18/phase3_historical_scripts/2026-09-18_phase3d_build_outputs.py",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "3fea63a41693bbbd703811723ad69e7d0815565893071f1346b4b4f4b52f736d",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/phase3_historical_scripts/phase3d_qc.py",
+    "new_path": "archive/history/2026-09-18/phase3_historical_scripts/2026-09-18_phase3d_qc.py",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "e775eda0fe75ab2c60f66b642503cf76eae7f2cfc99d1f70c7e51eb2432d40f1",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/R_legacy/plot_antioxidant_atlas_pre_modularization.R",
+    "new_path": "archive/history/2026-09-20/R_legacy/2026-09-20_plot_antioxidant_atlas_pre_modularization.R",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "4b83f5337459510588bf1b7b5010ffeaa45fe611096fa7391a3885619e637249",
+    "date": "2026-09-20",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/stage24_historical_scripts/stage24b_figure_dedup.py",
+    "new_path": "archive/history/2026-09-18/stage24_historical_scripts/2026-09-18_stage24b_figure_dedup.py",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "f8f2ae9abd6de6e674df5994b2084c466b5761e789af4578c275a7317f52ceff",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/stage24_historical_scripts/stage24b_finalize_outputs.py",
+    "new_path": "archive/history/2026-09-18/stage24_historical_scripts/2026-09-18_stage24b_finalize_outputs.py",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "4b35d5de073a06c723c47c3b520f85d3b5b95f03661c591e16654858fff8afa4",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/stage24_historical_scripts/stage24b_qc.py",
+    "new_path": "archive/history/2026-09-18/stage24_historical_scripts/2026-09-18_stage24b_qc.py",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "672b8d75c177bfa0f80480c3644a5a770e4bc2250ae8fbe8668d3ed87367cf21",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/stage24_historical_scripts/stage24_build_outputs.py",
+    "new_path": "archive/history/2026-09-18/stage24_historical_scripts/2026-09-18_stage24_build_outputs.py",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "3ae93749768471d48b591c7aab6312053823b4ffaf1bba80b042e8e40fe87a49",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/stage24_historical_scripts/stage24_build_reports.py",
+    "new_path": "archive/history/2026-09-18/stage24_historical_scripts/2026-09-18_stage24_build_reports.py",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "09daeb84424f0e76aecec23a43a177fe82a3c1cf4acaee5998deaec6ba3c580c",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/stage24_historical_scripts/stage24_qc.py",
+    "new_path": "archive/history/2026-09-18/stage24_historical_scripts/2026-09-18_stage24_qc.py",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "055ac5ea6031c652aaccf608ffb5d5dda88907b7149ecbd014c7b5d8befa9b19",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/stage25_historical_scripts/stage25a1_finalize_audit.py",
+    "new_path": "archive/history/2026-09-20/stage25_historical_scripts/2026-09-20_stage25a1_finalize_audit.py",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "ab1f9458939c47e3376224ff6f1481add1361b70a6a9486f619fb73e97e7b09a",
+    "date": "2026-09-20",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/stage25_historical_scripts/stage25a1_inventory_and_reorganize.py",
+    "new_path": "archive/history/2026-09-20/stage25_historical_scripts/2026-09-20_stage25a1_inventory_and_reorganize.py",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "f20741759dd9d73bd7084dc69e66fe41d959a0fdaad39585b99ddf037bdd8b60",
+    "date": "2026-09-20",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/stage25_historical_scripts/stage25a_build_unified_screen.py",
+    "new_path": "archive/history/2026-09-20/stage25_historical_scripts/2026-09-20_stage25a_build_unified_screen.py",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "48161b75b5ba37f25e3fa55e98a4a779ec8b8b3fd3b1c3aafb3c9288f9141fbe",
+    "date": "2026-09-20",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/stage25_historical_scripts/stage25a_openalex_coverage_audit.py",
+    "new_path": "archive/history/2026-09-20/stage25_historical_scripts/2026-09-20_stage25a_openalex_coverage_audit.py",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "23b038bb224e7c14d87b906cc0dc7e49702228143ca73ee48fa6792450fda18f",
+    "date": "2026-09-20",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/stage25_historical_scripts/stage25a_qc.py",
+    "new_path": "archive/history/2026-09-20/stage25_historical_scripts/2026-09-20_stage25a_qc.py",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "d3b07064dbc81f30c40eeaf735cbdb7af8003b42eb796f968c518ca11ea20e53",
+    "date": "2026-09-20",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/superseded_outputs/Antioxidant_Micronutrient_Redox_Profile.csv",
+    "new_path": "archive/history/2026-09-18/superseded_outputs/2026-09-18_Antioxidant_Micronutrient_Redox_Profile.csv",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "f8be4f841d54626f696800c537e20307a31e09c947127646fccca8368226eb40",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/superseded_outputs/Cross_Class_Comparability_Matrix_v0.1.csv",
+    "new_path": "archive/history/2026-09-18/superseded_outputs/2026-09-18_Cross_Class_Comparability_Matrix_v0.1.csv",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "f2afb0ce2b075521022347f24925537a02363190a80ac6eaeb79c5cf9e54b39c",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/superseded_outputs/figures/Flavonoid_Evidence_Depth_vs_ORAC.png",
+    "new_path": "archive/history/2026-09-18/superseded_outputs/figures/2026-09-18_Flavonoid_Evidence_Depth_vs_ORAC.png",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "e0e06c4c23c8aa22f989e034563362461430ac40d8ee1fd65ad1e9930c54b649",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/superseded_outputs/figures/Flavonoid_Subclass_Coverage.png",
+    "new_path": "archive/history/2026-09-18/superseded_outputs/figures/2026-09-18_Flavonoid_Subclass_Coverage.png",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "aab32209b6ada964ed29a7492b1b9f2c910d95ceb8e89b70effbd28bfc970146",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/superseded_outputs/figures/Flavonoid_Top20_H_ORAC.png",
+    "new_path": "archive/history/2026-09-18/superseded_outputs/figures/2026-09-18_Flavonoid_Top20_H_ORAC.png",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "81b31ac2957e3f49b460dd90b0a5882bcf1b3c01d1b593f7275169b628b7297d",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/superseded_outputs/figures/PhenolicAcid_Evidence_Depth_vs_ORAC.png",
+    "new_path": "archive/history/2026-09-18/superseded_outputs/figures/2026-09-18_PhenolicAcid_Evidence_Depth_vs_ORAC.png",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "d25d5ee41137fa0e45d1e0edfebc880a06c055fb8740cd88c2347a7c9d54f891",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/superseded_outputs/figures/PhenolicAcid_Subclass_Coverage.png",
+    "new_path": "archive/history/2026-09-18/superseded_outputs/figures/2026-09-18_PhenolicAcid_Subclass_Coverage.png",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "c14f63288495ca4e9d569553373929c843072f8d8c60aa53954427d3dd58495f",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/superseded_outputs/figures/PhenolicAcid_TopN_H_ORAC.png",
+    "new_path": "archive/history/2026-09-18/superseded_outputs/figures/2026-09-18_PhenolicAcid_TopN_H_ORAC.png",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "0c489b749824db27303d24d2b88794384dfa08fdb371f8550912eb7b9ea7a359",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/superseded_outputs/figures/PhenolicAcid_TopN_Sensitivity.png",
+    "new_path": "archive/history/2026-09-18/superseded_outputs/figures/2026-09-18_PhenolicAcid_TopN_Sensitivity.png",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "1593b378d0c2424d61ecf53c45eb129e0ccfe10bc2501128a59d6a611986642a",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/superseded_outputs/Global_Top_Overview_Master_v0.1.csv",
+    "new_path": "archive/history/2026-09-18/superseded_outputs/2026-09-18_Global_Top_Overview_Master_v0.1.csv",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "a56361de067879e0179e176312d8153a28e3cc14e4100940c55c6f8a1551ee64",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "archive/superseded_outputs/Global_Top_Overview_Master_v0.2.csv",
+    "new_path": "archive/history/2026-09-18/superseded_outputs/2026-09-18_Global_Top_Overview_Master_v0.2.csv",
+    "action": "RENAME_HISTORY_WITH_LAST_CONTENT_GIT_DATE",
+    "sha256": "5752c2a6148a3a13bf2c5002a90c994814772a845511f91b144aa9aff3e7863b",
+    "date": "2026-09-18",
+    "date_basis": "git log --follow --diff-filter=AM; content tracked date, not move date"
+  },
+  {
+    "old_path": "current_review/CURRENT_DECISIONS_AND_GAPS.md",
+    "new_path": "archive/history/2026-10-15/review_governance/2026-10-15_CURRENT_DECISIONS_AND_GAPS.md",
+    "action": "PRESERVE_BEFORE_REBUILD_REVIEW_ENTRY",
+    "sha256": "649dd215865d5a6d84d7210f070e8df1c5f885e5a6a1ce018fd2b78b96eac287",
+    "date": "2026-10-15",
+    "date_basis": "last Git update of review entry"
+  },
+  {
+    "old_path": "current_review/CURRENT_DELIVERABLES_INDEX.csv",
+    "new_path": "archive/history/2026-10-16/review_governance/2026-10-16_CURRENT_DELIVERABLES_INDEX.csv",
+    "action": "PRESERVE_BEFORE_REBUILD_REVIEW_ENTRY",
+    "sha256": "951cd280ba30577090bcae395962178be545983c9724a33e2a518587b47f25e3",
+    "date": "2026-10-16",
+    "date_basis": "last Git update of review entry"
+  },
+  {
+    "old_path": "current_review/Duplicate_and_Obsolete_File_Audit.csv",
+    "new_path": "archive/history/2026-10-15/review_governance/2026-10-15_Duplicate_and_Obsolete_File_Audit.csv",
+    "action": "ARCHIVE_SUPERSEDED_REVIEW_REPORT",
+    "sha256": "c55474962a05f22d4cdb073ea44dbb96f68bef855c93af9205b77588d0af8ab9",
+    "date": "2026-10-15",
+    "date_basis": "last Git update of review entry"
+  },
+  {
+    "old_path": "current_review/File_Migration_and_Provenance_Map.csv",
+    "new_path": "archive/history/2026-10-15/review_governance/2026-10-15_File_Migration_and_Provenance_Map.csv",
+    "action": "ARCHIVE_SUPERSEDED_REVIEW_REPORT",
+    "sha256": "42683815810a63d708858c9a0c7ff0d1a3117187ab3f5864a80e1cac05234e35",
+    "date": "2026-10-15",
+    "date_basis": "last Git update of review entry"
+  },
+  {
+    "old_path": "current_review/File_Reorganization_Audit_2026-10-16_CN.md",
+    "new_path": "archive/history/2026-10-16/review_governance/2026-10-16_File_Reorganization_Audit_2026-10-16_CN.md",
+    "action": "ARCHIVE_SUPERSEDED_REVIEW_REPORT",
+    "sha256": "e32819b7e701e593cf8b9c9dd22ddf1610a8067b156c74f64d4b7b68c5f9d9ba",
+    "date": "2026-10-16",
+    "date_basis": "last Git update of review entry"
+  },
+  {
+    "old_path": "current_review/File_Reorganization_Migration_2026-10-16.csv",
+    "new_path": "archive/history/2026-10-16/review_governance/2026-10-16_File_Reorganization_Migration_2026-10-16.csv",
+    "action": "ARCHIVE_SUPERSEDED_REVIEW_REPORT",
+    "sha256": "6400a2c1d066086ae2765cff212e766af4e1ac99ef11ba33515903b8d81463ff",
+    "date": "2026-10-16",
+    "date_basis": "last Git update of review entry"
+  },
+  {
+    "old_path": "current_review/File_Reorganization_Validation_2026-10-16.json",
+    "new_path": "archive/history/2026-10-16/review_governance/2026-10-16_File_Reorganization_Validation_2026-10-16.json",
+    "action": "ARCHIVE_SUPERSEDED_REVIEW_REPORT",
+    "sha256": "ef8682849501750062dc0b3a77d67ba2a6862086a014fe5b3481f9e63ff0a041",
+    "date": "2026-10-16",
+    "date_basis": "last Git update of review entry"
+  },
+  {
+    "old_path": "current_review/HISTORICAL_VERSION_INDEX.csv",
+    "new_path": "archive/history/2026-10-16/review_governance/2026-10-16_HISTORICAL_VERSION_INDEX.csv",
+    "action": "PRESERVE_BEFORE_REBUILD_REVIEW_ENTRY",
+    "sha256": "6e358e7f2f24bc601a9afe81d465c4fa2f531025e03432e3ac961153437d01c1",
+    "date": "2026-10-16",
+    "date_basis": "last Git update of review entry"
+  },
+  {
+    "old_path": "current_review/LATEST_PROJECT_STATUS_CN.md",
+    "new_path": "archive/history/2026-10-15/review_governance/2026-10-15_LATEST_PROJECT_STATUS_CN.md",
+    "action": "PRESERVE_BEFORE_REBUILD_REVIEW_ENTRY",
+    "sha256": "65c2a94d556af2a1a7cf928aeb5f324d27525adda3432b50f9026db459cf648d",
+    "date": "2026-10-15",
+    "date_basis": "last Git update of review entry"
+  },
+  {
+    "old_path": "current_review/PROJECT_NAVIGATION.md",
+    "new_path": "archive/history/2026-10-16/review_governance/2026-10-16_PROJECT_NAVIGATION.md",
+    "action": "PRESERVE_BEFORE_REBUILD_REVIEW_ENTRY",
+    "sha256": "d315b4a343dcc6ed570d5cc95d786fa41757f4827977be88e7f0f6bb7df59ffb",
+    "date": "2026-10-16",
+    "date_basis": "last Git update of review entry"
+  },
+  {
+    "old_path": "current_review/Proposed_File_Cleanup_Plan_CN.md",
+    "new_path": "archive/history/2026-10-15/review_governance/2026-10-15_Proposed_File_Cleanup_Plan_CN.md",
+    "action": "ARCHIVE_SUPERSEDED_REVIEW_REPORT",
+    "sha256": "4f1a043b321ee1208096fab2c1cfaf27f6d8e1acd2f674b4635be200d27f8182",
+    "date": "2026-10-15",
+    "date_basis": "last Git update of review entry"
+  },
+  {
+    "old_path": "current_review/README_CURRENT_REVIEW.md",
+    "new_path": "archive/history/2026-10-16/review_governance/2026-10-16_README_CURRENT_REVIEW.md",
+    "action": "PRESERVE_BEFORE_REBUILD_REVIEW_ENTRY",
+    "sha256": "38751d5fb4b39103f83e949f8110ed4905276a9ab865f66e85ff504bd0093096",
+    "date": "2026-10-16",
+    "date_basis": "last Git update of review entry"
+  },
+  {
+    "old_path": "current_review/Repository_File_Inventory.csv",
+    "new_path": "archive/history/2026-10-15/review_governance/2026-10-15_Repository_File_Inventory.csv",
+    "action": "ARCHIVE_SUPERSEDED_REVIEW_REPORT",
+    "sha256": "7d42806195c81d30533dc2e1e756aac9f273e0bb3b2193ebc5dfff4d6a83af0c",
+    "date": "2026-10-15",
+    "date_basis": "last Git update of review entry"
+  },
+  {
+    "old_path": "current_review/Repository_File_Inventory_Current.csv",
+    "new_path": "archive/history/2026-10-16/review_governance/2026-10-16_Repository_File_Inventory_Current.csv",
+    "action": "PRESERVE_BEFORE_REBUILD_REVIEW_ENTRY",
+    "sha256": "15f36ce012eec19b7ad275b0ed26a65bf49f1c0a943a731ed169402149fbaf75",
+    "date": "2026-10-16",
+    "date_basis": "last Git update of review entry"
+  },
+  {
+    "old_path": "current_review/Repository_Governance_QC_Report_CN.md",
+    "new_path": "archive/history/2026-10-16/review_governance/2026-10-16_Repository_Governance_QC_Report_CN.md",
+    "action": "ARCHIVE_SUPERSEDED_REVIEW_REPORT",
+    "sha256": "a96384f9afc463c0f70caeed4a6f9877cd31c7f3ca556ef9a8f229c2c6f0e2c9",
+    "date": "2026-10-16",
+    "date_basis": "last Git update of review entry"
+  },
+  {
+    "old_path": "archive/HISTORY_NAVIGATION_CN.md",
+    "new_path": "archive/history/2026-10-16/review_governance/2026-10-16_HISTORY_NAVIGATION_CN.md",
+    "action": "PRESERVE_BEFORE_REBUILD_REVIEW_ENTRY",
+    "sha256": "52aaa10420e9335f619ba6e2e441aec784eae5f3f2d47b54fa268671236f5407",
+    "date": "2026-10-16",
+    "date_basis": "previous navigation last Git date"
+  },
+  {
+    "old_path": "archive/README_CN.md",
+    "new_path": "archive/history/2026-10-16/review_governance/2026-10-16_README_CN.md",
+    "action": "PRESERVE_BEFORE_REBUILD_REVIEW_ENTRY",
+    "sha256": "0e193b252cc48542eea05224589363bcd0625faa7a099ea7b87eff4217e6e97a",
+    "date": "2026-10-16",
+    "date_basis": "previous navigation last Git date"
+  }
+]

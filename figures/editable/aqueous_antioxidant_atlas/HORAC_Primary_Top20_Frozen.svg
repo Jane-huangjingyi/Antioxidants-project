@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='792.00pt' height='590.40pt' viewBox='0 0 792.00 590.40'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHw3OTIuMDB8MC4wMHw1OTAuNDA='>
+    <rect x='0.00' y='0.00' width='792.00' height='590.40' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHw3OTIuMDB8MC4wMHw1OTAuNDA=)'>
+<text x='507.60' y='35.39' text-anchor='middle' style='font-size: 14.40px; font-weight: bold; font-family: "Arial";' textLength='262.42px' lengthAdjust='spacingAndGlyphs'>Frozen Primary H-ORAC Top20 (A+B1)</text>
+<text x='507.60' y='565.92' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='309.44px' lengthAdjust='spacingAndGlyphs'>Median H-ORAC (mol Trolox equivalents / mol compound)</text>
+</g>
+<defs>
+  <clipPath id='cpMjUyLjAwfDc2My4yMHw2MC40OHw1MTEuMjA='>
+    <rect x='252.00' y='60.48' width='511.20' height='450.72' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMjUyLjAwfDc2My4yMHw2MC40OHw1MTEuMjA=)'>
+<line x1='270.93' y1='511.20' x2='270.93' y2='60.48' style='stroke-width: 0.60; stroke: #E5E7EB;' />
+<line x1='391.34' y1='511.20' x2='391.34' y2='60.48' style='stroke-width: 0.60; stroke: #E5E7EB;' />
+<line x1='511.74' y1='511.20' x2='511.74' y2='60.48' style='stroke-width: 0.60; stroke: #E5E7EB;' />
+<line x1='632.15' y1='511.20' x2='632.15' y2='60.48' style='stroke-width: 0.60; stroke: #E5E7EB;' />
+<line x1='752.55' y1='511.20' x2='752.55' y2='60.48' style='stroke-width: 0.60; stroke: #E5E7EB;' />
+</g>
+<g clip-path='url(#cpMC4wMHw3OTIuMDB8MC4wMHw1OTAuNDA=)'>
+<line x1='270.93' y1='511.20' x2='752.55' y2='511.20' style='stroke-width: 0.75;' />
+<line x1='270.93' y1='511.20' x2='270.93' y2='518.40' style='stroke-width: 0.75;' />
+<line x1='391.34' y1='511.20' x2='391.34' y2='518.40' style='stroke-width: 0.75;' />
+<line x1='511.74' y1='511.20' x2='511.74' y2='518.40' style='stroke-width: 0.75;' />
+<line x1='632.15' y1='511.20' x2='632.15' y2='518.40' style='stroke-width: 0.75;' />
+<line x1='752.55' y1='511.20' x2='752.55' y2='518.40' style='stroke-width: 0.75;' />
+<text x='270.93' y='537.12' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='6.67px' lengthAdjust='spacingAndGlyphs'>0</text>
+<text x='391.34' y='537.12' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='6.67px' lengthAdjust='spacingAndGlyphs'>5</text>
+<text x='511.74' y='537.12' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='13.34px' lengthAdjust='spacingAndGlyphs'>10</text>
+<text x='632.15' y='537.12' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='13.34px' lengthAdjust='spacingAndGlyphs'>15</text>
+<text x='752.55' y='537.12' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='13.34px' lengthAdjust='spacingAndGlyphs'>20</text>
+<text x='237.60' y='487.42' text-anchor='end' style='font-size: 9.36px; font-family: "Arial";' textLength='63.44px' lengthAdjust='spacingAndGlyphs'>20. Ferulic acid</text>
+<text x='237.60' y='466.56' text-anchor='end' style='font-size: 9.36px; font-family: "Arial";' textLength='50.44px' lengthAdjust='spacingAndGlyphs'>19. Naringin</text>
+<text x='237.60' y='445.69' text-anchor='end' style='font-size: 9.36px; font-family: "Arial";' textLength='48.36px' lengthAdjust='spacingAndGlyphs'>18. Luteolin</text>
+<text x='237.60' y='424.82' text-anchor='end' style='font-size: 9.36px; font-family: "Arial";' textLength='60.33px' lengthAdjust='spacingAndGlyphs'>17. Hesperidin</text>
+<text x='237.60' y='403.96' text-anchor='end' style='font-size: 9.36px; font-family: "Arial";' textLength='83.72px' lengthAdjust='spacingAndGlyphs'>16. p-Coumaric acid</text>
+<text x='237.60' y='383.09' text-anchor='end' style='font-size: 9.36px; font-family: "Arial";' textLength='66.06px' lengthAdjust='spacingAndGlyphs'>15. Sinapic acid</text>
+<text x='237.60' y='362.22' text-anchor='end' style='font-size: 9.36px; font-family: "Arial";' textLength='37.44px' lengthAdjust='spacingAndGlyphs'>14. Rutin</text>
+<text x='237.60' y='341.36' text-anchor='end' style='font-size: 9.36px; font-family: "Arial";' textLength='43.16px' lengthAdjust='spacingAndGlyphs'>13. Fisetin</text>
+<text x='237.60' y='320.49' text-anchor='end' style='font-size: 9.36px; font-family: "Arial";' textLength='56.16px' lengthAdjust='spacingAndGlyphs'>12. Quercetin</text>
+<text x='237.60' y='299.62' text-anchor='end' style='font-size: 9.36px; font-family: "Arial";' textLength='54.44px' lengthAdjust='spacingAndGlyphs'>11. Genistein</text>
+<text x='237.60' y='278.76' text-anchor='end' style='font-size: 9.36px; font-family: "Arial";' textLength='97.27px' lengthAdjust='spacingAndGlyphs'>10. Protocatechuic acid</text>
+<text x='237.60' y='257.89' text-anchor='end' style='font-size: 9.36px; font-family: "Arial";' textLength='55.64px' lengthAdjust='spacingAndGlyphs'>9. Hesperetin</text>
+<text x='237.60' y='237.02' text-anchor='end' style='font-size: 9.36px; font-family: "Arial";' textLength='46.81px' lengthAdjust='spacingAndGlyphs'>8. Daidzein</text>
+<text x='237.60' y='216.16' text-anchor='end' style='font-size: 9.36px; font-family: "Arial";' textLength='58.23px' lengthAdjust='spacingAndGlyphs'>7. Kaempferol</text>
+<text x='237.60' y='195.29' text-anchor='end' style='font-size: 9.36px; font-family: "Arial";' textLength='55.64px' lengthAdjust='spacingAndGlyphs'>6. Naringenin</text>
+<text x='237.60' y='174.42' text-anchor='end' style='font-size: 9.36px; font-family: "Arial";' textLength='46.30px' lengthAdjust='spacingAndGlyphs'>5. Apigenin</text>
+<text x='237.60' y='153.56' text-anchor='end' style='font-size: 9.36px; font-family: "Arial";' textLength='59.11px' lengthAdjust='spacingAndGlyphs'>4. Caffeic acid</text>
+<text x='237.60' y='132.69' text-anchor='end' style='font-size: 9.36px; font-family: "Arial";' textLength='47.33px' lengthAdjust='spacingAndGlyphs'>3. Catechin</text>
+<text x='237.60' y='111.82' text-anchor='end' style='font-size: 9.36px; font-family: "Arial";' textLength='58.78px' lengthAdjust='spacingAndGlyphs'>2. Epicatechin</text>
+<text x='237.60' y='90.96' text-anchor='end' style='font-size: 9.36px; font-family: "Arial";' textLength='76.97px' lengthAdjust='spacingAndGlyphs'>1. Rosmarinic acid</text>
+</g>
+<g clip-path='url(#cpMjUyLjAwfDc2My4yMHw2MC40OHw1MTEuMjA=)'>
+<line x1='393.75' y1='108.47' x2='511.74' y2='108.47' style='stroke-width: 1.50; stroke: #9CA3AF;' />
+<line x1='467.11' y1='108.47' x2='526.03' y2='108.47' style='stroke-width: 3.75; stroke: #374151;' />
+<line x1='337.18' y1='129.34' x2='531.01' y2='129.34' style='stroke-width: 1.50; stroke: #9CA3AF;' />
+<line x1='436.43' y1='129.34' x2='512.40' y2='129.34' style='stroke-width: 3.75; stroke: #374151;' />
+<line x1='376.17' y1='150.21' x2='561.83' y2='150.21' style='stroke-width: 1.50; stroke: #9CA3AF;' />
+<line x1='423.43' y1='150.21' x2='516.26' y2='150.21' style='stroke-width: 3.75; stroke: #374151;' />
+<line x1='450.65' y1='171.07' x2='486.46' y2='171.07' style='stroke-width: 1.50; stroke: #9CA3AF;' />
+<line x1='459.60' y1='171.07' x2='477.50' y2='171.07' style='stroke-width: 3.75; stroke: #374151;' />
+<line x1='405.79' y1='191.94' x2='475.81' y2='191.94' style='stroke-width: 1.50; stroke: #9CA3AF;' />
+<line x1='447.04' y1='191.94' x2='482.05' y2='191.94' style='stroke-width: 3.75; stroke: #374151;' />
+<line x1='420.23' y1='212.81' x2='516.56' y2='212.81' style='stroke-width: 1.50; stroke: #9CA3AF;' />
+<line x1='441.10' y1='212.81' x2='471.45' y2='212.81' style='stroke-width: 3.75; stroke: #374151;' />
+<line x1='438.17' y1='254.54' x2='462.86' y2='254.54' style='stroke-width: 1.50; stroke: #9CA3AF;' />
+<line x1='444.35' y1='254.54' x2='456.69' y2='254.54' style='stroke-width: 3.75; stroke: #374151;' />
+<line x1='347.99' y1='275.41' x2='548.34' y2='275.41' style='stroke-width: 1.50; stroke: #9CA3AF;' />
+<line x1='398.08' y1='275.41' x2='498.26' y2='275.41' style='stroke-width: 3.75; stroke: #374151;' />
+<line x1='413.73' y1='296.27' x2='503.31' y2='296.27' style='stroke-width: 1.50; stroke: #9CA3AF;' />
+<line x1='424.81' y1='296.27' x2='469.60' y2='296.27' style='stroke-width: 3.75; stroke: #374151;' />
+<line x1='372.07' y1='317.14' x2='671.16' y2='317.14' style='stroke-width: 1.50; stroke: #9CA3AF;' />
+<line x1='407.94' y1='317.14' x2='481.92' y2='317.14' style='stroke-width: 3.75; stroke: #374151;' />
+<line x1='415.66' y1='358.87' x2='449.13' y2='358.87' style='stroke-width: 1.50; stroke: #9CA3AF;' />
+<line x1='424.03' y1='358.87' x2='440.76' y2='358.87' style='stroke-width: 3.75; stroke: #374151;' />
+<line x1='341.73' y1='379.74' x2='488.62' y2='379.74' style='stroke-width: 1.50; stroke: #9CA3AF;' />
+<line x1='378.45' y1='379.74' x2='451.90' y2='379.74' style='stroke-width: 3.75; stroke: #374151;' />
+<line x1='361.62' y1='400.61' x2='436.61' y2='400.61' style='stroke-width: 1.50; stroke: #9CA3AF;' />
+<line x1='382.02' y1='400.61' x2='401.13' y2='400.61' style='stroke-width: 3.75; stroke: #374151;' />
+<line x1='349.53' y1='442.34' x2='391.53' y2='442.34' style='stroke-width: 1.50; stroke: #9CA3AF;' />
+<line x1='360.03' y1='442.34' x2='381.03' y2='442.34' style='stroke-width: 3.75; stroke: #374151;' />
+<line x1='337.66' y1='484.07' x2='494.40' y2='484.07' style='stroke-width: 1.50; stroke: #9CA3AF;' />
+<line x1='338.36' y1='484.07' x2='397.70' y2='484.07' style='stroke-width: 3.75; stroke: #374151;' />
+<circle cx='721.73' cy='87.61' r='3.10' style='stroke-width: 0.90; stroke: #FFFFFF; fill: #7C3AED;' />
+<circle cx='496.57' cy='108.47' r='3.94' style='stroke-width: 0.90; stroke: #FFFFFF; fill: #176B87;' />
+<circle cx='474.42' cy='129.34' r='4.08' style='stroke-width: 0.90; stroke: #FFFFFF; fill: #D97706;' />
+<circle cx='469.84' cy='150.21' r='3.60' style='stroke-width: 0.90; stroke: #FFFFFF; fill: #D97706;' />
+<circle cx='468.55' cy='171.07' r='3.38' style='stroke-width: 0.90; stroke: #FFFFFF; fill: #D97706;' />
+<circle cx='464.54' cy='191.94' r='3.60' style='stroke-width: 0.90; stroke: #FFFFFF; fill: #176B87;' />
+<circle cx='456.27' cy='212.81' r='3.78' style='stroke-width: 0.90; stroke: #FFFFFF; fill: #176B87;' />
+<circle cx='455.39' cy='233.67' r='3.10' style='stroke-width: 0.90; stroke: #FFFFFF; fill: #7C3AED;' />
+<circle cx='450.52' cy='254.54' r='3.38' style='stroke-width: 0.90; stroke: #FFFFFF; fill: #D97706;' />
+<circle cx='448.17' cy='275.41' r='3.38' style='stroke-width: 0.90; stroke: #FFFFFF; fill: #D97706;' />
+<circle cx='447.21' cy='296.27' r='3.60' style='stroke-width: 0.90; stroke: #FFFFFF; fill: #176B87;' />
+<circle cx='444.93' cy='317.14' r='4.08' style='stroke-width: 0.90; stroke: #FFFFFF; fill: #D97706;' />
+<circle cx='441.71' cy='338.01' r='3.10' style='stroke-width: 0.90; stroke: #FFFFFF; fill: #7C3AED;' />
+<circle cx='432.40' cy='358.87' r='3.38' style='stroke-width: 0.90; stroke: #FFFFFF; fill: #D97706;' />
+<circle cx='415.18' cy='379.74' r='3.38' style='stroke-width: 0.90; stroke: #FFFFFF; fill: #D97706;' />
+<circle cx='391.58' cy='400.61' r='3.78' style='stroke-width: 0.90; stroke: #FFFFFF; fill: #176B87;' />
+<circle cx='379.30' cy='421.47' r='3.10' style='stroke-width: 0.90; stroke: #FFFFFF; fill: #7C3AED;' />
+<circle cx='370.53' cy='442.34' r='3.38' style='stroke-width: 0.90; stroke: #FFFFFF; fill: #D97706;' />
+<circle cx='369.91' cy='463.21' r='3.10' style='stroke-width: 0.90; stroke: #FFFFFF; fill: #7C3AED;' />
+<circle cx='368.03' cy='484.07' r='3.78' style='stroke-width: 0.90; stroke: #FFFFFF; fill: #D97706;' />
+<line x1='655.44' y1='490.46' x2='670.99' y2='490.46' style='stroke-width: 1.50; stroke: #9CA3AF;' />
+<line x1='655.44' y1='500.83' x2='670.99' y2='500.83' style='stroke-width: 3.75; stroke: #374151;' />
+<circle cx='663.21' cy='459.36' r='1.94' style='stroke-width: 0.75; stroke: #FFFFFF; fill: #176B87;' />
+<circle cx='663.21' cy='469.73' r='1.94' style='stroke-width: 0.75; stroke: #FFFFFF; fill: #D97706;' />
+<circle cx='663.21' cy='480.10' r='1.94' style='stroke-width: 0.75; stroke: #FFFFFF; fill: #7C3AED;' />
+<text x='678.77' y='462.45' style='font-size: 8.64px; font-family: "Arial";' textLength='61.86px' lengthAdjust='spacingAndGlyphs'>High confidence</text>
+<text x='678.77' y='472.82' style='font-size: 8.64px; font-family: "Arial";' textLength='80.55px' lengthAdjust='spacingAndGlyphs'>Moderate confidence</text>
+<text x='678.77' y='483.18' style='font-size: 8.64px; font-family: "Arial";' textLength='59.94px' lengthAdjust='spacingAndGlyphs'>Low confidence</text>
+<text x='678.77' y='493.55' style='font-size: 8.64px; font-family: "Arial";' textLength='49.62px' lengthAdjust='spacingAndGlyphs'>Range (N&gt;1)</text>
+<text x='678.77' y='503.92' style='font-size: 8.64px; font-family: "Arial";' textLength='69.97px' lengthAdjust='spacingAndGlyphs'>Approx. IQR width</text>
+</g>
+<g clip-path='url(#cpMC4wMHw3OTIuMDB8MC4wMHw1OTAuNDA=)'>
+<text x='507.60' y='583.20' text-anchor='middle' style='font-size: 8.64px;fill: #4B5563; font-family: "Arial";' textLength='276.61px' lengthAdjust='spacingAndGlyphs'>Point size = eligible A+B1 experiment N; singleton ranges are not drawn.</text>
+</g>
+</g>
+</svg>

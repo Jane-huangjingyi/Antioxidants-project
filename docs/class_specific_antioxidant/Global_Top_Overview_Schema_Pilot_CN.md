@@ -83,7 +83,7 @@ Phase 3B 的 4 个 candidate holds 不在 18-row overview 中，因为它们没�
 
 ## 7. Cross-Class Comparability Matrix
 
-本轮定义 16 个比较维度：6 个在使用共同单位或共同证据 rubric 时可较直接比较，5 个只能作 profile comparison，5 个不得直接数值混排。Dietary intake、study count、evidence confidence、human evidence、direct-target tier 与 safety/prooxidant status 可在定义一致时并列；within-class percentile、mechanism domains、bioavailability、experimental tractability 和 evidence stability 只用于 profile；H-ORAC、L-ORAC、singlet-oxygen quenching、KEAP1/NRF2 evidence 与 mineral-cofactor relevance 必须保留各自 construct。详细规则见 `archive/superseded_outputs/Cross_Class_Comparability_Matrix_v0.1.csv`。
+本轮定义 16 个比较维度：6 个在使用共同单位或共同证据 rubric 时可较直接比较，5 个只能作 profile comparison，5 个不得直接数值混排。Dietary intake、study count、evidence confidence、human evidence、direct-target tier 与 safety/prooxidant status 可在定义一致时并列；within-class percentile、mechanism domains、bioavailability、experimental tractability 和 evidence stability 只用于 profile；H-ORAC、L-ORAC、singlet-oxygen quenching、KEAP1/NRF2 evidence 与 mineral-cofactor relevance 必须保留各自 construct。详细规则见 `archive/history/2026-09-18/superseded_outputs/2026-09-18_Cross_Class_Comparability_Matrix_v0.1.csv`。
 
 ## 8. Missingness audit
 

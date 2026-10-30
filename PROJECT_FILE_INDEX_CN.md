@@ -1,6 +1,6 @@
 # 项目逻辑地图
 
-2026-10-16 路径整理后，H-ORAC 主表位于 `data/h_orac_stage25b/stage25b/`；阶段产物按 `stage25b1/` 至 `stage25b4/` 分类。历史版本通过 `current_review/HISTORICAL_VERSION_INDEX.csv` 查找，旧路径通过 `current_review/File_Reorganization_Migration_2026-10-16.csv` 查找。现位置与科学状态分开登记，移动不改变正式版本。
+2026-10-16 路径整理后，H-ORAC 主表位于 `data/h_orac_stage25b/stage25b/`；阶段产物按 `stage25b1/` 至 `stage25b4/` 分类。历史版本通过 `current_review/HISTORICAL_VERSION_INDEX.csv` 查找，旧路径通过 `archive/history/2026-10-16/review_governance/2026-10-16_File_Reorganization_Migration_2026-10-16.csv` 查找。现位置与科学状态分开登记，移动不改变正式版本。
 
 2026-10-15 当前入口：[`current_review/PROJECT_NAVIGATION.md`](current_review/PROJECT_NAVIGATION.md) 提供全部当前权威文件的直链、状态和冻结标记；[`current_review/LATEST_PROJECT_STATUS_CN.md`](current_review/LATEST_PROJECT_STATUS_CN.md) 概述 Stage25B.6D 与综合框架 Phase 1。Stage25B.5 Frozen Top20 v1.0 仍是正式版本；Stage25B.6D 仅为待审证据诊断，未建立 v1.1。Track B 157 候选、三个应用场景的未评分 v0.1 框架见 `docs/framework/` 和 `data/framework/`；双轨映射见 `docs/dual_track_phase1/` 和 `data/dual_track_phase1/`。以下旧时间线保留历史语境，不应覆盖本段最新状态。
 

@@ -1,0 +1,47 @@
+{
+  "details": [
+    {
+      "sheet": "具体证据",
+      "records": 489,
+      "columns": 24
+    },
+    {
+      "sheet": "期刊指标",
+      "records": 46,
+      "columns": 13
+    },
+    {
+      "sheet": "最新审核线索",
+      "records": 93,
+      "columns": 8
+    },
+    {
+      "sheet": "文献登记",
+      "records": 47998,
+      "columns": 15
+    },
+    {
+      "sheet": "候选物文献关联",
+      "records": 45643,
+      "columns": 9
+    },
+    {
+      "sheet": "筛选记录",
+      "records": 7055,
+      "columns": 7
+    },
+    {
+      "sheet": "来源表目录",
+      "records": 280,
+      "columns": 8
+    },
+    {
+      "sheet": "标识符冲突",
+      "records": 3,
+      "columns": 6
+    }
+  ],
+  "journal_metric_titles_verified": 5,
+  "rows_preserved": true,
+  "output": "D:\\JANE\\GitHub\\antioxidants project\\outputs\\review_20261030\\Evidence_Catalog_2026-10-30.xlsx"
+}

@@ -6,7 +6,7 @@
 
 Overview最终保留 `Aqueous_All_Classes_Ranking_Overview.png`、`Aqueous_Class_Coverage_Overview.png`、`Aqueous_Primary_Literature_Coverage.png` 和 `Aqueous_Metal_Redox_Framework.png`。Metal层保留overview framework与更综合的`Metal_Chelation_or_Fenton_Evidence_Profile.png`。Micronutrient prooxidant-context图含profile与enzyme map没有的独立风险信息，因此继续保留。
 
-`archive/R_legacy/plot_antioxidant_atlas_pre_modularization.R` 默认 `GENERATE_LEGACY_FIGURES <- FALSE`，不再生成归档图；如需重建历史Phase 2–22图必须人工显式启用。ChatGPT人类可读和机器可读sync manifests均已生成。
+`archive/history/2026-09-20/R_legacy/2026-09-20_plot_antioxidant_atlas_pre_modularization.R` 默认 `GENERATE_LEGACY_FIGURES <- FALSE`，不再生成归档图；如需重建历史Phase 2–22图必须人工显式启用。ChatGPT人类可读和机器可读sync manifests均已生成。
 
 ## HUMAN REVIEW REQUIRED — FIGURE DEDUPLICATION
 
