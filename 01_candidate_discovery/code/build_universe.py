@@ -3,7 +3,7 @@ from pathlib import Path
 import ast,sys
 ROOT=Path(__file__).resolve().parents[2];sys.path.insert(0,str(ROOT/'00_project'))
 from pipeline_io import *
-script='archive/history/2026-09-18/phase2_candidate_universe_2026-09-18/2026-09-18_build_phase2_universe.py'
+script='discovery/2026-09-18_build_phase2_universe.py'
 tree=ast.parse(source(script).read_text(encoding='utf-8-sig'))
 # Execute only the literal curation declarations; never legacy imports, I/O, HTTP or ranking code.
 nodes=[]

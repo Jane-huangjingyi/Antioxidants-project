@@ -8,6 +8,6 @@ Food occurrence, identity, chemical assay evidence and biological validation are
 
 Original mechanism relations, target confirmation, antioxidant relevance and human states remain in their original source tables. The new workflow applies none of the 257 historical proposals. AFF-0061 receives no validated-target credit from unapproved observations.
 
-The [full source index](results/source_file_index.csv) and [preserved evidence catalogue](../90_archive/legacy_2026-11-05/outputs/review_20261030/Evidence_Catalog_2026-10-30.xlsx) locate prior stages. The old workbook preserves its original language and dates; the active English workbook is a review-oriented projection of the current selection chain. Journal metric gaps remain unverified, and journal impact factors do not enter selection.
+The [scientific source guide](Sources.md) links current inputs, source caches, mechanism review and governance records, frozen references and the dated full evidence catalogue. The current source document index covers all retained formats; the table index adds CSV field names and row counts. Journal metric gaps remain unverified, and journal impact factors do not enter selection.
 
 **Manuscript link:** Methods 2, Table S1 and the observation/source registers support identity and evidence statements. No manuscript claim should exceed the checked source scope.

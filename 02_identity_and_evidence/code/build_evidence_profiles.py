@@ -4,7 +4,7 @@ import sys,collections,re
 ROOT=Path(__file__).resolve().parents[2];sys.path.insert(0,str(ROOT/'00_project'))
 from pipeline_io import *
 discovery=read_csv(ROOT/'01_candidate_discovery/results/discovery_register.csv')
-cache=read_json(source('archive/phase2_local_cache/phase2_pubchem_identity_cache.json'))
+cache=read_json(source('identity/phase2_pubchem_identity_cache.json'))
 extra_path=ROOT/'02_identity_and_evidence/inputs/pubchem_refresh.json';extra=read_json(extra_path) if extra_path.exists() else {}
 lit={r['candidate_id']:r for r in read_csv(source('data/literature_screening/master/Literature_Screening_Candidate_Master.csv'))}
 closure={r['candidate_id']:r for r in read_csv(source('data/h_orac_stage25b/stage25b6d/Stage25B6D_Candidate_Eligibility.csv'))}

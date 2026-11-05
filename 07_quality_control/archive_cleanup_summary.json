@@ -1,8 +1,0 @@
-{
-  "mode": "APPLIED",
-  "exact_figures_in_batch": 109,
-  "bytes_in_batch": 6630126,
-  "frozen_figures_retained": 4,
-  "different_or_unreproduced_figures_retained": 42,
-  "scientific_inputs_or_process_records_deleted": 0
-}

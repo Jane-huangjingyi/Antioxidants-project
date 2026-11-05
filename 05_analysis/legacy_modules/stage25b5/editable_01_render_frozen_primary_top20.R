@@ -3,7 +3,7 @@
 args <- commandArgs(trailingOnly=FALSE); script_arg <- sub("--file=", "", args[grep("--file=", args)])
 root <- normalizePath(".", winslash="/", mustWork=TRUE)
 source(file.path(root,"05_analysis/legacy_modules/common/bootstrap.R"))
-input <- file.path(root, "90_archive/legacy_2026-11-05/data/h_orac_stage25b/frozen/Stage25B_Frozen_Primary_HORAC_Top20.csv")
+input <- file.path(root, "03_candidate_selection/inputs/frozen_reference/tables/Stage25B_Frozen_Primary_HORAC_Top20.csv")
 outdir <- file.path(root, "06_manuscript/figures/supplementary/aqueous_antioxidant_atlas"); dir.create(outdir, recursive=TRUE, showWarnings=FALSE)
 dir.create(file.path(outdir,"analysis_v0.1/png"),recursive=TRUE,showWarnings=FALSE)
 dir.create(file.path(outdir,"analysis_v0.1/svg"),recursive=TRUE,showWarnings=FALSE)

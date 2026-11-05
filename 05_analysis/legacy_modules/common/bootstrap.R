@@ -1,5 +1,5 @@
 # Supplementary historical construct; not the current review-panel result.
-project_library <- normalizePath(file.path("90_archive","legacy_2026-11-05","R","library"),mustWork=FALSE)
+project_library <- normalizePath(file.path("05_analysis","local_library"),mustWork=FALSE)
 if(dir.exists(project_library)) .libPaths(c(project_library,.libPaths()))
 required <- c("ggplot2","dplyr","tidyr","readr","stringr","forcats","scales","grid","svglite")
 missing <- required[!vapply(required,requireNamespace,quietly=TRUE,FUN.VALUE=logical(1))]

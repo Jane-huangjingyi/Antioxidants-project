@@ -3,21 +3,13 @@ from pathlib import Path
 import sys,importlib.util,xml.etree.ElementTree as ET,re,hashlib,ast,csv
 ROOT=Path(__file__).resolve().parents[2];sys.path.insert(0,str(ROOT/'00_project'))
 from pipeline_io import *
-manifest=read_json(ROOT/'07_quality_control/migration_manifest.json');cleanup_path=ROOT/'07_quality_control/redundant_cleanup.json';cleanup=read_json(cleanup_path) if cleanup_path.exists() else []
-removed={r['path'] for r in cleanup};missing_optional=[]
-for r in manifest['entries']:
- p=ROOT/r['new_path']
- if r['new_path'] in removed:
-  entry=next(x for x in cleanup if x['path']==r['new_path'])
-  if entry.get('kind')=='EXACT_REPRODUCED_FIGURE_DUPLICATE':
-   assert not p.exists(),'Removed duplicate unexpectedly returned: '+str(p)
-   assert entry['sha256']==r['sha256']==entry['replacement_sha256']
-   assert sha(ROOT/entry['retained_path'])==entry['sha256'],entry['retained_path']
-  continue
+manifest=read_json(ROOT/'02_identity_and_evidence/source_manifest.json');missing_optional=[]
+for r in manifest['records']:
+ p=ROOT/r['path']
  if not p.exists():
-  assert not r['tracked_before'],'Missing tracked source: '+r['new_path']
-  missing_optional.append(r['new_path']);continue
- assert sha(p)==r['sha256'],'Source content changed: '+r['new_path']
+  assert not r['bundled'],'Missing bundled scientific source: '+r['path']
+  missing_optional.append(r['path']);continue
+ assert sha(p)==r['sha256'],'Source content changed: '+r['path']
 frozen=read_csv(source('data/h_orac_stage25b/frozen/Stage25B5_Frozen_Asset_SHA256_Manifest.csv'))
 for r in frozen:assert sha(source(r['asset_path']))==r['sha256'],r['asset_path']
 seeds=read_csv(ROOT/'01_candidate_discovery/results/discovery_register.csv');profiles=read_csv(ROOT/'02_identity_and_evidence/results/candidate_evidence_profiles.csv');queue=read_csv(ROOT/'03_candidate_selection/results/top20_review_queue.csv');audit=read_csv(ROOT/'03_candidate_selection/results/all_candidate_decisions.csv')
@@ -30,7 +22,7 @@ assert all(r['molecular_formula'] and r['pubchem_cid'] and r['inchi_key'] for r 
 assert all(r['change_applied']=='NO' and r['human_review_status']=='NOT_REVIEWED' for r in profiles)
 for r in profiles:
  if r['framework157_scope']=='NO':assert all(r[k+'_snapshot_status']=='NOT_COVERED_BY_157_SNAPSHOT' for k in ['D1','D2','D3','D4','D5'])
-cache=read_json(source('archive/phase2_local_cache/phase2_pubchem_identity_cache.json'));fresh=read_json(ROOT/'02_identity_and_evidence/inputs/pubchem_refresh.json');conflicts=[]
+cache=read_json(source('identity/phase2_pubchem_identity_cache.json'));fresh=read_json(ROOT/'02_identity_and_evidence/inputs/pubchem_refresh.json');conflicts=[]
 for r in queue:
  assert fresh[r['compound_name']]['status']=='SUCCESS'
  p=fresh[r['compound_name']]['property'];assert str(p['CID'])==r['pubchem_cid'];assert p['MolecularFormula']==r['molecular_formula'];assert p['InChIKey']==r['inchi_key']
@@ -65,7 +57,7 @@ for p in svg_files:
 bad_links=[];non_english=[]
 for folder in ['00_project','01_candidate_discovery','02_identity_and_evidence','03_candidate_selection','04_absorbance_assay','05_analysis','06_manuscript','07_quality_control','current_review']:
  for p in (ROOT/folder).rglob('*.md'):
-  if any(x in p.relative_to(ROOT).parts for x in ['node_modules','local','previews']):continue
+  if any(x in p.relative_to(ROOT).parts for x in ['node_modules','local','local_library','previews','inputs','research_records']):continue
   text=p.read_text(encoding='utf-8-sig')
   if re.search(r'[\u4e00-\u9fff]',text):non_english.append(p.relative_to(ROOT).as_posix())
   for m in re.finditer(r'\[[^\]]*\]\((<[^>]+>|[^)]+)\)',text):
@@ -75,9 +67,9 @@ for folder in ['00_project','01_candidate_discovery','02_identity_and_evidence',
 assert not non_english,non_english;assert not bad_links,bad_links
 for folder in ['00_project','01_candidate_discovery','02_identity_and_evidence','03_candidate_selection','04_absorbance_assay','05_analysis','06_manuscript','07_quality_control','current_review']:
  for p in (ROOT/folder).rglob('*.py'):
-  if not any(x in p.relative_to(ROOT).parts for x in ['node_modules','local','previews']):ast.parse(p.read_text(encoding='utf-8-sig'))
-summary={'as_of':AS_OF,'status':'PASS','preserved_source_entries':len(manifest['entries']),'optional_local_caches_not_bundled':missing_optional,'derived_temporary_files_removed':len(cleanup),'frozen_sha256_assets_pass':len(frozen),'legacy_seed_mapping_pass':191,'discovery_records':len(seeds),'candidate_profiles':len(profiles),'reference_formula_profiles':sum(bool(r['molecular_formula']) for r in profiles),'review_slots':len(queue),'two_study_sensitivity':9,'cutoff_stratum_candidates':len(tie),'formal_lab_ready_count':len(ready),'new_assay_experiments_performed':0,'pubchem_queue_identity_conflicts':conflicts,'svg_text_without_raster_verified':len(svg_files),'active_english_markdown_pass':True,'broken_active_markdown_links':bad_links,'synthetic_auc_check':'PASS_SYNTHETIC_TEST_ONLY_NOT_EXPERIMENTAL_RESULTS'}
+  if not any(x in p.relative_to(ROOT).parts for x in ['node_modules','local','local_library','previews','inputs','research_records']):ast.parse(p.read_text(encoding='utf-8-sig'))
+summary={'as_of':AS_OF,'status':'PASS','scientific_source_entries':len(manifest['records']),'optional_local_caches_not_bundled':missing_optional,'frozen_sha256_assets_pass':len(frozen),'legacy_seed_mapping_pass':191,'discovery_records':len(seeds),'candidate_profiles':len(profiles),'reference_formula_profiles':sum(bool(r['molecular_formula']) for r in profiles),'review_slots':len(queue),'two_study_sensitivity':9,'cutoff_stratum_candidates':len(tie),'formal_lab_ready_count':len(ready),'new_assay_experiments_performed':0,'pubchem_queue_identity_conflicts':conflicts,'svg_text_without_raster_verified':len(svg_files),'active_english_markdown_pass':True,'broken_active_markdown_links':bad_links,'synthetic_auc_check':'PASS_SYNTHETIC_TEST_ONLY_NOT_EXPERIMENTAL_RESULTS'}
 write_json(ROOT/'07_quality_control/workflow_qc.json',summary)
-text=f'''# Workflow QC\n\nDate: {AS_OF}. Status: PASS.\n\nAll {len(manifest['entries'])} original scientific/process entries are accounted for by the migration map. Tracked sources and ten frozen assets retain their bytes. Optional unbundled caches on a clone are listed separately; explicitly removed derived intermediates have retained-source explanations. No original scientific table, governance approval, mechanism observation or frozen rank is changed.\n\nThe 191 literal seed IDs reconstruct correctly. There are 204 discovery records, 193 profiles, 25 review-eligible candidates, 20 provisional review slots and 12 cutoff-stratum ties. The two-study sensitivity retains 9. The formal laboratory-ready panel has {len(ready)} rows. All 20 review identities/formulas match their official cached PubChem refresh; no cache conflict was detected.\n\nActive English Markdown links resolve. {len(svg_files)} current SVG exports contain text and vector objects without embedded raster images. Numerical AUC integration and rejection rules were checked on synthetic in-memory traces only. They establish code behavior, not assay performance.\n\nRemaining scientific work: close candidate-specific food sources, exact reagent procurement/forms, solubility/stability and absorbance counter-screens; adjudicate cutoff ties and actual material decisions; approve equipment-specific assay settings/calibration; collect real experimental data. The method-search log explicitly identifies first-page truncation where present. The old full evidence catalogue and journal-metric gaps remain preserved and have not been promoted into verified claims.\n'''
+text=f'''# Workflow QC\n\nDate: {AS_OF}. Status: PASS.\n\nAll {len(manifest['records'])} registered scientific sources are checked against their recorded SHA256. Locally held source corpora are optional on a clone and do not enter the offline calculations. Ten frozen assets retain their original content and hash. Original review and HOLD states remain unchanged.\n\nThe 191 literal seed IDs reconstruct correctly. There are 204 discovery records, 193 profiles, 25 review-eligible candidates, 20 provisional review slots and 12 cutoff-stratum ties. The two-study sensitivity retains 9. The formal laboratory-ready panel has {len(ready)} rows. All 20 review identities/formulas match their official cached PubChem refresh; no cache conflict was detected.\n\nActive English Markdown links resolve. {len(svg_files)} current SVG exports contain text and vector objects without embedded raster images. Numerical AUC integration and rejection rules were checked on synthetic in-memory traces only. They establish code behavior, not assay performance.\n\nRemaining scientific work: close candidate-specific food sources, exact reagent procurement/forms, solubility/stability and absorbance counter-screens; adjudicate cutoff ties and actual material decisions; approve equipment-specific assay settings/calibration; collect real experimental data. The method-search log explicitly identifies first-page truncation where present. The dated source catalogue and journal-metric gaps remain available and have not been promoted into verified claims.\n'''
 (ROOT/'07_quality_control/Workflow_QC.md').write_text(text,encoding='utf8')
 print(f'QC PASS: {len(queue)} review slots; {len(ready)} lab-ready; {len(svg_files)} editable SVGs; frozen sources unchanged.')

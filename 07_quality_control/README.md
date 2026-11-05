@@ -1,7 +1,5 @@
-# 07. Quality control
+# 07. Scientific and reproducibility checks
 
-`python run_pipeline.py` runs the validation after rebuilding outputs. `python 07_quality_control/code/validate_workflow.py` checks the existing working snapshot without changing original scientific evidence. The migration manifest resolves every preserved old path to its new source-baseline path and stores SHA256. Tracked source files are required; unbundled optional local caches are reported separately on a fresh clone.
+`python run_pipeline.py` checks the rebuilt workflow. `python 07_quality_control/code/validate_workflow.py` checks the existing scientific snapshot. Registered source hashes are defined in `02_identity_and_evidence/source_manifest.json`; optional local corpora are distinguished from required bundled sources.
 
-The checks cover reconstruction of the 191 literal seed names, preserved ID mapping, formula/reference presence, candidate/source joins, 157-framework boundaries, gate decisions, tie disclosure, no forced panel filling, frozen assets, governance observations, English active navigation, and vector-text exports. Numerical AUC checks use clearly synthetic in-memory data only and verify algorithmic rejection rules, not experimental performance.
-
-Read `workflow_qc.json`, `branch_inventory.json`, `migration_manifest.json`, `file_role_inventory.csv`, `figure_export_registry.csv` and the concise `Workflow_QC.md` after a complete run. No source is deemed full-text verified simply because it appears in a catalogue. Existing unresolved source, journal, food-occurrence and identity questions remain open.
+Checks cover the 191 literal seed identities, 157-framework coverage, reference formulas, candidate/source joins, selection gates, cutoff ties, all ten frozen assets and editable SVG structure. Algorithm tests use synthetic in-memory traces and are not assay results. Read `workflow_qc.json` and `Workflow_QC.md` for scientific and computational status. Current source and file navigation belong to Step 02 and `current_review`, respectively.

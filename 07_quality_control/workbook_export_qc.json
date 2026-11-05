@@ -39,11 +39,23 @@
     },
     {
       "sheet": "Source directory",
-      "records": 286,
+      "records": 275,
       "columns": 5,
       "source": "02_identity_and_evidence/results/source_file_index.csv"
+    },
+    {
+      "sheet": "Source documents",
+      "records": 974,
+      "columns": 6,
+      "source": "02_identity_and_evidence/results/source_document_index.csv"
+    },
+    {
+      "sheet": "Mechanism observations",
+      "records": 21,
+      "columns": 10,
+      "source": "02_identity_and_evidence/inputs/mechanism_evidence/master/Compound_Mechanism_Evidence_Master.csv"
     }
   ],
-  "inspection": "{\"kind\":\"sheet\",\"id\":\"ws/ntua3i\",\"name\":\"Review panel\",\"index\":0,\"range\":\"A1:I21\",\"address\":\"A1:I21\"}\n{\"kind\":\"sheet\",\"id\":\"ws/6tzvia\",\"name\":\"Candidate profiles\",\"index\":1,\"range\":\"A1:AP194\",\"address\":\"A1:AP194\"}\n{\"kind\":\"sheet\",\"id\":\"ws/qht6j6\",\"name\":\"Chemical observations\",\"index\":2,\"range\":\"A1:J75\",\"address\":\"A1:J75\"}\n{\"kind\":\"sheet\",\"id\":\"ws/5w05wa\",\"name\":\"Methods\",\"index\":3,\"range\":\"A1:I7\",\"address\":\"A1:I7\"}\n{\"kind\":\"sheet\",\"id\":\"ws/kvjptg\",\"name\":\"Manuscript claims\",\"index\":4,\"range\":\"A1:D7\",\"address\":\"A1:D7\"}\n{\"kind\":\"sheet\",\"id\":\"ws/rw7p48\",\"name\":\"Researcher decisions\",\"index\":5,\"range\":\"A1:J194\",\"address\":\"A1:J194\"}\n{\"kind\":\"sheet\",\"id\":\"ws/21jy8w\",\"name\":\"Source directory\",\"index\":6,\"range\":\"A1:E287\",\"address\":\"A1:E287\"}\n{\"kind\":\"sheet\",\"id\":\"ws/od3vjr\",\"name\":\"ReadMe\",\"index\":7,\"range\":\"A1:B7\",\"address\":\"A1:B7\"}",
+  "inspection": "{\"kind\":\"sheet\",\"id\":\"ws/7u0u7s\",\"name\":\"Review panel\",\"index\":0,\"range\":\"A1:I21\",\"address\":\"A1:I21\"}\n{\"kind\":\"sheet\",\"id\":\"ws/o4u3qz\",\"name\":\"Candidate profiles\",\"index\":1,\"range\":\"A1:AP194\",\"address\":\"A1:AP194\"}\n{\"kind\":\"sheet\",\"id\":\"ws/15btte\",\"name\":\"Chemical observations\",\"index\":2,\"range\":\"A1:J75\",\"address\":\"A1:J75\"}\n{\"kind\":\"sheet\",\"id\":\"ws/m8whmn\",\"name\":\"Methods\",\"index\":3,\"range\":\"A1:I7\",\"address\":\"A1:I7\"}\n{\"kind\":\"sheet\",\"id\":\"ws/hwoggm\",\"name\":\"Manuscript claims\",\"index\":4,\"range\":\"A1:D7\",\"address\":\"A1:D7\"}\n{\"kind\":\"sheet\",\"id\":\"ws/bdcp6o\",\"name\":\"Researcher decisions\",\"index\":5,\"range\":\"A1:J194\",\"address\":\"A1:J194\"}\n{\"kind\":\"sheet\",\"id\":\"ws/2es9dt\",\"name\":\"Source directory\",\"index\":6,\"range\":\"A1:E276\",\"address\":\"A1:E276\"}\n{\"kind\":\"sheet\",\"id\":\"ws/jt55m3\",\"name\":\"Source documents\",\"index\":7,\"range\":\"A1:F975\",\"address\":\"A1:F975\"}\n{\"kind\":\"sheet\",\"id\":\"ws/jj6kos\",\"name\":\"Mechanism observations\",\"index\":8,\"range\":\"A1:J22\",\"address\":\"A1:J22\"}\n{\"kind\":\"sheet\",\"id\":\"ws/kzsd3m\",\"name\":\"ReadMe\",\"index\":9,\"range\":\"A1:B7\",\"address\":\"A1:B7\"}",
   "formulas": "NONE_STATIC_SOURCE_LINKED_SNAPSHOT"
 }

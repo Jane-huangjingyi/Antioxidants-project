@@ -1,7 +1,7 @@
 # Run from the project root. Every style and geometry is editable here.
 if(.Platform$OS.type=="windows") Sys.setlocale("LC_CTYPE","English_United States.utf8")
 options(encoding="UTF-8")
-lib <- file.path("90_archive","legacy_2026-11-05","R","library")
+lib <- file.path("05_analysis","local_library")
 if(dir.exists(lib)) .libPaths(c(normalizePath(lib),.libPaths()))
 required <- c("ggplot2","svglite")
 if(any(!vapply(required,requireNamespace,quietly=TRUE,FUN.VALUE=logical(1)))) stop("Install ggplot2 and svglite from CRAN before rendering")

@@ -1,5 +1,14 @@
 * text=auto eol=lf
 # Preserve original source bytes independently of checkout platform.
-90_archive/legacy_2026-11-05/** -text
+00_project/research_records/** -text
+01_candidate_discovery/inputs/curation_baseline/** -text
+02_identity_and_evidence/inputs/reference_collection/** -text
+02_identity_and_evidence/inputs/identity_reference/** -text
+02_identity_and_evidence/inputs/mechanism_evidence/** -text
+02_identity_and_evidence/inputs/source_corpus/** -text
+02_identity_and_evidence/inputs/bibliography/** -text
+02_identity_and_evidence/inputs/journal_metrics/** -text
+03_candidate_selection/inputs/frozen_reference/** -text
+04_absorbance_assay/inputs/method_reference/** -text
 *.png -text
 *.xlsx -text

@@ -77,7 +77,7 @@ METAL_COLORS <- c("Fe"="#9C6644","Cu"="#4C78A8","Zn"="#7A9E9F","Se"="#6A994E","M
 # =====================================================
 # DEPENDENCIES, INPUT AND THEME
 # =====================================================
-project_library <- normalizePath(file.path("90_archive","legacy_2026-11-05","R","library"),mustWork=FALSE)
+project_library <- normalizePath(file.path("05_analysis","local_library"),mustWork=FALSE)
 if(dir.exists(project_library)) .libPaths(c(project_library,.libPaths()))
 required <- c("ggplot2","dplyr","tidyr","readr","stringr","forcats","scales","igraph","ggraph","ggrepel","patchwork")
 missing <- required[!vapply(required,requireNamespace,quietly=TRUE,FUN.VALUE=logical(1))]
@@ -85,27 +85,27 @@ if(length(missing)>0) stop("Missing R packages: ",paste(missing,collapse=", "),"
 suppressPackageStartupMessages({library(ggplot2);library(dplyr);library(tidyr);library(readr);library(stringr);library(forcats);library(scales);library(igraph);library(ggraph);library(ggrepel);library(patchwork)})
 
 root <- normalizePath(".",mustWork=TRUE)
-candidate_path <- file.path(root,"90_archive/legacy_2026-11-05/data/candidate_universe/Antioxidant_Class_Candidate_Master.csv")
-taxonomy_path <- file.path(root,"90_archive/legacy_2026-11-05/data/candidate_universe/Antioxidant_Taxonomy_Relationships.csv")
-exclusion_path <- file.path(root,"90_archive/legacy_2026-11-05/data/candidate_universe/Antioxidant_Candidate_Exclusions.csv")
-top20_path <- file.path(root,"90_archive/legacy_2026-11-05/data/class_specific_antioxidant/Polyphenols_Flavonoids_Top20_v1.0.csv")
-coverage_path <- file.path(root,"90_archive/legacy_2026-11-05/data/class_specific_antioxidant/Flavonoid_Ranking_Coverage.csv")
-phenolic_topn_path <- file.path(root,"90_archive/legacy_2026-11-05/data/class_specific_antioxidant/Polyphenols_PhenolicAcids_TopN_v1.0.csv")
-phenolic_coverage_path <- file.path(root,"90_archive/legacy_2026-11-05/data/class_specific_antioxidant/PhenolicAcid_Ranking_Coverage.csv")
-global_overview_path <- file.path(root,"90_archive/legacy_2026-11-05/data/class_specific_antioxidant/Global_Top_Overview_Master_v0.3.csv")
-global_overview_v02_path <- file.path(root,"90_archive/legacy_2026-11-05/data/class_specific_antioxidant/Global_Top_Overview_Master_v0.3.csv")
-comparability_path <- file.path(root,"90_archive/legacy_2026-11-05/data/class_specific_antioxidant/Cross_Class_Comparability_Matrix_v0.2.csv")
-carotenoid_topn_path <- file.path(root,"90_archive/legacy_2026-11-05/data/class_specific_antioxidant/Carotenoids_TopN_v1.0.csv")
-carotenoid_evidence_path <- file.path(root,"90_archive/legacy_2026-11-05/data/class_specific_antioxidant/Carotenoid_Singlet_Oxygen_Evidence_Master.csv")
-carotenoid_lipid_path <- file.path(root,"90_archive/legacy_2026-11-05/data/class_specific_antioxidant/Carotenoid_LipidPhase_Evidence_Profile.csv")
-vitamin_c_path <- file.path(root,"90_archive/legacy_2026-11-05/data/class_specific_antioxidant/VitaminC_TopAvailable_v1.0.csv")
-vitamin_e_path <- file.path(root,"90_archive/legacy_2026-11-05/data/class_specific_antioxidant/VitaminE_TopN_v1.0.csv")
-vitamin_e_evidence_path <- file.path(root,"90_archive/legacy_2026-11-05/data/class_specific_antioxidant/VitaminE_LipidPhase_Evidence_Master.csv")
-vitamin_e_lorac_path <- file.path(root,"90_archive/legacy_2026-11-05/data/class_specific_antioxidant/VitaminE_LORAC_Secondary_Profile.csv")
-vitamin_overview_path <- file.path(root,"90_archive/legacy_2026-11-05/data/class_specific_antioxidant/Vitamins_ParentClass_Overview_v1.0.csv")
-global_overview_v03_path <- file.path(root,"90_archive/legacy_2026-11-05/data/class_specific_antioxidant/Global_Top_Overview_Master_v0.3.csv")
-supervisor_overview_path <- file.path(root,"90_archive/legacy_2026-11-05/data/supervisor/Supervisor_Class_Specific_Ranking_Overview.csv")
-outdir <- file.path(root,"figures"); dir.create(outdir,showWarnings=FALSE,recursive=TRUE)
+candidate_path <- file.path(root,"02_identity_and_evidence/inputs/reference_collection/data/candidate_universe/Antioxidant_Class_Candidate_Master.csv")
+taxonomy_path <- file.path(root,"02_identity_and_evidence/inputs/reference_collection/data/candidate_universe/Antioxidant_Taxonomy_Relationships.csv")
+exclusion_path <- file.path(root,"02_identity_and_evidence/inputs/reference_collection/data/candidate_universe/Antioxidant_Candidate_Exclusions.csv")
+top20_path <- file.path(root,"02_identity_and_evidence/inputs/reference_collection/data/class_specific_antioxidant/Polyphenols_Flavonoids_Top20_v1.0.csv")
+coverage_path <- file.path(root,"02_identity_and_evidence/inputs/reference_collection/data/class_specific_antioxidant/Flavonoid_Ranking_Coverage.csv")
+phenolic_topn_path <- file.path(root,"02_identity_and_evidence/inputs/reference_collection/data/class_specific_antioxidant/Polyphenols_PhenolicAcids_TopN_v1.0.csv")
+phenolic_coverage_path <- file.path(root,"02_identity_and_evidence/inputs/reference_collection/data/class_specific_antioxidant/PhenolicAcid_Ranking_Coverage.csv")
+global_overview_path <- file.path(root,"02_identity_and_evidence/inputs/reference_collection/data/class_specific_antioxidant/Global_Top_Overview_Master_v0.3.csv")
+global_overview_v02_path <- file.path(root,"02_identity_and_evidence/inputs/reference_collection/data/class_specific_antioxidant/Global_Top_Overview_Master_v0.3.csv")
+comparability_path <- file.path(root,"02_identity_and_evidence/inputs/reference_collection/data/class_specific_antioxidant/Cross_Class_Comparability_Matrix_v0.2.csv")
+carotenoid_topn_path <- file.path(root,"02_identity_and_evidence/inputs/reference_collection/data/class_specific_antioxidant/Carotenoids_TopN_v1.0.csv")
+carotenoid_evidence_path <- file.path(root,"02_identity_and_evidence/inputs/reference_collection/data/class_specific_antioxidant/Carotenoid_Singlet_Oxygen_Evidence_Master.csv")
+carotenoid_lipid_path <- file.path(root,"02_identity_and_evidence/inputs/reference_collection/data/class_specific_antioxidant/Carotenoid_LipidPhase_Evidence_Profile.csv")
+vitamin_c_path <- file.path(root,"02_identity_and_evidence/inputs/reference_collection/data/class_specific_antioxidant/VitaminC_TopAvailable_v1.0.csv")
+vitamin_e_path <- file.path(root,"02_identity_and_evidence/inputs/reference_collection/data/class_specific_antioxidant/VitaminE_TopN_v1.0.csv")
+vitamin_e_evidence_path <- file.path(root,"02_identity_and_evidence/inputs/reference_collection/data/class_specific_antioxidant/VitaminE_LipidPhase_Evidence_Master.csv")
+vitamin_e_lorac_path <- file.path(root,"02_identity_and_evidence/inputs/reference_collection/data/class_specific_antioxidant/VitaminE_LORAC_Secondary_Profile.csv")
+vitamin_overview_path <- file.path(root,"02_identity_and_evidence/inputs/reference_collection/data/class_specific_antioxidant/Vitamins_ParentClass_Overview_v1.0.csv")
+global_overview_v03_path <- file.path(root,"02_identity_and_evidence/inputs/reference_collection/data/class_specific_antioxidant/Global_Top_Overview_Master_v0.3.csv")
+supervisor_overview_path <- file.path(root,"02_identity_and_evidence/inputs/reference_collection/data/supervisor/Supervisor_Class_Specific_Ranking_Overview.csv")
+outdir <- file.path(root,"06_manuscript","figures","supplementary"); dir.create(outdir,showWarnings=FALSE,recursive=TRUE)
 
 candidates <- read_csv(candidate_path,show_col_types=FALSE)
 taxonomy <- read_csv(taxonomy_path,show_col_types=FALSE)
@@ -357,7 +357,7 @@ p22 <- ggplot(global3,aes(within_class_percentile,compound,color=confidence,shap
 save_atlas(p22,"Global_Overview_With_Carotenoids",12,10)
 
 # Phase 3D Figure A: singleton evidence summary, explicitly without a percentile claim.
-vc_source <- read_csv(file.path(root,"90_archive/legacy_2026-11-05/data/class_specific_antioxidant/VitaminC_Aqueous_Evidence_Master.csv"),show_col_types=FALSE)
+vc_source <- read_csv(file.path(root,"02_identity_and_evidence/inputs/reference_collection/data/class_specific_antioxidant/VitaminC_Aqueous_Evidence_Master.csv"),show_col_types=FALSE)
 vc_long <- vc_source %>% transmute(record=paste0(evidence_id," (",year,")"),value=as.numeric(normalized_value))
 p23 <- ggplot(vc_long,aes(value,record))+geom_segment(aes(x=0,xend=value,y=record,yend=record),color="#C9D5E3",linewidth=LINE_WIDTH)+
   geom_point(color=VITAMIN_C_COLOR,size=POINT_SIZE+1)+geom_vline(xintercept=vitamin_c$primary_value[1],linetype=2,color="#333333")+

@@ -12,12 +12,14 @@ const specs=[
  ['Methods','04_absorbance_assay/results/method_comparison.csv',null],
  ['Manuscript claims','06_manuscript/tables/Manuscript_Claim_Map.csv',null],
  ['Researcher decisions','03_candidate_selection/config/researcher_decisions.csv',null],
- ['Source directory','02_identity_and_evidence/results/source_file_index.csv',null]
+ ['Source directory','02_identity_and_evidence/results/source_file_index.csv',null],
+ ['Source documents','02_identity_and_evidence/results/source_document_index.csv',null],
+ ['Mechanism observations','02_identity_and_evidence/inputs/mechanism_evidence/master/Compound_Mechanism_Evidence_Master.csv',['evidence_id','candidate_id','compound_name','DOI','target_protein','evidence_relation_type','target_validation_status','experimental_model','source_verification_status','human_review_status']]
 ];
 const previewDir=path.join(root,'07_quality_control/previews');await fs.mkdir(previewDir,{recursive:true});
 const counts=[];
 for(const [name,rel,fields] of specs){
- const parsed=await Workbook.fromCSV(await fs.readFile(path.join(root,rel),'utf8'),{sheetName:'Import'});
+ const parsed=await Workbook.fromCSV((await fs.readFile(path.join(root,rel),'utf8')).replace(/^\uFEFF/,''),{sheetName:'Import'});
  let rows=parsed.worksheets.getItemAt(0).getUsedRange().values;
  if(fields){const ix=fields.map(f=>{const i=rows[0].indexOf(f);if(i<0)throw Error(`Missing ${f}`);return i});rows=rows.map(r=>ix.map(i=>r[i]??''));}
  const header=rows[0];
@@ -25,7 +27,7 @@ for(const [name,rel,fields] of specs){
  const sheet=wb.worksheets.add(name);sheet.showGridLines=false;sheet.tabColor=name==='Researcher decisions'?'#C79332':'#315E78';
  const grid=sheet.getRangeByIndexes(0,0,rows.length,header.length);grid.values=rows;
  grid.format.font.name='Arial';grid.format.font.size=10;grid.format.columnWidth=27;grid.format.rowHeight=38;grid.format.verticalAlignment='center';grid.format.wrapText=true;
- if(name==='Source directory'||name==='Manuscript claims')grid.format.rowHeight=82;
+ if(['Source directory','Source documents','Manuscript claims','Mechanism observations'].includes(name))grid.format.rowHeight=82;
  const band=sheet.getRangeByIndexes(0,0,1,header.length);band.format.fill='#24465C';band.format.font.color='#FFFFFF';band.format.font.bold=true;band.format.rowHeight=58;
  sheet.tables.add(grid,true,`ReviewData${counts.length+1}`);sheet.freezePanes.freezeRows(1);sheet.freezePanes.freezeColumns(2);
  if(name==='Researcher decisions'&&rows.length>1)sheet.getRangeByIndexes(1,1,rows.length-1,header.length-1).format.fill='#FFF3D6';

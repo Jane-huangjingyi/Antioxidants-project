@@ -5,29 +5,40 @@ ROOT=Path(__file__).resolve().parents[2];sys.path.insert(0,str(ROOT/'00_project'
 from pipeline_io import *
 def walk(p):
  for q in p.iterdir():
-  if q.name in {'node_modules','library','phase2_r_partial_library','__pycache__','.git','.q','previews','local'} or getattr(q,'is_junction',lambda:False)() or q.is_symlink():continue
+  if q.name in {'node_modules','library','local_library','phase2_r_partial_library','__pycache__','.git','.q','previews','local'} or getattr(q,'is_junction',lambda:False)() or q.is_symlink():continue
   if q.is_dir():yield from walk(q)
   elif q.is_file():yield q
 source_rows=[]
-for p in walk(LEGACY):
+source_manifest=read_json(ROOT/'02_identity_and_evidence/source_manifest.json')
+def source_priority(role):
+ for index,prefix in enumerate(['SCIENTIFIC_SOURCE_TABLE','FROZEN_REFERENCE','MECHANISM_SOURCE','ORIGINAL_LITERAL','IDENTITY_REFERENCE','METHOD_QC','BIBLIOGRAPHIC','DATED_JOURNAL','DATED_FULL','SCIENTIFIC_ASSESSMENT','SCIENTIFIC_PREPARATION','DATED_SCIENTIFIC_DEVELOPMENT','LOCAL_SOURCE']):
+  if role.startswith(prefix):return index
+ return 20
+source_manifest['records'].sort(key=lambda r:(source_priority(r['role']),r['path']))
+roles={r['path']:r['role'] for r in source_manifest['records']}
+write_csv(ROOT/'02_identity_and_evidence/results/source_document_index.csv',[{'source_file':r['path'],'scientific_role':r['role'],'sha256':r['sha256'],'bundled':r['bundled'],'available_here':(ROOT/r['path']).exists(),'interpretation':r['interpretation']} for r in source_manifest['records']])
+for entry in source_manifest['records']:
+ p=ROOT/entry['path']
+ if not p.exists():continue
  if p.suffix.lower()!='.csv':continue
  rel=p.relative_to(ROOT).as_posix()
  try:
   with p.open(encoding='utf-8-sig',newline='') as f:r=csv.reader(f);headers=next(r,[]);n=sum(1 for _ in r)
-  role='PRESERVED_SCIENTIFIC_OR_PROCESS_TABLE'
+  role=roles[rel]
   if '/archive/' in rel or '/checkpoints/' in rel:role='HISTORICAL_OR_CHECKPOINT_NOT_NEW_INDEPENDENT_EVIDENCE'
   if '/dryrun/' in rel or '/rebuild_check/' in rel:role='ISOLATED_REHEARSAL_OR_REBUILD_NOT_PRODUCTION'
   if '/provenance/Literature_Screening_Publication_' in rel:role='CANDIDATE_PUBLICATION_METADATA_NOT_FULLTEXT_EVIDENCE'
   source_rows.append({'source_file':rel,'record_count':n,'role':role,'sha256':sha(p),'field_names':'; '.join(headers)})
  except (UnicodeError,csv.Error) as e:source_rows.append({'source_file':rel,'record_count':'','role':'READ_ERROR_REQUIRES_REVIEW','sha256':sha(p),'field_names':type(e).__name__})
+source_rows.sort(key=lambda r:(source_priority(r['role']),r['source_file']))
 write_csv(ROOT/'02_identity_and_evidence/results/source_file_index.csv',source_rows)
 files=[]
 for p in walk(ROOT):
  rel=p.relative_to(ROOT).as_posix()
- if rel.startswith('90_archive/') or p.name.endswith('.log'):continue
+ if p.name.endswith('.log'):continue
  files.append({'path':rel,'role':'CODE' if p.suffix in {'.py','.R','.mjs'} else 'DOCUMENTATION' if p.suffix=='.md' else 'GENERATED_FIGURE' if p.suffix in {'.svg','.png'} else 'CONFIG_OR_SCIENTIFIC_TABLE','sha256':sha(p),'step':rel.split('/')[0]})
-files=[r for r in files if r['path'] not in {'07_quality_control/file_role_inventory.csv','07_quality_control/workflow_qc.json','07_quality_control/Workflow_QC.md'}]
-write_csv(ROOT/'07_quality_control/file_role_inventory.csv',files)
+files=[r for r in files if r['path'] not in {'current_review/FILE_INDEX.csv','07_quality_control/workflow_qc.json','07_quality_control/Workflow_QC.md'}]
+write_csv(ROOT/'current_review/FILE_INDEX.csv',files)
 fig=[]
 for p in sorted((ROOT/'06_manuscript/figures').rglob('*.png')):
  svg=Path(str(p).replace('/png/','/svg/').replace('\\png\\','\\svg\\')).with_suffix('.svg')
@@ -38,7 +49,7 @@ write_csv(ROOT/'07_quality_control/figure_export_registry.csv',fig)
 def git(*args):
  try:return subprocess.check_output(['git',*args],cwd=ROOT,encoding='utf8',stderr=subprocess.DEVNULL).strip()
  except (OSError,subprocess.CalledProcessError):return ''
-branches=[];base=read_json(ROOT/'07_quality_control/migration_manifest.json')['base_commit']
+branches=[];base='c6bca4d13e33cf2ce7d1bae7e3d45e69cf4b23b4'
 for line in git('for-each-ref','--format=%(refname:short)|%(objectname)|%(upstream:short)','refs/heads').splitlines():
  name,tip,upstream=line.split('|');contained=subprocess.run(['git','merge-base','--is-ancestor',tip,base],cwd=ROOT,stderr=subprocess.DEVNULL).returncode==0
  count=git('rev-list','--count',base+'..'+tip)
