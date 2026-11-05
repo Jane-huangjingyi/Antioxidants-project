@@ -1,0 +1,21 @@
+{
+  "status": "SOURCE_FOLLOWUP_COMPLETE_NO_MODEL_FITTED",
+  "priority_observations": 6,
+  "original_numeric_SD_rows_rechecked": 1,
+  "conditional_linear_conversions": 1,
+  "paired_parent_compounds": 3,
+  "paired_independent_papers": 1,
+  "FL_reported_index_order": [
+    "Quercetin",
+    "Kaempferol",
+    "Rhamnetin"
+  ],
+  "PGR_reported_index_order": [
+    "Rhamnetin",
+    "Kaempferol",
+    "Quercetin"
+  ],
+  "same_order": false,
+  "approved_calibration_rows": 0,
+  "new_model_or_top20_created": false
+}

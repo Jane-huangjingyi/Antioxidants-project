@@ -1,0 +1,23 @@
+[
+  {
+    "doi": "10.3390/antiox12020505",
+    "access_date": "2026-11-05",
+    "provider": "Europe PMC public API",
+    "status": "NOT_RECOVERED",
+    "error": "HTTPError"
+  },
+  {
+    "doi": "10.3390/foods10081807",
+    "access_date": "2026-11-05",
+    "provider": "Europe PMC public API",
+    "status": "NOT_RECOVERED",
+    "error": "HTTPError"
+  },
+  {
+    "doi": "10.3390/antiox14040479",
+    "access_date": "2026-11-05",
+    "provider": "Europe PMC public API",
+    "status": "NOT_RECOVERED",
+    "error": "HTTPError"
+  }
+]

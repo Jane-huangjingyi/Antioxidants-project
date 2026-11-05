@@ -1,0 +1,17 @@
+{
+  "doi": "10.3390/antiox14040479",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12024297/",
+  "access_scope": "Original article Methods 2.2.1-2.2.2 and Table 1 read as text",
+  "source_locator": "Table 1 parent flavonols A1, A2, A3",
+  "reported_quantity": "ORAC index; molar concentration normalization not established from displayed Equation 1",
+  "plus_minus_type": "NOT_CONFIRMED_FOR_TABLE_1_ORAC_COLUMNS",
+  "method_flags": ["AAPH reported as 800 mM final in PGR method; do not correct or adopt", "ORAC index Equation 1 requires concentration and blank-normalization clarification", "Three parent compounds in one study; common Trolox reference", "Oxidation-product mixtures excluded from defined-compound calibration", "Trolox standard excluded as a calibration-training observation"],
+  "pairs": [
+    {"compound":"Quercetin","PGR_index":2.32,"PGR_plus_minus":0.20,"FL_index":12.43,"FL_plus_minus":0.37},
+    {"compound":"Kaempferol","PGR_index":3.19,"PGR_plus_minus":0.18,"FL_index":11.05,"FL_plus_minus":0.19},
+    {"compound":"Rhamnetin","PGR_index":3.25,"PGR_plus_minus":0.16,"FL_index":5.02,"FL_plus_minus":0.17}
+  ],
+  "calibration_status": "NOT_ELIGIBLE_PENDING_METHOD_UNIT_AND_ERROR_REVIEW",
+  "human_review_status": "NOT_REVIEWED",
+  "change_applied": "NO"
+}
