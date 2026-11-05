@@ -3,7 +3,7 @@
   "status": "PASS",
   "preserved_source_entries": 1313,
   "optional_local_caches_not_bundled": [],
-  "derived_temporary_files_removed": 1,
+  "derived_temporary_files_removed": 110,
   "frozen_sha256_assets_pass": 10,
   "legacy_seed_mapping_pass": 191,
   "discovery_records": 204,

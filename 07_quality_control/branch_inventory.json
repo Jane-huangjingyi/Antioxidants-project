@@ -6,11 +6,11 @@
   "branches": [
     {
       "branch": "codex/food-candidate-manuscript-workflow-20261105",
-      "tip_at_audit": "c6bca4d13e33cf2ce7d1bae7e3d45e69cf4b23b4",
-      "upstream": "",
-      "contained_in_layout_baseline": true,
-      "unique_commits_vs_layout_baseline": 0,
-      "action": "KEEP_AS_TRACEABLE_ANCESTOR_NO_REPEAT_MERGE"
+      "tip_at_audit": "fda5882459404b458dcf3c4a4771c161bc0cd48e",
+      "upstream": "origin/codex/food-candidate-manuscript-workflow-20261105",
+      "contained_in_layout_baseline": false,
+      "unique_commits_vs_layout_baseline": 1,
+      "action": "ACTIVE_WORKFLOW_BRANCH_OR_NEW_WORK_REVIEW_REQUIRED"
     },
     {
       "branch": "codex/phase1c-aff0061-batch-a-review",

@@ -7,7 +7,13 @@ manifest=read_json(ROOT/'07_quality_control/migration_manifest.json');cleanup_pa
 removed={r['path'] for r in cleanup};missing_optional=[]
 for r in manifest['entries']:
  p=ROOT/r['new_path']
- if r['new_path'] in removed:continue
+ if r['new_path'] in removed:
+  entry=next(x for x in cleanup if x['path']==r['new_path'])
+  if entry.get('kind')=='EXACT_REPRODUCED_FIGURE_DUPLICATE':
+   assert not p.exists(),'Removed duplicate unexpectedly returned: '+str(p)
+   assert entry['sha256']==r['sha256']==entry['replacement_sha256']
+   assert sha(ROOT/entry['retained_path'])==entry['sha256'],entry['retained_path']
+  continue
  if not p.exists():
   assert not r['tracked_before'],'Missing tracked source: '+r['new_path']
   missing_optional.append(r['new_path']);continue
