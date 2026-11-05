@@ -1,0 +1,11 @@
+﻿source_field,target_field,mapping_rule,available_now,claim_guard
+candidate_id,candidate_id,Direct identity join,YES,Identity must remain fixed
+canonical_name,candidate_name,Display label only,YES,Use candidate_id for joins
+median_H_ORAC_mol_TE_per_mol,H_ORAC_activity_mol_TE_per_mol,Copy canonical A+B1 median without recalculation,YES,In vitro chemical endpoint only
+confirmed_independent_study_N,independent_study_N,Study-level source audit,YES_FOR_28,No DOI proxy or technical repeats
+proposed_threshold_status,H_ORAC_evidence_status,Use 6D eligibility state,YES_FOR_28,Unresolved distinct from fail
+error_type_verified,measurement_uncertainty,Aggregate typed versus untyped availability,PARTIAL,No CI imputation
+earliest_original_publication_year,research_maturity,Metadata-only until source repair,PARTIAL,Not potency
+other_assays,other_antioxidant_assay_coverage,No existing systematic per-candidate audit,NO,NOT_SEARCHED
+human_study_N,biological_evidence_coverage,Metadata count only,PARTIAL,No effect inference
+application_feasibility,application_evidence_coverage,No source-level evaluation,NO,NOT_SEARCHED

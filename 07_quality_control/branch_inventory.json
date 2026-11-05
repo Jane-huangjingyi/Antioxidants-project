@@ -1,0 +1,80 @@
+{
+  "audit_date": "2026-11-05",
+  "baseline_commit": "c6bca4d13e33cf2ce7d1bae7e3d45e69cf4b23b4",
+  "current_branch": "codex/food-candidate-manuscript-workflow-20261105",
+  "main_tip_at_audit": "d29a6936603886e654b3cdfb24ccd3a1e76cee23",
+  "branches": [
+    {
+      "branch": "codex/food-candidate-manuscript-workflow-20261105",
+      "tip_at_audit": "c6bca4d13e33cf2ce7d1bae7e3d45e69cf4b23b4",
+      "upstream": "",
+      "contained_in_layout_baseline": true,
+      "unique_commits_vs_layout_baseline": 0,
+      "action": "KEEP_AS_TRACEABLE_ANCESTOR_NO_REPEAT_MERGE"
+    },
+    {
+      "branch": "codex/phase1c-aff0061-batch-a-review",
+      "tip_at_audit": "48b34a7314b1d5914c4bb70f770e7e6d2fe939fe",
+      "upstream": "origin/codex/phase1c-aff0061-batch-a-review",
+      "contained_in_layout_baseline": true,
+      "unique_commits_vs_layout_baseline": 0,
+      "action": "KEEP_AS_TRACEABLE_ANCESTOR_NO_REPEAT_MERGE"
+    },
+    {
+      "branch": "codex/phase1c-aff0061-batch-a-targeted-followup",
+      "tip_at_audit": "07e3adb02eac1aeb54dfbb4bf801fed09cae03ad",
+      "upstream": "origin/codex/phase1c-aff0061-batch-a-targeted-followup",
+      "contained_in_layout_baseline": true,
+      "unique_commits_vs_layout_baseline": 0,
+      "action": "KEEP_AS_TRACEABLE_ANCESTOR_NO_REPEAT_MERGE"
+    },
+    {
+      "branch": "codex/phase1c-governance-v0.1",
+      "tip_at_audit": "7e62d3b6fcebda2d4941d8e93631d96959fc9581",
+      "upstream": "origin/codex/phase1c-governance-v0.1",
+      "contained_in_layout_baseline": true,
+      "unique_commits_vs_layout_baseline": 0,
+      "action": "KEEP_AS_TRACEABLE_ANCESTOR_NO_REPEAT_MERGE"
+    },
+    {
+      "branch": "codex/phase1c-governance-v0.2-approval",
+      "tip_at_audit": "8177aebfa22d68945254ee836ec662985e5da265",
+      "upstream": "origin/codex/phase1c-governance-v0.2-approval",
+      "contained_in_layout_baseline": true,
+      "unique_commits_vs_layout_baseline": 0,
+      "action": "KEEP_AS_TRACEABLE_ANCESTOR_NO_REPEAT_MERGE"
+    },
+    {
+      "branch": "codex/phase1c-governance-v0.2-dryrun",
+      "tip_at_audit": "9c6be49bac03a16bab1aa49790124dbdaf7a6af0",
+      "upstream": "origin/codex/phase1c-governance-v0.2-dryrun",
+      "contained_in_layout_baseline": true,
+      "unique_commits_vs_layout_baseline": 0,
+      "action": "KEEP_AS_TRACEABLE_ANCESTOR_NO_REPEAT_MERGE"
+    },
+    {
+      "branch": "codex/repository-review-evidence-catalog-20261030",
+      "tip_at_audit": "c6bca4d13e33cf2ce7d1bae7e3d45e69cf4b23b4",
+      "upstream": "origin/codex/repository-review-evidence-catalog-20261030",
+      "contained_in_layout_baseline": true,
+      "unique_commits_vs_layout_baseline": 0,
+      "action": "KEEP_AS_TRACEABLE_ANCESTOR_NO_REPEAT_MERGE"
+    },
+    {
+      "branch": "codex/track-b-robot-screening-feasibility",
+      "tip_at_audit": "a90002d12833548ba17b1a3af5bc55da000ba10f",
+      "upstream": "origin/codex/track-b-robot-screening-feasibility",
+      "contained_in_layout_baseline": true,
+      "unique_commits_vs_layout_baseline": 0,
+      "action": "KEEP_AS_TRACEABLE_ANCESTOR_NO_REPEAT_MERGE"
+    },
+    {
+      "branch": "main",
+      "tip_at_audit": "d29a6936603886e654b3cdfb24ccd3a1e76cee23",
+      "upstream": "origin/main",
+      "contained_in_layout_baseline": true,
+      "unique_commits_vs_layout_baseline": 0,
+      "action": "KEEP_AS_TRACEABLE_ANCESTOR_NO_REPEAT_MERGE"
+    }
+  ]
+}

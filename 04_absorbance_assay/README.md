@@ -1,0 +1,17 @@
+# 04. Prepare the aqueous absorbance assay
+
+The preferred method-development candidate is ORAC-PGR, with crocin bleaching as an alternative and ABTS as a complementary construct. The primary-source comparison is generated from `inputs/primary_method_registry.json`; the platform decision file keeps unapproved parameters null. No experiment is executed by this workflow.
+
+PGR measures protection of an absorbance probe from radical-driven consumption. Probe-dependent competition and reactivity prevent direct substitution of historical ORAC-FL values. The 2011 microplate paper reports 540 nm kinetic measurement; its validation in beverages is a starting point, not proof of universal coverage of pure compounds. The 2016 flow study supports controlled automation but does not validate this robot. A 2025 implementation reports a substantially different AAPH condition, retained as a verification issue rather than copied into a protocol. Crocin and ABTS remain independently reported methods; no assay is assumed to be universally broad-spectrum. Sources and checked sections are in the registry.
+
+Before screening, confirm instrument wavelength range, temperature control, kinetics and mixing. For each exact reagent form record supplier/lot/COA, mass/purity basis, stock preparation, dissolved concentration, vehicle fraction and stability. Pilot concentration bounds follow actual solubility, optical/reaction compatibility and dynamic range, not the old ORAC median. Use matched-dose no-probe backgrounds, probe without initiator, vehicle reactions, reagent blanks and Trolox calibration/QC. Assess color/absorbance overlap, turbidity, precipitation, adsorption, direct probe interactions, pH and radical-generator effects.
+
+Randomize within independent preparation/day blocks; distribute shared QC and avoid confounding concentration or candidate with row/column/addition time. Technical wells are nested measurements, not independent studies or biological replicates. Lock integration window, baseline handling, calibration, valid range, QC thresholds, exclusions and repeat rules after the pilot and before definitive testing. Preserve negative and invalid results with distinct flags.
+
+`code/analyze_kinetics.py` implements a transparent trapezoidal AUC calculation for real, interference-cleared traces, requiring one dose-matched no-probe trace on the same time grid. It rejects missing clearance, metadata mismatches and non-positive corrected initial absorbance. It does not silently interpolate, impute, force an IC50 fit or report Trolox equivalents without a separately validated calibration model. The schema CSV has no experimental rows; no experimental Result is generated now.
+
+```sh
+python 04_absorbance_assay/code/analyze_kinetics.py --input path/to/real_traces.csv --output path/to/auc_results.csv
+```
+
+Cell/function and causal mechanism experiments require later, independent designs. Chemical protection does not establish cell benefit, direct binding, causal mechanism or human efficacy.

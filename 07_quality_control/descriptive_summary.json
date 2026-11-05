@@ -1,0 +1,66 @@
+{
+  "metrics": [
+    {
+      "stage": "Discovery records",
+      "count": 204
+    },
+    {
+      "stage": "Identity/evidence profiles",
+      "count": 193
+    },
+    {
+      "stage": "Reference identity and formula present",
+      "count": 191
+    },
+    {
+      "stage": "Molecular-scope profiles",
+      "count": 186
+    },
+    {
+      "stage": "Identity-complete molecular-scope profiles",
+      "count": 184
+    },
+    {
+      "stage": "In the existing 157-candidate framework",
+      "count": 157
+    },
+    {
+      "stage": "Review-queue eligible",
+      "count": 25
+    },
+    {
+      "stage": "Provisional review slots",
+      "count": 20
+    },
+    {
+      "stage": "Two-confirmed-study sensitivity",
+      "count": 9
+    },
+    {
+      "stage": "Laboratory-ready panel",
+      "count": 0
+    }
+  ],
+  "frozen_preview_overlap": 12,
+  "new_preview_members": [
+    "AFF-0005",
+    "AFF-0011",
+    "AFF-0014",
+    "AFF-0060",
+    "AFF-0085",
+    "AFF-0162",
+    "AFF-0167",
+    "AFF-0173"
+  ],
+  "omitted_frozen_reference_members": [
+    "AFF-0030",
+    "AFF-0031",
+    "AFF-0034",
+    "AFF-0036",
+    "AFF-0052",
+    "AFF-0053",
+    "AFF-0072",
+    "AFF-0084"
+  ],
+  "publication_claim_limits_recorded": true
+}

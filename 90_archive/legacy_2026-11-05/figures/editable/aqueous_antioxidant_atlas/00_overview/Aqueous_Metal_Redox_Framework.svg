@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='864.00pt' height='468.00pt' viewBox='0 0 864.00 468.00'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHw4NjQuMDB8MC4wMHw0NjguMDA='>
+    <rect x='0.00' y='0.00' width='864.00' height='468.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHw4NjQuMDB8MC4wMHw0NjguMDA=)'>
+<rect x='0.00' y='-0.00000000000011' width='864.00' height='468.00' style='stroke-width: 0.00; stroke: none;' />
+<line x1='196.36' y1='164.94' x2='353.45' y2='94.09' style='stroke-width: 1.07; stroke: #777777; stroke-linecap: butt;' />
+<polyline points='347.15,102.86 353.45,94.09 342.71,93.02 ' style='stroke-width: 1.07; stroke: #777777; stroke-linecap: butt;' />
+<line x1='196.36' y1='164.94' x2='353.45' y2='227.91' style='stroke-width: 1.07; stroke: #777777; stroke-linecap: butt;' />
+<polyline points='342.76,229.45 353.45,227.91 346.78,219.42 ' style='stroke-width: 1.07; stroke: #777777; stroke-linecap: butt;' />
+<line x1='510.55' y1='227.91' x2='667.64' y2='227.91' style='stroke-width: 1.07; stroke: #777777; stroke-linecap: butt;' />
+<polyline points='658.28,233.31 667.64,227.91 658.28,222.51 ' style='stroke-width: 1.07; stroke: #777777; stroke-linecap: butt;' />
+<line x1='196.36' y1='322.37' x2='353.45' y2='322.37' style='stroke-width: 1.07; stroke: #777777; stroke-linecap: butt;' />
+<polyline points='344.10,327.77 353.45,322.37 344.10,316.97 ' style='stroke-width: 1.07; stroke: #777777; stroke-linecap: butt;' />
+<line x1='510.55' y1='322.37' x2='667.64' y2='322.37' style='stroke-width: 1.07; stroke: #777777; stroke-linecap: butt;' />
+<polyline points='658.28,327.77 667.64,322.37 658.28,316.97 ' style='stroke-width: 1.07; stroke: #777777; stroke-linecap: butt;' />
+<line x1='196.36' y1='416.83' x2='353.45' y2='416.83' style='stroke-width: 1.07; stroke: #777777; stroke-linecap: butt;' />
+<polyline points='344.10,422.23 353.45,416.83 344.10,411.43 ' style='stroke-width: 1.07; stroke: #777777; stroke-linecap: butt;' />
+<circle cx='117.82' cy='164.94' r='7.82' style='stroke-width: 0.71; stroke: #C38D27; fill: #C38D27;' />
+<circle cx='432.00' cy='94.09' r='7.82' style='stroke-width: 0.71; stroke: #E98421; fill: #E98421;' />
+<circle cx='432.00' cy='227.91' r='7.82' style='stroke-width: 0.71; stroke: #AA7F57; fill: #AA7F57;' />
+<circle cx='746.18' cy='227.91' r='7.82' style='stroke-width: 0.71; stroke: #E98421; fill: #E98421;' />
+<circle cx='117.82' cy='322.37' r='7.82' style='stroke-width: 0.71; stroke: #CA813C; fill: #CA813C;' />
+<circle cx='432.00' cy='322.37' r='7.82' style='stroke-width: 0.71; stroke: #4C78A8; fill: #4C78A8;' />
+<circle cx='746.18' cy='322.37' r='7.82' style='stroke-width: 0.71; stroke: #6B7A8D; fill: #6B7A8D;' />
+<circle cx='117.82' cy='416.83' r='7.82' style='stroke-width: 0.71; stroke: #8B7C72; fill: #8B7C72;' />
+<circle cx='432.00' cy='416.83' r='7.82' style='stroke-width: 0.71; stroke: #E1881E; fill: #E1881E;' />
+<text x='117.82' y='190.13' text-anchor='middle' style='font-size: 8.82px; font-weight: bold; font-family: "Arial";' textLength='103.42px' lengthAdjust='spacingAndGlyphs'>Aqueous small molecule</text>
+<text x='432.00' y='119.29' text-anchor='middle' style='font-size: 8.82px; font-weight: bold; font-family: "Arial";' textLength='106.88px' lengthAdjust='spacingAndGlyphs'>Direct radical scavenging</text>
+<text x='432.00' y='253.11' text-anchor='middle' style='font-size: 8.82px; font-weight: bold; font-family: "Arial";' textLength='65.69px' lengthAdjust='spacingAndGlyphs'>Fe/Cu chelation</text>
+<text x='746.18' y='253.11' text-anchor='middle' style='font-size: 8.82px; font-weight: bold; font-family: "Arial";' textLength='142.61px' lengthAdjust='spacingAndGlyphs'>Fe/Cu-mediated ROS suppression</text>
+<text x='117.82' y='347.57' text-anchor='middle' style='font-size: 8.82px; font-weight: bold; font-family: "Arial";' textLength='56.34px' lengthAdjust='spacingAndGlyphs'>Micronutrient</text>
+<text x='432.00' y='347.57' text-anchor='middle' style='font-size: 8.82px; font-weight: bold; font-family: "Arial";' textLength='121.05px' lengthAdjust='spacingAndGlyphs'>Antioxidant-enzyme cofactor</text>
+<text x='746.18' y='347.57' text-anchor='middle' style='font-size: 8.82px; font-weight: bold; font-family: "Arial";' textLength='82.77px' lengthAdjust='spacingAndGlyphs'>GPX / TXNRD / SOD</text>
+<text x='117.82' y='442.03' text-anchor='middle' style='font-size: 8.82px; font-weight: bold; font-family: "Arial";' textLength='57.36px' lengthAdjust='spacingAndGlyphs'>Excess Fe/Cu</text>
+<text x='432.00' y='442.03' text-anchor='middle' style='font-size: 8.82px; font-weight: bold; font-family: "Arial";' textLength='126.94px' lengthAdjust='spacingAndGlyphs'>Prooxidant / Fenton chemistry</text>
+<text x='0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000' y='32.74' style='font-size: 11.00px; font-family: "Arial";' textLength='364.56px' lengthAdjust='spacingAndGlyphs'>Small-molecule chelation and micronutrient cofactor biology remain distinct</text>
+<text x='0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000' y='16.22' style='font-size: 15.00px; font-weight: bold; font-family: "Arial";' textLength='409.55px' lengthAdjust='spacingAndGlyphs'>Metal-dependent redox mechanisms in the aqueous Atlas</text>
+</g>
+</g>
+</svg>

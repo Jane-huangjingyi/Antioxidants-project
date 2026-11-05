@@ -1,0 +1,61 @@
+﻿analysis,rank,candidate_id,candidate,median_mol_TE_per_mol,Top20_member,membership_vs_primary,interpretation
+PRIMARY_A+B1,1,AFF-0084,Rosmarinic acid,18.72,yes,same,Canonical v2 primary
+PRIMARY_A+B1,2,AFF-0002,Epicatechin,9.37,yes,same,Canonical v2 primary
+PRIMARY_A+B1,3,AFF-0001,Catechin,8.45,yes,same,Canonical v2 primary
+PRIMARY_A+B1,4,AFF-0069,Caffeic acid,8.26,yes,same,Canonical v2 primary
+PRIMARY_A+B1,5,AFF-0022,Apigenin,8.2065,yes,same,Canonical v2 primary
+PRIMARY_A+B1,6,AFF-0030,Naringenin,8.04,yes,same,Canonical v2 primary
+PRIMARY_A+B1,7,AFF-0010,Kaempferol,7.6965,yes,same,Canonical v2 primary
+PRIMARY_A+B1,8,AFF-0053,Daidzein,7.66,yes,same,Canonical v2 primary
+PRIMARY_A+B1,9,AFF-0031,Hesperetin,7.4575,yes,same,Canonical v2 primary
+PRIMARY_A+B1,10,AFF-0061,Protocatechuic acid,7.36,yes,same,Canonical v2 primary
+PRIMARY_A+B1,11,AFF-0052,Genistein,7.32,yes,same,Canonical v2 primary
+PRIMARY_A+B1,12,AFF-0009,Quercetin,7.2255,yes,same,Canonical v2 primary
+PRIMARY_A+B1,13,AFF-0013,Fisetin,7.092,yes,same,Canonical v2 primary
+PRIMARY_A+B1,14,AFF-0017,Rutin,6.705,yes,same,Canonical v2 primary
+PRIMARY_A+B1,15,AFF-0072,Sinapic acid,5.99,yes,same,Canonical v2 primary
+PRIMARY_A+B1,16,AFF-0071,p-Coumaric acid,5.01,yes,same,Canonical v2 primary
+PRIMARY_A+B1,17,AFF-0036,Hesperidin,4.5,yes,same,Canonical v2 primary
+PRIMARY_A+B1,18,AFF-0021,Luteolin,4.136,yes,leave_from_sensitivity,Canonical v2 primary
+PRIMARY_A+B1,19,AFF-0034,Naringin,4.11,yes,leave_from_sensitivity,Canonical v2 primary
+PRIMARY_A+B1,20,AFF-0070,Ferulic acid,4.032,yes,leave_from_sensitivity,Canonical v2 primary
+PRIMARY_A+B1,21,AFF-0014,Morin,3.8745,no,same,Canonical v2 primary
+PRIMARY_A+B1,22,AFF-0011,Myricetin,3.416,no,same,Canonical v2 primary
+PRIMARY_A+B1,23,AFF-0005,Epigallocatechin,3.252,no,same,Canonical v2 primary
+PRIMARY_A+B1,24,AFF-0167,Eugenol,2.12,no,same,Canonical v2 primary
+PRIMARY_A+B1,25,AFF-0085,Ellagic acid,1.8324,no,same,Canonical v2 primary
+PRIMARY_A+B1,26,AFF-0173,Vanillin,1.81,no,same,Canonical v2 primary
+PRIMARY_A+B1,27,AFF-0162,Capsaicin,1.6,no,same,Canonical v2 primary
+PRIMARY_A+B1,28,AFF-0060,Gallic acid,1.25,no,same,Canonical v2 primary
+SENSITIVITY_A+B1+B2,1,AFF-0084,Rosmarinic acid,18.72,yes,same,B2 sensitivity only
+SENSITIVITY_A+B1+B2,2,AFF-0002,Epicatechin,9.37,yes,same,B2 sensitivity only
+SENSITIVITY_A+B1+B2,3,AFF-0001,Catechin,8.45,yes,same,B2 sensitivity only
+SENSITIVITY_A+B1+B2,4,AFF-0069,Caffeic acid,8.26,yes,same,B2 sensitivity only
+SENSITIVITY_A+B1+B2,5,AFF-0022,Apigenin,8.2065,yes,same,B2 sensitivity only
+SENSITIVITY_A+B1+B2,6,AFF-0030,Naringenin,8.04,yes,same,B2 sensitivity only
+SENSITIVITY_A+B1+B2,7,AFF-0010,Kaempferol,7.6965,yes,same,B2 sensitivity only
+SENSITIVITY_A+B1+B2,8,AFF-0053,Daidzein,7.66,yes,same,B2 sensitivity only
+SENSITIVITY_A+B1+B2,9,AFF-0031,Hesperetin,7.4575,yes,same,B2 sensitivity only
+SENSITIVITY_A+B1+B2,10,AFF-0061,Protocatechuic acid,7.36,yes,same,B2 sensitivity only
+SENSITIVITY_A+B1+B2,11,AFF-0052,Genistein,7.32,yes,same,B2 sensitivity only
+SENSITIVITY_A+B1+B2,12,AFF-0045,Cyanidin 3-O-glucoside,7.3,yes,enter,B2 sensitivity only
+SENSITIVITY_A+B1+B2,13,AFF-0009,Quercetin,7.2255,yes,same,B2 sensitivity only
+SENSITIVITY_A+B1+B2,14,AFF-0013,Fisetin,7.092,yes,same,B2 sensitivity only
+SENSITIVITY_A+B1+B2,15,AFF-0017,Rutin,6.705,yes,same,B2 sensitivity only
+SENSITIVITY_A+B1+B2,16,AFF-0072,Sinapic acid,5.99,yes,same,B2 sensitivity only
+SENSITIVITY_A+B1+B2,17,AFF-0024,Baicalein,5.41,yes,enter,B2 sensitivity only
+SENSITIVITY_A+B1+B2,18,AFF-0071,p-Coumaric acid,5.01,yes,same,B2 sensitivity only
+SENSITIVITY_A+B1+B2,19,AFF-0036,Hesperidin,4.5,yes,same,B2 sensitivity only
+SENSITIVITY_A+B1+B2,20,AFF-0039,Cyanidin,4.4,yes,enter,B2 sensitivity only
+SENSITIVITY_A+B1+B2,21,AFF-0021,Luteolin,4.136,no,same,B2 sensitivity only
+SENSITIVITY_A+B1+B2,22,AFF-0034,Naringin,4.11,no,same,B2 sensitivity only
+SENSITIVITY_A+B1+B2,23,AFF-0070,Ferulic acid,4.032,no,same,B2 sensitivity only
+SENSITIVITY_A+B1+B2,24,AFF-0014,Morin,3.8745,no,same,B2 sensitivity only
+SENSITIVITY_A+B1+B2,25,AFF-0011,Myricetin,3.416,no,same,B2 sensitivity only
+SENSITIVITY_A+B1+B2,26,AFF-0005,Epigallocatechin,3.252,no,same,B2 sensitivity only
+SENSITIVITY_A+B1+B2,27,AFF-0076,Chlorogenic acid,2.21,no,same,B2 sensitivity only
+SENSITIVITY_A+B1+B2,28,AFF-0167,Eugenol,2.12,no,same,B2 sensitivity only
+SENSITIVITY_A+B1+B2,29,AFF-0085,Ellagic acid,1.8324,no,same,B2 sensitivity only
+SENSITIVITY_A+B1+B2,30,AFF-0173,Vanillin,1.81,no,same,B2 sensitivity only
+SENSITIVITY_A+B1+B2,31,AFF-0162,Capsaicin,1.6,no,same,B2 sensitivity only
+SENSITIVITY_A+B1+B2,32,AFF-0060,Gallic acid,1.25,no,same,B2 sensitivity only

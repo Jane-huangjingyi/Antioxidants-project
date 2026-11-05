@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='720.00pt' height='396.00pt' viewBox='0 0 720.00 396.00'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHw3MjAuMDB8MC4wMHwzOTYuMDA='>
+    <rect x='0.00' y='0.00' width='720.00' height='396.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHw3MjAuMDB8MC4wMHwzOTYuMDA=)'>
+<rect x='0.00' y='0.00' width='720.00' height='396.00' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpMTI3Ljc1fDcxNC41Mnw0MC41NHwzNjQuNTA='>
+    <rect x='127.75' y='40.54' width='586.77' height='323.97' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMTI3Ljc1fDcxNC41Mnw0MC41NHwzNjQuNTA=)'>
+<polyline points='127.75,276.15 714.52,276.15 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='127.75,128.89 714.52,128.89 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='127.75,364.50 127.75,40.54 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='265.01,364.50 265.01,40.54 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='402.27,364.50 402.27,40.54 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='539.52,364.50 539.52,40.54 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<polyline points='676.78,364.50 676.78,40.54 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
+<rect x='127.75' y='77.35' width='514.71' height='103.08' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #D89000;' />
+<rect x='127.75' y='224.61' width='205.88' height='103.08' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #2A9D8F;' />
+<text x='644.99' y='132.15' style='font-size: 9.10px; font-family: "Arial";' textLength='10.12px' lengthAdjust='spacingAndGlyphs'>15</text>
+<text x='334.90' y='279.40' style='font-size: 9.10px; font-family: "Arial";' textLength='5.06px' lengthAdjust='spacingAndGlyphs'>6</text>
+</g>
+<g clip-path='url(#cpMC4wMHw3MjAuMDB8MC4wMHwzOTYuMDA=)'>
+<text x='122.82' y='279.30' text-anchor='end' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='35.20px' lengthAdjust='spacingAndGlyphs'>liposome</text>
+<text x='122.82' y='132.04' text-anchor='end' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='117.34px' lengthAdjust='spacingAndGlyphs'>homogeneous organic solvent</text>
+<text x='127.75' y='375.74' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='4.89px' lengthAdjust='spacingAndGlyphs'>0</text>
+<text x='265.01' y='375.74' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='4.89px' lengthAdjust='spacingAndGlyphs'>4</text>
+<text x='402.27' y='375.74' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='4.89px' lengthAdjust='spacingAndGlyphs'>8</text>
+<text x='539.52' y='375.74' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='9.78px' lengthAdjust='spacingAndGlyphs'>12</text>
+<text x='676.78' y='375.74' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='9.78px' lengthAdjust='spacingAndGlyphs'>16</text>
+<text x='421.14' y='388.20' text-anchor='middle' style='font-size: 11.00px; font-family: "Arial";' textLength='94.78px' lengthAdjust='spacingAndGlyphs'>Record/profile rows</text>
+<text x='127.75' y='32.74' style='font-size: 11.00px;fill: #555555; font-family: "Arial";' textLength='362.16px' lengthAdjust='spacingAndGlyphs'>Only homogeneous organic-solvent direct kq currently supports a class list</text>
+<text x='127.75' y='16.22' style='font-size: 15.00px; font-weight: bold; font-family: "Arial";' textLength='290.11px' lengthAdjust='spacingAndGlyphs'>Carotenoid assay-environment coverage</text>
+</g>
+</g>
+</svg>

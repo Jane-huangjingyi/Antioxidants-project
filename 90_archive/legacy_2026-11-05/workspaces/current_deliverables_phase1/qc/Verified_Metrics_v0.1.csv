@@ -1,0 +1,25 @@
+﻿metric_id,metric_en,metric_cn,observed_value,denominator,expected_value,check_status,source_path,calculation,scientific_status,release_status
+M01,Background entries,全类别背景记录,191,background records,191,PASS,data/candidate_universe/Antioxidant_Class_Candidate_Master.csv,Count data rows; not identity-deduplicated compound count,OBSERVED_RESULT,DRAFT
+M02,Aqueous candidates,水相候选,157,aqueous candidate entries,157,PASS,data/candidate_universe/Aqueous_Antioxidant_Candidate_Master.csv,Count data rows,OBSERVED_RESULT,DRAFT
+M03,Background panels,背景分类面板,9,panels,9,PASS,data/candidate_universe/Antioxidant_Class_Candidate_Master.csv,Distinct analysis_panel,OBSERVED_RESULT,DRAFT
+M04,Aqueous panels,水相分类面板,7,panels,7,PASS,data/candidate_universe/Aqueous_Antioxidant_Candidate_Master.csv,Distinct analysis_panel,OBSERVED_RESULT,DRAFT
+M05,Candidate publication provenance rows,候选物论文来源行,45643,candidate-publication rows,45643,PASS,data/literature_screening/provenance/Literature_Screening_Publication_Provenance.csv,Count rows; not unique publications or studies,OBSERVED_RESULT,DRAFT
+M06,Primary metadata records,纳入元数据主指标,41967,candidate-publication rows,41967,PASS,data/literature_screening/provenance/Literature_Screening_Publication_Provenance.csv,Count include_primary_metric=yes,OBSERVED_RESULT,DRAFT
+M07,Canonical experiment rows,实验记录,74,experiment records,74,PASS,data/h_orac_stage25b/stage25b/Stage25B_HORAC_Experiment_Evidence.csv,Count rows,OBSERVED_RESULT,DRAFT
+M08,Tier A,分层 A,7,74 experiment records,7,PASS,data/h_orac_stage25b/stage25b/Stage25B_HORAC_Experiment_Evidence.csv,Count H_ORAC_tier,OBSERVED_RESULT,DRAFT
+M09,Tier B1,分层 B1,61,74 experiment records,61,PASS,data/h_orac_stage25b/stage25b/Stage25B_HORAC_Experiment_Evidence.csv,Count H_ORAC_tier,OBSERVED_RESULT,DRAFT
+M10,Tier B2,分层 B2,4,74 experiment records,4,PASS,data/h_orac_stage25b/stage25b/Stage25B_HORAC_Experiment_Evidence.csv,Count H_ORAC_tier,OBSERVED_RESULT,DRAFT
+M11,Tier X,分层 X,2,74 experiment records,2,PASS,data/h_orac_stage25b/stage25b/Stage25B_HORAC_Experiment_Evidence.csv,Count H_ORAC_tier,OBSERVED_RESULT,DRAFT
+M12,A plus B1 records,A加B1记录,68,74 experiment records,68,PASS,data/h_orac_stage25b/stage25b/Stage25B_HORAC_Experiment_Evidence.csv,Count A or B1,OBSERVED_RESULT,DRAFT
+M13,Existing rankable candidates,既有可排名候选,28,candidates,28,PASS,data/h_orac_stage25b/stage25b/Stage25B_HORAC_Quantitative_Ranking.csv,Count ranking rows; not VSIR GO,OBSERVED_RESULT,DRAFT
+M14,Reported verified original sources,表内已核实原始来源,8,16 source DOIs,8,PASS,data/h_orac_stage25b/stage25b6d/Stage25B6D_Source_Closure.csv,Read prior 6D source classifications; original full texts not re-adjudicated here,OBSERVED_RESULT,DRAFT
+M15,PASS_VERIFIED,6D PASS_VERIFIED,9,28 audited candidates,9,PASS,data/h_orac_stage25b/stage25b6d/Stage25B6D_Candidate_Eligibility.csv,Read 6D status; not VSIR classification,OBSERVED_RESULT,DRAFT
+M16,UNRESOLVED,6D UNRESOLVED,10,28 audited candidates,10,PASS,data/h_orac_stage25b/stage25b6d/Stage25B6D_Candidate_Eligibility.csv,Read 6D status; not VSIR classification,OBSERVED_RESULT,DRAFT
+M17,FAIL_ON_AVAILABLE_EVIDENCE,6D FAIL_ON_AVAILABLE_EVIDENCE,9,28 audited candidates,9,PASS,data/h_orac_stage25b/stage25b6d/Stage25B6D_Candidate_Eligibility.csv,Read 6D status; not VSIR classification,OBSERVED_RESULT,DRAFT
+M18,Records with numeric error,有数值误差记录,27,68 A plus B1 records,27,PASS,data/h_orac_stage25b/stage25b6d/Stage25B6D_Error_and_Replicate_Audit.csv,Count nonblank error_value,OBSERVED_RESULT,DRAFT
+M19,Records with typed SD,明确标准差记录,4,68 A plus B1 records,4,PASS,data/h_orac_stage25b/stage25b6d/Stage25B6D_Error_and_Replicate_Audit.csv,Count verified SD categories,OBSERVED_RESULT,DRAFT
+M20,Pending second review,待第二复核记录,70,74 experiment records,70,PASS,data/h_orac_stage25b/stage25b/Stage25B_HORAC_Experiment_Evidence.csv,Count literal PENDING_SECOND_REVIEW,OBSERVED_RESULT,DRAFT
+M21,Pending full text records,待全文裁决,1641,screened publication records,1641,PASS,data/h_orac_stage25b/stage25b/Stage25B_HORAC_Publication_Screening.csv,Count pending status,OBSERVED_RESULT,DRAFT
+M22,Dimension coverage rows,维度覆盖行,785,157 candidates by 5 dimensions,785,PASS,data/framework/Candidate_157_Data_Availability_Matrix.csv,Count rows,OBSERVED_RESULT,DRAFT
+M23,Secondary indicators,二级指标,26,framework indicators,26,PASS,data/framework/Comprehensive_Antioxidant_Indicator_Dictionary_v0.1.csv,Count rows,OBSERVED_RESULT,DRAFT
+M24,Application scenarios,应用场景,3,scenarios,3,PASS,data/framework/Application_Scenario_Applicability_Matrix.csv,Count rows,OBSERVED_RESULT,DRAFT

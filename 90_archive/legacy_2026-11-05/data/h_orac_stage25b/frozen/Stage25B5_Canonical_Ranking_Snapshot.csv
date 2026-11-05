@@ -1,0 +1,29 @@
+﻿rank,candidate_id,canonical_name,median_H_ORAC_mol_TE_per_mol,independent_eligible_experiment_N,evidence_confidence,heterogeneity_flag,Stage25A_primary_rank,Stage25B_status,ranking_statistic,provisional_status
+1,AFF-0084,Rosmarinic acid,18.72,1,Low,no,19,Ready,median canonical v2 A+B1 mol TE/mol,POST_MIGRATION_PENDING_HUMAN_TOP20_FREEZE
+2,AFF-0002,Epicatechin,9.37,5,High,no,36,Ready,median canonical v2 A+B1 mol TE/mol,POST_MIGRATION_PENDING_HUMAN_TOP20_FREEZE
+3,AFF-0001,Catechin,8.45,6,Moderate,HIGH_HETEROGENEITY,16,Ready,median canonical v2 A+B1 mol TE/mol,POST_MIGRATION_PENDING_HUMAN_TOP20_FREEZE
+4,AFF-0069,Caffeic acid,8.26,3,Moderate,HIGH_HETEROGENEITY,9,Ready,median canonical v2 A+B1 mol TE/mol,POST_MIGRATION_PENDING_HUMAN_TOP20_FREEZE
+5,AFF-0022,Apigenin,8.2065,2,Moderate,no,21,Ready,median canonical v2 A+B1 mol TE/mol,POST_MIGRATION_PENDING_HUMAN_TOP20_FREEZE
+6,AFF-0030,Naringenin,8.04,3,High,no,18,Ready,median canonical v2 A+B1 mol TE/mol,POST_MIGRATION_PENDING_HUMAN_TOP20_FREEZE
+7,AFF-0010,Kaempferol,7.6965,4,High,no,23,Ready,median canonical v2 A+B1 mol TE/mol,POST_MIGRATION_PENDING_HUMAN_TOP20_FREEZE
+8,AFF-0053,Daidzein,7.66,1,Low,no,47,Ready,median canonical v2 A+B1 mol TE/mol,POST_MIGRATION_PENDING_HUMAN_TOP20_FREEZE
+9,AFF-0031,Hesperetin,7.4575,2,Moderate,no,40,Ready,median canonical v2 A+B1 mol TE/mol,POST_MIGRATION_PENDING_HUMAN_TOP20_FREEZE
+10,AFF-0061,Protocatechuic acid,7.36,2,Moderate,HIGH_HETEROGENEITY,39,Ready,median canonical v2 A+B1 mol TE/mol,POST_MIGRATION_PENDING_HUMAN_TOP20_FREEZE
+11,AFF-0052,Genistein,7.32,3,High,no,22,Ready,median canonical v2 A+B1 mol TE/mol,POST_MIGRATION_PENDING_HUMAN_TOP20_FREEZE
+12,AFF-0009,Quercetin,7.2255,6,Moderate,HIGH_HETEROGENEITY,3,Ready,median canonical v2 A+B1 mol TE/mol,POST_MIGRATION_PENDING_HUMAN_TOP20_FREEZE
+13,AFF-0013,Fisetin,7.092,1,Low,no,37,Ready,median canonical v2 A+B1 mol TE/mol,POST_MIGRATION_PENDING_HUMAN_TOP20_FREEZE
+14,AFF-0017,Rutin,6.705,2,Moderate,no,8,Ready,median canonical v2 A+B1 mol TE/mol,POST_MIGRATION_PENDING_HUMAN_TOP20_FREEZE
+15,AFF-0072,Sinapic acid,5.99,2,Moderate,HIGH_HETEROGENEITY,49,Ready,median canonical v2 A+B1 mol TE/mol,POST_MIGRATION_PENDING_HUMAN_TOP20_FREEZE
+16,AFF-0071,p-Coumaric acid,5.01,4,High,no,48,Ready,median canonical v2 A+B1 mol TE/mol,POST_MIGRATION_PENDING_HUMAN_TOP20_FREEZE
+17,AFF-0036,Hesperidin,4.5,1,Low,no,15,Ready,median canonical v2 A+B1 mol TE/mol,POST_MIGRATION_PENDING_HUMAN_TOP20_FREEZE
+18,AFF-0021,Luteolin,4.136,2,Moderate,no,12,Ready,median canonical v2 A+B1 mol TE/mol,POST_MIGRATION_PENDING_HUMAN_TOP20_FREEZE
+19,AFF-0034,Naringin,4.11,1,Low,no,25,Ready,median canonical v2 A+B1 mol TE/mol,POST_MIGRATION_PENDING_HUMAN_TOP20_FREEZE
+20,AFF-0070,Ferulic acid,4.032,4,Moderate,HIGH_HETEROGENEITY,10,Ready,median canonical v2 A+B1 mol TE/mol,POST_MIGRATION_PENDING_HUMAN_TOP20_FREEZE
+21,AFF-0014,Morin,3.8745,2,Moderate,no,38,Ready,median canonical v2 A+B1 mol TE/mol,POST_MIGRATION_PENDING_HUMAN_TOP20_FREEZE
+22,AFF-0011,Myricetin,3.416,2,Moderate,no,33,Ready,median canonical v2 A+B1 mol TE/mol,POST_MIGRATION_PENDING_HUMAN_TOP20_FREEZE
+23,AFF-0005,Epigallocatechin,3.252,2,Moderate,no,4,Ready,median canonical v2 A+B1 mol TE/mol,POST_MIGRATION_PENDING_HUMAN_TOP20_FREEZE
+24,AFF-0167,Eugenol,2.12,1,Low,no,27,Conditional,median canonical v2 A+B1 mol TE/mol,POST_MIGRATION_PENDING_HUMAN_TOP20_FREEZE
+25,AFF-0085,Ellagic acid,1.8324,1,Low,no,17,Ready,median canonical v2 A+B1 mol TE/mol,POST_MIGRATION_PENDING_HUMAN_TOP20_FREEZE
+26,AFF-0173,Vanillin,1.81,1,Low,no,41,Conditional,median canonical v2 A+B1 mol TE/mol,POST_MIGRATION_PENDING_HUMAN_TOP20_FREEZE
+27,AFF-0162,Capsaicin,1.6,1,Low,no,34,Conditional,median canonical v2 A+B1 mol TE/mol,POST_MIGRATION_PENDING_HUMAN_TOP20_FREEZE
+28,AFF-0060,Gallic acid,1.25,3,Moderate,HIGH_HETEROGENEITY,5,Ready,median canonical v2 A+B1 mol TE/mol,POST_MIGRATION_PENDING_HUMAN_TOP20_FREEZE

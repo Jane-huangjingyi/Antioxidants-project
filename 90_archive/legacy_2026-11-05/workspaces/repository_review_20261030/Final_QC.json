@@ -1,0 +1,77 @@
+{
+  "date": "2026-10-30",
+  "original_files_accounted_for": 1680,
+  "unchanged_or_same_byte_mapped": 1664,
+  "allowed_active_changes": [
+    "Antioxidant_Project_MASTER_HISTORY_AND_WORKFLOW_CN.md",
+    "docs/class_specific_antioxidant/Global_Top_Overview_Schema_Pilot_CN.md",
+    "docs/qc/Stage24B_Figure_Deduplication_Report_CN.md",
+    "docs/sync/FILES_TO_SEND_CHATGPT_STAGE25A1.md",
+    "figures/README_CN.md",
+    "PROJECT_FILE_INDEX_CN.md",
+    "R/01_class_specific_antioxidant_ranking/flavonoids/plot_class_outputs.R",
+    "R/01_class_specific_antioxidant_ranking/other_aqueous_phytochemicals/plot_class_outputs.R",
+    "R/01_class_specific_antioxidant_ranking/phenolic_acids/plot_class_outputs.R",
+    "R/01_class_specific_antioxidant_ranking/stilbenes_lignans/plot_class_outputs.R",
+    "R/common/bootstrap.R",
+    "R/common/plot_config.R",
+    "R/common/plot_helpers.R",
+    "R/README_CN.md",
+    "README_CN.md",
+    "scripts/audit_repository_moves.py"
+  ],
+  "missing_original_files": [],
+  "frozen_assets_SHA_pass": 10,
+  "current_scientific_figures": 51,
+  "editable_png": 51,
+  "editable_svg_with_text_without_raster": 51,
+  "historical_image_register": 79,
+  "workbook_sheets": [
+    "使用说明",
+    "具体证据",
+    "期刊指标",
+    "最新审核线索",
+    "文献登记",
+    "候选物文献关联",
+    "筛选记录",
+    "来源表目录",
+    "标识符冲突"
+  ],
+  "workbook_tables": [
+    {
+      "name": "CatalogTable0",
+      "range": "A1:X490"
+    },
+    {
+      "name": "CatalogTable1",
+      "range": "A1:M47"
+    },
+    {
+      "name": "CatalogTable2",
+      "range": "A1:H94"
+    },
+    {
+      "name": "CatalogTable3",
+      "range": "A1:O47999"
+    },
+    {
+      "name": "CatalogTable4",
+      "range": "A1:I45644"
+    },
+    {
+      "name": "CatalogTable5",
+      "range": "A1:G7056"
+    },
+    {
+      "name": "CatalogTable6",
+      "range": "A1:H281"
+    },
+    {
+      "name": "CatalogTable7",
+      "range": "A1:F4"
+    }
+  ],
+  "workbook_formula_errors": [],
+  "unresolved_old_links_outside_new_navigation": 0,
+  "deleted_redundant_copies": 2
+}

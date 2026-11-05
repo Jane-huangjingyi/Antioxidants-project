@@ -1,0 +1,15 @@
+﻿stratum_type,stratum,eligible_publication_N,with_DOI_or_PMID_N,OpenAlex_work_matched_N,DOI_PMID_to_OpenAlex_matching_rate,citation_metadata_available_N,citation_metadata_availability_rate,threshold_pass,retrieval_date
+overall,all,41967,40233,40193,0.9990057912658763,40193,1.0,yes,2026-09-20
+class,Betalains / nitrogen-containing,665,646,645,0.9984520123839009,645,1.0,yes,2026-09-20
+class,Organosulfur compounds,1492,1459,1459,1.0,1459,1.0,yes,2026-09-20
+class,Other food-derived redox-active phytochemicals,10106,9693,9681,0.9987619931909626,9681,1.0,yes,2026-09-20
+class,Polyphenols - Flavonoids,16157,15554,15538,0.9989713257039989,15538,1.0,yes,2026-09-20
+class,Polyphenols - Phenolic acids / conjugates,6952,6536,6533,0.9995410036719706,6533,1.0,yes,2026-09-20
+class,Polyphenols - Stilbenes / lignans,1140,1093,1093,1.0,1093,1.0,yes,2026-09-20
+class,Vitamins / vitamin-like,5455,5252,5244,0.9984767707539984,5244,1.0,yes,2026-09-20
+publication_era,2000-2009,4775,4615,4610,0.9989165763813651,4610,1.0,yes,2026-09-20
+publication_era,2010-2019,14125,13926,13921,0.9996409593565991,13921,1.0,yes,2026-09-20
+publication_era,2020+,21808,20499,20469,0.9985365139762915,20469,1.0,yes,2026-09-20
+publication_era,<=1999,1259,1193,1193,1.0,1193,1.0,yes,2026-09-20
+identity_complexity,complex/form-specific,5020,4792,4789,0.9993739565943238,4789,1.0,yes,2026-09-20
+identity_complexity,simple parent/aglycone,36947,35441,35404,0.9989560113992269,35404,1.0,yes,2026-09-20

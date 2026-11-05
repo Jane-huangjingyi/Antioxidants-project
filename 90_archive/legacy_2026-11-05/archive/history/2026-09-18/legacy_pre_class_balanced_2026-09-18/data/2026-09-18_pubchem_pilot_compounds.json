@@ -1,0 +1,138 @@
+[
+  {
+    "query": "epigallocatechin gallate",
+    "CID": 65064,
+    "MolecularFormula": "C22H18O11",
+    "MolecularWeight": "458.4",
+    "InChIKey": "WMBWREPUVVBILR-WIYYLYMNSA-N",
+    "Title": "Epigallocatechin Gallate"
+  },
+  {
+    "query": "catechin",
+    "CID": 9064,
+    "MolecularFormula": "C15H14O6",
+    "MolecularWeight": "290.27",
+    "InChIKey": "PFTAWBLQPZVEMU-DZGCQCFKSA-N",
+    "Title": "Catechin"
+  },
+  {
+    "query": "epicatechin",
+    "CID": 72276,
+    "MolecularFormula": "C15H14O6",
+    "MolecularWeight": "290.27",
+    "InChIKey": "PFTAWBLQPZVEMU-UKRRQHHQSA-N",
+    "Title": "Epicatechin"
+  },
+  {
+    "query": "quercetin",
+    "CID": 5280343,
+    "MolecularFormula": "C15H10O7",
+    "MolecularWeight": "302.23",
+    "InChIKey": "REFJWTPEDVJJIY-UHFFFAOYSA-N",
+    "Title": "Quercetin"
+  },
+  {
+    "query": "kaempferol",
+    "CID": 5280863,
+    "MolecularFormula": "C15H10O6",
+    "MolecularWeight": "286.24",
+    "InChIKey": "IYRMWMYZSQPJKC-UHFFFAOYSA-N",
+    "Title": "Kaempferol"
+  },
+  {
+    "query": "gallic acid",
+    "CID": 370,
+    "MolecularFormula": "C7H6O5",
+    "MolecularWeight": "170.12",
+    "InChIKey": "LNTHITQWFMADLM-UHFFFAOYSA-N",
+    "Title": "Gallic Acid"
+  },
+  {
+    "query": "caffeic acid",
+    "CID": 689043,
+    "MolecularFormula": "C9H8O4",
+    "MolecularWeight": "180.16",
+    "InChIKey": "QAIPRVGONGVQAS-DUXPYHPUSA-N",
+    "Title": "Caffeic Acid"
+  },
+  {
+    "query": "ferulic acid",
+    "CID": 445858,
+    "MolecularFormula": "C10H10O4",
+    "MolecularWeight": "194.18",
+    "InChIKey": "KSEBMYQBYZTDHS-HWKANZROSA-N",
+    "Title": "Ferulic Acid"
+  },
+  {
+    "query": "chlorogenic acid",
+    "CID": 1794427,
+    "MolecularFormula": "C16H18O9",
+    "MolecularWeight": "354.31",
+    "InChIKey": "CWVRJTMFETXNAD-JUHZACGLSA-N",
+    "Title": "Chlorogenic Acid"
+  },
+  {
+    "query": "resveratrol",
+    "CID": 445154,
+    "MolecularFormula": "C14H12O3",
+    "MolecularWeight": "228.24",
+    "InChIKey": "LUKBXSAWLPMMSZ-OWOJBTEDSA-N",
+    "Title": "Resveratrol"
+  },
+  {
+    "query": "ascorbic acid",
+    "CID": 54670067,
+    "MolecularFormula": "C6H8O6",
+    "MolecularWeight": "176.12",
+    "InChIKey": "CIWBSHSKHKDKBQ-JLAZNSOCSA-N",
+    "Title": "L-Ascorbic Acid"
+  },
+  {
+    "query": "alpha-tocopherol",
+    "CID": 14985,
+    "MolecularFormula": "C29H50O2",
+    "MolecularWeight": "430.7",
+    "InChIKey": "GVJHHUAWPYXKBD-IEOSBIPESA-N",
+    "Title": "alpha-Tocopherol"
+  },
+  {
+    "query": "gamma-tocopherol",
+    "CID": 92729,
+    "MolecularFormula": "C28H48O2",
+    "MolecularWeight": "416.7",
+    "InChIKey": "QUEDXNHFTDJVIY-DQCZWYHMSA-N",
+    "Title": "(+)-gamma-Tocopherol"
+  },
+  {
+    "query": "lycopene",
+    "CID": 446925,
+    "MolecularFormula": "C40H56",
+    "MolecularWeight": "536.9",
+    "InChIKey": "OAIJSZIZWZSQBC-GYZMGTAESA-N",
+    "Title": "Lycopene"
+  },
+  {
+    "query": "beta-carotene",
+    "CID": 5280489,
+    "MolecularFormula": "C40H56",
+    "MolecularWeight": "536.9",
+    "InChIKey": "OENHQHLEOONYIE-JLTXGRSLSA-N",
+    "Title": "Beta-Carotene"
+  },
+  {
+    "query": "lutein",
+    "CID": 5281243,
+    "MolecularFormula": "C40H56O2",
+    "MolecularWeight": "568.9",
+    "InChIKey": "KBPHJBAIARWVSC-RGZFRNHPSA-N",
+    "Title": "Lutein A"
+  },
+  {
+    "query": "sulforaphane",
+    "CID": 5350,
+    "MolecularFormula": "C6H11NOS2",
+    "MolecularWeight": "177.3",
+    "InChIKey": "SUVMJBTUFCVSAD-UHFFFAOYSA-N",
+    "Title": "Sulforaphane"
+  }
+]

@@ -1,0 +1,7 @@
+﻿old_tier,new_tier,experiment_N,canonical_change
+B1,A,7,yes
+B1,B1,61,no
+B1,B2,1,yes
+B2,B2,3,no
+B2,X,1,yes
+X,X,1,no

@@ -1,0 +1,88 @@
+[
+  {
+    "file": "sources/RCSB_3GLS_entity1.json",
+    "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/3GLS/1",
+    "status": "RETRIEVED",
+    "bytes": 45983,
+    "sha256": "77be890c662af6fc80a2b138be8e7b304ec37140abb52ea42d8b4c9ed9bf7393",
+    "content_type": "application/json",
+    "utc": "2026-10-16T11:44:02.519700+00:00"
+  },
+  {
+    "file": "sources/RCSB_1JXJ_entity1.json",
+    "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/1JXJ/1",
+    "status": "RETRIEVED",
+    "bytes": 58421,
+    "sha256": "7459befda221e9b35d7f66ebd342558063a2449e7aa2aca4d711386e1f8fb14f",
+    "content_type": "application/json",
+    "utc": "2026-10-16T11:44:03.328526+00:00"
+  },
+  {
+    "file": "sources/TRAF2_repository.html",
+    "url": "https://art.torvergata.it/handle/2108/470363",
+    "status": "FAILED",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>",
+    "utc": "2026-10-16T11:44:05.257883+00:00"
+  },
+  {
+    "file": "sources/TRAF2_publisher.html",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0003986126002080",
+    "status": "FAILED",
+    "error": "HTTP Error 403: Forbidden",
+    "utc": "2026-10-16T11:44:05.619225+00:00"
+  },
+  {
+    "file": "sources/TRAF2_PubMed.xml",
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=42413844&retmode=xml",
+    "status": "RETRIEVED",
+    "bytes": 10529,
+    "sha256": "0156ba5f6a3f055662cba87ece21e9fc00c7aa3b354d2d6dbf3d148531ca613d",
+    "content_type": "text/xml; charset=UTF-8",
+    "utc": "2026-10-16T11:44:06.549788+00:00"
+  },
+  {
+    "file": "sources/NRF2_Supplement.pdf",
+    "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1007%2Fs10565-024-09953-7/MediaObjects/10565_2024_9953_MOESM1_ESM.pdf",
+    "status": "RETRIEVED",
+    "bytes": 7639520,
+    "sha256": "20f2ba1f12c5b2bf192b48ea91182dc3792cbc933a7ffaec5158693e0706a0de",
+    "content_type": "application/pdf",
+    "utc": "2026-10-16T11:44:08.070697+00:00"
+  },
+  {
+    "file": "sources/NRF2_PMC.html",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11599353/",
+    "status": "RETRIEVED",
+    "bytes": 302559,
+    "sha256": "0cc763d9af25f981351f0a4d19c28c1d86ecb287d75ffdc5a90dd870fe879243",
+    "content_type": "text/html; charset=utf-8",
+    "utc": "2026-10-16T11:44:09.148318+00:00"
+  },
+  {
+    "file": "sources/NRF2_Figure.jpg",
+    "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/4677/11599353/eaaaae6e88b4/10565_2024_9953_Fig6_HTML.jpg",
+    "status": "RETRIEVED",
+    "bytes": 321099,
+    "sha256": "09b36500013bf2aebd32bd35c3b9d935f353fb12e4ef4ec79cd1ba677735f076",
+    "content_type": "image/jpeg",
+    "utc": "2026-10-16T11:44:10.182639+00:00"
+  },
+  {
+    "file": "sources/Amylase_PMC.html",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13187579/",
+    "status": "RETRIEVED",
+    "bytes": 222552,
+    "sha256": "0ff7a604be1459ffd01b74f1c2056115bdd76b679a9eef2adc8dfe213ae3cc46",
+    "content_type": "text/html; charset=utf-8",
+    "utc": "2026-10-16T11:44:11.276920+00:00"
+  },
+  {
+    "file": "sources/Amylase_Figure.jpg",
+    "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/d61d/13187579/f94292504e59/gr2.jpg",
+    "status": "RETRIEVED",
+    "bytes": 271978,
+    "sha256": "d8d4514947c1a9fb440321f5db50eec5c768df16478b2476da7a5539b8c8fcda",
+    "content_type": "image/jpeg",
+    "utc": "2026-10-16T11:44:11.666106+00:00"
+  }
+]

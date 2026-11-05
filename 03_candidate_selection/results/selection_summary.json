@@ -1,0 +1,32 @@
+{
+  "profile_count": 193,
+  "queue_eligible": 25,
+  "review_slots": 20,
+  "formal_lab_ready": 0,
+  "cutoff_tied_count": 12,
+  "rules": {
+    "version": "selection_preparation_v0.1",
+    "scientific_approval": "NOT_REVIEWED",
+    "target_size": 20,
+    "universe_gate": "Defined molecule, reference formula/CID/InChIKey; food scope retained; flagged uncertain food origin held for clarification",
+    "review_queue_gate": "At least one independent H-ORAC pure-compound study confirmed in preserved Stage25B6D closure",
+    "queue_order": [
+      "At least two confirmed studies first (evidence reliability, not potency)",
+      "Typed SD available first within the same reliability stratum",
+      "Stable candidate_id for unresolved ties only"
+    ],
+    "cutoff_tie_rule": "Report the full tied set; ID order is an administrative 20-slot preview, not a scientific tie-break",
+    "formal_panel_gate": [
+      "candidate-specific food source verified",
+      "exact reagent form and procurement verified",
+      "aqueous solubility and stability passed",
+      "absorbance interference counter-screens passed",
+      "researcher inclusion decision recorded"
+    ],
+    "missing_values": "Unknown is distinct from zero and never evidence of inactivity",
+    "activity_weights": "NONE",
+    "journal_metrics_in_selection": "NOT_USED",
+    "legacy_frozen_ranking": "PRESERVED_REFERENCE_ONLY",
+    "counter_scenario": "One-confirmed-study threshold vs two-confirmed-study threshold; no forced filling if fewer than 20"
+  }
+}

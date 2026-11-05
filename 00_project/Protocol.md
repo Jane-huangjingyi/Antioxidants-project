@@ -1,0 +1,15 @@
+# Project protocol and boundaries
+
+Version: workflow v0.1, dated 2026-11-05. Purpose: construct a source-bounded collection of food/dietary chemicals and prepare an evidence-informed 20-material panel for aqueous, absorbance-based testing. Selection rules are documented after the historical evidence was available; they are not retrospectively described as preregistered.
+
+Include individually defined compounds occurring in foods, beverages or customary culinary ingredients, including specified processing products. Preserve glycosides, aglycones, stereoisomers, oxidation states and salts as distinct identities where relevant. Exclude undefined mixtures, extracts, aggregate assay variables and substances supported only by drug/supplement use. An endogenous compound can also be food-derived; endogenous occurrence alone does not justify exclusion. Element names without a specified reagent form remain context records, not testable molecular materials.
+
+Discovery precedes activity filtering. The original 191-name enumeration, 12 exclusions and targeted source-gap additions are auditable inputs. This is an operational collection with explicit coverage limits. A completed source-bounded census would additionally require reviewed, versioned database exports and candidate-level food-occurrence citations. Do not call the current collection every antioxidant in all foods.
+
+The five existing dimensions remain D1 activity, D2 evidence reliability, D3 research maturity, D4 biological relevance and D5 application feasibility. Their original indicator dictionary and statuses are preserved. Missing, unsearched, inaccessible, unresolved and not-applicable states are distinct. There are no new numerical weights or integrated scores. Journal metrics and publication counts are not potency measures.
+
+The primary working output is a **review queue**, followed by a separately gated **laboratory-ready panel**. The queue uses identity/formula references and confirmed historical chemical sources. It preferentially exposes candidates with at least two checked studies and typed uncertainty data, with all cutoff ties shown. Candidate ID orders the administrative preview only. Final material selection requires candidate-specific food evidence, exact reagent form and procurement, solubility/stability, absorbance counter-screens and an explicit researcher decision.
+
+The preserved ORAC-FL Frozen Top20 v1.0 is a historical chemical-ranking reference. The new queue has a different purpose and never overwrites it. ORAC-PGR, crocin bleaching and ABTS measure different operational constructs; Trolox units do not establish numeric equivalence. Chemistry, cell/function and causal mechanism validation remain separate research layers.
+
+AFF-0061 observations and historical scientific proposals retain their original review/HOLD states. File migration is not production database migration, scientific approval, authorization for scale-up, or approval of actual experiments. No reviewer identity, approval date, reagent availability, solubility, assay result or clinical benefit is fabricated.

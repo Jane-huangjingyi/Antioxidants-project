@@ -1,0 +1,21 @@
+﻿compound,provisional_rank,ORAC_median,B1_count,confidence,rank_stability,assay_risk,target_mapping_readiness,rationale
+Epicatechin,1,9.670,4,High,high,no major unresolved concern documented,Ready for target mapping,Independent B1 depth supports shortlist freezing.
+Catechin,2,9.000,5,High,high,no major unresolved concern documented,Ready for target mapping,Independent B1 depth supports shortlist freezing.
+Quercetin,3,8.395,4,High,moderate,hydrate/form heterogeneity,Ready for target mapping,Independent B1 depth supports shortlist freezing.
+Kaempferol,4,7.035,2,Moderate,moderate,limited solubility and cyclodextrin-dependent values,Ready for target mapping,Independent B1 depth supports shortlist freezing.
+Naringenin,5,6.820,2,Moderate,moderate,limited water solubility; cosolvent must be locked,Ready for target mapping,Independent B1 depth supports shortlist freezing.
+Rutin,6,6.705,2,Moderate,moderate,kept separate from quercetin,Ready for target mapping,Independent B1 depth supports shortlist freezing.
+Genistein,7,6.625,2,Moderate,moderate,kept separate from genistin,Ready for target mapping,Independent B1 depth supports shortlist freezing.
+Quercitrin,8,6.470,1,Low,low,kept separate from quercetin,Conditionally ready,Single-study ORAC-FL estimate; retain with explicit uncertainty.
+Caffeic acid,9,6.315,2,Moderate,moderate,no major unresolved concern documented,Ready for target mapping,Independent B1 depth supports shortlist freezing.
+trans-Resveratrol,10,5.811,1,Low,low,photoisomerization risk,Conditionally ready,Single-study ORAC-FL estimate; retain with explicit uncertainty.
+Gentisic acid,11,5.475,1,Low,low,no major unresolved concern documented,Conditionally ready,Single-study ORAC-FL estimate; retain with explicit uncertainty.
+EGCG,12,4.555,2,Moderate,moderate,historical probe/arm misclassification; two eligible B1 now traced,Ready for target mapping,Independent B1 depth supports shortlist freezing.
+p-Coumaric acid,13,4.383,2,Moderate,moderate,no major unresolved concern documented,Ready for target mapping,Independent B1 depth supports shortlist freezing.
+Myricetin,14,3.600,1,Low,low,limited solubility and cyclodextrin sensitivity,Conditionally ready,Single-study ORAC-FL estimate; retain with explicit uncertainty.
+4-Hydroxybenzoic acid,15,3.299,1,Low,low,no major unresolved concern documented,Conditionally ready,Single-study ORAC-FL estimate; retain with explicit uncertainty.
+Luteolin,16,3.264,1,Low,low,no major unresolved concern documented,Conditionally ready,Single-study ORAC-FL estimate; retain with explicit uncertainty.
+Chlorogenic acid,17,3.140,1,Low,low,isomer identity locked,Conditionally ready,Single-study ORAC-FL estimate; retain with explicit uncertainty.
+Ferulic acid,18,3.123,2,Moderate,moderate,no major unresolved concern documented,Ready for target mapping,Independent B1 depth supports shortlist freezing.
+Sesamol,19,2.107,1,Low,low,no major unresolved concern documented,Conditionally ready,Single-study ORAC-FL estimate; retain with explicit uncertainty.
+Eugenol,20,1.811,1,Low,low,volatile; limited water solubility,Conditionally ready,Single-study ORAC-FL estimate; retain with explicit uncertainty.

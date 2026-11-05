@@ -1,0 +1,288 @@
+{
+  "Catechin": {
+    "status": "SUCCESS",
+    "property": {
+      "CID": 9064,
+      "MolecularFormula": "C15H14O6",
+      "MolecularWeight": "290.27",
+      "InChIKey": "PFTAWBLQPZVEMU-DZGCQCFKSA-N",
+      "Title": "Catechin"
+    },
+    "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/9064,72276,5280343,5280445,370,72,689043,445858,637542,5281855,1548943,3314,1183,72277,5280863,5281672,5281614,5281670,5280805,5280443/property/Title,MolecularFormula,MolecularWeight,InChIKey/JSON",
+    "access_date": "2026-11-05",
+    "raw_path": "02_identity_and_evidence\\inputs\\pubchem_raw\\review_panel.json"
+  },
+  "Epicatechin": {
+    "status": "SUCCESS",
+    "property": {
+      "CID": 72276,
+      "MolecularFormula": "C15H14O6",
+      "MolecularWeight": "290.27",
+      "InChIKey": "PFTAWBLQPZVEMU-UKRRQHHQSA-N",
+      "Title": "Epicatechin"
+    },
+    "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/9064,72276,5280343,5280445,370,72,689043,445858,637542,5281855,1548943,3314,1183,72277,5280863,5281672,5281614,5281670,5280805,5280443/property/Title,MolecularFormula,MolecularWeight,InChIKey/JSON",
+    "access_date": "2026-11-05",
+    "raw_path": "02_identity_and_evidence\\inputs\\pubchem_raw\\review_panel.json"
+  },
+  "Quercetin": {
+    "status": "SUCCESS",
+    "property": {
+      "CID": 5280343,
+      "MolecularFormula": "C15H10O7",
+      "MolecularWeight": "302.23",
+      "InChIKey": "REFJWTPEDVJJIY-UHFFFAOYSA-N",
+      "Title": "Quercetin"
+    },
+    "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/9064,72276,5280343,5280445,370,72,689043,445858,637542,5281855,1548943,3314,1183,72277,5280863,5281672,5281614,5281670,5280805,5280443/property/Title,MolecularFormula,MolecularWeight,InChIKey/JSON",
+    "access_date": "2026-11-05",
+    "raw_path": "02_identity_and_evidence\\inputs\\pubchem_raw\\review_panel.json"
+  },
+  "Luteolin": {
+    "status": "SUCCESS",
+    "property": {
+      "CID": 5280445,
+      "MolecularFormula": "C15H10O6",
+      "MolecularWeight": "286.24",
+      "InChIKey": "IQPNAANSBPBGFQ-UHFFFAOYSA-N",
+      "Title": "Luteolin"
+    },
+    "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/9064,72276,5280343,5280445,370,72,689043,445858,637542,5281855,1548943,3314,1183,72277,5280863,5281672,5281614,5281670,5280805,5280443/property/Title,MolecularFormula,MolecularWeight,InChIKey/JSON",
+    "access_date": "2026-11-05",
+    "raw_path": "02_identity_and_evidence\\inputs\\pubchem_raw\\review_panel.json"
+  },
+  "Gallic acid": {
+    "status": "SUCCESS",
+    "property": {
+      "CID": 370,
+      "MolecularFormula": "C7H6O5",
+      "MolecularWeight": "170.12",
+      "InChIKey": "LNTHITQWFMADLM-UHFFFAOYSA-N",
+      "Title": "Gallic Acid"
+    },
+    "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/9064,72276,5280343,5280445,370,72,689043,445858,637542,5281855,1548943,3314,1183,72277,5280863,5281672,5281614,5281670,5280805,5280443/property/Title,MolecularFormula,MolecularWeight,InChIKey/JSON",
+    "access_date": "2026-11-05",
+    "raw_path": "02_identity_and_evidence\\inputs\\pubchem_raw\\review_panel.json"
+  },
+  "Protocatechuic acid": {
+    "status": "SUCCESS",
+    "property": {
+      "CID": 72,
+      "MolecularFormula": "C7H6O4",
+      "MolecularWeight": "154.12",
+      "InChIKey": "YQUVCSBJEUQKSH-UHFFFAOYSA-N",
+      "Title": "Protocatechuic Acid"
+    },
+    "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/9064,72276,5280343,5280445,370,72,689043,445858,637542,5281855,1548943,3314,1183,72277,5280863,5281672,5281614,5281670,5280805,5280443/property/Title,MolecularFormula,MolecularWeight,InChIKey/JSON",
+    "access_date": "2026-11-05",
+    "raw_path": "02_identity_and_evidence\\inputs\\pubchem_raw\\review_panel.json"
+  },
+  "Caffeic acid": {
+    "status": "SUCCESS",
+    "property": {
+      "CID": 689043,
+      "MolecularFormula": "C9H8O4",
+      "MolecularWeight": "180.16",
+      "InChIKey": "QAIPRVGONGVQAS-DUXPYHPUSA-N",
+      "Title": "Caffeic Acid"
+    },
+    "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/9064,72276,5280343,5280445,370,72,689043,445858,637542,5281855,1548943,3314,1183,72277,5280863,5281672,5281614,5281670,5280805,5280443/property/Title,MolecularFormula,MolecularWeight,InChIKey/JSON",
+    "access_date": "2026-11-05",
+    "raw_path": "02_identity_and_evidence\\inputs\\pubchem_raw\\review_panel.json"
+  },
+  "Ferulic acid": {
+    "status": "SUCCESS",
+    "property": {
+      "CID": 445858,
+      "MolecularFormula": "C10H10O4",
+      "MolecularWeight": "194.18",
+      "InChIKey": "KSEBMYQBYZTDHS-HWKANZROSA-N",
+      "Title": "Ferulic Acid"
+    },
+    "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/9064,72276,5280343,5280445,370,72,689043,445858,637542,5281855,1548943,3314,1183,72277,5280863,5281672,5281614,5281670,5280805,5280443/property/Title,MolecularFormula,MolecularWeight,InChIKey/JSON",
+    "access_date": "2026-11-05",
+    "raw_path": "02_identity_and_evidence\\inputs\\pubchem_raw\\review_panel.json"
+  },
+  "p-Coumaric acid": {
+    "status": "SUCCESS",
+    "property": {
+      "CID": 637542,
+      "MolecularFormula": "C9H8O3",
+      "MolecularWeight": "164.16",
+      "InChIKey": "NGSWKAQJJWESNS-ZZXKWVIFSA-N",
+      "Title": "P-Coumaric Acid"
+    },
+    "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/9064,72276,5280343,5280445,370,72,689043,445858,637542,5281855,1548943,3314,1183,72277,5280863,5281672,5281614,5281670,5280805,5280443/property/Title,MolecularFormula,MolecularWeight,InChIKey/JSON",
+    "access_date": "2026-11-05",
+    "raw_path": "02_identity_and_evidence\\inputs\\pubchem_raw\\review_panel.json"
+  },
+  "Ellagic acid": {
+    "status": "SUCCESS",
+    "property": {
+      "CID": 5281855,
+      "MolecularFormula": "C14H6O8",
+      "MolecularWeight": "302.19",
+      "InChIKey": "AFSDNFLWKVMVRB-UHFFFAOYSA-N",
+      "Title": "Ellagic Acid"
+    },
+    "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/9064,72276,5280343,5280445,370,72,689043,445858,637542,5281855,1548943,3314,1183,72277,5280863,5281672,5281614,5281670,5280805,5280443/property/Title,MolecularFormula,MolecularWeight,InChIKey/JSON",
+    "access_date": "2026-11-05",
+    "raw_path": "02_identity_and_evidence\\inputs\\pubchem_raw\\review_panel.json"
+  },
+  "Capsaicin": {
+    "status": "SUCCESS",
+    "property": {
+      "CID": 1548943,
+      "MolecularFormula": "C18H27NO3",
+      "MolecularWeight": "305.4",
+      "InChIKey": "YKPUWZUDDOIDPM-SOFGYWHQSA-N",
+      "Title": "Capsaicin"
+    },
+    "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/9064,72276,5280343,5280445,370,72,689043,445858,637542,5281855,1548943,3314,1183,72277,5280863,5281672,5281614,5281670,5280805,5280443/property/Title,MolecularFormula,MolecularWeight,InChIKey/JSON",
+    "access_date": "2026-11-05",
+    "raw_path": "02_identity_and_evidence\\inputs\\pubchem_raw\\review_panel.json"
+  },
+  "Eugenol": {
+    "status": "SUCCESS",
+    "property": {
+      "CID": 3314,
+      "MolecularFormula": "C10H12O2",
+      "MolecularWeight": "164.20",
+      "InChIKey": "RRAFCDWBNXTKKO-UHFFFAOYSA-N",
+      "Title": "Eugenol"
+    },
+    "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/9064,72276,5280343,5280445,370,72,689043,445858,637542,5281855,1548943,3314,1183,72277,5280863,5281672,5281614,5281670,5280805,5280443/property/Title,MolecularFormula,MolecularWeight,InChIKey/JSON",
+    "access_date": "2026-11-05",
+    "raw_path": "02_identity_and_evidence\\inputs\\pubchem_raw\\review_panel.json"
+  },
+  "Vanillin": {
+    "status": "SUCCESS",
+    "property": {
+      "CID": 1183,
+      "MolecularFormula": "C8H8O3",
+      "MolecularWeight": "152.15",
+      "InChIKey": "MWOOGOJBHIARFG-UHFFFAOYSA-N",
+      "Title": "Vanillin"
+    },
+    "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/9064,72276,5280343,5280445,370,72,689043,445858,637542,5281855,1548943,3314,1183,72277,5280863,5281672,5281614,5281670,5280805,5280443/property/Title,MolecularFormula,MolecularWeight,InChIKey/JSON",
+    "access_date": "2026-11-05",
+    "raw_path": "02_identity_and_evidence\\inputs\\pubchem_raw\\review_panel.json"
+  },
+  "Epigallocatechin": {
+    "status": "SUCCESS",
+    "property": {
+      "CID": 72277,
+      "MolecularFormula": "C15H14O7",
+      "MolecularWeight": "306.27",
+      "InChIKey": "XMOCLSLCDHWDHP-IUODEOHRSA-N",
+      "Title": "Epigallocatechin"
+    },
+    "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/9064,72276,5280343,5280445,370,72,689043,445858,637542,5281855,1548943,3314,1183,72277,5280863,5281672,5281614,5281670,5280805,5280443/property/Title,MolecularFormula,MolecularWeight,InChIKey/JSON",
+    "access_date": "2026-11-05",
+    "raw_path": "02_identity_and_evidence\\inputs\\pubchem_raw\\review_panel.json"
+  },
+  "Kaempferol": {
+    "status": "SUCCESS",
+    "property": {
+      "CID": 5280863,
+      "MolecularFormula": "C15H10O6",
+      "MolecularWeight": "286.24",
+      "InChIKey": "IYRMWMYZSQPJKC-UHFFFAOYSA-N",
+      "Title": "Kaempferol"
+    },
+    "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/9064,72276,5280343,5280445,370,72,689043,445858,637542,5281855,1548943,3314,1183,72277,5280863,5281672,5281614,5281670,5280805,5280443/property/Title,MolecularFormula,MolecularWeight,InChIKey/JSON",
+    "access_date": "2026-11-05",
+    "raw_path": "02_identity_and_evidence\\inputs\\pubchem_raw\\review_panel.json"
+  },
+  "Myricetin": {
+    "status": "SUCCESS",
+    "property": {
+      "CID": 5281672,
+      "MolecularFormula": "C15H10O8",
+      "MolecularWeight": "318.23",
+      "InChIKey": "IKMDFBPHZNJCSN-UHFFFAOYSA-N",
+      "Title": "Myricetin"
+    },
+    "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/9064,72276,5280343,5280445,370,72,689043,445858,637542,5281855,1548943,3314,1183,72277,5280863,5281672,5281614,5281670,5280805,5280443/property/Title,MolecularFormula,MolecularWeight,InChIKey/JSON",
+    "access_date": "2026-11-05",
+    "raw_path": "02_identity_and_evidence\\inputs\\pubchem_raw\\review_panel.json"
+  },
+  "Fisetin": {
+    "status": "SUCCESS",
+    "property": {
+      "CID": 5281614,
+      "MolecularFormula": "C15H10O6",
+      "MolecularWeight": "286.24",
+      "InChIKey": "XHEFDIBZLJXQHF-UHFFFAOYSA-N",
+      "Title": "Fisetin"
+    },
+    "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/9064,72276,5280343,5280445,370,72,689043,445858,637542,5281855,1548943,3314,1183,72277,5280863,5281672,5281614,5281670,5280805,5280443/property/Title,MolecularFormula,MolecularWeight,InChIKey/JSON",
+    "access_date": "2026-11-05",
+    "raw_path": "02_identity_and_evidence\\inputs\\pubchem_raw\\review_panel.json"
+  },
+  "Morin": {
+    "status": "SUCCESS",
+    "property": {
+      "CID": 5281670,
+      "MolecularFormula": "C15H10O7",
+      "MolecularWeight": "302.23",
+      "InChIKey": "YXOLAZRVSSWPPT-UHFFFAOYSA-N",
+      "Title": "Morin"
+    },
+    "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/9064,72276,5280343,5280445,370,72,689043,445858,637542,5281855,1548943,3314,1183,72277,5280863,5281672,5281614,5281670,5280805,5280443/property/Title,MolecularFormula,MolecularWeight,InChIKey/JSON",
+    "access_date": "2026-11-05",
+    "raw_path": "02_identity_and_evidence\\inputs\\pubchem_raw\\review_panel.json"
+  },
+  "Rutin": {
+    "status": "SUCCESS",
+    "property": {
+      "CID": 5280805,
+      "MolecularFormula": "C27H30O16",
+      "MolecularWeight": "610.5",
+      "InChIKey": "IKGXIBQEEMLURG-NVPNHPEKSA-N",
+      "Title": "Rutin"
+    },
+    "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/9064,72276,5280343,5280445,370,72,689043,445858,637542,5281855,1548943,3314,1183,72277,5280863,5281672,5281614,5281670,5280805,5280443/property/Title,MolecularFormula,MolecularWeight,InChIKey/JSON",
+    "access_date": "2026-11-05",
+    "raw_path": "02_identity_and_evidence\\inputs\\pubchem_raw\\review_panel.json"
+  },
+  "Apigenin": {
+    "status": "SUCCESS",
+    "property": {
+      "CID": 5280443,
+      "MolecularFormula": "C15H10O5",
+      "MolecularWeight": "270.24",
+      "InChIKey": "KZNIFHPLKGYRTM-UHFFFAOYSA-N",
+      "Title": "Apigenin"
+    },
+    "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/9064,72276,5280343,5280445,370,72,689043,445858,637542,5281855,1548943,3314,1183,72277,5280863,5281672,5281614,5281670,5280805,5280443/property/Title,MolecularFormula,MolecularWeight,InChIKey/JSON",
+    "access_date": "2026-11-05",
+    "raw_path": "02_identity_and_evidence\\inputs\\pubchem_raw\\review_panel.json"
+  },
+  "Glutathione": {
+    "status": "SUCCESS",
+    "property": {
+      "CID": 124886,
+      "MolecularFormula": "C10H17N3O6S",
+      "MolecularWeight": "307.33",
+      "InChIKey": "RWSXRVCMGQZWBV-WDSKDSINSA-N",
+      "Title": "Glutathione"
+    },
+    "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/Glutathione/property/Title,MolecularFormula,MolecularWeight,InChIKey/JSON",
+    "access_date": "2026-11-05",
+    "raw_path": "02_identity_and_evidence\\inputs\\pubchem_raw\\Glutathione.json"
+  },
+  "L-Ergothioneine": {
+    "status": "SUCCESS",
+    "property": {
+      "CID": 5351619,
+      "MolecularFormula": "C9H15N3O2S",
+      "MolecularWeight": "229.30",
+      "InChIKey": "SSISHJJTAXXQAX-ZETCQYMHSA-N",
+      "Title": "Ergothioneine"
+    },
+    "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/L-Ergothioneine/property/Title,MolecularFormula,MolecularWeight,InChIKey/JSON",
+    "access_date": "2026-11-05",
+    "raw_path": "02_identity_and_evidence\\inputs\\pubchem_raw\\L-Ergothioneine.json"
+  }
+}

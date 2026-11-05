@@ -1,0 +1,11 @@
+{
+ "status":"DRAFT_NOT_APPROVED",
+ "instrument_model":null,"robot_model":null,"temperature_control_verified":null,"kinetic_absorbance_verified":null,
+ "proposed_method":"ORAC-PGR; validate before selection as primary endpoint",
+ "approved_wavelength_nm":null,"approved_temperature_C":null,"approved_buffer":null,
+ "approved_PGR_uM":null,"approved_AAPH_mM":null,"approved_vehicle_fraction":null,
+ "approved_concentration_grid_uM":null,"approved_plate_format":null,
+ "approved_AUC_window_min":null,"approved_QC_thresholds":null,
+ "counter_screen_rule":"Matched-dose no-probe backgrounds plus probe-without-initiator interaction, spectral overlap, precipitation, pH and time stability",
+ "independent_batch_rule":"Technical wells are nested within independent preparations/days; no biological replicate claim for chemistry"
+}

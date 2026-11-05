@@ -1,4 +1,12 @@
 # R local dependencies and session state
+**/R/library/
+**/node_modules/
+**/phase2_r_partial_library/
+90_archive/legacy_2026-11-05/archive/stage25a_local_cache/*
+!90_archive/legacy_2026-11-05/archive/stage25a_local_cache/README_CN.md
+07_quality_control/local/
+07_quality_control/previews/
+/.q/
 R/library/
 archive/phase2_r_partial_library/
 .Rhistory

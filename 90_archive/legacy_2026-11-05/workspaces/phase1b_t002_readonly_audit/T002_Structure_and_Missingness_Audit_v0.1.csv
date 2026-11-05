@@ -1,0 +1,36 @@
+﻿source_path,field_position,field_name,field_stratum,records,true_blank_count,true_blank_proportion,whitespace_only_count,nonblank_unique_count,marker_counts,observed_type,dictionary_records,coverage,source_values_changed
+data/candidate_universe/Antioxidant_Class_Candidate_Master.csv,1,candidate_id,CORE,191,0,0.0,0,191,"{""POPULATED_OTHER"": 191}",IDENTIFIER,1,REVIEWED,NO
+data/candidate_universe/Antioxidant_Class_Candidate_Master.csv,2,compound,EXTENDED,191,0,0.0,0,191,"{""POPULATED_OTHER"": 191}",FREE_TEXT_OR_UNSPECIFIED,1,REVIEWED,NO
+data/candidate_universe/Antioxidant_Class_Candidate_Master.csv,3,canonical_name,CORE,191,0,0.0,0,191,"{""POPULATED_OTHER"": 191}",FREE_TEXT_OR_UNSPECIFIED,1,REVIEWED,NO
+data/candidate_universe/Antioxidant_Class_Candidate_Master.csv,4,synonym,EXTENDED,191,191,1.0,0,0,"{""TRUE_BLANK"": 191}",FREE_TEXT_OR_UNSPECIFIED,1,REVIEWED,NO
+data/candidate_universe/Antioxidant_Class_Candidate_Master.csv,5,PubChem_CID,CORE,191,2,0.010471204188481676,0,189,"{""POPULATED_OTHER"": 189, ""TRUE_BLANK"": 2}",IDENTIFIER,1,REVIEWED,NO
+data/candidate_universe/Antioxidant_Class_Candidate_Master.csv,6,InChIKey,CORE,191,2,0.010471204188481676,0,189,"{""POPULATED_OTHER"": 189, ""TRUE_BLANK"": 2}",IDENTIFIER,1,REVIEWED,NO
+data/candidate_universe/Antioxidant_Class_Candidate_Master.csv,7,molecular_formula,CORE,191,2,0.010471204188481676,0,140,"{""POPULATED_OTHER"": 189, ""TRUE_BLANK"": 2}",FREE_TEXT_OR_UNSPECIFIED,1,REVIEWED,NO
+data/candidate_universe/Antioxidant_Class_Candidate_Master.csv,8,molecular_weight,CORE,191,2,0.010471204188481676,0,140,"{""POPULATED_OTHER"": 189, ""TRUE_BLANK"": 2}",FREE_TEXT_OR_UNSPECIFIED,1,REVIEWED,NO
+data/candidate_universe/Antioxidant_Class_Candidate_Master.csv,9,parent_class,CORE,191,0,0.0,0,7,"{""POPULATED_OTHER"": 191}",ENUM_LIKE_UNAPPROVED,1,REVIEWED,NO
+data/candidate_universe/Antioxidant_Class_Candidate_Master.csv,10,analysis_panel,CORE,191,0,0.0,0,9,"{""POPULATED_OTHER"": 191}",ENUM_LIKE_UNAPPROVED,1,REVIEWED,NO
+data/candidate_universe/Antioxidant_Class_Candidate_Master.csv,11,subclass,CORE,191,0,0.0,0,36,"{""POPULATED_OTHER"": 191}",ENUM_LIKE_UNAPPROVED,1,REVIEWED,NO
+data/candidate_universe/Antioxidant_Class_Candidate_Master.csv,12,structural_family,EXTENDED,191,0,0.0,0,36,"{""POPULATED_OTHER"": 191}",ENUM_LIKE_UNAPPROVED,1,REVIEWED,NO
+data/candidate_universe/Antioxidant_Class_Candidate_Master.csv,13,parent_or_conjugate,CORE,191,0,0.0,0,2,"{""POPULATED_OTHER"": 191}",ENUM_LIKE_UNAPPROVED,1,REVIEWED,NO
+data/candidate_universe/Antioxidant_Class_Candidate_Master.csv,14,glycoside_or_aglycone,CORE,191,0,0.0,0,6,"{""POPULATED_OTHER"": 184, ""TEXT_NOT_APPLICABLE"": 7}",ENUM_LIKE_UNAPPROVED,1,REVIEWED,NO
+data/candidate_universe/Antioxidant_Class_Candidate_Master.csv,15,stereochemistry,CORE,191,0,0.0,0,10,"{""POPULATED_OTHER"": 184, ""TEXT_NOT_APPLICABLE"": 7}",COMPOUND_STATUS_OR_INSTRUCTION,1,REVIEWED,NO
+data/candidate_universe/Antioxidant_Class_Candidate_Master.csv,16,isomer_status,CORE,191,0,0.0,0,1,"{""POPULATED_OTHER"": 191}",COMPOUND_STATUS_OR_INSTRUCTION,1,REVIEWED,NO
+data/candidate_universe/Antioxidant_Class_Candidate_Master.csv,17,dietary_parent_or_metabolite,CORE,191,0,0.0,0,9,"{""POPULATED_OTHER"": 191}",COMPOUND_STATUS_OR_INSTRUCTION,1,REVIEWED,NO
+data/candidate_universe/Antioxidant_Class_Candidate_Master.csv,18,representative_food_sources,CORE,191,0,0.0,0,37,"{""POPULATED_OTHER"": 191}",FREE_TEXT_OR_UNSPECIFIED,1,REVIEWED,NO
+data/candidate_universe/Antioxidant_Class_Candidate_Master.csv,19,food_occurrence_reference,CORE,191,0,0.0,0,2,"{""POPULATED_OTHER"": 191}",FREE_TEXT_OR_UNSPECIFIED,1,REVIEWED,NO
+data/candidate_universe/Antioxidant_Class_Candidate_Master.csv,20,food_occurrence_confidence,CORE,191,0,0.0,0,3,"{""COMPOUND_UNRESOLVED_TEXT"": 11, ""POPULATED_OTHER"": 178, ""TEXT_UNRESOLVED"": 2}",ENUM_LIKE_UNAPPROVED,1,REVIEWED,NO
+data/candidate_universe/Antioxidant_Class_Candidate_Master.csv,21,normal_dietary_exposure_yes_no,CORE,191,0,0.0,0,2,"{""POPULATED_OTHER"": 180, ""TEXT_UNRESOLVED"": 11}",ENUM_LIKE_UNAPPROVED,1,REVIEWED,NO
+data/candidate_universe/Antioxidant_Class_Candidate_Master.csv,22,supplement_dominant_yes_no,EXTENDED,191,0,0.0,0,2,"{""POPULATED_OTHER"": 180, ""TEXT_UNRESOLVED"": 11}",ENUM_LIKE_UNAPPROVED,1,REVIEWED,NO
+data/candidate_universe/Antioxidant_Class_Candidate_Master.csv,23,medicinal_plant_dominant_yes_no,EXTENDED,191,0,0.0,0,2,"{""POPULATED_OTHER"": 180, ""TEXT_UNRESOLVED"": 11}",ENUM_LIKE_UNAPPROVED,1,REVIEWED,NO
+data/candidate_universe/Antioxidant_Class_Candidate_Master.csv,24,candidate_eligible,CORE,191,0,0.0,0,2,"{""POPULATED_OTHER"": 182, ""TEXT_UNRESOLVED"": 9}",ENUM_LIKE_UNAPPROVED,1,REVIEWED,NO
+data/candidate_universe/Antioxidant_Class_Candidate_Master.csv,25,eligibility_rationale,CORE,191,0,0.0,0,3,"{""POPULATED_OTHER"": 191}",FREE_TEXT_OR_UNSPECIFIED,1,REVIEWED,NO
+data/candidate_universe/Antioxidant_Class_Candidate_Master.csv,26,exclusion_reason,CORE,191,191,1.0,0,0,"{""TRUE_BLANK"": 191}",FREE_TEXT_OR_UNSPECIFIED,1,REVIEWED,NO
+data/candidate_universe/Antioxidant_Class_Candidate_Master.csv,27,likely_primary_ranking_construct,CORE,191,0,0.0,0,8,"{""POPULATED_OTHER"": 191}",COMPOUND_STATUS_OR_INSTRUCTION,1,REVIEWED,NO
+data/candidate_universe/Antioxidant_Class_Candidate_Master.csv,28,likely_secondary_construct,EXTENDED,191,0,0.0,0,9,"{""POPULATED_OTHER"": 191}",ENUM_LIKE_UNAPPROVED,1,REVIEWED,NO
+data/candidate_universe/Antioxidant_Class_Candidate_Master.csv,29,major_known_assay_risk,CORE,191,0,0.0,0,9,"{""POPULATED_OTHER"": 191}",FREE_TEXT_OR_UNSPECIFIED,1,REVIEWED,NO
+data/candidate_universe/Antioxidant_Class_Candidate_Master.csv,30,current_review_status,CORE,191,0,0.0,0,3,"{""COMPOUND_UNRESOLVED_TEXT"": 9, ""POPULATED_OTHER"": 182}",COMPOUND_STATUS_OR_INSTRUCTION,1,REVIEWED,NO
+data/candidate_universe/Antioxidant_Class_Candidate_Master.csv,31,review_date,TECHNICAL_HISTORY,191,0,0.0,0,2,"{""POPULATED_OTHER"": 191}",FREE_TEXT_OR_UNSPECIFIED,1,REVIEWED,NO
+data/candidate_universe/Antioxidant_Class_Candidate_Master.csv,32,reviewer,CORE,191,0,0.0,0,2,"{""POPULATED_OTHER"": 191}",FREE_TEXT_OR_UNSPECIFIED,1,REVIEWED,NO
+data/candidate_universe/Antioxidant_Class_Candidate_Master.csv,33,key_identity_reference,CORE,191,0,0.0,0,190,"{""COMPOUND_UNRESOLVED_TEXT"": 2, ""POPULATED_OTHER"": 189}",FREE_TEXT_OR_UNSPECIFIED,1,REVIEWED,NO
+data/candidate_universe/Antioxidant_Class_Candidate_Master.csv,34,legacy_note,TECHNICAL_HISTORY,191,0,0.0,0,1,"{""POPULATED_OTHER"": 191}",FREE_TEXT_OR_UNSPECIFIED,1,REVIEWED,NO
+data/candidate_universe/Antioxidant_Class_Candidate_Master.csv,35,notes,EXTENDED,191,185,0.9685863874345549,0,2,"{""POPULATED_OTHER"": 6, ""TRUE_BLANK"": 185}",FREE_TEXT_OR_UNSPECIFIED,1,REVIEWED,NO

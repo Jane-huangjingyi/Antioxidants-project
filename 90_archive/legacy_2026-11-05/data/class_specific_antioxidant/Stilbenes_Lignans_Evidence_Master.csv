@@ -1,0 +1,16 @@
+compound,canonical_name,PubChem_CID,InChIKey,subclass,normal_dietary_relevance,food_sources,assay,primary_construct,original_value,original_unit,normalized_value,normalized_unit,evidence_tier,rank_eligible,DOI,PMID,exact_location,independent_experiment_id,major_caveat,systematic_search_completed,ranking_status,HUMAN_REVIEW_REQUIRED
+trans-Resveratrol,Resveratrol,445154.0,LUKBXSAWLPMMSZ-OWOJBTEDSA-N,Stilbenes,yes,grapes; wine; berries; peanuts,H-ORAC-FL,AAPH–fluorescein–Trolox H-ORAC-FL,5.811,mol TE/mol compound,5.811,mol TE/mol compound,B1,yes,10.1093/chromsci/bmad007,36752411,Table I; Materials/Methods and supplementary methods,10.1093/chromsci/bmad007::trans-Resveratrol,single study; cosolvent/solubility-sensitive,yes,rankable,no
+cis-Resveratrol,Cis-Resveratrol,1548910.0,LUKBXSAWLPMMSZ-UPHRSURJSA-N,Stilbenes,yes,grapes; wine; berries; peanuts,,,,,,,,,,,,,,yes,no eligible A/B1 found,no
+Piceatannol,Piceatannol,667639.0,CDRPUGZCRXZLFL-OWOJBTEDSA-N,Stilbenes,yes,grapes; wine; berries; peanuts,,,,,,,,,,,,,,yes,no eligible A/B1 found,no
+Pterostilbene,Pterostilbene,5281727.0,VLEUZFDZJKSGMX-ONEGZZNKSA-N,Stilbenes,yes,grapes; wine; berries; peanuts,,,,,,,,,,,,,,yes,no eligible A/B1 found,no
+Piceid,Polydatin,5281718.0,HSTZMXCBWJGKHG-CUYWLFDKSA-N,Stilbenes,yes,grapes; wine; berries; peanuts,,,,,,,,,,,,,,yes,no eligible A/B1 found,no
+Secoisolariciresinol,(-)-Secoisolariciresinol,65373.0,PUETUDUXMCLALY-HOTGVXAUSA-N,Dietary parent lignans,yes,flaxseed; sesame; whole grains; vegetables,,,,,,,,,,,,,,yes,no eligible A/B1 found,no
+Matairesinol,(-)-Matairesinol,119205.0,MATGKVZWFZHCLI-LSDHHAIUSA-N,Dietary parent lignans,yes,flaxseed; sesame; whole grains; vegetables,,,,,,,,,,,,,,yes,no eligible A/B1 found,no
+Lariciresinol,(+)-Lariciresinol,332427.0,MHXCIKYXNYCMHY-AUSJPIAWSA-N,Dietary parent lignans,yes,flaxseed; sesame; whole grains; vegetables,,,,,,,,,,,,,,yes,no eligible A/B1 found,no
+Pinoresinol,(+)-Pinoresinol,73399.0,HGXBRUKMWQGOIE-AFHBHXEDSA-N,Dietary parent lignans,yes,flaxseed; sesame; whole grains; vegetables,,,,,,,,,,,,,,yes,no eligible A/B1 found,no
+Medioresinol,"Medioresinol, (+)-",181681.0,VJOBNGRIBLNUKN-BMHXQBNDSA-N,Dietary parent lignans,yes,flaxseed; sesame; whole grains; vegetables,,,,,,,,,,,,,,yes,no eligible A/B1 found,no
+Syringaresinol,Syringaresinol,100067.0,KOWMJRJXZMEZLD-UHFFFAOYSA-N,Dietary parent lignans,yes,flaxseed; sesame; whole grains; vegetables,,,,,,,,,,,,,,yes,no eligible A/B1 found,no
+Sesamin,Sesamin,72307.0,PEYUIKBAABKQKQ-AFHBHXEDSA-N,Dietary parent lignans,yes,flaxseed; sesame; whole grains; vegetables,,,,,,,,,,,,,,yes,no eligible A/B1 found,no
+Sesamolin,Sesamolin,101746.0,ZZMNWJVJUKMZJY-AFHBHXEDSA-N,Dietary parent lignans,yes,flaxseed; sesame; whole grains; vegetables,,,,,,,,,,,,,,yes,no eligible A/B1 found,no
+Sesamol,Sesamol,68289.0,LUSZGTFNYDARNI-UHFFFAOYSA-N,Dietary parent lignans,yes,flaxseed; sesame; whole grains; vegetables,H-ORAC-FL,AAPH–fluorescein–Trolox H-ORAC-FL,2.107,mol TE/mol compound,2.107,mol TE/mol compound,B1,yes,10.1039/D1RA08918H,,Table 1; standardized H-ORAC SOP,10.1039/D1RA08918H::Sesamol,single study,yes,rankable,no
+Podophyllotoxin,Podophyllotoxin,10607.0,YJGVMLPVUAXIQN-XVVDYKMHSA-N,Dietary parent lignans,unresolved,flaxseed; sesame; whole grains; vegetables,,,,,,,,,,,,,,yes,no eligible A/B1 found,dietary gate/aqueous-scope concern—do not modify candidate

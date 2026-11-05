@@ -1,0 +1,35 @@
+[
+  {
+    "search_id": "recent_pgr",
+    "query": "\"pyrogallol red\" AND (ORAC OR antioxidant) AND FIRST_PDATE:[2024-01-01 TO 2026-11-05]",
+    "date": "2026-11-05",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%22pyrogallol+red%22+AND+%28ORAC+OR+antioxidant%29+AND+FIRST_PDATE%3A%5B2024-01-01+TO+2026-11-05%5D&format=json&pageSize=100&resultType=core",
+    "hit_count": 43,
+    "retrieved": 43,
+    "complete_first_page": "YES",
+    "sha256": "070915b74b92086a51bb5084f009104292137493abab6d853e7de9b6ca3a0300",
+    "status": "SUCCESS"
+  },
+  {
+    "search_id": "recent_crocin",
+    "query": "\"crocin bleaching\" AND FIRST_PDATE:[2024-01-01 TO 2026-11-05]",
+    "date": "2026-11-05",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%22crocin+bleaching%22+AND+FIRST_PDATE%3A%5B2024-01-01+TO+2026-11-05%5D&format=json&pageSize=100&resultType=core",
+    "hit_count": 14,
+    "retrieved": 14,
+    "complete_first_page": "YES",
+    "sha256": "48e4a500d0241018a49711f970422d731926bedca91103a95cfcee981dafe7b7",
+    "status": "SUCCESS"
+  },
+  {
+    "search_id": "absorbance_automation",
+    "query": "(ORAC AND (absorbance OR colorimetric OR spectrophotometric)) AND (microplate OR automation)",
+    "date": "2026-11-05",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28ORAC+AND+%28absorbance+OR+colorimetric+OR+spectrophotometric%29%29+AND+%28microplate+OR+automation%29&format=json&pageSize=100&resultType=core",
+    "hit_count": 2302,
+    "retrieved": 100,
+    "complete_first_page": "NO_FIRST_PAGE_ONLY",
+    "sha256": "15a0382e30b75dd2d9bee6064fb8b58de590170d7ca9ba7924d417b438c2b915",
+    "status": "SUCCESS"
+  }
+]

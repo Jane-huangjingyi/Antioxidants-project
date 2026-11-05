@@ -1,0 +1,11 @@
+stage,count,interpretation
+Discovery records,204,191 literal legacy seed names + 12 rescreened exclusions + 1 targeted gap
+Identity/evidence profiles,193,191 preserved IDs + food-derived glutathione reopening + ergothioneine gap
+Reference identity and formula present,191,"CID, InChIKey and formula; not a lot identity certificate"
+Molecular-scope profiles,186,Unspecified elemental-nutrient labels retained as context only
+Identity-complete molecular-scope profiles,184,Food occurrence still requires candidate-specific verification
+In the existing 157-candidate framework,157,"Coverage boundary, not an activity exclusion"
+Review-queue eligible,25,At least one checked original chemical source; dietary uncertainty flags held
+Provisional review slots,20,Administrative budget preview; not potency ranks
+Two-confirmed-study sensitivity,9,Reliability criterion only
+Laboratory-ready panel,0,"Actual material, food-source, interference and human decision gates"

@@ -1,0 +1,105 @@
+{
+  "date": "2026-10-26",
+  "entries": [
+    {
+      "name": "SAMD00517030.xml",
+      "url": "https://www.ebi.ac.uk/ena/browser/api/xml/SAMD00517030",
+      "status": 200,
+      "content_type": "application/xml",
+      "bytes": 2825,
+      "sha256": "1916a953f6af9fdf8ae51838a3aa5aa26a79ee606caff34b1b25bad481455933",
+      "usable_response": true,
+      "binary_signature_valid": null,
+      "local_path": "local_sources/SAMD00517030.xml"
+    },
+    {
+      "name": "SAMD00517031.xml",
+      "url": "https://www.ebi.ac.uk/ena/browser/api/xml/SAMD00517031",
+      "status": 200,
+      "content_type": "application/xml",
+      "bytes": 2823,
+      "sha256": "df77257bbc7edffc9019a08ff071a99ebb9fec4bac059da81bb051e4e4b6da24",
+      "usable_response": true,
+      "binary_signature_valid": null,
+      "local_path": "local_sources/SAMD00517031.xml"
+    },
+    {
+      "name": "SAMD00517032.xml",
+      "url": "https://www.ebi.ac.uk/ena/browser/api/xml/SAMD00517032",
+      "status": 200,
+      "content_type": "application/xml",
+      "bytes": 2831,
+      "sha256": "d226409c90ea27eb0deeae3723305f75ed93e4cab6ccb253758355889f479825",
+      "usable_response": true,
+      "binary_signature_valid": null,
+      "local_path": "local_sources/SAMD00517032.xml"
+    },
+    {
+      "name": "DRX381958.xml",
+      "url": "https://www.ebi.ac.uk/ena/browser/api/xml/DRX381958",
+      "status": 200,
+      "content_type": "application/xml",
+      "bytes": 3295,
+      "sha256": "c81f4b5a07205c345c65ead17bfa8b24f781da7fbc063cbdde204883123e879c",
+      "usable_response": true,
+      "binary_signature_valid": null,
+      "local_path": "local_sources/DRX381958.xml"
+    },
+    {
+      "name": "DRX381959.xml",
+      "url": "https://www.ebi.ac.uk/ena/browser/api/xml/DRX381959",
+      "status": 200,
+      "content_type": "application/xml",
+      "bytes": 3295,
+      "sha256": "4a64894cce34b44fa3c0ff4d7273660891e3d842ad8e070dce4c6d05c463fe38",
+      "usable_response": true,
+      "binary_signature_valid": null,
+      "local_path": "local_sources/DRX381959.xml"
+    },
+    {
+      "name": "DRX381960.xml",
+      "url": "https://www.ebi.ac.uk/ena/browser/api/xml/DRX381960",
+      "status": 200,
+      "content_type": "application/xml",
+      "bytes": 3295,
+      "sha256": "c8e8209db79be672ff1cb4a1d822f3048b461dd6cb939dd89948eb6722ea8490",
+      "usable_response": true,
+      "binary_signature_valid": null,
+      "local_path": "local_sources/DRX381960.xml"
+    },
+    {
+      "name": "PRJDB14081.xml",
+      "url": "https://www.ebi.ac.uk/ena/browser/api/xml/PRJDB14081",
+      "status": 200,
+      "content_type": "application/xml",
+      "bytes": 2464,
+      "sha256": "4f3f0f5067d80141f04fef8402b237c67c8c97c06836860ae36a1ede198138bb",
+      "usable_response": true,
+      "binary_signature_valid": null,
+      "local_path": "local_sources/PRJDB14081.xml"
+    },
+    {
+      "name": "HDAC1_EPMC_supplement.zip",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12837532/supplementaryFiles",
+      "status": 200,
+      "content_type": "application/zip",
+      "bytes": 3560172,
+      "sha256": "8b09cf158cf4bc94e03ee5ebf547d7d689bc169f9089ff7b1ab2fcf9821b010b",
+      "usable_response": true,
+      "binary_signature_valid": true,
+      "local_path": "local_sources/HDAC1_EPMC_supplement.zip"
+    },
+    {
+      "name": "Kmo_PMC_DataS1.doc",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/10424289/bin/JCMM-27-2290-s006.doc",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 21438,
+      "sha256": "5db047c199ed518d35c9b4a095f61efeb7c67209ba53ea4d8e4901c1f6a3ce3b",
+      "usable_response": false,
+      "binary_signature_valid": false,
+      "local_path": "local_sources/Kmo_PMC_DataS1.doc"
+    }
+  ],
+  "sequence_data_downloaded": false
+}

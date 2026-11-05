@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-26",
+  "entries": [
+    {
+      "name": "Kmo_EPMC_supplement.zip",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10424289/supplementaryFiles",
+      "status": 200,
+      "content_type": "application/zip",
+      "bytes": 12479754,
+      "sha256": "12a26e42b9959cbb31ce198d92a37302dfd51f381877914774ab82034ab081c5",
+      "usable_response": true,
+      "binary_signature_valid": true,
+      "local_path": "local_sources/Kmo_EPMC_supplement.zip"
+    },
+    {
+      "name": "PRJDB14081_runs.tsv",
+      "url": "https://www.ebi.ac.uk/ena/portal/api/filereport?accession=PRJDB14081&result=read_run&fields=run_accession,study_accession,sample_accession,experiment_accession,scientific_name,sample_title,library_strategy&format=tsv",
+      "status": 200,
+      "content_type": "text/plain",
+      "bytes": 386,
+      "sha256": "91538cff78738e791b3c59b0fb6508c6a3e6d3ff117edbb5146abedf26739d5f",
+      "usable_response": true,
+      "binary_signature_valid": null,
+      "local_path": "local_sources/PRJDB14081_runs.tsv"
+    },
+    {
+      "name": "DRP011843.xml",
+      "url": "https://www.ebi.ac.uk/ena/browser/api/xml/DRP011843",
+      "status": 200,
+      "content_type": "application/xml",
+      "bytes": 2464,
+      "sha256": "4f3f0f5067d80141f04fef8402b237c67c8c97c06836860ae36a1ede198138bb",
+      "usable_response": true,
+      "binary_signature_valid": null,
+      "local_path": "local_sources/DRP011843.xml"
+    }
+  ],
+  "raw_sequence_downloaded": false
+}

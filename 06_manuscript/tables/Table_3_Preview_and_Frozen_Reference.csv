@@ -1,0 +1,29 @@
+candidate_id,compound_name,legacy_frozen_member,current_review_preview_member,interpretation
+AFF-0001,Catechin,YES,YES,Different purpose and gates; no modification of frozen ranking
+AFF-0002,Epicatechin,YES,YES,Different purpose and gates; no modification of frozen ranking
+AFF-0005,Epigallocatechin,NO,YES,Different purpose and gates; no modification of frozen ranking
+AFF-0009,Quercetin,YES,YES,Different purpose and gates; no modification of frozen ranking
+AFF-0010,Kaempferol,YES,YES,Different purpose and gates; no modification of frozen ranking
+AFF-0011,Myricetin,NO,YES,Different purpose and gates; no modification of frozen ranking
+AFF-0013,Fisetin,YES,YES,Different purpose and gates; no modification of frozen ranking
+AFF-0014,Morin,NO,YES,Different purpose and gates; no modification of frozen ranking
+AFF-0017,Rutin,YES,YES,Different purpose and gates; no modification of frozen ranking
+AFF-0021,Luteolin,YES,YES,Different purpose and gates; no modification of frozen ranking
+AFF-0022,Apigenin,YES,YES,Different purpose and gates; no modification of frozen ranking
+AFF-0030,Naringenin,YES,NO,Different purpose and gates; no modification of frozen ranking
+AFF-0031,Hesperetin,YES,NO,Different purpose and gates; no modification of frozen ranking
+AFF-0034,Naringin,YES,NO,Different purpose and gates; no modification of frozen ranking
+AFF-0036,Hesperidin,YES,NO,Different purpose and gates; no modification of frozen ranking
+AFF-0052,Genistein,YES,NO,Different purpose and gates; no modification of frozen ranking
+AFF-0053,Daidzein,YES,NO,Different purpose and gates; no modification of frozen ranking
+AFF-0060,Gallic acid,NO,YES,Different purpose and gates; no modification of frozen ranking
+AFF-0061,Protocatechuic acid,YES,YES,Different purpose and gates; no modification of frozen ranking
+AFF-0069,Caffeic acid,YES,YES,Different purpose and gates; no modification of frozen ranking
+AFF-0070,Ferulic acid,YES,YES,Different purpose and gates; no modification of frozen ranking
+AFF-0071,p-Coumaric acid,YES,YES,Different purpose and gates; no modification of frozen ranking
+AFF-0072,Sinapic acid,YES,NO,Different purpose and gates; no modification of frozen ranking
+AFF-0084,Rosmarinic acid,YES,NO,Different purpose and gates; no modification of frozen ranking
+AFF-0085,Ellagic acid,NO,YES,Different purpose and gates; no modification of frozen ranking
+AFF-0162,Capsaicin,NO,YES,Different purpose and gates; no modification of frozen ranking
+AFF-0167,Eugenol,NO,YES,Different purpose and gates; no modification of frozen ranking
+AFF-0173,Vanillin,NO,YES,Different purpose and gates; no modification of frozen ranking

@@ -1,0 +1,146 @@
+{
+  "PropertyTable": {
+    "Properties": [
+      {
+        "CID": 9064,
+        "MolecularFormula": "C15H14O6",
+        "MolecularWeight": "290.27",
+        "InChIKey": "PFTAWBLQPZVEMU-DZGCQCFKSA-N",
+        "Title": "Catechin"
+      },
+      {
+        "CID": 72276,
+        "MolecularFormula": "C15H14O6",
+        "MolecularWeight": "290.27",
+        "InChIKey": "PFTAWBLQPZVEMU-UKRRQHHQSA-N",
+        "Title": "Epicatechin"
+      },
+      {
+        "CID": 5280343,
+        "MolecularFormula": "C15H10O7",
+        "MolecularWeight": "302.23",
+        "InChIKey": "REFJWTPEDVJJIY-UHFFFAOYSA-N",
+        "Title": "Quercetin"
+      },
+      {
+        "CID": 5280445,
+        "MolecularFormula": "C15H10O6",
+        "MolecularWeight": "286.24",
+        "InChIKey": "IQPNAANSBPBGFQ-UHFFFAOYSA-N",
+        "Title": "Luteolin"
+      },
+      {
+        "CID": 370,
+        "MolecularFormula": "C7H6O5",
+        "MolecularWeight": "170.12",
+        "InChIKey": "LNTHITQWFMADLM-UHFFFAOYSA-N",
+        "Title": "Gallic Acid"
+      },
+      {
+        "CID": 72,
+        "MolecularFormula": "C7H6O4",
+        "MolecularWeight": "154.12",
+        "InChIKey": "YQUVCSBJEUQKSH-UHFFFAOYSA-N",
+        "Title": "Protocatechuic Acid"
+      },
+      {
+        "CID": 689043,
+        "MolecularFormula": "C9H8O4",
+        "MolecularWeight": "180.16",
+        "InChIKey": "QAIPRVGONGVQAS-DUXPYHPUSA-N",
+        "Title": "Caffeic Acid"
+      },
+      {
+        "CID": 445858,
+        "MolecularFormula": "C10H10O4",
+        "MolecularWeight": "194.18",
+        "InChIKey": "KSEBMYQBYZTDHS-HWKANZROSA-N",
+        "Title": "Ferulic Acid"
+      },
+      {
+        "CID": 637542,
+        "MolecularFormula": "C9H8O3",
+        "MolecularWeight": "164.16",
+        "InChIKey": "NGSWKAQJJWESNS-ZZXKWVIFSA-N",
+        "Title": "P-Coumaric Acid"
+      },
+      {
+        "CID": 5281855,
+        "MolecularFormula": "C14H6O8",
+        "MolecularWeight": "302.19",
+        "InChIKey": "AFSDNFLWKVMVRB-UHFFFAOYSA-N",
+        "Title": "Ellagic Acid"
+      },
+      {
+        "CID": 1548943,
+        "MolecularFormula": "C18H27NO3",
+        "MolecularWeight": "305.4",
+        "InChIKey": "YKPUWZUDDOIDPM-SOFGYWHQSA-N",
+        "Title": "Capsaicin"
+      },
+      {
+        "CID": 3314,
+        "MolecularFormula": "C10H12O2",
+        "MolecularWeight": "164.20",
+        "InChIKey": "RRAFCDWBNXTKKO-UHFFFAOYSA-N",
+        "Title": "Eugenol"
+      },
+      {
+        "CID": 1183,
+        "MolecularFormula": "C8H8O3",
+        "MolecularWeight": "152.15",
+        "InChIKey": "MWOOGOJBHIARFG-UHFFFAOYSA-N",
+        "Title": "Vanillin"
+      },
+      {
+        "CID": 72277,
+        "MolecularFormula": "C15H14O7",
+        "MolecularWeight": "306.27",
+        "InChIKey": "XMOCLSLCDHWDHP-IUODEOHRSA-N",
+        "Title": "Epigallocatechin"
+      },
+      {
+        "CID": 5280863,
+        "MolecularFormula": "C15H10O6",
+        "MolecularWeight": "286.24",
+        "InChIKey": "IYRMWMYZSQPJKC-UHFFFAOYSA-N",
+        "Title": "Kaempferol"
+      },
+      {
+        "CID": 5281672,
+        "MolecularFormula": "C15H10O8",
+        "MolecularWeight": "318.23",
+        "InChIKey": "IKMDFBPHZNJCSN-UHFFFAOYSA-N",
+        "Title": "Myricetin"
+      },
+      {
+        "CID": 5281614,
+        "MolecularFormula": "C15H10O6",
+        "MolecularWeight": "286.24",
+        "InChIKey": "XHEFDIBZLJXQHF-UHFFFAOYSA-N",
+        "Title": "Fisetin"
+      },
+      {
+        "CID": 5281670,
+        "MolecularFormula": "C15H10O7",
+        "MolecularWeight": "302.23",
+        "InChIKey": "YXOLAZRVSSWPPT-UHFFFAOYSA-N",
+        "Title": "Morin"
+      },
+      {
+        "CID": 5280805,
+        "MolecularFormula": "C27H30O16",
+        "MolecularWeight": "610.5",
+        "InChIKey": "IKGXIBQEEMLURG-NVPNHPEKSA-N",
+        "Title": "Rutin"
+      },
+      {
+        "CID": 5280443,
+        "MolecularFormula": "C15H10O5",
+        "MolecularWeight": "270.24",
+        "InChIKey": "KZNIFHPLKGYRTM-UHFFFAOYSA-N",
+        "Title": "Apigenin"
+      }
+    ]
+  }
+}

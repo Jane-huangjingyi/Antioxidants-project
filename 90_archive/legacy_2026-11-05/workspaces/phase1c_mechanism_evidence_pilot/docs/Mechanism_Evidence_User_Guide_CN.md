@@ -1,0 +1,21 @@
+# 机制证据数据库试点使用说明 v0.1
+
+所有记录为试点待审数据，不是人工批准的药物靶点目录。参考母体身份与每篇实验试剂鉴定分列，未改T002、T004、T110、既有字典、身份审核、临时映射、157×5矩阵或Frozen Top20。Phase1B的26/7/2、AFF-0082/AFF-0150缺失、155临时映射/2待审、21项字典缺口及Crosswalk/Phase2/Release HOLD均保持。
+
+FULL_TEXT_VERIFIED表示已读正文方法、结果及相关图注/表注，不表示已独立逐像素核查图像、原始数据或补充材料；本版未做原始图像完整性审计。ABSTRACT_ONLY不填写推测剂量、对照、时长或Figure编号。需要具体剂量却尚未读出时保留UNRESOLVED，不填0。
+
+一行表示一个候选物×一个明确对象关系×一个具体证据观察。多个模型、剂量或主要方向不得合并；同一论文由study_id链接。experiment_id表示本轮区分的实验/比较，同一动物材料上的不同检测不是独立研究。evidence_id一经分配不重排，后续更正保留ID并增加版本日志。引用源须用文章自身DOI/PMID，不能误取参考文献列表ID。
+
+五类关系是DIRECT_BINDING、FUNCTIONAL_CAUSAL、PATHWAY_MODULATION、OMICS_ASSOCIATION、COMPUTATIONAL_PREDICTION。DIRECT_BINDING表示观察关系类型，还须结合source_verification_status、target_validation_status与direct_target_status判断是否验证。FUNCTIONAL_CAUSAL亦分遗传依赖、药理参与和仅摘要报告。表达变化、通路富集及对接均不证明直接结合；敲除/救援至多支持功能参与。阴性不等同等效性证明。所有定义均为新试点操作性草案，详见完整中英文字典，不修改T002旧字典。
+
+NOT_REPORTED表示已读来源未报告，UNRESOLVED表示信息无法核实或未提取，NOT_APPLICABLE表示不适用，NOT_AVAILABLE表示公共标识不可得；不可混作0。覆盖索引中190个NOT_SEARCHED候选的计数字段留空，状态明确标为NOT_ASSESSED_NOT_ZERO。PubChem_CID/InChIKey为母体参考锚，不冒称每篇作者报告了此标识或实验溶液中的质子化形态。盐、酯、糖苷、结合物与衍生物须另行核实。
+
+UniProt检索可返回同义名命中，程序只选主基因名与物种精确匹配且唯一的条目；这仅为标识映射。不从pan-Akt抗体指定AKT1，不从商业α-amylase指定人AMY1或AMY2，不由细胞物种推定重组构建物。作者轴/生物过程尚未本体映射，pathway_ID保持UNRESOLVED。
+
+药物剂量保持原单位；ITC 12 mmol/L是注射器浓度，不是滴定池最终浓度。overnight不换算成假定小时。不得根据标题directly或作者的结合措辞升级证据。KEAP1多剂量阴性信息尚未逐浓度核实，因此本版不纳入证据行，保留待提取；不能用于剂量反应汇总。
+
+本版纳入文献为优先证据类型样本，不是对全部发现文献的穷尽清单。查阅screening log区分NOT_SCREENED、暂缓、排除和试点纳入。Study_Register按出版物计数，不把同论文多行计为多个研究。全文XML/HTML保存在search_logs/raw供本地追溯；再分发或未来Git提交前应审查各篇许可与必要性，不默认将所有出版物全文作为发布包。所有脚本仅在隔离工作区写入，不执行网络医学算法。
+
+未解决事项与人工顺序：先核查TRAF2原始全文、α-amylase方法/图注对象及试剂物种，随后复核遗传与药理因果界限、HDAC1非加和解释、KEAP1未逐浓度提取、旧促氧化研究的全文与对照，再核对蛋白/通路标准标识和所有逐图定位。随后确定原儿茶酸剩余筛选范围及跨研究实验独立性。尚不建议扩大到其他候选物；先完成本试点的Gate 2审查。
+
+Gate 1：HOLD。附件未给出正式Gate 1判据，本轮只确认PROGRAMMATIC_QC=PASS，不替用户定义正式通过门槛；筛选/提取完整性、全文及关键身份问题仍开放。Gate 2：HUMAN_SCIENTIFIC_REVIEW_REQUIRED。Release：HOLD。Phase 2：HOLD。不可把程序通过解释为人工证据批准。

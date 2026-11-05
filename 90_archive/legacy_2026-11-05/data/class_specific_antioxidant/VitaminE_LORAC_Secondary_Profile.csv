@@ -1,0 +1,5 @@
+﻿compound,assay,environment,value,unit,evidence_role,PMID,DOI,exact_location,notes
+alpha-Tocopherol,ORAC(FL-LIPO),7% RMCD in 50% acetone-water; phosphate buffer pH 7.4,0.5,mol Trolox equivalent/mol compound,secondary standardized profile,11902917,10.1021/jf0113732,Abstract/results,Not combined with k_inh.
+gamma-Tocopherol,ORAC(FL-LIPO),7% RMCD in 50% acetone-water; phosphate buffer pH 7.4,0.74,mol Trolox equivalent/mol compound,secondary standardized profile,11902917,10.1021/jf0113732,Abstract/results,Not combined with k_inh.
+delta-Tocopherol,ORAC(FL-LIPO),7% RMCD in 50% acetone-water; phosphate buffer pH 7.4,1.36,mol Trolox equivalent/mol compound,secondary standardized profile,11902917,10.1021/jf0113732,Abstract/results,Not combined with k_inh.
+tocotrienols (unresolved mixture/form),ORAC(FL-LIPO),7% RMCD in 50% acetone-water; phosphate buffer pH 7.4,0.91,mol Trolox equivalent/mol compound,secondary only; no vitamer mapping,11902917,10.1021/jf0113732,Abstract/results,Generic tocotrienols value cannot be assigned to alpha/beta/gamma/delta candidates.

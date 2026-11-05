@@ -1,0 +1,9 @@
+[
+  {
+    "path": "90_archive/legacy_2026-11-05/workspaces/repository_review_20261030/Catalog_Input.json",
+    "sha256": "060fa17d49eb6f1d883359dddd45597286e3169fd48a492a036db8c24f0356a2",
+    "reason": "Redundant generated workbook payload; original source tables, builder and exported catalogue retained.",
+    "retained_catalogue": "90_archive/legacy_2026-11-05/outputs/review_20261030/Evidence_Catalog_2026-10-30.xlsx",
+    "date": "2026-11-05"
+  }
+]

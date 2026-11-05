@@ -1,0 +1,21 @@
+﻿Rank,Candidate,Class,Median_HORAC,Eligible_experiment_N,Tier_A_N,Tier_B1_N,Confidence,Heterogeneity,Stage25A_research_density_rank,B2_sensitivity_note
+1,Rosmarinic acid,Polyphenols - Phenolic acids / conjugates,18.72,1,0,1,Low,no,19,UNCHANGED_MEMBERSHIP
+2,Epicatechin,Polyphenols - Flavonoids,9.37,5,0,5,High,no,36,UNCHANGED_MEMBERSHIP
+3,Catechin,Polyphenols - Flavonoids,8.45,6,0,6,Moderate,HIGH_HETEROGENEITY,16,UNCHANGED_MEMBERSHIP
+4,Caffeic acid,Polyphenols - Phenolic acids / conjugates,8.26,3,1,2,Moderate,HIGH_HETEROGENEITY,9,UNCHANGED_MEMBERSHIP
+5,Apigenin,Polyphenols - Flavonoids,8.2065,2,0,2,Moderate,no,21,UNCHANGED_MEMBERSHIP
+6,Naringenin,Polyphenols - Flavonoids,8.04,3,0,3,High,no,18,UNCHANGED_MEMBERSHIP
+7,Kaempferol,Polyphenols - Flavonoids,7.6965,4,0,4,High,no,23,UNCHANGED_MEMBERSHIP
+8,Daidzein,Polyphenols - Flavonoids,7.66,1,0,1,Low,no,47,UNCHANGED_MEMBERSHIP
+9,Hesperetin,Polyphenols - Flavonoids,7.4575,2,0,2,Moderate,no,40,UNCHANGED_MEMBERSHIP
+10,Protocatechuic acid,Polyphenols - Phenolic acids / conjugates,7.36,2,0,2,Moderate,HIGH_HETEROGENEITY,39,UNCHANGED_MEMBERSHIP
+11,Genistein,Polyphenols - Flavonoids,7.32,3,0,3,High,no,22,UNCHANGED_MEMBERSHIP
+12,Quercetin,Polyphenols - Flavonoids,7.2255,6,1,5,Moderate,HIGH_HETEROGENEITY,3,UNCHANGED_MEMBERSHIP
+13,Fisetin,Polyphenols - Flavonoids,7.092,1,0,1,Low,no,37,UNCHANGED_MEMBERSHIP
+14,Rutin,Polyphenols - Flavonoids,6.705,2,0,2,Moderate,no,8,UNCHANGED_MEMBERSHIP
+15,Sinapic acid,Polyphenols - Phenolic acids / conjugates,5.99,2,1,1,Moderate,HIGH_HETEROGENEITY,49,UNCHANGED_MEMBERSHIP
+16,p-Coumaric acid,Polyphenols - Phenolic acids / conjugates,5.01,4,1,3,High,no,48,UNCHANGED_MEMBERSHIP
+17,Hesperidin,Polyphenols - Flavonoids,4.5,1,0,1,Low,no,15,UNCHANGED_MEMBERSHIP
+18,Luteolin,Polyphenols - Flavonoids,4.136,2,0,2,Moderate,no,12,LEAVES_TOP20_IF_B2_INCLUDED
+19,Naringin,Polyphenols - Flavonoids,4.11,1,0,1,Low,no,25,LEAVES_TOP20_IF_B2_INCLUDED
+20,Ferulic acid,Polyphenols - Phenolic acids / conjugates,4.032,4,1,3,Moderate,HIGH_HETEROGENEITY,10,LEAVES_TOP20_IF_B2_INCLUDED

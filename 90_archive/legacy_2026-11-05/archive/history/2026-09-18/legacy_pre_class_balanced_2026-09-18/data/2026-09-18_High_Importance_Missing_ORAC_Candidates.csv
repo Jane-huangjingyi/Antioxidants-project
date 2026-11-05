@@ -1,0 +1,7 @@
+﻿compound,subclass,why_scientifically_important,food_relevance,search_completed,eligible_B1_found,reason_missing,method_limitation,future_retest_priority
+EGCG,flavan-3-ols,major dietary tea catechin; high mechanistic relevance,green tea,yes,yes,B1 found after probe-specific tracing,"older β-phycoerythrin, HORAC and figure-only records excluded",high
+Kaempferol,flavonols,common food flavonol and structural comparator,leafy vegetables; tea; legumes,yes,yes,B1 found; cyclodextrin-dependent values require separation,limited solubility and cyclodextrin effects,high
+Myricetin,flavonols,tri-hydroxylated B-ring; important structure–activity comparator,berries; tea; wine,yes,yes,one B1 found; remains single-study,solubility and cyclodextrin sensitivity,high
+Cyanidin-3-O-glucoside,anthocyanidins / anthocyanins,major dietary anthocyanin,berries; black rice; red cabbage,yes,no,B2 exact value only; optical QC insufficient,"inner-filter, spectral overlap, quenching, pH transformation",very high
+Naringenin,flavanones,common citrus aglycone representative,citrus foods,yes,yes,two independent B1 found,low water solubility; solvent must be locked,high
+Secoisolariciresinol,lignans,major dietary parent lignan,flaxseed; sesame; whole grains,yes,no,no usable original ORAC-FL value located,parent identity/solubility; do not substitute enterodiol/enterolactone,very high

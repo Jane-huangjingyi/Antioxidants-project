@@ -1,0 +1,15 @@
+{
+  "utc": "2026-10-16T11:27:52.969551+00:00",
+  "original_tracked_files_checked": 639,
+  "original_changed_paths": [],
+  "all_previously_validated_csv_sha256_unchanged": true,
+  "source_cache_files_retained_locally": 31,
+  "source_cache_bytes_excluded": 51360780,
+  "evidence_source_index_rows": 21,
+  "evidence_data_changed": false,
+  "human_scientific_review": "NOT_REVIEWED",
+  "Gate1": "HOLD",
+  "Gate2": "HUMAN_SCIENTIFIC_REVIEW_REQUIRED",
+  "Release": "HOLD",
+  "authorization": "User authorized precommit organization and selective commit/push after initial extraction; earlier NOT_EXECUTED logs are historical snapshots."
+}

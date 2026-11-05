@@ -1,0 +1,14 @@
+{
+ "as_of":"2026-11-05",
+ "scope":"Individually defined chemicals occurring in foods, beverages or customary culinary ingredients",
+ "discovery_independent_of_assay_performance":true,
+ "include_food_processing_products_if_defined":true,
+ "endogenous_occurrence_alone_is_not_an_exclusion_if_food_occurrence_is_demonstrated":true,
+ "exclude_undefined_extracts_mixtures_and_aggregate_measurements":true,
+ "exclude_drug_or_supplement_only_sources":true,
+ "exclude_elemental_nutrient_labels_without_testable_chemical_form":true,
+ "target_panel_size":20,
+ "assay_scenario":"Aqueous absorbance-based capacity; ORAC-PGR preferred for validation, not yet approved",
+ "coverage_claim":"Versioned, source-bounded discovery collection; not an exhaustive census of all food chemicals",
+ "formal_scientific_approval":"NOT_GRANTED_BY_FILE_REORGANIZATION"
+}

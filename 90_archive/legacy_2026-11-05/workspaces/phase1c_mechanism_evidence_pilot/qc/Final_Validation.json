@@ -1,0 +1,83 @@
+{
+  "verified_utc": "2026-10-16T11:21:43.873352+00:00",
+  "checks": {
+    "all_csv_strict_utf8_and_rectangular": true,
+    "master_compound_byte_identical": true,
+    "21_observations_10_publications": true,
+    "all_66_fields_bilingual_dictionary": true,
+    "unique_evidence_ids": true,
+    "190_unsearched_no_false_zero": true,
+    "all_abstracts_no_fake_panels": true,
+    "no_fabricated_direct_validation": true,
+    "retracted_absent_from_evidence": true,
+    "no_derivative_or_generated_form_silently_included": true,
+    "single_dose_value": true,
+    "mda_panel_conflict_not_guessed": true,
+    "no_unparsed_multi_dose_KEAP1_row": true,
+    "source_local_paths_exist": true,
+    "publication_registry_counts": true,
+    "support_scripts_syntax": true,
+    "639_protected_tracked_hashes_unchanged": true,
+    "HEAD_unchanged": true,
+    "all_changes_in_authorized_pilot_directory": true,
+    "no_human_approval": true
+  },
+  "programmatic_pass_count": 20,
+  "failed_checks": [],
+  "csv_counts": {
+    "compounds/AFF-0061_Protocatechuic_Acid_Mechanism_Evidence.csv": {
+      "rows": 21,
+      "columns": 66,
+      "sha256": "90213d26ebb059f903e50e8d4daad4bd2a272eca5002e9b7b64d973d73c094f5"
+    },
+    "dictionaries/Mechanism_Evidence_Field_Dictionary.csv": {
+      "rows": 66,
+      "columns": 13,
+      "sha256": "3ec53831dc4755697aa514f8b844d75baa5607fa093d482c3c4c800c55d8607c"
+    },
+    "docs/Transfer_to_ChatGPT_File_List.csv": {
+      "rows": 12,
+      "columns": 3,
+      "sha256": "866e2031632b846c78db03b7e8ab7266a431751fabbece867dfcf90e399186a3"
+    },
+    "indexes/Compound_Mechanism_Coverage.csv": {
+      "rows": 191,
+      "columns": 12,
+      "sha256": "ded43b574f3eb7749a39b299686ef8ebc5e0f9b7a9f1b83d8c55664a07fdb646"
+    },
+    "master/Compound_Mechanism_Evidence_Master.csv": {
+      "rows": 21,
+      "columns": 66,
+      "sha256": "90213d26ebb059f903e50e8d4daad4bd2a272eca5002e9b7b64d973d73c094f5"
+    },
+    "master/Study_Register.csv": {
+      "rows": 15,
+      "columns": 19,
+      "sha256": "2176660a1b0519ebaa56564f574af9306886fd40a5de34a82fd8c363f1c7de1f"
+    },
+    "qc/Programmatic_Checks.csv": {
+      "rows": 17,
+      "columns": 3,
+      "sha256": "c7c187aff5a855ea664a2e6b57943cf12e504a8555ebf19220e11cfc11dcaa79"
+    },
+    "search_logs/Protocatechuic_Acid_Screening_Log.csv": {
+      "rows": 3940,
+      "columns": 12,
+      "sha256": "92bec73a4186351ec94cd0e7a2524ff559abe3544eaea1c07a0682a940ffb6fd"
+    },
+    "search_logs/Protocatechuic_Acid_Search_Log.csv": {
+      "rows": 13,
+      "columns": 16,
+      "sha256": "32859de19a0c870c69e64ac1dc9fadc05cdefd96fa80127bbcbad495e1a8ad54"
+    }
+  },
+  "final_HEAD": "dbad6d1f5ec7f96550e1fd9eb33a4d16d21a1d87",
+  "final_branch": "main",
+  "non_pilot_tracked_changes": [],
+  "git_status_before_this_validation_output": "?? workspaces/phase1c_mechanism_evidence_pilot/Sync_to_ChatGPT_Mechanism_Evidence_Pilot.md\n?? workspaces/phase1c_mechanism_evidence_pilot/compounds/AFF-0061_Protocatechuic_Acid_Mechanism_Evidence.csv\n?? workspaces/phase1c_mechanism_evidence_pilot/dictionaries/Mechanism_Evidence_Field_Dictionary.csv\n?? workspaces/phase1c_mechanism_evidence_pilot/docs/Mechanism_Evidence_User_Guide_CN.md\n?? workspaces/phase1c_mechanism_evidence_pilot/docs/Transfer_to_ChatGPT_File_List.csv\n?? workspaces/phase1c_mechanism_evidence_pilot/indexes/Compound_Mechanism_Coverage.csv\n?? workspaces/phase1c_mechanism_evidence_pilot/master/Compound_Mechanism_Evidence_Master.csv\n?? workspaces/phase1c_mechanism_evidence_pilot/master/Study_Register.csv\n?? workspaces/phase1c_mechanism_evidence_pilot/qc/Compound_Identity_Check.json\n?? workspaces/phase1c_mechanism_evidence_pilot/qc/Counts_and_Checks.json\n?? workspaces/phase1c_mechanism_evidence_pilot/qc/Final_Integrity.json\n?? workspaces/phase1c_mechanism_evidence_pilot/qc/Mechanism_Evidence_Pilot_QC_Report.md\n?? workspaces/phase1c_mechanism_evidence_pilot/qc/Programmatic_Checks.csv\n?? workspaces/phase1c_mechanism_evidence_pilot/qc/Source_Review_Open_Items.md\n?? workspaces/phase1c_mechanism_evidence_pilot/qc/Start_Baseline.json\n?? workspaces/phase1c_mechanism_evidence_pilot/qc/build_pilot.py\n?? workspaces/phase1c_mechanism_evidence_pilot/qc/collect_sources.py\n?? workspaces/phase1c_mechanism_evidence_pilot/qc/enrich_identifiers.py\n?? workspaces/phase1c_mechanism_evidence_pilot/qc/retrieve_pubmed_metadata.py\n?? workspaces/phase1c_mechanism_evidence_pilot/qc/validate_final.py\n?? workspaces/phase1c_mechanism_evidence_pilot/search_logs/Protocatechuic_Acid_Screening_Log.csv\n?? workspaces/phase1c_mechanism_evidence_pilot/search_logs/Protocatechuic_Acid_Search_Log.csv\n?? workspaces/phase1c_mechanism_evidence_pilot/search_logs/raw/Additional_PubMed_Metadata.xml\n?? workspaces/phase1c_mechanism_evidence_pilot/search_logs/raw/EPMC01_error.json\n?? workspaces/phase1c_mechanism_evidence_pilot/search_logs/raw/EPMC01_results.json\n?? workspaces/phase1c_mechanism_evidence_pilot/search_logs/raw/EPMC02_error.json\n?? workspaces/phase1c_mechanism_evidence_pilot/search_logs/raw/EPMC02_results.json\n?? workspaces/phase1c_mechanism_evidence_pilot/search_logs/raw/EPMC03_error.json\n?? workspaces/phase1c_mechanism_evidence_pilot/search_logs/raw/EPMC03_results.json\n?? workspaces/phase1c_mechanism_evidence_pilot/search_logs/raw/EPMC04_error.json\n?? workspaces/phase1c_mechanism_evidence_pilot/search_logs/raw/EPMC04_results.json\n?? workspaces/phase1c_mechanism_evidence_pilot/search_logs/raw/PMC10070727.xml\n?? workspaces/phase1c_mechanism_evidence_pilot/search_logs/raw/PMC10424289.xml\n?? workspaces/phase1c_mechanism_evidence_pilot/search_logs/raw/PMC11599353.xml\n?? workspaces/phase1c_mechanism_evidence_pilot/search_logs/raw/PMC12837532.xml\n?? workspaces/phase1c_mechanism_evidence_pilot/search_logs/raw/PMC13056694.xml\n?? workspaces/phase1c_mechanism_evidence_pilot/search_logs/raw/PMC13187579.xml\n?? workspaces/phase1c_mechanism_evidence_pilot/search_logs/raw/PMC4477133.xml\n?? workspaces/phase1c_mechanism_evidence_pilot/search_logs/raw/PMC7443473_access_error.json\n?? workspaces/phase1c_mechanism_evidence_pilot/search_logs/raw/PMC7443473_browser_response.html\n?? workspaces/phase1c_mechanism_evidence_pilot/search_logs/raw/PMC7443473_retry_access_error.json\n?? workspaces/phase1c_mechanism_evidence_pilot/search_logs/raw/PUBMED01_esearch.json\n?? workspaces/phase1c_mechanism_evidence_pilot/search_logs/raw/PUBMED02_esearch.json\n?? workspaces/phase1c_mechanism_evidence_pilot/search_logs/raw/PUBMED03_esearch.json\n?? workspaces/phase1c_mechanism_evidence_pilot/search_logs/raw/PUBMED04_esearch.json\n?? workspaces/phase1c_mechanism_evidence_pilot/search_logs/raw/PubChem_CID72.json\n?? workspaces/phase1c_mechanism_evidence_pilot/search_logs/raw/PubMed_Targeted_Logs.json\n?? workspaces/phase1c_mechanism_evidence_pilot/search_logs/raw/Retrieval_Logs.json\n?? workspaces/phase1c_mechanism_evidence_pilot/search_logs/raw/Retrieval_Logs_Retry.json\n?? workspaces/phase1c_mechanism_evidence_pilot/search_logs/raw/Selected_Metadata.json\n?? workspaces/phase1c_mechanism_evidence_pilot/search_logs/raw/Selected_Metadata_Retry.json\n?? workspaces/phase1c_mechanism_evidence_pilot/search_logs/raw/Selected_PubMed_Metadata.xml\n?? workspaces/phase1c_mechanism_evidence_pilot/search_logs/raw/UniProt_Target_Identifiers.json",
+  "scientific_review": "NOT_REVIEWED; open items in Source_Review_Open_Items.md",
+  "Gate1": "HOLD",
+  "Gate2": "HUMAN_SCIENTIFIC_REVIEW_REQUIRED",
+  "release": "HOLD",
+  "commit_push": "NOT_EXECUTED"
+}

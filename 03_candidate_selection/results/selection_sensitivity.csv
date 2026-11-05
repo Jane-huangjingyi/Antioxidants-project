@@ -1,0 +1,4 @@
+scenario,eligible_count,preview_count,interpretation
+ONE_CONFIRMED_STUDY_REVIEW_QUEUE,25,20,20-slot review preview; all lab and food-source gates still apply
+TWO_CONFIRMED_STUDIES_ONLY,9,9,Reliability sensitivity; never fill with unsupported zeros
+FORMAL_LAB_READY_PANEL,0,0,Actual researcher/material/counter-screen gates; no auto-approval

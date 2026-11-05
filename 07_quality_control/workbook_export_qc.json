@@ -1,0 +1,49 @@
+{
+  "status": "EXPORTED",
+  "tabs": [
+    {
+      "sheet": "Review panel",
+      "records": 20,
+      "columns": 9,
+      "source": "03_candidate_selection/results/top20_review_queue.csv"
+    },
+    {
+      "sheet": "Candidate profiles",
+      "records": 193,
+      "columns": 42,
+      "source": "02_identity_and_evidence/results/candidate_evidence_profiles.csv"
+    },
+    {
+      "sheet": "Chemical observations",
+      "records": 74,
+      "columns": 10,
+      "source": "02_identity_and_evidence/results/chemical_observation_index.csv"
+    },
+    {
+      "sheet": "Methods",
+      "records": 6,
+      "columns": 9,
+      "source": "04_absorbance_assay/results/method_comparison.csv"
+    },
+    {
+      "sheet": "Manuscript claims",
+      "records": 6,
+      "columns": 4,
+      "source": "06_manuscript/tables/Manuscript_Claim_Map.csv"
+    },
+    {
+      "sheet": "Researcher decisions",
+      "records": 193,
+      "columns": 10,
+      "source": "03_candidate_selection/config/researcher_decisions.csv"
+    },
+    {
+      "sheet": "Source directory",
+      "records": 286,
+      "columns": 5,
+      "source": "02_identity_and_evidence/results/source_file_index.csv"
+    }
+  ],
+  "inspection": "{\"kind\":\"sheet\",\"id\":\"ws/ntua3i\",\"name\":\"Review panel\",\"index\":0,\"range\":\"A1:I21\",\"address\":\"A1:I21\"}\n{\"kind\":\"sheet\",\"id\":\"ws/6tzvia\",\"name\":\"Candidate profiles\",\"index\":1,\"range\":\"A1:AP194\",\"address\":\"A1:AP194\"}\n{\"kind\":\"sheet\",\"id\":\"ws/qht6j6\",\"name\":\"Chemical observations\",\"index\":2,\"range\":\"A1:J75\",\"address\":\"A1:J75\"}\n{\"kind\":\"sheet\",\"id\":\"ws/5w05wa\",\"name\":\"Methods\",\"index\":3,\"range\":\"A1:I7\",\"address\":\"A1:I7\"}\n{\"kind\":\"sheet\",\"id\":\"ws/kvjptg\",\"name\":\"Manuscript claims\",\"index\":4,\"range\":\"A1:D7\",\"address\":\"A1:D7\"}\n{\"kind\":\"sheet\",\"id\":\"ws/rw7p48\",\"name\":\"Researcher decisions\",\"index\":5,\"range\":\"A1:J194\",\"address\":\"A1:J194\"}\n{\"kind\":\"sheet\",\"id\":\"ws/21jy8w\",\"name\":\"Source directory\",\"index\":6,\"range\":\"A1:E287\",\"address\":\"A1:E287\"}\n{\"kind\":\"sheet\",\"id\":\"ws/od3vjr\",\"name\":\"ReadMe\",\"index\":7,\"range\":\"A1:B7\",\"address\":\"A1:B7\"}",
+  "formulas": "NONE_STATIC_SOURCE_LINKED_SNAPSHOT"
+}

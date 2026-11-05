@@ -1,0 +1,6 @@
+rank,compound,subclass,normalized_value,normalized_unit,eligible_record_count,confidence,stability,DOI,exact_location,major_caveat,ranking_status
+1,Zingerone,Culinary spice phenolics,3.85,mol TE/mol compound,1,Low,Fragile,10.3762/bjoc.11.151,"Table 1, compound 3; ORAC footnote c/g",single study,Top available H-ORAC subpanel
+2,Eugenol,Culinary spice phenolics,1.811,mol TE/mol compound,1,Low,Fragile,10.1039/D1RA08918H,Table 1; standardized H-ORAC SOP,single study,Top available H-ORAC subpanel
+3,Tyrosol,Olive phenolics,1.131,mol TE/mol compound,1,Low,Fragile,10.1039/D1RA08918H,Table 1; standardized H-ORAC SOP,single study,Top available H-ORAC subpanel
+4,Carvacrol,Culinary spice phenolics,0.829,mol TE/mol compound,1,Low,Fragile,10.1039/D1RA08918H,Table 1; standardized H-ORAC SOP,single study,Top available H-ORAC subpanel
+5,Thymol,Culinary spice phenolics,0.545,mol TE/mol compound,1,Low,Fragile,10.1039/D1RA08918H,Table 1; standardized H-ORAC SOP,single study,Top available H-ORAC subpanel

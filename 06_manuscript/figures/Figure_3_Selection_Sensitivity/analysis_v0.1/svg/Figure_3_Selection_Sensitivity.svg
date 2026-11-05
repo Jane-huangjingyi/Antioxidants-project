@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='792.00pt' height='360.00pt' viewBox='0 0 792.00 360.00'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHw3OTIuMDB8MC4wMHwzNjAuMDA='>
+    <rect x='0.00' y='0.00' width='792.00' height='360.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHw3OTIuMDB8MC4wMHwzNjAuMDA=)'>
+<rect x='0.00' y='0.00' width='792.00' height='360.00' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpMTA0LjM5fDc3Mi4wN3w0Ny4wMXwzMjIuMDM='>
+    <rect x='104.39' y='47.01' width='667.69' height='275.02' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMTA0LjM5fDc3Mi4wN3w0Ny4wMXwzMjIuMDM=)'>
+<polyline points='104.39,270.46 772.07,270.46 ' style='stroke-width: 1.07; stroke: #E5E7EB; stroke-linecap: butt;' />
+<polyline points='104.39,184.52 772.07,184.52 ' style='stroke-width: 1.07; stroke: #E5E7EB; stroke-linecap: butt;' />
+<polyline points='104.39,98.58 772.07,98.58 ' style='stroke-width: 1.07; stroke: #E5E7EB; stroke-linecap: butt;' />
+<polyline points='104.39,322.03 104.39,47.01 ' style='stroke-width: 1.07; stroke: #E5E7EB; stroke-linecap: butt;' />
+<polyline points='336.63,322.03 336.63,47.01 ' style='stroke-width: 1.07; stroke: #E5E7EB; stroke-linecap: butt;' />
+<polyline points='568.87,322.03 568.87,47.01 ' style='stroke-width: 1.07; stroke: #E5E7EB; stroke-linecap: butt;' />
+<rect x='104.39' y='72.80' width='580.60' height='51.57' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #496D89;' />
+<rect x='104.39' y='158.74' width='209.02' height='51.57' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #496D89;' />
+<rect x='104.39' y='244.68' width='0.00' height='51.57' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #496D89;' />
+<text x='687.52' y='102.65' style='font-size: 11.38px; font-family: "Arial";' textLength='12.66px' lengthAdjust='spacingAndGlyphs'>25</text>
+<text x='314.67' y='188.59' style='font-size: 11.38px; font-family: "Arial";' textLength='6.33px' lengthAdjust='spacingAndGlyphs'>9</text>
+<text x='105.65' y='274.53' style='font-size: 11.38px; font-family: "Arial";' textLength='6.33px' lengthAdjust='spacingAndGlyphs'>0</text>
+</g>
+<g clip-path='url(#cpMC4wMHw3OTIuMDB8MC4wMHwzNjAuMDA=)'>
+<text x='99.46' y='273.61' text-anchor='end' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='63.55px' lengthAdjust='spacingAndGlyphs'>Lab-ready gates</text>
+<text x='99.46' y='187.67' text-anchor='end' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='80.67px' lengthAdjust='spacingAndGlyphs'>Two-study sensitivity</text>
+<text x='99.46' y='101.73' text-anchor='end' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='87.50px' lengthAdjust='spacingAndGlyphs'>One-study review pool</text>
+<text x='104.39' y='333.26' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='4.89px' lengthAdjust='spacingAndGlyphs'>0</text>
+<text x='336.63' y='333.26' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='9.78px' lengthAdjust='spacingAndGlyphs'>10</text>
+<text x='568.87' y='333.26' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='9.78px' lengthAdjust='spacingAndGlyphs'>20</text>
+<text x='438.23' y='345.73' text-anchor='middle' style='font-size: 11.00px; font-family: "Arial";' textLength='124.81px' lengthAdjust='spacingAndGlyphs'>Eligible candidate profiles</text>
+<text x='104.39' y='39.21' style='font-size: 11.00px; font-family: "Arial";' textLength='350.03px' lengthAdjust='spacingAndGlyphs'>Unknown food-source, reagent and interference fields are not approvals</text>
+<text x='104.39' y='22.70' style='font-size: 15.00px; font-weight: bold; font-family: "Arial";' textLength='355.98px' lengthAdjust='spacingAndGlyphs'>Selection sensitivity and remaining readiness gap</text>
+</g>
+</g>
+</svg>

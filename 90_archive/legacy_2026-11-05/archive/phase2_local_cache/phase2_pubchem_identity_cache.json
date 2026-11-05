@@ -1,0 +1,1341 @@
+{
+  "Catechin": {
+    "PubChem_CID": 9064,
+    "canonical_name": "Catechin",
+    "molecular_formula": "C15H14O6",
+    "molecular_weight": "290.27",
+    "InChIKey": "PFTAWBLQPZVEMU-DZGCQCFKSA-N"
+  },
+  "Epicatechin": {
+    "PubChem_CID": 72276,
+    "canonical_name": "Epicatechin",
+    "molecular_formula": "C15H14O6",
+    "molecular_weight": "290.27",
+    "InChIKey": "PFTAWBLQPZVEMU-UKRRQHHQSA-N"
+  },
+  "Epigallocatechin gallate": {
+    "PubChem_CID": 65064,
+    "canonical_name": "Epigallocatechin Gallate",
+    "molecular_formula": "C22H18O11",
+    "molecular_weight": "458.4",
+    "InChIKey": "WMBWREPUVVBILR-WIYYLYMNSA-N"
+  },
+  "Epicatechin gallate": {
+    "PubChem_CID": 107905,
+    "canonical_name": "Epicatechin Gallate",
+    "molecular_formula": "C22H18O10",
+    "molecular_weight": "442.4",
+    "InChIKey": "LSHVYAFMTMFKBA-TZIWHRDSSA-N"
+  },
+  "Epigallocatechin": {
+    "PubChem_CID": 72277,
+    "canonical_name": "Epigallocatechin",
+    "molecular_formula": "C15H14O7",
+    "molecular_weight": "306.27",
+    "InChIKey": "XMOCLSLCDHWDHP-IUODEOHRSA-N"
+  },
+  "Gallocatechin": {
+    "PubChem_CID": 65084,
+    "canonical_name": "Gallocatechin",
+    "molecular_formula": "C15H14O7",
+    "molecular_weight": "306.27",
+    "InChIKey": "XMOCLSLCDHWDHP-SWLSCSKDSA-N"
+  },
+  "Gallocatechin gallate": {
+    "PubChem_CID": 5276890,
+    "canonical_name": "Gallocatechin Gallate",
+    "molecular_formula": "C22H18O11",
+    "molecular_weight": "458.4",
+    "InChIKey": "WMBWREPUVVBILR-GHTZIAJQSA-N"
+  },
+  "Catechin gallate": {
+    "PubChem_CID": 5276454,
+    "canonical_name": "(+)-Catechin 3-Gallate",
+    "molecular_formula": "C22H18O10",
+    "molecular_weight": "442.4",
+    "InChIKey": "LSHVYAFMTMFKBA-PZJWPPBQSA-N"
+  },
+  "Quercetin": {
+    "PubChem_CID": 5280343,
+    "canonical_name": "Quercetin",
+    "molecular_formula": "C15H10O7",
+    "molecular_weight": "302.23",
+    "InChIKey": "REFJWTPEDVJJIY-UHFFFAOYSA-N"
+  },
+  "Kaempferol": {
+    "PubChem_CID": 5280863,
+    "canonical_name": "Kaempferol",
+    "molecular_formula": "C15H10O6",
+    "molecular_weight": "286.24",
+    "InChIKey": "IYRMWMYZSQPJKC-UHFFFAOYSA-N"
+  },
+  "Myricetin": {
+    "PubChem_CID": 5281672,
+    "canonical_name": "Myricetin",
+    "molecular_formula": "C15H10O8",
+    "molecular_weight": "318.23",
+    "InChIKey": "IKMDFBPHZNJCSN-UHFFFAOYSA-N"
+  },
+  "Isorhamnetin": {
+    "PubChem_CID": 5281654,
+    "canonical_name": "Isorhamnetin",
+    "molecular_formula": "C16H12O7",
+    "molecular_weight": "316.26",
+    "InChIKey": "IZQSVPBOUDKVDZ-UHFFFAOYSA-N"
+  },
+  "Fisetin": {
+    "PubChem_CID": 5281614,
+    "canonical_name": "Fisetin",
+    "molecular_formula": "C15H10O6",
+    "molecular_weight": "286.24",
+    "InChIKey": "XHEFDIBZLJXQHF-UHFFFAOYSA-N"
+  },
+  "Morin": {
+    "PubChem_CID": 5281670,
+    "canonical_name": "Morin",
+    "molecular_formula": "C15H10O7",
+    "molecular_weight": "302.23",
+    "InChIKey": "YXOLAZRVSSWPPT-UHFFFAOYSA-N"
+  },
+  "Quercitrin": {
+    "PubChem_CID": 5280459,
+    "canonical_name": "Quercitrin",
+    "molecular_formula": "C21H20O11",
+    "molecular_weight": "448.4",
+    "InChIKey": "OXGUCUVFOIWWQJ-HQBVPOQASA-N"
+  },
+  "Isoquercitrin": {
+    "PubChem_CID": 5484006,
+    "canonical_name": "Isoquercitrin",
+    "molecular_formula": "C21H20O12",
+    "molecular_weight": "464.4",
+    "InChIKey": "OPJZLUXFQFQYAI-GNPVFZCLSA-N"
+  },
+  "Rutin": {
+    "PubChem_CID": 5280805,
+    "canonical_name": "Rutin",
+    "molecular_formula": "C27H30O16",
+    "molecular_weight": "610.5",
+    "InChIKey": "IKGXIBQEEMLURG-NVPNHPEKSA-N"
+  },
+  "Hyperoside": {
+    "PubChem_CID": 5281643,
+    "canonical_name": "Hyperoside",
+    "molecular_formula": "C21H20O12",
+    "molecular_weight": "464.4",
+    "InChIKey": "OVSQVDMCBVZWGM-DTGCRPNFSA-N"
+  },
+  "Kaempferol 3-O-glucoside": {
+    "PubChem_CID": 5282102,
+    "canonical_name": "Astragalin",
+    "molecular_formula": "C21H20O11",
+    "molecular_weight": "448.4",
+    "InChIKey": "JPUKWEQWGBDDQB-QSOFNFLRSA-N"
+  },
+  "Myricitrin": {
+    "PubChem_CID": 5281673,
+    "canonical_name": "Myricitrin",
+    "molecular_formula": "C21H20O12",
+    "molecular_weight": "464.4",
+    "InChIKey": "DCYOADKBABEMIQ-OWMUPTOHSA-N"
+  },
+  "Luteolin": {
+    "PubChem_CID": 5280445,
+    "canonical_name": "Luteolin",
+    "molecular_formula": "C15H10O6",
+    "molecular_weight": "286.24",
+    "InChIKey": "IQPNAANSBPBGFQ-UHFFFAOYSA-N"
+  },
+  "Apigenin": {
+    "PubChem_CID": 5280443,
+    "canonical_name": "Apigenin",
+    "molecular_formula": "C15H10O5",
+    "molecular_weight": "270.24",
+    "InChIKey": "KZNIFHPLKGYRTM-UHFFFAOYSA-N"
+  },
+  "Chrysin": {
+    "PubChem_CID": 5281607,
+    "canonical_name": "Chrysin",
+    "molecular_formula": "C15H10O4",
+    "molecular_weight": "254.24",
+    "InChIKey": "RTIXKCRFFJGDFG-UHFFFAOYSA-N"
+  },
+  "Baicalein": {
+    "PubChem_CID": 5281605,
+    "canonical_name": "Baicalein",
+    "molecular_formula": "C15H10O5",
+    "molecular_weight": "270.24",
+    "InChIKey": "FXNFHKRTJBSTCS-UHFFFAOYSA-N"
+  },
+  "Tricin": {
+    "PubChem_CID": 5281702,
+    "canonical_name": "Tricin",
+    "molecular_formula": "C17H14O7",
+    "molecular_weight": "330.29",
+    "InChIKey": "HRGUSFBJBOKSML-UHFFFAOYSA-N"
+  },
+  "Luteolin 7-O-glucoside": {
+    "PubChem_CID": 5280637,
+    "canonical_name": "Luteolin 7-O-glucoside",
+    "molecular_formula": "C21H20O11",
+    "molecular_weight": "448.4",
+    "InChIKey": "PEFNSGRTCBGNAN-QNDFHXLGSA-N"
+  },
+  "Apigenin 7-O-glucoside": {
+    "PubChem_CID": 5280704,
+    "canonical_name": "Apigenin 7-O-glucoside",
+    "molecular_formula": "C21H20O10",
+    "molecular_weight": "432.4",
+    "InChIKey": "KMOUJOKENFFTPU-QNDFHXLGSA-N"
+  },
+  "Apigenin 6-C-glucoside": {
+    "PubChem_CID": 162350,
+    "canonical_name": "Isovitexin",
+    "molecular_formula": "C21H20O10",
+    "molecular_weight": "432.4",
+    "InChIKey": "MYXNWGACZJSMBT-VJXVFPJBSA-N"
+  },
+  "Apigenin 8-C-glucoside": {
+    "PubChem_CID": 5280441,
+    "canonical_name": "Vitexin",
+    "molecular_formula": "C21H20O10",
+    "molecular_weight": "432.4",
+    "InChIKey": "SGEWCQFRYRRZDC-VPRICQMDSA-N"
+  },
+  "Naringenin": {
+    "PubChem_CID": 439246,
+    "canonical_name": "Naringenin",
+    "molecular_formula": "C15H12O5",
+    "molecular_weight": "272.25",
+    "InChIKey": "FTVWIRXFELQLPI-ZDUSSCGKSA-N"
+  },
+  "Hesperetin": {
+    "PubChem_CID": 72281,
+    "canonical_name": "Hesperetin",
+    "molecular_formula": "C16H14O6",
+    "molecular_weight": "302.28",
+    "InChIKey": "AIONOLUJZLIMTK-AWEZNQCLSA-N"
+  },
+  "Eriodictyol": {
+    "PubChem_CID": 440735,
+    "canonical_name": "(+)-Eriodictyol",
+    "molecular_formula": "C15H12O6",
+    "molecular_weight": "288.25",
+    "InChIKey": "SBHXYTNGIZCORC-ZDUSSCGKSA-N"
+  },
+  "Isosakuranetin": {
+    "PubChem_CID": 160481,
+    "canonical_name": "Isosakuranetin",
+    "molecular_formula": "C16H14O5",
+    "molecular_weight": "286.28",
+    "InChIKey": "HMUJXQRRKBLVOO-AWEZNQCLSA-N"
+  },
+  "Naringin": {
+    "PubChem_CID": 442428,
+    "canonical_name": "Naringin",
+    "molecular_formula": "C27H32O14",
+    "molecular_weight": "580.5",
+    "InChIKey": "DFPMSGMNTNDNHN-ZPHOTFPESA-N"
+  },
+  "Narirutin": {
+    "PubChem_CID": 442431,
+    "canonical_name": "Narirutin",
+    "molecular_formula": "C27H32O14",
+    "molecular_weight": "580.5",
+    "InChIKey": "HXTFHSYLYXVTHC-AJHDJQPGSA-N"
+  },
+  "Hesperidin": {
+    "PubChem_CID": 10621,
+    "canonical_name": "Hesperidin",
+    "molecular_formula": "C28H34O15",
+    "molecular_weight": "610.6",
+    "InChIKey": "QUQPHWDTPGMPEX-QJBIFVCTSA-N"
+  },
+  "Eriocitrin": {
+    "PubChem_CID": 83489,
+    "canonical_name": "Eriocitrin",
+    "molecular_formula": "C27H32O15",
+    "molecular_weight": "596.5",
+    "InChIKey": "OMQADRGFMLGFJF-MNPJBKLOSA-N"
+  },
+  "Neohesperidin": {
+    "PubChem_CID": 442439,
+    "canonical_name": "Neohesperidin",
+    "molecular_formula": "C28H34O15",
+    "molecular_weight": "610.6",
+    "InChIKey": "ARGKVCXINMKCAZ-UZRWAPQLSA-N"
+  },
+  "Cyanidin": {
+    "PubChem_CID": 128861,
+    "canonical_name": "2-(3,4-Dihydroxyphenyl)-3,5,7-trihydroxy-1-Benzopyrylium",
+    "molecular_formula": "C15H11O6+",
+    "molecular_weight": "287.24",
+    "InChIKey": "VEVZSMAEJFVWIL-UHFFFAOYSA-O"
+  },
+  "Delphinidin": {
+    "PubChem_CID": 128853,
+    "canonical_name": "3,5,7-Trihydroxy-2-(3,4,5-trihydroxyphenyl)-1-benzopyrylium",
+    "molecular_formula": "C15H11O7+",
+    "molecular_weight": "303.24",
+    "InChIKey": "JKHRCGUTYDNCLE-UHFFFAOYSA-O"
+  },
+  "Pelargonidin": {
+    "PubChem_CID": 440832,
+    "canonical_name": "Pelargonidin",
+    "molecular_formula": "C15H11O5+",
+    "molecular_weight": "271.24",
+    "InChIKey": "XVFMGWDSJLBXDZ-UHFFFAOYSA-O"
+  },
+  "Malvidin": {
+    "PubChem_CID": 159287,
+    "canonical_name": "Malvidin",
+    "molecular_formula": "C17H15O7+",
+    "molecular_weight": "331.30",
+    "InChIKey": "KZMACGJDUUWFCH-UHFFFAOYSA-O"
+  },
+  "Peonidin": {
+    "PubChem_CID": 164544,
+    "canonical_name": "Peonidin",
+    "molecular_formula": "C16H13ClO6",
+    "molecular_weight": "336.72",
+    "InChIKey": "OGBSHLKSHNAPEW-UHFFFAOYSA-N"
+  },
+  "Petunidin": {
+    "PubChem_CID": 73386,
+    "canonical_name": "Petunidin",
+    "molecular_formula": "C16H13ClO7",
+    "molecular_weight": "352.72",
+    "InChIKey": "QULMBDNPZCFSPR-UHFFFAOYSA-N"
+  },
+  "Cyanidin 3-O-glucoside": {
+    "PubChem_CID": 197081,
+    "canonical_name": "cyanidin 3-O-glucoside",
+    "molecular_formula": "C21H21ClO11",
+    "molecular_weight": "484.8",
+    "InChIKey": "YTMNONATNXDQJF-UBNZBFALSA-N"
+  },
+  "Delphinidin 3-O-glucoside": {
+    "PubChem_CID": 443650,
+    "canonical_name": "Delphinidin 3-O-glucoside cation",
+    "molecular_formula": "C21H21O12+",
+    "molecular_weight": "465.4",
+    "InChIKey": "XENHPQQLDPAYIJ-PEVLUNPASA-O"
+  },
+  "Pelargonidin 3-O-glucoside": {
+    "PubChem_CID": 443648,
+    "canonical_name": "Pelargonidin 3-O-glucoside",
+    "molecular_formula": "C21H21O10+",
+    "molecular_weight": "433.4",
+    "InChIKey": "ABVCUBUIXWJYSE-GQUPQBGVSA-O"
+  },
+  "Malvidin 3-O-glucoside": {
+    "PubChem_CID": 443652,
+    "canonical_name": "Malvidin 3-Glucoside",
+    "molecular_formula": "C23H25O12+",
+    "molecular_weight": "493.4",
+    "InChIKey": "PXUQTDZNOHRWLI-OXUVVOBNSA-O"
+  },
+  "Peonidin 3-O-glucoside": {
+    "PubChem_CID": 443654,
+    "canonical_name": "Peonidin-3-glucoside",
+    "molecular_formula": "C22H23O11+",
+    "molecular_weight": "463.4",
+    "InChIKey": "ZZWPMFROUHHAKY-OUUKCGNVSA-O"
+  },
+  "Cyanidin 3-O-rutinoside": {
+    "PubChem_CID": 441674,
+    "canonical_name": "Keracyanin cation",
+    "molecular_formula": "C27H31O15+",
+    "molecular_weight": "595.5",
+    "InChIKey": "USNPULRDBDVJAO-FXCAAIILSA-O"
+  },
+  "Malvidin 3,5-diglucoside": {
+    "PubChem_CID": 5319251,
+    "canonical_name": "3,5-Bis(beta-D-glucopyranosyloxy)-7-hydroxy-2-(4-hydroxy-3,5-dimethoxyphenyl)-1-benzopyrylium chloride",
+    "molecular_formula": "C29H35ClO17",
+    "molecular_weight": "691.0",
+    "InChIKey": "RHKJIVJBQJXLBY-FTIBDFQESA-N"
+  },
+  "Genistein": {
+    "PubChem_CID": 5280961,
+    "canonical_name": "Genistein",
+    "molecular_formula": "C15H10O5",
+    "molecular_weight": "270.24",
+    "InChIKey": "TZBJGXHYKVUXJN-UHFFFAOYSA-N"
+  },
+  "Daidzein": {
+    "PubChem_CID": 5281708,
+    "canonical_name": "Daidzein",
+    "molecular_formula": "C15H10O4",
+    "molecular_weight": "254.24",
+    "InChIKey": "ZQSIJRDFPHDXIC-UHFFFAOYSA-N"
+  },
+  "Glycitein": {
+    "PubChem_CID": 5317750,
+    "canonical_name": "Glycitein",
+    "molecular_formula": "C16H12O5",
+    "molecular_weight": "284.26",
+    "InChIKey": "DXYUAIFZCFRPTH-UHFFFAOYSA-N"
+  },
+  "Formononetin": {
+    "PubChem_CID": 5280378,
+    "canonical_name": "Formononetin",
+    "molecular_formula": "C16H12O4",
+    "molecular_weight": "268.26",
+    "InChIKey": "HKQYGTCOTHHOMP-UHFFFAOYSA-N"
+  },
+  "Biochanin A": {
+    "PubChem_CID": 5280373,
+    "canonical_name": "Biochanin A",
+    "molecular_formula": "C16H12O5",
+    "molecular_weight": "284.26",
+    "InChIKey": "WUADCCWRTIWANL-UHFFFAOYSA-N"
+  },
+  "Genistin": {
+    "PubChem_CID": 5281377,
+    "canonical_name": "Genistin",
+    "molecular_formula": "C21H20O10",
+    "molecular_weight": "432.4",
+    "InChIKey": "ZCOLJUOHXJRHDI-CMWLGVBASA-N"
+  },
+  "Daidzin": {
+    "PubChem_CID": 107971,
+    "canonical_name": "Daidzin",
+    "molecular_formula": "C21H20O9",
+    "molecular_weight": "416.4",
+    "InChIKey": "KYQZWONCHDNPDP-QNDFHXLGSA-N"
+  },
+  "Glycitin": {
+    "PubChem_CID": 187808,
+    "canonical_name": "Glycitin",
+    "molecular_formula": "C22H22O10",
+    "molecular_weight": "446.4",
+    "InChIKey": "OZBAVEKZGSOMOJ-MIUGBVLSSA-N"
+  },
+  "Gallic acid": {
+    "PubChem_CID": 370,
+    "canonical_name": "Gallic Acid",
+    "molecular_formula": "C7H6O5",
+    "molecular_weight": "170.12",
+    "InChIKey": "LNTHITQWFMADLM-UHFFFAOYSA-N"
+  },
+  "Protocatechuic acid": {
+    "PubChem_CID": 72,
+    "canonical_name": "Protocatechuic Acid",
+    "molecular_formula": "C7H6O4",
+    "molecular_weight": "154.12",
+    "InChIKey": "YQUVCSBJEUQKSH-UHFFFAOYSA-N"
+  },
+  "4-Hydroxybenzoic acid": {
+    "PubChem_CID": 135,
+    "canonical_name": "4-Hydroxybenzoic Acid",
+    "molecular_formula": "C7H6O3",
+    "molecular_weight": "138.12",
+    "InChIKey": "FJKROLUGYXJWQN-UHFFFAOYSA-N"
+  },
+  "Vanillic acid": {
+    "PubChem_CID": 8468,
+    "canonical_name": "Vanillic Acid",
+    "molecular_formula": "C8H8O4",
+    "molecular_weight": "168.15",
+    "InChIKey": "WKOLLVMJNQIZCI-UHFFFAOYSA-N"
+  },
+  "Syringic acid": {
+    "PubChem_CID": 10742,
+    "canonical_name": "Syringic Acid",
+    "molecular_formula": "C9H10O5",
+    "molecular_weight": "198.17",
+    "InChIKey": "JMSVCTWVEWCHDZ-UHFFFAOYSA-N"
+  },
+  "Gentisic acid": {
+    "PubChem_CID": 3469,
+    "canonical_name": "2,5-Dihydroxybenzoic acid",
+    "molecular_formula": "C7H6O4",
+    "molecular_weight": "154.12",
+    "InChIKey": "WXTMDXOMEHJXQO-UHFFFAOYSA-N"
+  },
+  "Salicylic acid": {
+    "PubChem_CID": 338,
+    "canonical_name": "Salicylic Acid",
+    "molecular_formula": "C7H6O3",
+    "molecular_weight": "138.12",
+    "InChIKey": "YGSDEFSMJLZEOE-UHFFFAOYSA-N"
+  },
+  "2,3-Dihydroxybenzoic acid": {
+    "PubChem_CID": 19,
+    "canonical_name": "2,3-Dihydroxybenzoic Acid",
+    "molecular_formula": "C7H6O4",
+    "molecular_weight": "154.12",
+    "InChIKey": "GLDQAMYCGOIJDV-UHFFFAOYSA-N"
+  },
+  "3,4,5-Trimethoxybenzoic acid": {
+    "PubChem_CID": 8357,
+    "canonical_name": "3,4,5-Trimethoxybenzoic Acid",
+    "molecular_formula": "C10H12O5",
+    "molecular_weight": "212.20",
+    "InChIKey": "SJSOFNCYXJUNBT-UHFFFAOYSA-N"
+  },
+  "Caffeic acid": {
+    "PubChem_CID": 689043,
+    "canonical_name": "Caffeic Acid",
+    "molecular_formula": "C9H8O4",
+    "molecular_weight": "180.16",
+    "InChIKey": "QAIPRVGONGVQAS-DUXPYHPUSA-N"
+  },
+  "Ferulic acid": {
+    "PubChem_CID": 445858,
+    "canonical_name": "Ferulic Acid",
+    "molecular_formula": "C10H10O4",
+    "molecular_weight": "194.18",
+    "InChIKey": "KSEBMYQBYZTDHS-HWKANZROSA-N"
+  },
+  "p-Coumaric acid": {
+    "PubChem_CID": 637542,
+    "canonical_name": "P-Coumaric Acid",
+    "molecular_formula": "C9H8O3",
+    "molecular_weight": "164.16",
+    "InChIKey": "NGSWKAQJJWESNS-ZZXKWVIFSA-N"
+  },
+  "Sinapic acid": {
+    "PubChem_CID": 10743,
+    "canonical_name": "Sinapic acid",
+    "molecular_formula": "C11H12O5",
+    "molecular_weight": "224.21",
+    "InChIKey": "PCMORTLOPMLEFB-UHFFFAOYSA-N"
+  },
+  "o-Coumaric acid": {
+    "PubChem_CID": 637540,
+    "canonical_name": "O-Coumaric Acid",
+    "molecular_formula": "C9H8O3",
+    "molecular_weight": "164.16",
+    "InChIKey": "PMOWTIHVNWZYFI-AATRIKPKSA-N"
+  },
+  "m-Coumaric acid": {
+    "PubChem_CID": 637541,
+    "canonical_name": "3-coumaric acid, (E)-",
+    "molecular_formula": "C9H8O3",
+    "molecular_weight": "164.16",
+    "InChIKey": "KKSDGJDHHZEWEP-SNAWJCMRSA-N"
+  },
+  "Isoferulic acid": {
+    "PubChem_CID": 736186,
+    "canonical_name": "Isoferulic Acid",
+    "molecular_formula": "C10H10O4",
+    "molecular_weight": "194.18",
+    "InChIKey": "QURCVMIEKCOAJU-HWKANZROSA-N"
+  },
+  "Chlorogenic acid": {
+    "PubChem_CID": 1794427,
+    "canonical_name": "Chlorogenic Acid",
+    "molecular_formula": "C16H18O9",
+    "molecular_weight": "354.31",
+    "InChIKey": "CWVRJTMFETXNAD-JUHZACGLSA-N"
+  },
+  "Neochlorogenic acid": {
+    "PubChem_CID": 5280633,
+    "canonical_name": "Neochlorogenic acid",
+    "molecular_formula": "C16H18O9",
+    "molecular_weight": "354.31",
+    "InChIKey": "CWVRJTMFETXNAD-NXLLHMKUSA-N"
+  },
+  "Cryptochlorogenic acid": {
+    "PubChem_CID": 9798666,
+    "canonical_name": "Cryptochlorogenic acid",
+    "molecular_formula": "C16H18O9",
+    "molecular_weight": "354.31",
+    "InChIKey": "GYFFKZTYYAFCTR-AVXJPILUSA-N"
+  },
+  "3,4-Dicaffeoylquinic acid": {
+    "PubChem_CID": 6474309,
+    "canonical_name": "3,4-Dicaffeoylquinic acid",
+    "molecular_formula": "C25H24O12",
+    "molecular_weight": "516.4",
+    "InChIKey": "UFCLZKMFXSILNL-RVXRWRFUSA-N"
+  },
+  "3,5-Dicaffeoylquinic acid": {
+    "PubChem_CID": 6474310,
+    "canonical_name": "isochlorogenic acid A",
+    "molecular_formula": "C25H24O12",
+    "molecular_weight": "516.4",
+    "InChIKey": "KRZBCHWVBQOTNZ-RDJMKVHDSA-N"
+  },
+  "4,5-Dicaffeoylquinic acid": {
+    "PubChem_CID": 5281780,
+    "canonical_name": "4,5-Dicaffeoylquinic acid",
+    "molecular_formula": "C25H24O12",
+    "molecular_weight": "516.4",
+    "InChIKey": "UFCLZKMFXSILNL-PSEXTPKNSA-N"
+  },
+  "Feruloylquinic acid": {
+    "PubChem_CID": "",
+    "canonical_name": "Feruloylquinic acid",
+    "molecular_formula": "",
+    "molecular_weight": "",
+    "InChIKey": "",
+    "_error": "HTTP Error 404: PUGREST.NotFound"
+  },
+  "p-Coumaroylquinic acid": {
+    "PubChem_CID": 14158103,
+    "canonical_name": "p-Coumaroylquinic acid",
+    "molecular_formula": "C16H18O8",
+    "molecular_weight": "338.31",
+    "InChIKey": "BMRSEYFENKXDIS-LUTKEZBSSA-N"
+  },
+  "Rosmarinic acid": {
+    "PubChem_CID": 5281792,
+    "canonical_name": "Rosmarinic Acid",
+    "molecular_formula": "C18H16O8",
+    "molecular_weight": "360.3",
+    "InChIKey": "DOUMFZQKYFQNTF-WUTVXBCWSA-N"
+  },
+  "Ellagic acid": {
+    "PubChem_CID": 5281855,
+    "canonical_name": "Ellagic Acid",
+    "molecular_formula": "C14H6O8",
+    "molecular_weight": "302.19",
+    "InChIKey": "AFSDNFLWKVMVRB-UHFFFAOYSA-N"
+  },
+  "Chicoric acid": {
+    "PubChem_CID": 5281764,
+    "canonical_name": "(-)-Chicoric acid",
+    "molecular_formula": "C22H18O12",
+    "molecular_weight": "474.4",
+    "InChIKey": "YDDGKXBLOXEEMN-IABMMNSOSA-N"
+  },
+  "Caftaric acid": {
+    "PubChem_CID": 6440397,
+    "canonical_name": "Caftaric Acid",
+    "molecular_formula": "C13H12O9",
+    "molecular_weight": "312.23",
+    "InChIKey": "SWGKAHCIOQPKFW-JTNORFRNSA-N"
+  },
+  "Coutaric acid": {
+    "PubChem_CID": 57517924,
+    "canonical_name": "Coutaric acid",
+    "molecular_formula": "C13H12O8",
+    "molecular_weight": "296.23",
+    "InChIKey": "INYJZRKTYXTZHP-NNPIPJJVSA-N"
+  },
+  "trans-Resveratrol": {
+    "PubChem_CID": 445154,
+    "canonical_name": "Resveratrol",
+    "molecular_formula": "C14H12O3",
+    "molecular_weight": "228.24",
+    "InChIKey": "LUKBXSAWLPMMSZ-OWOJBTEDSA-N"
+  },
+  "cis-Resveratrol": {
+    "PubChem_CID": 1548910,
+    "canonical_name": "Cis-Resveratrol",
+    "molecular_formula": "C14H12O3",
+    "molecular_weight": "228.24",
+    "InChIKey": "LUKBXSAWLPMMSZ-UPHRSURJSA-N"
+  },
+  "Piceatannol": {
+    "PubChem_CID": 667639,
+    "canonical_name": "Piceatannol",
+    "molecular_formula": "C14H12O4",
+    "molecular_weight": "244.24",
+    "InChIKey": "CDRPUGZCRXZLFL-OWOJBTEDSA-N"
+  },
+  "Pterostilbene": {
+    "PubChem_CID": 5281727,
+    "canonical_name": "Pterostilbene",
+    "molecular_formula": "C16H16O3",
+    "molecular_weight": "256.30",
+    "InChIKey": "VLEUZFDZJKSGMX-ONEGZZNKSA-N"
+  },
+  "Piceid": {
+    "PubChem_CID": 5281718,
+    "canonical_name": "Polydatin",
+    "molecular_formula": "C20H22O8",
+    "molecular_weight": "390.4",
+    "InChIKey": "HSTZMXCBWJGKHG-CUYWLFDKSA-N"
+  },
+  "Secoisolariciresinol": {
+    "PubChem_CID": 65373,
+    "canonical_name": "(-)-Secoisolariciresinol",
+    "molecular_formula": "C20H26O6",
+    "molecular_weight": "362.4",
+    "InChIKey": "PUETUDUXMCLALY-HOTGVXAUSA-N"
+  },
+  "Matairesinol": {
+    "PubChem_CID": 119205,
+    "canonical_name": "(-)-Matairesinol",
+    "molecular_formula": "C20H22O6",
+    "molecular_weight": "358.4",
+    "InChIKey": "MATGKVZWFZHCLI-LSDHHAIUSA-N"
+  },
+  "Lariciresinol": {
+    "PubChem_CID": 332427,
+    "canonical_name": "(+)-Lariciresinol",
+    "molecular_formula": "C20H24O6",
+    "molecular_weight": "360.4",
+    "InChIKey": "MHXCIKYXNYCMHY-AUSJPIAWSA-N"
+  },
+  "Pinoresinol": {
+    "PubChem_CID": 73399,
+    "canonical_name": "(+)-Pinoresinol",
+    "molecular_formula": "C20H22O6",
+    "molecular_weight": "358.4",
+    "InChIKey": "HGXBRUKMWQGOIE-AFHBHXEDSA-N"
+  },
+  "Medioresinol": {
+    "PubChem_CID": 181681,
+    "canonical_name": "Medioresinol, (+)-",
+    "molecular_formula": "C21H24O7",
+    "molecular_weight": "388.4",
+    "InChIKey": "VJOBNGRIBLNUKN-BMHXQBNDSA-N"
+  },
+  "Syringaresinol": {
+    "PubChem_CID": 100067,
+    "canonical_name": "Syringaresinol",
+    "molecular_formula": "C22H26O8",
+    "molecular_weight": "418.4",
+    "InChIKey": "KOWMJRJXZMEZLD-UHFFFAOYSA-N"
+  },
+  "Sesamin": {
+    "PubChem_CID": 72307,
+    "canonical_name": "Sesamin",
+    "molecular_formula": "C20H18O6",
+    "molecular_weight": "354.4",
+    "InChIKey": "PEYUIKBAABKQKQ-AFHBHXEDSA-N"
+  },
+  "Sesamolin": {
+    "PubChem_CID": 101746,
+    "canonical_name": "Sesamolin",
+    "molecular_formula": "C20H18O7",
+    "molecular_weight": "370.4",
+    "InChIKey": "ZZMNWJVJUKMZJY-AFHBHXEDSA-N"
+  },
+  "Sesamol": {
+    "PubChem_CID": 68289,
+    "canonical_name": "Sesamol",
+    "molecular_formula": "C7H6O3",
+    "molecular_weight": "138.12",
+    "InChIKey": "LUSZGTFNYDARNI-UHFFFAOYSA-N"
+  },
+  "Podophyllotoxin": {
+    "PubChem_CID": 10607,
+    "canonical_name": "Podophyllotoxin",
+    "molecular_formula": "C22H22O8",
+    "molecular_weight": "414.4",
+    "InChIKey": "YJGVMLPVUAXIQN-XVVDYKMHSA-N"
+  },
+  "L-Ascorbic acid": {
+    "PubChem_CID": 54670067,
+    "canonical_name": "L-Ascorbic Acid",
+    "molecular_formula": "C6H8O6",
+    "molecular_weight": "176.12",
+    "InChIKey": "CIWBSHSKHKDKBQ-JLAZNSOCSA-N"
+  },
+  "Dehydroascorbic acid": {
+    "PubChem_CID": 440667,
+    "canonical_name": "Dehydroascorbic Acid",
+    "molecular_formula": "C6H6O6",
+    "molecular_weight": "174.11",
+    "InChIKey": "SBJKKFFYIZUCET-JLAZNSOCSA-N"
+  },
+  "alpha-Tocopherol": {
+    "PubChem_CID": 14985,
+    "canonical_name": "alpha-Tocopherol",
+    "molecular_formula": "C29H50O2",
+    "molecular_weight": "430.7",
+    "InChIKey": "GVJHHUAWPYXKBD-IEOSBIPESA-N"
+  },
+  "beta-Tocopherol": {
+    "PubChem_CID": 6857447,
+    "canonical_name": "Beta-Tocopherol",
+    "molecular_formula": "C28H48O2",
+    "molecular_weight": "416.7",
+    "InChIKey": "WGVKWNUPNGFDFJ-DQCZWYHMSA-N"
+  },
+  "gamma-Tocopherol": {
+    "PubChem_CID": 92729,
+    "canonical_name": "(+)-gamma-Tocopherol",
+    "molecular_formula": "C28H48O2",
+    "molecular_weight": "416.7",
+    "InChIKey": "QUEDXNHFTDJVIY-DQCZWYHMSA-N"
+  },
+  "delta-Tocopherol": {
+    "PubChem_CID": 92094,
+    "canonical_name": "Delta-Tocopherol",
+    "molecular_formula": "C27H46O2",
+    "molecular_weight": "402.7",
+    "InChIKey": "GZIFEOYASATJEH-VHFRWLAGSA-N"
+  },
+  "alpha-Tocotrienol": {
+    "PubChem_CID": 5282347,
+    "canonical_name": "Alpha-Tocotrienol",
+    "molecular_formula": "C29H44O2",
+    "molecular_weight": "424.7",
+    "InChIKey": "RZFHLOLGZPDCHJ-XZXLULOTSA-N"
+  },
+  "beta-Tocotrienol": {
+    "PubChem_CID": 5282348,
+    "canonical_name": "beta-Tocotrienol",
+    "molecular_formula": "C28H42O2",
+    "molecular_weight": "410.6",
+    "InChIKey": "FGYKUFVNYVMTAM-WAZJVIJMSA-N"
+  },
+  "gamma-Tocotrienol": {
+    "PubChem_CID": 5282349,
+    "canonical_name": "Gamma-Tocotrienol",
+    "molecular_formula": "C28H42O2",
+    "molecular_weight": "410.6",
+    "InChIKey": "OTXNTMVVOOBZCV-WAZJVIJMSA-N"
+  },
+  "delta-Tocotrienol": {
+    "PubChem_CID": 5282350,
+    "canonical_name": "Delta-Tocotrienol",
+    "molecular_formula": "C27H40O2",
+    "molecular_weight": "396.6",
+    "InChIKey": "ODADKLYLWWCHNB-LDYBVBFYSA-N"
+  },
+  "all-trans-beta-Carotene": {
+    "PubChem_CID": 5280489,
+    "canonical_name": "Beta-Carotene",
+    "molecular_formula": "C40H56",
+    "molecular_weight": "536.9",
+    "InChIKey": "OENHQHLEOONYIE-JLTXGRSLSA-N"
+  },
+  "alpha-Carotene": {
+    "PubChem_CID": 6419725,
+    "canonical_name": "Alpha-Carotene",
+    "molecular_formula": "C40H56",
+    "molecular_weight": "536.9",
+    "InChIKey": "ANVAOWXLWRTKGA-NTXLUARGSA-N"
+  },
+  "all-trans-Lycopene": {
+    "PubChem_CID": 446925,
+    "canonical_name": "Lycopene",
+    "molecular_formula": "C40H56",
+    "molecular_weight": "536.9",
+    "InChIKey": "OAIJSZIZWZSQBC-GYZMGTAESA-N"
+  },
+  "Phytoene": {
+    "PubChem_CID": 5280784,
+    "canonical_name": "Phytoene",
+    "molecular_formula": "C40H64",
+    "molecular_weight": "544.9",
+    "InChIKey": "YVLPJIGOMTXXLP-KEKOKYSKSA-N"
+  },
+  "Phytofluene": {
+    "PubChem_CID": 6436722,
+    "canonical_name": "All-Trans-Phytofluene",
+    "molecular_formula": "C40H62",
+    "molecular_weight": "542.9",
+    "InChIKey": "OVSVTCFNLSGAMM-OUOOUFEBSA-N"
+  },
+  "Lutein": {
+    "PubChem_CID": 5281243,
+    "canonical_name": "Lutein A",
+    "molecular_formula": "C40H56O2",
+    "molecular_weight": "568.9",
+    "InChIKey": "KBPHJBAIARWVSC-RGZFRNHPSA-N"
+  },
+  "Zeaxanthin": {
+    "PubChem_CID": 5280899,
+    "canonical_name": "Zeaxanthin",
+    "molecular_formula": "C40H56O2",
+    "molecular_weight": "568.9",
+    "InChIKey": "JKQXZKUSFCKOGQ-QAYBQHTQSA-N"
+  },
+  "beta-Cryptoxanthin": {
+    "PubChem_CID": 5281235,
+    "canonical_name": "Cryptoxanthin",
+    "molecular_formula": "C40H56O",
+    "molecular_weight": "552.9",
+    "InChIKey": "DMASLKHVQRHNES-FKKUPVFPSA-N"
+  },
+  "Astaxanthin": {
+    "PubChem_CID": 5281224,
+    "canonical_name": "Astaxanthin",
+    "molecular_formula": "C40H52O4",
+    "molecular_weight": "596.8",
+    "InChIKey": "MQZIGYBFDRPAKN-UWFIBFSHSA-N"
+  },
+  "Canthaxanthin": {
+    "PubChem_CID": 5281227,
+    "canonical_name": "Canthaxanthin",
+    "molecular_formula": "C40H52O2",
+    "molecular_weight": "564.8",
+    "InChIKey": "FDSDTBUPSURDBL-DKLMTRRASA-N"
+  },
+  "Capsanthin": {
+    "PubChem_CID": 5281228,
+    "canonical_name": "Capsanthin",
+    "molecular_formula": "C40H56O3",
+    "molecular_weight": "584.9",
+    "InChIKey": "VYIRVAXUEZSDNC-RDJLEWNRSA-N"
+  },
+  "Capsorubin": {
+    "PubChem_CID": 5281229,
+    "canonical_name": "Capsorubin",
+    "molecular_formula": "C40H56O4",
+    "molecular_weight": "600.9",
+    "InChIKey": "GVOIABOMXKDDGU-YUURSNASSA-N"
+  },
+  "Violaxanthin": {
+    "PubChem_CID": 448438,
+    "canonical_name": "Violaxanthin",
+    "molecular_formula": "C40H56O4",
+    "molecular_weight": "600.9",
+    "InChIKey": "SZCBXWMUOPQSOX-WVJDLNGLSA-N"
+  },
+  "Neoxanthin": {
+    "PubChem_CID": 5282217,
+    "canonical_name": "Neoxanthin",
+    "molecular_formula": "C40H56O4",
+    "molecular_weight": "600.9",
+    "InChIKey": "PGYAYSRVSAJXTE-FTLOKQSXSA-N"
+  },
+  "Fucoxanthin": {
+    "PubChem_CID": 5281239,
+    "canonical_name": "Fucoxanthin",
+    "molecular_formula": "C42H58O6",
+    "molecular_weight": "658.9",
+    "InChIKey": "SJWWTRQNNRNTPU-ABBNZJFMSA-N"
+  },
+  "9-cis-beta-Carotene": {
+    "PubChem_CID": 9828626,
+    "canonical_name": "9-Cis-Beta-Carotene",
+    "molecular_formula": "C40H56",
+    "molecular_weight": "536.9",
+    "InChIKey": "OENHQHLEOONYIE-BVZAMQQESA-N"
+  },
+  "13-cis-beta-Carotene": {
+    "PubChem_CID": 10256668,
+    "canonical_name": "(13Z)-beta-Carotene",
+    "molecular_formula": "C40H56",
+    "molecular_weight": "536.9",
+    "InChIKey": "OENHQHLEOONYIE-MZMZTKINSA-N"
+  },
+  "9-cis-Lycopene": {
+    "PubChem_CID": 6440364,
+    "canonical_name": "9-cis-Lycopene",
+    "molecular_formula": "C40H56",
+    "molecular_weight": "536.9",
+    "InChIKey": "OAIJSZIZWZSQBC-CBEQXLMWSA-N"
+  },
+  "13-cis-Lycopene": {
+    "PubChem_CID": 6440310,
+    "canonical_name": "(13Z)-Lycopene",
+    "molecular_formula": "C40H56",
+    "molecular_weight": "536.9",
+    "InChIKey": "OAIJSZIZWZSQBC-FZXCKFLSSA-N"
+  },
+  "Sulforaphane": {
+    "PubChem_CID": 5350,
+    "canonical_name": "Sulforaphane",
+    "molecular_formula": "C6H11NOS2",
+    "molecular_weight": "177.3",
+    "InChIKey": "SUVMJBTUFCVSAD-UHFFFAOYSA-N"
+  },
+  "Erucin": {
+    "PubChem_CID": 78160,
+    "canonical_name": "Erucin",
+    "molecular_formula": "C6H11NS2",
+    "molecular_weight": "161.3",
+    "InChIKey": "IHQDGXUYTSZGOG-UHFFFAOYSA-N"
+  },
+  "Allyl isothiocyanate": {
+    "PubChem_CID": 5971,
+    "canonical_name": "Allyl Isothiocyanate",
+    "molecular_formula": "C4H5NS",
+    "molecular_weight": "99.16",
+    "InChIKey": "ZOJBYZNEUISWFT-UHFFFAOYSA-N"
+  },
+  "Benzyl isothiocyanate": {
+    "PubChem_CID": 2346,
+    "canonical_name": "Benzyl Isothiocyanate",
+    "molecular_formula": "C8H7NS",
+    "molecular_weight": "149.21",
+    "InChIKey": "MDKCFLQDBWCQCV-UHFFFAOYSA-N"
+  },
+  "Phenethyl isothiocyanate": {
+    "PubChem_CID": 16741,
+    "canonical_name": "Phenethyl Isothiocyanate",
+    "molecular_formula": "C9H9NS",
+    "molecular_weight": "163.24",
+    "InChIKey": "IZJDOKYDEWTZSO-UHFFFAOYSA-N"
+  },
+  "Iberin": {
+    "PubChem_CID": 10455,
+    "canonical_name": "Iberin",
+    "molecular_formula": "C5H9NOS2",
+    "molecular_weight": "163.3",
+    "InChIKey": "LELAOEBVZLPXAZ-UHFFFAOYSA-N"
+  },
+  "Allicin": {
+    "PubChem_CID": 65036,
+    "canonical_name": "Allicin",
+    "molecular_formula": "C6H10OS2",
+    "molecular_weight": "162.3",
+    "InChIKey": "JDLKFOPOAOFWQN-UHFFFAOYSA-N"
+  },
+  "Ajoene": {
+    "PubChem_CID": 5386591,
+    "canonical_name": "Ajoene",
+    "molecular_formula": "C9H14OS3",
+    "molecular_weight": "234.4",
+    "InChIKey": "IXELFRRANAOWSF-FNORWQNLSA-N"
+  },
+  "Diallyl sulfide": {
+    "PubChem_CID": 11617,
+    "canonical_name": "Diallyl Sulfide",
+    "molecular_formula": "C6H10S",
+    "molecular_weight": "114.21",
+    "InChIKey": "UBJVUCKUDDKUJF-UHFFFAOYSA-N"
+  },
+  "Diallyl disulfide": {
+    "PubChem_CID": 16590,
+    "canonical_name": "Diallyl Disulfide",
+    "molecular_formula": "C6H10S2",
+    "molecular_weight": "146.3",
+    "InChIKey": "PFRGXCVKLLPLIP-UHFFFAOYSA-N"
+  },
+  "Diallyl trisulfide": {
+    "PubChem_CID": 16315,
+    "canonical_name": "Diallyl Trisulfide",
+    "molecular_formula": "C6H10S3",
+    "molecular_weight": "178.3",
+    "InChIKey": "UBAXRAHSPKWNCX-UHFFFAOYSA-N"
+  },
+  "Methyl allyl sulfide": {
+    "PubChem_CID": 66282,
+    "canonical_name": "Allyl methyl sulfide",
+    "molecular_formula": "C4H8S",
+    "molecular_weight": "88.17",
+    "InChIKey": "NVLPQIPTCCLBEU-UHFFFAOYSA-N"
+  },
+  "Dipropyl disulfide": {
+    "PubChem_CID": 12377,
+    "canonical_name": "Dipropyl disulfide",
+    "molecular_formula": "C6H14S2",
+    "molecular_weight": "150.3",
+    "InChIKey": "ALVPFGSHPUPROW-UHFFFAOYSA-N"
+  },
+  "S-Allyl-L-cysteine": {
+    "PubChem_CID": 9793905,
+    "canonical_name": "(+)-S-Allylcysteine",
+    "molecular_formula": "C6H11NO2S",
+    "molecular_weight": "161.22",
+    "InChIKey": "ZFAHNWWNDFHPOH-YFKPBYRVSA-N"
+  },
+  "S-Allylmercaptocysteine": {
+    "PubChem_CID": 9794159,
+    "canonical_name": "S-allylmercapto-L-cysteine",
+    "molecular_formula": "C6H11NO2S2",
+    "molecular_weight": "193.3",
+    "InChIKey": "WYQZZUUUOXNSCS-YFKPBYRVSA-N"
+  },
+  "Betanin": {
+    "PubChem_CID": 6540685,
+    "canonical_name": "Betanin",
+    "molecular_formula": "C24H26N2O13",
+    "molecular_weight": "550.5",
+    "InChIKey": "CTMLKIKAUFEMLE-FTNGGYTGSA-N"
+  },
+  "Isobetanin": {
+    "PubChem_CID": 57505033,
+    "canonical_name": "Isobetanin",
+    "molecular_formula": "C24H26N2O13",
+    "molecular_weight": "550.5",
+    "InChIKey": "CTMLKIKAUFEMLE-DLTLVQJYSA-N"
+  },
+  "Probetanin": {
+    "PubChem_CID": "",
+    "canonical_name": "Probetanin",
+    "molecular_formula": "",
+    "molecular_weight": "",
+    "InChIKey": "",
+    "_error": "HTTP Error 404: PUGREST.NotFound"
+  },
+  "Neobetanin": {
+    "PubChem_CID": 102401026,
+    "canonical_name": "Neobetanin",
+    "molecular_formula": "C24H24N2O13",
+    "molecular_weight": "548.5",
+    "InChIKey": "JGRJFJIJVQCUMW-HQSRNOONSA-N"
+  },
+  "Indicaxanthin": {
+    "PubChem_CID": 6096870,
+    "canonical_name": "Indicaxanthin",
+    "molecular_formula": "C14H16N2O6",
+    "molecular_weight": "308.29",
+    "InChIKey": "RJIIQBYZGJSODH-QWRGUYRKSA-N"
+  },
+  "Vulgaxanthin I": {
+    "PubChem_CID": 135438599,
+    "canonical_name": "Vulgaxanthin I",
+    "molecular_formula": "C14H17N3O7",
+    "molecular_weight": "339.30",
+    "InChIKey": "PDBJJFJKNSKTSW-MEWJKSKXSA-N"
+  },
+  "Vulgaxanthin II": {
+    "PubChem_CID": 135438600,
+    "canonical_name": "Vulgaxanthin II",
+    "molecular_formula": "C14H16N2O8",
+    "molecular_weight": "340.28",
+    "InChIKey": "POYIZOSTYKKRNT-SUKFDJDASA-N"
+  },
+  "Miraxanthin V": {
+    "PubChem_CID": 135926600,
+    "canonical_name": "Miraxanthin V",
+    "molecular_formula": "C17H16N2O6-2",
+    "molecular_weight": "344.32",
+    "InChIKey": "PDKFHZWVCCZUIF-DJDUWTSMSA-L"
+  },
+  "Dopaxanthin": {
+    "PubChem_CID": 135438589,
+    "canonical_name": "Dopaxanthin",
+    "molecular_formula": "C18H18N2O8",
+    "molecular_weight": "390.3",
+    "InChIKey": "YSNPSKZBOQYUHH-JZCSJQFLSA-N"
+  },
+  "Caffeine": {
+    "PubChem_CID": 2519,
+    "canonical_name": "Caffeine",
+    "molecular_formula": "C8H10N4O2",
+    "molecular_weight": "194.19",
+    "InChIKey": "RYYVLZVUVIJVGH-UHFFFAOYSA-N"
+  },
+  "Trigonelline": {
+    "PubChem_CID": 5570,
+    "canonical_name": "Trigonelline",
+    "molecular_formula": "C7H7NO2",
+    "molecular_weight": "137.14",
+    "InChIKey": "WWNNZCOKKKDOPX-UHFFFAOYSA-N"
+  },
+  "Curcumin": {
+    "PubChem_CID": 969516,
+    "canonical_name": "Curcumin",
+    "molecular_formula": "C21H20O6",
+    "molecular_weight": "368.4",
+    "InChIKey": "VFLDPWHFBUODDF-FCXRPNKRSA-N"
+  },
+  "Demethoxycurcumin": {
+    "PubChem_CID": 5469424,
+    "canonical_name": "Demethoxycurcumin",
+    "molecular_formula": "C20H18O5",
+    "molecular_weight": "338.4",
+    "InChIKey": "HJTVQHVGMGKONQ-LUZURFALSA-N"
+  },
+  "Bisdemethoxycurcumin": {
+    "PubChem_CID": 5315472,
+    "canonical_name": "Bisdemethoxycurcumin",
+    "molecular_formula": "C19H16O4",
+    "molecular_weight": "308.3",
+    "InChIKey": "PREBVFJICNPEKM-YDWXAUTNSA-N"
+  },
+  "Capsaicin": {
+    "PubChem_CID": 1548943,
+    "canonical_name": "Capsaicin",
+    "molecular_formula": "C18H27NO3",
+    "molecular_weight": "305.4",
+    "InChIKey": "YKPUWZUDDOIDPM-SOFGYWHQSA-N"
+  },
+  "Dihydrocapsaicin": {
+    "PubChem_CID": 107982,
+    "canonical_name": "Dihydrocapsaicin",
+    "molecular_formula": "C18H29NO3",
+    "molecular_weight": "307.4",
+    "InChIKey": "XJQPQKLURWNAAH-UHFFFAOYSA-N"
+  },
+  "Nordihydrocapsaicin": {
+    "PubChem_CID": 168836,
+    "canonical_name": "Nordihydrocapsaicin",
+    "molecular_formula": "C17H27NO3",
+    "molecular_weight": "293.4",
+    "InChIKey": "VQEONGKQWIFHMN-UHFFFAOYSA-N"
+  },
+  "Homocapsaicin": {
+    "PubChem_CID": 6442566,
+    "canonical_name": "Homocapsaicin",
+    "molecular_formula": "C19H29NO3",
+    "molecular_weight": "319.4",
+    "InChIKey": "JKIHLSTUOQHAFF-VQHVLOKHSA-N"
+  },
+  "Homodihydrocapsaicin": {
+    "PubChem_CID": 3084336,
+    "canonical_name": "Homodihydrocapsaicin",
+    "molecular_formula": "C19H31NO3",
+    "molecular_weight": "321.5",
+    "InChIKey": "AKDLSISGGARWFP-UHFFFAOYSA-N"
+  },
+  "Eugenol": {
+    "PubChem_CID": 3314,
+    "canonical_name": "Eugenol",
+    "molecular_formula": "C10H12O2",
+    "molecular_weight": "164.20",
+    "InChIKey": "RRAFCDWBNXTKKO-UHFFFAOYSA-N"
+  },
+  "Isoeugenol": {
+    "PubChem_CID": 853433,
+    "canonical_name": "Isoeugenol",
+    "molecular_formula": "C10H12O2",
+    "molecular_weight": "164.20",
+    "InChIKey": "BJIOGJUNALELMI-ONEGZZNKSA-N"
+  },
+  "Carvacrol": {
+    "PubChem_CID": 10364,
+    "canonical_name": "Carvacrol",
+    "molecular_formula": "C10H14O",
+    "molecular_weight": "150.22",
+    "InChIKey": "RECUKUPTGUEGMW-UHFFFAOYSA-N"
+  },
+  "Thymol": {
+    "PubChem_CID": 6989,
+    "canonical_name": "Thymol",
+    "molecular_formula": "C10H14O",
+    "molecular_weight": "150.22",
+    "InChIKey": "MGSRCZKZVOBKFT-UHFFFAOYSA-N"
+  },
+  "Anethole": {
+    "PubChem_CID": 637563,
+    "canonical_name": "Anethole",
+    "molecular_formula": "C10H12O",
+    "molecular_weight": "148.20",
+    "InChIKey": "RUVINXPYWBROJD-ONEGZZNKSA-N"
+  },
+  "Estragole": {
+    "PubChem_CID": 8815,
+    "canonical_name": "Estragole",
+    "molecular_formula": "C10H12O",
+    "molecular_weight": "148.20",
+    "InChIKey": "ZFMSMUAANRJZFM-UHFFFAOYSA-N"
+  },
+  "Vanillin": {
+    "PubChem_CID": 1183,
+    "canonical_name": "Vanillin",
+    "molecular_formula": "C8H8O3",
+    "molecular_weight": "152.15",
+    "InChIKey": "MWOOGOJBHIARFG-UHFFFAOYSA-N"
+  },
+  "Gingerol": {
+    "PubChem_CID": 442793,
+    "canonical_name": "(6)-Gingerol",
+    "molecular_formula": "C17H26O4",
+    "molecular_weight": "294.4",
+    "InChIKey": "NLDDIKRKFXEWBK-AWEZNQCLSA-N"
+  },
+  "Shogaol": {
+    "PubChem_CID": 5281794,
+    "canonical_name": "Shogaol",
+    "molecular_formula": "C17H24O3",
+    "molecular_weight": "276.4",
+    "InChIKey": "OQWKEEOHDMUXEO-BQYQJAHWSA-N"
+  },
+  "Zingerone": {
+    "PubChem_CID": 31211,
+    "canonical_name": "Zingerone",
+    "molecular_formula": "C11H14O3",
+    "molecular_weight": "194.23",
+    "InChIKey": "OJYLAHXKWMRDGS-UHFFFAOYSA-N"
+  },
+  "Plumbagin": {
+    "PubChem_CID": 10205,
+    "canonical_name": "Plumbagin",
+    "molecular_formula": "C11H8O3",
+    "molecular_weight": "188.18",
+    "InChIKey": "VCMMXZQDRFWYSE-UHFFFAOYSA-N"
+  },
+  "Juglone": {
+    "PubChem_CID": 3806,
+    "canonical_name": "Juglone",
+    "molecular_formula": "C10H6O3",
+    "molecular_weight": "174.15",
+    "InChIKey": "KQPYUDDGWXQXHS-UHFFFAOYSA-N"
+  },
+  "Thymoquinone": {
+    "PubChem_CID": 10281,
+    "canonical_name": "Thymoquinone",
+    "molecular_formula": "C10H12O2",
+    "molecular_weight": "164.20",
+    "InChIKey": "KEQHJBNSCLWCAE-UHFFFAOYSA-N"
+  },
+  "Hydroxytyrosol": {
+    "PubChem_CID": 82755,
+    "canonical_name": "Hydroxytyrosol",
+    "molecular_formula": "C8H10O3",
+    "molecular_weight": "154.16",
+    "InChIKey": "JUUBCHWRXWPFFH-UHFFFAOYSA-N"
+  },
+  "Tyrosol": {
+    "PubChem_CID": 10393,
+    "canonical_name": "Tyrosol",
+    "molecular_formula": "C8H10O2",
+    "molecular_weight": "138.16",
+    "InChIKey": "YCCILVSKPBXVIP-UHFFFAOYSA-N"
+  },
+  "Oleuropein": {
+    "PubChem_CID": 5281544,
+    "canonical_name": "Oleuropein",
+    "molecular_formula": "C25H32O13",
+    "molecular_weight": "540.5",
+    "InChIKey": "RFWGABANNQMHMZ-ZCHJGGQASA-N"
+  },
+  "Oleocanthal": {
+    "PubChem_CID": 11652416,
+    "canonical_name": "Oleocanthal",
+    "molecular_formula": "C17H20O5",
+    "molecular_weight": "304.34",
+    "InChIKey": "VPOVFCBNUOUZGG-VAKDEWRISA-N"
+  },
+  "Ubiquinone-10": {
+    "PubChem_CID": 5281915,
+    "canonical_name": "Coenzyme Q10",
+    "molecular_formula": "C59H90O4",
+    "molecular_weight": "863.3",
+    "InChIKey": "ACTIUHUUMQJHFO-UPTCCGCDSA-N"
+  },
+  "Selenium": {
+    "PubChem_CID": 6326970,
+    "canonical_name": "Selenium",
+    "molecular_formula": "Se",
+    "molecular_weight": "78.97",
+    "InChIKey": "BUGBHKTXTAQXES-UHFFFAOYSA-N"
+  },
+  "Zinc": {
+    "PubChem_CID": 23994,
+    "canonical_name": "Zinc",
+    "molecular_formula": "Zn",
+    "molecular_weight": "65.4",
+    "InChIKey": "HCHKCACWOHOZIP-UHFFFAOYSA-N"
+  },
+  "Manganese": {
+    "PubChem_CID": 23930,
+    "canonical_name": "Manganese",
+    "molecular_formula": "Mn",
+    "molecular_weight": "54.93804",
+    "InChIKey": "PWHULOQIROXLJO-UHFFFAOYSA-N"
+  },
+  "Copper": {
+    "PubChem_CID": 23978,
+    "canonical_name": "Copper",
+    "molecular_formula": "Cu",
+    "molecular_weight": "63.55",
+    "InChIKey": "RYGMFSIKBFXOCR-UHFFFAOYSA-N"
+  },
+  "Iron": {
+    "PubChem_CID": 23925,
+    "canonical_name": "Iron",
+    "molecular_formula": "Fe",
+    "molecular_weight": "55.84",
+    "InChIKey": "XEEYBQQBJWHFJM-UHFFFAOYSA-N"
+  },
+  "Magnesium": {
+    "PubChem_CID": 5462224,
+    "canonical_name": "Magnesium",
+    "molecular_formula": "Mg",
+    "molecular_weight": "24.305",
+    "InChIKey": "FYYHWMGAXLPEAU-UHFFFAOYSA-N"
+  },
+  "Molybdenum": {
+    "PubChem_CID": 23932,
+    "canonical_name": "Molybdenum",
+    "molecular_formula": "Mo",
+    "molecular_weight": "95.95",
+    "InChIKey": "ZOKXTWBITQBERF-UHFFFAOYSA-N"
+  }
+}

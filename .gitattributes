@@ -1,0 +1,5 @@
+* text=auto eol=lf
+# Preserve original source bytes independently of checkout platform.
+90_archive/legacy_2026-11-05/** -text
+*.png -text
+*.xlsx -text

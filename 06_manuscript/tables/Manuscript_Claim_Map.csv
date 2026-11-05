@@ -1,0 +1,7 @@
+claim,section,support,status
+A versioned food-chemical discovery workflow was implemented,Methods 1; Results 1,Table 1; discovery_register.csv; original enumeration hash,SUPPORTED_WITH_EXPLICIT_COVERAGE_LIMIT
+Reference identity and formula are available for review candidates,Methods 2; Results 2,Table 2; PubChem raw responses and access log,REFERENCE_IDENTITY_ONLY_NOT_REAGENT_CERTIFICATION
+20 review slots are proposed,Results 3,Table 2; selection_rules.json; cutoff_tied_candidates.csv,PROVISIONAL_ADMINISTRATIVE_PREVIEW_NOT_FINAL_TOP20
+Water-phase ORAC-PGR is proposed for platform validation,Methods 4; Discussion,Primary method registry; Method_Decision.md,METHOD_PROPOSAL_NOT_VALIDATED_ON_USER_PLATFORM
+Candidates have experimentally measured activity in the new assay,Future Results,No current experimental data,NOT_SUPPORTED_DO_NOT_WRITE
+Mechanism observations are validated direct targets,Future mechanistic Results,AFF0061 observations remain NOT_REVIEWED,NOT_SUPPORTED_DO_NOT_WRITE

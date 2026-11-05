@@ -1,0 +1,26 @@
+[
+  {
+    "label": "review_panel",
+    "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/9064,72276,5280343,5280445,370,72,689043,445858,637542,5281855,1548943,3314,1183,72277,5280863,5281672,5281614,5281670,5280805,5280443/property/Title,MolecularFormula,MolecularWeight,InChIKey/JSON",
+    "access_date": "2026-11-05",
+    "status": "SUCCESS",
+    "returned_count": 20,
+    "raw_sha256": "e25effc3bf8b29a71b4b0c12cb92bbb5c840b7055ae9636db45da82c4fd8b26e"
+  },
+  {
+    "label": "Glutathione",
+    "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/Glutathione/property/Title,MolecularFormula,MolecularWeight,InChIKey/JSON",
+    "access_date": "2026-11-05",
+    "status": "SUCCESS",
+    "returned_count": 1,
+    "raw_sha256": "1a2713c7c3ef3a44a156fd8fc306c208113c8434c9afb5100f541d0fbd0a5802"
+  },
+  {
+    "label": "L-Ergothioneine",
+    "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/L-Ergothioneine/property/Title,MolecularFormula,MolecularWeight,InChIKey/JSON",
+    "access_date": "2026-11-05",
+    "status": "SUCCESS",
+    "returned_count": 1,
+    "raw_sha256": "f14c0e84c5f5a478c31671071596a51e8227097888895d2e123bb47dc0ac8b7a"
+  }
+]

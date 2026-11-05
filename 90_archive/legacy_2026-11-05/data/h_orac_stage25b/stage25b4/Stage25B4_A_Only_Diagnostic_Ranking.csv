@@ -1,0 +1,7 @@
+﻿rank,candidate_id,canonical_name,A_only_median,A_experiment_N,in_primary_Top20,interpretation
+1,AFF-0009,Quercetin,16.62,1,yes,DIAGNOSTIC ONLY
+2,AFF-0069,Caffeic acid,8.26,1,yes,DIAGNOSTIC ONLY
+3,AFF-0071,p-Coumaric acid,5.02,1,yes,DIAGNOSTIC ONLY
+4,AFF-0070,Ferulic acid,4.59,1,yes,DIAGNOSTIC ONLY
+5,AFF-0072,Sinapic acid,2.94,1,yes,DIAGNOSTIC ONLY
+6,AFF-0060,Gallic acid,1.165,2,no,DIAGNOSTIC ONLY
