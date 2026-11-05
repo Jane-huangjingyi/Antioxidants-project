@@ -1,7 +1,7 @@
 {
   "as_of": "2026-11-05",
   "status": "PASS",
-  "scientific_source_entries": 974,
+  "scientific_source_entries": 982,
   "optional_local_caches_not_bundled": [],
   "frozen_sha256_assets_pass": 10,
   "legacy_seed_mapping_pass": 191,

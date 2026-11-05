@@ -1,5 +1,5 @@
 {
-  "version": "source_collection_v0.2",
+  "version": "source_collection_v0.3",
   "source_snapshot_date": "2026-11-05",
   "records": [
     {
@@ -7793,6 +7793,70 @@
       "bundled": true,
       "source_language": "ORIGINAL_SOURCE_LANGUAGE",
       "interpretation": "Reference/source record; original scientific review states retained."
+    },
+    {
+      "path": "03_candidate_selection/01_activity_model/inputs/source_resolution.json",
+      "sha256": "eab0630dd435c3376969305040cd68840e25613abca5f9ba38bf9abe7b0941e5",
+      "role": "CURATED_CAPACITY_SOURCE_OR_METHOD_REFERENCE",
+      "bundled": true,
+      "source_language": "ENGLISH_STRUCTURED_EXTRACTION",
+      "interpretation": "Source/extraction reference; not scientific approval or an independent-study count."
+    },
+    {
+      "path": "03_candidate_selection/01_activity_model/inputs/paired_assay_evidence.json",
+      "sha256": "13ecba678261216c931c47ced7ea226434dfddcd5d7a784d3e9872caacedf3de",
+      "role": "CURATED_CAPACITY_SOURCE_OR_METHOD_REFERENCE",
+      "bundled": true,
+      "source_language": "ENGLISH_STRUCTURED_EXTRACTION",
+      "interpretation": "Source/extraction reference; not scientific approval or an independent-study count."
+    },
+    {
+      "path": "03_candidate_selection/01_activity_model/inputs/recovered_capacity_rows.json",
+      "sha256": "466ff4999b16ee6c8b32cd8bc63fffd6ba7d90ae2f908ec04561ae9015ce832a",
+      "role": "CURATED_CAPACITY_SOURCE_OR_METHOD_REFERENCE",
+      "bundled": true,
+      "source_language": "ENGLISH_STRUCTURED_EXTRACTION",
+      "interpretation": "Source/extraction reference; not scientific approval or an independent-study count."
+    },
+    {
+      "path": "03_candidate_selection/01_activity_model/inputs/source_recovery/access_log.json",
+      "sha256": "48a9d6584f15dc243f1f180849752f7733a03d1986d2f6e2b0adbcf69d4d75d6",
+      "role": "CURATED_CAPACITY_SOURCE_OR_METHOD_REFERENCE",
+      "bundled": true,
+      "source_language": "ENGLISH_STRUCTURED_EXTRACTION",
+      "interpretation": "Source/extraction reference; not scientific approval or an independent-study count."
+    },
+    {
+      "path": "03_candidate_selection/01_activity_model/inputs/source_recovery/raw/PMC9951910.json",
+      "sha256": "723f851cda0729c2975520199f2f2792571bd17df42dc92c09c870d57a6139e5",
+      "role": "LOCAL_ORIGINAL_ARTICLE_BIOC",
+      "bundled": false,
+      "source_language": "ORIGINAL_SOURCE_LANGUAGE",
+      "interpretation": "Source/extraction reference; not scientific approval or an independent-study count."
+    },
+    {
+      "path": "03_candidate_selection/01_activity_model/inputs/source_recovery/raw/PMC8392586.json",
+      "sha256": "232e77c212e8192e7ec68210f2b3c8464efd515250de49a4edb9901ffd2ed00d",
+      "role": "LOCAL_ORIGINAL_ARTICLE_BIOC",
+      "bundled": false,
+      "source_language": "ORIGINAL_SOURCE_LANGUAGE",
+      "interpretation": "Source/extraction reference; not scientific approval or an independent-study count."
+    },
+    {
+      "path": "03_candidate_selection/01_activity_model/inputs/source_recovery/raw/PMC12024297.json",
+      "sha256": "8920c8f95d42d61cb1ae19bd2c346c517352815392728040ee9da5f91e5547cb",
+      "role": "LOCAL_ORIGINAL_ARTICLE_BIOC",
+      "bundled": false,
+      "source_language": "ORIGINAL_SOURCE_LANGUAGE",
+      "interpretation": "Source/extraction reference; not scientific approval or an independent-study count."
+    },
+    {
+      "path": "04_absorbance_assay/01_endpoint_definition/method_candidates.json",
+      "sha256": "10fe0a6743b9723298c653bd912278627f46d96cc73db288781b797924383f32",
+      "role": "CURATED_CAPACITY_SOURCE_OR_METHOD_REFERENCE",
+      "bundled": true,
+      "source_language": "ENGLISH_STRUCTURED_EXTRACTION",
+      "interpretation": "Source/extraction reference; not scientific approval or an independent-study count."
     }
   ]
 }

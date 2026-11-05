@@ -1,7 +1,8 @@
 {
  "status":"DRAFT_NOT_APPROVED",
  "instrument_model":null,"robot_model":null,"temperature_control_verified":null,"kinetic_absorbance_verified":null,
- "proposed_method":"ORAC-PGR; validate before selection as primary endpoint",
+ "instrument_selection_status":"RESEARCHER_WILL_CONFIRM_LATER_OFFLINE_EVIDENCE_WORK_CONTINUES",
+ "proposed_method":"Capacity-primary development: evaluate crocin dose-time protection; ABTS is a distinct complementary response and ORAC-PGR a reactivity-sensitive comparator. No assay selected or approved.",
  "approved_wavelength_nm":null,"approved_temperature_C":null,"approved_buffer":null,
  "approved_PGR_uM":null,"approved_AAPH_mM":null,"approved_vehicle_fraction":null,
  "approved_concentration_grid_uM":null,"approved_plate_format":null,

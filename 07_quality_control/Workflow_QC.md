@@ -2,7 +2,7 @@
 
 Date: 2026-11-05. Status: PASS.
 
-All 974 registered scientific sources are checked against their recorded SHA256. Locally held source corpora are optional on a clone and do not enter the offline calculations. Ten frozen assets retain their original content and hash. Original review and HOLD states remain unchanged.
+All 982 registered scientific sources are checked against their recorded SHA256. Locally held source corpora are optional on a clone and do not enter the offline calculations. Ten frozen assets retain their original content and hash. Original review and HOLD states remain unchanged.
 
 The 191 literal seed IDs reconstruct correctly. There are 204 discovery records, 193 profiles, 25 review-eligible candidates, 20 provisional review slots and 12 cutoff-stratum ties. The two-study sensitivity retains 9. The formal laboratory-ready panel has 0 rows. All 20 review identities/formulas match their official cached PubChem refresh; no cache conflict was detected.
 

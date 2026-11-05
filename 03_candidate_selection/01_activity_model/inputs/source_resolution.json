@@ -3,11 +3,86 @@
   "human_review_status": "NOT_REVIEWED",
   "change_applied": "NO",
   "records": [
-    {"observation_id":"HORAC_EXP_0068","doi":"10.1016/j.foodchem.2010.11.092","access_status":"ORIGINAL_ARTICLE_TEXT_METHODS_AND_TABLE_VERIFIED","url":"https://capa.ufpr.br/portal/wp-content/uploads/2017/10/Food-Chemistry.pdf","locator":"Table 1, p.951; sections 2.3.4 and 2.6, p.950","raw_mean":151.77,"raw_SD":3.57,"unit":"g Trolox per 100 g dry compound","determinations":3,"replication_interpretation":"Three determinations; independence of preparations or assay runs not established","pH":7.4,"temperature_C":37,"sample_solvent":"methanol dilution","compound_MW_g_mol":302.19,"Trolox_MW_g_mol":250.29,"MW_basis":"Declared conversion constants; compound value carried from existing canonical table, not inferred from paper","remaining_issue":"Exact material form/purity, final solvent fraction and assay duration need closure; reported fluorescein concentration needs original-PDF visual confirmation; no automated inverse-variance eligibility"},
-    {"observation_id":"VTC-E001","doi":"10.1021/jf010586o","access_status":"PUBLISHER_FULLTEXT_ACCESS_BLOCKED","url":"https://pubs.acs.org/doi/10.1021/jf010586o","locator":"Historical Table 4 claim not reverified this round","remaining_issue":"Historical 0.95 remains unconfirmed by newly recovered original table; no error or replicate count recovered"},
-    {"observation_id":"VTC-E002","doi":"10.3390/antiox12020505","access_status":"PRIMARY_SEARCH_EXCERPT_ONLY_FULLTEXT_RECOVERY_FAILED","url":"https://www.mdpi.com/2076-3921/12/2/505","locator":"Primary search excerpt Table 1; Table 3 not recovered","remaining_issue":"Ascorbate and Trolox AUC slopes are visible in excerpt; slope errors are not the SD of their ratio; retain historical 0.53 without assigning new variance"},
-    {"observation_id":"HORAC_EXP_0072","doi":"10.3390/foods10081807","access_status":"CURRENT_ORIGINAL_TABLE_NOT_RECOVERED","url":"https://www.mdpi.com/2304-8158/10/8/1807","locator":"Historical Table 5 and Methods 2.5.4 not reverified this round","remaining_issue":"Retain prior SD audit; do not reinterpret corrupted units or three independent experiments wording automatically"},
-    {"observation_id":"HORAC_EXP_0073","doi":"10.3390/foods10081807","access_status":"CURRENT_ORIGINAL_TABLE_NOT_RECOVERED","url":"https://www.mdpi.com/2304-8158/10/8/1807","locator":"Historical Table 5 and Methods 2.5.4 not reverified this round","remaining_issue":"Same study as HORAC_EXP_0072; not a new independent study; original units/error scale still require recovery"},
-    {"observation_id":"HORAC_EXP_0074","doi":"10.3390/foods10081807","access_status":"CURRENT_ORIGINAL_TABLE_NOT_RECOVERED","url":"https://www.mdpi.com/2304-8158/10/8/1807","locator":"Historical Table 5 and Methods 2.5.4 not reverified this round","remaining_issue":"Same study as HORAC_EXP_0072; not a new independent study; original units/error scale still require recovery"}
+    {
+      "observation_id": "HORAC_EXP_0068",
+      "doi": "10.1016/j.foodchem.2010.11.092",
+      "access_status": "ORIGINAL_ARTICLE_TEXT_METHODS_AND_TABLE_VERIFIED",
+      "url": "https://capa.ufpr.br/portal/wp-content/uploads/2017/10/Food-Chemistry.pdf",
+      "locator": "Table 1, p.951; sections 2.3.4 and 2.6, p.950",
+      "raw_mean": 151.77,
+      "raw_SD": 3.57,
+      "unit": "g Trolox per 100 g dry compound",
+      "determinations": 3,
+      "replication_interpretation": "Three determinations; independence of preparations or assay runs not established",
+      "pH": 7.4,
+      "temperature_C": 37,
+      "sample_solvent": "methanol dilution",
+      "compound_MW_g_mol": 302.19,
+      "Trolox_MW_g_mol": 250.29,
+      "MW_basis": "Declared conversion constants; compound value carried from existing canonical table, not inferred from paper",
+      "remaining_issue": "Exact material form/purity, final solvent fraction and assay duration need closure; reported fluorescein concentration needs original-PDF visual confirmation; no automated inverse-variance eligibility"
+    },
+    {
+      "observation_id": "VTC-E001",
+      "doi": "10.1021/jf010586o",
+      "access_status": "PUBLISHER_FULLTEXT_ACCESS_BLOCKED",
+      "url": "https://pubs.acs.org/doi/10.1021/jf010586o",
+      "locator": "Historical Table 4 claim not reverified this round",
+      "remaining_issue": "Historical 0.95 remains unconfirmed by newly recovered original table; no error or replicate count recovered"
+    },
+    {
+      "observation_id": "VTC-E002",
+      "doi": "10.3390/antiox12020505",
+      "access_status": "ORIGINAL_TABLE_AND_METHODS_RECHECKED_FROM_NCBI_BIOC",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9951910/",
+      "locator": "antioxidants-12-00505-t003; Methods",
+      "remaining_issue": "AUC value and reported plus/minus recovered; its statistical definition and effective n are unresolved. Do not infer them from beverage-table footnotes or count triplicates across two days as n=6.",
+      "source_BioC_sha256": "723f851cda0729c2975520199f2f2792571bd17df42dc92c09c870d57a6139e5",
+      "recovered_mean": 0.53,
+      "recovered_plus_minus": 0.03,
+      "recovered_error_type": "PLUS_MINUS_STATISTIC_NOT_DEFINED_FOR_THIS_TABLE"
+    },
+    {
+      "observation_id": "HORAC_EXP_0072",
+      "doi": "10.3390/foods10081807",
+      "access_status": "ORIGINAL_TABLE_AND_METHODS_RECHECKED_FROM_NCBI_BIOC",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8392586/",
+      "locator": "foods-10-01807-t005; Methods",
+      "remaining_issue": "Common-calibration covariance, final solvent fraction and applicability to target assay need review; human approval not applied",
+      "source_BioC_sha256": "232e77c212e8192e7ec68210f2b3c8464efd515250de49a4edb9901ffd2ed00d",
+      "raw_mean": 2.12,
+      "raw_SD": 0.08,
+      "unit": "umol TE per umol compound",
+      "determinations": 3,
+      "replication_interpretation": "Three independent experiments as stated in Table 5"
+    },
+    {
+      "observation_id": "HORAC_EXP_0073",
+      "doi": "10.3390/foods10081807",
+      "access_status": "ORIGINAL_TABLE_AND_METHODS_RECHECKED_FROM_NCBI_BIOC",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8392586/",
+      "locator": "foods-10-01807-t005; Methods",
+      "remaining_issue": "Common-calibration covariance, final solvent fraction and applicability to target assay need review; human approval not applied",
+      "source_BioC_sha256": "232e77c212e8192e7ec68210f2b3c8464efd515250de49a4edb9901ffd2ed00d",
+      "raw_mean": 1.6,
+      "raw_SD": 0.25,
+      "unit": "umol TE per umol compound",
+      "determinations": 3,
+      "replication_interpretation": "Three independent experiments as stated in Table 5"
+    },
+    {
+      "observation_id": "HORAC_EXP_0074",
+      "doi": "10.3390/foods10081807",
+      "access_status": "ORIGINAL_TABLE_AND_METHODS_RECHECKED_FROM_NCBI_BIOC",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8392586/",
+      "locator": "foods-10-01807-t005; Methods",
+      "remaining_issue": "Common-calibration covariance, final solvent fraction and applicability to target assay need review; human approval not applied",
+      "source_BioC_sha256": "232e77c212e8192e7ec68210f2b3c8464efd515250de49a4edb9901ffd2ed00d",
+      "raw_mean": 1.81,
+      "raw_SD": 0.19,
+      "unit": "umol TE per umol compound",
+      "determinations": 3,
+      "replication_interpretation": "Three independent experiments as stated in Table 5"
+    }
   ]
 }

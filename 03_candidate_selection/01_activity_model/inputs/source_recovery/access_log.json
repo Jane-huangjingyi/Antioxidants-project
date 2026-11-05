@@ -2,22 +2,64 @@
   {
     "doi": "10.3390/antiox12020505",
     "access_date": "2026-11-05",
-    "provider": "Europe PMC public API",
-    "status": "NOT_RECOVERED",
-    "error": "HTTPError"
+    "provider": "NCBI public BioC API",
+    "prior_attempts": [
+      {
+        "doi": "10.3390/antiox12020505",
+        "access_date": "2026-11-05",
+        "provider": "Europe PMC public API",
+        "status": "NOT_RECOVERED",
+        "error": "HTTPError"
+      }
+    ],
+    "status": "RECOVERED_PUBLIC_ARTICLE_BIOC",
+    "pmcid": "PMC9951910",
+    "url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_json/PMC9951910/unicode",
+    "sha256": "723f851cda0729c2975520199f2f2792571bd17df42dc92c09c870d57a6139e5",
+    "bytes": 107712,
+    "local_file": "raw/PMC9951910.json",
+    "scope": "Article text and text-encoded tables; not visual figure or supplementary-file inspection"
   },
   {
     "doi": "10.3390/foods10081807",
     "access_date": "2026-11-05",
-    "provider": "Europe PMC public API",
-    "status": "NOT_RECOVERED",
-    "error": "HTTPError"
+    "provider": "NCBI public BioC API",
+    "prior_attempts": [
+      {
+        "doi": "10.3390/foods10081807",
+        "access_date": "2026-11-05",
+        "provider": "Europe PMC public API",
+        "status": "NOT_RECOVERED",
+        "error": "HTTPError"
+      }
+    ],
+    "status": "RECOVERED_PUBLIC_ARTICLE_BIOC",
+    "pmcid": "PMC8392586",
+    "url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_json/PMC8392586/unicode",
+    "sha256": "232e77c212e8192e7ec68210f2b3c8464efd515250de49a4edb9901ffd2ed00d",
+    "bytes": 119039,
+    "local_file": "raw/PMC8392586.json",
+    "scope": "Article text and text-encoded tables; not visual figure or supplementary-file inspection"
   },
   {
     "doi": "10.3390/antiox14040479",
     "access_date": "2026-11-05",
-    "provider": "Europe PMC public API",
-    "status": "NOT_RECOVERED",
-    "error": "HTTPError"
+    "provider": "NCBI public BioC API",
+    "prior_attempts": [
+      {
+        "doi": "10.3390/antiox14040479",
+        "access_date": "2026-11-05",
+        "provider": "Europe PMC public API",
+        "status": "NOT_RECOVERED",
+        "error": "HTTPError"
+      }
+    ],
+    "status": "RECOVERED_PUBLIC_ARTICLE_BIOC",
+    "pmcid": "PMC12024297",
+    "url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_json/PMC12024297/unicode",
+    "sha256": "8920c8f95d42d61cb1ae19bd2c346c517352815392728040ee9da5f91e5547cb",
+    "bytes": 190007,
+    "local_file": "raw/PMC12024297.json",
+    "scope": "Article text and text-encoded tables; not visual figure or supplementary-file inspection"
   }
 ]

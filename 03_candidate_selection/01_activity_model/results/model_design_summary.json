@@ -1,0 +1,14 @@
+{
+  "status": "DESIGN_CHECK_ONLY_NO_MODEL_FITTED",
+  "input_rows": 9,
+  "distinct_compounds": 9,
+  "distinct_papers": 3,
+  "connected_components": 3,
+  "compounds_with_multiple_papers": 0,
+  "additive_fixed_effect_design_rank": 9,
+  "additive_fixed_effect_parameters_with_one_reference_constraint": 11,
+  "unidentified_dimensions": 2,
+  "interpretation": "An additive compound-plus-paper adjustment is not identified across disconnected components without further constraints or modelling assumptions. Hierarchical borrowing would require explicit assumptions and validation; raw capacity values are not declared unusable.",
+  "ranked_recovery_sources": 10,
+  "capacity_ranking_generated": false
+}

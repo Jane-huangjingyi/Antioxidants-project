@@ -1,19 +1,19 @@
 {
   "status": "PASS",
-  "worksheet_count": 10,
-  "source_documents": 974,
-  "mechanism_observations": 21,
+  "worksheet_count": 12,
   "error_cells": [],
-  "row_counts": {
-    "xl/worksheets/sheet1.xml": 21,
-    "xl/worksheets/sheet2.xml": 194,
-    "xl/worksheets/sheet3.xml": 75,
-    "xl/worksheets/sheet4.xml": 7,
-    "xl/worksheets/sheet5.xml": 7,
-    "xl/worksheets/sheet6.xml": 194,
-    "xl/worksheets/sheet7.xml": 276,
-    "xl/worksheets/sheet8.xml": 975,
-    "xl/worksheets/sheet9.xml": 22,
-    "xl/worksheets/sheet10.xml": 7
+  "data_rows": {
+    "Review panel": 20,
+    "Candidate profiles": 193,
+    "Capacity model inputs": 9,
+    "Endpoint definitions": 4,
+    "Chemical observations": 74,
+    "Methods": 6,
+    "Manuscript claims": 6,
+    "Researcher decisions": 193,
+    "Source directory": 275,
+    "Source documents": 982,
+    "Mechanism observations": 21,
+    "ReadMe": 6
   }
 }
