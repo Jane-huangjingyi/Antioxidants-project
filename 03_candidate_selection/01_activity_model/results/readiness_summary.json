@@ -1,0 +1,18 @@
+{
+  "status": "AUDIT_COMPLETE_MODEL_NOT_FITTED",
+  "candidate_count": 193,
+  "observation_count": 76,
+  "candidates_with_rows": 33,
+  "later_error_audit_rows": 68,
+  "later_audit_typed_SD_rows": 4,
+  "rows_with_positive_numeric_N": 21,
+  "rows_with_positive_numeric_error": 18,
+  "vitamin_C_source_rows": 2,
+  "approved_model_rows": 0,
+  "input_sha256": {
+    "02_identity_and_evidence/inputs/reference_collection/data/h_orac_stage25b/stage25b/Stage25B_HORAC_Experiment_Evidence.csv": "57d7037ea844541c9eb08b0611bec1f588f57d34831bbc18012425e2e6b23c14",
+    "02_identity_and_evidence/inputs/reference_collection/data/h_orac_stage25b/stage25b6d/Stage25B6D_Error_and_Replicate_Audit.csv": "34b0e49db7d8780ad07587b8db67dbbe63dcd5169d6dfbfdc7bae13420a2cfa1",
+    "02_identity_and_evidence/inputs/reference_collection/data/h_orac_stage25b/stage25b6d/Stage25B6D_Study_Independence_Adjudication.csv": "f929626f82293be167d9aaf85f6bcf75d65d94d7d4c6e749ad48b81219c3292a",
+    "02_identity_and_evidence/inputs/reference_collection/data/class_specific_antioxidant/VitaminC_Aqueous_Evidence_Master.csv": "5825606e9cc072fdfa4210b40a71125d8542996744cef61b8168bd77ea054119"
+  }
+}

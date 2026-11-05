@@ -3,7 +3,7 @@ from pathlib import Path
 import argparse,subprocess,sys,shutil,os
 ROOT=Path(__file__).resolve().parent
 p=argparse.ArgumentParser();p.add_argument('--tables-only',action='store_true');p.add_argument('--legacy-figures',action='store_true');p.add_argument('--workbook',action='store_true');a=p.parse_args()
-steps=['01_candidate_discovery/code/build_universe.py','02_identity_and_evidence/code/build_evidence_profiles.py','03_candidate_selection/code/select_candidates.py','06_manuscript/code/build_manuscript_outputs.py']
+steps=['01_candidate_discovery/code/build_universe.py','02_identity_and_evidence/code/build_evidence_profiles.py','03_candidate_selection/01_activity_model/audit_data.py','03_candidate_selection/code/select_candidates.py','06_manuscript/code/build_manuscript_outputs.py']
 for script in steps:subprocess.run([sys.executable,str(ROOT/script)],cwd=ROOT,check=True)
 if not a.tables_only:
  r=shutil.which('Rscript')

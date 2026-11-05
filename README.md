@@ -2,6 +2,8 @@
 
 **Start here.** The project builds a traceable food-chemical discovery collection, identifies a 20-slot review panel, and prepares an aqueous absorbance assay. It does not claim that a review slot is a potency rank or a laboratory-approved material.
 
+The current selection objective is highest expected **molar chemical antioxidant capacity**, with reaction rate reported separately. [Activity-model preparation](03_candidate_selection/01_activity_model/README.md) audits the actual modelling data before estimating activity or replacing the earlier review queue. The target assay and conditions are still to be fixed; no new capacity ranking has been fitted.
+
 ## Research sequence
 
 | Step | Scientific task | Authoritative entry |

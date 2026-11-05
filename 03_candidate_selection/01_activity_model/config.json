@@ -1,0 +1,15 @@
+{
+  "version": "capacity_model_preparation_v0.1",
+  "primary_objective": "Highest expected molar chemical antioxidant capacity",
+  "primary_unit": "mol Trolox equivalents per mol compound",
+  "endpoint_choice": "RESEARCHER_SELECTED_CAPACITY_NOT_REACTION_RATE",
+  "target_assay": "PENDING_PLATFORM_VALIDATION_AND_APPROVAL",
+  "target_conditions": null,
+  "secondary_endpoint": "Reaction kinetics, reported separately",
+  "model_status": "DATA_READINESS_AUDIT_ONLY",
+  "missing_evidence": "UNKNOWN_NOT_ZERO",
+  "cross_assay_pooling": "NOT_ALLOWED_WITHOUT_VALIDATED_CALIBRATION",
+  "ranking_objective": "Expected capacity; uncertainty reported separately",
+  "candidate_specific_parameter_tuning": "NOT_ALLOWED",
+  "formal_weights_or_top20_created": false
+}

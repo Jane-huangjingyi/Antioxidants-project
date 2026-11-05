@@ -1,5 +1,7 @@
 # 03. Select a review panel and disclose unresolved decisions
 
+For the researcher-selected objective of highest expected molar chemical capacity, start with [Step 03.1: activity-model preparation](01_activity_model/README.md). The queue below remains a historical preparation baseline and is not a fitted capacity ranking.
+
 Run `python 03_candidate_selection/code/select_candidates.py`. Rules are in `config/selection_rules.json`; the researcher-editable decision table is `config/researcher_decisions.csv`. Rebuilding preserves the decision table. Empty fields remain unknown.
 
 The review queue requires reference identity/formula, retained molecular food scope, no specific inherited food-occurrence warning, and at least one original pure-compound H-ORAC study confirmed by the preserved closure. This is evidence available in the checked collection, not proof that other candidates lack activity. The two-study sensitivity is reported separately.
