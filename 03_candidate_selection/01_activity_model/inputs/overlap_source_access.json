@@ -1,0 +1,20 @@
+[
+  {
+    "doi": "10.3390/antiox11091784",
+    "pmcid": "PMC9495677",
+    "url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_json/PMC9495677/unicode",
+    "access_date": "2026-11-06",
+    "status": "RECOVERED_ARTICLE_TEXT_AND_TABLE_XML",
+    "sha256": "b6ed194c37a76ef37cbc0b0541d92ae41f9acb80b0aa3bd2d8a601abe99c425d",
+    "passages": 111
+  },
+  {
+    "doi": "10.3390/ijms20092328",
+    "pmcid": "PMC6539043",
+    "url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_json/PMC6539043/unicode",
+    "access_date": "2026-11-06",
+    "status": "RECOVERED_ARTICLE_TEXT_AND_TABLE_XML",
+    "sha256": "1fdd89db7239cbf6523ec86fc6310de455d8a61b3d2f64a4ef44b58de57573d5",
+    "passages": 133
+  }
+]
