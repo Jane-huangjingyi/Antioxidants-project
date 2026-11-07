@@ -1,0 +1,11 @@
+{
+  "observations": 99,
+  "scope_counts": {
+    "BASELINE_SOURCE_REVIEW_PENDING": 68,
+    "SOURCE_RECHECKED_PROTOCOL_REVIEW": 6,
+    "SOURCE_LOCAL_DESCRIPTIVE_SUBSET": 25
+  },
+  "ranked_subset_rows": 24,
+  "ranked_subset_groups": 6,
+  "global_ranking_generated": false
+}

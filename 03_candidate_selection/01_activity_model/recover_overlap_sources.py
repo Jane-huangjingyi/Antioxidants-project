@@ -1,10 +1,13 @@
 """Explicit online recovery of two overlap-source leads; no model eligibility upgrade."""
 from pathlib import Path
-import urllib.request,json,hashlib
+import urllib.request,json,hashlib,sys
 P=Path(__file__).resolve().parent
 raw=P/'inputs/source_recovery/raw';raw.mkdir(parents=True,exist_ok=True)
-log=[]
-for doi,pmcid in [('10.3390/antiox11091784','PMC9495677'),('10.3390/ijms20092328','PMC6539043')]:
+selected=[('10.3390/antiox11091784','PMC9495677'),('10.3390/ijms20092328','PMC6539043')]
+if '--legacy30' in sys.argv:selected=[('10.3390/ijms150916351','PMC4200783'),('10.3390/foods10051079','PMC8152971'),('10.1039/d1ra08918h','PMC8981064')]
+log=json.loads((P/'inputs/overlap_source_access.json').read_text()) if (P/'inputs/overlap_source_access.json').exists() else []
+log=[r for r in log if r['doi'] not in {d for d,p in selected}]
+for doi,pmcid in selected:
     url=f'https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_json/{pmcid}/unicode'
     row=dict(doi=doi,pmcid=pmcid,url=url,access_date='2026-11-06')
     try:

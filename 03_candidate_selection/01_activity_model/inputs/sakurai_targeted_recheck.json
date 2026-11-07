@@ -1,0 +1,16 @@
+{
+  "doi": "10.1039/d1ra08918h",
+  "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8981064/",
+  "access_date": "2026-11-06",
+  "source_locator": "Table 1; Methods 2.2",
+  "scope": "Targeted primary HTML table and methods check; no supplementary inspection",
+  "unit": "mol TE/mol compound",
+  "error_type": "SD_EXPLICIT_IN_TABLE_HEADER",
+  "measurements_as_reported": 3,
+  "independent_batches": null,
+  "records": [
+    {"candidate_id":"AFF-0070","compound":"trans-Ferulic acid","mean":3.474,"sd":0.176,"existing_observation_id":"HORAC_EXP_0053","relationship":"RECHECK_EXISTING_ROW"},
+    {"candidate_id":"AFF-0071","compound":"p-Coumaric acid","mean":3.766,"sd":0.146,"existing_observation_id":"HORAC_EXP_0052","relationship":"RECHECK_EXISTING_ROW"},
+    {"candidate_id":"AFF-0167","compound":"Eugenol","mean":1.811,"sd":0.118,"existing_observation_id":"","relationship":"EXISTING_STAGE24_ROW_S24_013_NOT_IN_CANONICAL_INDEX"}
+  ]
+}

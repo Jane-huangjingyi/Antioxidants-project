@@ -1,0 +1,8 @@
+{
+  "legacy_numeric_rows": 130,
+  "exact_doi_name_matches": 71,
+  "possible_doi_id_matches": 1,
+  "not_matched_rows": 58,
+  "new_model_rows_imported": 0,
+  "warning": "Inventory rows are not unique studies or confirmed missing observations. Identity, assay, units and duplicate keys require review."
+}

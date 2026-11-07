@@ -6,6 +6,10 @@ import {Workbook,SpreadsheetFile} from '@oai/artifact-tool';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'../..');
 const wb=Workbook.create();
 const specs=[
+ ['Capacity evidence','03_candidate_selection/01_activity_model/results/Capacity_Analysis_Entry.csv',null],
+ ['Source-local order','03_candidate_selection/01_activity_model/results/Within_Source_Descriptive_Order.csv',null],
+ ['Legacy source review','03_candidate_selection/01_activity_model/results/Legacy30_Verification.csv',null],
+ ['Protocol constraints','03_candidate_selection/01_activity_model/results/Bridge_Protocol_Matrix.csv',null],
  ['Review panel','03_candidate_selection/results/top20_review_queue.csv',['review_slot','candidate_id','compound_name','molecular_formula','confirmed_independent_horac_studies','confirmed_horac_source_dois','food_occurrence_status','current_absorbance_compatibility','shortlist_status']],
  ['Candidate profiles','02_identity_and_evidence/results/candidate_evidence_profiles.csv',null],
  ['Capacity model inputs','03_candidate_selection/01_activity_model/results/Model_Input_Candidates.csv',['candidate_id','compound','doi','molar_mean_candidate','molar_SD_candidate','reported_plus_minus','reported_error_scale','error_type','independent_experiments_as_reported','variance_of_mean_candidate','variance_assumptions','vehicle','source_form','model_status','human_review_status']],
@@ -29,7 +33,7 @@ for(const [name,rel,fields] of specs){
  const sheet=wb.worksheets.add(name);sheet.showGridLines=false;sheet.tabColor=name==='Researcher decisions'?'#C79332':'#315E78';
  const grid=sheet.getRangeByIndexes(0,0,rows.length,header.length);grid.values=rows;
  grid.format.font.name='Arial';grid.format.font.size=10;grid.format.columnWidth=27;grid.format.rowHeight=38;grid.format.verticalAlignment='center';grid.format.wrapText=true;
- if(['Source directory','Source documents','Manuscript claims','Mechanism observations','Capacity model inputs','Endpoint definitions'].includes(name))grid.format.rowHeight=82;
+ if(['Source directory','Source documents','Manuscript claims','Mechanism observations','Capacity model inputs','Endpoint definitions','Capacity evidence','Source-local order','Legacy source review','Protocol constraints'].includes(name))grid.format.rowHeight=82;
  const band=sheet.getRangeByIndexes(0,0,1,header.length);band.format.fill='#24465C';band.format.font.color='#FFFFFF';band.format.font.bold=true;band.format.rowHeight=58;
  sheet.tables.add(grid,true,`ReviewData${counts.length+1}`);sheet.freezePanes.freezeRows(1);sheet.freezePanes.freezeColumns(2);
  if(name==='Researcher decisions'&&rows.length>1)sheet.getRangeByIndexes(1,1,rows.length-1,header.length-1).format.fill='#FFF3D6';

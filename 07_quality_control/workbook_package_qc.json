@@ -1,19 +1,11 @@
 {
   "status": "PASS",
-  "worksheet_count": 12,
-  "error_cells": [],
-  "data_rows": {
-    "Review panel": 20,
-    "Candidate profiles": 193,
-    "Capacity model inputs": 9,
-    "Endpoint definitions": 4,
-    "Chemical observations": 74,
-    "Methods": 6,
-    "Manuscript claims": 6,
-    "Researcher decisions": 193,
-    "Source directory": 275,
-    "Source documents": 982,
-    "Mechanism observations": 21,
-    "ReadMe": 6
-  }
+  "worksheet_count": 16,
+  "new_sheet_rows": {
+    "Capacity evidence": 99,
+    "Source-local order": 24,
+    "Legacy source review": 30,
+    "Protocol constraints": 5
+  },
+  "error_cells": []
 }

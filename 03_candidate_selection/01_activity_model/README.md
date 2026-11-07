@@ -45,3 +45,15 @@ Use `results/Targeted_Recovery_Priority.csv` to plan source/error clarification.
 Run `python 03_candidate_selection/01_activity_model/build_traceable_evidence.py`. Open `results/Traceable_Capacity_Evidence.csv` in Excel for 77 observations across 34 compounds. Baseline fields are retained alongside newer original-table locators and DOI links; blank DOIs remain missing, not invented. New rechecks annotate existing rows rather than adding duplicate studies. Supplementary materials are not implied to have been checked.
 
 `results/Candidate_Capacity_Summary.csv` provides one row per compound, DOI lists and recheck coverage. DOI counts are not independent-study counts. This is the quantitative extraction subset, not the complete candidate universe. Capacity scores and ranks remain blank until comparable data support fitting. Source quality is not added to chemical capacity. The proposed sensitivity score is estimated capacity minus lambda times its standard error; lambda zero preserves the primary expected-capacity objective. No coefficients or lambda are approved here. Original observations and frozen rankings are unchanged.
+
+For the 2019 experimental source, see `Overlap_Source_Assessment.md` and `results/Flavonoid_Log_Capacity_Extraction.csv`. Regenerate with `extract_flavonoid_log_capacity.py` after explicit source recovery. These 36 log-scale source rows remain outside the approved model-input table until identity, scale, error and protocol checks close; they must not be appended as independent new studies.
+
+For systematic historical coverage, run `audit_legacy_coverage.py` and read `Legacy_Coverage_Assessment.md`. The generated inventory distinguishes exact matches, possible identity matches and unmatched legacy records; it does not import alternative endpoints or upgrade legacy scientific decisions.
+
+The 30-row follow-up is documented in `Legacy30_Verification_Assessment.md`. Run `reconcile_legacy30.py` for individual dispositions, the mixed-scale integrated evidence inventory and a provenance-only connectivity graph. Strict model-candidate eligibility remains separate; no global capacity score is inferred from graph connectivity.
+
+For the source bridge, run `build_bridge_protocol_matrix.py`. `Bridge_Protocol_Assessment.md` explains the five-source protocol matrix and pairwise decisions; source overlap does not imply interchangeable capacity endpoints.
+
+The inherited Watanabe protocol is now identified and its A/B alternatives documented in `Watanabe_Protocol_Resolution.md`. Study-specific variant assignment remains unresolved. `dilution_interpolation_check.py` checks interpolation arithmetic on synthetic values only, not the assay implementation.
+
+Start the new consolidated analysis view at `Analysis_Entry_Guide.md`. `build_analysis_entry.py` creates the 99-row source-linked entry and explicitly limited within-source descriptive orders; no global potency score is assigned.

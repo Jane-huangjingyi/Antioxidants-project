@@ -1,0 +1,12 @@
+{
+  "target_records": 30,
+  "original_rechecked_records": 19,
+  "source_pending_records": 11,
+  "integrated_observations": 99,
+  "new_verified_derived_rows": 22,
+  "source_overlap_components": 3,
+  "source_overlap_compounds": 23,
+  "source_overlap_papers": 8,
+  "model_input_candidates_unchanged": 9,
+  "formal_ranking_generated": false
+}

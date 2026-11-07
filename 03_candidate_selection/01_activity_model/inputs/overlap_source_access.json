@@ -16,5 +16,31 @@
     "status": "RECOVERED_ARTICLE_TEXT_AND_TABLE_XML",
     "sha256": "1fdd89db7239cbf6523ec86fc6310de455d8a61b3d2f64a4ef44b58de57573d5",
     "passages": 133
+  },
+  {
+    "doi": "10.3390/ijms150916351",
+    "pmcid": "PMC4200783",
+    "url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_json/PMC4200783/unicode",
+    "access_date": "2026-11-06",
+    "status": "RECOVERED_ARTICLE_TEXT_AND_TABLE_XML",
+    "sha256": "b0ac56f7b3cb09efc4098a6ed6448b681a9fd082e9fc8668d4a6de411ab6d0a2",
+    "passages": 194
+  },
+  {
+    "doi": "10.3390/foods10051079",
+    "pmcid": "PMC8152971",
+    "url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_json/PMC8152971/unicode",
+    "access_date": "2026-11-06",
+    "status": "RECOVERED_ARTICLE_TEXT_AND_TABLE_XML",
+    "sha256": "edb9bbd9bb5ac3411240fc5c29ff3d78b10c7974cf8b0a025ddd6b0127a2fb28",
+    "passages": 190
+  },
+  {
+    "doi": "10.1039/d1ra08918h",
+    "pmcid": "PMC8981064",
+    "url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_json/PMC8981064/unicode",
+    "access_date": "2026-11-06",
+    "status": "NOT_RECOVERED",
+    "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
   }
 ]
