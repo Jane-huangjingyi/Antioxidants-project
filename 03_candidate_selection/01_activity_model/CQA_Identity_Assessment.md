@@ -1,0 +1,9 @@
+# Caffeoylquinic-acid positional and mass checks
+
+The source numbers in DOI 10.3390/foods10051079 match 3-CQA (1), 4-CQA (3), 3,4-diCQA (4), 3,5-diCQA (5) and 4,5-diCQA (6). These labels match the positional species in the coffee analysis, DOI 10.1016/j.jare.2019.01.002. This is a positional-name crosswalk, not a complete stereochemical or material certificate. Publisher supplementary landing routes ending in `/s1` were attempted on 2026-11-07 but were inaccessible; no supplementary NMR content was read. Lack of access is not absence of supporting data.
+
+The antioxidant paper's separation section describes initial co-elution of 1 and 3 followed by further HSCCC separation; do not characterize the final 4-CQA assay as a mixture merely from the first separation stage. Reported purity for the initially separated compounds does not establish the final individual purity of 3 or any future purchased batch.
+
+A source conflict remains: Results 3.4 reports MW 254 and an ion at 253 for compounds 1-3, while current reference C16H18O9 has MW 354.31. Both recovered text and the publisher-indexed passage contain the conflicting numbers. They are not silently corrected or used for conversion. The source's supplementary NMR table and raw spectra remain unchecked. Until resolved, the two corresponding single-CQA observations remain in the evidence table but leave the descriptive rank subset. This does not declare their activity false or modify source HOLDs or original observations.
+
+`inputs/cqa_identity_resolution.json` drives this derived hold. The analysis entry remains 99 rows, with 23 source-local observations and two source-identity holds; source-local ranked rows decrease from 24 to 22. No global ranking exists. The Excel export reads these updated tables; its package check compares exported cell values with the corresponding CSV snapshots before delivery.

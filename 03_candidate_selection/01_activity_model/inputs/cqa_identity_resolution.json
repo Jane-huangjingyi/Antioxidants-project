@@ -1,0 +1,13 @@
+{
+ "source_doi":"10.3390/foods10051079",
+ "source_locator":"Results 3.3-3.4; Figures 3-5; Table 4",
+ "checked_date":"2026-11-07",
+ "records":[
+  {"candidate_id":"AFF-0077","source_number":"1","positional_name":"3-O-caffeoylquinic acid","reference_MW":354.31,"source_reported_MW":254,"status":"SOURCE_MASS_CONFLICT_PENDING_STRUCTURE_REVIEW","purity_scope":"Initial separated compound 1 reported above 93% HPLC purity; later separation of 1/3 mixture also described"},
+  {"candidate_id":"AFF-0078","source_number":"3","positional_name":"4-O-caffeoylquinic acid","reference_MW":354.31,"source_reported_MW":254,"status":"SOURCE_MASS_CONFLICT_PENDING_STRUCTURE_REVIEW","purity_scope":"Initially co-eluted with compound 1, then separated by conventional HSCCC; final individual purity not assigned here"},
+  {"candidate_id":"AFF-0079","source_number":"4","positional_name":"3,4-di-O-caffeoylquinic acid","reference_MW":516.45,"source_reported_MW":516,"status":"SOURCE_POSITIONAL_NAME_MATCH_NOT_LOT_APPROVAL","purity_scope":"Reported above 93% by HPLC at 254 nm; not a procurement certificate"},
+  {"candidate_id":"AFF-0080","source_number":"5","positional_name":"3,5-di-O-caffeoylquinic acid","reference_MW":516.45,"source_reported_MW":516,"status":"SOURCE_POSITIONAL_NAME_MATCH_NOT_LOT_APPROVAL","purity_scope":"Reported above 93% by HPLC at 254 nm; not a procurement certificate"},
+  {"candidate_id":"AFF-0081","source_number":"6","positional_name":"4,5-di-O-caffeoylquinic acid","reference_MW":516.45,"source_reported_MW":516,"status":"SOURCE_POSITIONAL_NAME_MATCH_NOT_LOT_APPROVAL","purity_scope":"Reported above 93% by HPLC at 254 nm; not a procurement certificate"}
+ ],
+ "scope":"Original article text and publisher-indexed passage; supplementary NMR table and raw spectra not inspected; do not silently correct original mass or assign source error to activity conversion"
+}

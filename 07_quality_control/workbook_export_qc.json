@@ -4,13 +4,19 @@
     {
       "sheet": "Capacity evidence",
       "records": 99,
-      "columns": 20,
+      "columns": 33,
       "source": "03_candidate_selection/01_activity_model/results/Capacity_Analysis_Entry.csv"
     },
     {
+      "sheet": "Food and materials",
+      "records": 17,
+      "columns": 24,
+      "source": "03_candidate_selection/01_activity_model/results/Food_and_Material_Followup.csv"
+    },
+    {
       "sheet": "Source-local order",
-      "records": 24,
-      "columns": 23,
+      "records": 22,
+      "columns": 36,
       "source": "03_candidate_selection/01_activity_model/results/Within_Source_Descriptive_Order.csv"
     },
     {
@@ -92,6 +98,6 @@
       "source": "02_identity_and_evidence/inputs/mechanism_evidence/master/Compound_Mechanism_Evidence_Master.csv"
     }
   ],
-  "inspection": "{\"kind\":\"sheet\",\"id\":\"ws/54z7jx\",\"name\":\"Capacity evidence\",\"index\":0,\"range\":\"A1:T100\",\"address\":\"A1:T100\"}\n{\"kind\":\"sheet\",\"id\":\"ws/q6fr33\",\"name\":\"Source-local order\",\"index\":1,\"range\":\"A1:W25\",\"address\":\"A1:W25\"}\n{\"kind\":\"sheet\",\"id\":\"ws/dzp8eo\",\"name\":\"Legacy source review\",\"index\":2,\"range\":\"A1:X31\",\"address\":\"A1:X31\"}\n{\"kind\":\"sheet\",\"id\":\"ws/05ajc2\",\"name\":\"Protocol constraints\",\"index\":3,\"range\":\"A1:P6\",\"address\":\"A1:P6\"}\n{\"kind\":\"sheet\",\"id\":\"ws/n7i6u7\",\"name\":\"Review panel\",\"index\":4,\"range\":\"A1:I21\",\"address\":\"A1:I21\"}\n{\"kind\":\"sheet\",\"id\":\"ws/cl0swq\",\"name\":\"Candidate profiles\",\"index\":5,\"range\":\"A1:AP194\",\"address\":\"A1:AP194\"}\n{\"kind\":\"sheet\",\"id\":\"ws/1y7adm\",\"name\":\"Capacity model inputs\",\"index\":6,\"range\":\"A1:O10\",\"address\":\"A1:O10\"}\n{\"kind\":\"sheet\",\"id\":\"ws/aravfr\",\"name\":\"Endpoint definitions\",\"index\":7,\"range\":\"A1:K5\",\"address\":\"A1:K5\"}\n{\"kind\":\"sheet\",\"id\":\"ws/fegai9\",\"name\":\"Chemical observations\",\"index\":8,\"range\":\"A1:J75\",\"address\":\"A1:J75\"}\n{\"kind\":\"sheet\",\"id\":\"ws/ne5u3q\",\"name\":\"Methods\",\"index\":9,\"range\":\"A1:I7\",\"address\":\"A1:I7\"}\n{\"kind\":\"sheet\",\"id\":\"ws/w61fv2\",\"name\":\"Manuscript claims\",\"index\":10,\"range\":\"A1:D7\",\"address\":\"A1:D7\"}\n{\"kind\":\"sheet\",\"id\":\"ws/bidpbf\",\"name\":\"Researcher decisions\",\"index\":11,\"range\":\"A1:J194\",\"address\":\"A1:J194\"}\n{\"kind\":\"sheet\",\"id\":\"ws/85xqdm\",\"name\":\"Source directory\",\"index\":12,\"range\":\"A1:E276\",\"address\":\"A1:E276\"}\n{\"kind\":\"sheet\",\"id\":\"ws/nf5h4e\",\"name\":\"Source documents\",\"index\":13,\"range\":\"A1:F983\",\"address\":\"A1:F983\"}\n{\"kind\":\"sheet\",\"id\":\"ws/pw7rbu\",\"name\":\"Mechanism observations\",\"index\":14,\"range\":\"A1:J22\",\"address\":\"A1:J22\"}\n{\"kind\":\"sheet\",\"id\":\"ws/k3ts9e\",\"name\":\"ReadMe\",\"index\":15,\"range\":\"A1:B7\",\"address\":\"A1:B7\"}",
+  "inspection": "{\"kind\":\"sheet\",\"id\":\"ws/otx245\",\"name\":\"Capacity evidence\",\"index\":0,\"range\":\"A1:AG100\",\"address\":\"A1:AG100\"}\n{\"kind\":\"sheet\",\"id\":\"ws/kax72f\",\"name\":\"Food and materials\",\"index\":1,\"range\":\"A1:X18\",\"address\":\"A1:X18\"}\n{\"kind\":\"sheet\",\"id\":\"ws/2l9s0a\",\"name\":\"Source-local order\",\"index\":2,\"range\":\"A1:AJ23\",\"address\":\"A1:AJ23\"}\n{\"kind\":\"sheet\",\"id\":\"ws/9skgbm\",\"name\":\"Legacy source review\",\"index\":3,\"range\":\"A1:X31\",\"address\":\"A1:X31\"}\n{\"kind\":\"sheet\",\"id\":\"ws/pp9352\",\"name\":\"Protocol constraints\",\"index\":4,\"range\":\"A1:P6\",\"address\":\"A1:P6\"}\n{\"kind\":\"sheet\",\"id\":\"ws/6qz714\",\"name\":\"Review panel\",\"index\":5,\"range\":\"A1:I21\",\"address\":\"A1:I21\"}\n{\"kind\":\"sheet\",\"id\":\"ws/bytzs6\",\"name\":\"Candidate profiles\",\"index\":6,\"range\":\"A1:AP194\",\"address\":\"A1:AP194\"}\n{\"kind\":\"sheet\",\"id\":\"ws/gsbn0a\",\"name\":\"Capacity model inputs\",\"index\":7,\"range\":\"A1:O10\",\"address\":\"A1:O10\"}\n{\"kind\":\"sheet\",\"id\":\"ws/fq1vup\",\"name\":\"Endpoint definitions\",\"index\":8,\"range\":\"A1:K5\",\"address\":\"A1:K5\"}\n{\"kind\":\"sheet\",\"id\":\"ws/qj44sy\",\"name\":\"Chemical observations\",\"index\":9,\"range\":\"A1:J75\",\"address\":\"A1:J75\"}\n{\"kind\":\"sheet\",\"id\":\"ws/bt5bzr\",\"name\":\"Methods\",\"index\":10,\"range\":\"A1:I7\",\"address\":\"A1:I7\"}\n{\"kind\":\"sheet\",\"id\":\"ws/nn39mu\",\"name\":\"Manuscript claims\",\"index\":11,\"range\":\"A1:D7\",\"address\":\"A1:D7\"}\n{\"kind\":\"sheet\",\"id\":\"ws/qfehi3\",\"name\":\"Researcher decisions\",\"index\":12,\"range\":\"A1:J194\",\"address\":\"A1:J194\"}\n{\"kind\":\"sheet\",\"id\":\"ws/am2bgh\",\"name\":\"Source directory\",\"index\":13,\"range\":\"A1:E276\",\"address\":\"A1:E276\"}\n{\"kind\":\"sheet\",\"id\":\"ws/zu0qk6\",\"name\":\"Source documents\",\"index\":14,\"range\":\"A1:F983\",\"address\":\"A1:F983\"}\n{\"kind\":\"sheet\",\"id\":\"ws/ynjedx\",\"name\":\"Mechanism observations\",\"index\":15,\"range\":\"A1:J22\",\"address\":\"A1:J22\"}\n{\"kind\":\"sheet\",\"id\":\"ws/omiht0\",\"name\":\"ReadMe\",\"index\":16,\"range\":\"A1:B7\",\"address\":\"A1:B7\"}",
   "formulas": "NONE_STATIC_SOURCE_LINKED_SNAPSHOT"
 }

@@ -1,0 +1,11 @@
+{
+  "comparison_observations": 25,
+  "unique_candidates": 17,
+  "reference_present": 25,
+  "name_review_rows": 0,
+  "food_status_counts": {
+    "CLASS_LEVEL_CURATION_ONLY": 25
+  },
+  "exact_form_confirmed": 0,
+  "formal_panel_approved": 0
+}

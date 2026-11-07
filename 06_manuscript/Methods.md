@@ -22,6 +22,10 @@ The ordering was a documented preparation rule rather than a new potency rank, o
 
 ## 4. Non-fluorescent assay development
 
+### Capacity-evidence comparison
+
+Quantitative observations were linked by candidate identifier, DOI, original table location, endpoint scale and reported concentration. New original-source checks annotated historical records rather than creating additional independent studies. Log-scale summaries, dose-specific Trolox equivalents and calibration-slope ratios were retained separately. Source-local descriptive ordering was restricted to checked subsets sharing a paper, reporting scale and dose; it was not treated as a global capacity ranking or a significance test. Reference molecular identity, compound-specific food occurrence and the exact experimental material form were assessed as separate fields. Missing source access, error definitions and independent experimental-unit counts remained unresolved rather than receiving zero scores or invented inverse-variance weights.
+
 We compared primary reports of ORAC-PGR, crocin bleaching and ABTS for an aqueous absorbance workflow. For a capacity-primary objective, crocin dose-time protection was identified as the first method-development candidate, ABTS as a distinct complementary response and ORAC-PGR as a reactivity-sensitive comparator. No method was approved. Historical ORAC-FL values were not converted into predicted absorbance-assay outcomes. Published settings were distinguished from unapproved platform parameters. Method searches were date-bounded and source-access scope was recorded.
 
 The planned pilot evaluates exact material form, stock and final solubility, vehicle, stability, spectral overlap, turbidity, precipitation, probe interactions, pH, timing and temperature. Technical replicate wells are nested within independent preparations/days. The analysis code integrates normalized, matched-background absorbance traces by the trapezoidal rule and rejects unresolved counter-screen or time-grid mismatches. A Trolox-equivalent model, formal QC thresholds and experimental conditions require separate validation before an experimental capacity result is reported.
