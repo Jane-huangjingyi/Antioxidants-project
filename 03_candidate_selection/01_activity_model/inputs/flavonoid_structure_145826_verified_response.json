@@ -1,0 +1,10 @@
+{
+ "source_row":"14",
+ "source_compound":"3,3′,4′-Trihydroxyflavone",
+ "source":"PubChem official short-property response observed successfully in tool output on 2026-11-08",
+ "query_url":"https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/145826/property/IsomericSMILES,InChIKey/JSON",
+ "access_date":"2026-11-08",
+ "raw_response_bytes_retained":false,
+ "property":{"CID":145826,"SMILES":"C1=CC=C2C(=C1)C(=O)C(=C(O2)C3=CC(=C(C=C3)O)O)O","InChIKey":"KPGMHZQXQVDYNT-UHFFFAOYSA-N"},
+ "scope":"Curated exact fields from successful API output, not a raw HTTP cache; original source structure and stereo remain NOT_REVIEWED"
+}

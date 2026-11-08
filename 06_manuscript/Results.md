@@ -15,3 +15,12 @@ Tables 1-3 report the discovery flow, reference formulas/source-linked review pa
 ## Suggested manuscript use
 
 These are descriptive workflow results suitable for a methods-development or candidate-prioritization manuscript. Laboratory efficacy, dose-response and mechanism Results remain unwritten until real data and adjudications exist.
+
+
+## Exploratory structural validation
+
+The 36 single-paper log-ORAC labels and database candidate graphs were evaluated by nested leave-one-scaffold-group-out validation (five groups: 23, 8, 3, 1 and 1). Four-descriptor ridge regression yielded pooled MAE 0.692 and RMSE 0.950, compared with 0.689 and 0.953 for the matched training-mean baseline. The model did not show a consistent improvement across these two metrics. These are exploratory internal errors, not independent-study validation or established performance for verified experimental structures. No global ranking was generated. Per-fold errors are provided in the structural validation tables.
+
+Adding phenolic-OH and aryl-methoxy counts in a post-hoc sensitivity analysis gave MAE 0.673 and RMSE 0.927. This small improvement is exploratory, since feature selection followed inspection of initial validation results. It does not establish an independently validated ranking model.
+
+A further post-hoc Morgan-fingerprint analysis yielded MAE 0.652 and RMSE 0.914, with 35 distinct vectors across 36 candidate structures. Pooled errors improved relative to the mean baseline, but the three-member catechin-related scaffold group worsened (MAE 0.922 versus 0.350). This heterogeneous result does not support a final global ranking. Chirality was excluded and source-material stereochemistry remained unresolved.

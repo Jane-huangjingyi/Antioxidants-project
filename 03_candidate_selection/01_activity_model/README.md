@@ -57,3 +57,5 @@ For the source bridge, run `build_bridge_protocol_matrix.py`. `Bridge_Protocol_A
 The inherited Watanabe protocol is now identified and its A/B alternatives documented in `Watanabe_Protocol_Resolution.md`. Study-specific variant assignment remains unresolved. `dilution_interpolation_check.py` checks interpolation arithmetic on synthetic values only, not the assay implementation.
 
 Start the new consolidated analysis view at `Analysis_Entry_Guide.md`. `build_analysis_entry.py` creates the 99-row source-linked entry and explicitly limited within-source descriptive orders; no global potency score is assigned.
+
+For the current modelling endpoint, extended-input review, null baseline and grouped-validation design, use [Model development](Model_Development.md). Structure retrieval remains an explicit online step; repeat failures with `recover_flavonoid_structures.py --retry-failed` to preserve successful responses and attempt history.

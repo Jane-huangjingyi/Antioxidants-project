@@ -1,0 +1,101 @@
+{
+  "test_rows": 36,
+  "rows_outside_training_univariate_bounds": 6,
+  "descriptor_collision_sets": [
+    {
+      "compounds": [
+        "Epicatechin",
+        "Catechin"
+      ],
+      "observed_log_values": [
+        2.018,
+        1.012
+      ]
+    },
+    {
+      "compounds": [
+        "Liquiritigenin",
+        "Pinocembrin"
+      ],
+      "observed_log_values": [
+        1.97,
+        1.013
+      ]
+    },
+    {
+      "compounds": [
+        "3,5,7,8,3\u2032,4\u2032-Hexahydroxyflavone",
+        "Myricetin"
+      ],
+      "observed_log_values": [
+        2.026,
+        1.173
+      ]
+    },
+    {
+      "compounds": [
+        "Kaempferol",
+        "Fisetin",
+        "Luteolin"
+      ],
+      "observed_log_values": [
+        2.018,
+        1.959,
+        1.611
+      ]
+    },
+    {
+      "compounds": [
+        "Apigenin",
+        "3,3\u2032,4\u2032-Trihydroxyflavone",
+        "7,3\u2032,4\u2032-Trihydroxyflavone",
+        "5,3\u2032,4\u2032-Trihydroxyflavone",
+        "Baicalein",
+        "Galangin",
+        "Genistein"
+      ],
+      "observed_log_values": [
+        2.01,
+        1.869,
+        1.691,
+        1.223,
+        0.816,
+        0.328,
+        2.267
+      ]
+    },
+    {
+      "compounds": [
+        "Quercetin",
+        "Morin"
+      ],
+      "observed_log_values": [
+        1.97,
+        1.517
+      ]
+    },
+    {
+      "compounds": [
+        "Wogonin",
+        "Genkwanin"
+      ],
+      "observed_log_values": [
+        1.077,
+        -0.072
+      ]
+    },
+    {
+      "compounds": [
+        "7,8-Dihydroxyflavone",
+        "Chrysin",
+        "3,5-Dihydroxyflavone"
+      ],
+      "observed_log_values": [
+        1.051,
+        1.016,
+        0.767
+      ]
+    }
+  ],
+  "interpretation": "Identical four-descriptor vectors cannot distinguish their source labels; this does not establish stereochemical causation or a source error"
+}

@@ -1,0 +1,4 @@
+﻿held_out_doi,training_rows,test_rows,test_compounds_seen_in_training,test_compounds_unseen,compound_effect_prediction_status,interpretation
+10.1016/j.foodchem.2010.11.092,8,1,0,1,UNSUPPORTED_UNSEEN_COMPOUNDS,Design diagnostic only; structural-model predictions are a distinct future task
+10.3390/antiox12020505,4,5,0,5,UNSUPPORTED_UNSEEN_COMPOUNDS,Design diagnostic only; structural-model predictions are a distinct future task
+10.3390/foods10081807,6,3,0,3,UNSUPPORTED_UNSEEN_COMPOUNDS,Design diagnostic only; structural-model predictions are a distinct future task

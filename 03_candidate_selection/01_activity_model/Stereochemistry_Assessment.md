@@ -1,0 +1,9 @@
+# Database and source stereochemistry
+
+Run `audit_flavonoid_structures.py` then `audit_stereochemistry.py` after an explicit structure refresh. The source and database records remain NOT_REVIEWED. Database-defined atom stereocentres do not establish the purchased experimental material's absolute configuration, enantiomeric purity or racemic composition.
+
+Catechin and Epicatechin share the InChIKey connectivity block, despite different stereochemical blocks. They must be grouped together for structural leakage control. Alpinetin's candidate database graph has an undefined atom stereocentre; no configuration is assigned. A zero reported atom-stereocentre count is not a complete stereochemical assessment: bond geometry, positional substitution and glycoside identity must still match the original structure.
+
+The reviewed original article's reagent description names a supplier but does not close individual source-material stereochemistry. Publisher access in this check returned 429; the original structure drawings and supplementary geometries were not inspected. Claims about the source compound's configuration remain pending. Name-only PubChem results additionally require constitutional-structure comparison before descriptor training. There is no silent approval for out-of-universe compounds.
+
+The result tables record candidate graphs, atom-stereo completeness and connectivity leakage groups separately. RDKit Murcko candidate-graph groups are now computed separately; no structural model or external validation is claimed. Counts are regenerated in `results/stereochemistry_qc.json` after each successful recovery, without inventing values for failed queries. The next step is graph-toolkit validation and original drawing/material comparison, retaining unresolved stereo as a distinct feature/eligibility decision rather than selecting a convenient enantiomer.

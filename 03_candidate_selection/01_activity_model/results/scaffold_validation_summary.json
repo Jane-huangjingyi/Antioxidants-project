@@ -1,0 +1,32 @@
+{
+  "status": "EXPLORATORY_SINGLE_PAPER_DATABASE_GRAPH_VALIDATION",
+  "n": 36,
+  "folds": 5,
+  "descriptors": [
+    "MolWt",
+    "MolLogP",
+    "TPSA",
+    "HBD"
+  ],
+  "target": "Experimental ln(ORAC)",
+  "alpha_grid": [
+    0.1,
+    1,
+    10,
+    100
+  ],
+  "selection": "Nested leave-scaffold-out pooled inner MSE",
+  "metrics": {
+    "ridge": {
+      "MAE": 0.6916557953597628,
+      "RMSE": 0.9498921138247512
+    },
+    "null": {
+      "MAE": 0.6888360343360344,
+      "RMSE": 0.953357654084562
+    }
+  },
+  "external_study_validation": false,
+  "source_identity_approved": false,
+  "final_ranking_generated": false
+}

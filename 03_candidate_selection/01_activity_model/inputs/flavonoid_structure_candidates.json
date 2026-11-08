@@ -1,0 +1,1372 @@
+[
+  {
+    "source_row": "1",
+    "compound": "Genistein",
+    "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5280961/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+    "access_date": "2026-11-08",
+    "identity_review": "NOT_REVIEWED",
+    "status": "RECOVERED",
+    "sha256": "b483ed7ee783814b8b31bf459145ac54d57e066f75b2a8d76e0d5ccb6136b337",
+    "property_candidates": [
+      {
+        "CID": 5280961,
+        "MolecularFormula": "C15H10O5",
+        "MolecularWeight": "270.24",
+        "SMILES": "C1=CC(=CC=C1C2=COC3=CC(=CC(=C3C2=O)O)O)O",
+        "ConnectivitySMILES": "C1=CC(=CC=C1C2=COC3=CC(=CC(=C3C2=O)O)O)O",
+        "InChI": "InChI=1S/C15H10O5/c16-9-3-1-8(2-4-9)11-7-20-13-6-10(17)5-12(18)14(13)15(11)19/h1-7,16-18H",
+        "InChIKey": "TZBJGXHYKVUXJN-UHFFFAOYSA-N",
+        "AtomStereoCount": 0,
+        "DefinedAtomStereoCount": 0,
+        "UndefinedAtomStereoCount": 0,
+        "Title": "Genistein"
+      }
+    ],
+    "query_basis": "REFERENCE_CID",
+    "reference_key_agreement": true
+  },
+  {
+    "source_row": "2",
+    "compound": "Naringenin",
+    "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/439246/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+    "access_date": "2026-11-08",
+    "identity_review": "NOT_REVIEWED",
+    "status": "RECOVERED",
+    "sha256": "effcb7861b96ad65e764049897a6d6913c497b58a9a96f60db766459a588c63e",
+    "property_candidates": [
+      {
+        "CID": 439246,
+        "MolecularFormula": "C15H12O5",
+        "MolecularWeight": "272.25",
+        "SMILES": "C1[C@H](OC2=CC(=CC(=C2C1=O)O)O)C3=CC=C(C=C3)O",
+        "ConnectivitySMILES": "C1C(OC2=CC(=CC(=C2C1=O)O)O)C3=CC=C(C=C3)O",
+        "InChI": "InChI=1S/C15H12O5/c16-9-3-1-8(2-4-9)13-7-12(19)15-11(18)5-10(17)6-14(15)20-13/h1-6,13,16-18H,7H2/t13-/m0/s1",
+        "InChIKey": "FTVWIRXFELQLPI-ZDUSSCGKSA-N",
+        "AtomStereoCount": 1,
+        "DefinedAtomStereoCount": 1,
+        "UndefinedAtomStereoCount": 0,
+        "Title": "Naringenin"
+      }
+    ],
+    "query_basis": "REFERENCE_CID",
+    "reference_key_agreement": true
+  },
+  {
+    "source_row": "3",
+    "compound": "Scutellarin",
+    "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/Scutellarin/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+    "access_date": "2026-11-08",
+    "identity_review": "NOT_REVIEWED",
+    "status": "RECOVERED",
+    "sha256": "5ad49b70a2b3ad1def374dea6605820daaaa6c96c48620e136eee61dc4890322",
+    "property_candidates": [
+      {
+        "CID": 185617,
+        "MolecularFormula": "C21H18O12",
+        "MolecularWeight": "462.4",
+        "SMILES": "C1=CC(=CC=C1C2=CC(=O)C3=C(C(=C(C=C3O2)O[C@H]4[C@@H]([C@H]([C@@H]([C@H](O4)C(=O)O)O)O)O)O)O)O",
+        "ConnectivitySMILES": "C1=CC(=CC=C1C2=CC(=O)C3=C(C(=C(C=C3O2)OC4C(C(C(C(O4)C(=O)O)O)O)O)O)O)O",
+        "InChI": "InChI=1S/C21H18O12/c22-8-3-1-7(2-4-8)10-5-9(23)13-11(31-10)6-12(14(24)15(13)25)32-21-18(28)16(26)17(27)19(33-21)20(29)30/h1-6,16-19,21-22,24-28H,(H,29,30)/t16-,17-,18+,19-,21+/m0/s1",
+        "InChIKey": "DJSISFGPUUYILV-ZFORQUDYSA-N",
+        "AtomStereoCount": 5,
+        "DefinedAtomStereoCount": 5,
+        "UndefinedAtomStereoCount": 0,
+        "Title": "Scutellarin"
+      }
+    ],
+    "query_basis": "SOURCE_NAME_ONLY_PENDING_MANUAL_MAPPING"
+  },
+  {
+    "source_row": "4",
+    "compound": "3,5,7,8,3\u2032,4\u2032-Hexahydroxyflavone",
+    "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/3%2C5%2C7%2C8%2C3%27%2C4%27-Hexahydroxyflavone/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+    "access_date": "2026-11-08",
+    "identity_review": "NOT_REVIEWED",
+    "status": "RECOVERED",
+    "sha256": "d46e6e544f3bda0275b100257d2e299c1b314e432b3b92dc8cb64faa79b50cb8",
+    "property_candidates": [
+      {
+        "CID": 5280647,
+        "MolecularFormula": "C15H10O8",
+        "MolecularWeight": "318.23",
+        "SMILES": "C1=CC(=C(C=C1C2=C(C(=O)C3=C(O2)C(=C(C=C3O)O)O)O)O)O",
+        "ConnectivitySMILES": "C1=CC(=C(C=C1C2=C(C(=O)C3=C(O2)C(=C(C=C3O)O)O)O)O)O",
+        "InChI": "InChI=1S/C15H10O8/c16-6-2-1-5(3-7(6)17)14-13(22)12(21)10-8(18)4-9(19)11(20)15(10)23-14/h1-4,16-20,22H",
+        "InChIKey": "YRRAGUMVDQQZIY-UHFFFAOYSA-N",
+        "AtomStereoCount": 0,
+        "DefinedAtomStereoCount": 0,
+        "UndefinedAtomStereoCount": 0,
+        "Title": "Gossypetin"
+      }
+    ],
+    "query_basis": "SOURCE_NAME_ONLY_PENDING_MANUAL_MAPPING",
+    "prior_attempts": [
+      {
+        "source_row": "4",
+        "compound": "3,5,7,8,3\u2032,4\u2032-Hexahydroxyflavone",
+        "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/3%2C5%2C7%2C8%2C3%27%2C4%27-Hexahydroxyflavone/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+        "access_date": "2026-11-08",
+        "identity_review": "NOT_REVIEWED",
+        "status": "NOT_RECOVERED",
+        "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+      },
+      {
+        "source_row": "4",
+        "compound": "3,5,7,8,3\u2032,4\u2032-Hexahydroxyflavone",
+        "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/3%2C5%2C7%2C8%2C3%27%2C4%27-Hexahydroxyflavone/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+        "access_date": "2026-11-08",
+        "identity_review": "NOT_REVIEWED",
+        "status": "NOT_RECOVERED",
+        "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+      }
+    ]
+  },
+  {
+    "source_row": "5",
+    "compound": "Epicatechin",
+    "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/72276/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+    "access_date": "2026-11-08",
+    "identity_review": "NOT_REVIEWED",
+    "status": "RECOVERED",
+    "sha256": "843de25e145947f133c1393e10ea0f3f780f40035c89eb4e44de204f90d030fa",
+    "property_candidates": [
+      {
+        "CID": 72276,
+        "MolecularFormula": "C15H14O6",
+        "MolecularWeight": "290.27",
+        "SMILES": "C1[C@H]([C@H](OC2=CC(=CC(=C21)O)O)C3=CC(=C(C=C3)O)O)O",
+        "ConnectivitySMILES": "C1C(C(OC2=CC(=CC(=C21)O)O)C3=CC(=C(C=C3)O)O)O",
+        "InChI": "InChI=1S/C15H14O6/c16-8-4-11(18)9-6-13(20)15(21-14(9)5-8)7-1-2-10(17)12(19)3-7/h1-5,13,15-20H,6H2/t13-,15-/m1/s1",
+        "InChIKey": "PFTAWBLQPZVEMU-UKRRQHHQSA-N",
+        "AtomStereoCount": 2,
+        "DefinedAtomStereoCount": 2,
+        "UndefinedAtomStereoCount": 0,
+        "Title": "Epicatechin"
+      }
+    ],
+    "query_basis": "REFERENCE_CID",
+    "reference_key_agreement": true,
+    "prior_attempts": [
+      {
+        "source_row": "5",
+        "compound": "Epicatechin",
+        "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/72276/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+        "access_date": "2026-11-08",
+        "identity_review": "NOT_REVIEWED",
+        "status": "NOT_RECOVERED",
+        "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+      }
+    ]
+  },
+  {
+    "source_row": "6",
+    "compound": "Kaempferol",
+    "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5280863/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+    "access_date": "2026-11-08",
+    "identity_review": "NOT_REVIEWED",
+    "status": "RECOVERED",
+    "sha256": "bf2d792d8f6953fdef58a9c817c41f4b23716f226467f0cf3df52cef46a0d386",
+    "property_candidates": [
+      {
+        "CID": 5280863,
+        "MolecularFormula": "C15H10O6",
+        "MolecularWeight": "286.24",
+        "SMILES": "C1=CC(=CC=C1C2=C(C(=O)C3=C(C=C(C=C3O2)O)O)O)O",
+        "ConnectivitySMILES": "C1=CC(=CC=C1C2=C(C(=O)C3=C(C=C(C=C3O2)O)O)O)O",
+        "InChI": "InChI=1S/C15H10O6/c16-8-3-1-7(2-4-8)15-14(20)13(19)12-10(18)5-9(17)6-11(12)21-15/h1-6,16-18,20H",
+        "InChIKey": "IYRMWMYZSQPJKC-UHFFFAOYSA-N",
+        "AtomStereoCount": 0,
+        "DefinedAtomStereoCount": 0,
+        "UndefinedAtomStereoCount": 0,
+        "Title": "Kaempferol"
+      }
+    ],
+    "query_basis": "REFERENCE_CID",
+    "reference_key_agreement": true
+  },
+  {
+    "source_row": "7",
+    "compound": "Eriodictyol",
+    "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/440735/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+    "access_date": "2026-11-08",
+    "identity_review": "NOT_REVIEWED",
+    "status": "RECOVERED",
+    "sha256": "54129503502ee53559908ff0ee4d31dade7d1b42c59f69dd8a8efbd4d36879eb",
+    "property_candidates": [
+      {
+        "CID": 440735,
+        "MolecularFormula": "C15H12O6",
+        "MolecularWeight": "288.25",
+        "SMILES": "C1[C@H](OC2=CC(=CC(=C2C1=O)O)O)C3=CC(=C(C=C3)O)O",
+        "ConnectivitySMILES": "C1C(OC2=CC(=CC(=C2C1=O)O)O)C3=CC(=C(C=C3)O)O",
+        "InChI": "InChI=1S/C15H12O6/c16-8-4-11(19)15-12(20)6-13(21-14(15)5-8)7-1-2-9(17)10(18)3-7/h1-5,13,16-19H,6H2/t13-/m0/s1",
+        "InChIKey": "SBHXYTNGIZCORC-ZDUSSCGKSA-N",
+        "AtomStereoCount": 1,
+        "DefinedAtomStereoCount": 1,
+        "UndefinedAtomStereoCount": 0,
+        "Title": "(+)-Eriodictyol"
+      }
+    ],
+    "query_basis": "REFERENCE_CID",
+    "reference_key_agreement": true,
+    "prior_attempts": [
+      {
+        "source_row": "7",
+        "compound": "Eriodictyol",
+        "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/440735/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+        "access_date": "2026-11-08",
+        "identity_review": "NOT_REVIEWED",
+        "status": "NOT_RECOVERED",
+        "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+      },
+      {
+        "source_row": "7",
+        "compound": "Eriodictyol",
+        "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/440735/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+        "access_date": "2026-11-08",
+        "identity_review": "NOT_REVIEWED",
+        "status": "NOT_RECOVERED",
+        "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+      },
+      {
+        "source_row": "7",
+        "compound": "Eriodictyol",
+        "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/440735/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+        "access_date": "2026-11-08",
+        "identity_review": "NOT_REVIEWED",
+        "status": "NOT_RECOVERED",
+        "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+      },
+      {
+        "source_row": "7",
+        "compound": "Eriodictyol",
+        "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/440735/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+        "access_date": "2026-11-08",
+        "identity_review": "NOT_REVIEWED",
+        "status": "NOT_RECOVERED",
+        "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+      }
+    ]
+  },
+  {
+    "source_row": "8",
+    "compound": "Apigenin",
+    "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5280443/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+    "access_date": "2026-11-08",
+    "identity_review": "NOT_REVIEWED",
+    "status": "RECOVERED",
+    "sha256": "5c9e3bfee7a571f72f949626c7b987d6a48378016db409ad606f9445bfd1fc5c",
+    "property_candidates": [
+      {
+        "CID": 5280443,
+        "MolecularFormula": "C15H10O5",
+        "MolecularWeight": "270.24",
+        "SMILES": "C1=CC(=CC=C1C2=CC(=O)C3=C(C=C(C=C3O2)O)O)O",
+        "ConnectivitySMILES": "C1=CC(=CC=C1C2=CC(=O)C3=C(C=C(C=C3O2)O)O)O",
+        "InChI": "InChI=1S/C15H10O5/c16-9-3-1-8(2-4-9)13-7-12(19)15-11(18)5-10(17)6-14(15)20-13/h1-7,16-18H",
+        "InChIKey": "KZNIFHPLKGYRTM-UHFFFAOYSA-N",
+        "AtomStereoCount": 0,
+        "DefinedAtomStereoCount": 0,
+        "UndefinedAtomStereoCount": 0,
+        "Title": "Apigenin"
+      }
+    ],
+    "query_basis": "REFERENCE_CID",
+    "reference_key_agreement": true
+  },
+  {
+    "source_row": "9",
+    "compound": "Quercetin",
+    "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5280343/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+    "access_date": "2026-11-08",
+    "identity_review": "NOT_REVIEWED",
+    "status": "RECOVERED",
+    "sha256": "307a44b34ec49a824461e5f99580172466ea3f0a5d05133591954434098893bc",
+    "property_candidates": [
+      {
+        "CID": 5280343,
+        "MolecularFormula": "C15H10O7",
+        "MolecularWeight": "302.23",
+        "SMILES": "C1=CC(=C(C=C1C2=C(C(=O)C3=C(C=C(C=C3O2)O)O)O)O)O",
+        "ConnectivitySMILES": "C1=CC(=C(C=C1C2=C(C(=O)C3=C(C=C(C=C3O2)O)O)O)O)O",
+        "InChI": "InChI=1S/C15H10O7/c16-7-4-10(19)12-11(5-7)22-15(14(21)13(12)20)6-1-2-8(17)9(18)3-6/h1-5,16-19,21H",
+        "InChIKey": "REFJWTPEDVJJIY-UHFFFAOYSA-N",
+        "AtomStereoCount": 0,
+        "DefinedAtomStereoCount": 0,
+        "UndefinedAtomStereoCount": 0,
+        "Title": "Quercetin"
+      }
+    ],
+    "query_basis": "REFERENCE_CID",
+    "reference_key_agreement": true,
+    "prior_attempts": [
+      {
+        "source_row": "9",
+        "compound": "Quercetin",
+        "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5280343/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+        "access_date": "2026-11-08",
+        "identity_review": "NOT_REVIEWED",
+        "status": "NOT_RECOVERED",
+        "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+      },
+      {
+        "source_row": "9",
+        "compound": "Quercetin",
+        "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5280343/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+        "access_date": "2026-11-08",
+        "identity_review": "NOT_REVIEWED",
+        "status": "NOT_RECOVERED",
+        "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+      },
+      {
+        "source_row": "9",
+        "compound": "Quercetin",
+        "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5280343/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+        "access_date": "2026-11-08",
+        "identity_review": "NOT_REVIEWED",
+        "status": "NOT_RECOVERED",
+        "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+      }
+    ]
+  },
+  {
+    "source_row": "10",
+    "compound": "Liquiritigenin",
+    "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/Liquiritigenin/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+    "access_date": "2026-11-08",
+    "identity_review": "NOT_REVIEWED",
+    "status": "RECOVERED",
+    "sha256": "9d07829a6e8433091db4c9439bdff86b08a49b759fe1044edcb908a70d7371dd",
+    "property_candidates": [
+      {
+        "CID": 114829,
+        "MolecularFormula": "C15H12O4",
+        "MolecularWeight": "256.25",
+        "SMILES": "C1[C@H](OC2=C(C1=O)C=CC(=C2)O)C3=CC=C(C=C3)O",
+        "ConnectivitySMILES": "C1C(OC2=C(C1=O)C=CC(=C2)O)C3=CC=C(C=C3)O",
+        "InChI": "InChI=1S/C15H12O4/c16-10-3-1-9(2-4-10)14-8-13(18)12-6-5-11(17)7-15(12)19-14/h1-7,14,16-17H,8H2/t14-/m0/s1",
+        "InChIKey": "FURUXTVZLHCCNA-AWEZNQCLSA-N",
+        "AtomStereoCount": 1,
+        "DefinedAtomStereoCount": 1,
+        "UndefinedAtomStereoCount": 0,
+        "Title": "Liquiritigenin"
+      }
+    ],
+    "query_basis": "SOURCE_NAME_ONLY_PENDING_MANUAL_MAPPING",
+    "prior_attempts": [
+      {
+        "source_row": "10",
+        "compound": "Liquiritigenin",
+        "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/Liquiritigenin/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+        "access_date": "2026-11-08",
+        "identity_review": "NOT_REVIEWED",
+        "status": "NOT_RECOVERED",
+        "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+      }
+    ]
+  },
+  {
+    "source_row": "11",
+    "compound": "Fisetin",
+    "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5281614/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+    "access_date": "2026-11-08",
+    "identity_review": "NOT_REVIEWED",
+    "status": "RECOVERED",
+    "sha256": "a9bf59b4238b10866ce814f762a0d90196c882a46362fc4072c468a85a7b436e",
+    "property_candidates": [
+      {
+        "CID": 5281614,
+        "MolecularFormula": "C15H10O6",
+        "MolecularWeight": "286.24",
+        "SMILES": "C1=CC(=C(C=C1C2=C(C(=O)C3=C(O2)C=C(C=C3)O)O)O)O",
+        "ConnectivitySMILES": "C1=CC(=C(C=C1C2=C(C(=O)C3=C(O2)C=C(C=C3)O)O)O)O",
+        "InChI": "InChI=1S/C15H10O6/c16-8-2-3-9-12(6-8)21-15(14(20)13(9)19)7-1-4-10(17)11(18)5-7/h1-6,16-18,20H",
+        "InChIKey": "XHEFDIBZLJXQHF-UHFFFAOYSA-N",
+        "AtomStereoCount": 0,
+        "DefinedAtomStereoCount": 0,
+        "UndefinedAtomStereoCount": 0,
+        "Title": "Fisetin"
+      }
+    ],
+    "query_basis": "REFERENCE_CID",
+    "reference_key_agreement": true,
+    "prior_attempts": [
+      {
+        "source_row": "11",
+        "compound": "Fisetin",
+        "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5281614/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+        "access_date": "2026-11-08",
+        "identity_review": "NOT_REVIEWED",
+        "status": "NOT_RECOVERED",
+        "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+      }
+    ]
+  },
+  {
+    "source_row": "12",
+    "compound": "Taxifolin",
+    "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/Taxifolin/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+    "access_date": "2026-11-08",
+    "identity_review": "NOT_REVIEWED",
+    "status": "RECOVERED",
+    "sha256": "5fe3bef42da87fdb997506afca0fff0a819c7846f23c33ca13161e37537e2123",
+    "property_candidates": [
+      {
+        "CID": 439533,
+        "MolecularFormula": "C15H12O7",
+        "MolecularWeight": "304.25",
+        "SMILES": "C1=CC(=C(C=C1[C@@H]2[C@H](C(=O)C3=C(C=C(C=C3O2)O)O)O)O)O",
+        "ConnectivitySMILES": "C1=CC(=C(C=C1C2C(C(=O)C3=C(C=C(C=C3O2)O)O)O)O)O",
+        "InChI": "InChI=1S/C15H12O7/c16-7-4-10(19)12-11(5-7)22-15(14(21)13(12)20)6-1-2-8(17)9(18)3-6/h1-5,14-19,21H/t14-,15+/m0/s1",
+        "InChIKey": "CXQWRCVTCMQVQX-LSDHHAIUSA-N",
+        "AtomStereoCount": 2,
+        "DefinedAtomStereoCount": 2,
+        "UndefinedAtomStereoCount": 0,
+        "Title": "Taxifolin"
+      }
+    ],
+    "query_basis": "SOURCE_NAME_ONLY_PENDING_MANUAL_MAPPING"
+  },
+  {
+    "source_row": "13",
+    "compound": "Hesperetin",
+    "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/72281/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+    "access_date": "2026-11-08",
+    "identity_review": "NOT_REVIEWED",
+    "status": "RECOVERED",
+    "sha256": "a8beeea4c0e63f6cc5191cf6566c1fc0410417365f404bc156f16ffa274d7977",
+    "property_candidates": [
+      {
+        "CID": 72281,
+        "MolecularFormula": "C16H14O6",
+        "MolecularWeight": "302.28",
+        "SMILES": "COC1=C(C=C(C=C1)[C@@H]2CC(=O)C3=C(C=C(C=C3O2)O)O)O",
+        "ConnectivitySMILES": "COC1=C(C=C(C=C1)C2CC(=O)C3=C(C=C(C=C3O2)O)O)O",
+        "InChI": "InChI=1S/C16H14O6/c1-21-13-3-2-8(4-10(13)18)14-7-12(20)16-11(19)5-9(17)6-15(16)22-14/h2-6,14,17-19H,7H2,1H3/t14-/m0/s1",
+        "InChIKey": "AIONOLUJZLIMTK-AWEZNQCLSA-N",
+        "AtomStereoCount": 1,
+        "DefinedAtomStereoCount": 1,
+        "UndefinedAtomStereoCount": 0,
+        "Title": "Hesperetin"
+      }
+    ],
+    "query_basis": "REFERENCE_CID",
+    "reference_key_agreement": true,
+    "prior_attempts": [
+      {
+        "source_row": "13",
+        "compound": "Hesperetin",
+        "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/72281/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+        "access_date": "2026-11-08",
+        "identity_review": "NOT_REVIEWED",
+        "status": "NOT_RECOVERED",
+        "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+      },
+      {
+        "source_row": "13",
+        "compound": "Hesperetin",
+        "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/72281/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+        "access_date": "2026-11-08",
+        "identity_review": "NOT_REVIEWED",
+        "status": "NOT_RECOVERED",
+        "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+      },
+      {
+        "source_row": "13",
+        "compound": "Hesperetin",
+        "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/72281/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+        "access_date": "2026-11-08",
+        "identity_review": "NOT_REVIEWED",
+        "status": "NOT_RECOVERED",
+        "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+      },
+      {
+        "source_row": "13",
+        "compound": "Hesperetin",
+        "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/72281/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+        "access_date": "2026-11-08",
+        "identity_review": "NOT_REVIEWED",
+        "status": "NOT_RECOVERED",
+        "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+      }
+    ]
+  },
+  {
+    "source_row": "14",
+    "compound": "3,3\u2032,4\u2032-Trihydroxyflavone",
+    "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/145826/property/IsomericSMILES,InChIKey/JSON",
+    "access_date": "2026-11-08",
+    "identity_review": "NOT_REVIEWED",
+    "status": "NOT_RECOVERED",
+    "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>",
+    "prior_attempts": [
+      {
+        "source_row": "14",
+        "compound": "3,3\u2032,4\u2032-Trihydroxyflavone",
+        "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/3%2C3%27%2C4%27-Trihydroxyflavone/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+        "access_date": "2026-11-08",
+        "identity_review": "NOT_REVIEWED",
+        "status": "NOT_RECOVERED",
+        "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+      },
+      {
+        "source_row": "14",
+        "compound": "3,3\u2032,4\u2032-Trihydroxyflavone",
+        "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/3%2C3%27%2C4%27-Trihydroxyflavone/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+        "access_date": "2026-11-08",
+        "identity_review": "NOT_REVIEWED",
+        "status": "NOT_RECOVERED",
+        "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+      },
+      {
+        "source_row": "14",
+        "compound": "3,3\u2032,4\u2032-Trihydroxyflavone",
+        "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/3%2C3%27%2C4%27-Trihydroxyflavone/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+        "access_date": "2026-11-08",
+        "identity_review": "NOT_REVIEWED",
+        "status": "NOT_RECOVERED",
+        "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+      },
+      {
+        "source_row": "14",
+        "compound": "3,3\u2032,4\u2032-Trihydroxyflavone",
+        "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/3%2C3%27%2C4%27-Trihydroxyflavone/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+        "access_date": "2026-11-08",
+        "identity_review": "NOT_REVIEWED",
+        "status": "NOT_RECOVERED",
+        "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+      },
+      {
+        "source_row": "14",
+        "compound": "3,3\u2032,4\u2032-Trihydroxyflavone",
+        "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/3%2C3%27%2C4%27-Trihydroxyflavone/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+        "access_date": "2026-11-08",
+        "identity_review": "NOT_REVIEWED",
+        "status": "NOT_RECOVERED",
+        "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+      },
+      {
+        "source_row": "14",
+        "compound": "3,3\u2032,4\u2032-Trihydroxyflavone",
+        "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/3%2C3%27%2C4%27-Trihydroxyflavone/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+        "access_date": "2026-11-08",
+        "identity_review": "NOT_REVIEWED",
+        "status": "NOT_RECOVERED",
+        "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+      },
+      {
+        "source_row": "14",
+        "compound": "3,3\u2032,4\u2032-Trihydroxyflavone",
+        "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/3%2C3%27%2C4%27-Trihydroxyflavone/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+        "access_date": "2026-11-08",
+        "identity_review": "NOT_REVIEWED",
+        "status": "NOT_RECOVERED",
+        "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+      },
+      {
+        "source_row": "14",
+        "compound": "3,3\u2032,4\u2032-Trihydroxyflavone",
+        "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/145826/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+        "access_date": "2026-11-08",
+        "identity_review": "NOT_REVIEWED",
+        "status": "NOT_RECOVERED",
+        "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+      },
+      {
+        "source_row": "14",
+        "compound": "3,3\u2032,4\u2032-Trihydroxyflavone",
+        "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/145826/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+        "access_date": "2026-11-08",
+        "identity_review": "NOT_REVIEWED",
+        "status": "NOT_RECOVERED",
+        "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+      },
+      {
+        "source_row": "14",
+        "compound": "3,3\u2032,4\u2032-Trihydroxyflavone",
+        "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/145826/property/IsomericSMILES,InChIKey/JSON",
+        "access_date": "2026-11-08",
+        "identity_review": "NOT_REVIEWED",
+        "status": "NOT_RECOVERED",
+        "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+      }
+    ]
+  },
+  {
+    "source_row": "15",
+    "compound": "7,3\u2032,4\u2032-Trihydroxyflavone",
+    "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/7%2C3%27%2C4%27-Trihydroxyflavone/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+    "access_date": "2026-11-08",
+    "identity_review": "NOT_REVIEWED",
+    "status": "RECOVERED",
+    "sha256": "de6d37d7611db28329730fadf055bed9e43f643a91865aa5fa1ab17b9bc4c105",
+    "property_candidates": [
+      {
+        "CID": 5322065,
+        "MolecularFormula": "C15H10O5",
+        "MolecularWeight": "270.24",
+        "SMILES": "C1=CC(=C(C=C1C2=CC(=O)C3=C(O2)C=C(C=C3)O)O)O",
+        "ConnectivitySMILES": "C1=CC(=C(C=C1C2=CC(=O)C3=C(O2)C=C(C=C3)O)O)O",
+        "InChI": "InChI=1S/C15H10O5/c16-9-2-3-10-12(18)7-14(20-15(10)6-9)8-1-4-11(17)13(19)5-8/h1-7,16-17,19H",
+        "InChIKey": "PVFGJHYLIHMCQD-UHFFFAOYSA-N",
+        "AtomStereoCount": 0,
+        "DefinedAtomStereoCount": 0,
+        "UndefinedAtomStereoCount": 0,
+        "Title": "3',4',7-Trihydroxyflavone"
+      }
+    ],
+    "query_basis": "SOURCE_NAME_ONLY_PENDING_MANUAL_MAPPING",
+    "prior_attempts": [
+      {
+        "source_row": "15",
+        "compound": "7,3\u2032,4\u2032-Trihydroxyflavone",
+        "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/7%2C3%27%2C4%27-Trihydroxyflavone/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+        "access_date": "2026-11-08",
+        "identity_review": "NOT_REVIEWED",
+        "status": "NOT_RECOVERED",
+        "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+      },
+      {
+        "source_row": "15",
+        "compound": "7,3\u2032,4\u2032-Trihydroxyflavone",
+        "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/7%2C3%27%2C4%27-Trihydroxyflavone/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+        "access_date": "2026-11-08",
+        "identity_review": "NOT_REVIEWED",
+        "status": "NOT_RECOVERED",
+        "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+      }
+    ]
+  },
+  {
+    "source_row": "16",
+    "compound": "Diosmetin",
+    "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/Diosmetin/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+    "access_date": "2026-11-08",
+    "identity_review": "NOT_REVIEWED",
+    "status": "RECOVERED",
+    "sha256": "f9eefca56ca3967dbdd7fc1e46116f720bd21d73cb510e31766a8ca0de02d892",
+    "property_candidates": [
+      {
+        "CID": 5281612,
+        "MolecularFormula": "C16H12O6",
+        "MolecularWeight": "300.26",
+        "SMILES": "COC1=C(C=C(C=C1)C2=CC(=O)C3=C(C=C(C=C3O2)O)O)O",
+        "ConnectivitySMILES": "COC1=C(C=C(C=C1)C2=CC(=O)C3=C(C=C(C=C3O2)O)O)O",
+        "InChI": "InChI=1S/C16H12O6/c1-21-13-3-2-8(4-10(13)18)14-7-12(20)16-11(19)5-9(17)6-15(16)22-14/h2-7,17-19H,1H3",
+        "InChIKey": "MBNGWHIJMBWFHU-UHFFFAOYSA-N",
+        "AtomStereoCount": 0,
+        "DefinedAtomStereoCount": 0,
+        "UndefinedAtomStereoCount": 0,
+        "Title": "Diosmetin"
+      }
+    ],
+    "query_basis": "SOURCE_NAME_ONLY_PENDING_MANUAL_MAPPING",
+    "prior_attempts": [
+      {
+        "source_row": "16",
+        "compound": "Diosmetin",
+        "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/Diosmetin/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+        "access_date": "2026-11-08",
+        "identity_review": "NOT_REVIEWED",
+        "status": "NOT_RECOVERED",
+        "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+      },
+      {
+        "source_row": "16",
+        "compound": "Diosmetin",
+        "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/Diosmetin/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+        "access_date": "2026-11-08",
+        "identity_review": "NOT_REVIEWED",
+        "status": "NOT_RECOVERED",
+        "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+      }
+    ]
+  },
+  {
+    "source_row": "17",
+    "compound": "Luteolin",
+    "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5280445/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+    "access_date": "2026-11-08",
+    "identity_review": "NOT_REVIEWED",
+    "status": "RECOVERED",
+    "sha256": "d5fdb2f5744c255f15ee6e443dca8e251f8aec3ab8d4108772718ef907a1eddd",
+    "property_candidates": [
+      {
+        "CID": 5280445,
+        "MolecularFormula": "C15H10O6",
+        "MolecularWeight": "286.24",
+        "SMILES": "C1=CC(=C(C=C1C2=CC(=O)C3=C(C=C(C=C3O2)O)O)O)O",
+        "ConnectivitySMILES": "C1=CC(=C(C=C1C2=CC(=O)C3=C(C=C(C=C3O2)O)O)O)O",
+        "InChI": "InChI=1S/C15H10O6/c16-8-4-11(19)15-12(20)6-13(21-14(15)5-8)7-1-2-9(17)10(18)3-7/h1-6,16-19H",
+        "InChIKey": "IQPNAANSBPBGFQ-UHFFFAOYSA-N",
+        "AtomStereoCount": 0,
+        "DefinedAtomStereoCount": 0,
+        "UndefinedAtomStereoCount": 0,
+        "Title": "Luteolin"
+      }
+    ],
+    "query_basis": "REFERENCE_CID",
+    "reference_key_agreement": true
+  },
+  {
+    "source_row": "18",
+    "compound": "Morin",
+    "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5281670/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+    "access_date": "2026-11-08",
+    "identity_review": "NOT_REVIEWED",
+    "status": "RECOVERED",
+    "sha256": "b84132803cf5a1140c67259fd7feba1fc700064aaad035ced23108ff21c9e581",
+    "property_candidates": [
+      {
+        "CID": 5281670,
+        "MolecularFormula": "C15H10O7",
+        "MolecularWeight": "302.23",
+        "SMILES": "C1=CC(=C(C=C1O)O)C2=C(C(=O)C3=C(C=C(C=C3O2)O)O)O",
+        "ConnectivitySMILES": "C1=CC(=C(C=C1O)O)C2=C(C(=O)C3=C(C=C(C=C3O2)O)O)O",
+        "InChI": "InChI=1S/C15H10O7/c16-6-1-2-8(9(18)3-6)15-14(21)13(20)12-10(19)4-7(17)5-11(12)22-15/h1-5,16-19,21H",
+        "InChIKey": "YXOLAZRVSSWPPT-UHFFFAOYSA-N",
+        "AtomStereoCount": 0,
+        "DefinedAtomStereoCount": 0,
+        "UndefinedAtomStereoCount": 0,
+        "Title": "Morin"
+      }
+    ],
+    "query_basis": "REFERENCE_CID",
+    "reference_key_agreement": true
+  },
+  {
+    "source_row": "19",
+    "compound": "Epigallocatechin",
+    "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/72277/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+    "access_date": "2026-11-08",
+    "identity_review": "NOT_REVIEWED",
+    "status": "RECOVERED",
+    "sha256": "685b2e5c03d6e7a8789e583d9ccfc44f54ccc000a1360cf6d849b121bdc06451",
+    "property_candidates": [
+      {
+        "CID": 72277,
+        "MolecularFormula": "C15H14O7",
+        "MolecularWeight": "306.27",
+        "SMILES": "C1[C@H]([C@H](OC2=CC(=CC(=C21)O)O)C3=CC(=C(C(=C3)O)O)O)O",
+        "ConnectivitySMILES": "C1C(C(OC2=CC(=CC(=C21)O)O)C3=CC(=C(C(=C3)O)O)O)O",
+        "InChI": "InChI=1S/C15H14O7/c16-7-3-9(17)8-5-12(20)15(22-13(8)4-7)6-1-10(18)14(21)11(19)2-6/h1-4,12,15-21H,5H2/t12-,15-/m1/s1",
+        "InChIKey": "XMOCLSLCDHWDHP-IUODEOHRSA-N",
+        "AtomStereoCount": 2,
+        "DefinedAtomStereoCount": 2,
+        "UndefinedAtomStereoCount": 0,
+        "Title": "Epigallocatechin"
+      }
+    ],
+    "query_basis": "REFERENCE_CID",
+    "reference_key_agreement": true
+  },
+  {
+    "source_row": "20",
+    "compound": "5,3\u2032,4\u2032-Trihydroxyflavone",
+    "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/5%2C3%27%2C4%27-Trihydroxyflavone/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+    "access_date": "2026-11-08",
+    "identity_review": "NOT_REVIEWED",
+    "status": "RECOVERED",
+    "sha256": "9d8fadd01ec173be2400b31b389b221e41e0e4b7ab54ff433a1edbc3ea6622d2",
+    "property_candidates": [
+      {
+        "CID": 88281,
+        "MolecularFormula": "C15H10O5",
+        "MolecularWeight": "270.24",
+        "SMILES": "C1=CC(=C2C(=C1)OC(=CC2=O)C3=CC(=C(C=C3)O)O)O",
+        "ConnectivitySMILES": "C1=CC(=C2C(=C1)OC(=CC2=O)C3=CC(=C(C=C3)O)O)O",
+        "InChI": "InChI=1S/C15H10O5/c16-9-5-4-8(6-11(9)18)14-7-12(19)15-10(17)2-1-3-13(15)20-14/h1-7,16-18H",
+        "InChIKey": "KXPQYWKYYDYOCQ-UHFFFAOYSA-N",
+        "AtomStereoCount": 0,
+        "DefinedAtomStereoCount": 0,
+        "UndefinedAtomStereoCount": 0,
+        "Title": "5,3',4'-Trihydroxyflavone"
+      }
+    ],
+    "query_basis": "SOURCE_NAME_ONLY_PENDING_MANUAL_MAPPING"
+  },
+  {
+    "source_row": "21",
+    "compound": "Ampelopsin",
+    "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/Ampelopsin/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+    "access_date": "2026-11-08",
+    "identity_review": "NOT_REVIEWED",
+    "status": "RECOVERED",
+    "sha256": "4df5b3aeaf22363497f9bf013d6f5c90094df43bd140c44ff22701aa256b2ac4",
+    "property_candidates": [
+      {
+        "CID": 161557,
+        "MolecularFormula": "C15H12O8",
+        "MolecularWeight": "320.25",
+        "SMILES": "C1=C(C=C(C(=C1O)O)O)[C@@H]2[C@H](C(=O)C3=C(C=C(C=C3O2)O)O)O",
+        "ConnectivitySMILES": "C1=C(C=C(C(=C1O)O)O)C2C(C(=O)C3=C(C=C(C=C3O2)O)O)O",
+        "InChI": "InChI=1S/C15H12O8/c16-6-3-7(17)11-10(4-6)23-15(14(22)13(11)21)5-1-8(18)12(20)9(19)2-5/h1-4,14-20,22H/t14-,15+/m0/s1",
+        "InChIKey": "KJXSIXMJHKAJOD-LSDHHAIUSA-N",
+        "AtomStereoCount": 2,
+        "DefinedAtomStereoCount": 2,
+        "UndefinedAtomStereoCount": 0,
+        "Title": "(+)-Dihydromyricetin"
+      }
+    ],
+    "query_basis": "SOURCE_NAME_ONLY_PENDING_MANUAL_MAPPING",
+    "prior_attempts": [
+      {
+        "source_row": "21",
+        "compound": "Ampelopsin",
+        "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/Ampelopsin/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+        "access_date": "2026-11-08",
+        "identity_review": "NOT_REVIEWED",
+        "status": "NOT_RECOVERED",
+        "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+      },
+      {
+        "source_row": "21",
+        "compound": "Ampelopsin",
+        "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/Ampelopsin/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+        "access_date": "2026-11-08",
+        "identity_review": "NOT_REVIEWED",
+        "status": "NOT_RECOVERED",
+        "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+      },
+      {
+        "source_row": "21",
+        "compound": "Ampelopsin",
+        "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/Ampelopsin/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+        "access_date": "2026-11-08",
+        "identity_review": "NOT_REVIEWED",
+        "status": "NOT_RECOVERED",
+        "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+      }
+    ]
+  },
+  {
+    "source_row": "22",
+    "compound": "Myricetin",
+    "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5281672/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+    "access_date": "2026-11-08",
+    "identity_review": "NOT_REVIEWED",
+    "status": "RECOVERED",
+    "sha256": "d229073bf7abcda668eae61ecfb324d4272684daa6ccef084513a3d0c4034669",
+    "property_candidates": [
+      {
+        "CID": 5281672,
+        "MolecularFormula": "C15H10O8",
+        "MolecularWeight": "318.23",
+        "SMILES": "C1=C(C=C(C(=C1O)O)O)C2=C(C(=O)C3=C(C=C(C=C3O2)O)O)O",
+        "ConnectivitySMILES": "C1=C(C=C(C(=C1O)O)O)C2=C(C(=O)C3=C(C=C(C=C3O2)O)O)O",
+        "InChI": "InChI=1S/C15H10O8/c16-6-3-7(17)11-10(4-6)23-15(14(22)13(11)21)5-1-8(18)12(20)9(19)2-5/h1-4,16-20,22H",
+        "InChIKey": "IKMDFBPHZNJCSN-UHFFFAOYSA-N",
+        "AtomStereoCount": 0,
+        "DefinedAtomStereoCount": 0,
+        "UndefinedAtomStereoCount": 0,
+        "Title": "Myricetin"
+      }
+    ],
+    "query_basis": "REFERENCE_CID",
+    "reference_key_agreement": true
+  },
+  {
+    "source_row": "23",
+    "compound": "Wogonin",
+    "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/Wogonin/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+    "access_date": "2026-11-08",
+    "identity_review": "NOT_REVIEWED",
+    "status": "RECOVERED",
+    "sha256": "1d40b9d7b13429aba42ef529392700bed49b86acdca71afd688842c570b4c340",
+    "property_candidates": [
+      {
+        "CID": 5281703,
+        "MolecularFormula": "C16H12O5",
+        "MolecularWeight": "284.26",
+        "SMILES": "COC1=C(C=C(C2=C1OC(=CC2=O)C3=CC=CC=C3)O)O",
+        "ConnectivitySMILES": "COC1=C(C=C(C2=C1OC(=CC2=O)C3=CC=CC=C3)O)O",
+        "InChI": "InChI=1S/C16H12O5/c1-20-15-12(19)7-10(17)14-11(18)8-13(21-16(14)15)9-5-3-2-4-6-9/h2-8,17,19H,1H3",
+        "InChIKey": "XLTFNNCXVBYBSX-UHFFFAOYSA-N",
+        "AtomStereoCount": 0,
+        "DefinedAtomStereoCount": 0,
+        "UndefinedAtomStereoCount": 0,
+        "Title": "Wogonin"
+      }
+    ],
+    "query_basis": "SOURCE_NAME_ONLY_PENDING_MANUAL_MAPPING",
+    "prior_attempts": [
+      {
+        "source_row": "23",
+        "compound": "Wogonin",
+        "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/Wogonin/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+        "access_date": "2026-11-08",
+        "identity_review": "NOT_REVIEWED",
+        "status": "NOT_RECOVERED",
+        "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+      },
+      {
+        "source_row": "23",
+        "compound": "Wogonin",
+        "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/Wogonin/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+        "access_date": "2026-11-08",
+        "identity_review": "NOT_REVIEWED",
+        "status": "NOT_RECOVERED",
+        "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+      }
+    ]
+  },
+  {
+    "source_row": "24",
+    "compound": "7,8-Dihydroxyflavone",
+    "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/7%2C8-Dihydroxyflavone/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+    "access_date": "2026-11-08",
+    "identity_review": "NOT_REVIEWED",
+    "status": "RECOVERED",
+    "sha256": "56ad6d06a6c05e2527709823cb7b602f4e3f20a855fef46ed71505a41576d617",
+    "property_candidates": [
+      {
+        "CID": 1880,
+        "MolecularFormula": "C15H10O4",
+        "MolecularWeight": "254.24",
+        "SMILES": "C1=CC=C(C=C1)C2=CC(=O)C3=C(O2)C(=C(C=C3)O)O",
+        "ConnectivitySMILES": "C1=CC=C(C=C1)C2=CC(=O)C3=C(O2)C(=C(C=C3)O)O",
+        "InChI": "InChI=1S/C15H10O4/c16-11-7-6-10-12(17)8-13(19-15(10)14(11)18)9-4-2-1-3-5-9/h1-8,16,18H",
+        "InChIKey": "COCYGNDCWFKTMF-UHFFFAOYSA-N",
+        "AtomStereoCount": 0,
+        "DefinedAtomStereoCount": 0,
+        "UndefinedAtomStereoCount": 0,
+        "Title": "7,8-Dihydroxyflavone"
+      }
+    ],
+    "query_basis": "SOURCE_NAME_ONLY_PENDING_MANUAL_MAPPING",
+    "prior_attempts": [
+      {
+        "source_row": "24",
+        "compound": "7,8-Dihydroxyflavone",
+        "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/7%2C8-Dihydroxyflavone/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+        "access_date": "2026-11-08",
+        "identity_review": "NOT_REVIEWED",
+        "status": "NOT_RECOVERED",
+        "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+      }
+    ]
+  },
+  {
+    "source_row": "25",
+    "compound": "Chrysin",
+    "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5281607/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+    "access_date": "2026-11-08",
+    "identity_review": "NOT_REVIEWED",
+    "status": "RECOVERED",
+    "sha256": "6e5500d3612f8b4811bb21990334ba00a517eedeaa8040092059333a135bdc05",
+    "property_candidates": [
+      {
+        "CID": 5281607,
+        "MolecularFormula": "C15H10O4",
+        "MolecularWeight": "254.24",
+        "SMILES": "C1=CC=C(C=C1)C2=CC(=O)C3=C(C=C(C=C3O2)O)O",
+        "ConnectivitySMILES": "C1=CC=C(C=C1)C2=CC(=O)C3=C(C=C(C=C3O2)O)O",
+        "InChI": "InChI=1S/C15H10O4/c16-10-6-11(17)15-12(18)8-13(19-14(15)7-10)9-4-2-1-3-5-9/h1-8,16-17H",
+        "InChIKey": "RTIXKCRFFJGDFG-UHFFFAOYSA-N",
+        "AtomStereoCount": 0,
+        "DefinedAtomStereoCount": 0,
+        "UndefinedAtomStereoCount": 0,
+        "Title": "Chrysin"
+      }
+    ],
+    "query_basis": "REFERENCE_CID",
+    "reference_key_agreement": true,
+    "prior_attempts": [
+      {
+        "source_row": "25",
+        "compound": "Chrysin",
+        "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5281607/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+        "access_date": "2026-11-08",
+        "identity_review": "NOT_REVIEWED",
+        "status": "NOT_RECOVERED",
+        "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+      }
+    ]
+  },
+  {
+    "source_row": "26",
+    "compound": "Pinocembrin",
+    "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/Pinocembrin/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+    "access_date": "2026-11-08",
+    "identity_review": "NOT_REVIEWED",
+    "status": "RECOVERED",
+    "sha256": "1c7be091bbefcf1152570283d8984489e0d484f7a15bac2f8380139d12863351",
+    "property_candidates": [
+      {
+        "CID": 68071,
+        "MolecularFormula": "C15H12O4",
+        "MolecularWeight": "256.25",
+        "SMILES": "C1[C@H](OC2=CC(=CC(=C2C1=O)O)O)C3=CC=CC=C3",
+        "ConnectivitySMILES": "C1C(OC2=CC(=CC(=C2C1=O)O)O)C3=CC=CC=C3",
+        "InChI": "InChI=1S/C15H12O4/c16-10-6-11(17)15-12(18)8-13(19-14(15)7-10)9-4-2-1-3-5-9/h1-7,13,16-17H,8H2/t13-/m0/s1",
+        "InChIKey": "URFCJEUYXNAHFI-ZDUSSCGKSA-N",
+        "AtomStereoCount": 1,
+        "DefinedAtomStereoCount": 1,
+        "UndefinedAtomStereoCount": 0,
+        "Title": "(+)-Pinocembrin"
+      }
+    ],
+    "query_basis": "SOURCE_NAME_ONLY_PENDING_MANUAL_MAPPING",
+    "prior_attempts": [
+      {
+        "source_row": "26",
+        "compound": "Pinocembrin",
+        "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/Pinocembrin/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+        "access_date": "2026-11-08",
+        "identity_review": "NOT_REVIEWED",
+        "status": "NOT_RECOVERED",
+        "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+      },
+      {
+        "source_row": "26",
+        "compound": "Pinocembrin",
+        "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/Pinocembrin/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+        "access_date": "2026-11-08",
+        "identity_review": "NOT_REVIEWED",
+        "status": "NOT_RECOVERED",
+        "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+      }
+    ]
+  },
+  {
+    "source_row": "27",
+    "compound": "Catechin",
+    "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/9064/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+    "access_date": "2026-11-08",
+    "identity_review": "NOT_REVIEWED",
+    "status": "RECOVERED",
+    "sha256": "9bcc7358e96a61b2c56e174e266e0bd52261862cacb71458fe5a3670953e9bf2",
+    "property_candidates": [
+      {
+        "CID": 9064,
+        "MolecularFormula": "C15H14O6",
+        "MolecularWeight": "290.27",
+        "SMILES": "C1[C@@H]([C@H](OC2=CC(=CC(=C21)O)O)C3=CC(=C(C=C3)O)O)O",
+        "ConnectivitySMILES": "C1C(C(OC2=CC(=CC(=C21)O)O)C3=CC(=C(C=C3)O)O)O",
+        "InChI": "InChI=1S/C15H14O6/c16-8-4-11(18)9-6-13(20)15(21-14(9)5-8)7-1-2-10(17)12(19)3-7/h1-5,13,15-20H,6H2/t13-,15+/m0/s1",
+        "InChIKey": "PFTAWBLQPZVEMU-DZGCQCFKSA-N",
+        "AtomStereoCount": 2,
+        "DefinedAtomStereoCount": 2,
+        "UndefinedAtomStereoCount": 0,
+        "Title": "Catechin"
+      }
+    ],
+    "query_basis": "REFERENCE_CID",
+    "reference_key_agreement": true,
+    "prior_attempts": [
+      {
+        "source_row": "27",
+        "compound": "Catechin",
+        "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/9064/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+        "access_date": "2026-11-08",
+        "identity_review": "NOT_REVIEWED",
+        "status": "NOT_RECOVERED",
+        "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+      },
+      {
+        "source_row": "27",
+        "compound": "Catechin",
+        "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/9064/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+        "access_date": "2026-11-08",
+        "identity_review": "NOT_REVIEWED",
+        "status": "NOT_RECOVERED",
+        "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+      }
+    ]
+  },
+  {
+    "source_row": "28",
+    "compound": "Eupatilin",
+    "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/Eupatilin/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+    "access_date": "2026-11-08",
+    "identity_review": "NOT_REVIEWED",
+    "status": "RECOVERED",
+    "sha256": "0ee044a97c94fafb79fb62b5900a74f516c20833397db48d08e2eae8aeade6a3",
+    "property_candidates": [
+      {
+        "CID": 5273755,
+        "MolecularFormula": "C18H16O7",
+        "MolecularWeight": "344.3",
+        "SMILES": "COC1=C(C=C(C=C1)C2=CC(=O)C3=C(O2)C=C(C(=C3O)OC)O)OC",
+        "ConnectivitySMILES": "COC1=C(C=C(C=C1)C2=CC(=O)C3=C(O2)C=C(C(=C3O)OC)O)OC",
+        "InChI": "InChI=1S/C18H16O7/c1-22-12-5-4-9(6-14(12)23-2)13-7-10(19)16-15(25-13)8-11(20)18(24-3)17(16)21/h4-8,20-21H,1-3H3",
+        "InChIKey": "DRRWBCNQOKKKOL-UHFFFAOYSA-N",
+        "AtomStereoCount": 0,
+        "DefinedAtomStereoCount": 0,
+        "UndefinedAtomStereoCount": 0,
+        "Title": "Eupatilin"
+      }
+    ],
+    "query_basis": "SOURCE_NAME_ONLY_PENDING_MANUAL_MAPPING"
+  },
+  {
+    "source_row": "29",
+    "compound": "Baicalein",
+    "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5281605/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+    "access_date": "2026-11-08",
+    "identity_review": "NOT_REVIEWED",
+    "status": "RECOVERED",
+    "sha256": "01c026ef2863cf2b48a19f3ae53808a8430abfa6d35855cd5d664be78413960a",
+    "property_candidates": [
+      {
+        "CID": 5281605,
+        "MolecularFormula": "C15H10O5",
+        "MolecularWeight": "270.24",
+        "SMILES": "C1=CC=C(C=C1)C2=CC(=O)C3=C(O2)C=C(C(=C3O)O)O",
+        "ConnectivitySMILES": "C1=CC=C(C=C1)C2=CC(=O)C3=C(O2)C=C(C(=C3O)O)O",
+        "InChI": "InChI=1S/C15H10O5/c16-9-6-11(8-4-2-1-3-5-8)20-12-7-10(17)14(18)15(19)13(9)12/h1-7,17-19H",
+        "InChIKey": "FXNFHKRTJBSTCS-UHFFFAOYSA-N",
+        "AtomStereoCount": 0,
+        "DefinedAtomStereoCount": 0,
+        "UndefinedAtomStereoCount": 0,
+        "Title": "Baicalein"
+      }
+    ],
+    "query_basis": "REFERENCE_CID",
+    "reference_key_agreement": true,
+    "prior_attempts": [
+      {
+        "source_row": "29",
+        "compound": "Baicalein",
+        "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5281605/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+        "access_date": "2026-11-08",
+        "identity_review": "NOT_REVIEWED",
+        "status": "NOT_RECOVERED",
+        "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+      },
+      {
+        "source_row": "29",
+        "compound": "Baicalein",
+        "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5281605/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+        "access_date": "2026-11-08",
+        "identity_review": "NOT_REVIEWED",
+        "status": "NOT_RECOVERED",
+        "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+      },
+      {
+        "source_row": "29",
+        "compound": "Baicalein",
+        "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5281605/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+        "access_date": "2026-11-08",
+        "identity_review": "NOT_REVIEWED",
+        "status": "NOT_RECOVERED",
+        "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+      }
+    ]
+  },
+  {
+    "source_row": "30",
+    "compound": "Pectolinarigenin",
+    "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/Pectolinarigenin/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+    "access_date": "2026-11-08",
+    "identity_review": "NOT_REVIEWED",
+    "status": "RECOVERED",
+    "sha256": "35ad3308795e206bee1031520ee7912ba7337cf6ab31279745b8118a14f5f178",
+    "property_candidates": [
+      {
+        "CID": 5320438,
+        "MolecularFormula": "C17H14O6",
+        "MolecularWeight": "314.29",
+        "SMILES": "COC1=CC=C(C=C1)C2=CC(=O)C3=C(O2)C=C(C(=C3O)OC)O",
+        "ConnectivitySMILES": "COC1=CC=C(C=C1)C2=CC(=O)C3=C(O2)C=C(C(=C3O)OC)O",
+        "InChI": "InChI=1S/C17H14O6/c1-21-10-5-3-9(4-6-10)13-7-11(18)15-14(23-13)8-12(19)17(22-2)16(15)20/h3-8,19-20H,1-2H3",
+        "InChIKey": "GPQLHGCIAUEJQK-UHFFFAOYSA-N",
+        "AtomStereoCount": 0,
+        "DefinedAtomStereoCount": 0,
+        "UndefinedAtomStereoCount": 0,
+        "Title": "Pectolinarigenin"
+      }
+    ],
+    "query_basis": "SOURCE_NAME_ONLY_PENDING_MANUAL_MAPPING"
+  },
+  {
+    "source_row": "31",
+    "compound": "3,5-Dihydroxyflavone",
+    "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/3%2C5-Dihydroxyflavone/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+    "access_date": "2026-11-08",
+    "identity_review": "NOT_REVIEWED",
+    "status": "RECOVERED",
+    "sha256": "956be8d9aa92d51185d0a841e5a135398a57c82d5557a61ee8e65308285e401c",
+    "property_candidates": [
+      {
+        "CID": 5393151,
+        "MolecularFormula": "C15H10O4",
+        "MolecularWeight": "254.24",
+        "SMILES": "C1=CC=C(C=C1)C2=C(C(=O)C3=C(C=CC=C3O2)O)O",
+        "ConnectivitySMILES": "C1=CC=C(C=C1)C2=C(C(=O)C3=C(C=CC=C3O2)O)O",
+        "InChI": "InChI=1S/C15H10O4/c16-10-7-4-8-11-12(10)13(17)14(18)15(19-11)9-5-2-1-3-6-9/h1-8,16,18H",
+        "InChIKey": "QHYWQIVTVQAKQF-UHFFFAOYSA-N",
+        "AtomStereoCount": 0,
+        "DefinedAtomStereoCount": 0,
+        "UndefinedAtomStereoCount": 0,
+        "Title": "3,5-Dihydroxyflavone"
+      }
+    ],
+    "query_basis": "SOURCE_NAME_ONLY_PENDING_MANUAL_MAPPING"
+  },
+  {
+    "source_row": "32",
+    "compound": "Alpinetin",
+    "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/Alpinetin/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+    "access_date": "2026-11-08",
+    "identity_review": "NOT_REVIEWED",
+    "status": "RECOVERED",
+    "sha256": "87b66512e5af631036a92ead01781e4ce5d8c6cc7e25446ba1a511eae5d930c9",
+    "property_candidates": [
+      {
+        "CID": 4053302,
+        "MolecularFormula": "C16H14O4",
+        "MolecularWeight": "270.28",
+        "SMILES": "COC1=CC(=CC2=C1C(=O)CC(O2)C3=CC=CC=C3)O",
+        "ConnectivitySMILES": "COC1=CC(=CC2=C1C(=O)CC(O2)C3=CC=CC=C3)O",
+        "InChI": "InChI=1S/C16H14O4/c1-19-14-7-11(17)8-15-16(14)12(18)9-13(20-15)10-5-3-2-4-6-10/h2-8,13,17H,9H2,1H3",
+        "InChIKey": "QQQCWVDPMPFUGF-UHFFFAOYSA-N",
+        "AtomStereoCount": 1,
+        "DefinedAtomStereoCount": 0,
+        "UndefinedAtomStereoCount": 1,
+        "Title": "Alpinetin"
+      }
+    ],
+    "query_basis": "SOURCE_NAME_ONLY_PENDING_MANUAL_MAPPING"
+  },
+  {
+    "source_row": "33",
+    "compound": "Galangin",
+    "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/Galangin/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+    "access_date": "2026-11-08",
+    "identity_review": "NOT_REVIEWED",
+    "status": "RECOVERED",
+    "sha256": "926d2b399d6da08ade93cff2df90deb5bac2f02bdce652793eb9e6d569f4256f",
+    "property_candidates": [
+      {
+        "CID": 5281616,
+        "MolecularFormula": "C15H10O5",
+        "MolecularWeight": "270.24",
+        "SMILES": "C1=CC=C(C=C1)C2=C(C(=O)C3=C(C=C(C=C3O2)O)O)O",
+        "ConnectivitySMILES": "C1=CC=C(C=C1)C2=C(C(=O)C3=C(C=C(C=C3O2)O)O)O",
+        "InChI": "InChI=1S/C15H10O5/c16-9-6-10(17)12-11(7-9)20-15(14(19)13(12)18)8-4-2-1-3-5-8/h1-7,16-17,19H",
+        "InChIKey": "VCCRNZQBSJXYJD-UHFFFAOYSA-N",
+        "AtomStereoCount": 0,
+        "DefinedAtomStereoCount": 0,
+        "UndefinedAtomStereoCount": 0,
+        "Title": "Galangin"
+      }
+    ],
+    "query_basis": "SOURCE_NAME_ONLY_PENDING_MANUAL_MAPPING"
+  },
+  {
+    "source_row": "34",
+    "compound": "Genkwanin",
+    "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/Genkwanin/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+    "access_date": "2026-11-08",
+    "identity_review": "NOT_REVIEWED",
+    "status": "RECOVERED",
+    "sha256": "ee27d6fb2737de4668ee10a9071e6d3849fa6f56f98ed9830dbce030c4844fed",
+    "property_candidates": [
+      {
+        "CID": 5281617,
+        "MolecularFormula": "C16H12O5",
+        "MolecularWeight": "284.26",
+        "SMILES": "COC1=CC(=C2C(=C1)OC(=CC2=O)C3=CC=C(C=C3)O)O",
+        "ConnectivitySMILES": "COC1=CC(=C2C(=C1)OC(=CC2=O)C3=CC=C(C=C3)O)O",
+        "InChI": "InChI=1S/C16H12O5/c1-20-11-6-12(18)16-13(19)8-14(21-15(16)7-11)9-2-4-10(17)5-3-9/h2-8,17-18H,1H3",
+        "InChIKey": "JPMYFOBNRRGFNO-UHFFFAOYSA-N",
+        "AtomStereoCount": 0,
+        "DefinedAtomStereoCount": 0,
+        "UndefinedAtomStereoCount": 0,
+        "Title": "Genkwanin"
+      }
+    ],
+    "query_basis": "SOURCE_NAME_ONLY_PENDING_MANUAL_MAPPING",
+    "prior_attempts": [
+      {
+        "source_row": "34",
+        "compound": "Genkwanin",
+        "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/Genkwanin/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+        "access_date": "2026-11-08",
+        "identity_review": "NOT_REVIEWED",
+        "status": "NOT_RECOVERED",
+        "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+      }
+    ]
+  },
+  {
+    "source_row": "35",
+    "compound": "Primuletin",
+    "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/Primuletin/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+    "access_date": "2026-11-08",
+    "identity_review": "NOT_REVIEWED",
+    "status": "RECOVERED",
+    "sha256": "6de8fe8c0efd9da4dc80943f78572bbbc8103dc77c67c6ac4345054b82cfc334",
+    "property_candidates": [
+      {
+        "CID": 68112,
+        "MolecularFormula": "C15H10O3",
+        "MolecularWeight": "238.24",
+        "SMILES": "C1=CC=C(C=C1)C2=CC(=O)C3=C(C=CC=C3O2)O",
+        "ConnectivitySMILES": "C1=CC=C(C=C1)C2=CC(=O)C3=C(C=CC=C3O2)O",
+        "InChI": "InChI=1S/C15H10O3/c16-11-7-4-8-13-15(11)12(17)9-14(18-13)10-5-2-1-3-6-10/h1-9,16H",
+        "InChIKey": "IYBLVRRCNVHZQJ-UHFFFAOYSA-N",
+        "AtomStereoCount": 0,
+        "DefinedAtomStereoCount": 0,
+        "UndefinedAtomStereoCount": 0,
+        "Title": "5-Hydroxyflavone"
+      }
+    ],
+    "query_basis": "SOURCE_NAME_ONLY_PENDING_MANUAL_MAPPING",
+    "prior_attempts": [
+      {
+        "source_row": "35",
+        "compound": "Primuletin",
+        "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/Primuletin/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+        "access_date": "2026-11-08",
+        "identity_review": "NOT_REVIEWED",
+        "status": "NOT_RECOVERED",
+        "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+      },
+      {
+        "source_row": "35",
+        "compound": "Primuletin",
+        "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/Primuletin/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+        "access_date": "2026-11-08",
+        "identity_review": "NOT_REVIEWED",
+        "status": "NOT_RECOVERED",
+        "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+      },
+      {
+        "source_row": "35",
+        "compound": "Primuletin",
+        "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/Primuletin/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+        "access_date": "2026-11-08",
+        "identity_review": "NOT_REVIEWED",
+        "status": "NOT_RECOVERED",
+        "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+      }
+    ]
+  },
+  {
+    "source_row": "36",
+    "compound": "Tectochrysin",
+    "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/Tectochrysin/property/Title,MolecularFormula,MolecularWeight,InChIKey,InChI,IsomericSMILES,CanonicalSMILES,AtomStereoCount,DefinedAtomStereoCount,UndefinedAtomStereoCount/JSON",
+    "access_date": "2026-11-08",
+    "identity_review": "NOT_REVIEWED",
+    "status": "RECOVERED",
+    "sha256": "fb26546c1138190fd1c75f987b00afe1f48a0cc241a8ab01f1be7fed1193e6d7",
+    "property_candidates": [
+      {
+        "CID": 5281954,
+        "MolecularFormula": "C16H12O4",
+        "MolecularWeight": "268.26",
+        "SMILES": "COC1=CC(=C2C(=C1)OC(=CC2=O)C3=CC=CC=C3)O",
+        "ConnectivitySMILES": "COC1=CC(=C2C(=C1)OC(=CC2=O)C3=CC=CC=C3)O",
+        "InChI": "InChI=1S/C16H12O4/c1-19-11-7-12(17)16-13(18)9-14(20-15(16)8-11)10-5-3-2-4-6-10/h2-9,17H,1H3",
+        "InChIKey": "IRZVHDLBAYNPCT-UHFFFAOYSA-N",
+        "AtomStereoCount": 0,
+        "DefinedAtomStereoCount": 0,
+        "UndefinedAtomStereoCount": 0,
+        "Title": "Tectochrysin"
+      }
+    ],
+    "query_basis": "SOURCE_NAME_ONLY_PENDING_MANUAL_MAPPING"
+  }
+]

@@ -1,0 +1,66 @@
+# ORAC-FL model development
+
+## ORAC-FL capacity model and validation protocol
+
+On 2026-11-08 the researcher selected ORAC-FL molar capacity as the first modelling endpoint, followed by empirical validation of transfer to a future absorbance assay. This decision does not approve individual evidence rows, target conditions or a final ranking. The machine-readable rules are `inputs/model_protocol_v0.1.json`; run `check_model_protocol.py` for the current fold-design diagnostic.
+
+The first comparison is an interpretable within-family baseline versus a study/condition-adjusted model, if its effects are estimable. Do not fit a complex model merely to obtain a complete candidate order. The primary score is expected conditional capacity, with uncertainty alongside it. Estimator family, vehicle, timing and other target conditions must be fixed or explicitly stratified before interpreting a common ranking. Methodological differences are not automatically proof that adjustment is impossible; they require data and validated assumptions.
+
+Validation holds out complete papers/data-generating studies, including all their doses and technical replicates. Reused data across papers must be grouped together. All preprocessing and tuning remain within training folds. Structural models additionally need scaffold/applicability checks and evaluation on unseen compounds. Assess prediction errors, uncertainty calibration and rank stability where held-out comparable data support them. No numerical acceptance threshold is invented at this stage.
+
+The current nine-row model-candidate subset has three papers and no compound measured in more than one of them. Every leave-paper-out fold therefore contains entirely unseen test compounds. A compound-identity-only model cannot predict those held-out effects. This does not apply automatically to a future structure-based model, nor does it imply the broader 99-row inventory lacks overlaps. New source-rechecked bridges are not yet eligible for a common-effect fit. The immediate data task is to close method/scale/error gates on the bridge observations, then rebuild model inputs and reassess the folds.
+
+First implement supported family-specific analyses. Only adopt a more complex model when its held-out performance and assumptions support the target. ORAC-FL prediction and absorbance transfer remain two distinct validation stages. No new score, final Top20 or scientific approval is generated here.
+
+
+## Extended model-input review
+
+Run `build_extended_model_inputs.py` after `build_analysis_entry.py`. It replaces reliance on the nine-row preparation subset with an explicit review of all 31 rechecked observations in the 99-row inventory. This is a proposed modelling view, not evidence approval. Separately extracted leads outside that inventory are not silently appended.
+
+The view contains eight papers, two source-identity holds and 29 observations usable for source-specific description. Three conditional variance candidates retain their original assumptions; they are not approved meta-analysis weights. Seven estimator/scale-review families expose unresolved transformations and protocols. These families are working review partitions, not a claim that harmonization is theoretically impossible. In particular, mass normalization is a transformation issue rather than a separate chemical assay; its row remains separate until the target estimator and experimental conditions are reviewed.
+
+The slope-ratio family contains two papers but no common compounds in this integrated subset; its papers also differ in protocol conditions. Other groups currently contain one paper each. Therefore no supported leave-paper-out validation of compound-identity effects is available within these working partitions. This does not rule out a structure-based model or an explicitly justified hierarchical model; neither has yet demonstrated predictive performance. Do not turn source-group administrative separation into a claim that these methods measure unrelated biology.
+
+Next expand original experimental labels and material/endpoint annotations together. The existing 36-flavonoid log-scale extraction is a useful source-specific candidate for a structural prediction baseline, but must first be mapped to the food-chemical universe and checked for raw-scale/error interpretation and scaffold coverage. It cannot substitute for cross-study external validation. Decide and document the target estimator/conditions before reporting a global capacity rank. No fitted coefficient, validation metric or Top20 is invented here.
+
+Outputs: `results/Extended_Model_Input_Review.csv`, `results/Extended_Validation_Feasibility.csv` and `results/extended_model_readiness.json`. Original sources, scientific review states and frozen rankings remain unchanged.
+
+
+## Source-label crosswalk and null prediction benchmark
+
+Run `map_flavonoid_labels.py`. Of 36 original experimental log-ORAC rows, 16 match current candidate names exactly and 20 do not. Exact matches carry reference CID, InChIKey and formula but still require source-form equivalence. Unmatched compounds are not assigned existing candidate IDs or added to the food panel. No synonym, stereochemistry or glycoside substitution is inferred from a similar name.
+
+The script establishes an intercept-only prediction benchmark using all 36 source labels. For each held-out source row, the prediction is the mean of the other 35 log-ORAC values. Internal MAE is approximately 0.663 and RMSE 0.873 on the natural-log scale. These are null-model errors, not demonstrated structure-model performance or external validation. No error bars from the source table enter the calculation; their experimental statistic remains unresolved. The benchmark uses source rows outside the current candidate universe solely to characterize this source dataset, not to nominate them for experiments.
+
+The next structural model must improve on a suitable null baseline under a declared validation design. All labels currently come from one paper, so a held-out-paper test is unavailable within this dataset. Row-wise internal assessment must not be presented as independent-study generalization. Obtain validated molecular graphs/descriptors for all intended training rows, document stereochemistry and source identity, and assess scaffold grouping before selecting model complexity. Molecular formula alone does not distinguish positional isomers or provide a complete structure representation. The current default Python environment has no RDKit/scikit-learn/numpy available; no dependency has been installed and no graph descriptors invented.
+
+Current outputs are `results/Flavonoid_Candidate_Crosswalk.csv`, `results/Flavonoid_Null_Baseline.csv` and `results/flavonoid_mapping_qc.json`. No structural coefficients, new-candidate predictions, global capacity ranks or human approvals are generated. All original and frozen records remain unchanged.
+
+
+## Structure mapping and grouped validation
+
+`recover_flavonoid_structures.py` is an explicit online PubChem refresh. It requests stored CIDs for mapped candidates and names for unmatched source rows. Responses, hashes and multiple-hit information are retained in `inputs/flavonoid_structure_candidates.json`; raw responses stay local. Run `audit_flavonoid_structures.py` to reproduce the scoped audit offline.
+
+A PubChem record is a candidate graph. Reference InChIKey agreement does not establish the original experimental material's stereochemistry. Name-only hits require comparison against the source's explicit structure; no record is promoted into the food universe automatically. For stereogenic structures, compare original drawing, supplementary optimized geometry and reagent identity. Do not assign an enantiomer from a common name or assume a racemate.
+
+Validation design: first group identical constitutional connectivity (InChIKey first block) so stereoisomers or duplicate graphs cannot appear on both sides of a split. This is a leakage-control key, not a Bemis-Murcko scaffold. Then compute non-isomeric Bemis-Murcko scaffolds with a pinned graph toolkit and inspect whether generic ring frameworks collapse too many flavonoids into one group. If they do, report the collapse and compare predeclared scaffold and fingerprint-cluster splits without tuning the split to improve performance. Cluster thresholds and fold count remain unset until the graph coverage and group sizes are inspected. No invented scaffold folds are exported.
+
+Keep all observations for a compound and all reused data together. Fit descriptors, preprocessing and model tuning within training folds. Report unseen-structure prediction against the intercept-only baseline, with group sizes, unsupported folds and applicability domain. One-paper internal structural validation remains distinct from leave-study-out external validation. No structure model is fitted until graph mapping and grouping are checked.
+
+## Computed scaffold update, 2026-11-08
+
+All 36 candidate graphs are now available and parse with RDKit 2026.09.1. One graph (CID 145826) uses the exact fields from a successful short API response retained as a structured extraction, not raw HTTP bytes; its atom stereo counts remain missing. The other 35 have cached-response provenance. `build_scaffold_groups.py` computes five non-isomeric RDKit Murcko groups with sizes 23, 8, 3, 1 and 1; genericization yields four frameworks. These are provisional database-graph groups, not approved original-material identities. Same-connectivity grouping is asserted, including Catechin/Epicatechin.
+
+Install the pinned `requirements_structure.txt` into the ignored `.runtime_chem` directory using Python 3.12, then run the structure and stereo audit builders followed by `build_scaffold_groups.py`. No runtime packages are research deliverables or Git inputs. The generated `results/Flavonoid_Scaffold_Groups.csv` and `results/scaffold_group_qc.json` record group membership and toolkit version. A leave-scaffold-out design must report its 1-member test groups and the 23-member dominant group; random row CV is not a substitute. Source drawings and supplementary geometries are still unreviewed because source access was unavailable; source-material stereochemistry is not approved.
+
+## Error diagnosis and feature sensitivity
+
+The four-descriptor representation has eight collision sets, including Catechin/Epicatechin, Quercetin/Morin and several differently hydroxylated positional isomers. Six held-out rows have at least one descriptor outside their corresponding training range. These observations identify limited representation and coverage, not a demonstrated causal explanation for source-label differences. Adding phenolic-OH and aryl-methoxy counts changes pooled MAE/RMSE to 0.673/0.927 versus the matched mean baseline 0.689/0.953. This is a small post-hoc gain, not independent confirmation. Neither source labels nor test groups were changed. The next model-development step should evaluate positional graph information and label/material consistency, then seek a new independent-study test set; repeating model selection on these same outer folds cannot supply that test. No final ranking is justified yet. Methods and Results include this distinction and reproduction commands.
+
+## Morgan fingerprint sensitivity
+
+Radius-2, 1024-bit non-chiral Morgan fingerprints yield 35 distinct vectors for the 36 candidate graphs. Using the same nested scaffold protocol, ridge MAE/RMSE are 0.652/0.914 versus the mean baseline 0.689/0.953. Four of five scaffold folds improve by MAE, but the three-member catechin-related fold worsens to 0.922 versus 0.350. This subgroup failure must remain visible; pooled improvement is not a validated global rank. Catechin/Epicatechin retain identical fingerprints because chirality is deliberately excluded pending source-material identity checks. No labels were changed, and no outer fold was omitted. This is post-hoc method development; further model selection on these same labels does not create independent confirmation. Methods/Results document the procedure and references.
+
+## Reproduce this model-development milestone
+
+With Python 3.12, install `requirements_structure.txt` into `.runtime_chem` at the project root, then run `python 03_candidate_selection/01_activity_model/run_model_checks.py`. This offline entry rebuilds preparation tables, candidate graph audits, scaffold groups, the four-descriptor, six-descriptor and Morgan comparisons, diagnostics and manuscript Results. It does not refresh network sources, approve source identity, predict a final panel or modify frozen observations. Package files remain ignored. The default `run_pipeline.py --tables-only` remains the core evidence workflow; structural development is an explicit additional step.

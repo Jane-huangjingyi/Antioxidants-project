@@ -1,0 +1,17 @@
+{
+  "records": 36,
+  "database_stereo_counts": {
+    "NO_ATOM_STEREOCENTRES_REPORTED_NOT_FULL_STEREO_APPROVAL": 23,
+    "DATABASE_ATOM_STEREO_SPECIFIED_SOURCE_MATCH_PENDING": 11,
+    "DATABASE_ATOM_STEREO_COUNTS_NOT_RETRIEVED": 1,
+    "DATABASE_ATOM_STEREO_UNSPECIFIED": 1
+  },
+  "shared_connectivity_groups": [
+    [
+      "Epicatechin",
+      "Catechin"
+    ]
+  ],
+  "source_stereo_approved": 0,
+  "scaffold_groups_computed": false
+}

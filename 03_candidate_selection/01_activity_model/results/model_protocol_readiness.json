@@ -1,0 +1,16 @@
+{
+  "status": "PROTOCOL_DEFINED_NOT_FITTED",
+  "endpoint_decision": "ORAC_FL_MOLAR_CAPACITY_FIRST_THEN_EMPIRICAL_ABSORBANCE_TRANSFER_VALIDATION",
+  "model_candidate_rows": 9,
+  "papers": 3,
+  "leave_paper_out_folds": 3,
+  "folds_without_seen_test_compounds": 3,
+  "unset_target_condition_fields": [
+    "pH",
+    "temperature_C",
+    "vehicle",
+    "integration_window_minutes",
+    "estimator_family"
+  ],
+  "ranking_generated": false
+}

@@ -30,3 +30,18 @@ claims=[{'claim':'A versioned food-chemical discovery workflow was implemented',
 write_csv(out/'tables/Manuscript_Claim_Map.csv',claims)
 write_json(ROOT/'07_quality_control/descriptive_summary.json',{'metrics':[{'stage':a,'count':b} for a,b,_ in metrics],'frozen_preview_overlap':len(old&new),'new_preview_members':sorted(new-old),'omitted_frozen_reference_members':sorted(old-new),'publication_claim_limits_recorded':True})
 print('06: manuscript Methods-linked descriptive Results and tables generated from actual workflow outputs.')
+struct_summary=ROOT/'03_candidate_selection/01_activity_model/results/scaffold_validation_summary.json'
+if struct_summary.exists():
+ s=read_json(struct_summary);r=s['metrics']['ridge'];n=s['metrics']['null']
+ with (out/'Results.md').open('a',encoding='utf-8') as f:
+  f.write(f"\n\n## Exploratory structural validation\n\nThe 36 single-paper log-ORAC labels and database candidate graphs were evaluated by nested leave-one-scaffold-group-out validation (five groups: 23, 8, 3, 1 and 1). Four-descriptor ridge regression yielded pooled MAE {r['MAE']:.3f} and RMSE {r['RMSE']:.3f}, compared with {n['MAE']:.3f} and {n['RMSE']:.3f} for the matched training-mean baseline. The model did not show a consistent improvement across these two metrics. These are exploratory internal errors, not independent-study validation or established performance for verified experimental structures. No global ranking was generated. Per-fold errors are provided in the structural validation tables.\n")
+ aug=ROOT/'03_candidate_selection/01_activity_model/results/augmented_scaffold_validation_summary.json'
+ if aug.exists():
+  a=read_json(aug)['metrics']['ridge']
+  with (out/'Results.md').open('a',encoding='utf-8') as f:
+   f.write(f"\nAdding phenolic-OH and aryl-methoxy counts in a post-hoc sensitivity analysis gave MAE {a['MAE']:.3f} and RMSE {a['RMSE']:.3f}. This small improvement is exploratory, since feature selection followed inspection of initial validation results. It does not establish an independently validated ranking model.\n")
+ fp=ROOT/'03_candidate_selection/01_activity_model/results/fingerprint_scaffold_validation_summary.json'
+ if fp.exists():
+  v=read_json(fp);m=v['metrics']['ridge']
+  with (out/'Results.md').open('a',encoding='utf-8') as f:
+   f.write(f"\nA further post-hoc Morgan-fingerprint analysis yielded MAE {m['MAE']:.3f} and RMSE {m['RMSE']:.3f}, with {v['unique_feature_vectors']} distinct vectors across 36 candidate structures. Pooled errors improved relative to the mean baseline, but the three-member catechin-related scaffold group worsened (MAE 0.922 versus 0.350). This heterogeneous result does not support a final global ranking. Chirality was excluded and source-material stereochemistry remained unresolved.\n")

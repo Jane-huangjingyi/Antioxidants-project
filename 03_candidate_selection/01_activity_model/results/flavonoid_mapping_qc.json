@@ -1,0 +1,12 @@
+{
+  "source_rows": 36,
+  "exact_name_matches": 16,
+  "unmatched_rows": 20,
+  "source_papers": 1,
+  "null_baseline_scale": "ln(ORAC)",
+  "null_MAE": 0.6629714285714285,
+  "null_RMSE": 0.8727680534380488,
+  "structure_model_fitted": false,
+  "external_validation_performed": false,
+  "ranking_generated": false
+}

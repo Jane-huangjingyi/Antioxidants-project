@@ -1,0 +1,15 @@
+{
+  "rdkit_version": "2026.09.1",
+  "total_rows": 36,
+  "parsed_graphs": 36,
+  "murcko_group_sizes": {
+    "fc820c9a96f9": 1,
+    "45fb616e3860": 8,
+    "fed240b321b8": 1,
+    "bf0b7f58151c": 23,
+    "3b65137c792c": 3
+  },
+  "generic_scaffold_count": 4,
+  "source_identity_approved": 0,
+  "formal_folds_generated": false
+}

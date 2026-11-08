@@ -1,0 +1,9 @@
+{
+  "rows": 36,
+  "recovered": 36,
+  "unique_single_hit_graphs": 36,
+  "isomeric_smiles_present": 36,
+  "reference_key_conflicts": 0,
+  "source_stereochemistry_approved": 0,
+  "scaffold_folds_generated": false
+}

@@ -42,3 +42,6 @@ desktop.ini
 # IDE-local settings
 .vscode/
 .idea/
+
+# Local chemistry runtime (not research data)
+.runtime_chem/
