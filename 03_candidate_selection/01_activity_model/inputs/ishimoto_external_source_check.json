@@ -1,0 +1,14 @@
+{
+ "doi":"10.1271/bbb.110717",
+ "source_url":"https://www.jstage.jst.go.jp/article/bbb/advpub/0/advpub_110717/_pdf",
+ "access_date":"2026-11-08",
+ "version_scope":"Advance View Proofs; five-page original article, parsed text; figure error bars not digitized",
+ "protocol":{"pH":7.0,"temperature_C":37,"duration_minutes":90,"read_interval_minutes":2,"estimator":"Quadratic concentration/net-AUC regression","replication":"Mean plus/minus SD from 3 separate experiments","vehicle":"Stock acetone/water/acetic acid 70:29.5:0.5 diluted in buffer; final solvent fraction unresolved"},
+ "records":[
+  {"candidate_id":"AFF-0001","source_name":"(+)-Catechin","mean":9.0,"unit":"mol TE/mol","numeric_SD":null,"locator":"Results p.4, paragraph beginning (+)-Catechin; Figure 1 and Figure 2"},
+  {"candidate_id":"AFF-0002","source_name":"(-)-Epicatechin","mean":10.0,"unit":"mol TE/mol","numeric_SD":null,"locator":"Results p.4, paragraph beginning (+)-Catechin; Figure 1 and Figure 2"}
+ ],
+ "decision":"Original means and named stereoisomers verified; study/material equivalence and protocol harmonization pending. Retrospective source, not blind test. No fitted-model changes.",
+ "human_review_status":"NOT_REVIEWED",
+ "change_applied":"NO"
+}

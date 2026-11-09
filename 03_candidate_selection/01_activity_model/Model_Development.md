@@ -64,3 +64,33 @@ Radius-2, 1024-bit non-chiral Morgan fingerprints yield 35 distinct vectors for 
 ## Reproduce this model-development milestone
 
 With Python 3.12, install `requirements_structure.txt` into `.runtime_chem` at the project root, then run `python 03_candidate_selection/01_activity_model/run_model_checks.py`. This offline entry rebuilds preparation tables, candidate graph audits, scaffold groups, the four-descriptor, six-descriptor and Morgan comparisons, diagnostics and manuscript Results. It does not refresh network sources, approve source identity, predict a final panel or modify frozen observations. Package files remain ignored. The default `run_pipeline.py --tables-only` remains the core evidence workflow; structural development is an explicit additional step.
+
+## Catechin labels and independent-source preparation
+
+`audit_catechin_and_external_sources.py` checks the three original catechin-related log labels against legacy back-transformed numbers. All three legacy rows have a scale/unit-label conflict; the training labels already use the original log column, so no label repair changes model metrics. The script constructs a retrospective queue of 28 observations from ten other papers covering 13 mapped compounds. These are not yet approved external labels, and they are not blind data. DOI/source independence, method equivalence, exact scale and material identity must close before test-set locking. The ORBi record for 10.1016/j.foodchem.2008.08.013 currently offers request-copy rather than accessible original numeric text; no request was sent and no full-text reading claimed. Other DOI access attempts did not recover new original tables this round.
+
+## First retrospective external-source recovery
+
+The original Ishimoto advance-view PDF (10.1271/bbb.110717) explicitly reports (+)-Catechin 9.0 and (-)-Epicatechin 10.0 mol TE/mol in its Results. Methods specify pH 7.0, 37 C, 90-minute observations and quadratic concentration/net-AUC regression. SD is defined for three separate experiments but numeric SDs were not estimated from figure bars. The scoped extraction is `inputs/ishimoto_external_source_check.json`. Two rows in the external-source queue now carry verified original means and source named isomers, but remain pending common-target and material-equivalence review; no external metric, fit or blind-test claim is generated. The retrieved version is labelled advance-view rather than final pagination.
+
+## Second external-source check
+
+Rothe Table 6 experimental ORAC means and reported plus/minus values were verified in the original open-access PDF. The external queue now contains four original-mean checks across two papers. Normalization, pure-compound errors and material equivalence remain unresolved; beer or literature columns were not imported as experimental compound labels. No model was refitted or scored against this queue. Methods reference 8 documents this scope.
+
+## Retrospective protocol-shift diagnostic
+
+Run `python 03_candidate_selection/01_activity_model/run_model_checks.py` from the root to regenerate development models, source checks, the pressure test and manuscript outputs. Development-only group CV selected alpha 10. Both known compounds received log prediction 1.5796, below source log arithmetic means 2.1972 and 2.3026. Model MAE/RMSE were 0.6703/0.6724, compared with 0.9690/0.9704 for the development-mean baseline. This two-observation retrospective diagnostic does not establish external or new-structure validity. Material identity, summary-estimand differences and missing numeric SD remain unresolved. No ranking or settings were changed using these outcomes; common-target validation remains HOLD.
+
+## Rothe targeted source decision
+
+The 2026-11-08 recheck retained both Table 6 records on HOLD. Checked sections establish TE calibration and four measurements but do not close the pure-compound molar denominator, hydrate concentration basis, epicatechin reagent identity or plus/minus definition. See the structured `targeted_recheck` in `inputs/rothe_external_source_check.json` and row-specific requirements in `results/External_Comparability_Decisions.csv`. No numeric conversion, pressure-test expansion, variance weighting or training update was performed. Source-method references do not supply missing details of this experiment. The next useful evidence is original calculation/material documentation or additional directly normalized studies.
+
+## Matched-calibrator gate
+
+The Carvalho recheck closes the molar-estimator trace for one queued record. A matched-matrix calibrator is now explicit in the source decision; the row stays outside fitting and pressure testing until remaining material and estimand checks close. Source audit totals: five original means across three papers; zero approved common-target external labels. Existing model settings and n=2 diagnostic are unchanged.
+
+## Batch external-source and modelling-readiness milestone
+
+The offline runner now also generates paper-level readiness and scoped connectivity tables. Six means across four papers have been checked, including baicalein with an explicitly reported SEM; four records have traced molar estimators. No common-target external label is released. The ten-paper queue has no repeated observation key, which does not close shared-data independence. Three ACS originals were denied, one repository offers request-copy access, and two further sources remain preview/access-limited. These are access findings, not negative activity evidence.
+
+The external-only graph and the development-anchored graph are reported separately. Adding four traced external observations to all 36 development rows connects the design (40 edges, rank 39), with only one redundant edge. Material/protocol/estimand gates remain decisive. No cross-paper model or rank is fitted. Priority is original multi-compound tables with shared verified compounds, followed by source-specific identity and estimator checks; additional model architectures cannot replace those inputs.

@@ -1,0 +1,72 @@
+{
+  "10.1021/jp307746c": {
+    "date": "2026-11-09",
+    "status": "PUBLISHER_403_NO_ORIGINAL_TABLE_RECOVERED",
+    "url": "https://pubs.acs.org/doi/10.1021/jp307746c",
+    "scope": "Publisher request denied; search metadata not original numeric verification",
+    "next_requirement": "Legally accessible original table, Methods and dataset reuse audit"
+  },
+  "10.1021/jf010586o": {
+    "date": "2026-11-09",
+    "status": "PUBLISHER_403_NO_ORIGINAL_TABLE_RECOVERED",
+    "url": "https://pubs.acs.org/doi/10.1021/jf010586o",
+    "scope": "Publisher request denied; search metadata not original numeric verification",
+    "next_requirement": "Legally accessible original table, Methods and dataset reuse audit"
+  },
+  "10.1021/jf0305231": {
+    "date": "2026-11-09",
+    "status": "PUBLISHER_403_NO_ORIGINAL_TABLE_RECOVERED",
+    "url": "https://pubs.acs.org/doi/10.1021/jf0305231",
+    "scope": "Publisher request denied; search metadata not original numeric verification",
+    "next_requirement": "Legally accessible original table, Methods and dataset reuse audit"
+  },
+  "10.1016/j.foodchem.2008.08.013": {
+    "date": "2026-11-09",
+    "status": "REPOSITORY_REQUEST_COPY_ONLY",
+    "url": "https://orbi.uliege.be/handle/2268/3247",
+    "scope": "Repository record and publisher snippets; no full table",
+    "next_requirement": "Original table and ORAC probe/normalization; do not use snippets as labels"
+  },
+  "10.1007/s12039-019-1618-5": {
+    "date": "2026-11-09",
+    "status": "PUBLISHER_SUBSCRIPTION_PREVIEW_ONLY",
+    "url": "https://link.springer.com/article/10.1007/s12039-019-1618-5",
+    "scope": "Abstract only; individual versus mixture values not checked",
+    "next_requirement": "Original pure-compound control table and protocol, separate mixture arms"
+  },
+  "10.1093/chromsci/bmad007": {
+    "date": "2026-11-09",
+    "status": "DOI_ACCESS_FAILED_NO_FULLTEXT_RECOVERED",
+    "url": "https://doi.org/10.1093/chromsci/bmad007",
+    "scope": "DOI tool access failed; historical mass-to-mole conversion unverified",
+    "next_requirement": "Original Table I, material form and molecular-weight conversion basis"
+  },
+  "10.1271/bbb.110717": {
+    "date": "2026-11-09",
+    "status": "ORIGINAL_NUMERIC_TEXT_RECHECKED_OTHER_GATES_PENDING",
+    "url": "https://www.jstage.jst.go.jp/article/bbb/advpub/0/advpub_110717/_pdf",
+    "scope": "Advance View Proofs; five-page original article, parsed text; figure error bars not digitized",
+    "next_requirement": "Original means and named stereoisomers verified; study/material equivalence and protocol harmonization pending. Retrospective source, not blind test. No fitted-model changes."
+  },
+  "10.1007/s00217-022-04135-3": {
+    "date": "2026-11-09",
+    "status": "ORIGINAL_NUMERIC_TEXT_RECHECKED_OTHER_GATES_PENDING",
+    "url": "https://d-nb.info/1277718563/34",
+    "scope": "Original open-access article PDF, Table 6 PDF page 11; publisher Methods checked",
+    "next_requirement": "Experimental columns verified, excluding literature columns and beer/spiking values; material, normalization and error scope pending"
+  },
+  "10.3390/antiox12020505": {
+    "date": "2026-11-09",
+    "status": "ORIGINAL_NUMERIC_TEXT_RECHECKED_OTHER_GATES_PENDING",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9951910/",
+    "scope": "Previously recovered original NCBI BioC text/tables; live PMC request returned CAPTCHA; no figures/supplement inspected",
+    "next_requirement": "Molar estimator traced; material/summary/protocol HOLD; not new study; no model update"
+  },
+  "10.3390/pharmaceutics14102141": {
+    "date": "2026-11-09",
+    "status": "ORIGINAL_NUMERIC_TEXT_RECHECKED_OTHER_GATES_PENDING",
+    "url": "https://www.research.unipd.it/retrieve/51ae60e0-1f47-44cb-b1fa-17c6d292ecaa/pharmaceutics-14-02141%20%281%29.pdf",
+    "scope": "Institutional original PDF parsed text; Results 2.2.2, Fig 6 caption, Methods 3.1/3.3.2/3.6; no supplementary inspection",
+    "next_requirement": "Explicit molar mean and SEM recovered; row n, pH, vehicle and estimator detail pending; no model update"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "doi": "10.3390/antiox12020505",
+  "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9951910/",
+  "access_date": "2026-11-09",
+  "version_scope": "Previously recovered original NCBI BioC text/tables; live PMC request returned CAPTCHA; no figures/supplement inspected",
+  "source_sha256": "723f851cda0729c2975520199f2f2792571bd17df42dc92c09c870d57a6139e5",
+  "protocol": {
+    "pH": 7.4,
+    "temperature_C": 37,
+    "vehicle": "5% ethanol, matched Trolox",
+    "estimator": "AUC calibration-slope ratio",
+    "replication": "Triplicate standards, two days; effective ratio n unresolved",
+    "error_scope": "Plus/minus undefined"
+  },
+  "records": [
+    {
+      "candidate_id": "AFF-0009",
+      "source_name": "Quercetin dihydrate",
+      "mean": 16.62,
+      "reported_plus_minus": 1.32,
+      "unit": "mol TE/mol, matched molar slope ratio",
+      "numeric_SD": null,
+      "locator": "BioC offsets 8595,9020,14276,18163,44632,46065; Table 3 AUC",
+      "material_gate": "DIHYDRATE_CONCENTRATION_BASIS_PENDING",
+      "auc_compound_slope": 99.22,
+      "auc_matched_trolox_slope": 5.97,
+      "ratio_check": 16.619765494137354,
+      "wrong_buffer_trolox_slope": 5.25,
+      "wrong_matrix_ratio": 18.899047619047618
+    }
+  ],
+  "decision": "Molar estimator traced; material/summary/protocol HOLD; not new study; no model update",
+  "human_review_status": "NOT_REVIEWED",
+  "change_applied": "NO"
+}

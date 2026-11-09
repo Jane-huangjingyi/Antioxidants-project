@@ -45,3 +45,15 @@ if struct_summary.exists():
   v=read_json(fp);m=v['metrics']['ridge']
   with (out/'Results.md').open('a',encoding='utf-8') as f:
    f.write(f"\nA further post-hoc Morgan-fingerprint analysis yielded MAE {m['MAE']:.3f} and RMSE {m['RMSE']:.3f}, with {v['unique_feature_vectors']} distinct vectors across 36 candidate structures. Pooled errors improved relative to the mean baseline, but the three-member catechin-related scaffold group worsened (MAE 0.922 versus 0.350). This heterogeneous result does not support a final global ranking. Chirality was excluded and source-material stereochemistry remained unresolved.\n")
+
+pressure=ROOT/'03_candidate_selection/01_activity_model/results/pressure_test_summary.json'
+if pressure.exists():
+ s=read_json(pressure);m=s['metrics']['model'];n=s['metrics']['null']
+ with (out/'Results.md').open('a',encoding='utf-8') as f:
+  f.write(f"\n## Retrospective protocol-shift pressure test\n\nThe separately authorized two-observation diagnostic used explicit molar means from DOI 10.1271/bbb.110717. Development-only scaffold CV selected alpha {s['selected_alpha']:g}; external values were not used for tuning. Both known compounds received log prediction 1.5796, below source log arithmetic means 2.1972 (Catechin) and 2.3026 (Epicatechin). Descriptive model MAE/RMSE were {m['MAE']:.3f}/{m['RMSE']:.3f}, compared with {n['MAE']:.3f}/{n['RMSE']:.3f} for the development-mean baseline. These observations compare different summary estimands and protocols; they establish neither formal external validation nor new-structure validity. No ranking was updated. Individual residuals are recorded in Retrospective_Pressure_Test.csv.\n")
+
+external=ROOT/'03_candidate_selection/01_activity_model/results/external_validation_readiness.json'
+if external.exists():
+ s=read_json(external);g=s['graphs'][-1]
+ with (out/'Results.md').open('a',encoding='utf-8') as f:
+  f.write(f"\n## External evidence readiness\n\nThe retrospective queue contained {s['queue_observations']} observations across {s['papers']} papers. Original numeric text was rechecked for {s['original_means_rechecked']} observations; molar-estimator provenance was traced for {s['molar_estimator_traced_observations']}, while {s['approved_external_labels']} common-target external labels were released. No duplicate observation keys were found, but cross-paper data-generation independence remained unresolved. Adding traced external observations to the 36 development rows produced one connected topology ({g['unique_compound_paper_edges']} edges, additive indicator-design rank {g['additive_design_rank']}, topological redundancy {g['edge_cycle_degrees_of_freedom']}). This sparse connection does not resolve protocol/material differences or justify fitting study-adjusted ranks. External_Paper_Readiness.csv and External_Connectivity_Readiness.csv report the source-specific gates and graph scopes.\n")

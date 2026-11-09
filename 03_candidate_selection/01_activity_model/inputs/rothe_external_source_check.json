@@ -1,0 +1,61 @@
+{
+  "doi": "10.1007/s00217-022-04135-3",
+  "source_url": "https://d-nb.info/1277718563/34",
+  "publisher_url": "https://link.springer.com/article/10.1007/s00217-022-04135-3",
+  "access_date": "2026-11-08",
+  "version_scope": "Original open-access article PDF, Table 6 PDF page 11; publisher Methods checked",
+  "protocol": {
+    "pH": 7.4,
+    "temperature_C": 37,
+    "read_interval_seconds": 90,
+    "post_AAPH_cycles": 57,
+    "replication": "ORAC measured in quadruples; independent pure-compound batches unresolved",
+    "calculation": "Net-AUC against Trolox calibration",
+    "error_scope": "Pure-compound table plus/minus type not separately established; beer technological-replicate SD not transferred"
+  },
+  "records": [
+    {
+      "candidate_id": "AFF-0001",
+      "source_name": "Catechin",
+      "mean": 10.8,
+      "reported_plus_minus": 1.07,
+      "unit": "TE as labelled in Table 6; exact molar normalization pending",
+      "numeric_SD": null,
+      "locator": "Table 6 experimental ORAC column; Chemicals: catechin hydrate 98%"
+    },
+    {
+      "candidate_id": "AFF-0002",
+      "source_name": "Epicatechin",
+      "mean": 9.37,
+      "reported_plus_minus": 0.86,
+      "unit": "TE as labelled in Table 6; exact molar normalization pending",
+      "numeric_SD": null,
+      "locator": "Table 6 experimental ORAC column; individual material identity requires clarification"
+    }
+  ],
+  "decision": "Experimental columns verified, excluding literature columns and beer/spiking values; material, normalization and error scope pending",
+  "human_review_status": "NOT_REVIEWED",
+  "change_applied": "NO",
+  "targeted_recheck": {
+    "date": "2026-11-08",
+    "access": "Publisher HTML and original PDF parsed text; PDF screenshot requests failed, no visual inspection claimed",
+    "checked_sections": [
+      "Chemicals and reagents",
+      "Antioxidant capacity analyses, equations 1-2",
+      "Statistical data analysis",
+      "Individual phenolic compound discussion",
+      "Table 6 caption and experimental headers"
+    ],
+    "normalization": "TE calibration established; explicit per-mole compound denominator and concentration-normalization formula not located in checked sections. Do not infer normalization from magnitude or literature columns.",
+    "replication": "Table 6 caption n=4 agrees with Methods quadruple measurements; independent preparation/batch structure not established.",
+    "error": "Statistical SD sentence applies to sample beers and two technological replicates; Table 6 pure-compound plus/minus meaning remains unresolved.",
+    "material": "Chemicals names catechin hydrate 98%; individual epicatechin reagent, stereochemistry and concentration basis not specified there.",
+    "next_source_requirements": [
+      "Pure-compound concentration series and molar-normalization equation",
+      "Catechin hydrate molecular-weight and purity correction basis",
+      "Epicatechin supplier, catalogue, stereochemical form and purity",
+      "Definition of Table 6 plus/minus and replicate experimental unit"
+    ],
+    "eligibility": "HOLD_NO_MOLAR_TEST_LABEL; source-reported numbers retained; no conversion or variance weighting"
+  }
+}

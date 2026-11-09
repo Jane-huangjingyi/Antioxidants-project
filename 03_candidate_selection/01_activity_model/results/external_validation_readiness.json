@@ -1,0 +1,75 @@
+{
+  "papers": 10,
+  "queue_observations": 28,
+  "original_means_rechecked": 6,
+  "molar_estimator_traced_observations": 4,
+  "approved_external_labels": 0,
+  "duplicate_observation_keys": 0,
+  "shared_data_independence_closed": false,
+  "graphs": [
+    {
+      "scope": "LEGACY_QUEUE_AUDIT_ONLY",
+      "observations": 28,
+      "unique_compound_paper_edges": 28,
+      "compounds": 13,
+      "papers": 10,
+      "components": 4,
+      "additive_design_rank": 19,
+      "edge_cycle_degrees_of_freedom": 9,
+      "interpretation": "TOPOLOGY_ONLY_NOT_ELIGIBILITY_OR_ESTIMATED_STUDY_EFFECT",
+      "cross_component_ranking_identifiable": "NO"
+    },
+    {
+      "scope": "ORIGINAL_MEAN_RECHECKED_NOT_COMMON_TARGET_ELIGIBLE",
+      "observations": 6,
+      "unique_compound_paper_edges": 6,
+      "compounds": 4,
+      "papers": 4,
+      "components": 3,
+      "additive_design_rank": 5,
+      "edge_cycle_degrees_of_freedom": 1,
+      "interpretation": "TOPOLOGY_ONLY_NOT_ELIGIBILITY_OR_ESTIMATED_STUDY_EFFECT",
+      "cross_component_ranking_identifiable": "NO"
+    },
+    {
+      "scope": "MOLAR_ESTIMATOR_TRACED_OTHER_GATES_PENDING",
+      "observations": 4,
+      "unique_compound_paper_edges": 4,
+      "compounds": 4,
+      "papers": 3,
+      "components": 3,
+      "additive_design_rank": 4,
+      "edge_cycle_degrees_of_freedom": 0,
+      "interpretation": "TOPOLOGY_ONLY_NOT_ELIGIBILITY_OR_ESTIMATED_STUDY_EFFECT",
+      "cross_component_ranking_identifiable": "NO"
+    },
+    {
+      "scope": "APPROVED_COMMON_TARGET_EXTERNAL_LABELS",
+      "observations": 0,
+      "unique_compound_paper_edges": 0,
+      "compounds": 0,
+      "papers": 0,
+      "components": 0,
+      "additive_design_rank": 0,
+      "edge_cycle_degrees_of_freedom": 0,
+      "interpretation": "TOPOLOGY_ONLY_NOT_ELIGIBILITY_OR_ESTIMATED_STUDY_EFFECT",
+      "cross_component_ranking_identifiable": "NO"
+    },
+    {
+      "scope": "DEVELOPMENT_PLUS_TRACED_EXTERNAL_TOPOLOGY_NOT_HARMONIZED_LABELS",
+      "observations": 40,
+      "unique_compound_paper_edges": 40,
+      "compounds": 36,
+      "papers": 4,
+      "components": 1,
+      "additive_design_rank": 39,
+      "edge_cycle_degrees_of_freedom": 1,
+      "interpretation": "TOPOLOGY_ONLY_NOT_ELIGIBILITY_OR_ESTIMATED_STUDY_EFFECT",
+      "cross_component_ranking_identifiable": "CONNECTED_ONLY_OTHER_GATES_REQUIRED"
+    }
+  ],
+  "development_anchor_included_in_last_graph": true,
+  "topology_does_not_resolve_protocol_or_material_gates": true,
+  "decision": "DO_NOT_FIT_CROSS_PAPER_RANKING_FROM_THIS_QUEUE",
+  "next_priority": "Recover original multi-compound tables and linked data-generation provenance; preserve fixed endpoint and model settings"
+}

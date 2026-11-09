@@ -24,3 +24,11 @@ The 36 single-paper log-ORAC labels and database candidate graphs were evaluated
 Adding phenolic-OH and aryl-methoxy counts in a post-hoc sensitivity analysis gave MAE 0.673 and RMSE 0.927. This small improvement is exploratory, since feature selection followed inspection of initial validation results. It does not establish an independently validated ranking model.
 
 A further post-hoc Morgan-fingerprint analysis yielded MAE 0.652 and RMSE 0.914, with 35 distinct vectors across 36 candidate structures. Pooled errors improved relative to the mean baseline, but the three-member catechin-related scaffold group worsened (MAE 0.922 versus 0.350). This heterogeneous result does not support a final global ranking. Chirality was excluded and source-material stereochemistry remained unresolved.
+
+## Retrospective protocol-shift pressure test
+
+The separately authorized two-observation diagnostic used explicit molar means from DOI 10.1271/bbb.110717. Development-only scaffold CV selected alpha 10; external values were not used for tuning. Both known compounds received log prediction 1.5796, below source log arithmetic means 2.1972 (Catechin) and 2.3026 (Epicatechin). Descriptive model MAE/RMSE were 0.670/0.672, compared with 0.969/0.970 for the development-mean baseline. These observations compare different summary estimands and protocols; they establish neither formal external validation nor new-structure validity. No ranking was updated. Individual residuals are recorded in Retrospective_Pressure_Test.csv.
+
+## External evidence readiness
+
+The retrospective queue contained 28 observations across 10 papers. Original numeric text was rechecked for 6 observations; molar-estimator provenance was traced for 4, while 0 common-target external labels were released. No duplicate observation keys were found, but cross-paper data-generation independence remained unresolved. Adding traced external observations to the 36 development rows produced one connected topology (40 edges, additive indicator-design rank 39, topological redundancy 1). This sparse connection does not resolve protocol/material differences or justify fitting study-adjusted ranks. External_Paper_Readiness.csv and External_Connectivity_Readiness.csv report the source-specific gates and graph scopes.

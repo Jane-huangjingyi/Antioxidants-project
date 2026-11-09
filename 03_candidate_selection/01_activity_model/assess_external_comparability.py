@@ -1,0 +1,22 @@
+"""Separate numeric verification, common-target eligibility and shifted-condition use."""
+import csv,json,math
+from pathlib import Path
+P=Path(__file__).resolve().parent
+rows=[]
+for file in ['ishimoto_external_source_check.json','rothe_external_source_check.json']:
+    c=json.loads((P/'inputs'/file).read_text(encoding='utf-8'));explicit=file.startswith('ishimoto')
+    for r in c['records']:
+        rows.append(dict(candidate_id=r['candidate_id'],source_name=r['source_name'],doi=c['doi'],source_url=c['source_url'],source_locator=r['locator'],original_mean=r['mean'],reported_plus_minus=r.get('reported_plus_minus',''),replication_scope=c['protocol']['replication'],normalization_requirement='Explicit molar ratio available; development summary/material match pending' if explicit else 'Need pure-compound concentration denominator and normalization formula',error_requirement='No numeric SD recovered' if explicit else 'Need Table 6 pure-compound plus/minus definition; beer SD not transferable',material_requirement='Development source stereo match pending' if explicit else 'Need hydrate concentration basis and epicatechin reagent identity',reported_unit=r['unit'],unit_gate='EXPLICIT_MOLAR_TE' if explicit else 'MOLAR_NORMALIZATION_PENDING',ln_original_mean_candidate=math.log(r['mean']) if explicit else '',log_interpretation='Log of reported arithmetic mean; not mean of logged replicates' if explicit else '',numeric_SD='',weighting_status='NO_VARIANCE_WEIGHT',material_gate='SOURCE_NAMED_STEREO_DEVELOPMENT_FORM_PENDING' if explicit else 'HYDRATE_OR_INDIVIDUAL_FORM_PENDING',protocol_gate='CONDITIONS_AND_ESTIMATOR_DIFFER_FROM_DEVELOPMENT',common_target_validation='HOLD',shifted_condition_challenge='RESEARCHER_AUTHORIZED_RETROSPECTIVE_PRESSURE_TEST' if explicit else 'HOLD_NORMALIZATION',split_exposure='RETROSPECTIVE_PREVIOUSLY_ACCESSIBLE_NOT_BLIND',model_tuning_allowed='NO',human_review_status='NOT_REVIEWED',change_applied='NO'))
+c=json.loads((P/'inputs/carvalho_external_source_check.json').read_text(encoding='utf-8'));r=c['records'][0]
+assert abs(r['auc_compound_slope']/r['auc_matched_trolox_slope']-r['mean'])<0.01
+assert abs(r['auc_compound_slope']/r['wrong_buffer_trolox_slope']-r['mean'])>1
+extra=rows[-1].copy();extra.update(candidate_id=r['candidate_id'],source_name=r['source_name'],doi=c['doi'],source_url=c['source_url'],source_locator=r['locator'],original_mean=r['mean'],reported_plus_minus=r['reported_plus_minus'],replication_scope=c['protocol']['replication'],normalization_requirement='Molar slope ratio traced; hydrate concentration basis pending',error_requirement='Ratio uncertainty and effective n unresolved',material_requirement='Dihydrate concentration basis and development-material match pending',reported_unit=r['unit'],unit_gate='MOLAR_SLOPE_RATIO_TRACED',ln_original_mean_candidate=math.log(r['mean']),log_interpretation='Log reported slope ratio; not mean logged replicates',material_gate=r['material_gate'],shifted_condition_challenge='HOLD_MATERIAL_AND_ESTIMAND')
+rows.append(extra)
+c=json.loads((P/'inputs/froldi_external_source_check.json').read_text(encoding='utf-8'));r=c['records'][0]
+extra=rows[-1].copy();extra.update(candidate_id=r['candidate_id'],source_name=r['source_name'],doi=c['doi'],source_url=c['source_url'],source_locator=r['locator'],original_mean=r['mean'],reported_plus_minus=r['reported_plus_minus'],replication_scope=c['protocol']['replication'],normalization_requirement='Explicit molar capacity; estimator detail pending',error_requirement='SEM known; row-specific n unknown; no SD conversion',material_requirement='Source standard reported; development-material match pending',reported_unit=r['unit'],unit_gate='EXPLICIT_MOLAR_TE',ln_original_mean_candidate=math.log(r['mean']),log_interpretation='Log reported mean; not mean logged replicates',material_gate=r['material_gate'],shifted_condition_challenge='HOLD_PROTOCOL_AND_ESTIMAND')
+rows.append(extra)
+assert len(rows)==6 and sum(r['unit_gate']=='EXPLICIT_MOLAR_TE' for r in rows)==3
+assert all(r['common_target_validation']=='HOLD' and r['model_tuning_allowed']=='NO' for r in rows)
+with (P/'results/External_Comparability_Decisions.csv').open('w',encoding='utf-8-sig',newline='') as f:
+    w=csv.DictWriter(f,fieldnames=list(rows[0]));w.writeheader();w.writerows(rows)
+print('QC PASS: six original means; two authorized challenge records; additional molar sources remain held; zero common-target validation approvals.')

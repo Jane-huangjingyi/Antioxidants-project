@@ -1,0 +1,30 @@
+{
+  "doi": "10.3390/pharmaceutics14102141",
+  "source_url": "https://www.research.unipd.it/retrieve/51ae60e0-1f47-44cb-b1fa-17c6d292ecaa/pharmaceutics-14-02141%20%281%29.pdf",
+  "access_date": "2026-11-09",
+  "version_scope": "Institutional original PDF parsed text; Results 2.2.2, Fig 6 caption, Methods 3.1/3.3.2/3.6; no supplementary inspection",
+  "protocol": {
+    "pH": null,
+    "temperature_C": 37,
+    "duration_minutes": 60,
+    "estimator": "Trolox calibration; precise AUC implementation unresolved",
+    "replication": "Fig 6: 3-6 experiments; Methods: at least three independent experiments; row-specific n unresolved",
+    "error_scope": "SEM explicitly defined; no SD conversion"
+  },
+  "records": [
+    {
+      "candidate_id": "AFF-0024",
+      "source_name": "Baicalein",
+      "mean": 5.41,
+      "reported_plus_minus": 0.33,
+      "unit": "umol TE/umol compound",
+      "numeric_SD": null,
+      "error_type": "SEM",
+      "locator": "Results 2.2.2 and Fig 6B caption; Methods 3.3.2/3.6",
+      "material_gate": "MERCK_STANDARD_SOURCE_REPORTED_DEVELOPMENT_MATCH_PENDING"
+    }
+  ],
+  "decision": "Explicit molar mean and SEM recovered; row n, pH, vehicle and estimator detail pending; no model update",
+  "human_review_status": "NOT_REVIEWED",
+  "change_applied": "NO"
+}

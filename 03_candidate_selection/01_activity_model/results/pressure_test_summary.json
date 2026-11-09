@@ -1,0 +1,26 @@
+{
+  "scope": "RESEARCHER_AUTHORIZED_RETROSPECTIVE_PROTOCOL_SHIFT_DIAGNOSTIC",
+  "n": 2,
+  "selected_alpha": 10.0,
+  "training_cv_mse": {
+    "0.1": 1.0560130801969958,
+    "1.0": 0.882564620954617,
+    "10.0": 0.8266971901018809,
+    "100.0": 0.9210633283566614
+  },
+  "external_labels_used_for_tuning": false,
+  "external_study_formal_validation": false,
+  "new_structure_validation": false,
+  "prediction_scale": "log location compared with log reported arithmetic mean; different summaries",
+  "metrics": {
+    "model": {
+      "MAE": 0.670289177680311,
+      "RMSE": 0.6723561491354626
+    },
+    "null": {
+      "MAE": 0.9690159462762442,
+      "RMSE": 0.9704468628949067
+    }
+  },
+  "source_input_sha256": "032d17795288ec40a248a13497a7cea95fa7cee8b63c9e1ea9b991f389ea609d"
+}
