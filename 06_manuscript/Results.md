@@ -31,4 +31,22 @@ The separately authorized two-observation diagnostic used explicit molar means f
 
 ## External evidence readiness
 
-The retrospective queue contained 28 observations across 10 papers. Original numeric text was rechecked for 6 observations; molar-estimator provenance was traced for 4, while 0 common-target external labels were released. No duplicate observation keys were found, but cross-paper data-generation independence remained unresolved. Adding traced external observations to the 36 development rows produced one connected topology (40 edges, additive indicator-design rank 39, topological redundancy 1). This sparse connection does not resolve protocol/material differences or justify fitting study-adjusted ranks. External_Paper_Readiness.csv and External_Connectivity_Readiness.csv report the source-specific gates and graph scopes.
+The retrospective queue contained 29 observations across 10 papers. Original numeric text was rechecked for 8 observations; molar-estimator provenance was traced for 4, while 0 common-target external labels were released. No duplicate observation keys were found, but cross-paper data-generation independence remained unresolved. Adding traced external observations to the 36 development rows produced one connected topology (40 edges, additive indicator-design rank 39, topological redundancy 1). This sparse connection does not resolve protocol/material differences or justify fitting study-adjusted ranks. Two further source values have conditional reference-parent mass-to-mole conversions, retained outside fitting and shown in a separate topology sensitivity. External_Paper_Readiness.csv and External_Connectivity_Readiness.csv report the source-specific gates and graph scopes.
+
+## Analysis-set disposition
+
+The reproducible disposition table retained 136 provenance rows: 99 capacity references, 36 original log labels and 1 additional source row. Fourteen capacity references matched development Table 3 records and were retained only as alternate representations, not additional measurements. Authorized sensitivity roles comprised 36 exploratory development labels and two separate retrospective challenge observations. The table contained 84 waiting rows, including two existing source-identity HOLDs, and 0 common-target primary labels. These are provenance/disposition counts, not independent studies or candidate ranks. Primary scope is fixed to pH 7.4 and 37 degrees C, with vehicle/AUC/window stratification. Source-material, stratum and estimand alignment remain prerequisites to primary modelling; formal human review states were unchanged.
+
+## Protocol lineage
+
+Cited-SOP checks mapped 9 existing phenolic observations without adding numeric measurements. Shared method conditions were distinguished from confirmed execution, and the quality-control acceptance range was not reassigned as compound measurement error. Executed A/B variant, final vehicle and estimator remain unresolved; no primary labels were released. Protocol_Lineage_Check.csv records the row-level implications.
+
+## Scope-consistent validation readiness
+
+Of nine source-verified model-candidate rows, 6 from 2 papers matched the fixed core conditions; 3 stayed outside this diagnostic. Both leave-paper-out identity-coverage checks lacked shared compounds. The 31-row extended review separated core-condition evidence from inherited and unconfirmed conditions and identified 5 source-specific pending strata. None supported a cross-paper fold within verified compatible strata. These are design diagnostics, not validation errors or newly fitted models.
+
+## Completed exploratory modelling
+
+Joint family/penalty selection nested within five scaffold folds gave pooled MAE 0.695 and RMSE 0.945, versus 0.689 and 0.953 for the matched mean baseline. Out-of-fold R-squared was -0.240, with Spearman correlation 0.238. Mean group MAE was 0.594 versus 0.701. The differing pooled and group-level results do not establish a consistent predictive advantage. Development-only CV selected DESC6 ridge with alpha 10 for the exported full-data artifact.
+
+The fitted order covered only 16 of 193 current profiles; 177 received no score. Group-removal refits showed unstable positions. Figures Model_Heldout_Predictions, Model_Scaffold_Errors and Model_Order_Stability show held-out predictions, group errors and refit influence. This completes the exploratory pipeline, while a formal primary model and global Top20 remain unestablished. All positions are diagnostic source-specific model outputs, not validated candidate-selection decisions.

@@ -22,12 +22,19 @@ assert all(r['doi']!='10.3390/ijms20092328' for r in external)
 check=json.loads((P/'inputs/ishimoto_external_source_check.json').read_text(encoding='utf-8'))
 checks=[check,json.loads((P/'inputs/rothe_external_source_check.json').read_text(encoding='utf-8')),json.loads((P/'inputs/carvalho_external_source_check.json').read_text(encoding='utf-8'))]
 checks.append(json.loads((P/'inputs/froldi_external_source_check.json').read_text(encoding='utf-8')))
+checks.append(json.loads((P/'inputs/paillat_external_source_check.json').read_text(encoding='utf-8')))
 verified={(c['doi'],r['candidate_id']):(c,r) for c in checks for r in c['records']}
+existing={(r['doi'],r['candidate_id']) for r in external}
+for (doi,cid),(c,r) in verified.items():
+    if (doi,cid) in existing:continue
+    assert cid in mapped
+    external.append(dict(candidate_id=cid,compound=r['source_name'],doi=doi,doi_url='https://doi.org/'+doi,legacy_observation_id='',claimed_original_locator=r['locator'],source_independence_status='UNRESOLVED',legacy_value_for_audit_only='',legacy_unit_for_audit_only='',external_validation_label='',eligibility='SOURCE_SCALE_PROTOCOL_AND_REUSE_REVIEW_PENDING',exposure_status='RETROSPECTIVE_PROJECT_SOURCE_RECHECK_NOT_BLIND',split_lock_status='NOT_LOCKED_NOT_USED_FOR_MODEL_SELECTION',human_review_status='NOT_REVIEWED',change_applied='NO'))
 for r in external:
+    r['queue_record_origin']='PRESERVED_LEGACY_OBSERVATION' if r['legacy_observation_id'] else 'ADDITIONAL_ORIGINAL_TABLE_ROW'
     pair=verified.get((r['doi'],r['candidate_id']));c,s=pair if pair else ({},None)
-    r.update(original_mean_verified=s['mean'] if s else '',original_verified_unit=s['unit'] if s else '',verified_original_locator=s['locator'] if s else '',verified_source_url=c.get('source_url',''),source_named_stereoisomer=s['source_name'] if s else '',original_reported_plus_minus=s.get('reported_plus_minus','') if s else '',original_numeric_SD='',original_error_type=s.get('error_type','UNDEFINED_OR_NOT_NUMERICALLY_RECOVERED') if s else '',source_check_status='ORIGINAL_EXPERIMENTAL_MEAN_VERIFIED_OTHER_GATES_PENDING' if s else 'SOURCE_REVIEW_PENDING')
-    if s:r['eligibility']='ORIGINAL_MEAN_VERIFIED_NOT_YET_COMMON_TARGET_TEST_LABEL'
+    r.update(original_value_verified=s['mean'] if s else '',original_summary_statistic=s.get('summary_statistic','SOURCE_REPORTED_MEAN') if s else '',original_verified_unit=s['unit'] if s else '',verified_original_locator=s['locator'] if s else '',verified_source_url=c.get('source_url',''),source_reported_material_name=s['source_name'] if s else '',original_reported_plus_minus=s.get('reported_plus_minus','') if s else '',original_numeric_SD='',original_error_type=s.get('error_type','UNDEFINED_OR_NOT_NUMERICALLY_RECOVERED') if s else '',source_check_status='ORIGINAL_NUMERIC_VALUE_VERIFIED_OTHER_GATES_PENDING' if s else 'SOURCE_REVIEW_PENDING')
+    if s:r['eligibility']='ORIGINAL_VALUE_VERIFIED_NOT_YET_COMMON_TARGET_TEST_LABEL'
 with (P/'results/External_Source_Validation_Queue.csv').open('w',encoding='utf-8-sig',newline='') as f:
     w=csv.DictWriter(f,fieldnames=list(external[0]));w.writeheader();w.writerows(external)
-summary=dict(catechin_log_labels_checked=3,legacy_scale_label_conflicts=3,training_labels_changed=0,external_source_rows=len(external),external_papers=len({r['doi'] for r in external}),external_compounds=len({r['candidate_id'] for r in external}),original_means_rechecked=len(verified),approved_external_labels=0,blind_test_set=False)
+summary=dict(catechin_log_labels_checked=3,legacy_scale_label_conflicts=3,training_labels_changed=0,external_source_rows=len(external),external_papers=len({r['doi'] for r in external}),external_compounds=len({r['candidate_id'] for r in external}),original_values_rechecked=len(verified),approved_external_labels=0,blind_test_set=False)
 (P/'results/catechin_external_source_qc.json').write_text(json.dumps(summary,indent=2)+'\n');print(json.dumps(summary))

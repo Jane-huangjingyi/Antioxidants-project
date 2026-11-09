@@ -9,8 +9,59 @@
   "measurements_as_reported": 3,
   "independent_batches": null,
   "records": [
-    {"candidate_id":"AFF-0070","compound":"trans-Ferulic acid","mean":3.474,"sd":0.176,"existing_observation_id":"HORAC_EXP_0053","relationship":"RECHECK_EXISTING_ROW"},
-    {"candidate_id":"AFF-0071","compound":"p-Coumaric acid","mean":3.766,"sd":0.146,"existing_observation_id":"HORAC_EXP_0052","relationship":"RECHECK_EXISTING_ROW"},
-    {"candidate_id":"AFF-0167","compound":"Eugenol","mean":1.811,"sd":0.118,"existing_observation_id":"","relationship":"EXISTING_STAGE24_ROW_S24_013_NOT_IN_CANONICAL_INDEX"}
-  ]
+    {
+      "candidate_id": "AFF-0070",
+      "compound": "trans-Ferulic acid",
+      "mean": 3.474,
+      "sd": 0.176,
+      "existing_observation_id": "HORAC_EXP_0053",
+      "relationship": "RECHECK_EXISTING_ROW"
+    },
+    {
+      "candidate_id": "AFF-0071",
+      "compound": "p-Coumaric acid",
+      "mean": 3.766,
+      "sd": 0.146,
+      "existing_observation_id": "HORAC_EXP_0052",
+      "relationship": "RECHECK_EXISTING_ROW"
+    },
+    {
+      "candidate_id": "AFF-0167",
+      "compound": "Eugenol",
+      "mean": 1.811,
+      "sd": 0.118,
+      "existing_observation_id": "",
+      "relationship": "EXISTING_STAGE24_ROW_S24_013_NOT_IN_CANONICAL_INDEX"
+    }
+  ],
+  "protocol_lineage_recheck": {
+    "date": "2026-11-09",
+    "cited_method_doi": "10.2116/analsci.28.159",
+    "cited_method_url": "https://www.jstage.jst.go.jp/article/analsci/28/2/28_2_159/_pdf",
+    "scope": "Original Sakurai Methods 2.2 and cited Watanabe PDF parsed text, pp160/162/164; screenshots unsuccessful or not visually inspected; no supplements read",
+    "direct_source_pH": 7.4,
+    "shared_cited_temperature_C": 37,
+    "temperature_status": "SHARED_A_B_SOP_CONDITION_INHERITED_NOT_DIRECT_RUN_REPORT",
+    "shared_cited_read_interval_min": 2,
+    "shared_cited_auc_window_min": [
+      8,
+      90
+    ],
+    "A": "Power calibration; variable sample solvent/dilution",
+    "B": "Solvent-matched two-step dilution; double-log endpoint at 20 uM Trolox",
+    "variant_status": "QC_BENCHMARK_MATCHES_B_EXECUTED_VARIANT_NOT_CONFIRMED",
+    "qc_reference_mean_umol_TE_L": 17552,
+    "qc_reference_reproducibility_SD_umol_TE_L": 932,
+    "source_acceptance_halfwidth_umol_TE_L": 1864,
+    "qc_error_interpretation": "Halfwidth equals 2*reference reproducibility SD; not the SD of a Sakurai compound measurement",
+    "net_AUC_direction": "Printed method A subtraction direction requires clarification; no correction applied",
+    "remaining_requirements": [
+      "Executed SOP variant and calculation sheet",
+      "Final assay vehicle and dilution rule",
+      "Run temperature confirmation",
+      "Independent preparation structure"
+    ],
+    "human_review_status": "NOT_REVIEWED",
+    "change_applied": "NO"
+  }
 }

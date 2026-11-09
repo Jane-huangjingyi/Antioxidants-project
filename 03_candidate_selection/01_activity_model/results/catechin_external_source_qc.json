@@ -2,10 +2,10 @@
   "catechin_log_labels_checked": 3,
   "legacy_scale_label_conflicts": 3,
   "training_labels_changed": 0,
-  "external_source_rows": 28,
+  "external_source_rows": 29,
   "external_papers": 10,
   "external_compounds": 13,
-  "original_means_rechecked": 6,
+  "original_values_rechecked": 8,
   "approved_external_labels": 0,
   "blind_test_set": false
 }

@@ -1,0 +1,76 @@
+{
+  "version": "0.1",
+  "scope": "REPRODUCIBLE_ANALYSIS_DISPOSITION_NOT_SCIENTIFIC_APPROVAL",
+  "input_sha256": {
+    "results/Capacity_Analysis_Entry.csv": "f41b6ed34766b09f807295eaf8bc630e77020c4995add7efefd57db21b5fe116",
+    "results/Flavonoid_Log_Capacity_Extraction.csv": "ebe2fb391c9c9d0a11a79007df0df81137d1d51de45138e749927c5328eb4e07",
+    "results/Flavonoid_Candidate_Crosswalk.csv": "f03b3b4b17b3e59f3d18800c855e8ec8f19484cca6fb0d702f13cd53a1d8808f",
+    "results/External_Source_Validation_Queue.csv": "ddc0f80bf8488e2cba739c15040f534127b86a8bac733a42140724a1ddffca32",
+    "results/External_Comparability_Decisions.csv": "70fd30dc558e14c8797913568518ac8eae805538dba0f2fc811bae24031fc06e",
+    "results/Retrospective_Pressure_Test.csv": "562ef18e3309a4dca368d202e4347185170abec9a9a66268f3917b15734c2a11",
+    "results/Flavonoid_Scaffold_Groups.csv": "8ff3af8a1873e79bd4c6a48fe44065c60fed6b68f8f9706c4121ff4749d01424",
+    "results/Flavonoid_Structure_Audit.csv": "77a5a269a35a03e7092776c3963d06b391cd2366690a95bd8e41b546ac2e9c77",
+    "results/Protocol_Lineage_Check.csv": "2dcde3dbb58af6adf108568cc734074fccd1490a111f8902a74c33cb25367e77",
+    "inputs/sakurai_targeted_recheck.json": "51eea221f0ae9e382355dff46c3ac2262b72e50bdb2ec7176fa9bda7d2e065c7",
+    "inputs/recovered_capacity_rows.json": "466ff4999b16ee6c8b32cd8bc63fffd6ba7d90ae2f908ec04561ae9015ce832a",
+    "inputs/source_resolution.json": "eab0630dd435c3376969305040cd68840e25613abca5f9ba38bf9abe7b0941e5",
+    "audit_protocol_lineage.py": "fcf5fcea699ce082f9a547f1523596b607b093b817bae1f2714ff9d3c7bc2642",
+    "inputs/model_protocol_v0.1.json": "f384cd89e4b7c284954aa22dd96b7fb1b3fcd668f62ed2fb90ca227c968d13c3",
+    "requirements_structure.txt": "1acce761ee453c4af4c72ed6de75c2b8451a76c7fdf8a3906ffc05caf3870e2d",
+    "build_analysis_set.py": "08858df75a83181e23b95ba212be9fa39af4d57ac074164577884510aa732a13",
+    "protocol_scope.py": "f53cbdf7c8746c3c82a31b32991fce308a903b252fe524bc89662d213b24627d",
+    "check_model_protocol.py": "87f54c332b28f728e8d089c14d2e7341fdf97254b61cca086ef4642839756d98",
+    "build_extended_model_inputs.py": "256d12155d26c94ebd9c0a7182b3499fbbc022f095bb33bf622cf880b8047b3e",
+    "validate_scaffold_baseline.py": "1a39e23e1584108c2591500b6cc8b9f7484686356273867aa9fd43c7f6203e2a",
+    "run_retrospective_pressure_test.py": "cc42755bb6018b12bfaf5d4a0ad050a7e2fee2c35180a9c53cc1887efaa3f165",
+    "inputs/ishimoto_external_source_check.json": "032d17795288ec40a248a13497a7cea95fa7cee8b63c9e1ea9b991f389ea609d",
+    "inputs/rothe_external_source_check.json": "e3692cb52fd4936c423e8414daa19b21992ab6375009ed4b1b9a9c1e11a2da9c",
+    "inputs/carvalho_external_source_check.json": "dada91bad4b9dd80b6ad8d84ee4408e17da8190234377cd4bfafaf8947da43ee",
+    "inputs/froldi_external_source_check.json": "300c5e14160d414a2736ff1f7787655d23c043161f7579678e83403b44d5de9c",
+    "inputs/paillat_external_source_check.json": "88cc99f6a41f8e6026f8e026265fb083638d18c882c9da99cbac2dd8eb4e2fbc"
+  },
+  "inventory_reference_rows": 99,
+  "development_original_rows": 36,
+  "additional_recovered_rows": 1,
+  "disposition_rows": 136,
+  "category_counts": {
+    "PRIMARY_ANALYSIS": 0,
+    "SENSITIVITY_ANALYSIS": 38,
+    "WAIT_FOR_EVIDENCE": 84,
+    "REFERENCE_ONLY": 14
+  },
+  "role_counts": {
+    "NO_MODEL_USE": 82,
+    "AUTHORIZED_TWO_OBSERVATION_PROTOCOL_SHIFT_DIAGNOSTIC": 2,
+    "REFERENCE_ONLY_ORIGINAL_LOG_COLUMN_CONTROLS_MODEL_INPUT": 14,
+    "SOURCE_IDENTITY_HOLD": 2,
+    "PREVIOUSLY_AUTHORIZED_EXPLORATORY_STRUCTURE_MODEL": 36
+  },
+  "superseded_reference_representations": 14,
+  "primary_model_rows": 0,
+  "primary_target_fields_unset": [],
+  "confirmed_core_conditions": {
+    "pH": 7.4,
+    "temperature_C": 37
+  },
+  "stratification_fields": [
+    "vehicle",
+    "integration_window_minutes",
+    "estimator_family"
+  ],
+  "core_scope_counts": {
+    "CORE_CONDITIONS_NOT_FULLY_VERIFIED": 64,
+    "MATCH_CORE_CONDITIONS_PROTOCOL_STRATUM_PENDING": 58,
+    "OUTSIDE_PRIMARY_CORE_CONDITIONS": 5,
+    "CORE_CONDITIONS_SUPPORTED_BY_SHARED_SOP_RUN_CONFIRMATION_PENDING": 9
+  },
+  "missing_variance_policy": "Undefined variance is not invented; it is not by itself a ban on unweighted modelling",
+  "primary_release_requirements": [
+    "Resolve source-specific vehicle, AUC estimator and integration strata under confirmed pH 7.4 and 37 C scope",
+    "Verify numeric source, material/structure match, scale, data-generation independence and duplicate mapping",
+    "Set validation acceptance criteria before evaluating new validation outcomes"
+  ],
+  "formal_human_approval_inferred": false,
+  "training_labels_changed": 0,
+  "ranking_generated": false
+}

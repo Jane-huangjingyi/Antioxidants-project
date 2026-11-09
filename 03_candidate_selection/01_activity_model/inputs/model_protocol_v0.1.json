@@ -1,14 +1,61 @@
 {
- "version":"0.1",
- "decision_date":"2026-11-08",
- "researcher_confirmed_endpoint":"ORAC_FL_MOLAR_CAPACITY_FIRST_THEN_EMPIRICAL_ABSORBANCE_TRANSFER_VALIDATION",
- "target_conditions":{"pH":null,"temperature_C":null,"vehicle":null,"integration_window_minutes":null,"estimator_family":null},
- "primary_objective":"Expected assay-defined molar ORAC-FL capacity; not parent-molecule intrinsic radical stoichiometry",
- "ranking_statistic":"Predicted conditional mean capacity; uncertainty reported separately",
- "eligibility":{"original_numeric_source_required":true,"exact_scale_and_endpoint_required":true,"duplicate_observation_keys_resolved":true,"identity_conflicts_excluded":true,"unknown_activity_is_zero":false,"human_approval_inferred":false},
- "model_sequence":["Within-compatible-family descriptive baseline","Compound-only reference baseline where repeated data allow","Study/condition-adjusted hierarchical model if estimable","Structure-based prediction only with adequate labels and applicability-domain validation"],
- "validation":{"primary_split":"Leave one paper out; all doses/technical repeats from the same data-generating study stay together","independence_audit":"DOI is a provisional group key; shared/reused datasets must be linked before splitting","structure_model_split":"Additional chemical-scaffold grouping if a structural model is attempted","tuning":"Nested within training data; preprocessing and imputation fitted within training folds","metrics":["MAE on declared molar scale","RMSE on declared molar scale","Prediction interval coverage and width when intervals can be estimated","Rank concordance on held-out comparable compounds","Top-k stability under source and protocol sensitivity"],"failure_reporting":"Report unsupported folds and unseen compounds; never silently drop them","acceptance_thresholds":null},
- "forbidden_shortcuts":["Random row split across one paper","Assign SD or independent n from undefined plus-minus","Replace source conflicts with silent corrections","Journal IF or publication counts as potency labels","Adjust parameters to force a named compound into Top20","Assume ORAC-FL predicts absorbance endpoints without paired experiments"],
- "fit_authorization":"METHOD_PREPARATION_ONLY_UNTIL_DATA_AND_TARGET_CONDITIONS_REVIEW",
- "nonfluorescent_transfer":"Separate future paired-assay calibration and held-out validation; no conversion coefficient assumed"
+  "version": "0.2",
+  "decision_date": "2026-11-08",
+  "researcher_confirmed_endpoint": "ORAC_FL_MOLAR_CAPACITY_FIRST_THEN_EMPIRICAL_ABSORBANCE_TRANSFER_VALIDATION",
+  "target_conditions": {
+    "pH": 7.4,
+    "temperature_C": 37,
+    "vehicle": null,
+    "integration_window_minutes": null,
+    "estimator_family": null
+  },
+  "primary_objective": "Expected assay-defined molar ORAC-FL capacity; not parent-molecule intrinsic radical stoichiometry",
+  "ranking_statistic": "Predicted conditional mean capacity; uncertainty reported separately",
+  "eligibility": {
+    "original_numeric_source_required": true,
+    "exact_scale_and_endpoint_required": true,
+    "duplicate_observation_keys_resolved": true,
+    "identity_conflicts_excluded": true,
+    "unknown_activity_is_zero": false,
+    "human_approval_inferred": false
+  },
+  "model_sequence": [
+    "Within-compatible-family descriptive baseline",
+    "Compound-only reference baseline where repeated data allow",
+    "Study/condition-adjusted hierarchical model if estimable",
+    "Structure-based prediction only with adequate labels and applicability-domain validation"
+  ],
+  "validation": {
+    "primary_split": "Leave one paper out; all doses/technical repeats from the same data-generating study stay together",
+    "independence_audit": "DOI is a provisional group key; shared/reused datasets must be linked before splitting",
+    "structure_model_split": "Additional chemical-scaffold grouping if a structural model is attempted",
+    "tuning": "Nested within training data; preprocessing and imputation fitted within training folds",
+    "metrics": [
+      "MAE on declared molar scale",
+      "RMSE on declared molar scale",
+      "Prediction interval coverage and width when intervals can be estimated",
+      "Rank concordance on held-out comparable compounds",
+      "Top-k stability under source and protocol sensitivity"
+    ],
+    "failure_reporting": "Report unsupported folds and unseen compounds; never silently drop them",
+    "acceptance_thresholds": null
+  },
+  "forbidden_shortcuts": [
+    "Random row split across one paper",
+    "Assign SD or independent n from undefined plus-minus",
+    "Replace source conflicts with silent corrections",
+    "Journal IF or publication counts as potency labels",
+    "Adjust parameters to force a named compound into Top20",
+    "Assume ORAC-FL predicts absorbance endpoints without paired experiments"
+  ],
+  "fit_authorization": "METHOD_PREPARATION_ONLY_UNTIL_DATA_AND_TARGET_CONDITIONS_REVIEW",
+  "nonfluorescent_transfer": "Separate future paired-assay calibration and held-out validation; no conversion coefficient assumed",
+  "primary_scope_decision_date": "2026-11-09",
+  "stratification_fields": [
+    "vehicle",
+    "integration_window_minutes",
+    "estimator_family"
+  ],
+  "stratification_policy": "Source-reported final vehicle, AUC estimator and integration window define separate protocol strata; unknown stratum fields stay unresolved and are not assigned from another assay arm",
+  "primary_scope_authorization": "RESEARCHER_CONFIRMED_CORE_CONDITIONS_AND_PROTOCOL_STRATIFICATION_NOT_EVIDENCE_APPROVAL"
 }

@@ -1,13 +1,22 @@
 {
-  "status": "PROTOCOL_DEFINED_NOT_FITTED",
+  "status": "PRIMARY_CROSS_PAPER_MODEL_NOT_FITTED",
   "endpoint_decision": "ORAC_FL_MOLAR_CAPACITY_FIRST_THEN_EMPIRICAL_ABSORBANCE_TRANSFER_VALIDATION",
   "model_candidate_rows": 9,
-  "papers": 3,
-  "leave_paper_out_folds": 3,
-  "folds_without_seen_test_compounds": 3,
-  "unset_target_condition_fields": [
-    "pH",
-    "temperature_C",
+  "core_condition_candidate_rows": 6,
+  "outside_or_unconfirmed_rows": 3,
+  "candidate_core_match_not_fit_approval": true,
+  "papers": 2,
+  "leave_paper_out_folds": 2,
+  "folds_without_seen_test_compounds": 2,
+  "unset_target_condition_fields": [],
+  "target_conditions": {
+    "pH": 7.4,
+    "temperature_C": 37,
+    "vehicle": null,
+    "integration_window_minutes": null,
+    "estimator_family": null
+  },
+  "stratified_target_fields": [
     "vehicle",
     "integration_window_minutes",
     "estimator_family"

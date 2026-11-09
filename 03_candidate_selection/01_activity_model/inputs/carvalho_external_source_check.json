@@ -31,5 +31,18 @@
   ],
   "decision": "Molar estimator traced; material/summary/protocol HOLD; not new study; no model update",
   "human_review_status": "NOT_REVIEWED",
-  "change_applied": "NO"
+  "change_applied": "NO",
+  "additional_protocol_recheck": {
+    "date": "2026-11-09",
+    "source_cache": "source_recovery/raw/PMC9951910.json",
+    "locators": [
+      8220,
+      9020,
+      44632,
+      46065
+    ],
+    "gallic_stock_issue": "General reagents paragraph names ethanol for gallic stock; solution-preparation paragraph specifies phosphate buffer. Final vehicle remains unresolved.",
+    "calibrator_check": "Gallic AUC slope 6.54 divided by aqueous Trolox slope 5.25 reproduces rounded Table 3 value 1.25; this identifies calculation basis, not actual solvent execution.",
+    "decision": "Separate gallic vehicle stratum; no silent stock correction, error imputation or label release"
+  }
 }

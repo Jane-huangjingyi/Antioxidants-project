@@ -2,7 +2,15 @@
   "reviewed_rows": 31,
   "source_identity_holds": 2,
   "source_descriptive_rows": 29,
-  "estimator_families": 7,
+  "estimator_families": 3,
+  "protocol_strata": 5,
+  "core_scope_counts": {
+    "MATCH_CORE_CONDITIONS_PROTOCOL_STRATUM_PENDING": 7,
+    "OUTSIDE_PRIMARY_CORE_CONDITIONS": 3,
+    "CORE_CONDITIONS_SUPPORTED_BY_SHARED_SOP_RUN_CONFIRMATION_PENDING": 7,
+    "CORE_CONDITIONS_NOT_FULLY_VERIFIED": 14
+  },
+  "fold_scope": "DIRECT_CORE_CONDITION_MATCH_ONLY_SOURCE_SPECIFIC_UNCLOSED_STRATA_NO_CROSS_PAPER_POOLING",
   "source_papers": 8,
   "conditional_variance_rows": 3,
   "cross_paper_models_fitted": 0,

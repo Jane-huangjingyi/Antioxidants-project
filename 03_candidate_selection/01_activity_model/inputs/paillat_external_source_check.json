@@ -1,0 +1,54 @@
+{
+  "doi": "10.1093/chromsci/bmad007",
+  "source_url": "https://academic.oup.com/chromsci/article/61/6/530/7030839",
+  "access_date": "2026-11-09",
+  "version_scope": "Publisher full HTML, Table I and Experimental; linked supplement fetch failed",
+  "protocol": {
+    "pH": null,
+    "temperature_C": null,
+    "replication": "Microplate n/error not established; online precision n not transferable",
+    "estimator": "Microplate column separated from online regression columns",
+    "error_scope": "No microplate uncertainty reported"
+  },
+  "records": [
+    {
+      "candidate_id": "AFF-0021",
+      "source_name": "Luteolin",
+      "mean": 11402,
+      "unit": "umol TE/g",
+      "locator": "Table I microplate column; Materials and standard preparation",
+      "parent_MW_g_mol": 286.24,
+      "reference_CID": 5280445,
+      "reference_cache_file": "flavonoid_structure_17.json",
+      "summary_statistic": "REPORTED_VALUE_REPLICATE_SUMMARY_NOT_STATED"
+    },
+    {
+      "candidate_id": "AFF-0024",
+      "source_name": "Baicalein",
+      "mean": 4997,
+      "unit": "umol TE/g",
+      "locator": "Table I microplate column; Materials and standard preparation",
+      "parent_MW_g_mol": 270.24,
+      "reference_CID": 5281605,
+      "reference_cache_file": "flavonoid_structure_29.json",
+      "summary_statistic": "REPORTED_VALUE_REPLICATE_SUMMARY_NOT_STATED"
+    }
+  ],
+  "other_table_rows_not_added_to_model_queue": [
+    {
+      "name": "Resveratrol",
+      "umol_TE_g": 25462
+    },
+    {
+      "name": "Dihydroxymethoxy-dihydrochalcone",
+      "umol_TE_g": 22691
+    },
+    {
+      "name": "Ferulic acid",
+      "umol_TE_g": 14272
+    }
+  ],
+  "decision": "Conditional parent-MW conversion only; microplate protocol, material and error gates unresolved; no online conditions transferred",
+  "human_review_status": "NOT_REVIEWED",
+  "change_applied": "NO"
+}

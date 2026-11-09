@@ -1,0 +1,11 @@
+{
+  "existing_observations_mapped": 9,
+  "new_observations": 0,
+  "new_numeric_values_verified": 0,
+  "source_pH_direct": 7.4,
+  "cited_A_B_shared_temperature_C": 37,
+  "executed_SOP_variant_confirmed": false,
+  "qc_reference_halfwidth_is_2SR": true,
+  "compound_error_values_changed": 0,
+  "primary_labels_released": 0
+}

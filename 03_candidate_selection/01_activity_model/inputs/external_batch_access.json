@@ -36,10 +36,17 @@
   },
   "10.1093/chromsci/bmad007": {
     "date": "2026-11-09",
-    "status": "DOI_ACCESS_FAILED_NO_FULLTEXT_RECOVERED",
-    "url": "https://doi.org/10.1093/chromsci/bmad007",
-    "scope": "DOI tool access failed; historical mass-to-mole conversion unverified",
-    "next_requirement": "Original Table I, material form and molecular-weight conversion basis"
+    "status": "ORIGINAL_MICROPLATE_TABLE_AND_MAIN_TEXT_RECOVERED",
+    "url": "https://academic.oup.com/chromsci/article/61/6/530/7030839",
+    "scope": "Publisher full HTML, Table I and Experimental; linked supplement fetch failed",
+    "next_requirement": "Conditional parent-MW conversion only; microplate protocol, material and error gates unresolved; no online conditions transferred",
+    "previous_attempt": {
+      "date": "2026-11-09",
+      "status": "DOI_ACCESS_FAILED_NO_FULLTEXT_RECOVERED",
+      "url": "https://doi.org/10.1093/chromsci/bmad007",
+      "scope": "DOI tool access failed; historical mass-to-mole conversion unverified",
+      "next_requirement": "Original Table I, material form and molecular-weight conversion basis"
+    }
   },
   "10.1271/bbb.110717": {
     "date": "2026-11-09",

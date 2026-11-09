@@ -1,3 +1,17 @@
+# Current modelling outcome
+
+The exploratory source-specific modelling pipeline is complete. Joint nested selection gave pooled MAE 0.695 and RMSE 0.945 against baseline 0.689 and 0.953; out-of-fold R-squared was -0.240. The model did not establish a consistent predictive improvement. Six-descriptor ridge (alpha 10) was selected for the full-development artifact, and mapped-candidate order was sensitive to scaffold-group removal. Only 16 of 193 current profiles are mapped; no score or negative activity inference is assigned to the remaining 177. A formal cross-paper primary model and global Top20 are not established.
+
+Run from the project root:
+
+```sh
+python 03_candidate_selection/01_activity_model/run_model_checks.py --figures
+```
+
+The runner regenerates source/condition audits, model comparisons, nested selection, manuscript Results and three editable PNG/SVG figure pairs. R requires ggplot2 and svglite; chemistry dependencies are pinned in `requirements_structure.txt` and the local `.runtime_chem` environment is excluded from Git. The JSON artifact records scaling and coefficients. Its predictions are log locations under one source protocol, not arithmetic mean molar capacities or target absorbance results.
+
+Inspect [completed metrics](results/completed_model_summary.json), [held-out predictions](results/Completed_Model_Heldout_Predictions.csv), [group errors](results/Completed_Model_Fold_Metrics.csv), [mapped-candidate diagnostics](results/Mapped_Candidate_Model_Diagnostics.csv), [all-profile coverage](results/Candidate_Model_Coverage.csv) and [exported artifact](results/completed_exploratory_model.json). The mapped positions are in-sample diagnostic order and refit influence, not validated potency ranks or an experimental panel. Verification passed: held-out-label perturbation left training selection/predictions unchanged; an independent primal ridge solution matched the exported dual coefficients; artifact reload reproduced predictions; all source/frozen hashes and SVG text/vector checks passed. Prior development/source-review records follow and retain their original scope.
+
 # ORAC-FL model development
 
 ## ORAC-FL capacity model and validation protocol
@@ -8,7 +22,7 @@ The first comparison is an interpretable within-family baseline versus a study/c
 
 Validation holds out complete papers/data-generating studies, including all their doses and technical replicates. Reused data across papers must be grouped together. All preprocessing and tuning remain within training folds. Structural models additionally need scaffold/applicability checks and evaluation on unseen compounds. Assess prediction errors, uncertainty calibration and rank stability where held-out comparable data support them. No numerical acceptance threshold is invented at this stage.
 
-The current nine-row model-candidate subset has three papers and no compound measured in more than one of them. Every leave-paper-out fold therefore contains entirely unseen test compounds. A compound-identity-only model cannot predict those held-out effects. This does not apply automatically to a future structure-based model, nor does it imply the broader 99-row inventory lacks overlaps. New source-rechecked bridges are not yet eligible for a common-effect fit. The immediate data task is to close method/scale/error gates on the bridge observations, then rebuild model inputs and reassess the folds.
+The nine-row model-candidate subset contains three papers and no compound measured in more than one of them. Under the confirmed primary core conditions, six rows from two papers remain in the condition-coverage diagnostic; three pH 7.0 observations stay outside that scope. Both core-condition leave-paper-out coverage checks contain entirely unseen test compounds. These coverage checks are not approved validation folds. A compound-identity-only model cannot predict those held-out effects. This does not apply automatically to a future structure-based model, nor does it imply the broader 99-row inventory lacks overlaps. New source-rechecked bridges are not yet eligible for a common-effect fit. The immediate data task is to close method/scale/error gates on the bridge observations, then rebuild model inputs and reassess the folds.
 
 First implement supported family-specific analyses. Only adopt a more complex model when its held-out performance and assumptions support the target. ORAC-FL prediction and absorbance transfer remain two distinct validation stages. No new score, final Top20 or scientific approval is generated here.
 
@@ -94,3 +108,25 @@ The Carvalho recheck closes the molar-estimator trace for one queued record. A m
 The offline runner now also generates paper-level readiness and scoped connectivity tables. Six means across four papers have been checked, including baicalein with an explicitly reported SEM; four records have traced molar estimators. No common-target external label is released. The ten-paper queue has no repeated observation key, which does not close shared-data independence. Three ACS originals were denied, one repository offers request-copy access, and two further sources remain preview/access-limited. These are access findings, not negative activity evidence.
 
 The external-only graph and the development-anchored graph are reported separately. Adding four traced external observations to all 36 development rows connects the design (40 edges, rank 39), with only one redundant edge. Material/protocol/estimand gates remain decisive. No cross-paper model or rank is fitted. Priority is original multi-compound tables with shared verified compounds, followed by source-specific identity and estimator checks; additional model architectures cannot replace those inputs.
+
+## Publisher recovery and normalization milestone
+
+The Paillat publisher full text was recovered after the earlier DOI-only access failure. Both mapped microplate entries were extracted; the baicalein entry is an additional observation, not a new candidate or independent paper. Audit queue: 29 records across ten papers; eight numeric source values rechecked across five papers. Two parent-reference conversions are held separately from the four traced molar-estimator records. Unknown microplate protocol and uncertainty were not filled from the online arm. Conditional-row topology adds one further closed loop (42 edges, rank 40) to the development anchor, without changing eligibility or model fitting.
+
+The evidence schema now uses `original_value_verified`, `original_summary_statistic` and `source_reported_material_name`: a table value is not automatically a mean and a reagent name is not stereo approval. `Source_Normalization_Audit.csv` preserves original units, reference constants, arithmetic and restrictions. Original training labels, selected penalties, two-row pressure test and frozen selection are unchanged.
+
+## Current analysis-set authority
+
+Use `results/Analysis_Set_Decisions.csv` to inspect each reference, original label and recovered addition; `results/analysis_set_manifest.json` pins their inputs and permitted analysis roles. Reproduce with the existing offline runner. The 136 provenance rows contain 14 non-analytic alternate representations, 36 authorized exploratory training labels, two separate authorized pressure-test observations and 84 waiting records. The primary common-target set remains empty; this is not evidence that the compounds lack activity. Primary scope is now fixed to pH 7.4 and 37 C with explicit vehicle/AUC/integration strata; source-material/stratum alignment and study independence still need closure. The original 36-label input remains the structural model authority; no duplicate or conditional value is silently added.
+
+Fourteen development-source references were matched by compound, DOI, Table 3 locator and arithmetic: thirteen rounded exponentials and one direct log value. Missing variance alone does not rule out unweighted regression; it rules out invented inverse-variance weights. Table recovery priority is now explicit in `External_Paper_Readiness.csv`, ordered by unresolved observation coverage rather than chemical activity. No new model acceptance thresholds or scientific approvals were assigned.
+
+The researcher confirmed that primary scope on 2026-11-09. `inputs/model_protocol_v0.1.json` retains its existing path and now declares internal protocol version 0.2. Null vehicle/window/estimator target values denote source-specific stratification, not permission to impute a common setting; readiness checks distinguish these fields from an unset fixed target. Every disposition row now reports core-condition matching separately from eligibility. The pH 7.0 diagnostic remains sensitivity-only.
+
+## Protocol lineage closure for the phenolic bridge
+
+The accessible Sakurai original and its cited Watanabe SOP have now been traced separately. Nine existing records have direct pH evidence and shared A/B temperature support, explicitly tagged as inherited rather than confirmed execution. The cited reference range matches the B benchmark and twice its reproducibility SD; neither fact authorizes assignment of the executed SOP or a compound SD. Final solvent, dilution/estimator variant, run confirmation and independent preparation remain unresolved. See `Protocol_Lineage_Check.csv`; no new measurements, error replacements, model labels or ranks were generated. This check reduces the unknown-condition inventory without changing the 36-label model or the two-observation pressure test.
+
+## Scope-consistent validation diagnostics
+
+`protocol_scope.py` now supplies the shared condition lookup to all three readiness/disposition builders. The 31-row extended review contains seven direct core-condition matches, three outside-scope rows, seven inherited-SOP rows and fourteen unconfirmed rows. Direct matches occupy five source-specific pending strata; no stratum currently supports a cross-paper validation fold. This result concerns the reviewed subset, not every observation in the project. Gallic acid has conflicting original stock-solvent descriptions and stays in its own unresolved vehicle stratum. Source descriptions and arithmetic remain recorded without assumed correction. The 36-label model and n=2 pressure test are unchanged.

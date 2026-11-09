@@ -1,0 +1,56 @@
+{
+  "status": "EXPLORATORY_MODELLING_COMPLETED_PRIMARY_RANKING_NOT_ESTABLISHED",
+  "n": 36,
+  "scaffold_groups": 5,
+  "mapped_candidates": 16,
+  "current_candidate_profiles": 193,
+  "unsupported_candidate_profiles": 177,
+  "target": "SOURCE_REPORTED_LN_ORAC",
+  "selection": "Nested joint family/penalty selection; pooled inner MSE; deterministic candidate order resolves exact ties",
+  "model_options": 13,
+  "metrics": {
+    "selected": {
+      "MAE": 0.6952844934510306,
+      "RMSE": 0.9448760687567791,
+      "R2": -0.2399978434322898,
+      "Spearman": 0.23828527291452115
+    },
+    "matched_null": {
+      "MAE": 0.6888360343360344,
+      "RMSE": 0.9533576540845619,
+      "R2": -0.2623591899092199,
+      "Spearman": -0.3279996135241744
+    }
+  },
+  "macro_group_MAE": {
+    "selected": 0.5939134812811905,
+    "matched_null": 0.7006796867383824
+  },
+  "full_development_selection": {
+    "family": "DESC6",
+    "alpha": 10.0
+  },
+  "outer_family_counts": {
+    "MORGAN": 4,
+    "DESC4": 1
+  },
+  "full_fit_vs_refit_order_spearman": [
+    -0.023721802957417135,
+    0.9701492537313436,
+    -0.3054182130767456,
+    -0.24018325494384854,
+    -0.24018325494384854
+  ],
+  "inference_boundary": "Post-hoc reuse of one previously inspected source; no independent-study validation, arithmetic-mean recovery, prediction intervals or global Top20",
+  "external_values_used_for_tuning": false,
+  "global_ranking_generated": false,
+  "formal_primary_model_completed": false,
+  "analysis_code_sha256": "456952d6a3c4fc7a4cf7fd3354be55bfc157d0ae0aa31e5d0f1e1b886fb632d0",
+  "model_artifact_sha256": "44df84612237b3f8293e56480df31016a942cf1f5918c9fafa02e4c5b7a9c9f9",
+  "input_sha256": {
+    "Flavonoid_Log_Capacity_Extraction.csv": "ebe2fb391c9c9d0a11a79007df0df81137d1d51de45138e749927c5328eb4e07",
+    "Flavonoid_Structure_Audit.csv": "77a5a269a35a03e7092776c3963d06b391cd2366690a95bd8e41b546ac2e9c77",
+    "Flavonoid_Scaffold_Groups.csv": "8ff3af8a1873e79bd4c6a48fe44065c60fed6b68f8f9706c4121ff4749d01424",
+    "Flavonoid_Candidate_Crosswalk.csv": "f03b3b4b17b3e59f3d18800c855e8ec8f19484cca6fb0d702f13cd53a1d8808f"
+  }
+}

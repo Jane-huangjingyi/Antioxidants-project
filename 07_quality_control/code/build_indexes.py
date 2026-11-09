@@ -5,7 +5,7 @@ ROOT=Path(__file__).resolve().parents[2];sys.path.insert(0,str(ROOT/'00_project'
 from pipeline_io import *
 def walk(p):
  for q in p.iterdir():
-  if q.name in {'node_modules','library','local_library','phase2_r_partial_library','__pycache__','.git','.q','previews','local'} or getattr(q,'is_junction',lambda:False)() or q.is_symlink():continue
+  if q.name in {'node_modules','.runtime_chem','.venv','library','local_library','phase2_r_partial_library','__pycache__','.git','.q','previews','local'} or getattr(q,'is_junction',lambda:False)() or q.is_symlink():continue
   if q.is_dir():yield from walk(q)
   elif q.is_file():yield q
 source_rows=[]
@@ -43,8 +43,8 @@ fig=[]
 for p in sorted((ROOT/'06_manuscript/figures').rglob('*.png')):
  svg=Path(str(p).replace('/png/','/svg/').replace('\\png\\','\\svg\\')).with_suffix('.svg')
  assert svg.exists(),p
- role='MAIN_CURRENT_WORKFLOW' if 'supplementary' not in p.parts else 'SUPPLEMENTARY_PRESERVED_CONSTRUCT'
- fig.append({'figure_name':p.stem,'role':role,'png_path':p.relative_to(ROOT).as_posix(),'svg_path':svg.relative_to(ROOT).as_posix(),'generator':'05_analysis/R/render_manuscript_figures.R' if role.startswith('MAIN') else '05_analysis/render_historical_figures.R','png_sha256':sha(p),'svg_sha256':sha(svg)})
+ role='EXPLORATORY_MODEL_DIAGNOSTIC' if p.stem in {'Model_Heldout_Predictions','Model_Scaffold_Errors','Model_Order_Stability'} else 'MAIN_CURRENT_WORKFLOW' if 'supplementary' not in p.parts else 'SUPPLEMENTARY_PRESERVED_CONSTRUCT'
+ fig.append({'figure_name':p.stem,'role':role,'png_path':p.relative_to(ROOT).as_posix(),'svg_path':svg.relative_to(ROOT).as_posix(),'generator':'05_analysis/R/render_model_diagnostics.R' if role=='EXPLORATORY_MODEL_DIAGNOSTIC' else '05_analysis/R/render_manuscript_figures.R' if role.startswith('MAIN') else '05_analysis/render_historical_figures.R','png_sha256':sha(p),'svg_sha256':sha(svg)})
 write_csv(ROOT/'07_quality_control/figure_export_registry.csv',fig)
 def git(*args):
  try:return subprocess.check_output(['git',*args],cwd=ROOT,encoding='utf8',stderr=subprocess.DEVNULL).strip()

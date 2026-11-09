@@ -1,0 +1,3 @@
+﻿candidate_id,doi,raw_value,raw_unit,reference_CID,parent_MW_g_mol,reference_cache_sha256,formula,conditional_mol_TE_per_mol,interpretation,numeric_SD,external_label_released,human_review_status,change_applied
+AFF-0021,10.1093/chromsci/bmad007,11402,umol TE/g,5280445,286.24,d5fdb2f5744c255f15ee6e443dca8e251f8aec3ab8d4108772718ef907a1eddd,raw_umol_TE_per_g * reference_g_per_mol / 1000000,3.26370848,REFERENCE_PARENT_BASIS_ONLY_NOT_SOURCE_MOLAR_MEASUREMENT,,NO,NOT_REVIEWED,NO
+AFF-0024,10.1093/chromsci/bmad007,4997,umol TE/g,5281605,270.24,01c026ef2863cf2b48a19f3ae53808a8430abfa6d35855cd5d664be78413960a,raw_umol_TE_per_g * reference_g_per_mol / 1000000,1.3503892800000001,REFERENCE_PARENT_BASIS_ONLY_NOT_SOURCE_MOLAR_MEASUREMENT,,NO,NOT_REVIEWED,NO

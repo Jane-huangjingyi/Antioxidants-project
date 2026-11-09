@@ -2,6 +2,8 @@
 import csv,json,collections
 from pathlib import Path
 P=Path(__file__).resolve().parent
+from protocol_scope import scope_index,classify
+scope_lookup=scope_index()
 def read(n):
     with (P/'results'/n).open(encoding='utf-8-sig') as f:return list(csv.DictReader(f))
 def write(n,r):
@@ -23,19 +25,24 @@ for i,r in enumerate(read('Capacity_Analysis_Entry.csv'),1):
     fam,note=policies[r['doi']];m=old.get((r['candidate_id'],r['doi']),{})
     held=r['comparison_scope']=='SOURCE_IDENTITY_CONFLICT_DESCRIPTIVE_RANK_HELD'
     rows.append(dict(evidence_row=i,candidate_id=r['candidate_id'],compound=r['compound'],doi=r['doi'],source_locator=r['source_locator'],value=r['value'],scale=r['scale'],reported_error=r['error'],error_type=r['error_type'],dose_uM=r['dose_uM'],estimator_family=fam,protocol_constraint=note,identity_gate='SOURCE_CONFLICT_HOLD' if held else 'NO_NEW_SOURCE_CONFLICT_DETECTED_NOT_FORM_APPROVAL',conditional_variance=m.get('variance_of_mean_candidate',''),variance_scope=m.get('variance_assumptions','No sampling variance assigned'),analysis_eligibility='HOLD' if held else 'SOURCE_SPECIFIC_DESCRIPTIVE_ONLY',cross_paper_fit_status='NOT_READY_TARGET_AND_PROTOCOL_ALIGNMENT_REQUIRED',human_review_status='NOT_REVIEWED',change_applied='NO'))
+for r in rows:
+    condition=classify(r['candidate_id'],r['doi'],scope_lookup)
+    r.update(core_scope_status=condition['status'],source_pH=condition['pH'] if condition['pH'] is not None else '',source_temperature_C=condition['temperature_C'] if condition['temperature_C'] is not None else '',condition_evidence_basis=condition['basis'],vehicle_stratum=condition['vehicle_stratum'],integration_stratum=condition['window_stratum'])
 assert len(rows)==31
 write('Extended_Model_Input_Review.csv',rows)
 folds=[]
 families=collections.defaultdict(list)
 for r in rows:
-    if r['analysis_eligibility']!='HOLD':families[r['estimator_family']].append(r)
-for family,group in sorted(families.items()):
+    if r['analysis_eligibility']!='HOLD' and r['core_scope_status']=='MATCH_CORE_CONDITIONS_PROTOCOL_STRATUM_PENDING':
+        key=(r['estimator_family'],r['vehicle_stratum'],r['integration_stratum'],r['doi'])
+        families[key].append(r)
+for (family,vehicle,window,source_stratum),group in sorted(families.items()):
     papers=sorted({r['doi'] for r in group})
     for paper in papers:
         train=[r for r in group if r['doi']!=paper];test=[r for r in group if r['doi']==paper]
         seen={r['candidate_id'] for r in train};known={r['candidate_id'] for r in test}&seen
-        folds.append(dict(estimator_family=family,held_out_doi=paper,training_rows=len(train),test_rows=len(test),seen_test_compounds=len(known),unseen_test_compounds=len({r['candidate_id'] for r in test}-seen),status='NO_OTHER_PAPER_IN_FAMILY' if not train else 'NO_SHARED_COMPOUND_FOR_IDENTITY_EFFECT_VALIDATION' if not known else 'PROTOCOL_ALIGNMENT_STILL_REQUIRED'))
+        folds.append(dict(estimator_family=family,vehicle_stratum=vehicle,integration_stratum=window,source_stratum=source_stratum,held_out_doi=paper,training_rows=len(train),test_rows=len(test),seen_test_compounds=len(known),unseen_test_compounds=len({r['candidate_id'] for r in test}-seen),status='NO_OTHER_PAPER_IN_SOURCE_SPECIFIC_PENDING_STRATUM' if not train else 'NO_SHARED_COMPOUND_FOR_IDENTITY_EFFECT_VALIDATION' if not known else 'PROTOCOL_ALIGNMENT_STILL_REQUIRED'))
 write('Extended_Validation_Feasibility.csv',folds)
-out=dict(reviewed_rows=len(rows),source_identity_holds=sum(r['analysis_eligibility']=='HOLD' for r in rows),source_descriptive_rows=sum(r['analysis_eligibility']!='HOLD' for r in rows),estimator_families=len(families),source_papers=len({r['doi'] for r in rows}),conditional_variance_rows=sum(bool(r['conditional_variance']) for r in rows),cross_paper_models_fitted=0,global_ranking_generated=False,scope='31 rechecked rows in the 99-row integrated inventory; other separately extracted source leads not automatically included')
+out=dict(reviewed_rows=len(rows),source_identity_holds=sum(r['analysis_eligibility']=='HOLD' for r in rows),source_descriptive_rows=sum(r['analysis_eligibility']!='HOLD' for r in rows),estimator_families=len({k[0] for k in families}),protocol_strata=len(families),core_scope_counts=dict(collections.Counter(r['core_scope_status'] for r in rows)),fold_scope='DIRECT_CORE_CONDITION_MATCH_ONLY_SOURCE_SPECIFIC_UNCLOSED_STRATA_NO_CROSS_PAPER_POOLING',source_papers=len({r['doi'] for r in rows}),conditional_variance_rows=sum(bool(r['conditional_variance']) for r in rows),cross_paper_models_fitted=0,global_ranking_generated=False,scope='31 rechecked rows in the 99-row integrated inventory; other separately extracted source leads not automatically included')
 (P/'results/extended_model_readiness.json').write_text(json.dumps(out,indent=2)+'\n')
 print(json.dumps(out))
