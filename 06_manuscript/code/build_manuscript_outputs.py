@@ -81,3 +81,35 @@ if completed.exists():
  s=read_json(completed);m=s['metrics']['selected'];n=s['metrics']['matched_null'];choice=s['full_development_selection']
  with (out/'Results.md').open('a',encoding='utf-8') as f:
   f.write(f"\n## Completed exploratory modelling\n\nJoint family/penalty selection nested within five scaffold folds gave pooled MAE {m['MAE']:.3f} and RMSE {m['RMSE']:.3f}, versus {n['MAE']:.3f} and {n['RMSE']:.3f} for the matched mean baseline. Out-of-fold R-squared was {m['R2']:.3f}, with Spearman correlation {m['Spearman']:.3f}. Mean group MAE was {s['macro_group_MAE']['selected']:.3f} versus {s['macro_group_MAE']['matched_null']:.3f}. The differing pooled and group-level results do not establish a consistent predictive advantage. Development-only CV selected {choice['family']} ridge with alpha {choice['alpha']:g} for the exported full-data artifact.\n\nThe fitted order covered only {s['mapped_candidates']} of {s['current_candidate_profiles']} current profiles; {s['unsupported_candidate_profiles']} received no score. Group-removal refits showed unstable positions. Figures Model_Heldout_Predictions, Model_Scaffold_Errors and Model_Order_Stability show held-out predictions, group errors and refit influence. This completes the exploratory pipeline, while a formal primary model and global Top20 remain unestablished. All positions are diagnostic source-specific model outputs, not validated candidate-selection decisions.\n")
+
+expansion=ROOT/'03_candidate_selection/02_cross_study_expansion/results/cross_structure_expansion_summary.json'
+if expansion.exists():
+ s=read_json(expansion)
+ with (out/'Results.md').open('a',encoding='utf-8') as f:
+  f.write(f"\n## Cross-structure evidence expansion\n\nTwo additional original papers contributed {s['source_observations']} source observations: {s['numeric_source_values']} numeric entries, including one reported zero, and one reported no-activity result without a numeric value. Three observations mapped to existing candidate profiles; source-reference compounds outside the current index were retained without adding candidate members. The new records did not satisfy all primary scope/material/estimator gates, so no primary labels were released and the completed model was not retrained using them. A twelve-profile method-bridge preparation panel was generated separately from potency selection. No experiments were executed.\n")
+
+route=read_json(ROOT/'04_absorbance_assay/config/platform_decisions.json')
+if route.get('available_measurement_mode')=='ABSORBANCE_ONLY_RESEARCHER_CONFIRMED':
+ with (out/'Results.md').open('a',encoding='utf-8') as f:
+  f.write("\n## Confirmed experimental route\n\nThe researcher confirmed absorbance-only measurement availability. Future formal modelling will use a separately validated absorbance-capacity endpoint; ORAC-FL remains prior/source-model evidence. No paired numerical transfer, actual assay response or new model performance is claimed.\n")
+
+
+pilot=ROOT/'04_absorbance_assay/02_pilot_design/pilot_readiness.json'
+if pilot.exists():
+ s=read_json(pilot)
+ with (out/'Results.md').open('a',encoding='utf-8') as f:
+  f.write(f"\n## Absorbance preparation status\n\nOffline source-status and synthetic formula checks passed; {len(s['unfilled_manifest_fields'])} pilot manifest fields remain unfilled. Two original 2015 method equations remain source-pending. An additional 2006 original-abstract inhibition formula was identified as a distinct endpoint; it did not release a capacity label. Synthetic matched-vehicle checks retain nonpositive responses and reject incompatible protocol, vehicle, preparation or sampling-grid assignments. The staged design is prepared, while assay execution readiness is NOT_READY. No experimental responses or formal absorbance model were generated.\n")
+
+
+platform=ROOT/'04_absorbance_assay/03_platform_compatibility/platform_readiness.json'
+if platform.exists():
+ s=read_json(platform)
+ with (out/'Results.md').open('a',encoding='utf-8') as f:
+  f.write(f"\n## Identified reader feasibility\n\nThe researcher identified the Opentrons Flex Absorbance Plate Reader Module GEN1. The source-linked audit found {s['exact_channel_matches']} exact channel match among {s['source_methods_compared']} checked method readouts. This is optical compatibility, not capacity validation. Local accessories, thermal history and timing qualification remain unresolved. Execution readiness remains NOT_READY; no experimental response or formal absorbance model was generated.\n")
+
+
+simulation=ROOT/'04_absorbance_assay/04_endpoint_stress_test/results/simulation_summary.json'
+if simulation.exists():
+ s=read_json(simulation)
+ with (out/'Results.md').open('a',encoding='utf-8') as f:
+  f.write(f"\n## Simulation-only method diagnostic\n\nIn the prespecified dimensionless toy model, equal synthetic capacity with different capture rates produced a {s['equal_capacity_fast_to_slow_ratio_at_start0_end4']:.3f}-fold difference in normalized-AUC slope ratios for one fixed acquisition window. Halving the integration step changed ratios by at most {s['maximum_ratio_change_when_halving_step']:.2g}. These numerical counterexamples concern interpretation under assumed kinetics, not measured crocin behavior, molar TE, candidate ranks or formal model validation. The fixed-protocol molar-protection endpoint remains a development candidate.\n")

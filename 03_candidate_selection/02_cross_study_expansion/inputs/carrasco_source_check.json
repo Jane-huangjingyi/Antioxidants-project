@@ -1,0 +1,61 @@
+{
+  "doi": "10.1177/1934578X1601100133",
+  "source_url": "https://journals.sagepub.com/doi/pdf/10.1177/1934578X1601100133",
+  "checked_scope": "Original PDF parsed text: Table 5 p116, ORAC pp117-118, statistics p119; no visual or supplementary claim",
+  "pH": 7.5,
+  "temperature_C": 37,
+  "duration_min": 60,
+  "final_ethanol_percent": 1,
+  "error_type": "REPORTED_SD_WITH_PROPAGATION",
+  "replication": "Triplicate determinations; independent preparations unresolved",
+  "records": [
+    {
+      "compound": "p-Cymene",
+      "mean": 0,
+      "sd": null,
+      "candidate_id": "",
+      "qualifier": "REPORTED_ZERO_LIMIT_NOT_SPECIFIED"
+    },
+    {
+      "compound": "Limonene",
+      "mean": 0.13,
+      "sd": 0.01,
+      "candidate_id": "",
+      "qualifier": "NUMERIC"
+    },
+    {
+      "compound": "Linalool",
+      "mean": 0.34,
+      "sd": 0.02,
+      "candidate_id": "",
+      "qualifier": "NUMERIC"
+    },
+    {
+      "compound": "Terpinen-4-ol",
+      "mean": 0.36,
+      "sd": 0.01,
+      "candidate_id": "",
+      "qualifier": "NUMERIC"
+    },
+    {
+      "compound": "Thymol",
+      "mean": 0.33,
+      "sd": 0.01,
+      "candidate_id": "AFF-0170",
+      "qualifier": "NUMERIC"
+    },
+    {
+      "compound": "Carvacrol",
+      "mean": 0.43,
+      "sd": 0.02,
+      "candidate_id": "AFF-0169",
+      "qualifier": "NUMERIC"
+    }
+  ],
+  "unit": "mol TE/mol compound",
+  "source_quantity": "Pure-component ORAC column; oils/other assay columns excluded",
+  "material_limit": "Individual purity/stereochemistry not closed",
+  "primary_status": "OUTSIDE_PRIMARY_PH_SCOPE",
+  "human_review_status": "NOT_REVIEWED",
+  "change_applied": "NO"
+}

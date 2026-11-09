@@ -1,0 +1,69 @@
+{
+  "audit_date": "2026-11-09",
+  "status": "SOURCE_REVIEW_NOT_ASSAY_APPROVAL",
+  "records": [
+    {
+      "id": "CBA_2002_MANUAL",
+      "doi": "10.1186/1472-6890-2-3",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC128814/",
+      "access": "FULL_TEXT_READ",
+      "locator": "Methods / Colorimetric method for the determination of the TAC of human plasma",
+      "printed_formula": "100 * (Abs0 - Abssample) / Abs0",
+      "observable_issue": "Absorbance is blank-subtracted before calculation. The no-initiator blank changes the sign relative to remaining-probe absorbance. Preserve both operations; do not infer a typographical error or substitute a remaining-absorbance observable.",
+      "adoption": "NOT_IMPLEMENTED_AS_PROJECT_CAPACITY",
+      "detection_wavelength_nm": 450
+    },
+    {
+      "id": "CBA_2002_AUTOMATED",
+      "doi": "10.1186/1472-6890-2-3",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC128814/",
+      "access": "FULL_TEXT_READ",
+      "locator": "Methods / Automation of TAC method",
+      "observable_issue": "Timed absorbance-change and reagent/sample-blank signals use a different orientation from retained-probe AUC.",
+      "adoption": "PLASMA_AUTOMATION_REFERENCE_ONLY",
+      "detection_wavelength_nm": 450
+    },
+    {
+      "id": "CBA_2006_INHIBITION",
+      "doi": "10.1021/jf052731u",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/16506817/",
+      "publisher_url": "https://pubs.acs.org/doi/10.1021/jf052731u",
+      "access": "ORIGINAL_ABSTRACT_FORMULA_READ_FULL_PROTOCOL_PENDING",
+      "locator": "Original article abstract; J Agric Food Chem 54(5):1663-1671",
+      "printed_formula": "100 * (delta_A0 - delta_A) / delta_A0",
+      "reported_molar_ratio": "[antioxidant]/[crocin] = 1",
+      "scientific_boundary": "Percent bleaching inhibition at a specified ratio is not molar TE, a relative rate constant or radical stoichiometry. Full signal/time/blank definitions remain to be checked in Methods before implementation.",
+      "adoption": "SOURCE_FORMULA_RECORDED_NOT_IMPLEMENTED_AS_CAPACITY"
+    },
+    {
+      "id": "CBA_2015_MICROPLATE",
+      "doi": "10.1016/j.foodchem.2014.06.114",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/25148992/",
+      "author_repository": "https://digital.csic.es/handle/10261/100663",
+      "access": "ABSTRACT_READ_FULL_EQUATIONS_PENDING",
+      "locator": "Abstract; institutional repository identified through OpenAlex locations",
+      "recovery_result": "Repository access failed with certificate/revocation validation errors and web fetch failure; TLS checks were not disabled. Follow-up: Python requests timed out; institutional page also timed out in web retrieval. No full equations recovered.",
+      "adoption": "NO_ORIGINAL_MODEL_IMPLEMENTED"
+    },
+    {
+      "id": "CBA_2015_PROTOCOL",
+      "doi": "10.1007/978-1-4939-1441-8_24",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/25323518/",
+      "access": "ABSTRACT_READ_FULL_EQUATIONS_PENDING",
+      "locator": "Abstract",
+      "recovery_result": "Public library PDF lead returned 404. Relative-rate and total-capacity procedures are distinguished in the abstract, but their equations were not recovered. Follow-up: author-university record could not be fetched (proxy/web access failure). No full equations recovered.",
+      "adoption": "NO_RATE_OR_CAPACITY_EQUATION_ATTRIBUTED_FROM_MEMORY",
+      "author_repository": "https://ikee.lib.auth.gr/record/306852"
+    },
+    {
+      "id": "PROJECT_NORMALIZED_AUC",
+      "doi": null,
+      "access": "PROJECT_PROPOSAL_NOT_PUBLISHED_FORMULA_RECOVERY",
+      "locator": "../code/analyze_kinetics.py; ../01_endpoint_definition/capacity_formula.py",
+      "formula": "B(t)=A_complete(t)-A_matched_no_probe(t); R(t)=B(t)/B(t0); net_AUC=integral(R_sample)-integral(R_matched_vehicle); molar_TE_candidate=slope(net_AUC,c_sample)/slope(net_AUC,c_Trolox)",
+      "adoption": "CONDITIONAL_PILOT_ESTIMATOR_ONLY",
+      "conditions": "Common verified time window, actual time since initiation, matched vehicle and protocol, positive initial B, interference clearance, validated dose-response range and positive Trolox slope; fit an intercept.",
+      "scientific_boundary": "Normalized AUC combines extent and kinetics and is window/probe dependent. It is not radical stoichiometry or a recovered 2015 model."
+    }
+  ]
+}

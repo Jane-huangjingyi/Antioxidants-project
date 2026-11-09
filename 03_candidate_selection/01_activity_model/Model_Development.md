@@ -2,6 +2,10 @@
 
 The exploratory source-specific modelling pipeline is complete. Joint nested selection gave pooled MAE 0.695 and RMSE 0.945 against baseline 0.689 and 0.953; out-of-fold R-squared was -0.240. The model did not establish a consistent predictive improvement. Six-descriptor ridge (alpha 10) was selected for the full-development artifact, and mapped-candidate order was sensitive to scaffold-group removal. Only 16 of 193 current profiles are mapped; no score or negative activity inference is assigned to the remaining 177. A formal cross-paper primary model and global Top20 are not established.
 
+Subsequent cross-structure expansion adds sixteen source observations in Step 03.2; the unified disposition now contains 152 provenance rows and 100 waiting rows. No added observation has entered fitting. The twelve-profile measurement bridge is separate from efficacy ranking.
+
+The active experimental route is now absorbance-only, confirmed on 2026-11-09. This completed ORAC-FL model supplies literature context; the future formal model will use validated absorbance measurements as its own target, with no assumed ORAC-FL conversion.
+
 Run from the project root:
 
 ```sh

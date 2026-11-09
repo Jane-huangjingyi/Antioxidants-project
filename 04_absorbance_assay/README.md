@@ -15,3 +15,11 @@ python 04_absorbance_assay/code/analyze_kinetics.py --input path/to/real_traces.
 ```
 
 Cell/function and causal mechanism experiments require later, independent designs. Chemical protection does not establish cell benefit, direct binding, causal mechanism or human efficacy.
+
+Continue with the [formula audit and staged pilot design](02_pilot_design/README.md). The manifest is an unfilled preparation template; offline checks do not approve laboratory execution.
+
+The [pilot design](02_pilot_design/README.md#raw-trace-metadata-and-diagnostic-contrasts) defines required protocol/preparation/vehicle IDs, elapsed-time origin and explicit vehicle assignments. `code/compare_auc.py` rejects incompatible grids or strata and preserves nonpositive diagnostic net AUCs. The raw and assignment templates contain no experimental records.
+
+The [identified Flex reader qualification](03_platform_compatibility/README.md) now constrains the active platform plan. The crocin 450 nm route is an optical development candidate; the audited ABTS/PGR methods are not directly compatible with the default channels. No built-in reader temperature control or shaking is assumed.
+
+Before interpreting AUC slope ratios as capacity, read the [endpoint interpretation stress test](04_endpoint_stress_test/README.md). Its dimensionless simulations are separate from experiment data and candidate rankings.

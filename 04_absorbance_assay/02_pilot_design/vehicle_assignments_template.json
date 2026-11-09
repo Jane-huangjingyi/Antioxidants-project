@@ -1,0 +1,7 @@
+{
+  "status": "DRAFT_NOT_APPROVED",
+  "description": "Populate only from an actual plate layout. Each contrast contains sample and vehicles keys; sample is a batch_id/plate_id/well object and vehicles is a nonempty list of such objects. No assigned wells or experimental results exist in this template.",
+  "contrasts": [],
+  "human_review_status": "NOT_REVIEWED",
+  "change_applied": "NO"
+}

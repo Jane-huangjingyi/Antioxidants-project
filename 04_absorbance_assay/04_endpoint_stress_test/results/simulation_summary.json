@@ -1,0 +1,44 @@
+{
+  "status": "SIMULATION_ONLY_NOT_EMPIRICAL_ASSAY_MODEL",
+  "equal_capacity_fast_to_slow_ratio_at_start0_end4": 3.066977506677984,
+  "maximum_ratio_change_when_halving_step": 1.1252389369165172e-06,
+  "maximum_flux_balance_error": 9.325873406851315e-15,
+  "maximum_zero_dose_analytic_error": 5.389070266426099e-14,
+  "diagnostic_rows": 45,
+  "scenario_ranges": [
+    {
+      "scenario": "REFERENCE",
+      "ratio_min": 1.0,
+      "ratio_max": 1.0
+    },
+    {
+      "scenario": "EQUAL_SLOW",
+      "ratio_min": 0.7276633147243412,
+      "ratio_max": 0.90348544237997
+    },
+    {
+      "scenario": "EQUAL_FAST",
+      "ratio_min": 1.4926015008078684,
+      "ratio_max": 3.1999911026939363
+    },
+    {
+      "scenario": "HIGH_SLOW",
+      "ratio_min": 1.053616492487574,
+      "ratio_max": 1.749133675315237
+    },
+    {
+      "scenario": "LOW_FAST",
+      "ratio_min": 1.3817218729767773,
+      "ratio_max": 1.6094267745817137
+    }
+  ],
+  "compound_measurements": 0,
+  "formal_model_fitted": false,
+  "scientific_interpretation": "Under the specified toy assumptions, normalized-AUC slope ratios depend on capture rate and acquisition window. They do not identify intrinsic radical equivalents per molecule.",
+  "boundary": "No fitted crocin chemistry, real compound parameter, assay recommendation or real-world ranking reversal is inferred.",
+  "sha256": {
+    "04_absorbance_assay/04_endpoint_stress_test/inputs/simulation_scenarios.json": "3fb0dc58944998981085d604d4866f3760c44e5cb0d46310bf1b7145aa35d586",
+    "04_absorbance_assay/01_endpoint_definition/capacity_formula.py": "aa39aad5cf2aecc485d177248c85f62eb2d12a6d04b08c94ba8ebbc08d2e6686",
+    "04_absorbance_assay/04_endpoint_stress_test/simulate_endpoint.py": "2aa9024e8d41f091639e68791c5a77c4d7e26f77007ae3a61c2403bde5b3905c"
+  }
+}

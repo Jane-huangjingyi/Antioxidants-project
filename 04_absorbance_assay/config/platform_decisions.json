@@ -1,12 +1,77 @@
 {
- "status":"DRAFT_NOT_APPROVED",
- "instrument_model":null,"robot_model":null,"temperature_control_verified":null,"kinetic_absorbance_verified":null,
- "instrument_selection_status":"RESEARCHER_WILL_CONFIRM_LATER_OFFLINE_EVIDENCE_WORK_CONTINUES",
- "proposed_method":"Capacity-primary development: evaluate crocin dose-time protection; ABTS is a distinct complementary response and ORAC-PGR a reactivity-sensitive comparator. No assay selected or approved.",
- "approved_wavelength_nm":null,"approved_temperature_C":null,"approved_buffer":null,
- "approved_PGR_uM":null,"approved_AAPH_mM":null,"approved_vehicle_fraction":null,
- "approved_concentration_grid_uM":null,"approved_plate_format":null,
- "approved_AUC_window_min":null,"approved_QC_thresholds":null,
- "counter_screen_rule":"Matched-dose no-probe backgrounds plus probe-without-initiator interaction, spectral overlap, precipitation, pH and time stability",
- "independent_batch_rule":"Technical wells are nested within independent preparations/days; no biological replicate claim for chemistry"
+  "status": "DRAFT_NOT_APPROVED",
+  "instrument_model": "Opentrons Flex Absorbance Plate Reader Module GEN1",
+  "robot_model": "Opentrons Flex",
+  "temperature_control_verified": null,
+  "kinetic_absorbance_verified": null,
+  "instrument_selection_status": "RESEARCHER_IDENTIFIED_MODEL_OFFICIAL_CAPABILITIES_CHECKED_LOCAL_SETUP_PENDING",
+  "proposed_method": "Capacity-primary development: evaluate crocin dose-time protection; ABTS is a distinct complementary response and ORAC-PGR a reactivity-sensitive comparator. No assay selected or approved.",
+  "approved_wavelength_nm": null,
+  "approved_temperature_C": null,
+  "approved_buffer": null,
+  "approved_PGR_uM": null,
+  "approved_AAPH_mM": null,
+  "approved_vehicle_fraction": null,
+  "approved_concentration_grid_uM": null,
+  "approved_plate_format": null,
+  "approved_AUC_window_min": null,
+  "approved_QC_thresholds": null,
+  "counter_screen_rule": "Matched-dose no-probe backgrounds plus probe-without-initiator interaction, spectral overlap, precipitation, pH and time stability",
+  "independent_batch_rule": "Technical wells are nested within independent preparations/days; no biological replicate claim for chemistry",
+  "researcher_capability_decision_date": "2026-11-09",
+  "available_measurement_mode": "ABSORBANCE_ONLY_RESEARCHER_CONFIRMED",
+  "active_model_target": "STANDALONE_ABSORBANCE_MOLAR_CAPACITY_ENDPOINT_PENDING_PILOT_VALIDATION",
+  "paired_ORAC_FL_available": false,
+  "ORAC_FL_transfer_claim_allowed": false,
+  "ORAC_FL_evidence_role": "LITERATURE_PRIOR_AND_EXPLORATORY_SOURCE_MODEL_ONLY_NOT_EQUIVALENT_TARGET_LABELS",
+  "official_documentation_checked_date": "2026-11-09",
+  "official_sources": {
+    "product": "https://opentrons.com/products/opentrons-flex-absorbance-plate-reader-module-gen1",
+    "specifications": "https://docs.opentrons.com/absorbance-plate-reader/product-specs/",
+    "python_api": "https://docs.opentrons.com/python-api/modules/absorbance-plate-reader/",
+    "compatibility": "https://docs.opentrons.com/protocol-designer/create-protocol/modules-fixtures/"
+  },
+  "documented_capabilities": {
+    "module_api_name": "absorbanceReaderV1",
+    "minimum_api_version": "2.21",
+    "default_wavelengths_nm": [
+      450,
+      562,
+      600,
+      650
+    ],
+    "detection_modes": [
+      "ENDPOINT",
+      "KINETIC"
+    ],
+    "plate_type": "96_WELL_FLAT_BOTTOM",
+    "built_in_temperature_control": false,
+    "built_in_shaking": false,
+    "gripper_required": true,
+    "OT_2_compatible": false,
+    "allowed_deck_slots": [
+      "A3",
+      "B3",
+      "C3",
+      "D3"
+    ],
+    "reference_mode": "SINGLE_MODE_CAN_SUBTRACT_REFERENCE_CHANNEL; NO_REFERENCE_IN_MULTI_MODE",
+    "data_export": "OD grids plus wavelengths, module serial and measurement start/finish timestamps; not a ready-made elapsed-time trace table"
+  },
+  "local_configuration": {
+    "researcher_reply": "ACCESSORIES_PENDING_CONFIRMATION",
+    "gripper_installed": null,
+    "temperature_module_installed": null,
+    "heater_shaker_installed": null,
+    "pipette_models": null,
+    "installed_robot_software_version": null,
+    "installed_protocol_API_version": null,
+    "plate_labware_definition": null,
+    "reader_serial_number": null,
+    "measured_cycle_time_s": null,
+    "measured_in_well_temperature_profile": null,
+    "actual_450nm_performance_verified": null
+  },
+  "platform_method_decision": "CROCIN_450_NM_OPTICAL_DEVELOPMENT_CANDIDATE_ONLY; ABTS_734_AND_PGR_540_NOT_DIRECTLY_SUPPORTED_BY_DEFAULT_CHANNELS",
+  "temperature_strategy": "UNRESOLVED: external heating or prewarming does not establish constant temperature during readout; qualify actual well-temperature history and transfer/read dead time before choosing the assay condition"
 }

@@ -1,0 +1,20 @@
+[
+  {
+    "doi": "10.1021/acsomega.0c05818",
+    "url": "https://pubs.acs.org/doi/10.1021/acsomega.0c05818",
+    "status": "FULLTEXT_REQUEST_403",
+    "use": "No numeric label extracted; tea-mixture effects cannot label individual compounds"
+  },
+  {
+    "doi": "10.1007/s00216-011-4884-8",
+    "url": "https://link.springer.com/article/10.1007/s00216-011-4884-8",
+    "status": "PRIMARY_ABSTRACT_ONLY",
+    "use": "EDTA/metal condition lead; no original numerical result extracted"
+  },
+  {
+    "doi": "10.1080/09168451.2019.1585746",
+    "url": "https://www.tandfonline.com/doi/pdf/10.1080/09168451.2019.1585746",
+    "status": "FULLTEXT_REQUEST_403",
+    "use": "No numeric label extracted from search snippets"
+  }
+]

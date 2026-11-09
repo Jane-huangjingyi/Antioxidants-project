@@ -1,5 +1,5 @@
 {
-  "version": "0.2",
+  "version": "0.3",
   "decision_date": "2026-11-08",
   "researcher_confirmed_endpoint": "ORAC_FL_MOLAR_CAPACITY_FIRST_THEN_EMPIRICAL_ABSORBANCE_TRANSFER_VALIDATION",
   "target_conditions": {
@@ -49,7 +49,7 @@
     "Assume ORAC-FL predicts absorbance endpoints without paired experiments"
   ],
   "fit_authorization": "METHOD_PREPARATION_ONLY_UNTIL_DATA_AND_TARGET_CONDITIONS_REVIEW",
-  "nonfluorescent_transfer": "Separate future paired-assay calibration and held-out validation; no conversion coefficient assumed",
+  "nonfluorescent_transfer": "No paired ORAC-FL measurements currently available; no numerical transfer claim. Develop and validate a standalone assay-specific molar-capacity model after absorbance endpoint validation.",
   "primary_scope_decision_date": "2026-11-09",
   "stratification_fields": [
     "vehicle",
@@ -57,5 +57,7 @@
     "estimator_family"
   ],
   "stratification_policy": "Source-reported final vehicle, AUC estimator and integration window define separate protocol strata; unknown stratum fields stay unresolved and are not assigned from another assay arm",
-  "primary_scope_authorization": "RESEARCHER_CONFIRMED_CORE_CONDITIONS_AND_PROTOCOL_STRATIFICATION_NOT_EVIDENCE_APPROVAL"
+  "primary_scope_authorization": "RESEARCHER_CONFIRMED_CORE_CONDITIONS_AND_PROTOCOL_STRATIFICATION_NOT_EVIDENCE_APPROVAL",
+  "active_experimental_route": "STANDALONE_ABSORBANCE_ONLY_RESEARCHER_CONFIRMED_2026_11_09",
+  "ORAC_FL_model_role": "SOURCE_SPECIFIC_LITERATURE_EXPLORATION_NOT_EXPERIMENTAL_TARGET_MODEL"
 }

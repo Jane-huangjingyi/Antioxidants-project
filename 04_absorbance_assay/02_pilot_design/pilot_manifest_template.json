@@ -1,0 +1,53 @@
+{
+  "status": "DRAFT_NOT_APPROVED",
+  "experiment_executed": false,
+  "formal_model_fitted": false,
+  "instrument": {
+    "model": "Opentrons Flex Absorbance Plate Reader Module GEN1",
+    "robot_model": "Opentrons Flex",
+    "wavelength_nm": null,
+    "temperature_C": null,
+    "plate_format": null,
+    "mixing_and_initiation": null,
+    "read_interval_s": null,
+    "dead_time_s": null
+  },
+  "chemistry": {
+    "method": null,
+    "probe_identity_lot_purity": null,
+    "probe_final_uM": null,
+    "initiator_identity_lot": null,
+    "initiator_final_mM": null,
+    "buffer_identity_strength_pH": null,
+    "vehicle_identity_final_fraction": null,
+    "trolox_form_lot_purity": null
+  },
+  "design": {
+    "candidate_material_records": [],
+    "concentration_grid_uM": null,
+    "trolox_grid_uM": null,
+    "independent_preparations": null,
+    "independent_days": null,
+    "technical_wells_per_preparation": null,
+    "randomization_seed": null,
+    "plate_layout_file": null,
+    "initiator_addition_log_file": null,
+    "trace_metadata_dictionary": null,
+    "vehicle_assignment_file": null
+  },
+  "analysis_lock": {
+    "common_window_min": null,
+    "signal_definition": null,
+    "normalization_rule": null,
+    "capacity_estimator": null,
+    "linearity_and_range_rule": null,
+    "interference_acceptance_rules": null,
+    "batch_QC_and_repeat_rules": null,
+    "shared_calibration_uncertainty_rule": null,
+    "nonpositive_and_missing_rules": null,
+    "pilot_lock_record": null,
+    "elapsed_time_origin_and_dead_time_rule": null
+  },
+  "human_review_status": "NOT_REVIEWED",
+  "change_applied": "NO"
+}

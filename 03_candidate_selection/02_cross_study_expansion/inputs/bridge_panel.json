@@ -1,0 +1,60 @@
+{
+  "status": "PROPOSED_METHOD_BRIDGE_NOT_EXPERIMENTAL_TOP20",
+  "selection_rule": "Explicitly scoped chemical-class, identity/estimator uncertainty and shared-source coverage; no potency score or efficacy exemption",
+  "panel": [
+    {
+      "candidate_id": "AFF-0001",
+      "bridge_reason": "Flavanol stereochemistry bridge"
+    },
+    {
+      "candidate_id": "AFF-0002",
+      "bridge_reason": "Paired flavanol stereochemistry bridge"
+    },
+    {
+      "candidate_id": "AFF-0009",
+      "bridge_reason": "Flavonol and material-hydrate bridge"
+    },
+    {
+      "candidate_id": "AFF-0021",
+      "bridge_reason": "Flavone and mass-normalization bridge"
+    },
+    {
+      "candidate_id": "AFF-0060",
+      "bridge_reason": "Phenolic-acid solvent-description conflict"
+    },
+    {
+      "candidate_id": "AFF-0069",
+      "bridge_reason": "Phenolic-acid matched-vehicle bridge"
+    },
+    {
+      "candidate_id": "AFF-0070",
+      "bridge_reason": "Phenolic-acid cited-SOP bridge"
+    },
+    {
+      "candidate_id": "AFF-0167",
+      "bridge_reason": "Allylphenol and cited-SOP bridge"
+    },
+    {
+      "candidate_id": "AFF-0169",
+      "bridge_reason": "Monoterpene-phenol cross-pH bridge"
+    },
+    {
+      "candidate_id": "AFF-0170",
+      "bridge_reason": "Monoterpene-phenol isomer bridge"
+    },
+    {
+      "candidate_id": "AFF-0104",
+      "bridge_reason": "Nonphenolic ascorbate chemistry and source overlap"
+    },
+    {
+      "candidate_id": "NEW-GSH",
+      "bridge_reason": "Thiol/peptide chemistry and independent-source overlap"
+    }
+  ],
+  "approved_experiment_parameters": null,
+  "formal_candidate_membership_change": false,
+  "measurement_route": "STANDALONE_ABSORBANCE_ONLY",
+  "route_decision_date": "2026-11-09",
+  "paired_ORAC_FL_available": false,
+  "numerical_ORAC_FL_transfer_claim_allowed": false
+}

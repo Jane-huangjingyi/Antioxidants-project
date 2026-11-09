@@ -41,7 +41,7 @@ spec=importlib.util.spec_from_file_location('kinetics',ROOT/'04_absorbance_assay
 assert kin.integrate([0,1,2],[1,.5,0])==1
 rows=[]
 for role,well,values in [('SAMPLE','A1',[1.2,.7,.2]),('MATCHED_NO_PROBE','A2',[.2,.2,.2])]:
- for t,v in zip([0,1,2],values):rows.append(dict(batch_id='SYNTHETIC_TEST_ONLY',plate_id='TEST',well=well,candidate_id='TEST_ONLY',role=role,pair_id='PAIR',concentration_uM='1',counter_screen_pass='YES',time_min=str(t),absorbance=str(v)))
+ for t,v in zip([0,1,2],values):rows.append(dict(batch_id='SYNTHETIC_TEST_ONLY',plate_id='TEST',well=well,candidate_id='TEST_ONLY',role=role,pair_id='PAIR',concentration_uM='1',counter_screen_pass='YES',time_min=str(t),absorbance=str(v),protocol_id='SYNTHETIC',preparation_id='TEST_PREP',vehicle_id='TEST_VEHICLE',time_origin='INITIATOR_ADDITION'))
 assert abs(kin.analyze(rows)[0]['normalized_auc_min']-1)<1e-12
 bad=[dict(r,counter_screen_pass='NO') for r in rows]
 try:kin.analyze(bad);raise AssertionError('Missing counter-screen must fail')

@@ -1,0 +1,60 @@
+{
+  "status": "SIMULATION_ONLY_NOT_ASSAY_PARAMETERS",
+  "time_unit": "DIMENSIONLESS",
+  "concentration_unit": "DIMENSIONLESS",
+  "flux": 0.5,
+  "background_sink": 0.1,
+  "probe_initial": 1.0,
+  "end_time": 8.0,
+  "step": 0.005,
+  "dose_grid": [
+    0.0,
+    0.125,
+    0.25,
+    0.5,
+    1.0
+  ],
+  "windows_end": [
+    2.0,
+    4.0,
+    8.0
+  ],
+  "read_start": [
+    0.0,
+    0.5,
+    1.0
+  ],
+  "trace_display_dose": 0.5,
+  "scenarios": [
+    {
+      "id": "REFERENCE",
+      "label": "Synthetic reference",
+      "capacity_per_dose": 1.0,
+      "relative_capture_rate": 1.0
+    },
+    {
+      "id": "EQUAL_SLOW",
+      "label": "Capacity 2; slow capture",
+      "capacity_per_dose": 2.0,
+      "relative_capture_rate": 0.25
+    },
+    {
+      "id": "EQUAL_FAST",
+      "label": "Capacity 2; fast capture",
+      "capacity_per_dose": 2.0,
+      "relative_capture_rate": 4.0
+    },
+    {
+      "id": "HIGH_SLOW",
+      "label": "Capacity 4; slow capture",
+      "capacity_per_dose": 4.0,
+      "relative_capture_rate": 0.25
+    },
+    {
+      "id": "LOW_FAST",
+      "label": "Capacity 1; fast capture",
+      "capacity_per_dose": 1.0,
+      "relative_capture_rate": 4.0
+    }
+  ]
+}

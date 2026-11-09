@@ -1,1 +1,1 @@
-batch_id,plate_id,well,candidate_id,role,pair_id,concentration_uM,counter_screen_pass,time_min,absorbance
+batch_id,plate_id,well,candidate_id,role,pair_id,concentration_uM,counter_screen_pass,time_min,absorbance,protocol_id,preparation_id,vehicle_id,time_origin

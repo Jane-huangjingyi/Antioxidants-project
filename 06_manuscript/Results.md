@@ -35,7 +35,7 @@ The retrospective queue contained 29 observations across 10 papers. Original num
 
 ## Analysis-set disposition
 
-The reproducible disposition table retained 136 provenance rows: 99 capacity references, 36 original log labels and 1 additional source row. Fourteen capacity references matched development Table 3 records and were retained only as alternate representations, not additional measurements. Authorized sensitivity roles comprised 36 exploratory development labels and two separate retrospective challenge observations. The table contained 84 waiting rows, including two existing source-identity HOLDs, and 0 common-target primary labels. These are provenance/disposition counts, not independent studies or candidate ranks. Primary scope is fixed to pH 7.4 and 37 degrees C, with vehicle/AUC/window stratification. Source-material, stratum and estimand alignment remain prerequisites to primary modelling; formal human review states were unchanged.
+The reproducible disposition table retained 152 provenance rows: 99 capacity references, 36 original log labels and 17 additional source row. Fourteen capacity references matched development Table 3 records and were retained only as alternate representations, not additional measurements. Authorized sensitivity roles comprised 36 exploratory development labels and two separate retrospective challenge observations. The table contained 100 waiting rows, including two existing source-identity HOLDs, and 0 common-target primary labels. These are provenance/disposition counts, not independent studies or candidate ranks. Primary scope is fixed to pH 7.4 and 37 degrees C, with vehicle/AUC/window stratification. Source-material, stratum and estimand alignment remain prerequisites to primary modelling; formal human review states were unchanged.
 
 ## Protocol lineage
 
@@ -50,3 +50,23 @@ Of nine source-verified model-candidate rows, 6 from 2 papers matched the fixed 
 Joint family/penalty selection nested within five scaffold folds gave pooled MAE 0.695 and RMSE 0.945, versus 0.689 and 0.953 for the matched mean baseline. Out-of-fold R-squared was -0.240, with Spearman correlation 0.238. Mean group MAE was 0.594 versus 0.701. The differing pooled and group-level results do not establish a consistent predictive advantage. Development-only CV selected DESC6 ridge with alpha 10 for the exported full-data artifact.
 
 The fitted order covered only 16 of 193 current profiles; 177 received no score. Group-removal refits showed unstable positions. Figures Model_Heldout_Predictions, Model_Scaffold_Errors and Model_Order_Stability show held-out predictions, group errors and refit influence. This completes the exploratory pipeline, while a formal primary model and global Top20 remain unestablished. All positions are diagnostic source-specific model outputs, not validated candidate-selection decisions.
+
+## Cross-structure evidence expansion
+
+Two additional original papers contributed 16 source observations: 15 numeric entries, including one reported zero, and one reported no-activity result without a numeric value. Three observations mapped to existing candidate profiles; source-reference compounds outside the current index were retained without adding candidate members. The new records did not satisfy all primary scope/material/estimator gates, so no primary labels were released and the completed model was not retrained using them. A twelve-profile method-bridge preparation panel was generated separately from potency selection. No experiments were executed.
+
+## Confirmed experimental route
+
+The researcher confirmed absorbance-only measurement availability. Future formal modelling will use a separately validated absorbance-capacity endpoint; ORAC-FL remains prior/source-model evidence. No paired numerical transfer, actual assay response or new model performance is claimed.
+
+## Absorbance preparation status
+
+Offline source-status and synthetic formula checks passed; 36 pilot manifest fields remain unfilled. Two original 2015 method equations remain source-pending. An additional 2006 original-abstract inhibition formula was identified as a distinct endpoint; it did not release a capacity label. Synthetic matched-vehicle checks retain nonpositive responses and reject incompatible protocol, vehicle, preparation or sampling-grid assignments. The staged design is prepared, while assay execution readiness is NOT_READY. No experimental responses or formal absorbance model were generated.
+
+## Identified reader feasibility
+
+The researcher identified the Opentrons Flex Absorbance Plate Reader Module GEN1. The source-linked audit found 1 exact channel match among 3 checked method readouts. This is optical compatibility, not capacity validation. Local accessories, thermal history and timing qualification remain unresolved. Execution readiness remains NOT_READY; no experimental response or formal absorbance model was generated.
+
+## Simulation-only method diagnostic
+
+In the prespecified dimensionless toy model, equal synthetic capacity with different capture rates produced a 3.067-fold difference in normalized-AUC slope ratios for one fixed acquisition window. Halving the integration step changed ratios by at most 1.1e-06. These numerical counterexamples concern interpretation under assumed kinetics, not measured crocin behavior, molar TE, candidate ranks or formal model validation. The fixed-protocol molar-protection endpoint remains a development candidate.

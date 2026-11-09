@@ -81,6 +81,15 @@ for r in external:
     if (r['doi'],r['candidate_id']) in existing:continue
     add('EXTERNAL-'+r['candidate_id']+'-'+r['doi'],'ADDITIONAL_RECOVERED_SOURCE_ROW',r['candidate_id'],r['compound'],r['doi'],r['verified_original_locator'],r['original_value_verified'],r['original_verified_unit'],r['verified_source_url'],checks.get((r['doi'],r['candidate_id'])))
 
+expansion_path=P.parent/'02_cross_study_expansion/results/Cross_Structure_Evidence_Expansion.csv'
+with expansion_path.open(encoding='utf-8-sig') as f:expansion=list(csv.DictReader(f))
+assert len(expansion)==16
+for r in expansion:
+    check=dict(original_value=r['reported_value'],reported_unit=r['unit'],conditional_mol_TE_per_mol='',unit_gate='NEW_STRUCTURE_SOURCE_REVIEW_PENDING')
+    add('EXPANSION-'+r['expansion_record_id'],'CROSS_STRUCTURE_SOURCE_REFERENCE',r['candidate_id'],r['compound'],r['doi'],r['source_locator'],r['reported_value'],r['unit'],r['source_url'],check)
+    rows[-1].update(primary_core_scope_match=r['core_scope_status'],source_pH=r['source_pH'],source_temperature_C=r['source_temperature_C'],temperature_evidence_status='NEW_ORIGINAL_SOURCE_RECORD',vehicle_stratum=r['vehicle'],source_value_qualifier=r['value_qualifier'],decision_reasons=rows[-1]['decision_reasons']+';'+r['material_identity_status']+';'+r['value_qualifier'])
+for r in rows:r.setdefault('source_value_qualifier','AS_RECORDED_IN_INPUT')
+
 assert len(inventory)==99 and len(labels)==36
 assert len(rows)==len({r['analysis_record_id'] for r in rows})
 assert sum(r['model_training_value']!='' for r in rows)==36
@@ -96,13 +105,14 @@ deps=['results/Capacity_Analysis_Entry.csv','results/Flavonoid_Log_Capacity_Extr
       'inputs/sakurai_targeted_recheck.json','inputs/recovered_capacity_rows.json','inputs/source_resolution.json','audit_protocol_lineage.py',
       'inputs/model_protocol_v0.1.json','requirements_structure.txt',
       'build_analysis_set.py','protocol_scope.py','check_model_protocol.py','build_extended_model_inputs.py','validate_scaffold_baseline.py','run_retrospective_pressure_test.py']
+deps.extend(['../02_cross_study_expansion/results/Cross_Structure_Evidence_Expansion.csv','../02_cross_study_expansion/inputs/carrasco_source_check.json','../02_cross_study_expansion/inputs/PMC12534199_original_BioC.json','../02_cross_study_expansion/build_cross_structure_evidence.py'])
 deps.extend('inputs/'+n for n in ['ishimoto_external_source_check.json','rothe_external_source_check.json',
     'carvalho_external_source_check.json','froldi_external_source_check.json','paillat_external_source_check.json'])
 manifest=dict(version='0.1',scope='REPRODUCIBLE_ANALYSIS_DISPOSITION_NOT_SCIENTIFIC_APPROVAL',
     input_sha256={n:hashlib.sha256((P/n).read_bytes()).hexdigest() for n in deps},
     inventory_reference_rows=len(inventory),development_original_rows=len(labels),
     additional_recovered_rows=len(rows)-len(inventory)-len(labels),
-    disposition_rows=len(rows),category_counts={c:sum(r['analysis_category']==c for r in rows) for c in ['PRIMARY_ANALYSIS','SENSITIVITY_ANALYSIS','WAIT_FOR_EVIDENCE','REFERENCE_ONLY']},
+    cross_structure_expansion_rows=len(expansion),disposition_rows=len(rows),category_counts={c:sum(r['analysis_category']==c for r in rows) for c in ['PRIMARY_ANALYSIS','SENSITIVITY_ANALYSIS','WAIT_FOR_EVIDENCE','REFERENCE_ONLY']},
     role_counts=dict(Counter(r['allowed_analysis_role'] for r in rows)),
     superseded_reference_representations=sum(r['secondary_reference_representation']=='YES' for r in rows),
     primary_model_rows=0,primary_target_fields_unset=unset,confirmed_core_conditions={'pH':7.4,'temperature_C':37},stratification_fields=protocol['stratification_fields'],core_scope_counts=dict(Counter(r['primary_core_scope_match'] for r in rows)),

@@ -1,0 +1,16 @@
+{
+  "original_papers_rechecked": 2,
+  "source_observations": 16,
+  "numeric_source_values": 15,
+  "positive_numeric_values": 14,
+  "reported_zero_values": 1,
+  "reported_no_activity_without_numeric_value": 1,
+  "existing_candidate_observations": 3,
+  "observations_outside_current_candidate_membership": 13,
+  "primary_labels_released": 0,
+  "new_candidates_added": 0,
+  "original_candidate_profiles_changed": 0,
+  "new_records_used_for_model_refitting": false,
+  "statistical_independence": "Original study observations reported; no cross-source raw-data reuse closure inferred from DOI",
+  "source_cache_sha256": "1cbd6732bcfd2d19860e31cab9459763b013d8263f103e67636c1ba41b74515c"
+}

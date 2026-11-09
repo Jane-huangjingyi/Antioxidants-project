@@ -16,6 +16,14 @@ Concentrations must use the same molar unit and responses the same time normaliz
 
 Dose-level means require an actual independent-batch design. Common Trolox calibration and common vehicle blanks create dependent errors; their covariance must enter uncertainty estimation. Preserve nonpositive responses rather than replacing them with zero or applying a logarithm. Formal acceptance thresholds remain unset.
 
-Current missing platform information: reader/robot model, wavelength capability, kinetic and temperature control, mixing/addition timing and usable plate format. Before definitive screening, test interference, solubility/stability, vehicle response, probe purity and degradation, dynamic range, blank correction and between-day repeatability. No experiment has been executed and no final panel is generated here.
+The reader is now identified as the Flex Absorbance Plate Reader Module GEN1. Its documented channels, lack of built-in temperature/shaking control and local configuration gaps are summarized in the [platform qualification](../03_platform_compatibility/README.md). Mixing/addition timing, exact labware, accessories and actual performance remain unresolved. Before definitive screening, test interference, solubility/stability, vehicle response, probe purity and degradation, dynamic range, blank correction and between-day repeatability. No experiment has been executed and no final panel is generated here.
 
-Instrument selection will be confirmed later by the researcher. This does not block source recovery, error-scale review, assay-specific evidence synthesis or formula validation on synthetic data. Keep device-specific settings null until the actual platform is known.
+The researcher supplied the reader model and official documentation on 2026-11-09; accessory inventory remains pending. Keep assay settings null until qualified on the actual setup. Model identity is documented separately from assay approval.
+
+## Confirmed measurement route
+
+On 2026-11-09 the researcher confirmed absorbance-only measurement availability. The active goal is an independently validated absorbance-specific molar-capacity model. ORAC-FL literature/model outputs remain prior information and are not experimental target labels or conversion coefficients. No paired fluorescence validation is assumed. Method selection and platform-specific parameters still require pilot evidence; no new laboratory settings are approved by this route decision.
+
+The [source-formula audit and pilot design](../02_pilot_design/README.md) distinguish blank-subtracted bleaching differences from retained-probe AUC and document the pending original 2015 equations.
+
+The [dimensionless endpoint stress test](../04_endpoint_stress_test/README.md) demonstrates rate/window dependence of the proposed slope-ratio estimator under explicit toy assumptions. It does not fit an assay or reject operational molar protection as a development target. Intrinsic radical stoichiometry cannot be inferred from the slope ratio alone.

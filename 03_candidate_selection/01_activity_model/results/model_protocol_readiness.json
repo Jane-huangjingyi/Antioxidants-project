@@ -1,6 +1,8 @@
 {
   "status": "PRIMARY_CROSS_PAPER_MODEL_NOT_FITTED",
   "endpoint_decision": "ORAC_FL_MOLAR_CAPACITY_FIRST_THEN_EMPIRICAL_ABSORBANCE_TRANSFER_VALIDATION",
+  "active_experimental_route": "STANDALONE_ABSORBANCE_ONLY_RESEARCHER_CONFIRMED_2026_11_09",
+  "literature_model_role": "SOURCE_SPECIFIC_LITERATURE_EXPLORATION_NOT_EXPERIMENTAL_TARGET_MODEL",
   "model_candidate_rows": 9,
   "core_condition_candidate_rows": 6,
   "outside_or_unconfirmed_rows": 3,

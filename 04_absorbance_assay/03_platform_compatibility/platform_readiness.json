@@ -1,0 +1,21 @@
+{
+  "documentation_checks": "PASS",
+  "execution_readiness": "NOT_READY",
+  "source_methods_compared": 3,
+  "exact_channel_matches": 1,
+  "experimental_rows": 0,
+  "formal_model_fitted": false,
+  "unresolved": [
+    "Actual gripper and accessory inventory",
+    "Installed software/API and labware",
+    "In-well temperature history during reaction/readout",
+    "Timing, dead time and optical/interference qualification",
+    "Capacity-estimator validation"
+  ],
+  "sha256": {
+    "04_absorbance_assay/config/platform_decisions.json": "f474c4b2c8025b996bc77a483ca7d86bb03a23f79dfd128098932b18b43afaf5",
+    "04_absorbance_assay/02_pilot_design/formula_source_audit.json": "d03b38669251812410b7d882bf890b302dcb4c5fcb86ed27bf324650ff2683d7",
+    "04_absorbance_assay/inputs/primary_method_registry.json": "be8d5cf2c7feb3f4f90c950acadee2a27619be6b61dd068a849c76af345be049",
+    "04_absorbance_assay/03_platform_compatibility/check_platform_compatibility.py": "5408d21b4d00f781a86e13cc83a4ee35bcc5f979f06bdb508cd50a96db43dd14"
+  }
+}
