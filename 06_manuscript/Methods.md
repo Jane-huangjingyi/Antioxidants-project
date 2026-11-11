@@ -154,6 +154,10 @@ For an immediately inspectable reference order, we retained explicit nonnegative
 
 We recomputed the descriptive reference order after omitting each DOI. Supported-subset positions were accompanied by bounds for the fixed original candidate universe. An unsupported candidate could occupy any position. For supported candidates, the lower position counted observed competitors with larger estimates, while the upper bound additionally allowed every unsupported competitor to rank above it. These deterministic coverage bounds have no statistical confidence level. The detection assessment joins them and the number of unsupported scenarios by candidate ID. Reproduce with `diagnose_source_influence.py` followed by `build_detection_queue.py` in the preliminary-literature-selection module.
 
+### First additive evidence-model diagnostic
+
+We constructed a candidate-paper bipartite graph from explicit molar reference medians and restricted an exploratory additive log-capacity fit to the largest connected component. Candidate indicators and sum-to-zero paper contrasts were fitted by unweighted least squares. Design rank and residual degrees of freedom assessed algebraic estimability. This diagnostic input includes unresolved source/protocol records beyond released primary labels. It assumes additive paper shifts and lacks quality-based or sampling-variance weighting. Leave-paper-out fits centered training-paper effects and assumed zero effect for a new paper. Candidate-location predictions required estimability in the training design row space. Matched training-only candidate means supplied the baseline. Exponentiated coefficients represent geometric-scale locations. Code, assumptions and outputs are in `03_candidate_selection/04_first_evidence_model/`.
+
 ### Method references
 
 1. Zuvela P, David J, Yang X, Huang D, Wong MW. Non-Linear Quantitative Structure–Activity Relationships Modelling, Mechanistic Study and In-Silico Design of Flavonoids as Potent Antioxidants. *Int J Mol Sci*. 2019;20:2328. https://doi.org/10.3390/ijms20092328.

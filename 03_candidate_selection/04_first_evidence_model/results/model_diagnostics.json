@@ -1,0 +1,49 @@
+{
+  "status": "FIRST_EXPLORATORY_FIT_PROTOCOL_AND_QUALITY_ALIGNMENT_PENDING",
+  "input_candidate_paper_rows": 69,
+  "components": [
+    {
+      "candidates": 34,
+      "papers": 11
+    },
+    {
+      "candidates": 6,
+      "papers": 1
+    },
+    {
+      "candidates": 2,
+      "papers": 1
+    },
+    {
+      "candidates": 1,
+      "papers": 1
+    },
+    {
+      "candidates": 1,
+      "papers": 1
+    }
+  ],
+  "fitted_candidates": 34,
+  "fitted_papers": 11,
+  "fitted_rows": 59,
+  "design_rank": 44,
+  "parameters": 44,
+  "residual_degrees_freedom": 15,
+  "training_RMSE_log": 0.14569300519179335,
+  "strictly_estimable_heldout_rows": 35,
+  "heldout_metrics": {
+    "adjusted": {
+      "MAE": 0.31827301149562054,
+      "RMSE": 0.4079400347720979
+    },
+    "baseline": {
+      "MAE": 0.32629106281721837,
+      "RMSE": 0.3911263253311043
+    }
+  },
+  "global_ranking_supported": false,
+  "quality_adjustment_fitted": false,
+  "formal_absorbance_model_fitted": false,
+  "input_sha256": "95062ebc9a2e344b4c928f675fb18672010e66f180f138dd24b5c420582ceba3",
+  "code_sha256": "61337c79f5d78531b6d2b5c1a0f0b8b5a1fdb4de8075289147a40c42be4a7885"
+}

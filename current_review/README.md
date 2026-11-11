@@ -48,3 +48,4 @@ Prioritized source work is linked in the [28-candidate source comparability tabl
 
 Inspect [leave-one-source-out reference positions](../03_candidate_selection/03_preliminary_literature_selection/results/Source_Omission_Order_Diagnostic.csv) alongside the preliminary order to identify single-source dependence and position changes.
 
+The [first evidence-model fit](../03_candidate_selection/04_first_evidence_model/README.md) provides [34 candidate estimates](../03_candidate_selection/04_first_evidence_model/results/Candidate_Diagnostic_Estimates.csv), [leave-paper-out predictions](../03_candidate_selection/04_first_evidence_model/results/Leave_Paper_Out_Diagnostics.csv), and [model diagnostics](../03_candidate_selection/04_first_evidence_model/results/model_diagnostics.json). Model assumptions and unresolved source/protocol gates are documented in its README.
