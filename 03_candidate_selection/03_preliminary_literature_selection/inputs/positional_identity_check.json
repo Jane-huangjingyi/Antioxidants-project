@@ -1,0 +1,31 @@
+{
+  "checked_date": "2026-11-11",
+  "source_doi": "10.1016/j.jare.2019.01.002",
+  "source_locator": "Chemicals and reagents",
+  "records": [
+    {
+      "candidate_id": "AFF-0077",
+      "source_analyte": "3-CQA",
+      "source_CAS": "906-33-2",
+      "expected_CID": "5280633",
+      "identity_url": "https://pubchem.ncbi.nlm.nih.gov/compound/906-33-2",
+      "finding": "CAS_AND_CID_LINK_SUPPORTED_STRUCTURE_REVIEW_PENDING",
+      "boundary": "PubChem synonyms include 3-CQA and alternative 5-O naming. Preserve the source numbering and verify structure/stereochemistry rather than replacing positional names."
+    },
+    {
+      "candidate_id": "AFF-0078",
+      "source_analyte": "4-CQA",
+      "source_CAS": "905-99-7",
+      "expected_CID": "9798666",
+      "identity_url": "https://pubchem.ncbi.nlm.nih.gov/compound/9798666",
+      "finding": "CAS_AND_CID_LINK_SUPPORTED_STRUCTURE_REVIEW_PENDING",
+      "boundary": "CAS, compound title and 4-CQA synonym support the reference mapping. Purchased material structure and stereochemistry remain to be checked."
+    }
+  ],
+  "honey_source_access": {
+    "doi": "10.1080/10942912.2019.1579835",
+    "url": "https://www.tandfonline.com/doi/pdf/10.1080/10942912.2019.1579835",
+    "result": "FULL_PDF_FETCH_403",
+    "scope": "Publisher-indexed PDF lead identified; complete Methods not read this round"
+  }
+}

@@ -142,6 +142,18 @@ Competition kinetics motivates distinguishing concentration and capture-rate eff
 
 We integrated by RK4, calculated matched-zero-dose normalized-AUC contrasts and fitted slopes with an intercept against dose. Ratios used a synthetic reference, not actual Trolox, and were not labeled molar TE. We retained dose-response residual sums, checked flux balance and zero-dose invariance, and halved the step to assess numerical convergence. The module `04_absorbance_assay/04_endpoint_stress_test/` contains equations, parameters, code and outputs; `render_endpoint_simulation.R` regenerates an explicitly simulation-only PNG/editable-SVG illustration. No candidate or formal training label was generated. The exercise tests estimator interpretation, not empirical assay accuracy.
 
+### Preliminary literature preselection view
+
+We joined the 193 current candidate profiles to the existing 99-row capacity-reference table using candidate IDs. The view retains source-table line, DOI, original locator, value, scale, uncertainty and comparability annotations. We flagged the separate method-development panel without assigning potency scores or ranks. Reference-row counts were not interpreted as independent studies, and absent links were not interpreted as inactivity. Existing food-occurrence annotations were deduplicated as status/DOI/locator/boundary tuples, retaining abstract, indexed-lead and original-table access scopes separately. Material CAS/purity annotations retained their source DOI and source-specific scope and were not transferred to procurement lots. New cross-structure checks and analysis-set dispositions remain separate records pending reconciliation. No source verification or human approval was inferred from the join. Reproduce with `03_candidate_selection/03_preliminary_literature_selection/build_preselection.py`.
+
+### Exploratory literature reference order
+
+For an immediately inspectable reference order, we retained explicit nonnegative molar-capacity values and excluded conditional conversions, other scales and source-HOLD entries. We calculated within-candidate/DOI medians and then an unweighted median of these paper summaries. Equal values received shared competition positions. The order retains source count, range, food-source and material-status fields. This project-defined descriptive statistic mixes unresolved protocol strata and has no established assay-specific predictive validity. Paper-specific orders and excluded rows accompany it. Missing data receive no rank. Reproduce using `03_candidate_selection/03_preliminary_literature_selection/build_reference_order.py`.
+
+### Source-omission coverage sensitivity
+
+We recomputed the descriptive reference order after omitting each DOI. Supported-subset positions were accompanied by bounds for the fixed original candidate universe. An unsupported candidate could occupy any position. For supported candidates, the lower position counted observed competitors with larger estimates, while the upper bound additionally allowed every unsupported competitor to rank above it. These deterministic coverage bounds have no statistical confidence level. The detection assessment joins them and the number of unsupported scenarios by candidate ID. Reproduce with `diagnose_source_influence.py` followed by `build_detection_queue.py` in the preliminary-literature-selection module.
+
 ### Method references
 
 1. Zuvela P, David J, Yang X, Huang D, Wong MW. Non-Linear Quantitative Structure–Activity Relationships Modelling, Mechanistic Study and In-Silico Design of Flavonoids as Potent Antioxidants. *Int J Mol Sci*. 2019;20:2328. https://doi.org/10.3390/ijms20092328.

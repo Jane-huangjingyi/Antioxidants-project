@@ -1,0 +1,18 @@
+{
+  "status": "PRELIMINARY_NOT_POTENCY_RANKING",
+  "candidate_rows": 193,
+  "candidates_with_capacity_references": 48,
+  "capacity_reference_rows": 99,
+  "method_panel_members": 12,
+  "candidates_with_existing_food_followup": 17,
+  "candidates_with_source_material_annotations": 3,
+  "new_sources_verified": 0,
+  "formal_ranks_generated": 0,
+  "human_review_status": "NOT_REVIEWED",
+  "change_applied": "NO",
+  "input_sha256": {
+    "02_identity_and_evidence/results/candidate_evidence_profiles.csv": "43164fb8e41e72ff6c68837f2aadecef2c09b28aac4e65deef844f18218a620a",
+    "03_candidate_selection/01_activity_model/results/Capacity_Analysis_Entry.csv": "f41b6ed34766b09f807295eaf8bc630e77020c4995add7efefd57db21b5fe116",
+    "03_candidate_selection/02_cross_study_expansion/results/Bridge_Panel_Preparation.csv": "2e6bbc19bb3c166c2e57e1ac0c02d4d1e5ba801344308cd0473ddd5977e86c2c"
+  }
+}

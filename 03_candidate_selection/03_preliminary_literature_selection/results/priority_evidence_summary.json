@@ -1,0 +1,15 @@
+{
+  "priority_candidates": 28,
+  "mapped_priority_candidates": 28,
+  "priority_provenance_rows": 81,
+  "analysis_categories": {
+    "WAIT_FOR_EVIDENCE": 59,
+    "SENSITIVITY_ANALYSIS": 12,
+    "REFERENCE_ONLY": 10
+  },
+  "primary_eligible_rows": 0,
+  "priority_candidates_without_disposition": [],
+  "new_source_checks": 0,
+  "human_review_status": "NOT_REVIEWED",
+  "change_applied": "NO"
+}

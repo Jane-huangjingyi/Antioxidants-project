@@ -35,3 +35,16 @@ The [pilot trace and contrast specification](../04_absorbance_assay/02_pilot_des
 Identified equipment: [Flex reader qualification](../04_absorbance_assay/03_platform_compatibility/README.md), [source-linked wavelength compatibility](../04_absorbance_assay/03_platform_compatibility/Method_Platform_Compatibility.csv), and [documented capabilities versus local unknowns](../04_absorbance_assay/config/platform_decisions.json). Accessory inventory is pending; optical compatibility does not approve an assay.
 
 Method-development diagnostic: [simulation-only endpoint stress test](../04_absorbance_assay/04_endpoint_stress_test/README.md), [45 scenario/window calculations](../04_absorbance_assay/04_endpoint_stress_test/results/Synthetic_Endpoint_Sensitivity.csv), and [illustration](../06_manuscript/figures/Capacity_Kinetics_Toy_Diagnostic/simulation_v0.1/png/Capacity_Kinetics_Toy_Diagnostic.png). These are mathematical checks, not compound measurements or an experimental ranking.
+
+First literature preselection view: [scope and reproduction](../03_candidate_selection/03_preliminary_literature_selection/README.md), [193-candidate review](../03_candidate_selection/03_preliminary_literature_selection/results/Preliminary_Candidate_Review.csv), and [99 linked capacity references](../03_candidate_selection/03_preliminary_literature_selection/results/Linked_Capacity_Source_References.csv). This joins the existing capacity-reference table only; newer source checks remain separately linked in its scope note. No potency ranking is assigned.
+
+Food-form follow-up: [17-candidate review queue](../03_candidate_selection/03_preliminary_literature_selection/results/Food_Form_Review.csv), distinguishing newly checked source passages from prior annotations and keeping exact-form decisions pending.
+
+The [44-candidate exploratory literature reference order](../03_candidate_selection/03_preliminary_literature_selection/results/Exploratory_Literature_Reference_Order.csv) provides a descriptive cross-protocol median order, with [paper-specific summaries](../03_candidate_selection/03_preliminary_literature_selection/results/Paper_Specific_Reference_Order.csv). Read its [method and interpretation](../03_candidate_selection/03_preliminary_literature_selection/README.md#exploratory-literature-reference-order) before selecting experimental candidates.
+
+Detection selection now has a [193-candidate assessment table](../03_candidate_selection/03_preliminary_literature_selection/results/Detection_Candidate_Assessment.csv) and a [selection calculation and figure plan](../03_candidate_selection/03_preliminary_literature_selection/Detection_Selection_and_Figure_Plan.md), linking capacity references, chemistry coverage, evidence and material feasibility.
+
+Prioritized source work is linked in the [28-candidate source comparability table](../03_candidate_selection/03_preliminary_literature_selection/results/Priority_Source_Comparability.csv) and [disposition counts](../03_candidate_selection/03_preliminary_literature_selection/results/priority_evidence_summary.json).
+
+Inspect [leave-one-source-out reference positions](../03_candidate_selection/03_preliminary_literature_selection/results/Source_Omission_Order_Diagnostic.csv) alongside the preliminary order to identify single-source dependence and position changes.
+
