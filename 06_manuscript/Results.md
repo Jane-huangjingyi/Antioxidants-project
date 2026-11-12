@@ -70,3 +70,7 @@ The researcher identified the Opentrons Flex Absorbance Plate Reader Module GEN1
 ## Simulation-only method diagnostic
 
 In the prespecified dimensionless toy model, equal synthetic capacity with different capture rates produced a 3.067-fold difference in normalized-AUC slope ratios for one fixed acquisition window. Halving the integration step changed ratios by at most 1.1e-06. These numerical counterexamples concern interpretation under assumed kinetics, not measured crocin behavior, molar TE, candidate ranks or formal model validation. The fixed-protocol molar-protection endpoint remains a development candidate.
+
+## Supplemental retrieval coverage
+
+Public supplemental retrieval covered all 193 current profiles through 579 canonical-route queries and 193 expanded capacity queries. The supplemental register contained 49906 provisional identifier groups. Reconciliation with historical metadata yielded 87386 master groups and 106123 candidate-article links. These are bibliographic retrieval counts awaiting conflict review, screening and quantitative extraction. Existing model labels were not expanded from metadata alone.

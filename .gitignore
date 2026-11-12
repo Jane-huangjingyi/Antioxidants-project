@@ -45,3 +45,12 @@ desktop.ini
 
 # Local chemistry runtime (not research data)
 .runtime_chem/
+
+# Reproducible supplemental retrieval caches kept locally
+/02_identity_and_evidence/01_systematic_supplement/inputs/
+/02_identity_and_evidence/01_systematic_supplement/fulltext_xml/
+/02_identity_and_evidence/01_systematic_supplement/PubChem_Synonym_Records.json
+/02_identity_and_evidence/01_systematic_supplement/Candidate_Search_Hit_Links.csv
+/02_identity_and_evidence/01_systematic_supplement/Master_Article_Register.csv
+/02_identity_and_evidence/01_systematic_supplement/Master_Candidate_Article_Links.csv
+/02_identity_and_evidence/01_systematic_supplement/Retrieved_Article_Register.csv

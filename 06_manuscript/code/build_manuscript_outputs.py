@@ -113,3 +113,10 @@ if simulation.exists():
  s=read_json(simulation)
  with (out/'Results.md').open('a',encoding='utf-8') as f:
   f.write(f"\n## Simulation-only method diagnostic\n\nIn the prespecified dimensionless toy model, equal synthetic capacity with different capture rates produced a {s['equal_capacity_fast_to_slow_ratio_at_start0_end4']:.3f}-fold difference in normalized-AUC slope ratios for one fixed acquisition window. Halving the integration step changed ratios by at most {s['maximum_ratio_change_when_halving_step']:.2g}. These numerical counterexamples concern interpretation under assumed kinetics, not measured crocin behavior, molar TE, candidate ranks or formal model validation. The fixed-protocol molar-protection endpoint remains a development candidate.\n")
+
+
+retrieval=ROOT/'02_identity_and_evidence/01_systematic_supplement/Retrieval_Summary.json'
+if retrieval.exists():
+ s=read_json(retrieval)
+ with (out/'Results.md').open('a',encoding='utf-8') as f:
+  f.write(f"\n## Supplemental retrieval coverage\n\nPublic supplemental retrieval covered all 193 current profiles through 579 canonical-route queries and 193 expanded capacity queries. The supplemental register contained {s['supplement_identifier_groups']} provisional identifier groups. Reconciliation with historical metadata yielded {s['merged_identifier_groups']} master groups and {s['candidate_article_links']} candidate-article links. These are bibliographic retrieval counts awaiting conflict review, screening and quantitative extraction. Existing model labels were not expanded from metadata alone.\n")

@@ -1,0 +1,10 @@
+{
+  "historical_associations": 45643,
+  "supplement_identifier_groups": 49906,
+  "merged_identifier_groups": 87386,
+  "candidate_article_links": 106123,
+  "overlap_identifier_groups": 5027,
+  "journal_metadata_present": 48987,
+  "deduplication_scope": "EXPLICIT_DOI_PMID_TITLE_FALLBACK_REQUIRES_CONFLICT_AND_NEAR_DUPLICATE_REVIEW",
+  "new_scientific_labels_approved": 0
+}

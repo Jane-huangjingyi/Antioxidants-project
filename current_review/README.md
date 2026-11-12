@@ -65,3 +65,11 @@ The [unified 193-candidate model ranking review](../03_candidate_selection/05_mo
 The [capacity-scale order comparison](../03_candidate_selection/05_model_robustness/results/Capacity_Scale_Order_Comparison.csv) and [original-scale validation metrics](../03_candidate_selection/05_model_robustness/results/capacity_scale_validation.json) compare source averages with conditional model positions.
 
 [Nested paper-selection diagnostics](../03_candidate_selection/05_model_robustness/results/nested_validation_summary.json) accompany the [selected component order](../03_candidate_selection/05_model_robustness/results/Selected_Model_Component_Order.csv).
+
+Systematic supplementation across all current candidates is in the [search module](../02_identity_and_evidence/01_systematic_supplement/README.md). Its article and candidate-hit registers document initial retrieval and screening status. Search completion and scientific inclusion are recorded separately.
+
+All-candidate supplemental retrieval delivery includes [canonical coverage](../02_identity_and_evidence/01_systematic_supplement/Search_Coverage_Audit.csv), [expanded capacity coverage](../02_identity_and_evidence/01_systematic_supplement/Expanded_Capacity_Coverage_Audit.csv), the [master article register](../02_identity_and_evidence/01_systematic_supplement/Master_Article_Register.csv), [candidate-article links](../02_identity_and_evidence/01_systematic_supplement/Master_Candidate_Article_Links.csv), and [known-source recall](../02_identity_and_evidence/01_systematic_supplement/Known_Source_Recall_Audit.csv). New bibliographic hits await scientific screening and extraction.
+
+The [first method-title full-text queue](../02_identity_and_evidence/01_systematic_supplement/Method_Fulltext_Queue.csv) records recovery status and original XML provenance for prioritized capacity-method articles.
+
+Recovered-source work now includes [full-text extraction readiness](../02_identity_and_evidence/01_systematic_supplement/Fulltext_Extraction_Readiness.csv), [table locators](../02_identity_and_evidence/01_systematic_supplement/Fulltext_Table_Locators.csv), and [scientific provenance notes](../02_identity_and_evidence/01_systematic_supplement/Fulltext_Scientific_Notes.md).

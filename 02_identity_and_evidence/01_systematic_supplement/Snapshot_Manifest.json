@@ -1,0 +1,26 @@
+[
+  {
+    "path": "Candidate_Search_Hit_Links.csv",
+    "snapshot": "snapshots/Candidate_Search_Hit_Links.csv.gz",
+    "sha256": "9619eec51769d730f183bc4d676a8bbf3b4a50e5a5b825bc488d4c7227f073ac",
+    "bytes": 52978448
+  },
+  {
+    "path": "Master_Article_Register.csv",
+    "snapshot": "snapshots/Master_Article_Register.csv.gz",
+    "sha256": "6f0a2a414c0c49185d4add24bb208b60e477ec8cd7b691a69f4e3c088d6ba56e",
+    "bytes": 36927027
+  },
+  {
+    "path": "Master_Candidate_Article_Links.csv",
+    "snapshot": "snapshots/Master_Candidate_Article_Links.csv.gz",
+    "sha256": "270945299a4999e3b23d30bff2dd7f91aa54872b6553502f559fc397fc366226",
+    "bytes": 8970281
+  },
+  {
+    "path": "Retrieved_Article_Register.csv",
+    "snapshot": "snapshots/Retrieved_Article_Register.csv.gz",
+    "sha256": "94fd9ae573a68f7b8b985ea79fe23ad9289f0970c843d11fb35c68a61ba46aae",
+    "bytes": 18448411
+  }
+]

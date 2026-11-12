@@ -186,6 +186,16 @@ After inspecting earlier validation, we added residual least squares with lambda
 
 We nested leave-paper-out selection among baseline and paper-effect penalties 1 and 10 within outer leave-paper-out validation. Inner pooled log-capacity MSE selected the option on common estimable observations. An outer training set with no estimable inner observations used an explicitly flagged baseline fallback. Candidate identities were fixed to the existing component. Full-data inner selection supplied a descriptive component order. Prior inspection of the source data retains an exploratory interpretation. Reproduce with `nested_paper_validation.py` after the robustness comparison.
 
+### All-candidate supplemental retrieval
+
+We initiated standardized public Europe PMC searches for all 193 current candidate profiles. Canonical/reference names were combined with broad antioxidant, quantitative-assay and dietary-occurrence concepts. Capacity searches were paginated to their returned result count. Broad and food routes retained counts and the first 100 records for initial screening. PubChem synonyms were recovered by CID and used in a second capacity-search pass with a recorded short-name selection rule and review status. Ambiguous element/unit abbreviations were excluded from expanded queries, retaining earlier query snapshots. Candidate/DOI references supplied a known-source recall audit and direct DOI anchors. A class/method query supplements compound-name retrieval of multi-compound studies. Search dates, exact queries, response hashes, result counts and actual retrieval completeness accompany the module. These steps follow reproducible search reporting principles [26].
+
+Retrieved metadata are linked to candidates as search hits pending identity, relevance and original-study screening. Journal and ISSN fields are retained for dated metric enrichment. Article quality and scientific inclusion require subsequent original-source assessment. Institutional Web of Science or Scopus supplementation awaits researcher-provided exports. Reproduce through `02_identity_and_evidence/01_systematic_supplement/`.
+
+### Prioritized full-text recovery and provenance review
+
+We prioritized titles explicitly naming ORAC, oxygen radical absorbance, crocin bleaching or pyrogallol red for an initial full-text batch. Public Europe PMC XML recovery was attempted for records with PMC identifiers, retaining failures, source URLs and content hashes. XML table identifiers and literal body-name hits guided original-source reading. Title matching schedules review, while article eligibility requires method and experimental assessment. In the first checked source, DOI 10.3164/jcbn.11-21, Table 1 reports original ORAC-EPR measurements and cites literature ORAC-FL values. Those FL entries require original-study provenance mapping before data integration. Reproduce through `retrieve_method_fulltexts.py` and `inventory_fulltexts.py` in the systematic-supplement module.
+
 ### Method references
 
 1. Zuvela P, David J, Yang X, Huang D, Wong MW. Non-Linear Quantitative Structure–Activity Relationships Modelling, Mechanistic Study and In-Silico Design of Flavonoids as Potent Antioxidants. *Int J Mol Sci*. 2019;20:2328. https://doi.org/10.3390/ijms20092328.
@@ -224,3 +234,4 @@ We nested leave-paper-out selection among baseline and paper-effect penalties 1 
 
 25. Tubaro F, Ghiselli A, Rapuzzi P, Maiorino M, Ursini F. Analysis of plasma antioxidant capacity by competition kinetics. *Free Radic Biol Med*. 1998;24:1228-1234. https://doi.org/10.1016/S0891-5849(97)00436-X. Abstract checked; project toy equations were not attributed to this source.
 
+26. Rethlefsen ML et al. PRISMA-S: an extension to the PRISMA Statement for Reporting Literature Searches in Systematic Reviews. *Systematic Reviews*. 2021;10:39. https://doi.org/10.1186/s13643-020-01542-z.
