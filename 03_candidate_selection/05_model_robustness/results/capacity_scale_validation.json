@@ -1,0 +1,22 @@
+{
+  "ARITHMETIC_SOURCE_MEAN": {
+    "MAE": 2.034442857142857,
+    "RMSE": 2.7932359442904553,
+    "heldout_rows": 35
+  },
+  "GEOMETRIC_SOURCE_MEAN": {
+    "MAE": 2.016157411325772,
+    "RMSE": 2.7698671758636535,
+    "heldout_rows": 35
+  },
+  "OLS_LOG_LOCATION": {
+    "MAE": 1.8430053982107368,
+    "RMSE": 2.6267494350531475,
+    "heldout_rows": 35
+  },
+  "OLS_TRAINING_RESIDUAL_SMEARING": {
+    "MAE": 1.8476327904502452,
+    "RMSE": 2.6421873522062644,
+    "heldout_rows": 35
+  }
+}

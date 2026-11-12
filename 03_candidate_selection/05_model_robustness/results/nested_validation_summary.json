@@ -1,0 +1,33 @@
+{
+  "scope": "EXPLORATORY_NESTED_PAPER_SELECTION_PREVIOUSLY_INSPECTED_DATA",
+  "options": [
+    "BASELINE",
+    "SHRINK_1",
+    "SHRINK_10"
+  ],
+  "inner_objective": "POOLED_LOG_CAPACITY_MSE_ON_COMMON_ESTIMABLE_ROWS",
+  "outer_rows": 35,
+  "outer_folds": 11,
+  "metrics": {
+    "prediction": {
+      "MAE": 0.317171213476054,
+      "RMSE": 0.39018819134880367
+    },
+    "baseline": {
+      "MAE": 0.3262910628172184,
+      "RMSE": 0.3911263253311044
+    }
+  },
+  "outer_selection_counts": {
+    "SHRINK_10": 7,
+    "SHRINK_1": 3,
+    "BASELINE": 1
+  },
+  "full_data_selection": "SHRINK_10",
+  "full_data_inner_scores": {
+    "BASELINE": 0.15297980236701295,
+    "SHRINK_1": 0.1499974658385027,
+    "SHRINK_10": 0.14819594154807922
+  },
+  "independent_confirmation": false
+}

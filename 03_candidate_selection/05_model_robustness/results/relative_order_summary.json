@@ -1,0 +1,42 @@
+{
+  "baseline": {
+    "papers_with_pairs": 8,
+    "dependent_pairs": 60,
+    "pooled_log_ratio_MAE": 0.35441511603835674,
+    "pooled_log_ratio_RMSE": 0.48767585463777396,
+    "pooled_direction_accuracy": 0.75,
+    "mean_paper_direction_accuracy": 0.6125
+  },
+  "OLS": {
+    "papers_with_pairs": 8,
+    "dependent_pairs": 60,
+    "pooled_log_ratio_MAE": 0.41341216698249145,
+    "pooled_log_ratio_RMSE": 0.5869278021625147,
+    "pooled_direction_accuracy": 0.7333333333333333,
+    "mean_paper_direction_accuracy": 0.6
+  },
+  "Huber": {
+    "papers_with_pairs": 8,
+    "dependent_pairs": 60,
+    "pooled_log_ratio_MAE": 0.44044208196199325,
+    "pooled_log_ratio_RMSE": 0.601877335568665,
+    "pooled_direction_accuracy": 0.7166666666666667,
+    "mean_paper_direction_accuracy": 0.5958333333333333
+  },
+  "PAPER_SHRINK_1": {
+    "papers_with_pairs": 8,
+    "dependent_pairs": 60,
+    "pooled_log_ratio_MAE": 0.36391593434428054,
+    "pooled_log_ratio_RMSE": 0.5233227302506893,
+    "pooled_direction_accuracy": 0.7666666666666667,
+    "mean_paper_direction_accuracy": 0.6208333333333333
+  },
+  "PAPER_SHRINK_10": {
+    "papers_with_pairs": 8,
+    "dependent_pairs": 60,
+    "pooled_log_ratio_MAE": 0.34923861555644614,
+    "pooled_log_ratio_RMSE": 0.4901803910143225,
+    "pooled_direction_accuracy": 0.7833333333333333,
+    "mean_paper_direction_accuracy": 0.6291666666666667
+  }
+}

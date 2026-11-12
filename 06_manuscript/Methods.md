@@ -158,6 +158,34 @@ We recomputed the descriptive reference order after omitting each DOI. Supported
 
 We constructed a candidate-paper bipartite graph from explicit molar reference medians and restricted an exploratory additive log-capacity fit to the largest connected component. Candidate indicators and sum-to-zero paper contrasts were fitted by unweighted least squares. Design rank and residual degrees of freedom assessed algebraic estimability. This diagnostic input includes unresolved source/protocol records beyond released primary labels. It assumes additive paper shifts and lacks quality-based or sampling-variance weighting. Leave-paper-out fits centered training-paper effects and assumed zero effect for a new paper. Candidate-location predictions required estimability in the training design row space. Matched training-only candidate means supplied the baseline. Exponentiated coefficients represent geometric-scale locations. Code, assumptions and outputs are in `03_candidate_selection/04_first_evidence_model/`.
 
+### Second-stage robustness diagnostics
+
+We compared the additive OLS model with Huber residual reweighting using cutoff 1.345 and MAD scale on matched estimable leave-paper-out rows. We perturbed source influence using 300 positive exponential paper weights, shared across records within DOI, while retaining the observed graph. A fixed random seed ensured reproducibility. Quantiles describe conditional paper-weight sensitivity. Sampling confidence intervals and posterior Top20 probabilities require additional assumptions and were left unestimated. The model inputs retain source/protocol qualification requirements. Reproduce with `03_candidate_selection/05_model_robustness/compare_models.py`.
+
+### Model source-removal sensitivity
+
+We refitted the additive model after removing each DOI and evaluated candidate-location estimability against each training design row space. For each omission, supported candidate locations were ordered within the fixed 34-candidate universe, allowing unestimable competitors to occupy any position. Aggregate bounds and estimable-scenario counts accompany the paper-weight sensitivity results. These calculations evaluate source dependence under the existing model and retain unresolved source/protocol qualifications. The active project sequence places model development and ranking before experimental material acquisition.
+
+### Pairwise relative-order estimability
+
+We assessed candidate-pair contrast vectors in each leave-paper-out training row space. We retained direction comparisons when estimable and required agreement with the full-data fit across all omissions for a stable pairwise constraint. Direct higher/lower constraints yield possible-position bounds within the fitted component. Numerical tolerance was 1e-8. These bounds describe model-conditional source sensitivity and have no confidence level or significance interpretation. Pairwise and candidate-level outputs accompany the second-stage robustness module.
+
+### Within-paper held-out relative-order validation
+
+Within each held-out DOI we compared predicted versus observed directions for distinct candidate pairs on matched estimable observations. Observed differences within 1e-8 were treated as ties and excluded, while predicted ties counted as unsuccessful predictions. We reported pooled pair direction accuracy and equal-paper mean accuracy. Pair comparisons share candidates and sources and retain dependence. These exploratory comparisons use already-inspected model configurations. Model component positions and uncertainty-status fields were joined to all 193 current profiles for coverage review. Reproduce with `03_candidate_selection/05_model_robustness/validate_relative_order.py`.
+
+### Capacity-scale prediction and ordering diagnostics
+
+We evaluated the same matched held-out candidate/DOI summaries on the original molar-capacity scale. Arithmetic and geometric training-source means were compared with exponentiated additive-model log locations. A further exploratory retransformation multiplied each exponentiated prediction by the mean exponentiated residual estimated within its training fold. Held-out outcomes were excluded from factor estimation. MAE and RMSE refer to reported reference medians rather than a standardized-assay population mean. The comparison followed inspection of earlier models and retains its post-hoc interpretation. Reference arithmetic-mean orders accompany conditional model-component positions in `Capacity_Scale_Order_Comparison.csv`. Run `rank_capacity_scale.py` after `compare_models.py`.
+
+### Exploratory shrinkage of paper effects
+
+After inspecting earlier validation, we added residual least squares with lambda times the squared paper-effect norm, using lambda 1 and 10, sum-to-zero paper effects and unpenalized candidate locations. The penalty accounts for every paper effect including the dependent last contrast. Training-only fits predict the same matched held-out rows. Within-paper log-difference errors and direction agreement assess relative-capacity prediction. These additions are post-hoc model development on previously inspected data. Nested penalty selection or further validation is needed to assess the selected procedure. Full-fit shrinkage positions accompany the existing unpenalized sensitivity results with separate field names.
+
+### Nested paper selection of shrinkage
+
+We nested leave-paper-out selection among baseline and paper-effect penalties 1 and 10 within outer leave-paper-out validation. Inner pooled log-capacity MSE selected the option on common estimable observations. An outer training set with no estimable inner observations used an explicitly flagged baseline fallback. Candidate identities were fixed to the existing component. Full-data inner selection supplied a descriptive component order. Prior inspection of the source data retains an exploratory interpretation. Reproduce with `nested_paper_validation.py` after the robustness comparison.
+
 ### Method references
 
 1. Zuvela P, David J, Yang X, Huang D, Wong MW. Non-Linear Quantitative Structure–Activity Relationships Modelling, Mechanistic Study and In-Silico Design of Flavonoids as Potent Antioxidants. *Int J Mol Sci*. 2019;20:2328. https://doi.org/10.3390/ijms20092328.
@@ -195,3 +223,4 @@ We constructed a candidate-paper bipartite graph from explicit molar reference m
 24. Opentrons. Protocol Designer: Modules and Fixtures. https://docs.opentrons.com/protocol-designer/create-protocol/modules-fixtures/. Accessed 2026-11-09.
 
 25. Tubaro F, Ghiselli A, Rapuzzi P, Maiorino M, Ursini F. Analysis of plasma antioxidant capacity by competition kinetics. *Free Radic Biol Med*. 1998;24:1228-1234. https://doi.org/10.1016/S0891-5849(97)00436-X. Abstract checked; project toy equations were not attributed to this source.
+

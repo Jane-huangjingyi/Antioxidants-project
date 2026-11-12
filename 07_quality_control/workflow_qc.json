@@ -14,7 +14,7 @@
   "formal_lab_ready_count": 0,
   "new_assay_experiments_performed": 0,
   "pubchem_queue_identity_conflicts": [],
-  "svg_text_without_raster_verified": 58,
+  "svg_text_without_raster_verified": 60,
   "active_english_markdown_pass": true,
   "broken_active_markdown_links": [],
   "synthetic_auc_check": "PASS_SYNTHETIC_TEST_ONLY_NOT_EXPERIMENTAL_RESULTS"

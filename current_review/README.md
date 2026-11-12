@@ -49,3 +49,19 @@ Prioritized source work is linked in the [28-candidate source comparability tabl
 Inspect [leave-one-source-out reference positions](../03_candidate_selection/03_preliminary_literature_selection/results/Source_Omission_Order_Diagnostic.csv) alongside the preliminary order to identify single-source dependence and position changes.
 
 The [first evidence-model fit](../03_candidate_selection/04_first_evidence_model/README.md) provides [34 candidate estimates](../03_candidate_selection/04_first_evidence_model/results/Candidate_Diagnostic_Estimates.csv), [leave-paper-out predictions](../03_candidate_selection/04_first_evidence_model/results/Leave_Paper_Out_Diagnostics.csv), and [model diagnostics](../03_candidate_selection/04_first_evidence_model/results/model_diagnostics.json). Model assumptions and unresolved source/protocol gates are documented in its README.
+
+Second-stage computational results are in the [robustness module](../03_candidate_selection/05_model_robustness/README.md), including [candidate model sensitivity](../03_candidate_selection/05_model_robustness/results/Candidate_Model_Sensitivity.csv) and [matched held-out comparisons](../03_candidate_selection/05_model_robustness/results/Heldout_Model_Comparison.csv).
+
+Evidence-model figures now show [held-out prediction comparison](../06_manuscript/figures/Evidence_Model_Heldout/analysis_v0.1/png/Evidence_Model_Heldout.png) and [candidate order sensitivity](../06_manuscript/figures/Evidence_Model_Order_Sensitivity/analysis_v0.1/png/Evidence_Model_Order_Sensitivity.png). Both reproduce through `05_analysis/R/render_evidence_model.R`, with paired SVG exports.
+
+The researcher-accepted [six-compound pilot preparation](../03_candidate_selection/03_preliminary_literature_selection/results/Six_Compound_Pilot_Preparation.csv) links identities, capacity DOIs, food-source status, model context and blank material-qualification fields. Follow the [pilot preparation plan](../03_candidate_selection/03_preliminary_literature_selection/Six_Compound_Pilot_Plan.md).
+
+Current researcher direction is modelling and ranking first. The [model source-omission diagnostics](../03_candidate_selection/05_model_robustness/results/Model_Source_Omission.csv) and updated candidate sensitivity table are the active analytical outputs. Material acquisition and experimental preparation follow the modelling/selection stage.
+
+Relative-order checks are available in the [pairwise summary](../03_candidate_selection/05_model_robustness/results/Pairwise_Order_Summary.csv) and [candidate partial-order bounds](../03_candidate_selection/05_model_robustness/results/Candidate_Partial_Order.csv).
+
+The [unified 193-candidate model ranking review](../03_candidate_selection/05_model_robustness/results/Model_Ranking_Review.csv) joins fitted positions and coverage. [Held-out within-paper relative-order validation](../03_candidate_selection/05_model_robustness/results/Heldout_Relative_Order.csv) tests the model ranking direction against matched source observations.
+
+The [capacity-scale order comparison](../03_candidate_selection/05_model_robustness/results/Capacity_Scale_Order_Comparison.csv) and [original-scale validation metrics](../03_candidate_selection/05_model_robustness/results/capacity_scale_validation.json) compare source averages with conditional model positions.
+
+[Nested paper-selection diagnostics](../03_candidate_selection/05_model_robustness/results/nested_validation_summary.json) accompany the [selected component order](../03_candidate_selection/05_model_robustness/results/Selected_Model_Component_Order.csv).

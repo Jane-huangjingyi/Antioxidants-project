@@ -52,8 +52,8 @@ fig=[]
 for p in sorted((ROOT/'06_manuscript/figures').rglob('*.png')):
  svg=Path(str(p).replace('/png/','/svg/').replace('\\png\\','\\svg\\')).with_suffix('.svg')
  assert svg.exists(),p
- role='SIMULATED_ENDPOINT_DIAGNOSTIC' if p.stem=='Capacity_Kinetics_Toy_Diagnostic' else 'EXPLORATORY_MODEL_DIAGNOSTIC' if p.stem in {'Model_Heldout_Predictions','Model_Scaffold_Errors','Model_Order_Stability'} else 'MAIN_CURRENT_WORKFLOW' if 'supplementary' not in p.parts else 'SUPPLEMENTARY_PRESERVED_CONSTRUCT'
- fig.append({'figure_name':p.stem,'role':role,'png_path':p.relative_to(ROOT).as_posix(),'svg_path':svg.relative_to(ROOT).as_posix(),'generator':'05_analysis/R/render_endpoint_simulation.R' if role=='SIMULATED_ENDPOINT_DIAGNOSTIC' else '05_analysis/R/render_model_diagnostics.R' if role=='EXPLORATORY_MODEL_DIAGNOSTIC' else '05_analysis/R/render_manuscript_figures.R' if role.startswith('MAIN') else '05_analysis/render_historical_figures.R','png_sha256':sha(p),'svg_sha256':sha(svg)})
+ role='EVIDENCE_MODEL_DIAGNOSTIC' if p.stem in {'Evidence_Model_Heldout','Evidence_Model_Order_Sensitivity'} else 'SIMULATED_ENDPOINT_DIAGNOSTIC' if p.stem=='Capacity_Kinetics_Toy_Diagnostic' else 'EXPLORATORY_MODEL_DIAGNOSTIC' if p.stem in {'Model_Heldout_Predictions','Model_Scaffold_Errors','Model_Order_Stability'} else 'MAIN_CURRENT_WORKFLOW' if 'supplementary' not in p.parts else 'SUPPLEMENTARY_PRESERVED_CONSTRUCT'
+ fig.append({'figure_name':p.stem,'role':role,'png_path':p.relative_to(ROOT).as_posix(),'svg_path':svg.relative_to(ROOT).as_posix(),'generator':'05_analysis/R/render_evidence_model.R' if role=='EVIDENCE_MODEL_DIAGNOSTIC' else '05_analysis/R/render_endpoint_simulation.R' if role=='SIMULATED_ENDPOINT_DIAGNOSTIC' else '05_analysis/R/render_model_diagnostics.R' if role=='EXPLORATORY_MODEL_DIAGNOSTIC' else '05_analysis/R/render_manuscript_figures.R' if role.startswith('MAIN') else '05_analysis/render_historical_figures.R','png_sha256':sha(p),'svg_sha256':sha(svg)})
 write_csv(ROOT/'07_quality_control/figure_export_registry.csv',fig)
 def git(*args):
  try:return subprocess.check_output(['git',*args],cwd=ROOT,encoding='utf8',stderr=subprocess.DEVNULL).strip()

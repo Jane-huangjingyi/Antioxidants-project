@@ -1,0 +1,39 @@
+{
+  "scope": "EXPLORATORY_EXISTING_COMPONENT_MODEL_ROBUSTNESS",
+  "candidates": 34,
+  "papers": 11,
+  "matched_heldout_rows": 35,
+  "metrics": {
+    "baseline": {
+      "MAE": 0.3262910628172185,
+      "RMSE": 0.3911263253311045
+    },
+    "OLS": {
+      "MAE": 0.31827301149562054,
+      "RMSE": 0.4079400347720979
+    },
+    "Huber": {
+      "MAE": 0.3259219839520765,
+      "RMSE": 0.41512296578556607
+    },
+    "PAPER_SHRINK_1": {
+      "MAE": 0.3122590544931481,
+      "RMSE": 0.38729506301849853
+    },
+    "PAPER_SHRINK_10": {
+      "MAE": 0.3183915851282238,
+      "RMSE": 0.3849622599009924
+    }
+  },
+  "candidate_pairs": 561,
+  "pairs_estimable_in_every_omission": 78,
+  "pairs_stable_direction_every_omission": 68,
+  "weight_perturbations": 300,
+  "random_seed": 20261111,
+  "quantile_interpretation": "SENSITIVITY_TO_POSITIVE_PAPER_WEIGHTS_CONDITIONAL_ON_OBSERVED_DESIGN",
+  "clinical_or_sampling_CI_estimated": false,
+  "Top20_probability_estimated": false,
+  "quality_adjustment_fitted": false,
+  "input_sha256": "95062ebc9a2e344b4c928f675fb18672010e66f180f138dd24b5c420582ceba3",
+  "code_sha256": "72eab24aed476ad5b74964d5e4246db1acd5be265fb8b48e573d7a446a7a8819"
+}
