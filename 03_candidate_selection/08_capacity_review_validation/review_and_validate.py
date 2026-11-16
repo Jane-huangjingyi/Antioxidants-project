@@ -33,6 +33,8 @@ def main():
     extra=read(SOURCE/'Original_Capacity_Followup.csv')
     bridge=HERE/'Reviewed_Bridge_Capacity_Rows.csv'
     if bridge.exists():extra+=read(bridge)
+    citrus=HERE/'Reviewed_Citrus_Capacity_Rows.csv'
+    if citrus.exists():extra+=read(citrus)
     for r in extra:
         if r['candidate_id'] not in connected or not r['conditional_molar_capacity']:
             continue

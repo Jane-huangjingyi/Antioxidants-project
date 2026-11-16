@@ -29,3 +29,5 @@ Run `python 02_identity_and_evidence/03_date_scoped_review/code/extract_blueberr
 After recording scientific decisions, rerun reconciliation and triage. Already recorded reading scopes leave the new-source queue and retain their missing-field tasks. Acquisition counts describe their recovery batch, while the active queue reflects subsequent decisions.
 
 [Previously reviewed sources with missing-field tasks](results/Prior_Review_Missing_Field_Queue.csv) retain the recorded reading scope and schedule only unchecked methods, supplements, materials and independence fields. [The active new-source queue](results/Original_Capacity_Fulltext_Queue.csv) is updated after those reuse decisions.
+
+The current source decision table now includes the2020 citrus single-compound study, a2024 four-standard unit hold, and a2023 six-anthocyanidin figure-recovery task. Reproduce the unit-hold table with `python 02_identity_and_evidence/03_date_scoped_review/code/extract_current_unit_holds.py`. These decisions feed back into review reuse. The expanded conditional model in Step03.8 includes four parent-mapped citrus rows.

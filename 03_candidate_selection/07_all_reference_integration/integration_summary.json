@@ -3,14 +3,14 @@
   "unique_linked_articles": 77594,
   "candidates_considered": 193,
   "numeric_candidates": 49,
-  "numeric_source_DOIs": 11,
-  "numeric_rows": 106,
+  "numeric_source_DOIs": 12,
+  "numeric_rows": 110,
   "components": [
     {
       "component": 1,
       "candidates": 48,
-      "rows": 105,
-      "source_DOIs": 10
+      "rows": 109,
+      "source_DOIs": 11
     },
     {
       "component": 2,
@@ -19,7 +19,7 @@
       "source_DOIs": 1
     }
   ],
-  "additional_numeric_rows": 28,
+  "additional_numeric_rows": 32,
   "all_articles_scientifically_reviewed": false,
   "formal_global_rank_supported": false
 }

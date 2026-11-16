@@ -62,6 +62,7 @@ variant_labels <- c(
 )
 predictions$variant_label <- factor(variant_labels[predictions$variant], levels = unname(variant_labels))
 study_year <- c(
+  "10.3390/antiox9050360" = "2020",
   "10.3390/antiox11091784" = "2022", "10.3390/foods11193131" = "2022",
   "10.3762/bjoc.11.151" = "2015", "10.3390/molecules29102370" = "2024",
   "10.1016/j.foodchem.2008.08.013" = "2009",

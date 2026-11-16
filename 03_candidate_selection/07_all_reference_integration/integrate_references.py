@@ -30,6 +30,8 @@ def main():
     additional=read(SOURCE/'Original_Capacity_Followup.csv')
     bridge=ROOT/'03_candidate_selection/08_capacity_review_validation/Reviewed_Bridge_Capacity_Rows.csv'
     if bridge.exists():additional+=read(bridge)
+    citrus=ROOT/'03_candidate_selection/08_capacity_review_validation/Reviewed_Citrus_Capacity_Rows.csv'
+    if citrus.exists():additional+=read(citrus)
     rows=list(base)
     for r in additional:
         if not r['candidate_id'] or not r['conditional_molar_capacity']:

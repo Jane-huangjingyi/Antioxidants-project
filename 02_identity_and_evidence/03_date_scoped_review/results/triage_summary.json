@@ -2,11 +2,11 @@
   "in_scope_records": 48637,
   "reading_scopes": {
     "AUTOMATED_TITLE_ONLY_TRIAGE": 39774,
-    "AUTOMATED_CACHED_TITLE_ABSTRACT_TRIAGE": 8830,
-    "REUSE_PRIOR_RECORDED_SCIENTIFIC_SCOPE": 33
+    "AUTOMATED_CACHED_TITLE_ABSTRACT_TRIAGE": 8827,
+    "REUSE_PRIOR_RECORDED_SCIENTIFIC_SCOPE": 36
   },
-  "original_ORAC_fulltext_candidates": 118,
-  "local_xml_available": 71,
+  "original_ORAC_fulltext_candidates": 115,
+  "local_xml_available": 68,
   "final_scientific_exclusions": 0,
   "new_model_labels": 0,
   "final_PRISMA_screening_counts_established": false

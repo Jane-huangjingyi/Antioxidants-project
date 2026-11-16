@@ -3,45 +3,45 @@
   "variants": [
     {
       "variant": "EXTENDED_UNKNOWN_PH_NAME_BASED",
-      "candidate_rows": 105,
+      "candidate_rows": 109,
       "candidates": 48,
-      "papers": 10,
-      "reported_protocol_blocks": 12,
-      "full_design_rank": 59,
-      "full_parameters": 59,
-      "single_DOI_candidates": 20,
-      "heldout_rows": 67,
-      "total_heldout_rows": 105,
+      "papers": 11,
+      "reported_protocol_blocks": 13,
+      "full_design_rank": 60,
+      "full_parameters": 60,
+      "single_DOI_candidates": 18,
+      "heldout_rows": 73,
+      "total_heldout_rows": 109,
       "metrics": {
         "predicted_log_location": {
-          "MAE": 0.4869180654421782,
-          "RMSE": 0.6575055440817409
+          "MAE": 0.4635303481090482,
+          "RMSE": 0.6339328837854491
         },
         "baseline_log_location": {
-          "MAE": 0.5281275106651413,
-          "RMSE": 0.7026000673289524
+          "MAE": 0.5026596702611633,
+          "RMSE": 0.679572064401426
         }
       }
     },
     {
       "variant": "EXTENDED_CONFLICT_EXCLUDED",
-      "candidate_rows": 105,
+      "candidate_rows": 109,
       "candidates": 48,
-      "papers": 10,
-      "reported_protocol_blocks": 12,
-      "full_design_rank": 59,
-      "full_parameters": 59,
-      "single_DOI_candidates": 20,
-      "heldout_rows": 67,
-      "total_heldout_rows": 105,
+      "papers": 11,
+      "reported_protocol_blocks": 13,
+      "full_design_rank": 60,
+      "full_parameters": 60,
+      "single_DOI_candidates": 18,
+      "heldout_rows": 73,
+      "total_heldout_rows": 109,
       "metrics": {
         "predicted_log_location": {
-          "MAE": 0.4869180654421782,
-          "RMSE": 0.6575055440817409
+          "MAE": 0.4635303481090482,
+          "RMSE": 0.6339328837854491
         },
         "baseline_log_location": {
-          "MAE": 0.5281275106651413,
-          "RMSE": 0.7026000673289524
+          "MAE": 0.5026596702611633,
+          "RMSE": 0.679572064401426
         }
       }
     },
@@ -74,7 +74,7 @@
   "unseen_chemical_or_scaffold_prediction_supported": false,
   "formal_global_Top20_established": false,
   "formal_sampling_CIs_estimated": false,
-  "source_omission_order_rows": 1104,
+  "source_omission_order_rows": 1200,
   "common_universe_membership": [
     {
       "first_variant": "EXTENDED_UNKNOWN_PH_NAME_BASED",
@@ -110,6 +110,6 @@
       "interpretation": "COMMON_CANDIDATE_UNIVERSE_DIAGNOSTIC_MEMBERSHIP"
     }
   ],
-  "new_source_extraction_sha256": "c0a167f8ae67966e7c2c1a0f03dc1127d5f815d63aef65ea9761a28a0ae7dd89",
+  "new_source_extraction_sha256": "43deb2f545fcf00209b9bb82d1124fdc5392569393ab8da9d4f0a5adbd67543b",
   "original2023_extraction_sha256": "466ff4999b16ee6c8b32cd8bc63fffd6ba7d90ae2f908ec04561ae9015ce832a"
 }

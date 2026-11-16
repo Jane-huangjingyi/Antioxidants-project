@@ -180,21 +180,26 @@ if (capacity_review/'review_validation_summary.json').exists():
  review_progress=read_csv(capacity_review/'Candidate_Review_and_Inclusion_Progress.csv')
  reviewed_input=read_csv(capacity_review/'Connected_Conditional_Analysis_Input.csv')
  validation_summary=read_json(capacity_review/'results/model_update_summary.json')
- assert len(review_rows)==194 and len(review_progress)==193
+ assert len(review_rows)==203 and len(review_progress)==193
  assert len({r['candidate_id'] for r in review_progress})==193
  assert all(r['human_review_status']=='NOT_REVIEWED' and r['change_applied']=='NO' for r in review_rows)
  assert sum(r['disposition']=='DISTINCT_AUC_ENDPOINT_HOLD' for r in review_rows)==5
  assert all(r['doi']!='10.3390/antiox13020222' for r in reviewed_input)
+ citrus_rows=read_csv(capacity_review/'Reviewed_Citrus_Capacity_Rows.csv')
+ assert len(citrus_rows)==9 and sum(bool(r['candidate_id']) for r in citrus_rows)==4
+ for r in citrus_rows:
+  if r['candidate_id']:
+   assert abs(float(r['conditional_molar_capacity'])-float(r['raw_mean'])/100*float(r['reference_MW_g_mol'])/250.29)<1e-10
  assert not any(r['evidence_id']=='USR-ZHANG2020_S1-27-ORAC_FL' for r in reviewed_input)
  assert validation_summary['new_source_extraction_sha256']==sha(capacity_review/'Connected_Conditional_Analysis_Input.csv')
  assert not validation_summary['newly_tuned_parameters'] and not validation_summary['formal_global_Top20_established']
  expanded=next(r for r in validation_summary['variants'] if r['variant']=='EXTENDED_CONFLICT_EXCLUDED')
- assert expanded['candidates']==48 and expanded['papers']==10 and expanded['candidate_rows']==105
+ assert expanded['candidates']==48 and expanded['papers']==11 and expanded['candidate_rows']==109
  bounds=read_csv(capacity_review/'Top20_Conditional_Uncertainty.csv')
  assert len(bounds)==48
  for r in bounds:
   assert 1<=int(r['deletion_best_position'])<=int(r['full_fit_position'])<=int(r['deletion_worst_position'])<=48
- summary.update(capacity_audited_rows=194,capacity_review_progress_profiles=193,connected_validation_candidates=48,connected_validation_DOIs=10)
+ summary.update(capacity_audited_rows=203,capacity_review_progress_profiles=193,connected_validation_candidates=48,connected_validation_DOIs=11)
 date_review=ROOT/'02_identity_and_evidence/03_date_scoped_review/results'
 if (date_review/'triage_summary.json').exists():
  scoped=read_csv(date_review/'Date_Scoped_Article_Register.csv')
@@ -207,7 +212,9 @@ if (date_review/'triage_summary.json').exists():
  assert len(blueberry)==5 and sum(bool(r['candidate_id']) for r in blueberry)==1
  assert all(r['raw_units']=='micromol Trolox/micromol sample' and r['model_label_release']=='NO' for r in blueberry)
  decisions=read_csv(date_review/'Current_Scientific_Source_Decisions.csv')
- for r in decisions+blueberry:
+ unit_holds=read_csv(date_review/'Current_Standard_Unit_Holds.csv')
+ assert len(unit_holds)==4 and all(r['converted_molar_value']=='' for r in unit_holds)
+ for r in decisions+blueberry+unit_holds:
   assert r['human_review_status']=='NOT_REVIEWED' and r['change_applied']=='NO'
   cached_source=ROOT/r['source_file']
   if cached_source.exists():assert sha(cached_source)==r['source_sha256']

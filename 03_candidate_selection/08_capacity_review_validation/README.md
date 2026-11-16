@@ -1,6 +1,6 @@
 # Capacity source review and connected validation
 
-This stage reconciles existing original-source extractions, adds a targeted 2024 kinetic-study audit and validates the connected conditional capacity set. The [capacity row review](Capacity_Row_Review.csv) contains 194 source rows from 14 DOIs, including other probes, unmapped compounds and unresolved endpoints. The [all-candidate progress table](Candidate_Review_and_Inclusion_Progress.csv) distinguishes retrieved associations, located leads, source-row-audited DOIs, extracted rows and conditionally analyzed rows for all 193 profiles. These counts retain their reading scopes. They do not establish complete scientific review of the bibliographic corpus.
+This stage reconciles existing original-source extractions, adds a targeted 2024 kinetic-study audit and validates the connected conditional capacity set. The [capacity row review](Capacity_Row_Review.csv) contains 203 source rows from 15 DOIs, including other probes, unmapped compounds and unresolved endpoints. The [all-candidate progress table](Candidate_Review_and_Inclusion_Progress.csv) distinguishes retrieved associations, located leads, source-row-audited DOIs, extracted rows and conditionally analyzed rows for all 193 profiles. These counts retain their reading scopes. They do not establish complete scientific review of the bibliographic corpus.
 
 ## Source decisions
 
@@ -10,13 +10,13 @@ The fresh PMC10886186 review checks DOI 10.3390/antiox13020222 Table 3 and secti
 
 ## Validation results
 
-The full conditional dataset retains 49 candidates and 11 DOIs in two disconnected components, as described in [Step 03.7](../07_all_reference_integration/README.md). This validation uses the largest component, comprising 48 candidates, ten DOIs and 105 rows. Twenty candidates have one DOI. The reported-pH-7.4/37-C subset contains 24 candidates, six DOIs and 37 rows. This subset retains material and protocol qualification gaps, including the printed 2024 AAPH unit ambiguity.
+The full conditional dataset retains 49 candidates and 12 DOIs in two disconnected components, as described in [Step 03.7](../07_all_reference_integration/README.md). This validation uses the largest component, comprising 48 candidates, eleven DOIs and 109 rows. Eighteen candidates have one DOI. The reported-pH-7.4/37-C subset contains 24 candidates, six DOIs and 37 rows. This subset retains material and protocol qualification gaps, including the printed 2024 AAPH unit ambiguity.
 
-The existing fixed-lambda-10 model and validation code are reused. Whole-paper holdout removes all blocks from the omitted DOI and scores only estimable training-candidate locations. Expanded log RMSE is 0.6575 versus 0.7026 for the matched baseline, over 67 estimable outcomes. The reported-pH/temperature subset gives 0.4128 versus 0.4151 over nine outcomes. Different sets score different observations. The improvement is small.
+The existing fixed-lambda-10 model and validation code are reused. Whole-paper holdout removes all blocks from the omitted DOI and scores only estimable training-candidate locations. Expanded log RMSE is 0.6339 versus 0.6796 for the matched baseline, over 73 estimable outcomes. The reported-pH/temperature subset gives 0.4128 versus 0.4151 over nine outcomes. Different sets score different observations. The improvement is small.
 
 The inherited name-based and conflict-excluded labels use the same already-conflict-excluded input here. Their agreement reflects identical data. It contributes no independent robustness evidence. The core-condition comparison shares only 24 candidates with the expanded set.
 
-The [Top20 sensitivity table](Top20_Conditional_Uncertainty.csv) joins source counts, equal-row and equal-total-DOI positions and source-deletion identification bounds. Equal-row and DOI-balanced Top20 sets overlap in 16 members. Catechin and Quercetin retain worst-case positions within 20 across recorded deletions. These bounds are conditional on the model and fixed candidate universe. Sampling intervals and calibrated Top20 probabilities remain unestimated. Final Top20 selection remains open.
+The [Top20 sensitivity table](Top20_Conditional_Uncertainty.csv) joins source counts, equal-row and equal-total-DOI positions and source-deletion identification bounds. Equal-row and DOI-balanced Top20 sets overlap in 15 members. Catechin, Quercetin, Hesperetin and Protocatechuic acid retain worst-case positions within 20 across recorded deletions. These bounds are conditional on the model and fixed candidate universe. Sampling intervals and calibrated Top20 probabilities remain unestimated. Final Top20 selection remains open.
 
 ## Reproduction
 
@@ -36,8 +36,12 @@ Priority source work remains independent original capacity studies for leading s
 
 DOI 10.3390/antiox11091784, PMC9495677, Table 2 provides 20 original ORAC outcomes for ten phenolic acids at reported 2.5 and 5 micromolar concentrations. Section 2.1 describes Sigma standards and 80:20 ethanol/water stocks, section 2.2.2 reports 80-minute fluorimetric measurements and three replicates. The cited method DOI 10.3390/md20010064 specifies fluorescein and 37 C. The bridge paper's pH, final solvent fraction, replicate independence, plus/minus definition and final-well concentration scale remain unresolved. Raw micromolar-TE values and conditional TE/reported-dose ratios are retained together. Mixture outcomes supply no individual-compound labels.
 
-Separate reported-dose blocks preserve both concentrations within one paper. A single-dose sensitivity refits the same 48-candidate set using either 2.5 or 5 micromolar rows. Top20 overlap is 19/20 under either equal-row or equal-total-DOI weighting. The numeric bridge connects the four-acid component; sesamin remains disconnected. The conditional analysis shows appreciable dose/source sensitivity.
+Separate reported-dose blocks preserve both concentrations within one paper. A single-dose sensitivity refits the same 48-candidate set using either 2.5 or 5 micromolar rows. Top20 overlap is20/20 under equal-row and19/20 under equal-total-DOI weighting. The numeric bridge connects the four-acid component; sesamin remains disconnected. The conditional analysis shows appreciable dose/source sensitivity.
 
 ## Sesame-lignan targeted follow-up
 
 [The targeted audit](Sesame_Lignan_Targeted_Audit.csv) preserves three original reported ORAC values from DOI 10.1007/s13197-014-1334-6. Indexed original-source methods, results and Figure 2 caption were checked. Public XML recovery returned HTTP500. The reported micromol-TE/mL outputs lack an unambiguous compound molar denominator. AAPH differs between methods (60mM) and caption (10mM); emission differs between 512 and 515nm. Source errors and independent experimental units remain unresolved. The three values retain a unit/protocol hold and contribute no new model label. Source materials are isolated sesame-oil sesamin/sesamolin and commercial sesamol, with >98% purity stated.
+
+## Citrus single-source follow-up
+
+Run `python 03_candidate_selection/08_capacity_review_validation/extract_citrus_source.py` before integration to reproduce nine original Table4 rows. Four parent-mapped rows add a source DOI to the conditional model. The printed compound100mg normalization is preserved separately from extract per-g methods. Exact forms, pH, final solvent and independent replicate units remain unresolved. The newly expanded model covers49 candidates and12 DOIs overall;48 candidates and11 DOIs form the connected validation set.
