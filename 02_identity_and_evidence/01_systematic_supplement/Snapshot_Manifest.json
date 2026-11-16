@@ -8,8 +8,8 @@
   {
     "path": "Master_Article_Register.csv",
     "snapshot": "snapshots/Master_Article_Register.csv.gz",
-    "sha256": "6f0a2a414c0c49185d4add24bb208b60e477ec8cd7b691a69f4e3c088d6ba56e",
-    "bytes": 36927027
+    "sha256": "d65864359644e1a58b398dd8be8b73cf342acc7000997d07d19fb12aa4b4ac19",
+    "bytes": 36928038
   },
   {
     "path": "Master_Candidate_Article_Links.csv",
@@ -20,7 +20,7 @@
   {
     "path": "Retrieved_Article_Register.csv",
     "snapshot": "snapshots/Retrieved_Article_Register.csv.gz",
-    "sha256": "94fd9ae573a68f7b8b985ea79fe23ad9289f0970c843d11fb35c68a61ba46aae",
-    "bytes": 18448411
+    "sha256": "35312bc119be09cddc8a9519e9a5f7285e1cfd8cda1ceb4091e4e0272948a950",
+    "bytes": 18449422
   }
 ]

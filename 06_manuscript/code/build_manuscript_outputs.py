@@ -120,3 +120,29 @@ if retrieval.exists():
  s=read_json(retrieval)
  with (out/'Results.md').open('a',encoding='utf-8') as f:
   f.write(f"\n## Supplemental retrieval coverage\n\nPublic supplemental retrieval covered all 193 current profiles through 579 canonical-route queries and 193 expanded capacity queries. The supplemental register contained {s['supplement_identifier_groups']} provisional identifier groups. Reconciliation with historical metadata yielded {s['merged_identifier_groups']} master groups and {s['candidate_article_links']} candidate-article links. These are bibliographic retrieval counts awaiting conflict review, screening and quantitative extraction. Existing model labels were not expanded from metadata alone.\n")
+
+screening=ROOT/'02_identity_and_evidence/01_systematic_supplement/source_screening_summary.json'
+followup=ROOT/'02_identity_and_evidence/01_systematic_supplement/capacity_followup_summary.json'
+transfer=ROOT/'03_candidate_selection/05_model_robustness/results/new_source_transfer_summary.json'
+if screening.exists() and followup.exists() and transfer.exists():
+ s=read_json(screening);e=read_json(followup);t=read_json(transfer)
+ with (out/'Results.md').open('a',encoding='utf-8') as f:
+  f.write(f"\n## Original-source expansion and model readiness\n\nEndpoint screening covered {s['screened_articles']} recovered reports, with {s['reading_scope_counts']['TARGETED_BODY_METHOD_TABLE_TEXT_SCREEN']} targeted body/method/table text checks and {s['reading_scope_counts']['ABSTRACT_AND_METHOD_HEADING_SCREEN']} abstract/method-heading checks. Numeric extraction preserved {e['source_rows']} source rows from {e['source_DOIs']} DOIs, provisionally mapping to {len(e['mapped_candidates'])} current candidates. Primary model labels released from this batch were zero because qualification fields remain unresolved. The acquisition log retains this preceding source-recovery stage.\n\nAt this preceding diagnostic stage, the component covered {t['existing_model_candidates']} of {t['indexed_candidates']} indexed candidates, with {t['single_source_candidates']} relying on one source DOI. Six fixed-estimate comparisons involve three newly recovered DOIs. Four phenolic acids within one new paper supply six dependent pairwise directions, all agreeing with prior ordering. Protocol and material gaps limit these comparisons to descriptive cross-condition checks. Stable global ranking and chemical representation remain to be established.\n")
+
+user_sources=ROOT/'02_identity_and_evidence/02_user_supplied_sources/extraction_summary.json'
+updated_model=ROOT/'03_candidate_selection/06_verified_source_update/results/model_update_summary.json'
+if user_sources.exists() and updated_model.exists():
+ intake=read_json(user_sources);updated=read_json(updated_model)
+ with (out/'Results.md').open('a',encoding='utf-8') as f:
+  f.write(f"\n## Current original-source reconciliation and diagnostic update\n\n{intake['documents']} supplied documents represented {intake['original_reports']} reports. {intake['capacity_source_DOIs']} quantitative ORAC reports yielded {intake['capacity_rows']} source rows, comprising {intake['ORAC_FL_rows']} FL, {intake['ORAC_PGR_rows']} PGR and {intake['ORAC_PE_rows']} PE outcomes. The previously inaccessible 60-flavonoid Table S1 was recovered. Nine value/alignment or identity-annotation findings were recorded. Original Table 2 of the 2004 report supplied Quercetin 10.5 +/- 0.4, replacing an earlier reference value of 5.45 in the updated diagnostic data. A Kaempferol association assigned to the same DOI lacked an original table row. These findings supersede the earlier reference-input interpretation above.\n\n")
+  for variant in updated['variants']:
+   f.write(f"{variant['variant']} included {variant['candidates']} candidates, {variant['candidate_rows']} rows and {variant['papers']} DOIs. Whole-paper validation retained {variant['heldout_rows']} estimable outcomes. Fixed-shrinkage and baseline log RMSE were {variant['metrics']['predicted_log_location']['RMSE']:.4f} and {variant['metrics']['baseline_log_location']['RMSE']:.4f}, respectively. {variant['single_DOI_candidates']} candidates relied on one DOI.\n\n")
+  comparison=next(row for row in updated['common_universe_membership'] if row['first_variant']=='EXTENDED_UNKNOWN_PH_NAME_BASED' and row['second_variant']=='EXTENDED_CONFLICT_EXCLUDED')
+  f.write(f"Within their {comparison['common_candidates']}-candidate common universe, name-based and recorded-conflict-excluded diagnostics shared {comparison['overlap']} of 20 members. Source deletion exposed unidentifiable locations and broad possible-position bounds. The core-condition model showed no predictive improvement over its matched baseline. Current estimates describe observed-candidate source means under unresolved material/protocol differences. Stable global selection across all 193 profiles remains to be established.\n")
+
+
+stability=ROOT/'03_candidate_selection/06_verified_source_update/results/evidence_stability_summary.json'
+if stability.exists():
+ s=read_json(stability)
+ with (out/'Results.md').open('a',encoding='utf8') as f:
+  f.write(f"\n## Source support for diagnostic selection\n\nOf the leading 20 positions in the 41-candidate conflict-excluded diagnostic, {s['top20_single_source']} had one source DOI and {s['top20_deletion_crosses_cutoff']} had a deletion-bound envelope crossing position 20. Across the full set, {s['all_single_source']} candidates had one DOI. The candidates retaining worst-case positions within 20 across recorded deletions were {', '.join(s['robust_top20_under_recorded_deletions'])}. This is conditional source-deletion robustness within the recorded candidate set and model. Sampling uncertainty and protocol/material qualification remain to be established.\n")

@@ -1,0 +1,19 @@
+{
+  "documents": 7,
+  "original_reports": 6,
+  "capacity_source_DOIs": 5,
+  "capacity_rows": 138,
+  "ORAC_FL_rows": 116,
+  "ORAC_PGR_rows": 13,
+  "ORAC_PE_rows": 9,
+  "mapped_FL_candidates": 45,
+  "unmapped_FL_rows": 36,
+  "scope_extension_lead_rows": 35,
+  "source_conflicts": 9,
+  "reference_value_conflicts": 1,
+  "unlocated_reference_associations": 1,
+  "unresolved_requested_DOI": "",
+  "formal_model_labels_approved": 0,
+  "human_review_status": "NOT_REVIEWED",
+  "change_applied": "NO"
+}

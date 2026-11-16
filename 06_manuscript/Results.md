@@ -74,3 +74,25 @@ In the prespecified dimensionless toy model, equal synthetic capacity with diffe
 ## Supplemental retrieval coverage
 
 Public supplemental retrieval covered all 193 current profiles through 579 canonical-route queries and 193 expanded capacity queries. The supplemental register contained 49906 provisional identifier groups. Reconciliation with historical metadata yielded 87386 master groups and 106123 candidate-article links. These are bibliographic retrieval counts awaiting conflict review, screening and quantitative extraction. Existing model labels were not expanded from metadata alone.
+
+## Original-source expansion and model readiness
+
+Endpoint screening covered 79 recovered reports, with 35 targeted body/method/table text checks and 44 abstract/method-heading checks. Numeric extraction preserved 26 source rows from 6 DOIs, provisionally mapping to 9 current candidates. Primary model labels released from this batch were zero because qualification fields remain unresolved. The acquisition log retains this preceding source-recovery stage.
+
+At this preceding diagnostic stage, the component covered 34 of 193 indexed candidates, with 20 relying on one source DOI. Six fixed-estimate comparisons involve three newly recovered DOIs. Four phenolic acids within one new paper supply six dependent pairwise directions, all agreeing with prior ordering. Protocol and material gaps limit these comparisons to descriptive cross-condition checks. Stable global ranking and chemical representation remain to be established.
+
+## Current original-source reconciliation and diagnostic update
+
+7 supplied documents represented 6 reports. 5 quantitative ORAC reports yielded 138 source rows, comprising 116 FL, 13 PGR and 9 PE outcomes. The previously inaccessible 60-flavonoid Table S1 was recovered. Nine value/alignment or identity-annotation findings were recorded. Original Table 2 of the 2004 report supplied Quercetin 10.5 +/- 0.4, replacing an earlier reference value of 5.45 in the updated diagnostic data. A Kaempferol association assigned to the same DOI lacked an original table row. These findings supersede the earlier reference-input interpretation above.
+
+EXTENDED_UNKNOWN_PH_NAME_BASED included 43 candidates, 82 rows and 6 DOIs. Whole-paper validation retained 62 estimable outcomes. Fixed-shrinkage and baseline log RMSE were 0.4986 and 0.5045, respectively. 20 candidates relied on one DOI.
+
+EXTENDED_CONFLICT_EXCLUDED included 41 candidates, 78 rows and 6 DOIs. Whole-paper validation retained 59 estimable outcomes. Fixed-shrinkage and baseline log RMSE were 0.4686 and 0.4766, respectively. 19 candidates relied on one DOI.
+
+CORE_REPORTED_PH74_37C included 23 candidates, 34 rows and 4 DOIs. Whole-paper validation retained 11 estimable outcomes. Fixed-shrinkage and baseline log RMSE were 0.4006 and 0.3939, respectively. 16 candidates relied on one DOI.
+
+Within their 41-candidate common universe, name-based and recorded-conflict-excluded diagnostics shared 19 of 20 members. Source deletion exposed unidentifiable locations and broad possible-position bounds. The core-condition model showed no predictive improvement over its matched baseline. Current estimates describe observed-candidate source means under unresolved material/protocol differences. Stable global selection across all 193 profiles remains to be established.
+
+## Source support for diagnostic selection
+
+Of the leading 20 positions in the 41-candidate conflict-excluded diagnostic, 7 had one source DOI and 17 had a deletion-bound envelope crossing position 20. Across the full set, 19 candidates had one DOI. The candidates retaining worst-case positions within 20 across recorded deletions were Catechin, Quercetin, Epicatechin. This is conditional source-deletion robustness within the recorded candidate set and model. Sampling uncertainty and protocol/material qualification remain to be established.

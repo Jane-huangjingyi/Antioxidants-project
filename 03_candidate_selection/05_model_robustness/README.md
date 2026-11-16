@@ -1,5 +1,9 @@
 # Second-stage model robustness
 
+The original-source update in [Step 03.6](../06_verified_source_update/README.md) is the current diagnostic. It corrects a Quercetin reference and excludes an unlocated Kaempferol association from the 2004 source. This module's preceding 34-candidate estimates retain their earlier unverified reference-input context.
+
+The latest evidence expansion and readiness assessment is in [Source_Expansion_and_Model_Readiness.md](Source_Expansion_and_Model_Readiness.md). Run `check_new_source_transfer.py` after original-source extraction to reproduce fixed-estimate comparisons and candidate coverage. New-source rows retain their qualification states before model fitting.
+
 Run `python 03_candidate_selection/05_model_robustness/compare_models.py` from the project root. This module reuses the first-stage 34-candidate, 11-paper connected component and its unresolved cross-protocol reference inputs. It compares candidate-mean baseline, additive OLS and Huber regression on the same 35 estimable leave-paper-out observations. New-paper prediction assumes the training-centered average paper effect.
 
 Huber iteratively reweights residuals using a 1.345 cutoff and MAD scale, with a maximum of 100 iterations and coefficient tolerance 1e-8. This residual-based weighting addresses sensitivity to extreme residuals. Article methods, source validity and experimental quality still require their own assessments. Huber MAE/RMSE are approximately 0.326/0.415 log units, compared with OLS 0.318/0.408 and baseline 0.326/0.391. These results support retaining the baseline as a benchmark while further data qualification proceeds. Model selection from these previously inspected data remains exploratory.

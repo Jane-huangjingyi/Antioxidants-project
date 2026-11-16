@@ -1,0 +1,115 @@
+{
+  "status": "ORIGINAL_SOURCE_DIAGNOSTICS_PROTOCOL_ALIGNMENT_PENDING",
+  "variants": [
+    {
+      "variant": "EXTENDED_UNKNOWN_PH_NAME_BASED",
+      "candidate_rows": 82,
+      "candidates": 43,
+      "papers": 6,
+      "reported_protocol_blocks": 7,
+      "full_design_rank": 49,
+      "full_parameters": 49,
+      "single_DOI_candidates": 20,
+      "heldout_rows": 62,
+      "total_heldout_rows": 82,
+      "metrics": {
+        "predicted_log_location": {
+          "MAE": 0.4321301979702429,
+          "RMSE": 0.49864807249345416
+        },
+        "baseline_log_location": {
+          "MAE": 0.4389320312287858,
+          "RMSE": 0.5045075116992598
+        }
+      }
+    },
+    {
+      "variant": "EXTENDED_CONFLICT_EXCLUDED",
+      "candidate_rows": 78,
+      "candidates": 41,
+      "papers": 6,
+      "reported_protocol_blocks": 7,
+      "full_design_rank": 47,
+      "full_parameters": 47,
+      "single_DOI_candidates": 19,
+      "heldout_rows": 59,
+      "total_heldout_rows": 78,
+      "metrics": {
+        "predicted_log_location": {
+          "MAE": 0.40301485139198834,
+          "RMSE": 0.4685856478978134
+        },
+        "baseline_log_location": {
+          "MAE": 0.41326941223253694,
+          "RMSE": 0.4765657334651809
+        }
+      }
+    },
+    {
+      "variant": "CORE_REPORTED_PH74_37C",
+      "candidate_rows": 34,
+      "candidates": 23,
+      "papers": 4,
+      "reported_protocol_blocks": 5,
+      "full_design_rank": 27,
+      "full_parameters": 27,
+      "single_DOI_candidates": 16,
+      "heldout_rows": 11,
+      "total_heldout_rows": 34,
+      "metrics": {
+        "predicted_log_location": {
+          "MAE": 0.32352807513085197,
+          "RMSE": 0.40063517923269726
+        },
+        "baseline_log_location": {
+          "MAE": 0.31985984873738343,
+          "RMSE": 0.3938525527969666
+        }
+      }
+    }
+  ],
+  "fixed_shrinkage_lambda": 10,
+  "newly_tuned_parameters": false,
+  "predictor": "CANDIDATE_IDENTITY_PLUS_REPORTED_SOURCE_PROTOCOL_BLOCK",
+  "unseen_chemical_or_scaffold_prediction_supported": false,
+  "formal_global_Top20_established": false,
+  "formal_sampling_CIs_estimated": false,
+  "source_omission_order_rows": 596,
+  "common_universe_membership": [
+    {
+      "first_variant": "EXTENDED_UNKNOWN_PH_NAME_BASED",
+      "second_variant": "EXTENDED_CONFLICT_EXCLUDED",
+      "common_candidates": 41,
+      "top_set_size": 20,
+      "overlap": 19,
+      "jaccard": 0.9047619047619048,
+      "first_only": "AFF-0011",
+      "second_only": "AFF-0031",
+      "interpretation": "COMMON_CANDIDATE_UNIVERSE_DIAGNOSTIC_MEMBERSHIP"
+    },
+    {
+      "first_variant": "EXTENDED_UNKNOWN_PH_NAME_BASED",
+      "second_variant": "CORE_REPORTED_PH74_37C",
+      "common_candidates": 23,
+      "top_set_size": 20,
+      "overlap": 20,
+      "jaccard": 1.0,
+      "first_only": "",
+      "second_only": "",
+      "interpretation": "COMMON_CANDIDATE_UNIVERSE_DIAGNOSTIC_MEMBERSHIP"
+    },
+    {
+      "first_variant": "EXTENDED_CONFLICT_EXCLUDED",
+      "second_variant": "CORE_REPORTED_PH74_37C",
+      "common_candidates": 23,
+      "top_set_size": 20,
+      "overlap": 20,
+      "jaccard": 1.0,
+      "first_only": "",
+      "second_only": "",
+      "interpretation": "COMMON_CANDIDATE_UNIVERSE_DIAGNOSTIC_MEMBERSHIP"
+    }
+  ],
+  "new_source_extraction_sha256": "6c4b33574b6992c6cbfdf5f84f15d3df3830070db9ace3fb1dacb3052ac804da",
+  "original2023_extraction_sha256": "466ff4999b16ee6c8b32cd8bc63fffd6ba7d90ae2f908ec04561ae9015ce832a"
+}

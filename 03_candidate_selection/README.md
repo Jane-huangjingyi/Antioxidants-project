@@ -1,5 +1,7 @@
 # 03. Select a review panel and disclose unresolved decisions
 
+The current original-source diagnostic is [Step 03.6](06_verified_source_update/README.md), following the supplied PDFs and 60-flavonoid Table S1. Its [diagnostic orders and coverage](06_verified_source_update/results/Diagnostic_Orders_and_Coverage.csv) supersede earlier reference orders for current source-qualified interpretation. See [source corrections](../02_identity_and_evidence/02_user_supplied_sources/Existing_Reference_Reconciliation.csv).
+
 For the researcher-selected objective of highest expected molar chemical capacity, start with [Step 03.1: activity-model preparation](01_activity_model/README.md). The queue below remains a historical preparation baseline and is not a fitted capacity ranking.
 
 Run `python 03_candidate_selection/code/select_candidates.py`. Rules are in `config/selection_rules.json`; the researcher-editable decision table is `config/researcher_decisions.csv`. Rebuilding preserves the decision table. Empty fields remain unknown.

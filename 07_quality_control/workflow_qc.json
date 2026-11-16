@@ -14,8 +14,16 @@
   "formal_lab_ready_count": 0,
   "new_assay_experiments_performed": 0,
   "pubchem_queue_identity_conflicts": [],
-  "svg_text_without_raster_verified": 60,
+  "svg_text_without_raster_verified": 62,
   "active_english_markdown_pass": true,
   "broken_active_markdown_links": [],
-  "synthetic_auc_check": "PASS_SYNTHETIC_TEST_ONLY_NOT_EXPERIMENTAL_RESULTS"
+  "synthetic_auc_check": "PASS_SYNTHETIC_TEST_ONLY_NOT_EXPERIMENTAL_RESULTS",
+  "source_endpoint_screens": 79,
+  "original_followup_numeric_rows": 26,
+  "new_primary_model_labels_released": 0,
+  "source_expansion_assessment_date": "2026-11-12",
+  "user_supplied_source_documents": 7,
+  "user_supplied_capacity_rows": 138,
+  "updated_model_variants": 3,
+  "updated_model_global_rank_supported": false
 }

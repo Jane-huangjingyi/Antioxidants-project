@@ -54,3 +54,6 @@ desktop.ini
 /02_identity_and_evidence/01_systematic_supplement/Master_Article_Register.csv
 /02_identity_and_evidence/01_systematic_supplement/Master_Candidate_Article_Links.csv
 /02_identity_and_evidence/01_systematic_supplement/Retrieved_Article_Register.csv
+
+# User-provided original article files remain local with hashes in the source manifest.
+/download_raw/

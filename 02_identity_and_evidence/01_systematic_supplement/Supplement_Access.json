@@ -1,0 +1,51 @@
+[
+  {
+    "file": "",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7525318/supplementaryFiles",
+    "status": "FETCH_FAILED",
+    "error": "IncompleteRead(15980 bytes read)"
+  },
+  {
+    "file": "inputs/BJOC_11_151_S1.pdf",
+    "url": "https://www.beilstein-journals.org/bjoc/content/supplementary/1860-5397-11-151-S1.pdf",
+    "status": "RECOVERED",
+    "bytes": 474518,
+    "sha256": "c43d459b478e18819885d301c10badeb070e5dc0bac883ba476e710344682d6e"
+  },
+  {
+    "file": "",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7525318/supplementaryFiles",
+    "status": "FETCH_FAILED",
+    "error": "Response is not a complete ZIP/DOCX"
+  },
+  {
+    "file": "",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/7525318/bin/4150897.f1.docx",
+    "status": "FETCH_FAILED",
+    "error": "Response is not a complete ZIP/DOCX"
+  },
+  {
+    "file": "",
+    "url": "https://onlinelibrary.wiley.com/doi/suppl/10.1155/2020/4150897/supinfo/4150897.f1.docx",
+    "status": "FETCH_FAILED",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "file": "",
+    "url": "https://pmc.ncbi.nlm.nih.gov/utils/oa/oa.fcgi?id=PMC7525318",
+    "status": "FETCH_FAILED",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "file": "",
+    "url": "https://downloads.hindawi.com/journals/omcl/2020/4150897.f1.docx",
+    "status": "FETCH_FAILED",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "file": "",
+    "url": "https://europepmc.org/articles/PMC7525318/bin/4150897.f1.docx",
+    "status": "FETCH_FAILED",
+    "error": "HTTP Error 403: Forbidden"
+  }
+]

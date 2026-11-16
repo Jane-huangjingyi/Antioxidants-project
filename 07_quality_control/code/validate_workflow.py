@@ -69,7 +69,85 @@ for folder in ['00_project','01_candidate_discovery','02_identity_and_evidence',
  for p in (ROOT/folder).rglob('*.py'):
   if not any(x in p.relative_to(ROOT).parts for x in ['node_modules','local','local_library','previews','inputs','research_records']):ast.parse(p.read_text(encoding='utf-8-sig'))
 summary={'as_of':AS_OF,'status':'PASS','scientific_source_entries':len(manifest['records']),'optional_local_caches_not_bundled':missing_optional,'frozen_sha256_assets_pass':len(frozen),'legacy_seed_mapping_pass':191,'discovery_records':len(seeds),'candidate_profiles':len(profiles),'reference_formula_profiles':sum(bool(r['molecular_formula']) for r in profiles),'review_slots':len(queue),'two_study_sensitivity':9,'cutoff_stratum_candidates':len(tie),'formal_lab_ready_count':len(ready),'new_assay_experiments_performed':0,'pubchem_queue_identity_conflicts':conflicts,'svg_text_without_raster_verified':len(svg_files),'active_english_markdown_pass':True,'broken_active_markdown_links':bad_links,'synthetic_auc_check':'PASS_SYNTHETIC_TEST_ONLY_NOT_EXPERIMENTAL_RESULTS'}
+supplement = ROOT/'02_identity_and_evidence/01_systematic_supplement'
+if (supplement/'Source_Scientific_Screening.csv').exists():
+ screens = read_csv(supplement/'Source_Scientific_Screening.csv')
+ extracted = read_csv(supplement/'Original_Capacity_Followup.csv')
+ assert len(screens)==79 and len({row['PMCID'] for row in screens})==79
+ assert len(extracted)==26 and len({row['extraction_id'] for row in extracted})==26
+ for row in screens+extracted:
+  assert row['human_review_status']=='NOT_REVIEWED' and row['change_applied']=='NO'
+  assert row['model_label_release']=='NO'
+  cached=supplement/row['source_file']
+  if cached.exists():assert sha(cached)==row['source_sha256'],row['source_file']
+ assert all(row['independent_n']=='' for row in extracted)
+ ascorbate=next(row for row in extracted if row['PMCID']=='PMC11124305')
+ assert abs(float(ascorbate['conditional_molar_capacity'])-5982*176.12/1e6)<1e-12
+ curcumin=next(row for row in extracted if row['PMCID']=='PMC6270194')
+ assert curcumin['conditional_molar_capacity']==''
+ transfer=read_json(ROOT/'03_candidate_selection/05_model_robustness/results/new_source_transfer_summary.json')
+ assert not transfer['new_source_data_used_for_fitting'] and not transfer['new_data_formally_compatible']
+ assert transfer['new_source_extraction_sha256']==sha(supplement/'Original_Capacity_Followup.csv')
+ assert transfer['model_sha256']==sha(ROOT/'03_candidate_selection/05_model_robustness/results/Selected_Model_Component_Order.csv')
+ summary.update(source_endpoint_screens=len(screens),original_followup_numeric_rows=len(extracted),new_primary_model_labels_released=0,source_expansion_assessment_date=max(row['assessment_date'] for row in screens))
+user_source_dir=ROOT/'02_identity_and_evidence/02_user_supplied_sources'
+if (user_source_dir/'Source_Document_Manifest.csv').exists():
+ user_documents=read_csv(user_source_dir/'Source_Document_Manifest.csv')
+ user_rows=read_csv(user_source_dir/'Original_Capacity_Extraction.csv')
+ corrections=read_csv(user_source_dir/'Existing_Reference_Reconciliation.csv')
+ assert len(user_documents)==7 and len(user_rows)==138
+ assert len({row['evidence_id'] for row in user_rows})==138
+ assert sum(row['assay']=='ORAC_FL' for row in user_rows)==116
+ assert sum(row['assay']=='ORAC_PGR' for row in user_rows)==13
+ assert sum(row['assay']=='ORAC_PE' for row in user_rows)==9
+ for row in user_documents:
+  path=ROOT/row['file']
+  if path.exists():assert sha(path)==row['sha256'],row['file']
+ assert all(row['human_review_status']=='NOT_REVIEWED' and row['change_applied']=='NO' for row in user_rows)
+ assert all(row['independent_n_for_weighting']=='' for row in user_rows)
+ supplement_rows=[row for row in user_rows if row['doi']=='10.1155/2020/4150897']
+ assert sorted(int(row['source_row']) for row in supplement_rows)==list(range(1,61))
+ assert next(float(row['mean']) for row in supplement_rows if row['source_row']=='19')==1.02
+ verified_model_dir=ROOT/'03_candidate_selection/06_verified_source_update/results'
+ diagnostic_data=read_csv(verified_model_dir/'Analysis_Data_and_Dispositions.csv')
+ assert all(row['independent_sampling_variance']=='' for row in diagnostic_data)
+ for row in diagnostic_data:
+  if row['evidence_id'] in {'USR-ZHANG2020_S1-19-ORAC_FL','USR-ZHANG2020_S1-20-ORAC_FL','USR-ZHANG2020_S1-21-ORAC_FL','USR-ZHANG2020_S1-27-ORAC_FL'}:
+   assert row['core_diagnostic']==row['extended_name_diagnostic']==row['extended_conflict_excluded_diagnostic']=='NO'
+ assert any(row['doi']=='10.1021/jf0305231' and row['candidate_id']=='AFF-0009' and float(row['mean'])==10.5 for row in diagnostic_data)
+ assert not any(row['doi']=='10.1021/jf0305231' and row['candidate_id']=='AFF-0010' for row in diagnostic_data)
+ model_update=read_json(verified_model_dir/'model_update_summary.json')
+ assert model_update['new_source_extraction_sha256']==sha(user_source_dir/'Original_Capacity_Extraction.csv')
+ assert not model_update['formal_global_Top20_established'] and not model_update['newly_tuned_parameters']
+ assert {row['variant']:row['candidates'] for row in model_update['variants']}=={'CORE_REPORTED_PH74_37C':23,'EXTENDED_UNKNOWN_PH_NAME_BASED':43,'EXTENDED_CONFLICT_EXCLUDED':41}
+ deletion_rows=read_csv(verified_model_dir/'Source_Deletion_Order_Sensitivity.csv')
+ for row in deletion_rows:
+  assert 1<=int(row['fixed_universe_best_possible_order'])<=int(row['fixed_universe_worst_possible_order'])<=int(row['variant_candidate_count'])
+ # A disconnected absolute location can retain estimable within-component contrasts.
+ contrast_check=next(row for row in deletion_rows if row['variant']=='EXTENDED_CONFLICT_EXCLUDED' and row['candidate_id']=='AFF-0009' and row['omitted_doi']=='10.1021/jf010586o')
+ assert int(contrast_check['estimable_contrasts_with_lower_candidates'])>0
+ analysis_weights=read_csv(verified_model_dir/'Analysis_Row_Weights.csv')
+ for variant in {row['variant'] for row in analysis_weights}:
+  weighted=[row for row in analysis_weights if row['variant']==variant]
+  totals=[sum(float(row['weight_equal_DOI_total']) for row in weighted if row['doi']==doi) for doi in {row['doi'] for row in weighted}]
+  assert max(totals)-min(totals)<1e-10
+ stability_path=verified_model_dir/'Candidate_Evidence_and_Stability.csv'
+ if stability_path.exists():
+  stability=read_csv(stability_path)
+  assert len(stability)==41 and len({row['candidate_id'] for row in stability})==41
+  for row in stability:
+   assert row['human_review_status']=='NOT_REVIEWED' and row['change_applied']=='NO'
+   cid=row['candidate_id']
+   contributing=[r for r in diagnostic_data if r['candidate_id']==cid and r['extended_conflict_excluded_diagnostic']=='YES']
+   assert int(row['source_DOIs'])==len({r['doi'] for r in contributing})
+   assert int(row['deletion_best_possible_position'])<=int(row['diagnostic_position'])<=int(row['deletion_worst_possible_position'])
+   assert all(r['doi'] in row['source_locators'] for r in contributing)
+ summary.update(user_supplied_source_documents=len(user_documents),user_supplied_capacity_rows=len(user_rows),updated_model_variants=3,updated_model_global_rank_supported=False)
 write_json(ROOT/'07_quality_control/workflow_qc.json',summary)
 text=f'''# Workflow QC\n\nDate: {AS_OF}. Status: PASS.\n\nAll {len(manifest['records'])} registered scientific sources are checked against their recorded SHA256. Locally held source corpora are optional on a clone and do not enter the offline calculations. Ten frozen assets retain their original content and hash. Original review and HOLD states remain unchanged.\n\nThe 191 literal seed IDs reconstruct correctly. There are 204 discovery records, 193 profiles, 25 review-eligible candidates, 20 provisional review slots and 12 cutoff-stratum ties. The two-study sensitivity retains 9. The formal laboratory-ready panel has {len(ready)} rows. All 20 review identities/formulas match their official cached PubChem refresh; no cache conflict was detected.\n\nActive English Markdown links resolve. {len(svg_files)} current SVG exports contain text and vector objects without embedded raster images. Numerical AUC integration and rejection rules were checked on synthetic in-memory traces only. They establish code behavior, not assay performance.\n\nRemaining scientific work: close candidate-specific food sources, exact reagent procurement/forms, solubility/stability and absorbance counter-screens; adjudicate cutoff ties and actual material decisions; approve equipment-specific assay settings/calibration; collect real experimental data. The method-search log explicitly identifies first-page truncation where present. The dated source catalogue and journal-metric gaps remain available and have not been promoted into verified claims.\n'''
+if 'source_endpoint_screens' in summary:
+ text += f"\nSource-expansion assessment dated {summary['source_expansion_assessment_date']} verifies {summary['source_endpoint_screens']} endpoint screens and {summary['original_followup_numeric_rows']} uniquely keyed original numeric rows. Available caches match recorded SHA256 values. Review states remain NOT_REVIEWED and change_applied=NO. Conditional conversion, unfilled independent sample sizes, withheld conflicting units and fixed-model input hashes passed the source-specific checks. Zero primary model labels were released.\n"
+if 'user_supplied_source_documents' in summary:
+ text += f"\nThe latest original-source intake verifies {summary['user_supplied_source_documents']} supplied documents and {summary['user_supplied_capacity_rows']} unique assay rows. DOI/probe separation, 60-row supplement numbering, source-conflict exclusions, the corrected 2004 Quercetin value and excluded Kaempferol association passed. All three updated diagnostics preserve missing independent sampling variances and explicit review states. Equal-total-DOI weights reconcile, and estimable relative contrasts survive the disconnected-location regression check. Global-193 ranking remains unresolved.\n"
 (ROOT/'07_quality_control/Workflow_QC.md').write_text(text,encoding='utf8')
 print(f'QC PASS: {len(queue)} review slots; {len(ready)} lab-ready; {len(svg_files)} editable SVGs; frozen sources unchanged.')

@@ -1,0 +1,37 @@
+[
+  {
+    "doi": "10.1039/d1ra08918h",
+    "PMCID": "PMC8981064",
+    "url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_json/PMC8981064/unicode",
+    "retrieval_date": "2026-11-12",
+    "status": "FETCH_FAILED",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "doi": "10.1016/j.bbadva.2021.100030",
+    "PMCID": "PMC10074949",
+    "url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_json/PMC10074949/unicode",
+    "retrieval_date": "2026-11-12",
+    "status": "FETCH_FAILED",
+    "error": "Expecting value: line 1 column 2 (char 1)"
+  },
+  {
+    "doi": "10.3748/wjg.v11.i27.4194",
+    "PMCID": "PMC4615441",
+    "url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_json/PMC4615441/unicode",
+    "retrieval_date": "2026-11-12",
+    "status": "FETCH_FAILED",
+    "error": "Expecting value: line 1 column 2 (char 1)"
+  },
+  {
+    "doi": "10.1007/s10552-012-9958-1",
+    "PMCID": "PMC3658442",
+    "url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_json/PMC3658442/unicode",
+    "retrieval_date": "2026-11-12",
+    "status": "PUBLIC_BIOC_RECOVERED_PENDING_READING",
+    "source_file": "inputs/PMC3658442_BioC.json",
+    "sha256": "fcf2649025b9dc523e7224265671423b65d18edbfb40febc820c446223872eb6",
+    "passages": 96,
+    "scope": "Text and text-encoded tables; figures and supplements require separate inspection"
+  }
+]

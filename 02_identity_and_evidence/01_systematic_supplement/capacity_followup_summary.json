@@ -1,0 +1,18 @@
+{
+  "source_rows": 26,
+  "source_DOIs": 6,
+  "mapped_candidates": [
+    "AFF-0062",
+    "AFF-0063",
+    "AFF-0064",
+    "AFF-0065",
+    "AFF-0070",
+    "AFF-0100",
+    "AFF-0104",
+    "AFF-0159",
+    "AFF-0176"
+  ],
+  "primary_model_labels_released": 0,
+  "human_review_status": "NOT_REVIEWED",
+  "change_applied": "NO"
+}

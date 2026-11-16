@@ -1,0 +1,15 @@
+{
+  "candidates": 41,
+  "top20_single_source": 7,
+  "top20_deletion_crosses_cutoff": 17,
+  "all_single_source": 19,
+  "robust_top20_under_recorded_deletions": [
+    "Catechin",
+    "Quercetin",
+    "Epicatechin"
+  ],
+  "scope": "DESCRIPTIVE_EXISTING_MODEL_SENSITIVITY_NO_NEW_FIT",
+  "model_tuned": false,
+  "human_review_status": "NOT_REVIEWED",
+  "change_applied": "NO"
+}

@@ -1,0 +1,20 @@
+{
+  "status": "SOURCE_EXPANSION_IN_PROGRESS_STABILITY_AND_REPRESENTATIVENESS_NOT_ESTABLISHED",
+  "indexed_candidates": 193,
+  "existing_model_candidates": 34,
+  "existing_model_coverage_fraction": 0.17616580310880828,
+  "single_source_candidates": 20,
+  "fixed_model_source_comparisons": 6,
+  "new_source_DOIs": 3,
+  "within_paper_pairs": 6,
+  "within_paper_direction_agreements": 6,
+  "within_paper_comparison_DOIs": 1,
+  "new_source_data_used_for_fitting": false,
+  "new_data_formally_compatible": false,
+  "existing_nested_RMSE": 0.39018819134880367,
+  "existing_nested_baseline_RMSE": 0.3911263253311044,
+  "stable_omission_pair_count": 68,
+  "total_existing_pair_count": 561,
+  "model_sha256": "003296760876927e641ac8e94bd892511b46adbb364ec55e786e8cba6b2b4eb4",
+  "new_source_extraction_sha256": "c624aaa049aca421a6b14eb9e460307bc1e3beeae93ec2645adb65cac4e0eefb"
+}
