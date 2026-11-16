@@ -1,0 +1,18 @@
+{
+  "cutoff": "2026-11-16",
+  "candidates": 193,
+  "unique_candidate_linked_article_keys": 77594,
+  "article_period_counts": {
+    "EARLIER_HISTORICAL": 17992,
+    "PRIMARY_2020_2026": 48357,
+    "EXTENSION_2016_2019": 11165,
+    "AFTER_CUTOFF": 41,
+    "DATE_UNRESOLVED": 39
+  },
+  "candidate_extension_needed": 34,
+  "in_scope_provisional_article_keys": 48637,
+  "prior_scientific_screen_keys_reused": 57,
+  "new_searches_executed": 0,
+  "denominator_status": "EXISTING_CORPUS_RECONCILIATION_MULTI_DATABASE_COMPLETION_PENDING",
+  "all_screening_complete": false
+}

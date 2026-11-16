@@ -195,6 +195,23 @@ if (capacity_review/'review_validation_summary.json').exists():
  for r in bounds:
   assert 1<=int(r['deletion_best_position'])<=int(r['full_fit_position'])<=int(r['deletion_worst_position'])<=48
  summary.update(capacity_audited_rows=194,capacity_review_progress_profiles=193,connected_validation_candidates=48,connected_validation_DOIs=10)
+date_review=ROOT/'02_identity_and_evidence/03_date_scoped_review/results'
+if (date_review/'triage_summary.json').exists():
+ scoped=read_csv(date_review/'Date_Scoped_Article_Register.csv')
+ triage=read_csv(date_review/'Date_Scoped_Title_Abstract_Triage.csv')
+ assert len(triage)==sum(r['in_current_review_scope']=='YES' for r in scoped)
+ assert len({r['article_key'] for r in triage})==len(triage)
+ assert all(r['period'] in {'PRIMARY_2020_2026','EXTENSION_2016_2019'} for r in triage)
+ assert all(r['model_label_release']=='NO' for r in triage)
+ blueberry=read_csv(date_review/'Blueberry_Original_Capacity_Extraction.csv')
+ assert len(blueberry)==5 and sum(bool(r['candidate_id']) for r in blueberry)==1
+ assert all(r['raw_units']=='micromol Trolox/micromol sample' and r['model_label_release']=='NO' for r in blueberry)
+ decisions=read_csv(date_review/'Current_Scientific_Source_Decisions.csv')
+ for r in decisions+blueberry:
+  assert r['human_review_status']=='NOT_REVIEWED' and r['change_applied']=='NO'
+  cached_source=ROOT/r['source_file']
+  if cached_source.exists():assert sha(cached_source)==r['source_sha256']
+ summary.update(date_scope_triage_records=len(triage),new_source_decisions=len(decisions),blueberry_original_rows=5)
 write_json(ROOT/'07_quality_control/workflow_qc.json',summary)
 text=f'''# Workflow QC\n\nDate: {AS_OF}. Status: PASS.\n\nAll {len(manifest['records'])} registered scientific sources are checked against their recorded SHA256. Locally held source corpora are optional on a clone and do not enter the offline calculations. Ten frozen assets retain their original content and hash. Original review and HOLD states remain unchanged.\n\nThe 191 literal seed IDs reconstruct correctly. There are 204 discovery records, 193 profiles, 25 review-eligible candidates, 20 provisional review slots and 12 cutoff-stratum ties. The two-study sensitivity retains 9. The formal laboratory-ready panel has {len(ready)} rows. All 20 review identities/formulas match their official cached PubChem refresh; no cache conflict was detected.\n\nActive English Markdown links resolve. {len(svg_files)} current SVG exports contain text and vector objects without embedded raster images. Numerical AUC integration and rejection rules were checked on synthetic in-memory traces only. They establish code behavior, not assay performance.\n\nRemaining scientific work: close candidate-specific food sources, exact reagent procurement/forms, solubility/stability and absorbance counter-screens; adjudicate cutoff ties and actual material decisions; approve equipment-specific assay settings/calibration; collect real experimental data. The method-search log explicitly identifies first-page truncation where present. The dated source catalogue and journal-metric gaps remain available and have not been promoted into verified claims.\n'''
 if 'source_endpoint_screens' in summary:

@@ -1,0 +1,6 @@
+database,status,remaining_work
+PubMed/Europe PMC,REUSE_EXISTING_QUERIES_AND_CACHES,Apply date scope and complete eligibility screening; Europe PMC includes PubMed records.
+PubChem,REUSE_IDENTITY_AND_SYNONYM_CACHE,Resolve exact forms and missing Probetanin identity.
+Web of Science,INSTITUTION_EXPORT_PENDING,Obtain dated full-record and cited-reference export; deduplicate against existing corpus.
+CNKI,DATABASE_EXPORT_PENDING,Run Chinese compound/synonym searches and export all records with abstracts.
+Google Scholar,SYSTEMATIC_SEARCH_LOG_PENDING,"Record exact searches, dates, inspected result ranges and citation tracing."

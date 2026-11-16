@@ -32,7 +32,8 @@ def main():
     for row in extracted:
         if row['candidate_id']:
             verified[row['candidate_id']].add(row['doi'])
-    audits, queue = [], []
+    audits = []
+    association_count = 0
     for profile in profiles:
         cid = profile['candidate_id']
         records = [articles[key] for key in links[cid] if key in articles]
@@ -41,13 +42,7 @@ def main():
         records.sort(key=lambda r: (
             not any(term in r['title'].lower() for term in ['orac', 'oxygen radical absorbance']),
             'review' in r['publication_types'].lower(), not bool(r['PMCID']), r['article_key']))
-        for number, record in enumerate(records, 1):
-            queue.append(dict(candidate_id=cid, compound=profile['compound_name'],
-                              screening_order=number, article_key=record['article_key'],
-                              doi=record['doi'], PMID=record['PMID'], PMCID=record['PMCID'],
-                              title=record['title'], journal=record['journal'], year=record['year'],
-                              screening_status='PENDING_CANDIDATE_RELEVANCE_AND_ORIGINAL_EVIDENCE',
-                              human_review_status='NOT_REVIEWED', change_applied='NO'))
+        association_count += len(records)
         audits.append(dict(candidate_id=cid, compound=profile['compound_name'],
                            minimum_requested=20, provisional_linked_articles=len(records),
                            original_numeric_source_DOIs=len(verified[cid]),
@@ -58,8 +53,7 @@ def main():
                            human_review_status='NOT_REVIEWED', change_applied='NO'))
     assert len(audits) == 193 and len({r['candidate_id'] for r in audits}) == 193
     write('Minimum20_Candidate_Coverage.csv', audits)
-    write('Minimum20_Article_Screening_Queue.csv', queue)
-    summary = dict(candidates=193, linked_article_associations=len(queue),
+    summary = dict(candidates=193, linked_article_associations=association_count,
                    candidates_with_20_provisional_links=sum(r['provisional_linked_articles']>=20 for r in audits),
                    candidates_with_20_numeric_source_DOIs=sum(r['original_numeric_source_DOIs']>=20 for r in audits),
                    scarcity_exceptions_established=0, requirements_fulfilled=False)

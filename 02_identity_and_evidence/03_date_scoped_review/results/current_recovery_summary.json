@@ -1,0 +1,8 @@
+{
+  "queued_articles": 121,
+  "public_PMC_candidates": 76,
+  "recovered": 74,
+  "failed": 2,
+  "sources_without_PMClocator": 45,
+  "scientific_reading_complete": false
+}
