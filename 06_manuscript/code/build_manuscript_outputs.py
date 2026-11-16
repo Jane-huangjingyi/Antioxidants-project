@@ -146,3 +146,17 @@ if stability.exists():
  s=read_json(stability)
  with (out/'Results.md').open('a',encoding='utf8') as f:
   f.write(f"\n## Source support for diagnostic selection\n\nOf the leading 20 positions in the 41-candidate conflict-excluded diagnostic, {s['top20_single_source']} had one source DOI and {s['top20_deletion_crosses_cutoff']} had a deletion-bound envelope crossing position 20. Across the full set, {s['all_single_source']} candidates had one DOI. The candidates retaining worst-case positions within 20 across recorded deletions were {', '.join(s['robust_top20_under_recorded_deletions'])}. This is conditional source-deletion robustness within the recorded candidate set and model. Sampling uncertainty and protocol/material qualification remain to be established.\n")
+
+
+minimum20=ROOT/'02_identity_and_evidence/01_systematic_supplement/minimum20_abstract_summary.json'
+if minimum20.exists():
+ s=read_json(minimum20)
+ with (out/'Results.md').open('a',encoding='utf8') as f:
+  f.write(f"\n## Comprehensive evidence-package retrieval\n\nQueries covered {s['candidates']} current candidate profiles without failed requests in the delivered pass. Automated title/abstract screening retained {s['candidate_abstract_links']} candidate-publication links corresponding to {s['unique_articles']} provisional unique article keys. The target of at least 20 screened abstracts was reached for {s['abstract_rule_target_reached']} candidates; {s['remaining_candidates']} remained below target. These counts describe abstract-level rule screening with full-text relevance and scientific qualification pending. No study-scarcity exception was established. New model-label release from this abstract batch was zero.\n")
+
+
+combined20=ROOT/'02_identity_and_evidence/01_systematic_supplement/minimum20_combined_summary.json'
+if combined20.exists():
+ s=read_json(combined20)
+ with (out/'Results.md').open('a',encoding='utf8') as f:
+  f.write(f"\n## Located full-text evidence-package follow-up\n\nBody-paragraph searches added {s['new_body_located_links']} candidate-publication links. Abstract and body-location coverage reached at least 20 leads for {s['combined_located_target_reached']} of {s['candidates']} profiles. A {s['review_panel_rows']}-row panel schedules subsequent scientific appraisal. The remaining located gap was Probetanin, with four body-text mentions and unresolved chemical identity. These source-location counts await scientific relevance, independence and article-quality assessment. No new ORAC model labels or scarcity exceptions were approved.\n")

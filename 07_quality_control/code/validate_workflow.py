@@ -143,6 +143,37 @@ if (user_source_dir/'Source_Document_Manifest.csv').exists():
    assert int(row['deletion_best_possible_position'])<=int(row['diagnostic_position'])<=int(row['deletion_worst_possible_position'])
    assert all(r['doi'] in row['source_locators'] for r in contributing)
  summary.update(user_supplied_source_documents=len(user_documents),user_supplied_capacity_rows=len(user_rows),updated_model_variants=3,updated_model_global_rank_supported=False)
+minimum20=supplement/'Minimum20_Abstract_Coverage.csv'
+if minimum20.exists():
+ coverage20=read_csv(minimum20)
+ packages20=read_csv(supplement/'Minimum20_Abstract_Evidence_Packages.csv')
+ assert len(coverage20)==193 and len({r['candidate_id'] for r in coverage20})==193
+ for r in coverage20:
+  assert r['scarcity_established']=='NO'
+  count=sum(p['candidate_id']==r['candidate_id'] for p in packages20)
+  assert count==int(r['rule_screened_relevant_abstracts'])
+  assert (count>=20)==(r['target_reached_at_abstract_rule_level']=='YES')
+ assert all(r['abstract'] and r['source_sha256'] and r['model_label_release']=='NO' and r['human_review_status']=='NOT_REVIEWED' and r['change_applied']=='NO' for r in packages20)
+ assert len({(r['candidate_id'],r['doi'] or r['PMID'] or r['title']) for r in packages20})==len(packages20)
+ body_path=supplement/'Minimum20_Body_Located_Leads.csv'
+ if body_path.exists():
+  body_leads=read_csv(body_path)
+  combined=read_csv(supplement/'Minimum20_Combined_Progress.csv')
+  panel=read_csv(supplement/'Minimum20_Review_Panel.csv')
+  assert len(combined)==193
+  assert all(r['article_evidence_strength']=='NOT_APPRAISED' and r['change_applied']=='NO' for r in panel)
+  for r in body_leads:
+   assert r['matched_paragraph'] and r['paragraph_locator'].startswith('body paragraph ')
+   cached=supplement/r['source_file']
+   if cached.exists():assert sha(cached)==r['source_sha256']
+   assert r['model_label_release']=='NO' and r['human_review_status']=='NOT_REVIEWED'
+  for r in combined:
+   cid=r['candidate_id']
+   keys={x['doi'] or x['PMID'] or x['title'] for x in packages20+body_leads if x['candidate_id']==cid}
+   assert len(keys)==int(r['total_located_leads'])
+   assert sum(x['candidate_id']==cid for x in panel)==min(20,len(keys))
+   assert r['scarcity_established']=='NO'
+ summary.update(minimum20_candidates=193,minimum20_abstract_links=len(packages20),minimum20_abstract_rule_target_reached=sum(int(r['rule_screened_relevant_abstracts'])>=20 for r in coverage20),minimum20_all_scientific_reviews_complete=False)
 write_json(ROOT/'07_quality_control/workflow_qc.json',summary)
 text=f'''# Workflow QC\n\nDate: {AS_OF}. Status: PASS.\n\nAll {len(manifest['records'])} registered scientific sources are checked against their recorded SHA256. Locally held source corpora are optional on a clone and do not enter the offline calculations. Ten frozen assets retain their original content and hash. Original review and HOLD states remain unchanged.\n\nThe 191 literal seed IDs reconstruct correctly. There are 204 discovery records, 193 profiles, 25 review-eligible candidates, 20 provisional review slots and 12 cutoff-stratum ties. The two-study sensitivity retains 9. The formal laboratory-ready panel has {len(ready)} rows. All 20 review identities/formulas match their official cached PubChem refresh; no cache conflict was detected.\n\nActive English Markdown links resolve. {len(svg_files)} current SVG exports contain text and vector objects without embedded raster images. Numerical AUC integration and rejection rules were checked on synthetic in-memory traces only. They establish code behavior, not assay performance.\n\nRemaining scientific work: close candidate-specific food sources, exact reagent procurement/forms, solubility/stability and absorbance counter-screens; adjudicate cutoff ties and actual material decisions; approve equipment-specific assay settings/calibration; collect real experimental data. The method-search log explicitly identifies first-page truncation where present. The dated source catalogue and journal-metric gaps remain available and have not been promoted into verified claims.\n'''
 if 'source_endpoint_screens' in summary:

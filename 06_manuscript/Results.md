@@ -96,3 +96,11 @@ Within their 41-candidate common universe, name-based and recorded-conflict-excl
 ## Source support for diagnostic selection
 
 Of the leading 20 positions in the 41-candidate conflict-excluded diagnostic, 7 had one source DOI and 17 had a deletion-bound envelope crossing position 20. Across the full set, 19 candidates had one DOI. The candidates retaining worst-case positions within 20 across recorded deletions were Catechin, Quercetin, Epicatechin. This is conditional source-deletion robustness within the recorded candidate set and model. Sampling uncertainty and protocol/material qualification remain to be established.
+
+## Comprehensive evidence-package retrieval
+
+Queries covered 193 current candidate profiles without failed requests in the delivered pass. Automated title/abstract screening retained 14279 candidate-publication links corresponding to 11752 provisional unique article keys. The target of at least 20 screened abstracts was reached for 181 candidates; 12 remained below target. These counts describe abstract-level rule screening with full-text relevance and scientific qualification pending. No study-scarcity exception was established. New model-label release from this abstract batch was zero.
+
+## Located full-text evidence-package follow-up
+
+Body-paragraph searches added 128 candidate-publication links. Abstract and body-location coverage reached at least 20 leads for 192 of 193 profiles. A 3844-row panel schedules subsequent scientific appraisal. The remaining located gap was Probetanin, with four body-text mentions and unresolved chemical identity. These source-location counts await scientific relevance, independence and article-quality assessment. No new ORAC model labels or scarcity exceptions were approved.

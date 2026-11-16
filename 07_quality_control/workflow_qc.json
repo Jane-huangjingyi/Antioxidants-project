@@ -25,5 +25,9 @@
   "user_supplied_source_documents": 7,
   "user_supplied_capacity_rows": 138,
   "updated_model_variants": 3,
-  "updated_model_global_rank_supported": false
+  "updated_model_global_rank_supported": false,
+  "minimum20_candidates": 193,
+  "minimum20_abstract_links": 14279,
+  "minimum20_abstract_rule_target_reached": 181,
+  "minimum20_all_scientific_reviews_complete": false
 }

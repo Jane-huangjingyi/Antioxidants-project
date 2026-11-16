@@ -1,0 +1,11 @@
+{
+  "candidates": 193,
+  "candidate_abstract_links": 14279,
+  "unique_articles": 11752,
+  "abstract_rule_target_reached": 181,
+  "remaining_candidates": 12,
+  "failures": 0,
+  "scarcity_exceptions_established": 0,
+  "fulltext_review_complete": false,
+  "minimum20_scientifically_verified_for_all_candidates": false
+}

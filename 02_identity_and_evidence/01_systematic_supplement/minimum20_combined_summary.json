@@ -1,0 +1,15 @@
+{
+  "candidates": 193,
+  "abstract_target_reached": 181,
+  "combined_located_target_reached": 192,
+  "new_body_located_links": 128,
+  "review_panel_rows": 3844,
+  "remaining_located_gaps": [
+    {
+      "compound": "Probetanin",
+      "located_leads": 4
+    }
+  ],
+  "all_scientific_reviews_complete": false,
+  "scarcity_exceptions_established": 0
+}

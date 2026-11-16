@@ -1,0 +1,13 @@
+candidate_id,compound,query,search_status,search_hits,retrieved,source_records_checked,unexamined_records,new_body_located_articles,abstract_rule_articles,combined_located_leads,scarcity_established,scientific_review_complete
+AFF-0068,"3,4,5-Trimethoxybenzoic acid","(BODY:""3,4,5-Trimethoxybenzoic acid"" OR BODY:""Eudesmic acid"" OR BODY:""Gallic acid trimethyl ether"" OR BODY:""Trimethylgallic acid"")",SUCCESS,252,252,12,237,12,10,22,NO,NO
+AFF-0088,Coutaric acid,"(BODY:""Coutaric acid"" OR BODY:""trans-p-Coumaroyltartaric acid"")",SUCCESS,252,252,3,243,2,18,20,NO,NO
+AFF-0131,9-cis-Lycopene,"(BODY:""9-cis-Lycopene"" OR BODY:""(9Z)-Lycopene"" OR BODY:""(9Z)-psi,psi-carotene"")",SUCCESS,30,30,30,0,17,3,20,NO,NO
+AFF-0132,13-cis-Lycopene,"(BODY:""13-cis-Lycopene"" OR BODY:""(13Z)-Lycopene"" OR BODY:""Neolycopene A"")",SUCCESS,53,53,21,31,13,7,20,NO,NO
+AFF-0150,Probetanin,"(BODY:""Probetanin"")",SUCCESS,4,4,4,0,4,0,4,NO,NO
+AFF-0153,Vulgaxanthin I,"(BODY:""Vulgaxanthin I"" OR BODY:""Vulgaxanthin-I"")",SUCCESS,130,130,3,121,3,17,20,NO,NO
+AFF-0154,Vulgaxanthin II,"(BODY:""Vulgaxanthin II"" OR BODY:""Vulgaxanthin-II"")",SUCCESS,27,27,21,6,21,0,21,NO,NO
+AFF-0155,Miraxanthin V,"(BODY:""Miraxanthin V"" OR BODY:""Miraxanthin-V"" OR BODY:""Dopamine-betaxanthin"")",SUCCESS,41,41,15,25,14,6,20,NO,NO
+AFF-0156,Dopaxanthin,"(BODY:""Dopaxanthin"")",SUCCESS,38,38,15,22,14,6,20,NO,NO
+AFF-0164,Nordihydrocapsaicin,"(BODY:""Nordihydrocapsaicin"")",SUCCESS,224,224,6,210,6,16,22,NO,NO
+AFF-0165,Homocapsaicin,"(BODY:""Homocapsaicin"" OR BODY:""Homocapsaicin I"" OR BODY:""E-Homocapsaicin"")",SUCCESS,147,147,9,138,9,12,21,NO,NO
+AFF-0166,Homodihydrocapsaicin,"(BODY:""Homodihydrocapsaicin"" OR BODY:""Homodihydrocapsaicin I"")",SUCCESS,134,134,15,119,13,8,21,NO,NO
