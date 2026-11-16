@@ -104,3 +104,11 @@ Queries covered 193 current candidate profiles without failed requests in the de
 ## Located full-text evidence-package follow-up
 
 Body-paragraph searches added 128 candidate-publication links. Abstract and body-location coverage reached at least 20 leads for 192 of 193 profiles. A 3844-row panel schedules subsequent scientific appraisal. The remaining located gap was Probetanin, with four body-text mentions and unresolved chemical identity. These source-location counts await scientific relevance, independence and article-quality assessment. No new ORAC model labels or scarcity exceptions were approved.
+
+## Complete reference consideration and conditional source expansion
+
+The consideration register includes 106167 candidate/article associations and 77594 provisional unique article keys across 193 candidates. Original extractions add 44 missing candidate/source associations. Additional original numeric rows expand the conditional analysis to 49 candidates, 11 source DOIs and 106 observations. The largest connected component contains 48 candidates, ten papers and 105 rows after adding the 2022 phenolic-acid bridge. Sesamin remains in a separate component. Their positions retain component scope. Article-level scientific review and formal global ranking remain pending.
+
+## Connected capacity-model validation
+
+The consolidated audit retained 194 source rows from 14 DOIs, including prior extractions and five newly audited distinct-endpoint rows retained on hold. The connected expanded model contained 48 candidates, ten papers and 105 rows. Whole-paper log RMSE was 0.6575 versus 0.7026 for the matched baseline across 67 estimable outcomes. The reported-pH/temperature subset contained 24 candidates and six papers, with RMSE 0.4128 versus 0.4151 over nine outcomes. Equal-row and equal-total-DOI Top20 sets shared 16 members. Recorded source deletions retained within-20 worst-case positions for Catechin, Quercetin. Sampling intervals and final selection remain unresolved.

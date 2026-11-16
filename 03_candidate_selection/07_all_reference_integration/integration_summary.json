@@ -1,0 +1,25 @@
+{
+  "all_reference_links": 106167,
+  "unique_linked_articles": 77594,
+  "candidates_considered": 193,
+  "numeric_candidates": 49,
+  "numeric_source_DOIs": 11,
+  "numeric_rows": 106,
+  "components": [
+    {
+      "component": 1,
+      "candidates": 48,
+      "rows": 105,
+      "source_DOIs": 10
+    },
+    {
+      "component": 2,
+      "candidates": 1,
+      "rows": 1,
+      "source_DOIs": 1
+    }
+  ],
+  "additional_numeric_rows": 28,
+  "all_articles_scientifically_reviewed": false,
+  "formal_global_rank_supported": false
+}

@@ -174,6 +174,27 @@ if minimum20.exists():
    assert sum(x['candidate_id']==cid for x in panel)==min(20,len(keys))
    assert r['scarcity_established']=='NO'
  summary.update(minimum20_candidates=193,minimum20_abstract_links=len(packages20),minimum20_abstract_rule_target_reached=sum(int(r['rule_screened_relevant_abstracts'])>=20 for r in coverage20),minimum20_all_scientific_reviews_complete=False)
+capacity_review=ROOT/'03_candidate_selection/08_capacity_review_validation'
+if (capacity_review/'review_validation_summary.json').exists():
+ review_rows=read_csv(capacity_review/'Capacity_Row_Review.csv')
+ review_progress=read_csv(capacity_review/'Candidate_Review_and_Inclusion_Progress.csv')
+ reviewed_input=read_csv(capacity_review/'Connected_Conditional_Analysis_Input.csv')
+ validation_summary=read_json(capacity_review/'results/model_update_summary.json')
+ assert len(review_rows)==194 and len(review_progress)==193
+ assert len({r['candidate_id'] for r in review_progress})==193
+ assert all(r['human_review_status']=='NOT_REVIEWED' and r['change_applied']=='NO' for r in review_rows)
+ assert sum(r['disposition']=='DISTINCT_AUC_ENDPOINT_HOLD' for r in review_rows)==5
+ assert all(r['doi']!='10.3390/antiox13020222' for r in reviewed_input)
+ assert not any(r['evidence_id']=='USR-ZHANG2020_S1-27-ORAC_FL' for r in reviewed_input)
+ assert validation_summary['new_source_extraction_sha256']==sha(capacity_review/'Connected_Conditional_Analysis_Input.csv')
+ assert not validation_summary['newly_tuned_parameters'] and not validation_summary['formal_global_Top20_established']
+ expanded=next(r for r in validation_summary['variants'] if r['variant']=='EXTENDED_CONFLICT_EXCLUDED')
+ assert expanded['candidates']==48 and expanded['papers']==10 and expanded['candidate_rows']==105
+ bounds=read_csv(capacity_review/'Top20_Conditional_Uncertainty.csv')
+ assert len(bounds)==48
+ for r in bounds:
+  assert 1<=int(r['deletion_best_position'])<=int(r['full_fit_position'])<=int(r['deletion_worst_position'])<=48
+ summary.update(capacity_audited_rows=194,capacity_review_progress_profiles=193,connected_validation_candidates=48,connected_validation_DOIs=10)
 write_json(ROOT/'07_quality_control/workflow_qc.json',summary)
 text=f'''# Workflow QC\n\nDate: {AS_OF}. Status: PASS.\n\nAll {len(manifest['records'])} registered scientific sources are checked against their recorded SHA256. Locally held source corpora are optional on a clone and do not enter the offline calculations. Ten frozen assets retain their original content and hash. Original review and HOLD states remain unchanged.\n\nThe 191 literal seed IDs reconstruct correctly. There are 204 discovery records, 193 profiles, 25 review-eligible candidates, 20 provisional review slots and 12 cutoff-stratum ties. The two-study sensitivity retains 9. The formal laboratory-ready panel has {len(ready)} rows. All 20 review identities/formulas match their official cached PubChem refresh; no cache conflict was detected.\n\nActive English Markdown links resolve. {len(svg_files)} current SVG exports contain text and vector objects without embedded raster images. Numerical AUC integration and rejection rules were checked on synthetic in-memory traces only. They establish code behavior, not assay performance.\n\nRemaining scientific work: close candidate-specific food sources, exact reagent procurement/forms, solubility/stability and absorbance counter-screens; adjudicate cutoff ties and actual material decisions; approve equipment-specific assay settings/calibration; collect real experimental data. The method-search log explicitly identifies first-page truncation where present. The dated source catalogue and journal-metric gaps remain available and have not been promoted into verified claims.\n'''
 if 'source_endpoint_screens' in summary:

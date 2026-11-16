@@ -160,3 +160,17 @@ if combined20.exists():
  s=read_json(combined20)
  with (out/'Results.md').open('a',encoding='utf8') as f:
   f.write(f"\n## Located full-text evidence-package follow-up\n\nBody-paragraph searches added {s['new_body_located_links']} candidate-publication links. Abstract and body-location coverage reached at least 20 leads for {s['combined_located_target_reached']} of {s['candidates']} profiles. A {s['review_panel_rows']}-row panel schedules subsequent scientific appraisal. The remaining located gap was Probetanin, with four body-text mentions and unresolved chemical identity. These source-location counts await scientific relevance, independence and article-quality assessment. No new ORAC model labels or scarcity exceptions were approved.\n")
+
+
+integrated=ROOT/'03_candidate_selection/07_all_reference_integration/integration_summary.json'
+if integrated.exists():
+ s=read_json(integrated)
+ with (out/'Results.md').open('a',encoding='utf8') as f:
+  f.write(f"\n## Complete reference consideration and conditional source expansion\n\nThe consideration register includes {s['all_reference_links']} candidate/article associations and {s['unique_linked_articles']} provisional unique article keys across {s['candidates_considered']} candidates. Original extractions add 44 missing candidate/source associations. Additional original numeric rows expand the conditional analysis to {s['numeric_candidates']} candidates, {s['numeric_source_DOIs']} source DOIs and {s['numeric_rows']} observations. The largest connected component contains 48 candidates, ten papers and 105 rows after adding the 2022 phenolic-acid bridge. Sesamin remains in a separate component. Their positions retain component scope. Article-level scientific review and formal global ranking remain pending.\n")
+
+
+reviewed=ROOT/'03_candidate_selection/08_capacity_review_validation/review_validation_summary.json'
+if reviewed.exists():
+ s=read_json(reviewed)
+ with (out/'Results.md').open('a',encoding='utf8') as f:
+  f.write(f"\n## Connected capacity-model validation\n\nThe consolidated audit retained {s['audited_numeric_rows']} source rows from {s['audited_original_DOIs']} DOIs, including prior extractions and five newly audited distinct-endpoint rows retained on hold. The connected expanded model contained 48 candidates, ten papers and 105 rows. Whole-paper log RMSE was 0.6575 versus 0.7026 for the matched baseline across 67 estimable outcomes. The reported-pH/temperature subset contained 24 candidates and six papers, with RMSE 0.4128 versus 0.4151 over nine outcomes. Equal-row and equal-total-DOI Top20 sets shared {s['weighting_top20_overlap']} members. Recorded source deletions retained within-20 worst-case positions for {', '.join(s['deletion_robust_top20'])}. Sampling intervals and final selection remain unresolved.\n")

@@ -14,7 +14,7 @@
   "formal_lab_ready_count": 0,
   "new_assay_experiments_performed": 0,
   "pubchem_queue_identity_conflicts": [],
-  "svg_text_without_raster_verified": 62,
+  "svg_text_without_raster_verified": 64,
   "active_english_markdown_pass": true,
   "broken_active_markdown_links": [],
   "synthetic_auc_check": "PASS_SYNTHETIC_TEST_ONLY_NOT_EXPERIMENTAL_RESULTS",
@@ -29,5 +29,9 @@
   "minimum20_candidates": 193,
   "minimum20_abstract_links": 14279,
   "minimum20_abstract_rule_target_reached": 181,
-  "minimum20_all_scientific_reviews_complete": false
+  "minimum20_all_scientific_reviews_complete": false,
+  "capacity_audited_rows": 194,
+  "capacity_review_progress_profiles": 193,
+  "connected_validation_candidates": 48,
+  "connected_validation_DOIs": 10
 }

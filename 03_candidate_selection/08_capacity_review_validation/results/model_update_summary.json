@@ -1,0 +1,115 @@
+{
+  "status": "ORIGINAL_SOURCE_DIAGNOSTICS_PROTOCOL_ALIGNMENT_PENDING",
+  "variants": [
+    {
+      "variant": "EXTENDED_UNKNOWN_PH_NAME_BASED",
+      "candidate_rows": 105,
+      "candidates": 48,
+      "papers": 10,
+      "reported_protocol_blocks": 12,
+      "full_design_rank": 59,
+      "full_parameters": 59,
+      "single_DOI_candidates": 20,
+      "heldout_rows": 67,
+      "total_heldout_rows": 105,
+      "metrics": {
+        "predicted_log_location": {
+          "MAE": 0.4869180654421782,
+          "RMSE": 0.6575055440817409
+        },
+        "baseline_log_location": {
+          "MAE": 0.5281275106651413,
+          "RMSE": 0.7026000673289524
+        }
+      }
+    },
+    {
+      "variant": "EXTENDED_CONFLICT_EXCLUDED",
+      "candidate_rows": 105,
+      "candidates": 48,
+      "papers": 10,
+      "reported_protocol_blocks": 12,
+      "full_design_rank": 59,
+      "full_parameters": 59,
+      "single_DOI_candidates": 20,
+      "heldout_rows": 67,
+      "total_heldout_rows": 105,
+      "metrics": {
+        "predicted_log_location": {
+          "MAE": 0.4869180654421782,
+          "RMSE": 0.6575055440817409
+        },
+        "baseline_log_location": {
+          "MAE": 0.5281275106651413,
+          "RMSE": 0.7026000673289524
+        }
+      }
+    },
+    {
+      "variant": "CORE_REPORTED_PH74_37C",
+      "candidate_rows": 37,
+      "candidates": 24,
+      "papers": 6,
+      "reported_protocol_blocks": 7,
+      "full_design_rank": 30,
+      "full_parameters": 30,
+      "single_DOI_candidates": 16,
+      "heldout_rows": 9,
+      "total_heldout_rows": 37,
+      "metrics": {
+        "predicted_log_location": {
+          "MAE": 0.3540492554201902,
+          "RMSE": 0.4128312037524517
+        },
+        "baseline_log_location": {
+          "MAE": 0.36223955481550363,
+          "RMSE": 0.41510596268291006
+        }
+      }
+    }
+  ],
+  "fixed_shrinkage_lambda": 10,
+  "newly_tuned_parameters": false,
+  "predictor": "CANDIDATE_IDENTITY_PLUS_REPORTED_SOURCE_PROTOCOL_BLOCK",
+  "unseen_chemical_or_scaffold_prediction_supported": false,
+  "formal_global_Top20_established": false,
+  "formal_sampling_CIs_estimated": false,
+  "source_omission_order_rows": 1104,
+  "common_universe_membership": [
+    {
+      "first_variant": "EXTENDED_UNKNOWN_PH_NAME_BASED",
+      "second_variant": "EXTENDED_CONFLICT_EXCLUDED",
+      "common_candidates": 48,
+      "top_set_size": 20,
+      "overlap": 20,
+      "jaccard": 1.0,
+      "first_only": "",
+      "second_only": "",
+      "interpretation": "COMMON_CANDIDATE_UNIVERSE_DIAGNOSTIC_MEMBERSHIP"
+    },
+    {
+      "first_variant": "EXTENDED_UNKNOWN_PH_NAME_BASED",
+      "second_variant": "CORE_REPORTED_PH74_37C",
+      "common_candidates": 24,
+      "top_set_size": 20,
+      "overlap": 19,
+      "jaccard": 0.9047619047619048,
+      "first_only": "AFF-0070",
+      "second_only": "AFF-0176",
+      "interpretation": "COMMON_CANDIDATE_UNIVERSE_DIAGNOSTIC_MEMBERSHIP"
+    },
+    {
+      "first_variant": "EXTENDED_CONFLICT_EXCLUDED",
+      "second_variant": "CORE_REPORTED_PH74_37C",
+      "common_candidates": 24,
+      "top_set_size": 20,
+      "overlap": 19,
+      "jaccard": 0.9047619047619048,
+      "first_only": "AFF-0070",
+      "second_only": "AFF-0176",
+      "interpretation": "COMMON_CANDIDATE_UNIVERSE_DIAGNOSTIC_MEMBERSHIP"
+    }
+  ],
+  "new_source_extraction_sha256": "c0a167f8ae67966e7c2c1a0f03dc1127d5f815d63aef65ea9761a28a0ae7dd89",
+  "original2023_extraction_sha256": "466ff4999b16ee6c8b32cd8bc63fffd6ba7d90ae2f908ec04561ae9015ce832a"
+}

@@ -1,0 +1,17 @@
+{
+  "audited_numeric_rows": 194,
+  "audited_original_DOIs": 14,
+  "fresh_kinetic_endpoint_rows_held": 5,
+  "review_progress_candidates": 193,
+  "connected_candidates": 48,
+  "weighting_top20_overlap": 16,
+  "deletion_robust_top20": [
+    "Catechin",
+    "Quercetin"
+  ],
+  "baseline_input_already_conflict_excluded": true,
+  "formal_sampling_intervals_estimated": false,
+  "formal_top20_finalized": false,
+  "dose_top20_overlap_equal_row": 19,
+  "dose_top20_overlap_equal_DOI": 19
+}
