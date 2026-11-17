@@ -1,0 +1,4 @@
+database,status,needed,primary_dates,syntax_and_recall_status,import_status
+Web of Science Core Collection,RESEARCHER_WILL_EXPORT_FILES,"Full records,abstracts,DOI,authors,dates,cited references,exact query,search date,hits and export range",2020-01-01 through2026-11-17,AWAITING_REAL_PLATFORM_TEST,PENDING
+CNKI,RESEARCHER_WILL_EXPORT_FILES,"Full records,abstracts,DOI,authors,dates,cited references,exact query,search date,hits and export range",2020-01-01 through2026-11-17,AWAITING_REAL_PLATFORM_TEST,PENDING
+Scopus if accessible,RESEARCHER_WILL_EXPORT_FILES,"Full records,abstracts,DOI,authors,dates,cited references,exact query,search date,hits and export range",2020-01-01 through2026-11-17,AWAITING_REAL_PLATFORM_TEST,PENDING

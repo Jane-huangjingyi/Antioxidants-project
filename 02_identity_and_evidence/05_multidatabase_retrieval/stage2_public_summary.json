@@ -1,0 +1,25 @@
+{
+  "status": "IN_PROGRESS_INSTITUTIONAL_EXPORTS_AND_OTHER_DATABASE_GATES_PENDING",
+  "legacy_master_rows": 87386,
+  "public_unique_keys": 62458,
+  "consolidated_identifier_keys": 132369,
+  "public_hit_associations": 74143,
+  "public_downloaded_associations": 74146,
+  "candidate_article_links": 106171,
+  "institutional_complete": false,
+  "stage2_complete": false,
+  "public_hit_count_consistency": [
+    {
+      "route": "METHOD_ONLY",
+      "status": "MATCH"
+    },
+    {
+      "route": "COMPOUND_CLASS",
+      "status": "RECONCILED_PAGINATION_DUPLICATES"
+    }
+  ],
+  "new_candidate_identity_assignment": "PENDING",
+  "revised_compound_query_update": "PENDING",
+  "pubmed_full_export": "PENDING",
+  "scholar_access": "UNAVAILABLE_IN_CHECKED_WEB_TOOL"
+}

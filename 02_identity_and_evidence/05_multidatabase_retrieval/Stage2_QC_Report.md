@@ -1,0 +1,3 @@
+# Stage2 public retrieval QC
+
+Public retrieval snapshot PASS. Stage2 completion gate OPEN. Two public cursor chains exhausted. Three category-route pagination duplicates reconcile the difference between downloaded and reported counts. Consolidated identifier keys 132369; existing candidate associations 106171. Exact identifier grouping preserves provenance. Known anchors are audited separately. Title/author/year near-duplicate and conflicting identifier adjudication remain pending. Institutional exports,independent PubMed export,Scholar inspection,revised compound queries and new-compound assignment remain pending. Human review status remains NOT_REVIEWED.

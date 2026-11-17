@@ -1,0 +1,7 @@
+# Stage2 retrieval workstream
+
+Protocol Addendumv1.1 governs this module. Stage1 received researcher GO WITH REVISIONS. This workstream retains Stage2 IN_PROGRESS until all access,search,recall,identifier and institutional-import gates are addressed. Formal next-stage approval remains pending.
+
+Run code/retrieve_public.py for resumable method-only and compound-class routes without mandatory food terms. Each response is cached under the existing ignored supplemental inputs directory. Completed routes produce the search log,raw manifest,public article register and all route origins. Run code/finalize_public_snapshot.py after both routes finish to consolidate the public snapshot with the legacy master and preserve candidate links. Exact DOI/PMID grouping and confirmed version families remain distinct from experiment independence. Topic and193-compound caches remain available; updated compound-route coverage requires further execution audit.
+
+PubMed_Query_Syntax_Test.csv records an actual API count/syntax test. It carries zero exported-record count. Institutional_Export_Instructions.md and Missing_Institutional_Exports.csv define pending researcher exports. The researcher confirmed that files will be supplied. Google Scholar access failed in the checked web tool; no result range was inspected. Revised-query anchor recall is evaluated separately from direct DOI retrieval,with date/index and identifier checks for misses. This snapshot retains pending screening and human review states.

@@ -1,0 +1,12 @@
+endpoint_subtype_id,endpoint,quantity,required_strata,normalization_gate,review_status
+ORAC-V11-01,RAW_FLUORESCENCE_TIME,Signal versus time,"Probe,radical,pH,temperature,vehicle,integration,calibration,material",EXPLICIT_NUMERATOR_DENOMINATOR_AND_FORMULA,PENDING_EXPERIMENT_LEVEL_REVIEW
+ORAC-V11-02,NORMALIZED_AUC,Integral of normalized fluorescence,"Probe,radical,pH,temperature,vehicle,integration,calibration,material",EXPLICIT_NUMERATOR_DENOMINATOR_AND_FORMULA,PENDING_EXPERIMENT_LEVEL_REVIEW
+ORAC-V11-03,NET_AUC,Sample AUC minus matched blank AUC,"Probe,radical,pH,temperature,vehicle,integration,calibration,material",EXPLICIT_NUMERATOR_DENOMINATOR_AND_FORMULA,PENDING_EXPERIMENT_LEVEL_REVIEW
+ORAC-V11-04,NET_AUC_CONCENTRATION_SLOPE,Regression slope under declared dose range,"Probe,radical,pH,temperature,vehicle,integration,calibration,material",EXPLICIT_NUMERATOR_DENOMINATOR_AND_FORMULA,PENDING_EXPERIMENT_LEVEL_REVIEW
+ORAC-V11-05,TROLOX_SLOPE_RATIO,Matched sample slope/Trolox slope,"Probe,radical,pH,temperature,vehicle,integration,calibration,material",EXPLICIT_NUMERATOR_DENOMINATOR_AND_FORMULA,PENDING_EXPERIMENT_LEVEL_REVIEW
+ORAC-V11-06,CALIBRATED_MOLAR_CAPACITY,MolesTE per mole compound,"Probe,radical,pH,temperature,vehicle,integration,calibration,material",EXPLICIT_NUMERATOR_DENOMINATOR_AND_FORMULA,PENDING_EXPERIMENT_LEVEL_REVIEW
+ORAC-V11-07,MASS_NORMALIZED_CAPACITY,Explicit amountTE per mass material,"Probe,radical,pH,temperature,vehicle,integration,calibration,material",EXPLICIT_NUMERATOR_DENOMINATOR_AND_FORMULA,PENDING_EXPERIMENT_LEVEL_REVIEW
+ORAC-V11-08,CONCENTRATION_TE,Calibrated TE concentration with source dilution hierarchy,"Probe,radical,pH,temperature,vehicle,integration,calibration,material",EXPLICIT_NUMERATOR_DENOMINATOR_AND_FORMULA,PENDING_EXPERIMENT_LEVEL_REVIEW
+ORAC-V11-09,LAG_TIME,Declared lag-time definition,"Probe,radical,pH,temperature,vehicle,integration,calibration,material",EXPLICIT_NUMERATOR_DENOMINATOR_AND_FORMULA,PENDING_EXPERIMENT_LEVEL_REVIEW
+ORAC-V11-10,DECAY_RATE,Declared kinetic model and rate,"Probe,radical,pH,temperature,vehicle,integration,calibration,material",EXPLICIT_NUMERATOR_DENOMINATOR_AND_FORMULA,PENDING_EXPERIMENT_LEVEL_REVIEW
+ORAC-V11-11,IC50_PROTECTION,Dose achieving specified protection response,"Probe,radical,pH,temperature,vehicle,integration,calibration,material",EXPLICIT_NUMERATOR_DENOMINATOR_AND_FORMULA,PENDING_EXPERIMENT_LEVEL_REVIEW

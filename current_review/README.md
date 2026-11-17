@@ -96,3 +96,5 @@ The [evidence stability assessment](../03_candidate_selection/06_verified_source
 The latest date-scoped source appraisal is in [Step02.3](../02_identity_and_evidence/03_date_scoped_review/README.md). Its [fixed source-progress register](../02_identity_and_evidence/03_date_scoped_review/results/Original_ORAC_Source_Progress.csv) retains the109-source denominator and actual reading scopes.
 
 The six-stage systematic evidence task starts with [Stage1 protocol](../02_identity_and_evidence/04_systematic_protocol_v1/Systematic_Review_Protocol_v1.0.md), [decisions](../02_identity_and_evidence/04_systematic_protocol_v1/Protocol_Decision_Register.md) and [technical QC](../02_identity_and_evidence/04_systematic_protocol_v1/Stage1_QC_Report.md). Stage2 awaits researcher stage review.
+
+Stage2 public retrieval and institutional handoff are tracked in [the retrieval module](../02_identity_and_evidence/05_multidatabase_retrieval/README.md). [Addendumv1.1](../02_identity_and_evidence/04_systematic_protocol_v1/Protocol_Addendum_v1.1.md) records the researcher-requested revisions. Stage2 completion remains pending the recorded database and import gates.

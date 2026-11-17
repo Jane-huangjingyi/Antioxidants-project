@@ -1,0 +1,3 @@
+# Database coverage audit
+
+Europe PMC method/class cursor chains were exhausted. Three repeated source IDs reconcile the category-route pagination count. PubMed method query accepted by API with25,806hits and zero exported records in that syntax test. Europe PMC includes PubMed records; independent PubMed retrieval remains distinct. WoS,CNKI and Scopus await researcher exports and actual platform syntax/recall tests. Google Scholar query was inaccessible in the checked browser tool; inspected result count remains zero. Existing193-compound caches and prior source scopes are reused; revised compound-route updates remain pending. Stage2 remains in progress.

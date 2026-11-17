@@ -1,0 +1,6 @@
+amendment_id,from_version,to_version,date,domain,reason,impact,authorization,historical_assets
+REV01,1.0,1.1,2026-11-17,Search routes,Reduce food-keyword retrieval loss,Stage2 queries and recall tests,RESEARCHER_GO_WITH_REVISIONS_MESSAGE,PRESERVED
+REV02,1.0,1.1,2026-11-17,Extension triggers,Prioritize independent original quantitative and method/control evidence gaps,Stage2 extension requests and Stage3 eligibility,RESEARCHER_GO_WITH_REVISIONS_MESSAGE,PRESERVED
+REV03,1.0,1.1,2026-11-17,Review authority,"Maintain AI,reviewer and scientific-adjudication distinctions",Stage3 exclusion-risk audit and Stage4 double checks,RESEARCHER_GO_WITH_REVISIONS_MESSAGE,PRESERVED
+REV04,1.0,1.1,2026-11-17,Date semantics,"Prevent first-public,issue and index date conflation",Stage2 metadata and Stage3 time eligibility,RESEARCHER_GO_WITH_REVISIONS_MESSAGE,PRESERVED
+REV05,1.0,1.1,2026-11-17,Endpoint subtypes,"Preserve ORAC kinetic,integrated and calibrated estimands",Stage4 extraction and Stage5 comparability,RESEARCHER_GO_WITH_REVISIONS_MESSAGE,PRESERVED

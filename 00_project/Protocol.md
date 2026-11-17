@@ -17,3 +17,5 @@ AFF-0061 observations and historical scientific proposals retain their original 
 ## Systematic evidence workflow technical protocol
 
 For the six-stage task initiated2026-11-17, use [Systematic Review Protocol v1.0](../02_identity_and_evidence/04_systematic_protocol_v1/Systematic_Review_Protocol_v1.0.md). It defines the revised multi-assay scope and cutoff. The preceding text remains the dated workflow-v0.1 context.
+
+The researcher-directed [Protocol Addendum v1.1](../02_identity_and_evidence/04_systematic_protocol_v1/Protocol_Addendum_v1.1.md) governs prospective Stage2 retrieval and screening after GO WITH REVISIONS.

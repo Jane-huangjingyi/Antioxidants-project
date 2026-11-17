@@ -1,0 +1,88 @@
+table,field,meaning,missing_rule,scope
+Candidate_Article_Links.csv,candidate_id,candidate id,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Candidate_Article_Links.csv,article_key,article key,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Candidate_Article_Links.csv,original_article_key,original article key,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Candidate_Article_Links.csv,doi,doi,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Candidate_Article_Links.csv,origin_register,origin register,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Candidate_Article_Links.csv,association_status,association status,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Candidate_Article_Links.csv,human_review_status,human review status,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Candidate_Article_Links.csv,change_applied,change applied,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Database_Access_Test_Log.csv,database,database,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Database_Access_Test_Log.csv,date,date,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Database_Access_Test_Log.csv,actual_test_status,actual test status,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Database_Access_Test_Log.csv,query_or_reference,query or reference,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Database_Access_Test_Log.csv,reviewer,reviewer,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Database_Access_Test_Log.csv,scientific_screening,scientific screening,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Database_Search_Log.csv,database,database,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Database_Search_Log.csv,route,route,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Database_Search_Log.csv,query,query,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Database_Search_Log.csv,cutoff,cutoff,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Database_Search_Log.csv,execution_UTC,execution UTC,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Database_Search_Log.csv,hit_count,hit count,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Database_Search_Log.csv,downloaded_records,downloaded records,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Database_Search_Log.csv,unique_source_records,unique source records,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Database_Search_Log.csv,pagination_duplicate_records,pagination duplicate records,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Database_Search_Log.csv,complete,complete,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Database_Search_Log.csv,cursor_exhausted,cursor exhausted,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Database_Search_Log.csv,count_consistency,count consistency,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Database_Search_Log.csv,syntax_test,syntax test,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Database_Search_Log.csv,food_terms_required,food terms required,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Database_Search_Log.csv,independent_PubMed_execution,independent PubMed execution,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Deduplicated_Article_Register.csv,article_key,article key,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Deduplicated_Article_Register.csv,doi,doi,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Deduplicated_Article_Register.csv,PMID,PMID,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Deduplicated_Article_Register.csv,PMCID,PMCID,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Deduplicated_Article_Register.csv,title,title,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Deduplicated_Article_Register.csv,journal,journal,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Deduplicated_Article_Register.csv,year,year,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Deduplicated_Article_Register.csv,first_public_date,first public date,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Deduplicated_Article_Register.csv,formal_issue_date,formal issue date,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Deduplicated_Article_Register.csv,index_date,index date,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Deduplicated_Article_Register.csv,database_origins,database origins,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Deduplicated_Article_Register.csv,source_article_key,source article key,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Deduplicated_Article_Register.csv,canonical_study_key,canonical study key,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Deduplicated_Article_Register.csv,date_review_status,date review status,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Deduplicated_Article_Register.csv,screening_status,screening status,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Deduplicated_Article_Register.csv,human_review_status,human review status,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Deduplicated_Article_Register.csv,change_applied,change applied,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Deduplicated_Article_Register.csv,authors,authors,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Deduplicated_Article_Register.csv,prior_reading_scope,prior reading scope,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Deduplicated_Article_Register.csv,prior_scope_register,prior scope register,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Duplicate_and_Version_Link_Register.csv,record_key,record key,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Duplicate_and_Version_Link_Register.csv,incoming_article_key,incoming article key,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Duplicate_and_Version_Link_Register.csv,retained_key,retained key,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Duplicate_and_Version_Link_Register.csv,rule,rule,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Duplicate_and_Version_Link_Register.csv,origin,origin,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Duplicate_and_Version_Link_Register.csv,decision,decision,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Missing_Institutional_Exports.csv,database,database,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Missing_Institutional_Exports.csv,status,status,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Missing_Institutional_Exports.csv,needed,needed,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Missing_Institutional_Exports.csv,primary_dates,primary dates,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Missing_Institutional_Exports.csv,syntax_and_recall_status,syntax and recall status,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Missing_Institutional_Exports.csv,import_status,import status,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Public_Article_Search_Origins.csv,article_key,article key,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Public_Article_Search_Origins.csv,route,route,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Public_Article_Search_Origins.csv,raw_file,raw file,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Public_Article_Search_Origins.csv,source_record_id,source record id,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Public_Query_Anchor_Recall.csv,candidate_id,candidate id,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Public_Query_Anchor_Recall.csv,doi,doi,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Public_Query_Anchor_Recall.csv,retrieved_by_revised_public_routes,retrieved by revised public routes,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Public_Query_Anchor_Recall.csv,date_and_scope_eligibility,date and scope eligibility,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Public_Query_Anchor_Recall.csv,interpretation,interpretation,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Public_Query_Anchor_Recall.csv,available_first_public_date,available first public date,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Public_Query_Anchor_Recall.csv,available_issue_year,available issue year,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+PubMed_Query_Syntax_Test.csv,database,database,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+PubMed_Query_Syntax_Test.csv,query,query,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+PubMed_Query_Syntax_Test.csv,test_date,test date,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+PubMed_Query_Syntax_Test.csv,api_syntax,api syntax,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+PubMed_Query_Syntax_Test.csv,hit_count,hit count,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+PubMed_Query_Syntax_Test.csv,exported_records,exported records,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+PubMed_Query_Syntax_Test.csv,coverage_status,coverage status,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+PubMed_Query_Syntax_Test.csv,raw_file,raw file,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+PubMed_Query_Syntax_Test.csv,sha256,sha256,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Raw_Export_Manifest.csv,route,route,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Raw_Export_Manifest.csv,page,page,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Raw_Export_Manifest.csv,raw_file,raw file,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Raw_Export_Manifest.csv,sha256,sha256,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Raw_Export_Manifest.csv,records,records,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending
+Raw_Export_Manifest.csv,source_url,source url,Blank means unavailable or pending; preserve explicit status,Public checkpoint; all scientific decisions pending

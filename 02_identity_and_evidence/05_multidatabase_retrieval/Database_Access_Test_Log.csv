@@ -1,0 +1,7 @@
+database,date,actual_test_status,query_or_reference,reviewer,scientific_screening
+Europe PMC,2026-11-17,API_ACCEPTED_CURSOR_EXHAUSTED_COUNTS_RECONCILED,See Database_Search_Log.csv exact queries,UNASSIGNED,PENDING
+PubMed/MEDLINE,2026-11-17,API_ACCEPTED_COUNT_ONLY,See PubMed_Query_Syntax_Test.csv exact translated query,UNASSIGNED,PENDING
+Google Scholar,2026-11-17,WEB_TOOL_URL_NOT_ACCESSIBLE,https://scholar.google.com/scholar?q=%22ORAC%22+antioxidant&as_ylo=2020&as_yhi=2026,UNASSIGNED,PENDING
+Web of Science Core Collection,2026-11-17,AWAITING_RESEARCHER_PLATFORM_TEST_AND_EXPORT,See Protocolv1.1 database templates,UNASSIGNED,PENDING
+CNKI,2026-11-17,AWAITING_RESEARCHER_PLATFORM_TEST_AND_EXPORT,See Protocolv1.1 database templates,UNASSIGNED,PENDING
+Scopus,2026-11-17,ACCESS_AND_PLATFORM_TEST_PENDING,See Protocolv1.1 database templates,UNASSIGNED,PENDING
