@@ -181,6 +181,14 @@ if (capacity_review/'review_validation_summary.json').exists():
  reviewed_input=read_csv(capacity_review/'Connected_Conditional_Analysis_Input.csv')
  validation_summary=read_json(capacity_review/'results/model_update_summary.json')
  assert len(review_rows)==203 and len(review_progress)==193
+ assert len({r['evidence_id'] for r in review_rows})==203
+ reconciled=read_csv(capacity_review/'Historical_Parent_Name_Reconciliation.csv')
+ assert len(reconciled)==4
+ for r in reconciled:
+  assert sum(a['evidence_id']==r['extraction_id'] for a in review_rows)==1
+  assert float(r['conditional_molar_capacity'])==float(r['raw_mean'])
+  source=ROOT/r['source_file']
+  if source.exists(): assert sha(source)==r['source_sha256']
  assert len({r['candidate_id'] for r in review_progress})==193
  assert all(r['human_review_status']=='NOT_REVIEWED' and r['change_applied']=='NO' for r in review_rows)
  assert sum(r['disposition']=='DISTINCT_AUC_ENDPOINT_HOLD' for r in review_rows)==5
@@ -194,12 +202,12 @@ if (capacity_review/'review_validation_summary.json').exists():
  assert validation_summary['new_source_extraction_sha256']==sha(capacity_review/'Connected_Conditional_Analysis_Input.csv')
  assert not validation_summary['newly_tuned_parameters'] and not validation_summary['formal_global_Top20_established']
  expanded=next(r for r in validation_summary['variants'] if r['variant']=='EXTENDED_CONFLICT_EXCLUDED')
- assert expanded['candidates']==48 and expanded['papers']==11 and expanded['candidate_rows']==109
+ assert expanded['candidates']==51 and expanded['papers']==11 and expanded['candidate_rows']==113
  bounds=read_csv(capacity_review/'Top20_Conditional_Uncertainty.csv')
- assert len(bounds)==48
+ assert len(bounds)==51
  for r in bounds:
-  assert 1<=int(r['deletion_best_position'])<=int(r['full_fit_position'])<=int(r['deletion_worst_position'])<=48
- summary.update(capacity_audited_rows=203,capacity_review_progress_profiles=193,connected_validation_candidates=48,connected_validation_DOIs=11)
+  assert 1<=int(r['deletion_best_position'])<=int(r['full_fit_position'])<=int(r['deletion_worst_position'])<=51
+ summary.update(capacity_audited_rows=203,capacity_review_progress_profiles=193,connected_validation_candidates=51,connected_validation_DOIs=11)
 date_review=ROOT/'02_identity_and_evidence/03_date_scoped_review/results'
 if (date_review/'triage_summary.json').exists():
  scoped=read_csv(date_review/'Date_Scoped_Article_Register.csv')
@@ -212,12 +220,70 @@ if (date_review/'triage_summary.json').exists():
  assert len(blueberry)==5 and sum(bool(r['candidate_id']) for r in blueberry)==1
  assert all(r['raw_units']=='micromol Trolox/micromol sample' and r['model_label_release']=='NO' for r in blueberry)
  decisions=read_csv(date_review/'Current_Scientific_Source_Decisions.csv')
+ controls_path=date_review/'Reference_Control_Original_Extraction.csv'
+ if controls_path.exists():
+  controls=read_csv(controls_path)
+  assert len(controls)==4
+  assert sorted(float(r['raw_mean']) for r in controls)==[0.56,0.65,5.48,2378.0]
+  assert all(r['conditional_molar_capacity']=='' and r['model_label_release']=='NO' and r['human_review_status']=='NOT_REVIEWED' and r['change_applied']=='NO' for r in controls)
+  for r in controls:
+   source=ROOT/r['source_file']
+   if source.exists(): assert sha(source)==r['source_sha256']
+ distinct_path=date_review/'Distinct_Endpoint_Original_Extraction.csv'
+ if distinct_path.exists():
+  distinct=read_csv(distinct_path)
+  secondary=read_csv(date_review/'Secondary_ORAC_Original_Source_Trace.csv')
+  assert len(distinct)==14 and len(secondary)==8
+  assert all(r['converted_molar_capacity']=='' and r['model_label_release']=='NO' for r in distinct)
+  assert all(r['study_deduplication_key']=='10.1002/jsfa.9917' and r['original_verified']=='NO' for r in secondary)
+  for r in distinct+secondary:
+   assert r['change_applied']=='NO' and r['human_review_status']=='NOT_REVIEWED'
+   cached_source=ROOT/r['source_file']
+   if cached_source.is_file():assert sha(cached_source)==r['source_sha256']
  unit_holds=read_csv(date_review/'Current_Standard_Unit_Holds.csv')
  assert len(unit_holds)==4 and all(r['converted_molar_value']=='' for r in unit_holds)
  for r in decisions+blueberry+unit_holds:
   assert r['human_review_status']=='NOT_REVIEWED' and r['change_applied']=='NO'
   cached_source=ROOT/r['source_file']
-  if cached_source.exists():assert sha(cached_source)==r['source_sha256']
+  if cached_source.is_file():assert sha(cached_source)==r['source_sha256']
+ progress=read_csv(date_review/'Original_ORAC_Source_Progress.csv')
+ assert len(progress)==109 and len({r['article_key'] for r in progress})==109
+ assert sum(r['progress']=='TARGETED_SOURCE_SCOPE_RECORDED' for r in progress)==72
+ assert sum(r['progress']=='FULLTEXT_ACCESS_PENDING' for r in progress)==37
+ additional=read_csv(date_review/'Additional_Endpoint_Original_Extraction.csv')
+ sesame=read_csv(date_review/'Sesame_Comparison_Original_Extraction.csv')
+ hop=read_csv(date_review/'Hop_Original_Table_Transcription.csv')
+ assert len(additional)==4 and len(sesame)==6 and len(hop)==12
+ for r in additional+sesame+hop:
+  assert r['converted_molar_capacity']=='' and r['model_label_release']=='NO'
+  assert r['human_review_status']=='NOT_REVIEWED' and r['change_applied']=='NO'
+  if r.get('source_file'):
+   source=ROOT/r['source_file']
+   if source.is_file():assert sha(source)==r['source_sha256']
+ assert all(r['original_local_file']=='' and r['original_local_sha256']=='' for r in hop)
+ deposit=read_csv(date_review/'Public_ORAC_Deposit_Summary_Audit.csv')
+ assert len(deposit)==8
+ assert sum(r['error_row_check']=='MATCHES_MEAN_ABSOLUTE_DEVIATION' for r in deposit)==7
+ assert next(r['error_row_check'] for r in deposit if r['source_compound_code']=='trolox')=='MATCHES_FIRST_THREE_MEAN_ABSOLUTE_DEVIATION'
+ assert all(abs(float(r['printed_Stdev_row'])-float(r['recomputed_sample_SD']))>1e-6 for r in deposit)
+ assert all(r['model_label_release']=='NO' for r in deposit)
+ for r in read_csv(date_review/'Public_ORAC_Deposit_Manifest.csv'):
+  source=ROOT/'02_identity_and_evidence/01_systematic_supplement/inputs'/r['file_name']
+  if source.is_file():assert sha(source)==r['source_sha256']
+ locators=read_csv(date_review/'Source_Locator_Refresh.csv')
+ assert len(locators)==4 and all(r['locator_status']=='ORIGINAL_XML_DOI_VERIFIED' and r['doi']==r['original_xml_doi'] for r in locators)
+ for r in locators:
+  assert next(x['PMCID'] for x in progress if x['doi']==r['doi'])==r['PMCID']
+  source=ROOT/r['source_file']
+  if source.is_file():assert sha(source)==r['source_sha256']
+ versions=read_csv(date_review/'Study_Version_Link_Register.csv')
+ assert len(versions)==2 and len({r['preprint_doi'] for r in versions})==2
+ consideration=read_csv(ROOT/'03_candidate_selection/07_all_reference_integration/All_Reference_Consideration_Register.csv')
+ for version in versions:
+  matched=[r for r in consideration if r['doi']==version['preprint_doi']]
+  assert matched and all(r['canonical_study_key']==version['canonical_study_key'] and r['study_version_role']=='DECLARED_PREPRINT_VERSION' for r in matched)
+  assert all(r['consideration_status']!='NUMERIC_CROSS_PROTOCOL_SENSITIVITY' for r in matched)
+ summary.update(orac_work_cohort=109,orac_targeted_scope_records=72,orac_access_pending=37,public_deposit_slope_summaries=8)
  summary.update(date_scope_triage_records=len(triage),new_source_decisions=len(decisions),blueberry_original_rows=5)
 write_json(ROOT/'07_quality_control/workflow_qc.json',summary)
 text=f'''# Workflow QC\n\nDate: {AS_OF}. Status: PASS.\n\nAll {len(manifest['records'])} registered scientific sources are checked against their recorded SHA256. Locally held source corpora are optional on a clone and do not enter the offline calculations. Ten frozen assets retain their original content and hash. Original review and HOLD states remain unchanged.\n\nThe 191 literal seed IDs reconstruct correctly. There are 204 discovery records, 193 profiles, 25 review-eligible candidates, 20 provisional review slots and 12 cutoff-stratum ties. The two-study sensitivity retains 9. The formal laboratory-ready panel has {len(ready)} rows. All 20 review identities/formulas match their official cached PubChem refresh; no cache conflict was detected.\n\nActive English Markdown links resolve. {len(svg_files)} current SVG exports contain text and vector objects without embedded raster images. Numerical AUC integration and rejection rules were checked on synthetic in-memory traces only. They establish code behavior, not assay performance.\n\nRemaining scientific work: close candidate-specific food sources, exact reagent procurement/forms, solubility/stability and absorbance counter-screens; adjudicate cutoff ties and actual material decisions; approve equipment-specific assay settings/calibration; collect real experimental data. The method-search log explicitly identifies first-page truncation where present. The dated source catalogue and journal-metric gaps remain available and have not been promoted into verified claims.\n'''

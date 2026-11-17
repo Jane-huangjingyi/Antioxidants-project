@@ -1,0 +1,11 @@
+{
+  "baseline_sources": 109,
+  "status_counts": {
+    "TARGETED_SOURCE_SCOPE_RECORDED": 72,
+    "FULLTEXT_ACCESS_PENDING": 37
+  },
+  "targeted_source_decisions_total": 84,
+  "new_model_labels": 0,
+  "all_109_sources_completed": false,
+  "final_PRISMA_exclusions_established": false
+}

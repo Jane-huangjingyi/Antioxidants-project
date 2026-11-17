@@ -166,11 +166,27 @@ integrated=ROOT/'03_candidate_selection/07_all_reference_integration/integration
 if integrated.exists():
  s=read_json(integrated)
  with (out/'Results.md').open('a',encoding='utf8') as f:
-  f.write(f"\n## Complete reference consideration and conditional source expansion\n\nThe consideration register includes {s['all_reference_links']} candidate/article associations and {s['unique_linked_articles']} provisional unique article keys across {s['candidates_considered']} candidates. Original extractions add 44 missing candidate/source associations. Additional original numeric rows expand the conditional analysis to {s['numeric_candidates']} candidates, {s['numeric_source_DOIs']} source DOIs and {s['numeric_rows']} observations. The largest connected component contains 48 candidates, eleven papers and 109 rows after adding the 2022 phenolic-acid bridge. Sesamin remains in a separate component. Their positions retain component scope. Article-level scientific review and formal global ranking remain pending.\n")
+  f.write(f"\n## Complete reference consideration and conditional source expansion\n\nThe consideration register includes {s['all_reference_links']} candidate/article associations and {s['unique_linked_articles']} provisional unique article keys across {s['candidates_considered']} candidates. Original extractions add 48 missing candidate/source associations. Additional original numeric rows expand the conditional analysis to {s['numeric_candidates']} candidates, {s['numeric_source_DOIs']} source DOIs and {s['numeric_rows']} observations. The largest connected component contains 51 candidates, eleven papers and 113 rows after adding the 2022 phenolic-acid bridge. Sesamin remains in a separate component. Their positions retain component scope. Article-level scientific review and formal global ranking remain pending.\n")
 
 
 reviewed=ROOT/'03_candidate_selection/08_capacity_review_validation/review_validation_summary.json'
 if reviewed.exists():
  s=read_json(reviewed)
  with (out/'Results.md').open('a',encoding='utf8') as f:
-  f.write(f"\n## Connected capacity-model validation\n\nThe consolidated audit retained {s['audited_numeric_rows']} source rows from {s['audited_original_DOIs']} DOIs, including prior extractions and five newly audited distinct-endpoint rows retained on hold. The connected expanded model contained 48 candidates, eleven papers and 109 rows. Whole-paper log RMSE was 0.6339 versus 0.6796 for the matched baseline across 73 estimable outcomes. The reported-pH/temperature subset contained 24 candidates and six papers, with RMSE 0.4128 versus 0.4151 over nine outcomes. Equal-row and equal-total-DOI Top20 sets shared {s['weighting_top20_overlap']} members. Recorded source deletions retained within-20 worst-case positions for {', '.join(s['deletion_robust_top20'])}. Sampling intervals and final selection remain unresolved.\n")
+  f.write(f"\n## Connected capacity-model validation\n\nThe consolidated audit retained {s['audited_numeric_rows']} source rows from {s['audited_original_DOIs']} DOIs, including prior extractions and five newly audited distinct-endpoint rows retained on hold. The connected expanded model contained 51 candidates, eleven papers and 113 rows. Whole-paper log RMSE was 0.6306 versus 0.6755 for the matched baseline across 75 estimable outcomes. The reported-pH/temperature subset contained 24 candidates and six papers, with RMSE 0.4128 versus 0.4151 over nine outcomes. Equal-row and equal-total-DOI Top20 sets shared {s['weighting_top20_overlap']} members. Recorded source deletions retained within-20 worst-case positions for {', '.join(s['deletion_robust_top20'])}. Sampling intervals and final selection remain unresolved.\n")
+
+
+source_progress=ROOT/'02_identity_and_evidence/03_date_scoped_review/results/orac_queue_progress_summary.json'
+if source_progress.exists():
+ s=read_json(source_progress)
+ counts=s['status_counts']
+ with (out/'Results.md').open('a',encoding='utf8') as f:
+  f.write(f"\n## Date-scoped targeted source appraisal\n\nThe fixed work cohort contained {s['baseline_sources']} sources. Targeted section/table/caption scopes were recorded for {counts.get('TARGETED_SOURCE_SCOPE_RECORDED',0)} sources; {counts.get('FULLTEXT_ACCESS_PENDING',0)} retained access-pending status. Reading depth varied by source and is recorded individually. Four IC50-type rows, six sesame comparison rows, twelve hop experimental ORAC cells and four reference-control rows were retained with qualification holds. The public slope deposit contained seven compound error summaries matching mean absolute deviation. Its Trolox error matched the first three slopes' mean absolute deviation, while the printed mean used four slopes. Capacity-model inputs received zero new labels from this appraisal stage.\n")
+
+
+versions_summary=ROOT/'03_candidate_selection/07_all_reference_integration/integration_summary.json'
+if versions_summary.exists():
+ s=read_json(versions_summary)
+ if 'confirmed_version_pairs' in s:
+  with (out/'Results.md').open('a',encoding='utf8') as f:
+   f.write(f"\n## Publication-version reconciliation\n\nPublisher notices confirmed {s['confirmed_version_pairs']} preprint-to-journal version pairs. The {s['unique_linked_articles']} provisional article keys yielded {s['provisional_version_group_keys']} provisional version-family keys after these declared links were applied. Complete experiment-independence appraisal remains pending. Numeric model coverage was unchanged by this version grouping. Four new PMC locators were verified against original XML DOI fields.\n")

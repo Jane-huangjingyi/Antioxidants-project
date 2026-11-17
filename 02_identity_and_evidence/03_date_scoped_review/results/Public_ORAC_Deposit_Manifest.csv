@@ -1,0 +1,5 @@
+dataset_doi,article_doi,file_name,repository_file_id,source_url,source_sha256,bytes,model_label_release
+10.57745/WWSOBP,10.1002/chem.202503176,WWSOBP_ORAC_Results.csv,638912,https://entrepot.recherche.data.gouv.fr/api/access/datafile/638912,3b3fe72921c9a9e25598e51ebe9ae272cda11213a83a66330c8ce2c644995120,462,NO
+10.57745/WWSOBP,10.1002/chem.202503176,WWSOBP_Calibration.csv,637810,https://entrepot.recherche.data.gouv.fr/api/access/datafile/637810,facc2dfe0b34fafd373a953eac70a27e071f6a20f3d357c312364e2f0eb23d24,1430,NO
+10.57745/WWSOBP,10.1002/chem.202503176,WWSOBP_OracCurves.pdf,639600,https://entrepot.recherche.data.gouv.fr/api/access/datafile/639600,ae1d7592fcfc3d809bf5a3ea370390ba19d1fa6bfa9562c3182a0fd09a227431,245581,NO
+10.57745/WWSOBP,10.1002/chem.202503176,WWSOBP_ReadmeV2.odt,639601,https://entrepot.recherche.data.gouv.fr/api/access/datafile/639601,91749f80f46817b236a7ea6beae5bbb10e30e499214e985f09ce336a133408f1,15916,NO

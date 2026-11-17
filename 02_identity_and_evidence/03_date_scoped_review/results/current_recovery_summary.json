@@ -1,8 +1,12 @@
 {
-  "queued_articles": 121,
-  "public_PMC_candidates": 76,
-  "recovered": 74,
+  "queued_articles": 46,
+  "public_PMC_candidates": 2,
+  "recovered": 0,
   "failed": 2,
-  "sources_without_PMClocator": 45,
-  "scientific_reading_complete": false
+  "sources_without_PMClocator": 44,
+  "scientific_reading_complete": false,
+  "cumulative_public_PMC_inventory": 76,
+  "cumulative_recovered": 74,
+  "latest_attempted_sources": 2,
+  "inventory_scope": "CUMULATIVE_SOURCE_SNAPSHOT;LATEST_QUEUE_COUNTS_SEPARATE"
 }

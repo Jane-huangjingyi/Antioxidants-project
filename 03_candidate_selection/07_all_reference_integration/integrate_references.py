@@ -32,6 +32,8 @@ def main():
     if bridge.exists():additional+=read(bridge)
     citrus=ROOT/'03_candidate_selection/08_capacity_review_validation/Reviewed_Citrus_Capacity_Rows.csv'
     if citrus.exists():additional+=read(citrus)
+    reconciliation=ROOT/'03_candidate_selection/08_capacity_review_validation/Historical_Parent_Name_Reconciliation.csv'
+    if reconciliation.exists():additional+=read(reconciliation)
     rows=list(base)
     for r in additional:
         if not r['candidate_id'] or not r['conditional_molar_capacity']:
@@ -109,6 +111,13 @@ def main():
                                  reason='Verified extraction adds this candidate/source association to the master-link scope.',
                                  article_quality='NOT_APPRAISED',numeric_potency_weight='',
                                  human_review_status='NOT_REVIEWED',change_applied='NO'))
+    version_path=ROOT/'02_identity_and_evidence/03_date_scoped_review/results/Study_Version_Link_Register.csv'
+    versions={r['preprint_doi']:r for r in read(version_path)} if version_path.exists() else {}
+    for record in dispositions:
+        version=versions.get(record['doi'])
+        record['canonical_study_key']=version['canonical_study_key'] if version else record['article_key']
+        record['study_version_role']='DECLARED_PREPRINT_VERSION' if version else 'ARTICLE_KEY_PENDING_COMPLETE_INDEPENDENCE_REVIEW'
+        record['version_relation_source']=version['source_url'] if version else ''
     write('All_Reference_Consideration_Register.csv',dispositions)
     coverage=[]
     for cid,name in profiles.items():
@@ -123,6 +132,7 @@ def main():
                  candidates_considered=len(coverage),numeric_candidates=len({r['candidate_id'] for r in rows}),
                  numeric_source_DOIs=len({r['doi'] for r in rows}),numeric_rows=len(rows),
                  components=component_summary,additional_numeric_rows=len(rows)-len(base),
+                 confirmed_version_pairs=len(versions),provisional_version_group_keys=len({r['canonical_study_key'] for r in dispositions}),
                  all_articles_scientifically_reviewed=False,formal_global_rank_supported=False)
     (HERE/'integration_summary.json').write_text(json.dumps(summary,indent=2)+'\n',encoding='utf8')
     print(json.dumps(summary))

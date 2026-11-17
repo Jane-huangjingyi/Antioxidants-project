@@ -10,9 +10,9 @@ The fresh PMC10886186 review checks DOI 10.3390/antiox13020222 Table 3 and secti
 
 ## Validation results
 
-The full conditional dataset retains 49 candidates and 12 DOIs in two disconnected components, as described in [Step 03.7](../07_all_reference_integration/README.md). This validation uses the largest component, comprising 48 candidates, eleven DOIs and 109 rows. Eighteen candidates have one DOI. The reported-pH-7.4/37-C subset contains 24 candidates, six DOIs and 37 rows. This subset retains material and protocol qualification gaps, including the printed 2024 AAPH unit ambiguity.
+The full conditional dataset retains 52 candidates and 12 DOIs in two disconnected components, as described in [Step 03.7](../07_all_reference_integration/README.md). This validation uses the largest component, comprising 51 candidates, eleven DOIs and 113 rows. Twenty candidates have one DOI. The reported-pH-7.4/37-C subset contains 24 candidates, six DOIs and 37 rows. This subset retains material and protocol qualification gaps, including the printed 2024 AAPH unit ambiguity.
 
-The existing fixed-lambda-10 model and validation code are reused. Whole-paper holdout removes all blocks from the omitted DOI and scores only estimable training-candidate locations. Expanded log RMSE is 0.6339 versus 0.6796 for the matched baseline, over 73 estimable outcomes. The reported-pH/temperature subset gives 0.4128 versus 0.4151 over nine outcomes. Different sets score different observations. The improvement is small.
+The existing fixed-lambda-10 model and validation code are reused. Whole-paper holdout removes all blocks from the omitted DOI and scores only estimable training-candidate locations. Expanded log RMSE is 0.6306 versus 0.6755 for the matched baseline, over 75 estimable outcomes. The reported-pH/temperature subset gives 0.4128 versus 0.4151 over nine outcomes. Different sets score different observations. The improvement is small.
 
 The inherited name-based and conflict-excluded labels use the same already-conflict-excluded input here. Their agreement reflects identical data. It contributes no independent robustness evidence. The core-condition comparison shares only 24 candidates with the expanded set.
 
@@ -36,7 +36,7 @@ Priority source work remains independent original capacity studies for leading s
 
 DOI 10.3390/antiox11091784, PMC9495677, Table 2 provides 20 original ORAC outcomes for ten phenolic acids at reported 2.5 and 5 micromolar concentrations. Section 2.1 describes Sigma standards and 80:20 ethanol/water stocks, section 2.2.2 reports 80-minute fluorimetric measurements and three replicates. The cited method DOI 10.3390/md20010064 specifies fluorescein and 37 C. The bridge paper's pH, final solvent fraction, replicate independence, plus/minus definition and final-well concentration scale remain unresolved. Raw micromolar-TE values and conditional TE/reported-dose ratios are retained together. Mixture outcomes supply no individual-compound labels.
 
-Separate reported-dose blocks preserve both concentrations within one paper. A single-dose sensitivity refits the same 48-candidate set using either 2.5 or 5 micromolar rows. Top20 overlap is20/20 under equal-row and19/20 under equal-total-DOI weighting. The numeric bridge connects the four-acid component; sesamin remains disconnected. The conditional analysis shows appreciable dose/source sensitivity.
+Separate reported-dose blocks preserve both concentrations within one paper. A single-dose sensitivity refits the same 51-candidate set using either 2.5 or 5 micromolar rows. Top20 overlap is20/20 under equal-row and19/20 under equal-total-DOI weighting. The numeric bridge connects the four-acid component; sesamin remains disconnected. The conditional analysis shows appreciable dose/source sensitivity.
 
 ## Sesame-lignan targeted follow-up
 
@@ -44,4 +44,10 @@ Separate reported-dose blocks preserve both concentrations within one paper. A s
 
 ## Citrus single-source follow-up
 
-Run `python 03_candidate_selection/08_capacity_review_validation/extract_citrus_source.py` before integration to reproduce nine original Table4 rows. Four parent-mapped rows add a source DOI to the conditional model. The printed compound100mg normalization is preserved separately from extract per-g methods. Exact forms, pH, final solvent and independent replicate units remain unresolved. The newly expanded model covers49 candidates and12 DOIs overall;48 candidates and11 DOIs form the connected validation set.
+Run `python 03_candidate_selection/08_capacity_review_validation/extract_citrus_source.py` before integration to reproduce nine original Table4 rows. Four parent-mapped rows add a source DOI to the conditional model. The printed compound100mg normalization is preserved separately from extract per-g methods. Exact forms, pH, final solvent and independent replicate units remain unresolved. The newly expanded model covers52 candidates and12 DOIs overall;51 candidates and11 DOIs form the connected validation set.
+
+## Historical parent-name reconciliation
+
+Four existing observations from Tabart et al. (2009), DOI 10.1016/j.foodchem.2008.08.013, were reconciled through a separate parent-name overlay. Hyphenation variants identify kaempferol 3-O-glucoside, cyanidin 3-O-rutinoside and delphinidin 3-O-glucoside; myricetin-3-rhamnoside is conditionally mapped to Myricitrin. Original evidence IDs, table values and source spelling are retained. Exact salt, sugar anomer, purity and final vehicle remain unresolved. Each observation occurs once in the consolidated audit. This historical source adds no new paper and remains outside the 2020–2026 review window. Three additional candidate identities enter the conditional connected analysis; Myricitrin gains an existing-paper observation.
+
+Run `python 03_candidate_selection/08_capacity_review_validation/resolve_known_source_names.py` before integration and validation to reproduce the overlay.

@@ -59,6 +59,12 @@ def main():
         if int(year)>=2016:return 'EXTENSION_2016_2019',date
         return 'EARLIER_HISTORICAL',date
     lookup={r['article_key']:r for r in articles}
+    locator_path=HERE/'results/Source_Locator_Refresh.csv'
+    verified_locators={r['doi']:r['PMCID'] for r in read(locator_path) if r['locator_status']=='ORIGINAL_XML_DOI_VERIFIED'} if locator_path.exists() else {}
+    for article in articles:
+        if article['doi'] in verified_locators:
+            assert not article['PMCID'] or article['PMCID']==verified_locators[article['doi']]
+            article['PMCID']=verified_locators[article['doi']]
     primary_leads=collections.defaultdict(set)
     for r in packages:
         p,_=period(r)
@@ -98,6 +104,8 @@ def main():
                                    primary_retrieval_associations=sum(r['period']=='PRIMARY_2020_2026' for r in records),
                                    extension_retrieval_associations=sum(r['period']=='EXTENSION_2016_2019' for r in records),
                                    prior_screened_article_associations=sum(r['existing_review_status'].startswith('REUSE') for r in records),
+                                   current_targeted_source_checks=sum(r['doi'] in current_review_map for r in records),
+                                   current_capacity_dispositions=';'.join(sorted({current_review_map[r['doi']]['capacity_model_disposition'] for r in records if r['doi'] in current_review_map})),
                                    scientific_screening_complete='NO',scarcity_established='NO'))
     write('Candidate_Date_Window_and_Reuse.csv',candidate_rows)
     counts=collections.Counter(r['period'] for r in register)

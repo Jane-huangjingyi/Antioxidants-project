@@ -35,6 +35,8 @@ def main():
     if bridge.exists():extra+=read(bridge)
     citrus=HERE/'Reviewed_Citrus_Capacity_Rows.csv'
     if citrus.exists():extra+=read(citrus)
+    reconciliation=HERE/'Historical_Parent_Name_Reconciliation.csv'
+    if reconciliation.exists():extra+=read(reconciliation)
     for r in extra:
         if r['candidate_id'] not in connected or not r['conditional_molar_capacity']:
             continue
@@ -44,7 +46,7 @@ def main():
                    reported_error=r['conditional_molar_error'],error_type=r['error_type'],
                    pH=r['pH'],temperature_C=r['temperature_C'],
                    source_block=r['doi']+'|'+r.get('protocol_stratum','ADDITIONAL_CROSS_PROTOCOL'),
-                   numeric_locator=r['source_locator'],source_document=str(SOURCE.relative_to(ROOT)/r['source_file']),
+                   numeric_locator=r['source_locator'],source_document=(r['source_file'] if r.get('source_path_relative_to')=='PROJECT_ROOT' else str(SOURCE.relative_to(ROOT)/r['source_file'])),
                    source_sha256=r['source_sha256'],human_review_status='NOT_REVIEWED',change_applied='NO')
         rows.append(row)
     # Reuse the prior model runner, which adds its five original 2023 rows once.
@@ -105,8 +107,10 @@ def main():
                           disposition='DISTINCT_AUC_ENDPOINT_HOLD',
                           unresolved='Relative AUC definition lacks explicit net-AUC subtraction; kinetic parameter ranges are fitted. Buffer reported as 75mM and 0.1M in different sections. Final methanol and material identity unresolved.',
                           human_review_status='NOT_REVIEWED',change_applied='NO'))
+    # Parent-name overlays replace the audit representation of the same source row.
+    audit=list({r['evidence_id']:r for r in audit}.values())
     provenance={r['evidence_id']:(r['source_document'],r['source_sha256']) for r in original+base}
-    provenance.update({r['extraction_id']:(str(SOURCE.relative_to(ROOT)/r['source_file']),r['source_sha256']) for r in extra})
+    provenance.update({r['extraction_id']:((r['source_file'] if r.get('source_path_relative_to')=='PROJECT_ROOT' else str(SOURCE.relative_to(ROOT)/r['source_file'])),r['source_sha256']) for r in extra})
     kinetic_file=SOURCE/'fulltext_xml/PMC10886186.xml'
     for r in audit:
         if r['evidence_id'].startswith('KIN2024-'):

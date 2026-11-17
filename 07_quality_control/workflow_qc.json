@@ -32,9 +32,13 @@
   "minimum20_all_scientific_reviews_complete": false,
   "capacity_audited_rows": 203,
   "capacity_review_progress_profiles": 193,
-  "connected_validation_candidates": 48,
+  "connected_validation_candidates": 51,
   "connected_validation_DOIs": 11,
+  "orac_work_cohort": 109,
+  "orac_targeted_scope_records": 72,
+  "orac_access_pending": 37,
+  "public_deposit_slope_summaries": 8,
   "date_scope_triage_records": 48637,
-  "new_source_decisions": 6,
+  "new_source_decisions": 84,
   "blueberry_original_rows": 5
 }

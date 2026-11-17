@@ -1,15 +1,15 @@
 {
-  "all_reference_links": 106167,
+  "all_reference_links": 106171,
   "unique_linked_articles": 77594,
   "candidates_considered": 193,
-  "numeric_candidates": 49,
+  "numeric_candidates": 52,
   "numeric_source_DOIs": 12,
-  "numeric_rows": 110,
+  "numeric_rows": 114,
   "components": [
     {
       "component": 1,
-      "candidates": 48,
-      "rows": 109,
+      "candidates": 51,
+      "rows": 113,
       "source_DOIs": 11
     },
     {
@@ -19,7 +19,9 @@
       "source_DOIs": 1
     }
   ],
-  "additional_numeric_rows": 32,
+  "additional_numeric_rows": 36,
+  "confirmed_version_pairs": 2,
+  "provisional_version_group_keys": 77592,
   "all_articles_scientifically_reviewed": false,
   "formal_global_rank_supported": false
 }
