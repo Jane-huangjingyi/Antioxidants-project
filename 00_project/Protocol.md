@@ -13,3 +13,7 @@ The primary working output is a **review queue**, followed by a separately gated
 The preserved ORAC-FL Frozen Top20 v1.0 is a historical chemical-ranking reference. The new queue has a different purpose and never overwrites it. ORAC-PGR, crocin bleaching and ABTS measure different operational constructs; Trolox units do not establish numeric equivalence. Chemistry, cell/function and causal mechanism validation remain separate research layers.
 
 AFF-0061 observations and historical scientific proposals retain their original review/HOLD states. File migration is not production database migration, scientific approval, authorization for scale-up, or approval of actual experiments. No reviewer identity, approval date, reagent availability, solubility, assay result or clinical benefit is fabricated.
+
+## Systematic evidence workflow technical protocol
+
+For the six-stage task initiated2026-11-17, use [Systematic Review Protocol v1.0](../02_identity_and_evidence/04_systematic_protocol_v1/Systematic_Review_Protocol_v1.0.md). It defines the revised multi-assay scope and cutoff. The preceding text remains the dated workflow-v0.1 context.

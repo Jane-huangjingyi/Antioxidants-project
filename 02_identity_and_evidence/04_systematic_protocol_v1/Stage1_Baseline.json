@@ -1,0 +1,69 @@
+{
+  "protocol_cutoff": "2026-11-17",
+  "existing_retrieval_cutoff": "2026-11-16",
+  "snapshots": {
+    "triage": {
+      "path": "02_identity_and_evidence/03_date_scoped_review/results/triage_summary.json",
+      "sha256": "a27c69f9e8d64552c208a0269d44d2dd09e5eba451283ad9de0982bca364c5e9",
+      "data": {
+        "in_scope_records": 48637,
+        "reading_scopes": {
+          "AUTOMATED_TITLE_ONLY_TRIAGE": 39772,
+          "AUTOMATED_CACHED_TITLE_ABSTRACT_TRIAGE": 8751,
+          "REUSE_PRIOR_RECORDED_SCIENTIFIC_SCOPE": 114
+        },
+        "original_ORAC_fulltext_candidates": 37,
+        "local_xml_available": 0,
+        "final_scientific_exclusions": 0,
+        "new_model_labels": 0,
+        "final_PRISMA_screening_counts_established": false
+      }
+    },
+    "queue": {
+      "path": "02_identity_and_evidence/03_date_scoped_review/results/orac_queue_progress_summary.json",
+      "sha256": "82e72fbcc21fe52b61e2fc0f24752e9ee73de63d71af4c1a5a979ee758b28337",
+      "data": {
+        "baseline_sources": 109,
+        "status_counts": {
+          "TARGETED_SOURCE_SCOPE_RECORDED": 72,
+          "FULLTEXT_ACCESS_PENDING": 37
+        },
+        "targeted_source_decisions_total": 84,
+        "new_model_labels": 0,
+        "all_109_sources_completed": false,
+        "final_PRISMA_exclusions_established": false
+      }
+    },
+    "integration": {
+      "path": "03_candidate_selection/07_all_reference_integration/integration_summary.json",
+      "sha256": "732f67b9d9dae3f81ded34cc4c1ed6f718b0f179fd96576f9930b9e9501b818a",
+      "data": {
+        "all_reference_links": 106171,
+        "unique_linked_articles": 77594,
+        "candidates_considered": 193,
+        "numeric_candidates": 52,
+        "numeric_source_DOIs": 12,
+        "numeric_rows": 114,
+        "components": [
+          {
+            "component": 1,
+            "candidates": 51,
+            "rows": 113,
+            "source_DOIs": 11
+          },
+          {
+            "component": 2,
+            "candidates": 1,
+            "rows": 1,
+            "source_DOIs": 1
+          }
+        ],
+        "additional_numeric_rows": 36,
+        "confirmed_version_pairs": 2,
+        "provisional_version_group_keys": 77592,
+        "all_articles_scientifically_reviewed": false,
+        "formal_global_rank_supported": false
+      }
+    }
+  }
+}

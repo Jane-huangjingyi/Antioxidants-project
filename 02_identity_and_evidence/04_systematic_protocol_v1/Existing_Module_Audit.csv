@@ -1,0 +1,9 @@
+module,files,status,human_review_status,change_applied
+00_project,8909,INVENTORIED,NOT_REVIEWED,NO
+01_candidate_discovery,5,INVENTORIED,NOT_REVIEWED,NO
+02_identity_and_evidence/01_systematic_supplement,1468,INVENTORIED,NOT_REVIEWED,NO
+02_identity_and_evidence/03_date_scoped_review,48,INVENTORIED,NOT_REVIEWED,NO
+03_candidate_selection,336,INVENTORIED,NOT_REVIEWED,NO
+04_absorbance_assay,55,INVENTORIED,NOT_REVIEWED,NO
+06_manuscript,139,INVENTORIED,NOT_REVIEWED,NO
+07_quality_control,33,INVENTORIED,NOT_REVIEWED,NO

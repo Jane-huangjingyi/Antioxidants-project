@@ -1,0 +1,1 @@
+report_id,study_family_id,doi,source_file,source_sha256,reading_scope,reviewer1,review1_date,review1_decision,reviewer2,review2_date,review2_decision,adjudicator,adjudication_date,final_decision,primary_exclusion_reason,secondary_reasons,originality,material_type,evidence_level,endpoint_ids,supplement_status,human_review_status,change_applied

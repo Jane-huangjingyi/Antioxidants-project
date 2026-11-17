@@ -23,3 +23,7 @@ python run_pipeline.py --tables-only
 ```
 
 Future changes should use one purpose-specific branch from the agreed current authority, retain source baselines, and commit only reviewed scope. See `07_quality_control/branch_inventory.json` for actual tips and containment.
+
+## Six-stage task initiated2026-11-17
+
+The active task branch is `codex/systematic-antioxidant-evidence-20261117`, created from research commit4d30ea65b1b7a135bedfaf7146eea254cbcc07d2. Each completed stage receives its own commit and push. Stage review controls progression. The preceding branch instructions retain their historical context.

@@ -1,0 +1,15 @@
+code,meaning,decision_authority,human_review_status,change_applied
+PENDING,Assessment outstanding,SYSTEM_STATE,NOT_REVIEWED,NO
+AI_PREDICT_INCLUDE,Assistive inclusion prediction,AI_ONLY,NOT_REVIEWED,NO
+AI_PREDICT_EXCLUDE,Assistive exclusion prediction,AI_ONLY,NOT_REVIEWED,NO
+AI_UNCERTAIN,Assistive uncertainty,AI_ONLY,NOT_REVIEWED,NO
+HUMAN_INCLUDE,Inclusion after documented researcher review,RESEARCHER,NOT_REVIEWED,NO
+HUMAN_EXCLUDE,Exclusion after documented researcher review,RESEARCHER,NOT_REVIEWED,NO
+DISAGREEMENT,Independent reviews differ,RESEARCHER_ADJUDICATION,NOT_REVIEWED,NO
+E01,Outside applicable date window,RESEARCHER,NOT_REVIEWED,NO
+E02,Identity or material outside review scope,RESEARCHER,NOT_REVIEWED,NO
+E03,Secondary report lacking eligible original experiment,RESEARCHER,NOT_REVIEWED,NO
+E04,Endpoint outside relevant evidence levels,RESEARCHER,NOT_REVIEWED,NO
+E05,Duplicate report represented by retained study/version,RESEARCHER,NOT_REVIEWED,NO
+ACCESS_PENDING,Report sought but access unresolved,SYSTEM_STATE,NOT_REVIEWED,NO
+HOLD,Required identity/unit/source/independence field unresolved,SCIENTIFIC_REVIEW_PENDING,NOT_REVIEWED,NO

@@ -1,0 +1,7 @@
+rule_id,domain,rule,interpretation,human_review_status,change_applied
+ID01,Canonical identity,"CID,CAS,InChIKey,isomeric structure and formula recorded with database version",Exact form remains separate from parent,NOT_REVIEWED,NO
+ID02,Aliases,"Canonical names plus verified English/Chinese synonyms,CAS and structure identifiers",Short ambiguous names require context,NOT_REVIEWED,NO
+ID03,Stereochemistry,Maintain geometric/absolute stereoisomers and racemates,Unspecified source form retains identity HOLD,NOT_REVIEWED,NO
+ID04,Conjugates,"Separate glycosides,aglycones,salts,hydrates and oxidation states",Parent mapping remains conditional,NOT_REVIEWED,NO
+ID05,Identity sources,PubChem and ChEBI support identity; food records require occurrence provenance,Literature discovery uses bibliographic databases,NOT_REVIEWED,NO
+ID06,Missingness,"UNKNOWN,NOT_SEARCHED,INACCESSIBLE,NOT_REPORTED,CONFLICT,NOT_APPLICABLE",Empty fields carry missing_reason in subsequent master tables,NOT_REVIEWED,NO

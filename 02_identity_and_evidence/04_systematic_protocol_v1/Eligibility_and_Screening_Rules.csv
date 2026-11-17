@@ -1,0 +1,13 @@
+rule_id,domain,criterion,pass_action,unresolved_or_fail_action,human_review_status,change_applied
+S01,Identity,Individually defined compound with resolvable structure/form,RETAIN_IF_DEFINED,MIXTURE_CONTEXT_ONLY,NOT_REVIEWED,NO
+S02,Food source,"Analytical food occurrence, documented food database entry or traceable culinary ingredient evidence",FOOD_ELIGIBILITY_PENDING_UNTIL_VERIFIED,DRUG_OR_SUPPLEMENT_ONLY_REFERENCE_ROLE,NOT_REVIEWED,NO
+S03,Date,First public publication2020-01-01 through2026-11-17,PRIMARY_WINDOW,CHECK_EXTENSION_OR_METHOD_REFERENCE,NOT_REVIEWED,NO
+S04,Extension,"2016-2019 and predefined endpoint,identity,source-independence or structural-coverage gap",GAP_TRIGGER_RECORDED,OUTSIDE_ACTIVE_WINDOW,NOT_REVIEWED,NO
+S05,Originality,Measured experiment attributable to article authors with original figure/table/data,CORE_EXTRACTION_CANDIDATE,SECONDARY_REFERENCE_TRACE,NOT_REVIEWED,NO
+S06,Material,Pure standard or isolated defined chemical with documented material identity,CORE_CAPACITY_CANDIDATE,MATRIX_OR_FRACTION_SUPPLEMENTARY_EVIDENCE,NOT_REVIEWED,NO
+S07,Endpoint,"Chemical capacity,cell function,mechanism or computation assigned distinct level",ENDPOINT_SPECIFIC_EXTRACTION,RELEVANCE_PENDING,NOT_REVIEWED,NO
+S08,Access,Full text and required supplement available for field-specific appraisal,RECORD_ACTUAL_SCOPE,FULLTEXT_OR_SUPPLEMENT_PENDING,NOT_REVIEWED,NO
+S09,Units,Original value and denominator explicit; conversion reproducible,NORMALIZATION_CHECK,UNIT_HOLD,NOT_REVIEWED,NO
+S10,Independence,"Version family,experiment cluster and nested observations identified",STUDY_GROUP_CHECK,INDEPENDENCE_HOLD,NOT_REVIEWED,NO
+S11,Quality,"Identity,method,result completeness,comparability and water applicability assessed separately",QUALITY_PROFILE,QUALITY_FIELDS_PENDING,NOT_REVIEWED,NO
+S12,Review,Two independent researcher assessments and adjudication of disagreement,FINAL_DECISION_AFTER_ADJUDICATION,PENDING_HUMAN_REVIEW,NOT_REVIEWED,NO
