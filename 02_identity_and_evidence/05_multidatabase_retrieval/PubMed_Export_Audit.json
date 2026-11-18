@@ -1,0 +1,17 @@
+{
+  "expected_pmids": 65248,
+  "verified_xml_records": 65248,
+  "remaining_pmids": 0,
+  "broad_export_complete": true,
+  "targeted_unique_pmids": 11488,
+  "targeted_pmids_outside_broad_queries": 0,
+  "reconciliation": {
+    "BASELINE_IDENTIFIER_MATCH": 53946,
+    "PUBMED_ADDITIONAL_REPORT_KEY": 11178,
+    "TITLE_MATCH_PENDING_IDENTIFIER_REVIEW": 27,
+    "IDENTIFIER_CONFLICT_PENDING": 95,
+    "DOI_SHARED_BY_MULTIPLE_PMIDS_PENDING": 2
+  },
+  "provisional_added_keys": 11178,
+  "stage2_complete": false
+}

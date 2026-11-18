@@ -1,0 +1,395 @@
+route,source,field,code,message,status
+AFF-0039,AFF-0039_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""2-(3,4-Dihydroxyphenyl)-3,5,7-trihydroxy-1-Benzopyrylium""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0040,AFF-0040_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""3,5,7-Trihydroxy-2-(3,4,5-trihydroxyphenyl)-1-benzopyrylium""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0046,AFF-0046_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Delphinidin 3-O-glucoside cation""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0050,AFF-0050_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Keracyanin cation""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0051,AFF-0051_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""3,5-Bis(beta-D-glucopyranosyloxy)-7-hydroxy-2-(4-hydroxy-3,5-dimethoxyphenyl)-1-benzopyrylium chloride""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0074,AFF-0074_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""3-coumaric acid, (E)-""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0118,AFF-0118_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""All-Trans-Phytofluene""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0131,AFF-0131_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0137,AFF-0137_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0138,AFF-0138_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0144,AFF-0144_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Methyl allyl sulfide""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0145,AFF-0145_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0147,AFF-0147_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0150,AFF-0150_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Probetanin""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0150,AFF-0150_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0153,AFF-0153_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0154,AFF-0154_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0155,AFF-0155_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0166,AFF-0166_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0004_ALIASES,AFF-0004_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""NSC-636594""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0004_ALIASES,AFF-0004_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""DTXCID101354061""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0004_ALIASES,AFF-0004_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0007_ALIASES,AFF-0007_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""(+)-Gallocatechol gallate""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0008_ALIASES,AFF-0008_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""DTXCID701744145""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0009_ALIASES,AFF-0009_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0010_ALIASES,AFF-0010_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Rhamnolutein""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0011_ALIASES,AFF-0011_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Cannabiscetin""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0012_ALIASES,AFF-0012_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Isorhamnetol""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0013_ALIASES,AFF-0013_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Fustet""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0013_ALIASES,AFF-0013_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0014_ALIASES,AFF-0014_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Calico Yellow""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0014_ALIASES,AFF-0014_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0016_ALIASES,AFF-0016_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Isotrifolin""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0016_ALIASES,AFF-0016_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0017_ALIASES,AFF-0017_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Phytomelin""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0021_ALIASES,AFF-0021_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0023_ALIASES,AFF-0023_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""FLAVONE, 5,7-DIHYDROXY-""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0023_ALIASES,AFF-0023_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""NSC-407436""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0023_ALIASES,AFF-0023_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0024_ALIASES,AFF-0024_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Noroxylin""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0024_ALIASES,AFF-0024_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""NSC-661431""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0024_ALIASES,AFF-0024_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""DTXCID802389""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0024_ALIASES,AFF-0024_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0025_ALIASES,AFF-0025_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""D51JZL38TQ""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0025_ALIASES,AFF-0025_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""NSC-294579""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0025_ALIASES,AFF-0025_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""DTXCID80122456""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0025_ALIASES,AFF-0025_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0029_ALIASES,AFF-0029_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""DTXCID00112778""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0030_ALIASES,AFF-0030_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""salipurpol""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0032_ALIASES,AFF-0032_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Q520486B8Y""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0032_ALIASES,AFF-0032_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""NSC-649412""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0032_ALIASES,AFF-0032_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0033_ALIASES,AFF-0033_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""U02X7TF8UA""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0033_ALIASES,AFF-0033_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""DTXCID701391702""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0033_ALIASES,AFF-0033_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Isosakutanetin""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0033_ALIASES,AFF-0033_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0036_ALIASES,AFF-0036_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0037_ALIASES,AFF-0037_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Eriodictioside""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0037_ALIASES,AFF-0037_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0038_ALIASES,AFF-0038_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""OA5C88H3L0""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0038_ALIASES,AFF-0038_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""DTXCID101527365""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0038_ALIASES,AFF-0038_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0039_ALIASES,AFF-0039_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""cyanidin ion""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0039_ALIASES,AFF-0039_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0040_ALIASES,AFF-0040_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Flavylium, 3,3',4',5,5',7-hexahydroxy-""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0040_ALIASES,AFF-0040_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0041_ALIASES,AFF-0041_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""DTXCID10810672""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0041_ALIASES,AFF-0041_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Pelargonidol""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0042_ALIASES,AFF-0042_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""DTXCID6069113""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0042_ALIASES,AFF-0042_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""BRN 1691742""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0042_ALIASES,AFF-0042_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""X5WP8X4CU2""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0042_ALIASES,AFF-0042_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0043_ALIASES,AFF-0043_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""D0O766G47B""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0043_ALIASES,AFF-0043_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""DTXCID50810671""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0043_ALIASES,AFF-0043_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0044_ALIASES,AFF-0044_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Petunidol""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0044_ALIASES,AFF-0044_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Petunidol chloride""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0044_ALIASES,AFF-0044_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0045_ALIASES,AFF-0045_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Glucocyanidin""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0045_ALIASES,AFF-0045_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0047_ALIASES,AFF-0047_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Pelargonidin 3-glucoside ion""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0047_ALIASES,AFF-0047_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Pelargonidin 3-glucoside cation""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0047_ALIASES,AFF-0047_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""W623YHH61A""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0047_ALIASES,AFF-0047_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0048_ALIASES,AFF-0048_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""NSC-70532""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0049_ALIASES,AFF-0049_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""peonidin 3-O-beta-D-glucoside""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0049_ALIASES,AFF-0049_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""D5ZBS8SDA7""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0049_ALIASES,AFF-0049_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Peonidin 3-beta-D-glucoside""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0049_ALIASES,AFF-0049_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0050_ALIASES,AFF-0050_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Keracyanin ion""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0051_ALIASES,AFF-0051_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Malvin chloride""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0051_ALIASES,AFF-0051_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Malvoside""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0051_ALIASES,AFF-0051_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Malvidin-3,5-O-diglucoside chloride""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0051_ALIASES,AFF-0051_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0052_ALIASES,AFF-0052_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Prunetol""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0052_ALIASES,AFF-0052_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Genisterin""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0052_ALIASES,AFF-0052_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Genisteol""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0052_ALIASES,AFF-0052_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0053_ALIASES,AFF-0053_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""DTXCID102310""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0053_ALIASES,AFF-0053_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0054_ALIASES,AFF-0054_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""DTXCID80116451""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0054_ALIASES,AFF-0054_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""MFCD00016679""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0054_ALIASES,AFF-0054_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0055_ALIASES,AFF-0055_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Formononetol""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0055_ALIASES,AFF-0055_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Flavosil""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0055_ALIASES,AFF-0055_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0056_ALIASES,AFF-0056_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Pratensol""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0057_ALIASES,AFF-0057_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0058_ALIASES,AFF-0058_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Daidzoside""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0058_ALIASES,AFF-0058_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0059_ALIASES,AFF-0059_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Glycitein 7-O-beta-glucoside""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0059_ALIASES,AFF-0059_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Glycitein-7-beta-O-glucoside""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0059_ALIASES,AFF-0059_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0060_ALIASES,AFF-0060_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Kyselina gallova""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0060_ALIASES,AFF-0060_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Pyrogallol-5-carboxylic acid""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0060_ALIASES,AFF-0060_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0061_ALIASES,AFF-0061_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""NSC-16631""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0061_ALIASES,AFF-0061_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""DTXCID601212""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0061_ALIASES,AFF-0061_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0063_ALIASES,AFF-0063_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Acide vanillique""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0063_ALIASES,AFF-0063_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Benzoic acid, 4-hydroxy-3-methoxy-""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0063_ALIASES,AFF-0063_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""GM8Q3JM2Y8""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0063_ALIASES,AFF-0063_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0064_ALIASES,AFF-0064_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Cedar acid""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0064_ALIASES,AFF-0064_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Gallic acid 3,5-dimethyl ether""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0064_ALIASES,AFF-0064_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Benzoic acid, 4-hydroxy-3,5-dimethoxy-""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0064_ALIASES,AFF-0064_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0065_ALIASES,AFF-0065_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Benzoic acid, 2,5-dihydroxy-""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0065_ALIASES,AFF-0065_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Hydroquinonecarboxylic acid""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0065_ALIASES,AFF-0065_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Gensigen""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0065_ALIASES,AFF-0065_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0066_ALIASES,AFF-0066_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0067_ALIASES,AFF-0067_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Benzoic acid, 2,3-dihydroxy-""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0067_ALIASES,AFF-0067_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0068_ALIASES,AFF-0068_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Gallic acid trimethyl ether""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0069_ALIASES,AFF-0069_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Cinnamic acid, 3,4-dihydroxy-""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0069_ALIASES,AFF-0069_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""(E)-3-(3,4-dihydroxyphenyl)prop-2-enoic acid""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0069_ALIASES,AFF-0069_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""NSC 57197""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0069_ALIASES,AFF-0069_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0070_ALIASES,AFF-0070_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Coniferic acid""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0070_ALIASES,AFF-0070_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""(E)-3-(4-hydroxy-3-methoxyphenyl)prop-2-enoic acid""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0070_ALIASES,AFF-0070_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""AVM951ZWST""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0070_ALIASES,AFF-0070_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0072_ALIASES,AFF-0072_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""NSC-59261""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0072_ALIASES,AFF-0072_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""MFCD00004401""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0072_ALIASES,AFF-0072_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""(EZ)-sinapic acid""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0072_ALIASES,AFF-0072_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0073_ALIASES,AFF-0073_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""(E)-3-(2-hydroxyphenyl)prop-2-enoic acid""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0073_ALIASES,AFF-0073_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""(E)-2-hydroxycinnamic acid""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0074_ALIASES,AFF-0074_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""(E)-3-(3-Hydroxyphenyl)acrylic acid""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0075_ALIASES,AFF-0075_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""(2E)-3-(3-hydroxy-4-methoxyphenyl)prop-2-enoic acid""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0075_ALIASES,AFF-0075_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""XSQ2K2G7MC""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0075_ALIASES,AFF-0075_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0076_ALIASES,AFF-0076_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Heriguard""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0076_ALIASES,AFF-0076_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""CP chlorogenic acid""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0077_ALIASES,AFF-0077_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""(E)-Neochlorogenic Acid""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0077_ALIASES,AFF-0077_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""O4601UER1Z""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0077_ALIASES,AFF-0077_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""EINECS 212-997-1""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0077_ALIASES,AFF-0077_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0078_ALIASES,AFF-0078_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""F23DJ84IZ9""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0078_ALIASES,AFF-0078_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Quinic acid 4-O-caffeate""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0078_ALIASES,AFF-0078_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""MFCD10566638""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0078_ALIASES,AFF-0078_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0079_ALIASES,AFF-0079_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Isochlorogenic acid C(4,5)""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0080_ALIASES,AFF-0080_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""DTXCID201784863""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0080_ALIASES,AFF-0080_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""(E,E)-3,5-Di-O-caffeoylquinic acid""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0080_ALIASES,AFF-0080_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Quinic acid 3,5-di-O-caffeate""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0080_ALIASES,AFF-0080_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0084_ALIASES,AFF-0084_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0085_ALIASES,AFF-0085_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0087_ALIASES,AFF-0087_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""WCV7W3174L""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0087_ALIASES,AFF-0087_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""DTXCID50819886""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0088_ALIASES,AFF-0088_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""trans-p-Coumaroyltartaric acid""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0088_ALIASES,AFF-0088_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Coutaric acid, trans-""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0088_ALIASES,AFF-0088_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""K874CF6AHR""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0088_ALIASES,AFF-0088_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0089_ALIASES,AFF-0089_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Cuspidatin""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0090_ALIASES,AFF-0090_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""AUA0K06FSB""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0090_ALIASES,AFF-0090_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0091_ALIASES,AFF-0091_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0092_ALIASES,AFF-0092_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0093_ALIASES,AFF-0093_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0094_ALIASES,AFF-0094_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""M8QRJ7JEJH""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0094_ALIASES,AFF-0094_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""DTXCID90106106""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0094_ALIASES,AFF-0094_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0095_ALIASES,AFF-0095_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Artigenin congener""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0095_ALIASES,AFF-0095_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Matai-resinol""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0095_ALIASES,AFF-0095_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""XLW63P8WUA""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0095_ALIASES,AFF-0095_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0096_ALIASES,AFF-0096_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""NSC-329247""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0096_ALIASES,AFF-0096_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""larici-resinol""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0096_ALIASES,AFF-0096_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""DTXCID70269485""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0096_ALIASES,AFF-0096_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0097_ALIASES,AFF-0097_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""V4N1UDY811""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0097_ALIASES,AFF-0097_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""NSC-35444""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0097_ALIASES,AFF-0097_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""pino-resinol""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0097_ALIASES,AFF-0097_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0098_ALIASES,AFF-0098_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""J74JLA8FFA""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0098_ALIASES,AFF-0098_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Medioresil""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0099_ALIASES,AFF-0099_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Symplicosigenol""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0100_ALIASES,AFF-0100_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Fagarol""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0100_ALIASES,AFF-0100_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Sezamin""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0101_ALIASES,AFF-0101_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""DTXCID301323428""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0101_ALIASES,AFF-0101_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""MFCD04112844""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0101_ALIASES,AFF-0101_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Sesamolin (Standard)""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0101_ALIASES,AFF-0101_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0102_ALIASES,AFF-0102_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Methylene ether of oxyhydroquinone""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0102_ALIASES,AFF-0102_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Phenol, 3,4-(methylenedioxy)-""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0102_ALIASES,AFF-0102_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""NSC-59256""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0102_ALIASES,AFF-0102_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0105_ALIASES,AFF-0105_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""L-Threo-hexo-2,3-diulosono-1,4-lactone""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0105_ALIASES,AFF-0105_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0107_ALIASES,AFF-0107_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Cumotocopherol""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0107_ALIASES,AFF-0107_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0108_ALIASES,AFF-0108_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""o-Xylotocopherol""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0109_ALIASES,AFF-0109_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""(R,R,R)-delta-Tocopherol""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0109_ALIASES,AFF-0109_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""(2R,4'R,8'R)-delta-Tocopherol""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0110_ALIASES,AFF-0110_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""(2R,3'E,7'E)-alpha-Tocotrienol""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0110_ALIASES,AFF-0110_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""B6LXL1832Y""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0110_ALIASES,AFF-0110_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0111_ALIASES,AFF-0111_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""epsilon-Tocopherol""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0111_ALIASES,AFF-0111_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""CHH810ZM8C""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0111_ALIASES,AFF-0111_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0112_ALIASES,AFF-0112_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""plastochromanol 8, plastochromanol 3""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0112_ALIASES,AFF-0112_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""DTXCID901477841""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0113_ALIASES,AFF-0113_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""DTXCID40102779""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0116_ALIASES,AFF-0116_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Redivivo""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0116_ALIASES,AFF-0116_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0117_ALIASES,AFF-0117_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""DTXCID90124800""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0117_ALIASES,AFF-0117_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0118_ALIASES,AFF-0118_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""IBR-TCLC""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0118_ALIASES,AFF-0118_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""PHYTOFLUENE, ALL-TRANS-""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0118_ALIASES,AFF-0118_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""psi,psi-Carotene, 7,7',8,8',11,12-hexahydro-""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0118_ALIASES,AFF-0118_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0119_ALIASES,AFF-0119_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Vegetable lutein""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0119_ALIASES,AFF-0119_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Vegetable luteol""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0120_ALIASES,AFF-0120_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Anchovyxanthin""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0120_ALIASES,AFF-0120_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Zeaxanthol""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0120_ALIASES,AFF-0120_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0121_ALIASES,AFF-0121_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Cryptoxanthol""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0121_ALIASES,AFF-0121_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0122_ALIASES,AFF-0122_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Ovoester""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0122_ALIASES,AFF-0122_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0123_ALIASES,AFF-0123_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0124_ALIASES,AFF-0124_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""(3R,3'S,5'R)-3,3'-Dihydroxy-beta,kappa-caroten-6'-one""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0125_ALIASES,AFF-0125_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""DTXCID101476356""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0125_ALIASES,AFF-0125_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""all-trans-capsorubin""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0125_ALIASES,AFF-0125_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""EINECS 207-425-2""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0125_ALIASES,AFF-0125_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0126_ALIASES,AFF-0126_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Zeaxanthin diepoxide""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0126_ALIASES,AFF-0126_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0127_ALIASES,AFF-0127_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""KK8M5T48AI""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0128_ALIASES,AFF-0128_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Fucoxanthin, all-trans-""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0128_ALIASES,AFF-0128_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""CCRIS 4055""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0129_ALIASES,AFF-0129_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""beta-Carotene, (9Z)-""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0129_ALIASES,AFF-0129_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""beta,beta-Carotene, neo-U""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0129_ALIASES,AFF-0129_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0130_ALIASES,AFF-0130_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""(13Z)-beta,beta-Carotene""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0130_ALIASES,AFF-0130_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""(13Cis)-beta,beta-carotene""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0130_ALIASES,AFF-0130_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0131_ALIASES,AFF-0131_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""(9Z)-psi,psi-carotene""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0131_ALIASES,AFF-0131_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""DTXCID201349394""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0131_ALIASES,AFF-0131_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0132_ALIASES,AFF-0132_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""VTJ88XVZ9N""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0132_ALIASES,AFF-0132_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""psi,psi-Carotene, 13-cis-""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0132_ALIASES,AFF-0132_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""NEOLYCOPENE A""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0132_ALIASES,AFF-0132_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0133_ALIASES,AFF-0133_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Butane, 1-isothiocyanato-4-(methylsulfinyl)-""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0133_ALIASES,AFF-0133_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0134_ALIASES,AFF-0134_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Butane, 1-isothiocyanato-4-(methylthio)-""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0134_ALIASES,AFF-0134_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""CTE370DL3U""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0134_ALIASES,AFF-0134_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""DTXCID90118608""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0134_ALIASES,AFF-0134_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0135_ALIASES,AFF-0135_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Allylsenfoel""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0135_ALIASES,AFF-0135_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0136_ALIASES,AFF-0136_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""(Isothiocyanatomethyl)benzene""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0136_ALIASES,AFF-0136_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Benzylsenfoel""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0136_ALIASES,AFF-0136_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0137_ALIASES,AFF-0137_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Benzene, (2-isothiocyanatoethyl)-""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0138_ALIASES,AFF-0138_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""RZ680L4LP3""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0138_ALIASES,AFF-0138_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Propane, 1-isothiocyanato-3-(methylsulfinyl)-""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0138_ALIASES,AFF-0138_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""NSC-321801""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0138_ALIASES,AFF-0138_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0139_ALIASES,AFF-0139_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Allylthiosulphinic acid allyl ester""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0139_ALIASES,AFF-0139_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0140_ALIASES,AFF-0140_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Disulfide, 2-propenyl 3-(2-propenylsulfinyl)-1-propenyl""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0140_ALIASES,AFF-0140_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0144_ALIASES,AFF-0144_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""V7QI1R316C""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0144_ALIASES,AFF-0144_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0145_ALIASES,AFF-0145_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Disulfide, dipropyl""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0146_ALIASES,AFF-0146_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""L-Cysteine, S-2-propenyl-""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0147_ALIASES,AFF-0147_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""(2R)-2-amino-3-(prop-2-en-1-yldisulfanyl)propanoic acid""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0147_ALIASES,AFF-0147_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""DTXCID601741667""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0147_ALIASES,AFF-0147_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""(2R)-2-amino-3-(prop-2-enyldisulfanyl)propanoic acid""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0147_ALIASES,AFF-0147_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0148_ALIASES,AFF-0148_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Phytolaccanin""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0148_ALIASES,AFF-0148_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Betanidin 5-beta-D-glucopyranoside""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0148_ALIASES,AFF-0148_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0149_ALIASES,AFF-0149_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""(15R)-Betanin""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0149_ALIASES,AFF-0149_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Isobetanidin 5-beta-D-glucopyranoside""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0149_ALIASES,AFF-0149_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""DTXCID60373368""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0149_ALIASES,AFF-0149_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0151_ALIASES,AFF-0151_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""AT38699""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0151_ALIASES,AFF-0151_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""XN180400""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0151_ALIASES,AFF-0151_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0152_ALIASES,AFF-0152_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""J2R4J4M5NH""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0152_ALIASES,AFF-0152_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""C08549""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0152_ALIASES,AFF-0152_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""AC1O1I0D""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0152_ALIASES,AFF-0152_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0153_ALIASES,AFF-0153_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""DTXCID701747199""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0153_ALIASES,AFF-0153_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0154_ALIASES,AFF-0154_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""X7DGP43RWG""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0154_ALIASES,AFF-0154_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""DTXCID401746847""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0154_ALIASES,AFF-0154_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0156_ALIASES,AFF-0156_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""C08543""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0156_ALIASES,AFF-0156_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Q27106439""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0156_ALIASES,AFF-0156_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""HPGIHKRKXOXOJB-JXSWWZISSA-N""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0156_ALIASES,AFF-0156_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0157_ALIASES,AFF-0157_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0158_ALIASES,AFF-0158_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Gynesine""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0158_ALIASES,AFF-0158_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Caffearine""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0158_ALIASES,AFF-0158_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0159_ALIASES,AFF-0159_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Natural yellow 3""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0159_ALIASES,AFF-0159_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Kacha haldi""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0159_ALIASES,AFF-0159_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0161_ALIASES,AFF-0161_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""(1E,6E)-1,7-bis(4-hydroxyphenyl)hepta-1,6-diene-3,5-dione""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0162_ALIASES,AFF-0162_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0163_ALIASES,AFF-0163_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Nonanamide, 8-methyl-N-vanillyl-""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0163_ALIASES,AFF-0163_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""W9BV32M08A""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0163_ALIASES,AFF-0163_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""N-((4-Hydroxy-3-methoxyphenyl)methyl)-8-methylnonanamide""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0163_ALIASES,AFF-0163_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0164_ALIASES,AFF-0164_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""RF657P8DA8""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0164_ALIASES,AFF-0164_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Octanamide, N-((4-hydroxy-3-methoxyphenyl)methyl)-7-methyl-""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0164_ALIASES,AFF-0164_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0165_ALIASES,AFF-0165_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""E-Homocapsaicin""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0165_ALIASES,AFF-0165_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""S5KLC0JPH3""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0165_ALIASES,AFF-0165_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0166_ALIASES,AFF-0166_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""n-(4-hydroxy-3-methoxybenzyl)-9-methyldecanamide""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0166_ALIASES,AFF-0166_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""QE35S0T20Z""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0166_ALIASES,AFF-0166_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0167_ALIASES,AFF-0167_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Caryophyllic acid""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0167_ALIASES,AFF-0167_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0168_ALIASES,AFF-0168_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Phenol, 2-methoxy-4-propenyl-""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0168_ALIASES,AFF-0168_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Phenol, 2-methoxy-4-(1-propenyl)-""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0168_ALIASES,AFF-0168_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""NCI-C60979""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0168_ALIASES,AFF-0168_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0169_ALIASES,AFF-0169_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Isopropyl-o-cresol""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0169_ALIASES,AFF-0169_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Antioxine""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0169_ALIASES,AFF-0169_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Phenol, 2-methyl-5-(1-methylethyl)-""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0169_ALIASES,AFF-0169_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0170_ALIASES,AFF-0170_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Thyme camphor""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0170_ALIASES,AFF-0170_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""p-Cymen-3-ol""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0170_ALIASES,AFF-0170_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0171_ALIASES,AFF-0171_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Monasirup""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0172_ALIASES,AFF-0172_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Esdragol""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0173_ALIASES,AFF-0173_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Vanillaldehyde""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0173_ALIASES,AFF-0173_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0174_ALIASES,AFF-0174_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""(5S)-5-hydroxy-1-(4-hydroxy-3-methoxyphenyl)decan-3-one""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0174_ALIASES,AFF-0174_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""(+)-5-Hydroxy-1-(4-hydroxy-3-methoxyphenyl)-3-decanone""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0174_ALIASES,AFF-0174_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0175_ALIASES,AFF-0175_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""enexasogaol""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0175_ALIASES,AFF-0175_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""(E)-1-(4-hydroxy-3-methoxyphenyl)dec-4-en-3-one""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0175_ALIASES,AFF-0175_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0176_ALIASES,AFF-0176_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Zingherone""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0177_ALIASES,AFF-0177_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Plumbaein""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0177_ALIASES,AFF-0177_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0178_ALIASES,AFF-0178_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Regianin""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0178_ALIASES,AFF-0178_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""W6Q80SK9L6""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0178_ALIASES,AFF-0178_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""NSC-153189""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0178_ALIASES,AFF-0178_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0179_ALIASES,AFF-0179_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""p-Mentha-3,6-diene-2,5-dione""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0179_ALIASES,AFF-0179_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0180_ALIASES,AFF-0180_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Homoprotocatechuyl alcohol""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0180_ALIASES,AFF-0180_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""QEU0NE4O90""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0180_ALIASES,AFF-0180_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""DTXCID7069942""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0180_ALIASES,AFF-0180_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0182_ALIASES,AFF-0182_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""oleoeuropeine""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0182_ALIASES,AFF-0182_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""DTXCID401334206""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0182_ALIASES,AFF-0182_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0183_ALIASES,AFF-0183_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""AC7QO6038O""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0185_ALIASES,AFF-0185_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Vandex""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0186_ALIASES,AFF-0186_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0187_ALIASES,AFF-0187_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Cutaval""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0187_ALIASES,AFF-0187_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""MANGANUM METALLICUM""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0187_ALIASES,AFF-0187_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0188_ALIASES,AFF-0188_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0190_ALIASES,AFF-0190_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Magnesium powdered""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0190_ALIASES,AFF-0190_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Magnesium metallicum""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0190_ALIASES,AFF-0190_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+AFF-0191_ALIASES,AFF-0191_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Molybdenum, metallic""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0191_ALIASES,AFF-0191_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Molybdenum metallicum""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+AFF-0191_ALIASES,AFF-0191_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
+NEW-EGT_ALIASES,NEW-EGT_ALIASES_2020-01-01_2026-11-17.json,warninglist,quotedphrasesnotfound,"""Sympectothion""[Title/Abstract]",QUERY_TERM_REVIEW_PENDING
+NEW-EGT_ALIASES,NEW-EGT_ALIASES_2020-01-01_2026-11-17.json,warninglist,outputmessages,No items found.,QUERY_TERM_REVIEW_PENDING
