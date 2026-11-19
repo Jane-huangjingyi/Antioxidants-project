@@ -1,0 +1,28 @@
+candidate_id,compound,proposed_tier,decision_needed,formal_state,change_applied
+AFF-0001,Catechin,A,Confirm (+) isomer and hydrate basis; stock oxidation and background,NOT_REVIEWED,NO
+AFF-0002,Epicatechin,A,"Confirm (-) isomer, stock and final-well stability",NOT_REVIEWED,NO
+AFF-0060,Gallic acid,A,"Check oxidation, pH drift and probe-only response",NOT_REVIEWED,NO
+AFF-0076,Chlorogenic acid,A,Confirm 5-CQA nomenclature and isomer/pH stability,NOT_REVIEWED,NO
+AFF-0104,L-Ascorbic acid,A,Use L form; test oxidation over the full run and direct probe response,NOT_REVIEWED,NO
+NEW-GSH,Glutathione,A,"Reduced GSH only; verify oxidation, pH and probe interaction",NOT_REVIEWED,NO
+AFF-0009,Quercetin,B,Verify final-well solubility and dihydrate vs anhydrous dosage; probe/color blank,NOT_REVIEWED,NO
+AFF-0031,Hesperetin,B,Native free-form food evidence and vehicle/solubility,NOT_REVIEWED,NO
+AFF-0061,Protocatechuic acid,B,Verify exact food occurrence; check pH and redox interference,NOT_REVIEWED,NO
+AFF-0069,Caffeic acid,B,"Confirm native free form in an edible matrix, stock oxidation and solvent",NOT_REVIEWED,NO
+AFF-0084,Rosmarinic acid,B,Independent molar measurement; confirm food material and concentration scale,NOT_REVIEWED,NO
+AFF-0003,Epigallocatechin gallate,B,Confirm exact form and oxidation/alkaline instability,NOT_REVIEWED,NO
+AFF-0006,Gallocatechin,B,Check optical isomer; require compatible independent source,NOT_REVIEWED,NO
+AFF-0005,Epigallocatechin,B,Verify (-) stereoisomer and independent aqueous evidence,NOT_REVIEWED,NO
+AFF-0010,Kaempferol,B,Confirm material and buffer solubility; qualify native form,NOT_REVIEWED,NO
+AFF-0011,Myricetin,B,"Check oxidation, solvent and exact food form",NOT_REVIEWED,NO
+AFF-0017,Rutin,B,"Hydrate basis, dissolved stock and optical background",NOT_REVIEWED,NO
+AFF-0036,Hesperidin,B,Confirm exact glycoside and aqueous dissolution,NOT_REVIEWED,NO
+AFF-0070,Ferulic acid,B,Confirm trans form; separate free and bound food occurrence,NOT_REVIEWED,NO
+AFF-0071,p-Coumaric acid,B,"Confirm trans form, native occurrence and solvent",NOT_REVIEWED,NO
+AFF-0072,Sinapic acid,B,"Check native free form, material and vehicle",NOT_REVIEWED,NO
+AFF-0030,Naringenin,B,"Aglycone occurrence, final solubility and optical response pending",NOT_REVIEWED,NO
+AFF-0045,Cyanidin 3-O-glucoside,C,High priority color/pH and chloride basis check before kinetic ranking,NOT_REVIEWED,NO
+AFF-0100,Sesamin,C,Aqueous solubility and independent overlapping assay bridge unresolved,NOT_REVIEWED,NO
+SCOPE,,,Approve targeted decision scope and treatment of discovery-only and historical references.,NOT_REVIEWED,NO
+ASSAY,,,Approve pilot method and interference/solubility release gates.,NOT_REVIEWED,NO
+EVIDENCE,,,"Adjudicate identity, exact dietary form, study independence and unresolved protocol holds.",NOT_REVIEWED,NO

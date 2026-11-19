@@ -1,0 +1,5 @@
+# Quality control
+
+Reconciled 193 candidate profiles with 304 original-observation rows from 18 distinct DOIs. 225 observations for 51 distinct candidates enter at least one conditional study block. They include 51 ORAC-FL candidates. The research pool has 24 defined structures and no approved materials or applied evidence changes. Identifiers, row uniqueness, units, source locators and human review state are retained. Multi-row same-block comparisons are withheld where duplicate/dose structure is unclear. Censored/extrapolated values remain in the evidence sheet. No institutional record contents enter public artifacts.
+
+Rebuild using `python build_priority.py` and `node build_workbooks.mjs` from this folder, with the bundled artifact-tool package available via local module resolution or CODEX_SPREADSHEET_MODULES. The intermediate JSON is generated in the ignored download_raw directory. For comparisons where exact powder hydration remains unresolved, original units are retained as analysis units. Independent experiments and technical replicates are separate fields. The historical freezes and WoS source export are outside the build inputs.
