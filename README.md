@@ -1,8 +1,8 @@
 # Food-Derived Antioxidant Candidate Selection
 
-**Start here.** The project builds a traceable food-chemical discovery collection, identifies a 20-slot review panel, and prepares an aqueous absorbance assay. It does not claim that a review slot is a potency rank or a laboratory-approved material.
+**Start with [Results 1 v1.0](06_manuscript/Results1_v1.0/README.md).** The first research stage uses original assay observations to prioritize defined food-derived compounds for aqueous verification. The manuscript release includes methods, editable Figure 1, Table 1, model validation and reproducible evidence updates. The current model diagnostics are conditional on assay and source.
 
-The current selection objective is highest expected **molar chemical antioxidant capacity**, with reaction rate reported separately. [Activity-model preparation](03_candidate_selection/01_activity_model/README.md) audits the actual modelling data before estimating activity or replacing the earlier review queue. The target assay and conditions are still to be fixed; no new capacity ranking has been fitted.
+The research sequence proceeds from literature-informed selection to aqueous absorbance assay validation, candidate measurement and prospective evaluation of the prioritization framework. The current release covers literature-informed selection.
 
 ## Research sequence
 

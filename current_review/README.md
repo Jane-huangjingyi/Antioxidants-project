@@ -1,3 +1,7 @@
+# Current research release
+
+Open [Results 1 v1.0](../06_manuscript/Results1_v1.0/README.md) for the authoritative paper, figures, tables, validation and update workflow. The records below document earlier or supporting work.
+
 Current date-scoped review and completed-work reuse are in [Step 02.3](../02_identity_and_evidence/03_date_scoped_review/README.md). Its denominator is provisional pending multi-database completion and scientific screening.
 
 The latest capacity audit and connected validation are in [Step 03.8](../03_candidate_selection/08_capacity_review_validation/README.md). Start with [per-candidate review/inclusion progress](../03_candidate_selection/08_capacity_review_validation/Candidate_Review_and_Inclusion_Progress.csv), [source-row review](../03_candidate_selection/08_capacity_review_validation/Capacity_Row_Review.csv), and [Top20 conditional sensitivity](../03_candidate_selection/08_capacity_review_validation/Top20_Conditional_Uncertainty.csv). The connected analysis covers 51 candidates and eleven papers. Formal Top20 selection remains open.

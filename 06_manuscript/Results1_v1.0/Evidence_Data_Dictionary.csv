@@ -1,0 +1,19 @@
+field,meaning
+candidate_id,Project identifier for the referenced chemical structure
+source_id,Stable observation key within evidence overlay
+doi,Report identifier for original observation
+locator,Original result location
+value,Reported numerical observation in original unit
+reported_error,Reported error when supplied
+error_definition,Original uncertainty type where verified
+unit,Original measurement unit or response definition
+molar_TE_if_reported,Explicit molar Trolox-equivalent ratio where supported
+protocol_block,Reported source assay conditions used in comparison
+independent_n,Independent experiment count where established
+direction,Favorable response direction at fixed endpoint
+disposition,Scientific comparison status or hold reason
+rank_in_block,Position among comparable values within a single block
+date_scope,Primary extension or historical evidence window
+prior_source_sha256,Historical source content digest when available
+tier,Proposed aqueous qualification priority with rationale
+human_review_status,Current human scientific decision state

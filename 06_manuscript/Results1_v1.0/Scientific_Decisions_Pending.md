@@ -1,0 +1,3 @@
+# Scientific decisions pending
+
+The [candidate approval register](../../03_candidate_selection/09_aqueous_candidate_priority_v0.1/Researcher_Approval_Queue.csv) retains all compound-specific decisions. Prioritize exact food-material mapping, the trans-tiliroside and pinoresinol denominator conflict, sesamin connectivity, and independent confirmation of high single-report activity. Adjudicate common probe and calibrated final concentration before connecting new reports to the FL diagnostic. Before laboratory release, approve material sourcing, quantitative stability/interference gates and the water-phase assay. Hold any prospective validation claims until data are collected.

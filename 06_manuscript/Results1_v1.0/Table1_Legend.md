@@ -1,0 +1,3 @@
+# Table 1. Evidence-supported priorities for aqueous antioxidant verification
+
+One row per proposed compound. Reference structure and food-occurrence evidence identify the intended analyte. The representative value is an original source observation with its unit and DOI. It is not pooled across experiments or assays. Distinct comparison reports are DOI counts. Independent experiment counts remain unestablished. The priority tier reflects expected qualification value and known evidence and material gaps. All placements await scientific review. For additional measures and exact conditions consult Tables S1, S2 and S4.

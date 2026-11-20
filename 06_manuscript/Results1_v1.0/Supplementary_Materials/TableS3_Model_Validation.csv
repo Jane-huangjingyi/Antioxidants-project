@@ -1,0 +1,5 @@
+model,candidates,doi_reports,input_rows,scored_rows,model_rmse,baseline_rmse,validation
+EXTENDED_UNKNOWN_PH_NAME_BASED,51,11,113,75,0.6305533163766923,0.6755082499450418,Whole DOI held out; estimable outcomes only
+EXTENDED_CONFLICT_EXCLUDED,51,11,113,75,0.6305533163766923,0.6755082499450418,Whole DOI held out; estimable outcomes only
+CORE_REPORTED_PH74_37C,24,6,37,9,0.4128312037524517,0.41510596268291006,Whole DOI held out; estimable outcomes only
+Single-source structure Ridge,36,1,36,36,0.9448760687567791,0.9533576540845619,Nested scaffold holds

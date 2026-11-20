@@ -1,3 +1,7 @@
+# Current research release
+
+Open [Results 1 v1.0](./Results1_v1.0/README.md) for the authoritative paper, figures, tables, validation and update workflow. The records below document earlier or supporting work.
+
 # 06. Manuscript assembly
 
 Read [Methods](Methods.md), [generated descriptive Results](Results.md), [Figure captions](Figure_Captions.md) and [the claim map](tables/Manuscript_Claim_Map.csv). Each claim identifies its input/code/output chain and its scientific status.
