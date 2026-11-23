@@ -6,7 +6,7 @@ ROOT=HERE.parents[1]
 def read(path):
  with path.open(encoding='utf-8-sig',newline='') as handle:return list(csv.DictReader(handle))
 def run():
- profiles=read(ROOT/'02_identity_and_evidence/results/candidate_evidence_profiles.csv')
+ profiles=read(ROOT/'02_identity_and_evidence/result/table/candidate_evidence_profiles.csv')
  references={r['candidate_id']:r for r in read(HERE/'results/Exploratory_Literature_Reference_Order.csv')}
  influence={r['candidate_id']:r for r in read(HERE/'results/Source_Omission_Order_Diagnostic.csv')}
  panel=json.loads((ROOT/'03_candidate_selection/02_cross_study_expansion/inputs/bridge_panel.json').read_text())

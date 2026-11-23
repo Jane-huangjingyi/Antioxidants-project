@@ -9,6 +9,6 @@
 02_identity_and_evidence/inputs/bibliography/** -text
 02_identity_and_evidence/inputs/journal_metrics/** -text
 03_candidate_selection/inputs/frozen_reference/** -text
-04_absorbance_assay/inputs/method_reference/** -text
+04_05_experimental_validation/input/method_reference/** -text
 *.png -text
 *.xlsx -text

@@ -75,7 +75,7 @@ def run():
                 human_review_status='NOT_REVIEWED', change_applied='NO',
             ))
     write_csv(HERE / 'results/New_Source_Within_Paper_Order.csv', pairs)
-    profiles = read_csv(ROOT / '02_identity_and_evidence/results/candidate_evidence_profiles.csv')
+    profiles = read_csv(ROOT / '02_identity_and_evidence/result/table/candidate_evidence_profiles.csv')
     coverage = []
     for profile in profiles:
         cid = profile['candidate_id']

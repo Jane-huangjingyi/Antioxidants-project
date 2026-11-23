@@ -27,7 +27,7 @@ def run():
   selected=[r for r in output if r['model']==model]
   summary[model]={'papers_with_pairs':len(selected),'dependent_pairs':sum(r['comparable_pairs'] for r in selected),'pooled_log_ratio_MAE':sum(r['log_ratio_MAE']*r['comparable_pairs'] for r in selected)/sum(r['comparable_pairs'] for r in selected),'pooled_log_ratio_RMSE':math.sqrt(sum(r['log_ratio_RMSE']**2*r['comparable_pairs'] for r in selected)/sum(r['comparable_pairs'] for r in selected)),'pooled_direction_accuracy':sum(r['correct_direction'] for r in selected)/sum(r['comparable_pairs'] for r in selected),'mean_paper_direction_accuracy':sum(r['direction_accuracy'] for r in selected)/len(selected)}
  (HERE/'results/relative_order_summary.json').write_text(json.dumps(summary,indent=2)+'\n',encoding='utf8',newline='\n')
- profiles=read(ROOT/'02_identity_and_evidence/results/candidate_evidence_profiles.csv')
+ profiles=read(ROOT/'02_identity_and_evidence/result/table/candidate_evidence_profiles.csv')
  estimates={r['candidate_id']:r for r in read(HERE/'results/Candidate_Model_Sensitivity.csv')}
  partial={r['candidate_id']:r for r in read(HERE/'results/Candidate_Partial_Order.csv')}
  coverage={r['candidate_id']:r for r in read(ROOT/'03_candidate_selection/04_first_evidence_model/results/Component_Coverage.csv')}

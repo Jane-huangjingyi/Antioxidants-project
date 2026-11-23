@@ -61,7 +61,7 @@ def audit(profiles):
   writer=csv.DictWriter(handle,fieldnames=list(rows[0]),lineterminator='\n');writer.writeheader();writer.writerows(rows)
  print(json.dumps(dict(candidates=len(profiles),searches=len(rows),success=sum(r['status']=='SUCCESS' for r in rows),failed=sum(r['status']=='FAILED' for r in rows))),flush=True)
 def run():
- with (ROOT/'02_identity_and_evidence/results/candidate_evidence_profiles.csv').open(encoding='utf-8-sig') as handle:profiles=list(csv.DictReader(handle))
+ with (ROOT/'02_identity_and_evidence/result/table/candidate_evidence_profiles.csv').open(encoding='utf-8-sig') as handle:profiles=list(csv.DictReader(handle))
  if EXPANDED:
   synonym_data=json.loads((HERE/'PubChem_Synonym_Records.json').read_text(encoding='utf8'))
   for batch in synonym_data['batches']:

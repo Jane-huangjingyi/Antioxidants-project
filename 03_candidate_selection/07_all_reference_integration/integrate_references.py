@@ -59,7 +59,7 @@ def main():
         unseen-=members;components.append(members)
     components.sort(key=lambda members:(-len(members),sorted(members)))
     fitted=[];component_summary=[]
-    profiles={r['candidate_id']:r['compound_name'] for r in read(ROOT/'02_identity_and_evidence/results/candidate_evidence_profiles.csv')}
+    profiles={r['candidate_id']:r['compound_name'] for r in read(ROOT/'02_identity_and_evidence/result/table/candidate_evidence_profiles.csv')}
     for number,members in enumerate(components,1):
         candidates=sorted(n[2:] for n in members if n.startswith('C:'))
         data=[r for r in rows if r['candidate_id'] in candidates]

@@ -60,7 +60,7 @@ def main():
     diagnostics.OUT=HERE/'results'
     diagnostics.EXTRACTIONS=path
     diagnostics.run()
-    profiles=read(ROOT/'02_identity_and_evidence/results/candidate_evidence_profiles.csv')
+    profiles=read(ROOT/'02_identity_and_evidence/result/table/candidate_evidence_profiles.csv')
     links=read(SOURCE/'Minimum20_Combined_Progress.csv')
     link_lookup={r['candidate_id']:r for r in links}
     original=read(ROOT/'02_identity_and_evidence/02_user_supplied_sources/Original_Capacity_Extraction.csv')

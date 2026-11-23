@@ -2,7 +2,7 @@
 
 **Question:** where did candidate names come from before any activity ranking?
 
-Run `python 01_candidate_discovery/code/build_universe.py`. The code reads only literal curation declarations from the preserved original generator: class lists, names, food examples and exclusions. It does not execute legacy networking, ranking or file-writing code, and does not read the finished 191-row master as its discovery input. The source hash is written into every reconstructed seed row.
+Run `python 01_candidate_discovery/code/01_build_universe.py`. The code reads only literal curation declarations from the preserved original generator: class lists, names, food examples and exclusions. It does not execute legacy networking, ranking or file-writing code, and does not read the finished 191-row master as its discovery input. The source hash is written into every reconstructed seed row.
 
 `results/discovery_register.csv` contains the original 191 named seeds, 12 preserved exclusions rescreened under the current scope, and one targeted ergothioneine gap. Glutathione's old endogenous-only exclusion is reopened because a primary food-analysis abstract reports its measurement in prepared foods ([Jones et al., 1992](https://pubmed.ncbi.nlm.nih.gov/1574445/)). The ergothioneine addition follows a primary analysis of common foods ([Ey et al., 2007](https://doi.org/10.1021/jf071328f)). These are scope/coverage corrections, not new ORAC or clinical findings.
 
@@ -11,3 +11,5 @@ The inherited food examples are class-level curation unless a specific source lo
 To extend discovery, record the database/export version, query/date, raw record identifier, compound and food identity, exact analytical source, and inclusion/exclusion reason. Review duplicate structures, isomers, mixtures, processing products and endogenous/food overlap before adding names. A source-bounded completeness claim requires those exports and adjudications; current gaps remain visible.
 
 **Manuscript link:** Methods 1 and Table 1 describe the actual enumeration and coverage boundary. Results must distinguish discovery records, candidate profiles and independent studies.
+
+**Handoff.** Open the [discovery register](results/discovery_register.csv) for the full roster and send its stable candidate identifiers to [02 evidence and identity review](../02_identity_and_evidence/README.md). Check that the literal seed identifiers and the twelve inherited exclusions remain traceable.

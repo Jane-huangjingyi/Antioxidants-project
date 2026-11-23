@@ -1,6 +1,22 @@
-# 03. Select a review panel and disclose unresolved decisions
+# 03. Harmonize capacity data and prioritize candidates
 
-The current original-source diagnostic is [Step 03.6](06_verified_source_update/README.md), following the supplied PDFs and 60-flavonoid Table S1. Its [diagnostic orders and coverage](06_verified_source_update/results/Diagnostic_Orders_and_Coverage.csv) supersede earlier reference orders for current source-qualified interpretation. See [source corrections](../02_identity_and_evidence/02_user_supplied_sources/Existing_Reference_Reconciliation.csv).
+Start with the [latest original-source extraction and rank diagnostics](11_orac_fulltext_followup/README.md). Candidate data move from a source-located raw observation to a molar ORAC-FL value only when chemical form, units and conditions support the intended comparison. Separate sensitivity analyses show protocol, source and reported-variance effects. The [working Methods](../06_manuscript/01_methods_working.md#numeric-analysis-and-decision-rule) specifies the primary model and the pending numeric decision rule. For underlying supplied PDF corrections, see the [source reconciliation](../02_identity_and_evidence/02_user_supplied_sources/Existing_Reference_Reconciliation.csv).
+
+**Run and read.** Run `code/01_fit_orac_fl.py` followed by `code/02_validate_and_rank.py` after the literature screen. The [model input](result/table/01_connected_model_input.csv), [harmonized observations](result/table/02_harmonized_observations.csv) and [rank sensitivity](result/table/03_rank_sensitivity.csv) are the main tables. Read the [whole-DOI diagnostics](result/model/02_whole_doi_validation.json) before interpreting the rank. Source weights and variability details are under `result/table/audit/`.
+
+**Handoff.** The [current ranking table](result/table/04_figure1_candidate_ranks.csv) retains compounds within ±10 positions of their expanded conditional ORAC-FL rank across model scenarios and conservative whole-DOI deletion bounds. Hold compounds beyond this limit or unavailable in a deletion. The absolute rank is unrestricted. Send the retained candidates and their evidence records to [04–05 experimental validation](../04_05_experimental_validation/README.md) for material and assay qualification.
+
+## Reviewed evidence updates
+
+Copy the [intake template](../02_identity_and_evidence/inputs/templates/evidence_update_intake.csv) into a working directory. Give each original measurement a stable ID, DOI, first-public date, source locator, material, unit, endpoint and protocol. Record the six scientific eligibility decisions. The comparison tool only accepts rows marked `APPROVED_FOR_NEXT_ANALYSIS` with all six gates passed. Connected ORAC-FL analysis additionally requires `APPROVED_CONNECTED_FL`, a positive molar estimate with a reviewed conversion basis, and a compound linked to the baseline.
+
+```sh
+python 03_candidate_selection/code/03_update_evidence.py --intake reviewed.csv --out download_raw/results1_next_review --cutoff 2026-11-17
+```
+
+Use a new output directory and record the cutoff for each cycle. The command compares eligible new evidence against the [frozen Results 1 reference](../02_identity_and_evidence/inputs/provenance/results1_v1.0/README.md). It writes ranks, holdout diagnostics and review flags. It does not apply panel decisions. Correction or removal of a baseline row requires a separately versioned evidence record.
+
+## Earlier experimental review panel
 
 For the researcher-selected objective of highest expected molar chemical capacity, start with [Step 03.1: activity-model preparation](01_activity_model/README.md). The queue below remains a historical preparation baseline and is not a fitted capacity ranking.
 

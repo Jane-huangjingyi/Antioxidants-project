@@ -29,8 +29,8 @@ python 02_identity_and_evidence/03_date_scoped_review/code/preserve_hop_table_tr
 python 02_identity_and_evidence/03_date_scoped_review/code/reconcile_existing_work.py
 python 02_identity_and_evidence/03_date_scoped_review/code/triage_existing_abstracts.py
 python 02_identity_and_evidence/03_date_scoped_review/code/update_orac_queue_progress.py
-python 06_manuscript/code/build_manuscript_outputs.py
-python 07_quality_control/code/validate_workflow.py
+python 06_manuscript/code/01_build_manuscript_outputs.py
+python 07_quality_control/code/02_validate_workflow.py
 ```
 
 The hop script reproduces the recorded manual transcription. Rechecking its source cells requires the linked original Table6. Local XML acquisition uses recover_current_fulltexts.py. Preserve the fixed work-cohort progress file when refreshing the active queue. Human review states remain NOT_REVIEWED and formal changes remain change_applied=NO.

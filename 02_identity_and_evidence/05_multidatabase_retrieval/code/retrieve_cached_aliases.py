@@ -9,7 +9,7 @@ def main():
     source=ROOT/'02_identity_and_evidence/01_systematic_supplement/PubChem_Synonym_Records.json'
     by_cid={str(record['CID']):record.get('Synonym',[]) for batch in json.loads(source.read_bytes())['batches']
             for record in batch['records']}
-    with (ROOT/'02_identity_and_evidence/results/candidate_evidence_profiles.csv').open(encoding='utf-8-sig') as handle:
+    with (ROOT/'02_identity_and_evidence/result/table/candidate_evidence_profiles.csv').open(encoding='utf-8-sig') as handle:
         profiles=list(csv.DictReader(handle))
     audit, links, queries = [], [], []
     for row in profiles:

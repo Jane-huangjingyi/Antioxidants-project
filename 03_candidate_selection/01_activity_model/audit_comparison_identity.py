@@ -4,7 +4,7 @@ from pathlib import Path
 P=Path(__file__).resolve().parent;ROOT=P.parents[1]
 def read(p):
     with p.open(encoding='utf-8-sig',newline='') as f:return list(csv.DictReader(f))
-profiles={r['candidate_id']:r for r in read(ROOT/'02_identity_and_evidence/results/candidate_evidence_profiles.csv')}
+profiles={r['candidate_id']:r for r in read(ROOT/'02_identity_and_evidence/result/table/candidate_evidence_profiles.csv')}
 observations=[r for r in read(P/'results/Capacity_Analysis_Entry.csv') if r['comparison_scope'] in ['SOURCE_LOCAL_DESCRIPTIVE_SUBSET','SOURCE_IDENTITY_CONFLICT_DESCRIPTIVE_RANK_HELD']]
 rows=[]
 for i,r in enumerate(observations,1):

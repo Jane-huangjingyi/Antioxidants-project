@@ -5,7 +5,7 @@ from retrieve_pubmed import CACHE, ROOT, CUTOFF, METHOD, search, terms, write
 
 def main():
     CACHE.mkdir(parents=True, exist_ok=True)
-    source = ROOT/'02_identity_and_evidence/results/candidate_evidence_profiles.csv'
+    source = ROOT/'02_identity_and_evidence/result/table/candidate_evidence_profiles.csv'
     with source.open(encoding='utf-8-sig',newline='') as handle:
         profiles = list(csv.DictReader(handle))
     queries, audit, links = [], [], []

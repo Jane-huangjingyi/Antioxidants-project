@@ -9,7 +9,7 @@ def write(p,rows):
   w=csv.DictWriter(f,fieldnames=list(rows[0]),lineterminator='\n');w.writeheader();w.writerows(rows)
 def run():
  source=read(ROOT/'03_candidate_selection/01_activity_model/results/Capacity_Analysis_Entry.csv')
- profiles={r['candidate_id']:r for r in read(ROOT/'02_identity_and_evidence/results/candidate_evidence_profiles.csv')}
+ profiles={r['candidate_id']:r for r in read(ROOT/'02_identity_and_evidence/result/table/candidate_evidence_profiles.csv')}
  groups=collections.defaultdict(list);excluded=[]
  for r in source:
   reason=''

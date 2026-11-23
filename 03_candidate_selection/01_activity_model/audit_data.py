@@ -39,7 +39,7 @@ for r in observations:
  r['modelling_gaps']='; '.join(gaps);r['model_use_status']='NOT_APPROVED_FOR_INVERSE_VARIANCE_MODEL'
  r['human_review_status']='NOT_REVIEWED';r['change_applied']='NO'
 out=HERE/'results';write_csv(out/'Observation_Readiness.csv',observations)
-profiles=read_csv(ROOT/'02_identity_and_evidence/results/candidate_evidence_profiles.csv');coverage=[]
+profiles=read_csv(ROOT/'02_identity_and_evidence/result/table/candidate_evidence_profiles.csv');coverage=[]
 for p in profiles:
  rows=[r for r in observations if r['candidate_id']==p['candidate_id']]
  coverage.append({'candidate_id':p['candidate_id'],'compound':p['compound_name'],'existing_observation_count':len(rows),'distinct_DOI_count_not_independent_study_count':len({r['doi'] for r in rows if r['doi']}),'positive_molar_value_rows':sum(r['capacity_value_present']=='YES' for r in rows),'typed_SD_rows':sum('SD_VERIFIED' in r['error_type'] for r in rows),'coverage_status':'SOURCE_ROWS_PRESENT_REVIEW_REQUIRED' if rows else 'NO_ROWS_IN_THIS_EXTRACTION_NOT_EVIDENCE_OF_INACTIVITY','next_action':'VERIFY_ORIGINAL_SOURCE_AND_ERROR_SCALE' if rows else 'TARGETED_EVIDENCE_RETRIEVAL_REQUIRED','human_review_status':'NOT_REVIEWED'})

@@ -11,16 +11,16 @@ const specs=[
  ['Source-local order','03_candidate_selection/01_activity_model/results/Within_Source_Descriptive_Order.csv',null],
  ['Legacy source review','03_candidate_selection/01_activity_model/results/Legacy30_Verification.csv',null],
  ['Protocol constraints','03_candidate_selection/01_activity_model/results/Bridge_Protocol_Matrix.csv',null],
- ['Review panel','03_candidate_selection/results/top20_review_queue.csv',['review_slot','candidate_id','compound_name','molecular_formula','confirmed_independent_horac_studies','confirmed_horac_source_dois','food_occurrence_status','current_absorbance_compatibility','shortlist_status']],
- ['Candidate profiles','02_identity_and_evidence/results/candidate_evidence_profiles.csv',null],
+ ['Review panel','03_candidate_selection/result/table/top20_review_queue.csv',['review_slot','candidate_id','compound_name','molecular_formula','confirmed_independent_horac_studies','confirmed_horac_source_dois','food_occurrence_status','current_absorbance_compatibility','shortlist_status']],
+ ['Candidate profiles','02_identity_and_evidence/result/table/candidate_evidence_profiles.csv',null],
  ['Capacity model inputs','03_candidate_selection/01_activity_model/results/Model_Input_Candidates.csv',['candidate_id','compound','doi','molar_mean_candidate','molar_SD_candidate','reported_plus_minus','reported_error_scale','error_type','independent_experiments_as_reported','variance_of_mean_candidate','variance_assumptions','vehicle','source_form','model_status','human_review_status']],
- ['Endpoint definitions','04_absorbance_assay/01_endpoint_definition/results/Endpoint_Method_Comparison.csv',null],
- ['Chemical observations','02_identity_and_evidence/results/chemical_observation_index.csv',null],
- ['Methods','04_absorbance_assay/results/method_comparison.csv',null],
- ['Manuscript claims','06_manuscript/tables/Manuscript_Claim_Map.csv',null],
+ ['Endpoint definitions','04_05_experimental_validation/01_endpoint_definition/results/Endpoint_Method_Comparison.csv',null],
+ ['Chemical observations','02_identity_and_evidence/result/table/chemical_observation_index.csv',null],
+ ['Methods','04_05_experimental_validation/result/table/method_comparison.csv',null],
+ ['Manuscript claims','06_manuscript/result/table/audit/Manuscript_Claim_Map.csv',null],
  ['Researcher decisions','03_candidate_selection/config/researcher_decisions.csv',null],
- ['Source directory','02_identity_and_evidence/results/source_file_index.csv',null],
- ['Source documents','02_identity_and_evidence/results/source_document_index.csv',null],
+ ['Source directory','02_identity_and_evidence/result/table/source_file_index.csv',null],
+ ['Source documents','02_identity_and_evidence/result/table/source_document_index.csv',null],
  ['Mechanism observations','02_identity_and_evidence/inputs/mechanism_evidence/master/Compound_Mechanism_Evidence_Master.csv',['evidence_id','candidate_id','compound_name','DOI','target_protein','evidence_relation_type','target_validation_status','experimental_model','source_verification_status','human_review_status']]
 ];
 const previewDir=path.join(root,'07_quality_control/previews');await fs.mkdir(previewDir,{recursive:true});
@@ -55,8 +55,8 @@ notes.getRange('A1:B1').format.fill='#24465C';notes.getRange('A1:B1').format.fon
 const image=await wb.render({sheetName:'ReadMe',range:'A1:B7',scale:1,format:'png'});await fs.writeFile(path.join(previewDir,'ReadMe.png'),new Uint8Array(await image.arrayBuffer()));
 await wb.recalculate();
 const inspection=await wb.inspect({kind:'sheet',include:'id,name',maxChars:2500});
-const out=path.join(root,'06_manuscript/tables/Candidate_Review_Workbook.xlsx');
+const out=path.join(root,'06_manuscript/result/table/Candidate_Review_Workbook.xlsx');
 await(await SpreadsheetFile.exportXlsx(wb)).save(out);
 await fs.rm(`${out}.inspect.ndjson`,{force:true});
-await fs.writeFile(path.join(root,'07_quality_control/workbook_export_qc.json'),JSON.stringify({status:'EXPORTED',tabs:counts,inspection:inspection.ndjson,formulas:'NONE_STATIC_SOURCE_LINKED_SNAPSHOT'},null,2)+'\n');
+await fs.writeFile(path.join(root,'07_quality_control/result/table/audit/workbook_export_qc.json'),JSON.stringify({status:'EXPORTED',tabs:counts,inspection:inspection.ndjson,formulas:'NONE_STATIC_SOURCE_LINKED_SNAPSHOT'},null,2)+'\n');
 console.log(`Exported ${out}; ${counts.length+1} worksheets.`);

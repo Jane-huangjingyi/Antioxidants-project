@@ -96,7 +96,7 @@ def run():
             source_document='03_candidate_selection/01_activity_model/inputs/recovered_capacity_rows.json',
             source_sha256=hashlib.sha256(prior_path.read_bytes()).hexdigest(),
         ))
-    profiles = {row['candidate_id']: row for row in read_csv(ROOT / '02_identity_and_evidence/results/candidate_evidence_profiles.csv')}
+    profiles = {row['candidate_id']: row for row in read_csv(ROOT / '02_identity_and_evidence/result/table/candidate_evidence_profiles.csv')}
     decisions = []
     datasets = collections.defaultdict(list)
     for row in rows:

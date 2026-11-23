@@ -23,7 +23,7 @@ def main():
     checks=[]
     for folder in ['00_project','01_candidate_discovery','02_identity_and_evidence/01_systematic_supplement',
                    '02_identity_and_evidence/03_date_scoped_review','03_candidate_selection',
-                   '04_absorbance_assay','06_manuscript','07_quality_control']:
+                   '04_05_experimental_validation','06_manuscript','07_quality_control']:
         path=ROOT/folder
         assert path.is_dir()
         checks.append(dict(module=folder,files=sum(p.is_file() for p in path.rglob('*')),status='INVENTORIED'))

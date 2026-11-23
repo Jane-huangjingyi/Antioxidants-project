@@ -1,4 +1,4 @@
 database,status,needed,primary_dates,syntax_and_recall_status,import_status
-Web of Science Core Collection,RESEARCHER_WILL_EXPORT_FILES,"Full records,abstracts,DOI,authors,dates,cited references,exact query,search date,hits and export range",2020-01-01 through2026-11-17,AWAITING_REAL_PLATFORM_TEST,PENDING
+Web of Science Core Collection,PARTIAL_EXPORT,"147471 union hits without local exports; saved search history with exact queries, editions, timestamps, sort and range; confirmed API entitlement or authorized acquisition plan",2020-01-01 through2026-11-17,4_OF_4_BOTH_ROUTES_RESEARCHER_REPORTED,FIRST_500_IMPORTED_AND_AUDITED
 CNKI,RESEARCHER_WILL_EXPORT_FILES,"Full records,abstracts,DOI,authors,dates,cited references,exact query,search date,hits and export range",2020-01-01 through2026-11-17,AWAITING_REAL_PLATFORM_TEST,PENDING
 Scopus if accessible,RESEARCHER_WILL_EXPORT_FILES,"Full records,abstracts,DOI,authors,dates,cited references,exact query,search date,hits and export range",2020-01-01 through2026-11-17,AWAITING_REAL_PLATFORM_TEST,PENDING

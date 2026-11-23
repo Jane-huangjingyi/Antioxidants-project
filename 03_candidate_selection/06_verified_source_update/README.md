@@ -44,11 +44,11 @@ The name-based and recorded-conflict-excluded models share 41 candidates. Their 
 
 ```sh
 python 03_candidate_selection/06_verified_source_update/fit_verified_source_diagnostics.py
-Rscript 05_analysis/R/render_verified_source_diagnostics.R
-python 07_quality_control/code/validate_workflow.py
+Rscript 04_05_experimental_validation/code/figure_support/render_verified_source_diagnostics.R
+python 07_quality_control/code/02_validate_workflow.py
 ```
 
-The model imports the existing shrinkage solver in Step 03.5 and uses the project's existing NumPy environment. Figure colors, sizes, fonts, labels and dimensions are editable at the top of the complete R script. [Held-out predictions](../../06_manuscript/figures/Verified_Source_Heldout/analysis_v0.1/png/Verified_Source_Heldout.png) and [source-deletion order sensitivity](../../06_manuscript/figures/Verified_Source_Order_Sensitivity/analysis_v0.1/png/Verified_Source_Order_Sensitivity.png) each have a matching text/vector SVG in the corresponding `svg` directory.
+The model imports the existing shrinkage solver in Step 03.5 and uses the project's existing NumPy environment. Figure colors, sizes, fonts, labels and dimensions are editable at the top of the complete R script. [Held-out predictions](../../06_manuscript/result/figure/supplementary/Verified_Source_Heldout/analysis_v0.1/Verified_Source_Heldout.png) and [source-deletion order sensitivity](../../06_manuscript/result/figure/supplementary/Verified_Source_Order_Sensitivity/analysis_v0.1/Verified_Source_Order_Sensitivity.png) each have a matching text/vector SVG in the corresponding `svg` directory.
 
 Next close the 2020 identity/value conflicts and missing protocol fields, and qualify additional independent source rows. Structure-based prediction of uncovered candidates requires a separately validated structural model. Current orders retain NOT_REVIEWED, change_applied=NO and an empty global-193 rank.
 

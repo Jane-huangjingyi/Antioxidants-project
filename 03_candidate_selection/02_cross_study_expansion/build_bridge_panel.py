@@ -2,10 +2,10 @@
 import csv,json
 from pathlib import Path
 P=Path(__file__).resolve().parent;ROOT=P.parents[1]
-with (ROOT/'02_identity_and_evidence/results/candidate_evidence_profiles.csv').open(encoding='utf-8-sig') as f:
+with (ROOT/'02_identity_and_evidence/result/table/candidate_evidence_profiles.csv').open(encoding='utf-8-sig') as f:
     profiles={r['candidate_id']:r for r in csv.DictReader(f)}
 config=json.loads((P/'inputs/bridge_panel.json').read_text(encoding='utf-8'))
-platform=json.loads((ROOT/'04_absorbance_assay/config/platform_decisions.json').read_text(encoding='utf-8'))
+platform=json.loads((ROOT/'04_05_experimental_validation/config/platform_decisions.json').read_text(encoding='utf-8'))
 with (ROOT/'03_candidate_selection/01_activity_model/results/Capacity_Analysis_Entry.csv').open(encoding='utf-8-sig') as f:
     refs=list(csv.DictReader(f))
 rows=[]

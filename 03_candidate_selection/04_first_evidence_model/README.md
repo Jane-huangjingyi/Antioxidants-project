@@ -1,6 +1,6 @@
 # First evidence-model availability, identifiability and diagnostic fit
 
-Run `python 03_candidate_selection/04_first_evidence_model/fit_diagnostic_model.py` from the project root. The code uses the existing `.runtime_chem` NumPy installation. Input is the explicitly molar, positive candidate/DOI median reference table from the preliminary literature workflow. These references retain unresolved original-value, protocol, error and independence issues. This exploratory input choice expands beyond currently released primary labels and requires source verification before scientific ranking claims.
+Run `python 03_candidate_selection/04_first_evidence_model/fit_diagnostic_model.py` from the project root. The code uses the NumPy installation in the project virtual environment. Input is the explicitly molar, positive candidate/DOI median reference table from the preliminary literature workflow. These references retain unresolved original-value, protocol, error and independence issues. This exploratory input choice expands beyond currently released primary labels and requires source verification before scientific ranking claims.
 
 ## Available data and identifiable scope
 

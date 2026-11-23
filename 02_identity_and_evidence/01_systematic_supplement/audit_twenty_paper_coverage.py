@@ -21,7 +21,7 @@ def write(name, rows):
 
 
 def main():
-    profiles = read(ROOT / '02_identity_and_evidence/results/candidate_evidence_profiles.csv')
+    profiles = read(ROOT / '02_identity_and_evidence/result/table/candidate_evidence_profiles.csv')
     articles = {r['article_key']: r for r in read(HERE / 'Master_Article_Register.csv')}
     links = collections.defaultdict(set)
     for row in read(HERE / 'Master_Candidate_Article_Links.csv'):

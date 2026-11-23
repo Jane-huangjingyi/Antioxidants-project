@@ -1,3 +1,0 @@
-# Figure 1. Evidence-informed prioritization of food-derived antioxidants
-
-(A) Discovery-register entries, chemical profiles and compounds with a conditional FL comparison. (B) Ranked observations by assay. The count is of comparisons, with one compound able to contribute to several blocks. Zero for Crocin indicates no qualifying comparison panel in this release. (C) Held-out log-scale RMSE for each conditional model and its matched baseline. Bars are paired by validation design. Designs score different observations. (D) Proposed qualification-first, exploratory and deferred candidate counts. The project retains a larger bibliographic discovery corpus with incomplete scientific screening.

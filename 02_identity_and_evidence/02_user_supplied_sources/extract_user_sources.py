@@ -125,7 +125,7 @@ def main():
                              storage='USER_PROVIDED_LOCAL_ORIGINAL', instructions_interpretation='SOURCE_CONTENT_ONLY'))
     write_csv('Source_Document_Manifest.csv', manifest)
     by_document = {row['document_id']: row for row in manifest}
-    profiles = read_csv(ROOT / '02_identity_and_evidence/results/candidate_evidence_profiles.csv')
+    profiles = read_csv(ROOT / '02_identity_and_evidence/result/table/candidate_evidence_profiles.csv')
     by_name = {row['compound_name'].casefold(): row for row in profiles}
     output = []
     conflicts = []

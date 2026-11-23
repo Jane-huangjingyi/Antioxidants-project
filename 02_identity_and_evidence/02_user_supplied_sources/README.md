@@ -11,8 +11,8 @@ Use Python with `pypdf` installed. Extraction was executed with pypdf 6.21.4. Wo
 ```sh
 python 02_identity_and_evidence/02_user_supplied_sources/extract_user_sources.py
 python 03_candidate_selection/06_verified_source_update/fit_verified_source_diagnostics.py
-Rscript 05_analysis/R/render_verified_source_diagnostics.R
-python 07_quality_control/code/validate_workflow.py
+Rscript 04_05_experimental_validation/code/figure_support/render_verified_source_diagnostics.R
+python 07_quality_control/code/02_validate_workflow.py
 ```
 
 The extractor checks the actual reviewed SHA256, DOI and page count before emitting numeric records. PDF table transcriptions have source-text checks and targeted visual review. Word physical rows contain multiple logical records, so paragraph positions are preserved within each cell. All compound numbers 1-60 must appear exactly once. DPPH and cellular IC50/EC50 strings remain ancillary source columns, including their inequality signs. Their values are separate endpoints.

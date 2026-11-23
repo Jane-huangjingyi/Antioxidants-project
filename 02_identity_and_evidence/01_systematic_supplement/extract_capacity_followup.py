@@ -20,7 +20,7 @@ def text(node):
 
 
 def run():
-    profiles = read_csv(ROOT / '02_identity_and_evidence/results/candidate_evidence_profiles.csv')
+    profiles = read_csv(ROOT / '02_identity_and_evidence/result/table/candidate_evidence_profiles.csv')
     by_name = {row['compound_name'].casefold(): row for row in profiles}
     queues = read_csv(HERE / 'Method_Fulltext_Queue.csv') + read_csv(HERE / 'Compound_Comparison_Fulltext_Queue.csv')
     queue = {row['PMCID']: row for row in queues if row['source_file']}

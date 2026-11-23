@@ -17,11 +17,13 @@ def decode(raw):
             continue
     raise ValueError('Unknown export encoding')
 
-def tagged(text):
+def tagged(text, wos=False):
     record = {}
     field = ''
     for line in text.splitlines():
         tag = re.match(r'^([A-Z][A-Z0-9])(?:  - | )(.+)$',line)
+        if wos and (not line.strip() or line.startswith(('FN ', 'VR '))):
+            continue
         if line.strip() in ('ER','ER  -','EF') or not line.strip():
             if record:
                 yield record
@@ -46,7 +48,7 @@ def normalize(record):
                 journal=value('Source title','SO','JF','JO','T2'),issue_year=value('Year','PY','YR'),
                 first_online=value('EA','Early Access Date'),issue_date=value('PD','Publication Date','Y1'),
                 index_date='',abstract=value('Abstract','AB','N2'),references=value('References','CR','Cited References'),
-                pmid=value('PubMed ID','PMID'),accession=value('EID','UT','AN','ID'))
+                pmid=value('PubMed ID','PMID','PM'),accession=value('EID','UT','AN','ID'))
 
 def main():
     rows, normalized = [], []
@@ -68,7 +70,7 @@ def main():
                 except ValueError:
                     status='REGISTERED_ENCODING_REVIEW_PENDING'
                 else:
-                    records=csv.DictReader(content.splitlines(keepends=True)) if path.suffix.lower()=='.csv' else tagged(content)
+                    records=csv.DictReader(content.splitlines(keepends=True)) if path.suffix.lower()=='.csv' else tagged(content,wos=database=='wos')
                     for index,record in enumerate(records,1):
                         fields=normalize(record)
                         if fields['title']:

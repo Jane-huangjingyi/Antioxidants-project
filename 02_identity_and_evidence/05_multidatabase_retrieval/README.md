@@ -9,6 +9,8 @@ PubMed_Query_Syntax_Test.csv preserves the historical count-only API check. PubM
 
 ## PubMed and institutional continuation
 
+The first 500 WoS records have been imported. See the [WoS acquisition and first-batch intake audit](WoS_Batch_Acquisition_and_Intake.md) for verified file and field counts, the authorization check and the remaining acquisition plan.
+
 Use [the manual export handoff](Stage2_Manual_Export_Handoff.md) and Institutional_Search_Operation_Template.csv. Institutional_Access_Status.csv records the environment check. Run code/intake_institutional.py to register incoming batches and compute SHA-256 locally. Format validation and field mapping require representative exports. Files in download_raw/stage2_institutional remain in the ignored intake directory.
 
 Run code/retrieve_pubmed.py for the two broad PubMed routes. The script partitions publication-date searches by year to respect the NCBI ESearch PMID limit, saves identifiers, and verifies XML in batches of 400 by exact membership. Run code/retrieve_targeted.py and code/retrieve_cached_aliases.py for candidate-name searches, code/export_targeted_only.py for additional PMIDs, and code/audit_pubmed_export.py after the downloads. The whole-window counts were captured separately on the official ESearch endpoint and are preserved as raw responses. The publication-date search filter, response timestamps, electronic date, issue date and index history dates retain separate fields. Verified first-publication dates await reconciliation. Original XML and search responses are in the ignored Stage2 cache. The public exports contain identifiers and provenance, with abstracts in the original local XML.

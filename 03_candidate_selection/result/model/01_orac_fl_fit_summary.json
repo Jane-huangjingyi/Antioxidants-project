@@ -1,0 +1,35 @@
+{
+  "base_rows": 113,
+  "updated_rows": 119,
+  "updated_dois": 13,
+  "typed_sd_rows": 56,
+  "high_relative_sd_rows": 0,
+  "comparison": {
+    "baseline": {
+      "scored": 75,
+      "rmse": 0.6305533163766923,
+      "matched_baseline": 0.6755082499450418
+    },
+    "updated_row": {
+      "scored": 81,
+      "rmse": 0.6024271460297849,
+      "matched_baseline": 0.6464859118591473
+    },
+    "updated_doi": {
+      "scored": 81,
+      "rmse": 0.5945963363953658,
+      "matched_baseline": 0.6464859118591473
+    },
+    "updated_cv": {
+      "scored": 81,
+      "rmse": 0.5947007899120719,
+      "matched_baseline": 0.6464859118591473
+    }
+  },
+  "provisional_shortlist": [
+    "Quercetin",
+    "Catechin",
+    "Hesperetin"
+  ],
+  "stage1_snapshot_replaced": false
+}

@@ -13,7 +13,7 @@ def run():
  metrics={model:dict(MAE=statistics.mean(abs(v) for v in values),RMSE=math.sqrt(statistics.mean(v*v for v in values)),heldout_rows=len(values)) for model,values in errors.items()}
  references=read(ROOT/'03_candidate_selection/03_preliminary_literature_selection/results/Paper_Specific_Reference_Order.csv')
  model=read(ROOT/'03_candidate_selection/04_first_evidence_model/results/Candidate_Diagnostic_Estimates.csv')
- profiles={r['candidate_id']:r for r in read(ROOT/'02_identity_and_evidence/results/candidate_evidence_profiles.csv')}
+ profiles={r['candidate_id']:r for r in read(ROOT/'02_identity_and_evidence/result/table/candidate_evidence_profiles.csv')}
  groups=collections.defaultdict(list)
  for r in references:groups[r['candidate_id']].append(float(r['paper_reference_median']))
  rows=[]

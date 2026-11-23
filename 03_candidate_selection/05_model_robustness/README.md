@@ -16,7 +16,7 @@ The second-stage computational comparison is available. Scientific source/protoc
 
 ## Reproducible model figures
 
-Run `Rscript 05_analysis/R/render_evidence_model.R` after the model comparison. Evidence_Model_Heldout plots matched observed versus predicted log values for all three models. Evidence_Model_Order_Sensitivity shows OLS/Huber positions and paper-weight sensitivity segments for the 34 fitted candidates, with source counts in the labels. Positive weights retain every source in every perturbation, so narrow ranges for single-source candidates remain conditional on that source. All styles, labels, colors and dimensions are editable in the script. PNG and editable text/vector SVG files are exported under the corresponding figure directories in `06_manuscript/figures/`.
+Run `Rscript 04_05_experimental_validation/code/figure_support/render_evidence_model.R` after the model comparison. Evidence_Model_Heldout plots matched observed versus predicted log values for all three models. Evidence_Model_Order_Sensitivity shows OLS/Huber positions and paper-weight sensitivity segments for the 34 fitted candidates, with source counts in the labels. Positive weights retain every source in every perturbation, so narrow ranges for single-source candidates remain conditional on that source. All styles, labels, colors and dimensions are editable in the script. PNG and editable text/vector SVG files are exported under the corresponding figure directories in `06_manuscript/result/figure/supplementary/`.
 
 ## Active scope and source-removal diagnostics
 

@@ -1,0 +1,115 @@
+{
+  "qc": "PASS",
+  "reviewed_sources": 7,
+  "priority_queue_status": {
+    "EXISTING_ACCESS_OR_SCOPE_QUEUE": 26,
+    "PENDING_NEW_SCOPE": 467,
+    "REUSE_RECORDED_SCOPE": 69,
+    "SCOPED_REVIEW_THIS_BATCH": 5
+  },
+  "queue_dispositions_by_reviewed_doi": {
+    "10.1016/j.crfs.2021.09.007": [
+      "HIGH_PRIORITY_ORAC_FULLTEXT"
+    ],
+    "10.1016/j.mex.2022.101797": [
+      "LOW_PRIORITY_OR_UNRESOLVED"
+    ],
+    "10.3389/fnut.2022.882458": [
+      "HIGH_PRIORITY_ORAC_FULLTEXT"
+    ],
+    "10.3390/antiox14040479": [
+      "LOW_PRIORITY_OR_UNRESOLVED"
+    ],
+    "10.3390/ijms27041859": [
+      "HIGH_PRIORITY_ORAC_FULLTEXT"
+    ],
+    "10.3390/molecules25010225": [
+      "HIGH_PRIORITY_ORAC_FULLTEXT"
+    ],
+    "10.3390/polym13193262": [
+      "HIGH_PRIORITY_ORAC_FULLTEXT"
+    ]
+  },
+  "models": {
+    "prior": {
+      "rows": 119,
+      "dois": 13,
+      "compounds": 51,
+      "scored": 81,
+      "rmse": 0.5947007899120719,
+      "matched_baseline": 0.6464859118591473,
+      "same_prior_test_rows": 81,
+      "same_prior_test_rmse": 0.5947007899120719,
+      "prior_rmse_on_same_rows": 0.5947007899120719
+    },
+    "plus_2021_conditionally": {
+      "rows": 125,
+      "dois": 14,
+      "compounds": 51,
+      "scored": 105,
+      "rmse": 0.7352494753065049,
+      "matched_baseline": 0.7755407443845129,
+      "same_prior_test_rows": 81,
+      "same_prior_test_rmse": 0.5176190230795752,
+      "prior_rmse_on_same_rows": 0.5947007899120719
+    },
+    "plus_both_sensitivity": {
+      "rows": 130,
+      "dois": 15,
+      "compounds": 51,
+      "scored": 112,
+      "rmse": 0.750431876552136,
+      "matched_baseline": 0.7903515748983342,
+      "same_prior_test_rows": 81,
+      "same_prior_test_rmse": 0.5211322517655907,
+      "prior_rmse_on_same_rows": 0.5947007899120719
+    },
+    "only_add_2022_sensitivity": {
+      "rows": 124,
+      "dois": 14,
+      "compounds": 51,
+      "scored": 86,
+      "rmse": 0.6110830631819402,
+      "matched_baseline": 0.6609177635542242,
+      "same_prior_test_rows": 81,
+      "same_prior_test_rmse": 0.5945671612432641,
+      "prior_rmse_on_same_rows": 0.5947007899120719
+    }
+  },
+  "top20_delta_against_prior": {
+    "plus_2021_conditionally": {
+      "enter": [
+        "Narirutin"
+      ],
+      "exit": [
+        "Sinapic acid"
+      ]
+    },
+    "plus_both_sensitivity": {
+      "enter": [
+        "Hesperidin",
+        "Narirutin"
+      ],
+      "exit": [
+        "Kaempferol",
+        "Sinapic acid"
+      ]
+    },
+    "empirical_cv_q75_sensitivity": {
+      "enter": [
+        "Cyanidin 3-O-rutinoside",
+        "Fisetin",
+        "Hesperidin",
+        "Rutin"
+      ],
+      "exit": [
+        "Apigenin",
+        "Kaempferol",
+        "Luteolin",
+        "Sinapic acid"
+      ]
+    }
+  },
+  "empirical_cv_q75_descriptive": 0.05998005580628851,
+  "prior_model_input_sha256": "095d657a53117c02bdcc8a98000dc84a1aebbaf3d035e6b8b547a428545aa92d"
+}

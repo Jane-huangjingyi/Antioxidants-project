@@ -46,7 +46,7 @@ def run():
   errors=[r[label]-r['observed_log'] for r in predictions];metrics[label]={'MAE':sum(abs(v) for v in errors)/len(errors),'RMSE':math.sqrt(sum(v*v for v in errors)/len(errors))}
  chosen,scores=select(rows,cids)
  sensitivity=read(HERE/'results/Candidate_Model_Sensitivity.csv')
- profiles={r['candidate_id']:r for r in read(ROOT/'02_identity_and_evidence/results/candidate_evidence_profiles.csv')}
+ profiles={r['candidate_id']:r for r in read(ROOT/'02_identity_and_evidence/result/table/candidate_evidence_profiles.csv')}
  selected=[]
  for r in sensitivity:
   candidate=r['candidate_id']

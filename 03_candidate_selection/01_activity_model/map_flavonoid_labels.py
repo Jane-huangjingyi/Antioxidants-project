@@ -5,7 +5,7 @@ P=Path(__file__).resolve().parent;ROOT=P.parents[1]
 def read(p):
     with p.open(encoding='utf-8-sig') as f:return list(csv.DictReader(f))
 source=read(P/'results/Flavonoid_Log_Capacity_Extraction.csv')
-profiles=read(ROOT/'02_identity_and_evidence/results/candidate_evidence_profiles.csv')
+profiles=read(ROOT/'02_identity_and_evidence/result/table/candidate_evidence_profiles.csv')
 rows=[]
 for s in source:
     matches=[r for r in profiles if r['compound_name'].casefold()==s['compound'].casefold()]

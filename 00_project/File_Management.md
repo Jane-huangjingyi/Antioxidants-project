@@ -4,7 +4,7 @@ Organize by scientific task and execution step before version and format. Number
 
 Current documentation, code comments, table schemas and new narrative outputs are English. Original-language source records, article quotations and approved historical records stay immutable in the baseline. Preserve old IDs and meaningful filenames. A move changes a path, not scientific validity, approval or source date.
 
-Generated figures use task/version/png or svg directories with a shared basename. Manual edits use a separate date-labelled folder. Do not put unrelated scientific tasks together under a folder named final or latest. All producers and current consumers must change together when paths change.
+Generated figure pairs share the same directory and basename. Manuscript panels use figure1-1, figure1-2 and equivalent labels for later figures. Manual edits use a separate date-labelled folder. Do not put unrelated scientific tasks together under a folder named final or latest. All producers and current consumers must change together when paths change.
 
 Use step-specific scientific inputs and one active research chain. Source hashes and roles are registered in Step 02. A copied record with a distinct freeze, audit, governance or reconstruction role is not automatically redundant. Source snapshots, important process files and contradictory evidence are retained. Superseded renderings and navigation need not remain in the current delivery when their scientific content is covered. Git preserves earlier project states; scientific QC reports source validity and reproducibility rather than file-cleanup history.
 

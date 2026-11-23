@@ -11,7 +11,7 @@ HERE = Path(__file__).resolve().parent
 SELECTION = HERE.parent
 ROOT = SELECTION.parent
 REVIEW = SELECTION / "08_capacity_review_validation"
-PROFILE = ROOT / "02_identity_and_evidence/results/candidate_evidence_profiles.csv"
+PROFILE = ROOT / "02_identity_and_evidence/result/table/candidate_evidence_profiles.csv"
 METHODS = ["ORAC-FL", "ORAC-PGR", "Crocin", "ABTS", "DPPH", "FRAP", "CUPRAC"]
 HISTORICAL = {"10.1021/jp307746c", "10.1021/jf010586o", "10.1021/jf0305231",
               "10.1016/j.foodchem.2008.08.013", "10.3762/bjoc.11.151", "10.3390/molecules18055389"}

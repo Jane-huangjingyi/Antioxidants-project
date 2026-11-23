@@ -12,7 +12,7 @@ VALUES = [
 
 
 def main():
-    profiles = list(csv.DictReader((ROOT/'02_identity_and_evidence/results/candidate_evidence_profiles.csv').open(encoding='utf-8-sig')))
+    profiles = list(csv.DictReader((ROOT/'02_identity_and_evidence/result/table/candidate_evidence_profiles.csv').open(encoding='utf-8-sig')))
     rows = []
     for name, mean, error in VALUES:
         matches = [p for p in profiles if p['compound_name'].lower() == name.lower()]

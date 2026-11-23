@@ -9,7 +9,7 @@ def write(path,rows):
  with path.open('w',encoding='utf-8',newline='') as f:
   w=csv.DictWriter(f,fieldnames=list(rows[0]),lineterminator='\n');w.writeheader();w.writerows(rows)
 def run():
- paths=[ROOT/'02_identity_and_evidence/results/candidate_evidence_profiles.csv',ROOT/'03_candidate_selection/01_activity_model/results/Capacity_Analysis_Entry.csv',ROOT/'03_candidate_selection/02_cross_study_expansion/results/Bridge_Panel_Preparation.csv']
+ paths=[ROOT/'02_identity_and_evidence/result/table/candidate_evidence_profiles.csv',ROOT/'03_candidate_selection/01_activity_model/results/Capacity_Analysis_Entry.csv',ROOT/'03_candidate_selection/02_cross_study_expansion/results/Bridge_Panel_Preparation.csv']
  profiles,observations,panel=map(read,paths)
  byid=collections.defaultdict(list)
  for i,row in enumerate(observations,2):byid[row['candidate_id']].append((i,row))

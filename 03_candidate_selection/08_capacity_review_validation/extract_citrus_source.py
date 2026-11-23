@@ -18,7 +18,7 @@ def main():
     root=ET.fromstring(path.read_bytes())
     table=next(t for t in root.findall('.//table-wrap') if 't004' in t.get('id',''))
     rows=[[' '.join(' '.join(c.itertext()).split()) for c in list(r)] for r in table.findall('.//tr')]
-    with (ROOT/'02_identity_and_evidence/results/candidate_evidence_profiles.csv').open(encoding='utf-8-sig') as handle:
+    with (ROOT/'02_identity_and_evidence/result/table/candidate_evidence_profiles.csv').open(encoding='utf-8-sig') as handle:
         profiles={r['compound_name'].lower():r for r in csv.DictReader(handle)}
     output=[]
     for name,mean,error in VALUES:

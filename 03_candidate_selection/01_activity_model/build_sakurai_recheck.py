@@ -3,7 +3,7 @@ import csv,json,math
 from pathlib import Path
 P=Path(__file__).resolve().parent;root=P.parents[1]
 d=json.loads((P/'inputs/sakurai_targeted_recheck.json').read_text())
-with (root/'02_identity_and_evidence/results/chemical_observation_index.csv').open(encoding='utf-8-sig',newline='') as f:
+with (root/'02_identity_and_evidence/result/table/chemical_observation_index.csv').open(encoding='utf-8-sig',newline='') as f:
     old=[r for r in csv.DictReader(f) if r['doi'].lower()==d['doi']]
 assert len(old)==2
 rows=[]

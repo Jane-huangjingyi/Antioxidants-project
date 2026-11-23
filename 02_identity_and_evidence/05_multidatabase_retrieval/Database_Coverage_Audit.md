@@ -12,4 +12,6 @@ The 132,369 provisional baseline keys were audited across DOI, PMID, PMCID and n
 
 ## Outstanding gates
 
-The current environment showed no configured database credentials or visible authorized session for WoS, Scopus or CNKI. Actual platform syntax, anchor recall and export limits remain open. The local intake passed synthetic tests for the anticipated export formats. Zero institutional source files were available for validation. Authentic exports, record and version adjudication, and remaining coverage checks including Google Scholar are pending. Stage2 remains in progress.
+The researcher has now completed authenticated Web of Science Core Collection retrieval with 147,971 union hits and reported four of four DOI controls retrieved by both routes. The first 500 records were exported and imported with 500 unique WoS accessions. The remaining 147,471 hits have no export in the local intake. The [WoS acquisition and intake audit](WoS_Batch_Acquisition_and_Intake.md) records evidence labels, batch identity, API entitlement checks, and acquisition options.
+
+DOI/PMID comparison linked 271 records to existing report keys, provisionally added 202 WoS records and flagged 27 for reconciliation. All 500 remain locally pending WoS screening or verified reuse of prior decisions. Record-level output and licensed source files remain local. Actual Scopus and CNKI platform tests and imports, Google Scholar coverage, full WoS acquisition or a documented scope decision, and remaining record/version adjudication are pending. Stage2 remains in progress.

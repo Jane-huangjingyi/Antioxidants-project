@@ -170,7 +170,7 @@ def run():
     queue = {row['PMCID']: row for row in read_csv(HERE / 'Method_Fulltext_Queue.csv') if row['PMCID']}
     comparison_queue = read_csv(HERE / 'Compound_Comparison_Fulltext_Queue.csv')
     queue.update({row['PMCID']: row for row in comparison_queue})
-    profiles = read_csv(HERE.parents[1] / '02_identity_and_evidence/results/candidate_evidence_profiles.csv')
+    profiles = read_csv(HERE.parents[1] / '02_identity_and_evidence/result/table/candidate_evidence_profiles.csv')
     assert len(ASSESSMENTS) == 30
     assert len({row[0] for row in ASSESSMENTS}) == 30
     output = []

@@ -2,7 +2,7 @@
 import csv,json,zipfile,xml.etree.ElementTree as E
 from pathlib import Path
 R=Path(__file__).resolve().parents[2];ns={'s':'http://schemas.openxmlformats.org/spreadsheetml/2006/main'}
-z=zipfile.ZipFile(R/'06_manuscript/tables/Candidate_Review_Workbook.xlsx')
+z=zipfile.ZipFile(R/'06_manuscript/result/table/Candidate_Review_Workbook.xlsx')
 names=[x.attrib['name'] for x in E.fromstring(z.read('xl/workbook.xml')).find('s:sheets',ns)]
 assert len(names)==17
 files=['Capacity_Analysis_Entry.csv','Food_and_Material_Followup.csv','Within_Source_Descriptive_Order.csv','Legacy30_Verification.csv','Bridge_Protocol_Matrix.csv']
@@ -35,5 +35,5 @@ for name in z.namelist():
         errors += [(name,c.attrib['r']) for c in E.fromstring(z.read(name)).iter() if c.tag.endswith('}c') and c.attrib.get('t')=='e']
 assert not errors,errors
 out=dict(status='PASS',worksheet_count=len(names),new_sheet_rows=dict(zip(names[:5],expected)),error_cells=errors)
-(R/'07_quality_control/workbook_package_qc.json').write_text(json.dumps(out,indent=2)+'\n')
+(R/'07_quality_control/result/table/audit/workbook_package_qc.json').write_text(json.dumps(out,indent=2)+'\n')
 print(json.dumps(out))

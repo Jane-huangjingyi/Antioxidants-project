@@ -3,7 +3,7 @@ from pathlib import Path
 import csv,xml.etree.ElementTree as ET,re,json
 HERE=Path(__file__).resolve().parent;ROOT=HERE.parents[1]
 def run():
- with (ROOT/'02_identity_and_evidence/results/candidate_evidence_profiles.csv').open(encoding='utf-8-sig') as f:profiles=list(csv.DictReader(f))
+ with (ROOT/'02_identity_and_evidence/result/table/candidate_evidence_profiles.csv').open(encoding='utf-8-sig') as f:profiles=list(csv.DictReader(f))
  with (HERE/'Method_Fulltext_Queue.csv').open(encoding='utf8') as f:queue=list(csv.DictReader(f))
  comparison_queue=HERE/'Compound_Comparison_Fulltext_Queue.csv'
  if comparison_queue.exists():

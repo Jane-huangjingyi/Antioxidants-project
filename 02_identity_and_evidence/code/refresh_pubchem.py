@@ -3,7 +3,7 @@ from pathlib import Path
 import sys,urllib.request,urllib.parse,json,time
 ROOT=Path(__file__).resolve().parents[2];sys.path.insert(0,str(ROOT/'00_project'))
 from pipeline_io import *
-queue=read_csv(ROOT/'03_candidate_selection/results/top20_review_queue.csv')
+queue=read_csv(ROOT/'03_candidate_selection/result/table/top20_review_queue.csv')
 cache={};log=[];raw=ROOT/'02_identity_and_evidence/inputs/pubchem_raw';raw.mkdir(parents=True,exist_ok=True)
 ids=','.join(r['pubchem_cid'] for r in queue)
 url=f'https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/{ids}/property/Title,MolecularFormula,MolecularWeight,InChIKey/JSON'

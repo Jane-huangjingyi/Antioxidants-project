@@ -1,35 +1,19 @@
-# Food-Derived Antioxidant Candidate Selection
+# Food-derived antioxidant candidate selection
 
-**Start with [Results 1 v1.0](06_manuscript/Results1_v1.0/README.md).** The first research stage uses original assay observations to prioritize defined food-derived compounds for aqueous verification. The manuscript release includes methods, editable Figure 1, Table 1, model validation and reproducible evidence updates. The current model diagnostics are conditional on assay and source.
+We identify defined dietary compounds with high expected aqueous antioxidant capacity and reproducible original evidence. We use assay-specific measurements to prioritize candidates for prospective absorbance-based validation. [Latest results](Latest_Results.md) opens the current figures, tables and working manuscript.
 
-The research sequence proceeds from literature-informed selection to aqueous absorbance assay validation, candidate measurement and prospective evaluation of the prioritization framework. The current release covers literature-informed selection.
-
-## Research sequence
-
-| Step | Scientific task | Authoritative entry |
+| Step | Input | Output and handoff |
 |---|---|---|
-| 00 | Define the question, food scope and decision rules | [Project protocol](00_project/Protocol.md) |
-| 01 | Discover names independently of antioxidant rank; retain exclusions | [Candidate discovery](01_candidate_discovery/README.md) |
-| 02 | Resolve formulas/identifiers and join source-linked evidence | [Identity and evidence](02_identity_and_evidence/README.md) |
-| 03 | Apply transparent gates, disclose ties and prepare 20 review slots | [Candidate selection](03_candidate_selection/README.md) |
-| 04 | Compare non-fluorescent methods and prepare validation | [Absorbance assay](04_absorbance_assay/README.md) |
-| 05 | Generate editable figures and analyze future experimental data | [Analysis](05_analysis/README.md) |
-| 06 | Assemble actual Methods, descriptive Results, Figures and Tables | [Manuscript](06_manuscript/README.md) |
-| 07 | Check source preservation, links, selection logic and exports | [Quality control](07_quality_control/README.md) |
+| [00 Research scope](00_project/README.md) | Research objective, scope and decisions | Search and eligibility protocol for discovery and evidence review. |
+| [01 Compound discovery](01_candidate_discovery/README.md) | Source-linked names, food records and search leads | Candidate register, aliases and exclusions for identity review. |
+| [02 Literature and evidence](02_identity_and_evidence/README.md) | Search protocol, candidate register, database exports and original reports | Deduplicated reports, compound links, evidence roles and eligibility records for extraction and modeling. |
+| [03 Modeling and ranking](03_candidate_selection/README.md) | Original capacities, material forms, conditions, uncertainty and structures | Molar evidence table, study-level model diagnostics and conditional order for experimental planning. |
+| [04–05 Experimental validation and analysis](04_05_experimental_validation/README.md) | Candidate priorities, plate reader specifications and future raw traces | Assay design and trace-analysis rules for manuscript reporting. |
+| [06 Manuscript](06_manuscript/README.md) | Verified counts, tables and model outputs | Working Methods, generated Results and editable figure panels. The frozen release remains in Git history. |
+| [07 Quality control](07_quality_control/README.md) | Source manifests, scripts and results | Scientific invariants, output validation and reproduction checks. |
 
-Run from this directory with Python 3.10 or newer:
+## Reproduce
 
-```sh
-python run_pipeline.py --tables-only
-python run_pipeline.py
-```
+Use the [environment guide](00_project/Environment.md). Run `python run_pipeline.py --literature` with the local search exports to reproduce discovery, title and abstract screening, conditional models and the full-text work queue. Run `Rscript 06_manuscript/code/02_render_manuscript_panels.R` for working PNG/SVG pairs. Use the [frozen evidence reference](02_identity_and_evidence/inputs/provenance/results1_v1.0/README.md) to reproduce the original Results 1 release.
 
-The first command needs only the Python standard library and builds all numerical tables. The second also renders three manuscript figures using R, `ggplot2` and `svglite`. [Environment instructions](00_project/Environment.md) cover optional supplementary graphics and Excel export. Default runs use committed source snapshots and do not query the network.
-
-The working snapshot contains 204 discovery records, 193 identity/evidence profiles, 25 review-eligible candidates and 20 provisional review slots. Nine candidates pass the two-confirmed-study sensitivity. No candidate is currently laboratory-ready. See [generated Results](06_manuscript/Results.md), [Table 2](06_manuscript/tables/Table_2_Provisional_Review_Panel.csv) and the [cutoff tie set](03_candidate_selection/results/cutoff_tied_candidates.csv).
-
-The historic 191-name collection is reconstructed from its original literal curation code, not relabelled as an exhaustive database search. Candidate-specific food occurrence remains a visible gap for many names. Glutathione is reopened for food-scope review and ergothioneine is added as a documented coverage gap; neither is silently inserted into the frozen ranking.
-
-For manual review, open the [current English workbook](06_manuscript/tables/Candidate_Review_Workbook.xlsx). The [identity and evidence guide](02_identity_and_evidence/README.md) links the larger preserved evidence catalogue and all source tables. Record actual screening decisions in `03_candidate_selection/config/researcher_decisions.csv`; the workbook is an export of those inputs.
-
-All active explanations, code and manuscript outputs are in English. The [scientific source guide](02_identity_and_evidence/Sources.md) locates original inputs, source caches, governance and frozen references within their research steps. Source records retain their original language and scientific states. [Git workflow](00_project/Git_Workflow.md) identifies the current branch and explains why older branches need no repeated merging. File organization does not grant scientific approval.
+The active literature results remain conditional. Full-text eligibility and independent experiment checks are ongoing. The new aqueous absorbance assay is at the design stage.

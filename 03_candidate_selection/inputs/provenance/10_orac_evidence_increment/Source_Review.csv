@@ -1,0 +1,7 @@
+doi,scope,finding,role
+10.1016/j.bbadva.2021.100030,Table 1 and methods and results,Three priority candidate ORAC rows recovered; old access pending entry superseded locally,ADDED_CONDITIONALLY
+10.3390/ijms26157069,Table 1 and section 3.3,Three pure compound rows with explicit molar Trolox equivalents; normalized FL protection protocol kept separately,ADDED_CONDITIONALLY
+10.1016/j.heliyon.2024.e28067,Table 2 and ORAC methods,One quercetin mass normalized result; gallic and ascorbic ORAC values are citations,FORM_SENSITIVITY_ONLY
+10.3390/antiox15020163,Table 1 and ORAC methods,Two numerical controls extracted; ambiguous calibration scale and quercetin dose nonlinearity,HOLD
+10.2478/acph-2024-0039,Methods and Tables I and III,ORAC measures extracts; pure analytes were analytical standards for identification,CONTEXT_ONLY
+10.3390/ijms27041859,Figure 2 caption and Section 4.1 and Table 5,Separate single-standard slopes from interaction ratios; numeric slopes and overlap with 2025 report need audit,HOLD

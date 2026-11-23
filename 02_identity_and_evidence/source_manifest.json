@@ -5043,7 +5043,7 @@
       "interpretation": "Reference/source record; original scientific review states retained."
     },
     {
-      "path": "04_absorbance_assay/inputs/method_reference/checklists/ORAC_Eligibility_Checklist_CN.md",
+      "path": "04_05_experimental_validation/input/method_reference/checklists/ORAC_Eligibility_Checklist_CN.md",
       "sha256": "4547eaf93d6ae0c0ab3e24f1a4692a9ba5badddf05db5d85a9bed33ca8afb24d",
       "role": "METHOD_QC_REFERENCE_NOT_APPROVED_EXPERIMENT_SETTINGS",
       "bundled": true,
@@ -5051,7 +5051,7 @@
       "interpretation": "Reference/source record; original scientific review states retained."
     },
     {
-      "path": "04_absorbance_assay/inputs/method_reference/config/Antioxidant_Assay_Comparison.csv",
+      "path": "04_05_experimental_validation/input/method_reference/config/Antioxidant_Assay_Comparison.csv",
       "sha256": "a543ac1aade8056086a9e898ee226a103b2958ff6e589d1a0906973f911f53e9",
       "role": "METHOD_QC_REFERENCE_NOT_APPROVED_EXPERIMENT_SETTINGS",
       "bundled": true,
@@ -5059,7 +5059,7 @@
       "interpretation": "Reference/source record; original scientific review states retained."
     },
     {
-      "path": "04_absorbance_assay/inputs/method_reference/config/Antioxidant_Assay_Selection_Rubric.csv",
+      "path": "04_05_experimental_validation/input/method_reference/config/Antioxidant_Assay_Selection_Rubric.csv",
       "sha256": "a7506acd0dd5645f31e5025aa356f5be44b97b82183e50499860b6b5124f2955",
       "role": "METHOD_QC_REFERENCE_NOT_APPROVED_EXPERIMENT_SETTINGS",
       "bundled": true,
@@ -5067,7 +5067,7 @@
       "interpretation": "Reference/source record; original scientific review states retained."
     },
     {
-      "path": "04_absorbance_assay/inputs/method_reference/config/Candidate_Universe_Data_Dictionary.csv",
+      "path": "04_05_experimental_validation/input/method_reference/config/Candidate_Universe_Data_Dictionary.csv",
       "sha256": "30730c36041c5c1f4cbf09eec948d3a71633cb10d082ec6c841cfc4327fdf45c",
       "role": "METHOD_QC_REFERENCE_NOT_APPROVED_EXPERIMENT_SETTINGS",
       "bundled": true,
@@ -5075,7 +5075,7 @@
       "interpretation": "Reference/source record; original scientific review states retained."
     },
     {
-      "path": "04_absorbance_assay/inputs/method_reference/config/Compound_Context_Interaction_Data_Dictionary.csv",
+      "path": "04_05_experimental_validation/input/method_reference/config/Compound_Context_Interaction_Data_Dictionary.csv",
       "sha256": "56974cbd90275d80b818533aed95e201fa7a014eb33999f00068ab2c1e2fc011",
       "role": "METHOD_QC_REFERENCE_NOT_APPROVED_EXPERIMENT_SETTINGS",
       "bundled": true,
@@ -5083,7 +5083,7 @@
       "interpretation": "Reference/source record; original scientific review states retained."
     },
     {
-      "path": "04_absorbance_assay/inputs/method_reference/config/Compound_Target_Data_Dictionary.csv",
+      "path": "04_05_experimental_validation/input/method_reference/config/Compound_Target_Data_Dictionary.csv",
       "sha256": "a775de9c251279d31966e67d4cbbe89ff655bcb1ec5ea26741579102bb065163",
       "role": "METHOD_QC_REFERENCE_NOT_APPROVED_EXPERIMENT_SETTINGS",
       "bundled": true,
@@ -5091,7 +5091,7 @@
       "interpretation": "Reference/source record; original scientific review states retained."
     },
     {
-      "path": "04_absorbance_assay/inputs/method_reference/config/Evidence_Hierarchy_and_Scoring_Rubric.csv",
+      "path": "04_05_experimental_validation/input/method_reference/config/Evidence_Hierarchy_and_Scoring_Rubric.csv",
       "sha256": "782d829367d931c24796e086e24a94afeb47f59452945b40eeebd3904240893a",
       "role": "METHOD_QC_REFERENCE_NOT_APPROVED_EXPERIMENT_SETTINGS",
       "bundled": true,
@@ -5099,7 +5099,7 @@
       "interpretation": "Reference/source record; original scientific review states retained."
     },
     {
-      "path": "04_absorbance_assay/inputs/method_reference/config/H_ORAC_Compound_Risk_Trigger_Rules_v1.0.csv",
+      "path": "04_05_experimental_validation/input/method_reference/config/H_ORAC_Compound_Risk_Trigger_Rules_v1.0.csv",
       "sha256": "c741fa021b3c418751af3179c8276e70ac1559d9cc03bed6eb5c98c87bb348ab",
       "role": "METHOD_QC_REFERENCE_NOT_APPROVED_EXPERIMENT_SETTINGS",
       "bundled": true,
@@ -5107,7 +5107,7 @@
       "interpretation": "Reference/source record; original scientific review states retained."
     },
     {
-      "path": "04_absorbance_assay/inputs/method_reference/config/H_ORAC_Compound_Risk_Trigger_Rules_v1_DRAFT.csv",
+      "path": "04_05_experimental_validation/input/method_reference/config/H_ORAC_Compound_Risk_Trigger_Rules_v1_DRAFT.csv",
       "sha256": "e48e6370533aa1fdccbaa72f19b614f44ba49c119da39dd21e95006ca343e91e",
       "role": "METHOD_QC_REFERENCE_NOT_APPROVED_EXPERIMENT_SETTINGS",
       "bundled": true,
@@ -5115,7 +5115,7 @@
       "interpretation": "Reference/source record; original scientific review states retained."
     },
     {
-      "path": "04_absorbance_assay/inputs/method_reference/config/ORAC_Literature_Eligibility_Rubric.csv",
+      "path": "04_05_experimental_validation/input/method_reference/config/ORAC_Literature_Eligibility_Rubric.csv",
       "sha256": "f6b45d237b04921f5cf2ea073e5a5d1c595cc67656c9827e812c5976d32f7637",
       "role": "METHOD_QC_REFERENCE_NOT_APPROVED_EXPERIMENT_SETTINGS",
       "bundled": true,
@@ -5123,7 +5123,7 @@
       "interpretation": "Reference/source record; original scientific review states retained."
     },
     {
-      "path": "04_absorbance_assay/inputs/method_reference/config/ORAC_Literature_Eligibility_Rubric_v2.0.csv",
+      "path": "04_05_experimental_validation/input/method_reference/config/ORAC_Literature_Eligibility_Rubric_v2.0.csv",
       "sha256": "8254f27ca21dd024acfa66581cfe8568d299e62dd29e17acf61501265a8340b3",
       "role": "METHOD_QC_REFERENCE_NOT_APPROVED_EXPERIMENT_SETTINGS",
       "bundled": true,
@@ -5131,7 +5131,7 @@
       "interpretation": "Reference/source record; original scientific review states retained."
     },
     {
-      "path": "04_absorbance_assay/inputs/method_reference/config/ORAC_Literature_Eligibility_Rubric_v2_DRAFT.csv",
+      "path": "04_05_experimental_validation/input/method_reference/config/ORAC_Literature_Eligibility_Rubric_v2_DRAFT.csv",
       "sha256": "09a7fb500a703add586a2e43f4a557d55c9981da624beee252f1ea15324bdc61",
       "role": "METHOD_QC_REFERENCE_NOT_APPROVED_EXPERIMENT_SETTINGS",
       "bundled": true,
@@ -5139,7 +5139,7 @@
       "interpretation": "Reference/source record; original scientific review states retained."
     },
     {
-      "path": "04_absorbance_assay/inputs/method_reference/config/ORAC_Literature_Extraction_Data_Dictionary.csv",
+      "path": "04_05_experimental_validation/input/method_reference/config/ORAC_Literature_Extraction_Data_Dictionary.csv",
       "sha256": "194bee851bdc7edd88431564cc38a8dbe66f9211e4be0f3b7db25de97a6e1a2c",
       "role": "METHOD_QC_REFERENCE_NOT_APPROVED_EXPERIMENT_SETTINGS",
       "bundled": true,
@@ -5147,7 +5147,7 @@
       "interpretation": "Reference/source record; original scientific review states retained."
     },
     {
-      "path": "04_absorbance_assay/inputs/method_reference/templates/Literature_Search_Log_Template.csv",
+      "path": "04_05_experimental_validation/input/method_reference/templates/Literature_Search_Log_Template.csv",
       "sha256": "04dd638303c8d01efe8f27bbdb218a0c4389491fd4419102c9c46de50e63aac7",
       "role": "METHOD_QC_REFERENCE_NOT_APPROVED_EXPERIMENT_SETTINGS",
       "bundled": true,
@@ -5155,7 +5155,7 @@
       "interpretation": "Reference/source record; original scientific review states retained."
     },
     {
-      "path": "04_absorbance_assay/inputs/method_reference/templates/ORAC_Compound_Summary_Template.csv",
+      "path": "04_05_experimental_validation/input/method_reference/templates/ORAC_Compound_Summary_Template.csv",
       "sha256": "f839c1e7297f32e4cf96f3487344601d33f878ba985e2375d3ad24620d88aeb3",
       "role": "METHOD_QC_REFERENCE_NOT_APPROVED_EXPERIMENT_SETTINGS",
       "bundled": true,
@@ -5163,7 +5163,7 @@
       "interpretation": "Reference/source record; original scientific review states retained."
     },
     {
-      "path": "04_absorbance_assay/inputs/method_reference/templates/ORAC_Exclusion_Log_Template.csv",
+      "path": "04_05_experimental_validation/input/method_reference/templates/ORAC_Exclusion_Log_Template.csv",
       "sha256": "df93fdfee5d464ef5b9500cb020dfef8e835134f4873c7a22c2c917cfd3a9bbf",
       "role": "METHOD_QC_REFERENCE_NOT_APPROVED_EXPERIMENT_SETTINGS",
       "bundled": true,
@@ -5171,7 +5171,7 @@
       "interpretation": "Reference/source record; original scientific review states retained."
     },
     {
-      "path": "04_absorbance_assay/inputs/method_reference/templates/ORAC_Record_Extraction_Template.csv",
+      "path": "04_05_experimental_validation/input/method_reference/templates/ORAC_Record_Extraction_Template.csv",
       "sha256": "0348b88f1794bfc82465498218f6292ff63c90de4b2e14ca7b702ac57123e7d9",
       "role": "METHOD_QC_REFERENCE_NOT_APPROVED_EXPERIMENT_SETTINGS",
       "bundled": true,
@@ -5179,7 +5179,7 @@
       "interpretation": "Reference/source record; original scientific review states retained."
     },
     {
-      "path": "04_absorbance_assay/inputs/method_reference/templates/Ranking_Change_Log_Template.csv",
+      "path": "04_05_experimental_validation/input/method_reference/templates/Ranking_Change_Log_Template.csv",
       "sha256": "520e5d32989440c75f9136ad1233529bc653c9fbf97f735bbea8f607f62a1429",
       "role": "METHOD_QC_REFERENCE_NOT_APPROVED_EXPERIMENT_SETTINGS",
       "bundled": true,
@@ -7827,12 +7827,44 @@
       "interpretation": "Source/extraction reference; not scientific approval or an independent-study count."
     },
     {
-      "path": "04_absorbance_assay/01_endpoint_definition/method_candidates.json",
+      "path": "04_05_experimental_validation/01_endpoint_definition/method_candidates.json",
       "sha256": "10fe0a6743b9723298c653bd912278627f46d96cc73db288781b797924383f32",
       "role": "CURATED_CAPACITY_SOURCE_OR_METHOD_REFERENCE",
       "bundled": true,
       "source_language": "ENGLISH_STRUCTURED_EXTRACTION",
       "interpretation": "Source/extraction reference; not scientific approval or an independent-study count."
+    },
+    {
+      "path": "02_identity_and_evidence/inputs/provenance/results1_v1.0/original_observations.csv",
+      "sha256": "f15769d3d1f09a2e70294906c91ca77fa1e79ea50dd4d11e23200d7dd0596565",
+      "role": "FROZEN_REFERENCE_RESULTS1_V1_0",
+      "bundled": true,
+      "source_language": "ENGLISH",
+      "interpretation": "Historical comparison input from 5ee3bc8a6325225533e36403c1d360cd3b84e3d3:06_manuscript/Results1_v1.0/Supplementary_Materials/TableS4_Original_Observations.csv."
+    },
+    {
+      "path": "02_identity_and_evidence/inputs/provenance/results1_v1.0/assay_specific_reference_ranks.csv",
+      "sha256": "0220dfa4d89022a028593a5949e4872998ee77929e5705c042ef0e5fd96e947e",
+      "role": "FROZEN_REFERENCE_RESULTS1_V1_0",
+      "bundled": true,
+      "source_language": "ENGLISH",
+      "interpretation": "Historical comparison input from 5ee3bc8a6325225533e36403c1d360cd3b84e3d3:06_manuscript/Results1_v1.0/Supplementary_Materials/TableS2_Assay_Ranks.csv."
+    },
+    {
+      "path": "02_identity_and_evidence/inputs/provenance/results1_v1.0/evidence_snapshot.json",
+      "sha256": "b5f868bede9f3b07a5618129028d5ddfb78b63531b5d87a3f8fe17b18e91223d",
+      "role": "FROZEN_REFERENCE_RESULTS1_V1_0",
+      "bundled": true,
+      "source_language": "ENGLISH",
+      "interpretation": "Historical comparison input from 5ee3bc8a6325225533e36403c1d360cd3b84e3d3:06_manuscript/Results1_v1.0/Evidence_Snapshot.json."
+    },
+    {
+      "path": "02_identity_and_evidence/inputs/provenance/results1_v1.0/evidence_data_dictionary.csv",
+      "sha256": "cf6d41a32a7b2d9d71603c2cbfeb9bb520feda25584713c78cf81059e3d113d1",
+      "role": "FROZEN_REFERENCE_RESULTS1_V1_0",
+      "bundled": true,
+      "source_language": "ENGLISH",
+      "interpretation": "Historical comparison input from 5ee3bc8a6325225533e36403c1d360cd3b84e3d3:06_manuscript/Results1_v1.0/Evidence_Data_Dictionary.csv."
     }
   ]
 }

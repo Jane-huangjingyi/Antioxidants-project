@@ -1,5 +1,7 @@
 # Stage2 manual export handoff
 
+The [first-batch audit and acquisition plan](WoS_Batch_Acquisition_and_Intake.md) records the completed WoS first export and researcher-reported recall tests. The observed WoS limit is 500 records per export.
+
 First action: open [Web of Science Advanced Search](https://www.webofscience.com/wos/woscc/advanced-search) through institutional sign-in, select Core Collection, and run the DOI check below. Save the search history showing the accepted query and count. Then run the method and class routes separately.
 
 Primary scope is 2020-01-01 through 2026-11-17 by first public publication. Search years 2020–2026 where the interface supports years only. Preserve online and issue dates for subsequent eligibility checks. Search 2016–2019 separately for documented evidence gaps. Run each anchor alone, then intersect it with each route and record the count. WoS, Scopus and CNKI queries below await authenticated platform tests.
@@ -12,7 +14,7 @@ TS=(ORAC OR "oxygen radical absorbance capacity" OR "pyrogallol red" OR "crocin 
 TS=((phenolic* OR flavonoid* OR carotenoid* OR lignan* OR vitamin* OR thiol* OR alkaloid*) AND (antioxidan* OR "radical scavenging")) AND PY=(2020-2026)
 ```
 
-Export Plain Text with Full Record and Cited References. Use 1–1000, 1001–2000 and subsequent contiguous ranges if the dialog accepts them. Record any smaller limit or result-set cap. Save Search History and identify indexes selected. [Clarivate export help](https://webofscience.help.clarivate.com/en-us/Content/export-records.htm)
+Export Plain Text with Full Record and Cited References. The researcher observed a 500-record limit. Use 1–500, 501–1000 and subsequent contiguous ranges if the dialog accepts them, starting at the first unexported range confirmed in the saved log. Record any result-set cap. Save Search History and identify indexes selected. [Clarivate export help](https://webofscience.help.clarivate.com/en-us/Content/export-records.htm)
 
 ## Scopus
 

@@ -3,7 +3,7 @@ from pathlib import Path
 import sys,collections
 ROOT=Path(__file__).resolve().parents[2];sys.path.insert(0,str(ROOT/'00_project'))
 from pipeline_io import *
-rows=read_csv(ROOT/'02_identity_and_evidence/results/candidate_evidence_profiles.csv')
+rows=read_csv(ROOT/'02_identity_and_evidence/result/table/candidate_evidence_profiles.csv')
 rules=read_json(ROOT/'03_candidate_selection/config/selection_rules.json')
 decision_path=ROOT/'03_candidate_selection/config/researcher_decisions.csv'
 fields=['candidate_id','food_source_verified','food_source_locator','reagent_form_and_procurement_verified','aqueous_solubility_stability_pass','absorbance_counter_screen_pass','researcher_decision','decision_source','reviewer','review_date']
@@ -32,11 +32,11 @@ cut=stratum(short[-1]) if short else None
 tied=[r for r in queue if stratum(r)==cut] if cut else []
 for i,r in enumerate(short,1):
  r['review_slot']=i;r['slot_interpretation']='ADMINISTRATIVE_REVIEW_SLOT_NOT_POTENCY_RANK';r['shortlist_status']='PROVISIONAL_SOURCE_AND_LAB_FEASIBILITY_REVIEW';r['cutoff_stratum_tied_count']=len(tied)
-write_csv(ROOT/'03_candidate_selection/results/top20_review_queue.csv',short)
-write_csv(ROOT/'03_candidate_selection/results/all_candidate_decisions.csv',audit)
-write_csv(ROOT/'03_candidate_selection/results/cutoff_tied_candidates.csv',[{'candidate_id':r['candidate_id'],'compound_name':r['compound_name'],'confirmed_studies':r['confirmed_independent_horac_studies'],'typed_sd_records':r['typed_sd_record_count'],'currently_in_preview':'YES' if r in short else 'NO','interpretation':'Evidence-stratum tie; researcher adjudication required'} for r in tied])
-write_csv(ROOT/'03_candidate_selection/results/formal_lab_ready_panel.csv',[{k:r[k] for k in ['candidate_id','compound_name','molecular_formula','pubchem_cid','inchi_key']} for r in ready],['candidate_id','compound_name','molecular_formula','pubchem_cid','inchi_key'])
+write_csv(ROOT/'03_candidate_selection/result/table/top20_review_queue.csv',short)
+write_csv(ROOT/'03_candidate_selection/result/table/all_candidate_decisions.csv',audit)
+write_csv(ROOT/'03_candidate_selection/result/table/cutoff_tied_candidates.csv',[{'candidate_id':r['candidate_id'],'compound_name':r['compound_name'],'confirmed_studies':r['confirmed_independent_horac_studies'],'typed_sd_records':r['typed_sd_record_count'],'currently_in_preview':'YES' if r in short else 'NO','interpretation':'Evidence-stratum tie; researcher adjudication required'} for r in tied])
+write_csv(ROOT/'03_candidate_selection/result/table/formal_lab_ready_panel.csv',[{k:r[k] for k in ['candidate_id','compound_name','molecular_formula','pubchem_cid','inchi_key']} for r in ready],['candidate_id','compound_name','molecular_formula','pubchem_cid','inchi_key'])
 scenarios=[{'scenario':'ONE_CONFIRMED_STUDY_REVIEW_QUEUE','eligible_count':len(queue),'preview_count':len(short),'interpretation':'20-slot review preview; all lab and food-source gates still apply'}, {'scenario':'TWO_CONFIRMED_STUDIES_ONLY','eligible_count':sum((number(r['confirmed_independent_horac_studies']) or 0)>=2 for r in queue),'preview_count':min(20,sum((number(r['confirmed_independent_horac_studies']) or 0)>=2 for r in queue)),'interpretation':'Reliability sensitivity; never fill with unsupported zeros'}, {'scenario':'FORMAL_LAB_READY_PANEL','eligible_count':len(ready),'preview_count':min(20,len(ready)),'interpretation':'Actual researcher/material/counter-screen gates; no auto-approval'}]
-write_csv(ROOT/'03_candidate_selection/results/selection_sensitivity.csv',scenarios)
-write_json(ROOT/'03_candidate_selection/results/selection_summary.json',{'profile_count':len(rows),'queue_eligible':len(queue),'review_slots':len(short),'formal_lab_ready':len(ready),'cutoff_tied_count':len(tied),'rules':rules})
+write_csv(ROOT/'03_candidate_selection/result/table/selection_sensitivity.csv',scenarios)
+write_json(ROOT/'03_candidate_selection/result/table/selection_summary.json',{'profile_count':len(rows),'queue_eligible':len(queue),'review_slots':len(short),'formal_lab_ready':len(ready),'cutoff_tied_count':len(tied),'rules':rules})
 print(f'03: {len(queue)} review-eligible, {len(short)} provisional slots, {len(ready)} laboratory-ready; cutoff ties disclosed.')

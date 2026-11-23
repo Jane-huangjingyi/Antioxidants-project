@@ -24,8 +24,8 @@ The [Top20 sensitivity table](Top20_Conditional_Uncertainty.csv) joins source co
 python 03_candidate_selection/08_capacity_review_validation/extract_bridge_source.py
 python 03_candidate_selection/07_all_reference_integration/integrate_references.py
 python 03_candidate_selection/08_capacity_review_validation/review_and_validate.py
-Rscript 05_analysis/R/render_verified_source_diagnostics.R 03_candidate_selection/08_capacity_review_validation/results Reviewed_Capacity
-python 07_quality_control/code/validate_workflow.py
+Rscript 04_05_experimental_validation/code/figure_support/render_verified_source_diagnostics.R 03_candidate_selection/08_capacity_review_validation/results Reviewed_Capacity
+python 07_quality_control/code/02_validate_workflow.py
 ```
 
 The R script exposes colors, fonts, dimensions and line/point settings and exports matching PNG/SVG pairs under manuscript figures. Input CSVs, held-out predictions, deletion fits and row weights are in this directory and its results subdirectory. New qualified sources should first update the extraction registers, then rerun the commands.

@@ -11,7 +11,7 @@ def main():
     root=ET.fromstring(path.read_bytes())
     table=next(t for t in root.findall('.//table-wrap') if t.findtext('label')=='Table 1')
     cells=table.findall('.//tr')[1]
-    profiles=list(csv.DictReader((ROOT/'02_identity_and_evidence/results/candidate_evidence_profiles.csv').open(encoding='utf-8-sig')))
+    profiles=list(csv.DictReader((ROOT/'02_identity_and_evidence/result/table/candidate_evidence_profiles.csv').open(encoding='utf-8-sig')))
     output=[]
     for column,name,mean,error in [(5,'Beta-carotene',.56,.05),(6,'Quercetin',5.48,.13),(7,'Ascorbic acid',.65,.01)]:
         values=re.findall(r'\d+(?:\.\d+)?',' '.join(cells[column].itertext()))

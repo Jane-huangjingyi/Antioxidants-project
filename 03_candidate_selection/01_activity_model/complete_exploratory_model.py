@@ -95,7 +95,7 @@ for j,i in enumerate(mapped):
     r=labels[i];cw=crosswalk[r['source_row']]
     candidate_rows.append(dict(candidate_id=cw['candidate_id'],compound=r['compound'],source_row=r['source_row'],doi=r['doi'],source_locator=r['source_locator'],reference_formula=cw['formula'],observed_source_ln_ORAC=y[i],full_development_fit_log_location=full_pred[i],held_scaffold_prediction=oof[i],diagnostic_position_within_16=positions[j],refit_position_min=float(refit_ranks[:,j].min()),refit_position_max=float(refit_ranks[:,j].max()),refit_position_median=float(np.median(refit_ranks[:,j])),interpretation='IN_SAMPLE_MODEL_ORDER_AND_FIVE_REFIT_INFLUENCE_NOT_FINAL_POTENCY_RANK',food_scope=cw['food_scope'],source_material_match='NOT_APPROVED',global_rank='',human_review_status='NOT_REVIEWED',change_applied='NO'))
 candidate_rows.sort(key=lambda r:(r['diagnostic_position_within_16'],r['candidate_id']))
-with (P.parents[1]/'02_identity_and_evidence/results/candidate_evidence_profiles.csv').open(encoding='utf-8-sig') as f:
+with (P.parents[1]/'02_identity_and_evidence/result/table/candidate_evidence_profiles.csv').open(encoding='utf-8-sig') as f:
     profiles=list(csv.DictReader(f))
 mapped_ids={r['candidate_id'] for r in candidate_rows}
 coverage=[dict(candidate_id=r['candidate_id'],compound=r['compound_name'],reference_formula=r['molecular_formula'],

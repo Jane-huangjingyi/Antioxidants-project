@@ -1,6 +1,6 @@
 # Git workflow and branch interpretation
 
-The current working branch is `codex/food-candidate-manuscript-workflow-20261105`. The reorganization starts from `c6bca4d13e33cf2ce7d1bae7e3d45e69cf4b23b4`; the earlier review, governance and Track B branches are contained in that baseline. Their approvals and HOLD states remain as recorded. A branch name is not a scientific approval.
+The current working branch is `codex/systematic-antioxidant-evidence-20261117`. The reorganization starts from `c6bca4d13e33cf2ce7d1bae7e3d45e69cf4b23b4`; the earlier review, governance and Track B branches are contained in that baseline. Their approvals and HOLD states remain as recorded. A branch name is not a scientific approval.
 
 ## Current handling
 
@@ -22,8 +22,4 @@ git switch --track origin/codex/food-candidate-manuscript-workflow-20261105
 python run_pipeline.py --tables-only
 ```
 
-Future changes should use one purpose-specific branch from the agreed current authority, retain source baselines, and commit only reviewed scope. See `07_quality_control/branch_inventory.json` for actual tips and containment.
-
-## Six-stage task initiated2026-11-17
-
-The active task branch is `codex/systematic-antioxidant-evidence-20261117`, created from research commit4d30ea65b1b7a135bedfaf7146eea254cbcc07d2. Each completed stage receives its own commit and push. Stage review controls progression. The preceding branch instructions retain their historical context.
+Future changes should use one purpose-specific branch from the agreed current authority, retain source baselines, and commit only reviewed scope. See `07_quality_control/result/table/audit/branch_inventory.json` for actual tips and containment.

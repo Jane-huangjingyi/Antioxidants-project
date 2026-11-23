@@ -5,7 +5,7 @@ import retrieve
 HERE=Path(__file__).resolve().parent
 
 def run():
- with (retrieve.ROOT/'02_identity_and_evidence/results/candidate_evidence_profiles.csv').open(encoding='utf-8-sig') as handle:profiles=list(csv.DictReader(handle))
+ with (retrieve.ROOT/'02_identity_and_evidence/result/table/candidate_evidence_profiles.csv').open(encoding='utf-8-sig') as handle:profiles=list(csv.DictReader(handle))
  retrieve.EXPANDED=False;retrieve.OUTPUT=HERE/'inputs';retrieve.audit(profiles)
  retrieve.EXPANDED=True;retrieve.OUTPUT=HERE/'inputs/expanded_capacity';retrieve.audit(profiles)
  for script in ['build_screening_register.py','merge_historical_register.py','audit_known_sources.py']:

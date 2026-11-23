@@ -1,0 +1,28 @@
+{
+  "version": "title_abstract_triage_v0.2",
+  "pubmed_unique_pmids": 65248,
+  "europe_pmc_route_keys": 62458,
+  "local_wos_accessions": 500,
+  "provisional_intake_union": 76383,
+  "shared_pubmed_europe_pmc_keys": 51552,
+  "wos_linked_to_public_keys": 271,
+  "abstract_checked": 65424,
+  "title_only": 10959,
+  "no_title_or_abstract": 0,
+  "candidate_covered": 185,
+  "machine_dispositions": {
+    "TITLE_ONLY_ABSTRACT_PENDING": 10721,
+    "EVIDENCE_ROLE_FULLTEXT_QUEUE": 19446,
+    "CONTEXT_REVIEW_OR_CITATION_CHASE": 7913,
+    "IDENTIFIER_OR_CORRECTION_HOLD": 889,
+    "LOW_PRIORITY_OR_UNRESOLVED": 36654,
+    "HIGH_PRIORITY_ORAC_FULLTEXT": 567,
+    "RETRACTION_RECORD_HOLD": 193
+  },
+  "candidate_profiles": 193,
+  "candidate_report_links": 55527,
+  "audit_sample_rows": 175,
+  "automated_exclusions": 0,
+  "final_systematic_inclusion_completed": false,
+  "dates": "Search window 2020-01-01 to 2026-11-17; article-level first-publication eligibility pending"
+}

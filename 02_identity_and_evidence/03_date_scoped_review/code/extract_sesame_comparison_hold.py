@@ -10,7 +10,7 @@ def main():
     source = SOURCE / 'fulltext_xml/PMC12719202.xml'
     root = ET.fromstring(source.read_bytes())
     table = next(t for t in root.findall('.//table-wrap') if t.findtext('label') == 'Table 4')
-    profiles = list(csv.DictReader((ROOT/'02_identity_and_evidence/results/candidate_evidence_profiles.csv').open(encoding='utf-8-sig')))
+    profiles = list(csv.DictReader((ROOT/'02_identity_and_evidence/result/table/candidate_evidence_profiles.csv').open(encoding='utf-8-sig')))
     rows = []
     for name, mean, error in [('Sesamol',560.59,5.84), ('Pinoresinol Diglycoside',158.43,18.65),
                               ('Ferulic acid',2367.15,90.15), ('Pinoresinol',278.26,6.92),

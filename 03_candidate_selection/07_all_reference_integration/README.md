@@ -18,7 +18,7 @@ The current update does not estimate new held-out predictive performance. Articl
 
 ```sh
 python 03_candidate_selection/07_all_reference_integration/integrate_references.py
-python 07_quality_control/code/validate_workflow.py
+python 07_quality_control/code/02_validate_workflow.py
 ```
 
 Inputs are the master article/link registers, the Step 03.6 analysis dispositions, the original supplemental extraction table and current candidate profiles. The master CSVs can be restored using the existing deterministic bibliographic snapshots. Source methods and references are recorded in the linked extraction registers and manuscript Methods.

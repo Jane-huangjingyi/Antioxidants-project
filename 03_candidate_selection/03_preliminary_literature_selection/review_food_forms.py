@@ -7,7 +7,7 @@ def run():
  groups=collections.defaultdict(list)
  for r in source:
   if r['food_followup_doi']:groups[r['candidate_id']].append(r)
- with (ROOT/'02_identity_and_evidence/results/candidate_evidence_profiles.csv').open(encoding='utf-8-sig') as f:profiles={r['candidate_id']:r for r in csv.DictReader(f)}
+ with (ROOT/'02_identity_and_evidence/result/table/candidate_evidence_profiles.csv').open(encoding='utf-8-sig') as f:profiles={r['candidate_id']:r for r in csv.DictReader(f)}
  checks=json.loads((HERE/'inputs/positional_identity_check.json').read_text())
  crosswalk={r['candidate_id']:r for r in checks['records']}
  rows=[]

@@ -1,6 +1,6 @@
 # Scientific sources
 
-Use the [source document index](results/source_document_index.csv) to locate every retained scientific input and process record. The [table index](results/source_file_index.csv) adds row counts and original field names for CSV sources. Both describe current source locations; repeated records and review versions are not independent studies.
+Use the [source document index](result/table/source_document_index.csv) to locate every retained scientific input and process record. The [table index](result/table/source_file_index.csv) adds row counts and original field names for CSV sources. Both describe current source locations; repeated records and review versions are not independent studies.
 
 | Research purpose | Source collection | Interpretation |
 |---|---|---|
@@ -11,11 +11,11 @@ Use the [source document index](results/source_document_index.csv) to locate eve
 | Frozen H-ORAC reference | `03_candidate_selection/inputs/frozen_reference` | Independent historical reference; not the new experimental panel |
 | Retrieval corpus | `inputs/source_corpus/stage25a` | Locally held source snapshots, optional on a clone; not all retrieved text is verified full text |
 | Governance and scientific development | `00_project/research_records` and mechanism governance subfolders | Decisions and source assessments; not active pipeline entry points |
-| Method QC references | `04_absorbance_assay/inputs/method_reference` | Reference settings, not approval of experimental parameters |
+| Method QC references | `04_05_experimental_validation/input/method_reference` | Reference settings, not approval of experimental parameters |
 
 The [source manifest](source_manifest.json) records SHA256 and whether each source is bundled. Offline calculations require only bundled sources. Locally held corpora remain excluded from publication. Original source files retain their original language, schemas and content. Current instructions and outputs are English. Relative paths inside an original source are interpreted in that source's recorded historical context; locate current material by filename and scientific role in the source indexes.
 
-The dated [full evidence catalogue](inputs/catalogue_reference/Evidence_Catalog_2026-10-30.xlsx) remains a supporting source snapshot. The generated [current review workbook](../06_manuscript/tables/Candidate_Review_Workbook.xlsx) provides the current selection chain and source indexes. Journal metrics retain their reported year and verification status; they are not updated by moving files and do not enter selection.
+The dated [full evidence catalogue](inputs/catalogue_reference/Evidence_Catalog_2026-10-30.xlsx) remains a supporting source snapshot. The generated [current review workbook](../06_manuscript/result/table/Candidate_Review_Workbook.xlsx) provides the current selection chain and source indexes. Journal metrics retain their reported year and verification status; they are not updated by moving files and do not enter selection.
 
 ## Source inconsistencies requiring interpretation
 
@@ -25,7 +25,7 @@ One original visual record remains in `00_project/research_records/source_discre
 
 Step 03.2 retains the [Suzuki original BioC response](../03_candidate_selection/02_cross_study_expansion/inputs/PMC12534199_original_BioC.json) once, with embedded citation and CC-BY metadata, and the [Carrasco extraction scope](../03_candidate_selection/02_cross_study_expansion/inputs/carrasco_source_check.json). The [expansion table](../03_candidate_selection/02_cross_study_expansion/results/Cross_Structure_Evidence_Expansion.csv) records original locators, units, error/replication interpretation and primary-scope holds. New inputs are pinned in the current analysis-set manifest; they do not modify the preserved source-corpus snapshots or scientific approval states. Metadata/access-only leads are separate and supply no numeric labels.
 
-Absorbance method formulas are traced in the [unique source audit](../04_absorbance_assay/02_pilot_design/formula_source_audit.json). The 2006 original abstract (DOI 10.1021/jf052731u) provides an inhibition-percent formula; its full protocol and the two 2015 equations remain pending. No capacity observations or model labels were extracted from these abstracts.
+Absorbance method formulas are traced in the [unique source audit](../04_05_experimental_validation/02_pilot_design/formula_source_audit.json). The 2006 original abstract (DOI 10.1021/jf052731u) provides an inhibition-percent formula; its full protocol and the two 2015 equations remain pending. No capacity observations or model labels were extracted from these abstracts.
 
 The [all-candidate public supplementation module](01_systematic_supplement/README.md) retains exact Europe PMC queries, saved results, PubChem synonym records and candidate-linked screening registers. Retrieval coverage and source-reading status are documented independently. Institutional exports will provide additional database coverage.
 

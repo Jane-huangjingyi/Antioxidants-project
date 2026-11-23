@@ -32,7 +32,7 @@ The [model-input candidates](results/Model_Input_Candidates.csv) now contain nin
 
 The Foods Table 5 caption explicitly identifies SD across three independent experiments for eugenol, capsaicin and vanillin. Its units are micromolar TE per one micromolar compound, a molar ratio. Their `SD^2/3` values are conditional variance-of-mean candidates under the authors' replication statement, not approved weights; shared-calibration covariance is unknown. These three rows belong to one paper. [Original article](https://pmc.ncbi.nlm.nih.gov/articles/PMC8392586/).
 
-The 2023 table also recovers GSH as one source row outside the prior extraction, while its other four compounds recheck existing rows. Source-row keys prevent duplicate study counting. All original review/HOLD states and the frozen ranking remain untouched. The readiness audit remains a baseline extraction inventory; the follow-up table records newer recovered information. Next, select and validate the capacity endpoint through [Step 04.1](../../04_absorbance_assay/01_endpoint_definition/README.md) before fitting a target-assay prediction model.
+The 2023 table also recovers GSH as one source row outside the prior extraction, while its other four compounds recheck existing rows. Source-row keys prevent duplicate study counting. All original review/HOLD states and the frozen ranking remain untouched. The readiness audit remains a baseline extraction inventory; the follow-up table records newer recovered information. Next, select and validate the capacity endpoint through [Step 04.1](../../04_05_experimental_validation/01_endpoint_definition/README.md) before fitting a target-assay prediction model.
 
 ## Check whether paper effects can be separated from compound effects
 

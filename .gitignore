@@ -5,7 +5,7 @@
 07_quality_control/local/
 07_quality_control/previews/
 /.q/
-05_analysis/local_library/
+04_05_experimental_validation/local_library/
 02_identity_and_evidence/inputs/source_corpus/stage25a/*
 !02_identity_and_evidence/inputs/source_corpus/stage25a/README_CN.md
 R/library/

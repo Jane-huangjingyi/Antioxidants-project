@@ -3,7 +3,7 @@ from pathlib import Path
 import csv,json,urllib.request,concurrent.futures,datetime
 HERE=Path(__file__).resolve().parent;ROOT=HERE.parents[1]
 def run():
- with (ROOT/'02_identity_and_evidence/results/candidate_evidence_profiles.csv').open(encoding='utf-8-sig') as handle:rows=list(csv.DictReader(handle))
+ with (ROOT/'02_identity_and_evidence/result/table/candidate_evidence_profiles.csv').open(encoding='utf-8-sig') as handle:rows=list(csv.DictReader(handle))
  cids=sorted({r['pubchem_cid'] for r in rows if r['pubchem_cid']})
  def fetch(chunk):
   url='https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/'+','.join(chunk)+'/synonyms/JSON'

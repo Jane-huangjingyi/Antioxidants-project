@@ -6,7 +6,7 @@ PANEL=[('AFF-0001','Multi-source flavanol; matched comparison with epicatechin',
 def read(path):
  with path.open(encoding='utf-8-sig',newline='') as handle:return list(csv.DictReader(handle))
 def run():
- paths=[ROOT/'02_identity_and_evidence/results/candidate_evidence_profiles.csv',HERE/'results/Detection_Candidate_Assessment.csv',ROOT/'03_candidate_selection/05_model_robustness/results/Candidate_Model_Sensitivity.csv']
+ paths=[ROOT/'02_identity_and_evidence/result/table/candidate_evidence_profiles.csv',HERE/'results/Detection_Candidate_Assessment.csv',ROOT/'03_candidate_selection/05_model_robustness/results/Candidate_Model_Sensitivity.csv']
  profiles,assessment,model=[{r['candidate_id']:r for r in read(path)} for path in paths]
  rows=[]
  for candidate,rationale,issue in PANEL:

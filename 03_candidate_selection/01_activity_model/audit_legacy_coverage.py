@@ -8,7 +8,7 @@ def norm(s):return re.sub(r'\s+',' ',s.strip().lower())
 legacy_path=ROOT/'02_identity_and_evidence/inputs/reference_collection/data/class_specific_antioxidant/Aqueous_Antioxidant_Primary_Literature_Evidence.csv'
 legacy=read(legacy_path)
 current=read(P/'results/Traceable_Capacity_Evidence.csv')
-profiles=read(ROOT/'02_identity_and_evidence/results/candidate_evidence_profiles.csv')
+profiles=read(ROOT/'02_identity_and_evidence/result/table/candidate_evidence_profiles.csv')
 ids={r['candidate_id']:r for r in profiles}
 keys={(norm(r['doi']),norm(r['compound'])) for r in current}
 rows=[]

@@ -20,7 +20,7 @@ def read(path):
 
 def main():
     raw=read(ROOT/'02_identity_and_evidence/02_user_supplied_sources/Original_Capacity_Extraction.csv')
-    profiles={r['compound_name']:r for r in read(ROOT/'02_identity_and_evidence/results/candidate_evidence_profiles.csv')}
+    profiles={r['compound_name']:r for r in read(ROOT/'02_identity_and_evidence/result/table/candidate_evidence_profiles.csv')}
     rows=[]
     for r in raw:
         if r['doi']!='10.1016/j.foodchem.2008.08.013' or r['source_compound_name'] not in NAMES:continue
