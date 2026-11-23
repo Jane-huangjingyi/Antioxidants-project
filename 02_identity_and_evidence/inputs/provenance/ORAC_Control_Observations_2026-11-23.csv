@@ -1,0 +1,9 @@
+doi,candidate_id,reported_material,source_locator,raw_mean,raw_error,raw_unit,error_definition,reported_repeats,independent_n,model_disposition
+10.3390/antiox12020486,AFF-0017,Rutin hydrate,"Table 1, ORAC, Oil ID N/A",7075.9,2.1,µmol TE/g sample,SE in Methods; SD in Table 1 footnote c (rutin marked),3,,HOLD_CALIBRATION_AND_ERROR_DEFINITION
+10.3390/antiox12020486,AFF-0084,Rosmarinic acid,"Table 1, ORAC, Oil ID N/A",8296.2,1.9,µmol TE/g sample,SE in Methods; SD in Table 1 footnote c (rutin marked),3,,HOLD_CALIBRATION_AND_ERROR_DEFINITION
+10.3390/antiox12020486,AFF-0009,Quercetin,"Table 1, ORAC, Oil ID N/A",13143.0,0.5,µmol TE/g sample,SE in Methods; SD in Table 1 footnote c (rutin marked),3,,HOLD_CALIBRATION_AND_ERROR_DEFINITION
+10.3390/antiox12020486,AFF-0071,p-Coumaric acid,"Table 1, ORAC, Oil ID N/A",10762.0,3.2,µmol TE/g sample,SE in Methods; SD in Table 1 footnote c (rutin marked),3,,HOLD_CALIBRATION_AND_ERROR_DEFINITION
+10.3390/antiox12020486,AFF-0002,Epicatechin,"Table 1, ORAC, Oil ID N/A",6593.0,1.0,µmol TE/g sample,SE in Methods; SD in Table 1 footnote c (rutin marked),3,,HOLD_CALIBRATION_AND_ERROR_DEFINITION
+10.3390/antiox12020486,AFF-0076,Chlorogenic acid,"Table 1, ORAC, Oil ID N/A",6438.2,2.7,µmol TE/g sample,SE in Methods; SD in Table 1 footnote c (rutin marked),3,,HOLD_CALIBRATION_AND_ERROR_DEFINITION
+10.3390/antiox12020486,AFF-0001,Catechin,"Table 1, ORAC, Oil ID N/A",11950.0,6.9,µmol TE/g sample,SE in Methods; SD in Table 1 footnote c (rutin marked),3,,HOLD_CALIBRATION_AND_ERROR_DEFINITION
+10.3390/antiox12020486,AFF-0070,Ferulic acid,"Table 1, ORAC, Oil ID N/A",18915.0,0.1,µmol TE/g sample,SE in Methods; SD in Table 1 footnote c (rutin marked),3,,HOLD_CALIBRATION_AND_ERROR_DEFINITION

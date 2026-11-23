@@ -1,9 +1,16 @@
 # 06. Manuscript assembly
 
-Open the generated [Working Results 1](result/02_results_working.md) and the [historical release reference](../02_identity_and_evidence/inputs/provenance/results1_v1.0/README.md). The [working Methods](01_methods_working.md) integrates the current screening and modeling workflow for the next draft. [Current research](../Latest_Results.md) links the current data and diagnostics.
+The [Part 1 manuscript (Word)](result/Manuscript_Part1_Nature_Communications.docx) combines the [editable manuscript sections](04_part1_manuscript_sections.md), [Methods](01_methods_working.md), [generated Results 1](result/02_results_working.md) and Figure 1 ([PNG](result/figure/figure1_evidence_screening_and_ranking.png), [editable SVG](result/figure/figure1_evidence_screening_and_ranking.svg)). See [Latest results](../Latest_Results.md) for the analysis data and diagnostics and the [historical release reference](../02_identity_and_evidence/inputs/provenance/results1_v1.0/README.md) for the prior snapshot.
 
-**Working panels.** After the literature replay, run `Rscript 06_manuscript/code/02_render_manuscript_panels.R`. It uses the discovery register, evidence counts, whole-DOI validation and rank table. The [latest results page](../Latest_Results.md) links each numbered PNG/SVG pair. Colors, type, dimensions and rendering settings are editable in the R script. Use `result/figure/supplementary/` for supporting figures. The root literature pipeline rebuilds the working Results from the current qualifying evidence and analysis outputs.
+Once the literature pipeline and rank tables are current, run these commands from the project root. The R script requires svglite, and Word assembly requires python-docx.
 
+```shell
+python 06_manuscript/code/03_build_working_results.py
+Rscript 06_manuscript/code/04_render_figure1.R
+python 06_manuscript/code/05_build_part1_manuscript.py
+```
+
+The [figure script](code/04_render_figure1.R) exposes colors, labels, layout and export dimensions. The earlier component plots can be regenerated with `Rscript 06_manuscript/code/02_render_manuscript_panels.R`. Supporting figures live in `result/figure/supplementary/`.
 **Tables and verification.** The main tables link to their owning step or the frozen Results 1 release. Supplementary and audit files live below `result/table/`. Send the cited tables, figure panels and manuscript claims to [07 QC](../07_quality_control/README.md) with their source and generation commands.
 
 ## Supporting descriptive analysis

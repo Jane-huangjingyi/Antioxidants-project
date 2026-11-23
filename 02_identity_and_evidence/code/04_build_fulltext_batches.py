@@ -81,12 +81,16 @@ def main():
             route,digest,tables,hits = inspect_xml(path,item["doi"],pmcid)
         review = completed.get(item["doi"], {})
         if review:
-            assert review["pmcid"] == pmcid and digest
             assert review["human_review_status"] == "NOT_REVIEWED"
-            item["review_status"] = "CACHED_XML_SCOPE_RECORDED"
+            assert review["pmcid"] == pmcid
+            if digest:
+                item["review_status"] = "CACHED_XML_SCOPE_RECORDED"
+            else:
+                assert review.get("source_url", "").startswith("https://")
+                item["review_status"] = "PUBLIC_FULLTEXT_SCOPE_RECORDED"
         work.append(dict(**item,PMCID=pmcid,access_route=route,local_xml_sha256=digest,
                          jats_table_count=tables,orac_and_trolox_table_leads=hits,
-                         fulltext_scope=review.get("scope",""),
+                         fulltext_scope=review.get("scope",""),reviewed_fulltext_url=review.get("source_url",""),
                          quantitative_disposition=review.get("quantitative_disposition",""),
                          final_eligibility="PENDING"))
     order = {name:index for index,name in enumerate(("XML_TABLE_PRIORITY","XML_TEXT_PRIORITY",
