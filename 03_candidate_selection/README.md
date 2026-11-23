@@ -8,6 +8,12 @@ Start with the [latest original-source extraction and rank diagnostics](11_orac_
 
 ## Reviewed evidence updates
 
+The [compound evidence inclusion table](result/table/05_compound_evidence_inclusion.csv) lists all 193 profiles. Name-link counts describe machine-matched records, and the same report may be linked to several compounds. A logged scope records source work associated with a matched report. It does not establish that the report measured that compound. Model observations and unique DOI counts use the actual conditional fit. Historically confirmed independent H-ORAC studies are reported separately because they refer to a different evidence set.
+
+The [rank comparison table](result/table/06_round_rank_comparison.csv) uses commit `e4c300c` as the first-round baseline. The follow-up scope added two source reviews. One supplied [eight pure-standard observations](../02_identity_and_evidence/inputs/provenance/ORAC_Control_Observations_2026-11-23.csv) held for calibration and error-definition checks. The other supported [food occurrence and matrix-level activity](../02_identity_and_evidence/inputs/provenance/Fulltext_Scope_Review.csv). No new observations cleared admission in this checkpoint. Updated ranks and rank differences are blank until a new fit is available.
+
+Run `python 03_candidate_selection/code/05_build_evidence_round_tables.py` from the repository root. The script uses the local queue produced by `02_identity_and_evidence/code/04_build_fulltext_batches.py` for compound-level scope counts. Those two columns are left blank when the queue is unavailable. After reviewing and fitting an updated evidence set, rebuild the Figure 1 candidate rank table, commit that snapshot and rerun with `--updated-ref <commit>`. Positive rank changes indicate movement to a lower position. Interpret changes alongside the number of ranked compounds and source-deletion status in each round.
+
 Copy the [intake template](../02_identity_and_evidence/inputs/templates/evidence_update_intake.csv) into a working directory. Give each original measurement a stable ID, DOI, first-public date, source locator, material, unit, endpoint and protocol. Record the six scientific eligibility decisions. The comparison tool only accepts rows marked `APPROVED_FOR_NEXT_ANALYSIS` with all six gates passed. Connected ORAC-FL analysis additionally requires `APPROVED_CONNECTED_FL`, a positive molar estimate with a reviewed conversion basis, and a compound linked to the baseline.
 
 ```sh

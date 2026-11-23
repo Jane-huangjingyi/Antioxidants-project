@@ -7,6 +7,7 @@
 - [Results 1](06_manuscript/result/02_results_working.md)
 - [Candidate rank sensitivity](03_candidate_selection/result/table/03_rank_sensitivity.csv) and [model validation](03_candidate_selection/result/model/02_whole_doi_validation.json) from the expanded conditional analysis
 - [Figure 1 panel order](06_manuscript/03_figure1_panel_order.md) and [component and conditional rankings](03_candidate_selection/result/table/04_figure1_candidate_ranks.csv)
+- [Compound evidence inclusion](03_candidate_selection/result/table/05_compound_evidence_inclusion.csv) and [first-round versus updated ranking](03_candidate_selection/result/table/06_round_rank_comparison.csv). The first-round fit is available. Updated rank fields await admissible new observations and a refit.
 
 - Figure 1 | [PNG](06_manuscript/result/figure/figure1_evidence_screening_and_ranking.png) | [Editable SVG](06_manuscript/result/figure/figure1_evidence_screening_and_ranking.svg)
 
