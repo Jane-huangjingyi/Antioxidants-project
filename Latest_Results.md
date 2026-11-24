@@ -10,6 +10,7 @@
 - [Compound evidence inclusion](03_candidate_selection/result/table/05_compound_evidence_inclusion.csv) and [first-round versus updated ranking](03_candidate_selection/result/table/06_round_rank_comparison.csv). The first-round fit is available. Updated rank fields await admissible new observations and a refit.
 
 - Figure 1 | [PNG](06_manuscript/result/figure/figure1_evidence_screening_and_ranking.png) | [Editable SVG](06_manuscript/result/figure/figure1_evidence_screening_and_ranking.svg)
+- Screening workflow (standalone view of Figure 1a) | [PNG](06_manuscript/result/figure/figure1a_screening_workflow.png) | [Editable SVG](06_manuscript/result/figure/figure1a_screening_workflow.svg)
 
 ## Supporting component previews
 

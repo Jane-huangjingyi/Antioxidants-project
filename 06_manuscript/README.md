@@ -11,6 +11,8 @@ python 06_manuscript/code/05_build_part1_manuscript.py
 ```
 
 The [figure script](code/04_render_figure1.R) exposes colors, labels, layout and export dimensions. The earlier component plots can be regenerated with `Rscript 06_manuscript/code/02_render_manuscript_panels.R`. Supporting figures live in `result/figure/supplementary/`.
+
+The [screening workflow](result/figure/figure1a_screening_workflow.png) is a standalone view of Figure 1a. It combines example terms from the assay, compound-class and named-compound search routes with the current review counts and first-round model. See the [database search syntax](../02_identity_and_evidence/05_multidatabase_retrieval/Stage2_Manual_Export_Handoff.md) and [synonym search log](../02_identity_and_evidence/05_multidatabase_retrieval/PubMed_CID_Alias_Query_Status.csv) for query details. Run `Rscript 06_manuscript/code/06_render_screening_workflow.R` from the repository root with jsonlite and svglite to reproduce the 300 dpi PNG and [editable SVG](result/figure/figure1a_screening_workflow.svg). The R script contains the text, palette, icons and layout settings.
 **Tables and verification.** The main tables link to their owning step or the frozen Results 1 release. Supplementary and audit files live below `result/table/`. Send the cited tables, figure panels and manuscript claims to [07 QC](../07_quality_control/README.md) with their source and generation commands.
 
 ## Supporting descriptive analysis
