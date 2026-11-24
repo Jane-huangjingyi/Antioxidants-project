@@ -24,6 +24,8 @@ The [R script](06_manuscript/code/02_render_manuscript_panels.R) exposes colors,
 
 ## Evidence status
 
+The [targeted evidence update](03_candidate_selection/12_evidence_expansion/README.md) records 88 of 567 priority reports with a logged source-review scope and 479 pending. The [conditional four-phenolic-acid trial](03_candidate_selection/12_evidence_expansion/Trial_Phenolic_Acid_Rank_Comparison.csv) tests one additional report using its table's stated unit. The Part 1 manuscript and primary ranking preserve the first-round checkpoint.
+
 - [Candidate coverage](02_identity_and_evidence/result/table/01_candidate_report_coverage.csv)
 - [Quantitative DOI crosswalk](02_identity_and_evidence/result/table/03_quantitative_report_crosswalk.csv)
 - [Full-text batches](02_identity_and_evidence/result/table/audit/Fulltext_Batch_Summary.json)

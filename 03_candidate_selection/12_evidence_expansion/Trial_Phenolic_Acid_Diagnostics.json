@@ -1,0 +1,22 @@
+{
+  "baseline_commit": "e4c300c4220a8c671d899149ae079336dabfbebc",
+  "trial_observations": 129,
+  "trial_dois": 15,
+  "compared_compounds": 51,
+  "added_observations": 4,
+  "baseline_holdout": {
+    "scored": 105,
+    "rmse": 0.7352494753065049,
+    "matched_baseline": 0.7755407443845129
+  },
+  "trial_holdout": {
+    "scored": 109,
+    "rmse": 0.763539282768869,
+    "matched_baseline": 0.7830619094436004
+  },
+  "matched_holdout": {
+    "rows": 105,
+    "first": 0.7352494753065049,
+    "trial": 0.7283002237167996
+  }
+}

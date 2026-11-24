@@ -1,0 +1,4 @@
+doi,candidate_id,reported_material,source_locator,raw_mean,raw_error,raw_unit,error_definition,reported_repeats,independent_n,model_disposition
+10.1016/j.enzmictec.2022.110111,AFF-0013,Fisetin,Section 3.5 Table 4 Fisetin ORAC,12.17,0.07,µM TE/µM sample,SD,at least 3,,EXTERNAL_DIAGNOSTIC_ONLY_SINGLE_SHARED_COMPOUND
+10.1177/1934578x1801301119,AFF-0013,Fisetin,Figure 3a and accompanying results,53030.10,1119.60,µmol TE/g DW,SD,3,,HOLD_ORAC_TEMPERATURE_AND_CALIBRATION
+10.3390/antiox14040479,AFF-0084,Rosmarinic acid,Section 2.2.1 Equation 1 and Table 1 FL,4.31,0.28,AUC ratio to Trolox,UNRESOLVED_FOR_ROW,at least 3 assays,,HOLD_MOLAR_CONCENTRATION_BASIS

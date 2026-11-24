@@ -1,0 +1,2 @@
+baseline_commit,candidate_id,doi,source_locator,observed_mol_te_per_mol,reported_sd,predicted_mol_te_per_mol,observed_over_predicted,log_observed_minus_log_predicted,disposition
+e4c300c4220a8c671d899149ae079336dabfbebc,AFF-0013,10.1016/j.enzmictec.2022.110111,Section 3.5 Table 4 Fisetin ORAC,12.17,0.07,5.972784264745449,2.037575686741913,0.7117607123101495,EXTERNAL_DIAGNOSTIC_ONLY_SINGLE_SHARED_COMPOUND

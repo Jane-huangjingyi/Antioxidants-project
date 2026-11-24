@@ -54,8 +54,23 @@ def main():
     for cid, doi, *_ in observations:
         observed_dois[cid].add(doi)
     held = defaultdict(list)
-    for r in read(IDENTITY / "inputs/provenance/ORAC_Control_Observations_2026-11-23.csv"):
-        held[r["candidate_id"]].append(r)
+    diagnostics = defaultdict(list)
+    provenance = IDENTITY / "inputs/provenance"
+    conditional_trial = defaultdict(list)
+    for row in read(provenance / "ORAC_Four_Phenolic_Acids_2025.csv"):
+        assert row["model_disposition"] == "CONDITIONAL_TRIAL_TABLE_UNIT"
+        assert row["candidate_id"] in profiles and row["doi"] not in observed_dois[row["candidate_id"]]
+        conditional_trial[row["candidate_id"]].append(row["doi"])
+    for name in ("ORAC_Control_Observations_2026-11-23.csv",
+                 "ORAC_Single_Compound_Observations_2026-11-23.csv",
+                 "ORAC_Targeted_Observations_2026-11-23.csv"):
+        for row in read(provenance / name):
+            assert row["doi"] not in observed_dois[row["candidate_id"]]
+            if row["model_disposition"].startswith("HOLD_"):
+                held[row["candidate_id"]].append(row)
+            else:
+                assert row["model_disposition"] == "EXTERNAL_DIAGNOSTIC_ONLY_SINGLE_SHARED_COMPOUND"
+                diagnostics[row["candidate_id"]].append(row["doi"])
     scoped, pending = defaultdict(set), defaultdict(set)
     queue_available = args.queue.is_file()
     if queue_available:
@@ -87,9 +102,12 @@ def main():
             new_extracted_observations_held=len(held_rows),
             new_held_dois=";".join(sorted({h["doi"] for h in held_rows})),
             new_held_dispositions=";".join(sorted({h["model_disposition"] for h in held_rows})),
+            external_diagnostic_dois=";".join(sorted(diagnostics[cid])),
+            conditional_trial_dois=";".join(sorted(conditional_trial[cid])),
             conditional_rank=r["conditional_rank"], rank_stability_status=r["validation_review_status"],
         ))
     assert counts.keys() <= profiles.keys() and held.keys() <= profiles.keys()
+    assert diagnostics.keys() <= profiles.keys()
 
     update_sha, update = snapshot(args.updated_ref) if args.updated_ref else ("", {})
     if not args.updated_ref:

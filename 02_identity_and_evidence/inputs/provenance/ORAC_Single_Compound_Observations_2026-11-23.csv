@@ -1,0 +1,7 @@
+doi,candidate_id,reported_material,source_locator,raw_mean,raw_error,raw_unit,error_definition,reported_repeats,independent_n,model_disposition
+10.1021/acsomega.0c05818,AFF-0060,gallic acid,Table 5 gallic acid,3.59,,µM TE/g,NOT_REPORTED_FOR_TABLE_5,,,HOLD_CONCENTRATION_TO_AMOUNT_BASIS
+10.1021/acsomega.0c05818,AFF-0005,EG-Cat,Table 5 EG-Cat,26.86,,µM TE/g,NOT_REPORTED_FOR_TABLE_5,,,HOLD_CONCENTRATION_TO_AMOUNT_BASIS
+10.1021/acsomega.0c05818,AFF-0002,E-Cat,Table 5 E-Cat,42.20,,µM TE/g,NOT_REPORTED_FOR_TABLE_5,,,HOLD_CONCENTRATION_TO_AMOUNT_BASIS
+10.1021/acsomega.0c05818,AFF-0003,EG-cat-G,Table 5 EG-cat-G,15.27,,µM TE/g,NOT_REPORTED_FOR_TABLE_5,,,HOLD_CONCENTRATION_TO_AMOUNT_BASIS
+10.1021/acsomega.0c05818,AFF-0004,E-cat-G,Table 5 E-cat-G,16.83,,µM TE/g,NOT_REPORTED_FOR_TABLE_5,,,HOLD_CONCENTRATION_TO_AMOUNT_BASIS
+10.1021/acsomega.0c05818,AFF-0157,caffeine,Table 5 caffeine,0.09,,µM TE/g,NOT_REPORTED_FOR_TABLE_5,,,HOLD_CONCENTRATION_TO_AMOUNT_BASIS
