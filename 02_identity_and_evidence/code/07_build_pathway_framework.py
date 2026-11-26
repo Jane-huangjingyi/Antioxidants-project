@@ -136,6 +136,35 @@ for m in matrix:
         m["cell_state"] = "NOT_REPORTED_IN_CHECKED_SET"
         m["mapping_basis"] = "systematic expansion search; no qualifying primary study found"
 
+# Apply full-text verification verdicts (upgrade / reject / reassign / formulation-context).
+ver_path = AUDIT / "Pathway_Fulltext_Verification_2026-11-26.csv"
+if ver_path.exists():
+    mdict = {(m["compound"], m["pathway_code"]): m for m in matrix}
+    def _upgrade(cell, grade, doi, src, title, reason):
+        cell["cell_state"] = grade; cell["evidence_grade"] = grade
+        cell["solid_included"] = "YES" if grade in ("FUNCTIONAL", "BODY_READOUT") else "NO"
+        cell["dois"] = doi; cell["observations"] = src; cell["source_locators"] = title
+        cell["mapping_basis"] = "full-text verified 2026-11-26: " + reason; cell["integrity_flag"] = ""
+    def _reject(cell, reason):
+        cell["cell_state"] = "NOT_REPORTED_IN_CHECKED_SET"; cell["evidence_grade"] = ""
+        cell["solid_included"] = "NO"; cell["dois"] = ""; cell["observations"] = ""
+        cell["source_locators"] = ""; cell["mapping_basis"] = "full-text verified 2026-11-26 REJECTED: " + reason
+    for v in csv.DictReader(ver_path.open(encoding="utf-8-sig", newline="")):
+        comp = v["compound"]; sp = v["searched_pathway"]; act = v["action"]
+        src = "PMID:" + v["pmid"]; doi = v["doi"]; title = v["source_title"]; reason = v["reason"]
+        key = (comp, sp)
+        if act == "UPGRADE" and key in mdict:
+            _upgrade(mdict[key], v["grade"], doi, src, title, reason)
+        elif act == "REJECT" and key in mdict:
+            _reject(mdict[key], reason)
+        elif act == "REASSIGN":
+            if key in mdict: _reject(mdict[key], reason)
+            rk = (comp, v["reassign_to"])
+            if rk in mdict: _upgrade(mdict[rk], v["grade"], doi, src, title, reason)
+        elif act == "FORMULATION_CONTEXT" and key in mdict:
+            mdict[key]["integrity_flag"] = "FORMULATION_CONTEXT"
+            mdict[key]["mapping_basis"] = "full-text reviewed 2026-11-26: formulation context; abstract pending review. " + reason
+
 # Rebuild expansion register from the final matrix (remaining follow-up work).
 register = []
 for m in matrix:
