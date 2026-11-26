@@ -114,11 +114,42 @@ for comp in comp_order:
                                cell_state="PENDING_EXPANSION", evidence_grade="",
                                solid_included="NO", integrity_flag="", n_observations=0,
                                observations="", dois="", source_locators="", mapping_basis=""))
-            register.append(dict(candidate_id=cid[comp], compound=comp, pathway_code=code,
-                                 pathway_name=UNAME[code], pathway_class=UCLASS[code],
-                                 status="PENDING_EXPANSION",
-                                 priority="HIGH" if UCLASS[code] == "CORE_ANTIOXIDANT" else "MEDIUM",
-                                 note="Universe pathway not yet systematically checked for this compound; fill in expansion batches"))
+
+# Merge systematic expansion search results into pending cells (abstract-level candidates).
+exp_path = AUDIT / "Pathway_Expansion_Search_Results.csv"
+exp = {}
+if exp_path.exists():
+    for r in csv.DictReader(exp_path.open(encoding="utf-8-sig", newline="")):
+        exp[(r["compound"], r["pathway_code"])] = r
+for m in matrix:
+    if m["cell_state"] != "PENDING_EXPANSION":
+        continue
+    e = exp.get((m["compound"], m["pathway_code"]))
+    if not e:
+        continue
+    if e["status"] == "ABSTRACT_CANDIDATE":
+        m["cell_state"] = "ABSTRACT_ONLY"; m["evidence_grade"] = "ABSTRACT_ONLY"
+        m["dois"] = e["doi"]; m["observations"] = "PMID:" + e["pmid"]
+        m["source_locators"] = e["title"]
+        m["mapping_basis"] = "systematic expansion search; abstract-level candidate; NOT_REVIEWED; needs full-text + identity/context verification"
+    else:
+        m["cell_state"] = "NOT_REPORTED_IN_CHECKED_SET"
+        m["mapping_basis"] = "systematic expansion search; no qualifying primary study found"
+
+# Rebuild expansion register from the final matrix (remaining follow-up work).
+register = []
+for m in matrix:
+    if m["cell_state"] == "ABSTRACT_ONLY":
+        register.append(dict(candidate_id=m["candidate_id"], compound=m["compound"], pathway_code=m["pathway_code"],
+                             pathway_name=m["pathway_name"], pathway_class=m["pathway_class"],
+                             status="ABSTRACT_NEEDS_FULLTEXT",
+                             priority="HIGH" if m["pathway_class"] == "CORE_ANTIOXIDANT" else "MEDIUM",
+                             note="Abstract-level candidate; verify full text, compound identity, model and context (mixture/formulation/computational)"))
+    elif m["cell_state"] == "NOT_REPORTED_IN_CHECKED_SET":
+        register.append(dict(candidate_id=m["candidate_id"], compound=m["compound"], pathway_code=m["pathway_code"],
+                             pathway_name=m["pathway_name"], pathway_class=m["pathway_class"],
+                             status="NOT_REPORTED_OPTIONAL_DEEPER", priority="LOW",
+                             note="Systematic search found no qualifying primary study; optional deeper search"))
 
 with (TBL / "07_pathway_framework_matrix.csv").open("w", encoding="utf-8", newline="") as f:
     w = csv.DictWriter(f, fieldnames=list(matrix[0]), lineterminator="\n"); w.writeheader(); w.writerows(matrix)

@@ -27,14 +27,20 @@ U <- univ$pathway_code
 ulab <- setNames(paste0(univ$pathway_code, "  ", univ$pathway_name), univ$pathway_code)
 uclass <- setNames(univ$pathway_class, univ$pathway_code)
 
-states <- c("FUNCTIONAL","BODY_READOUT","ABSTRACT_ONLY","CELL_ONLY","PENDING_EXPANSION")
+states <- c("FUNCTIONAL","BODY_READOUT","ABSTRACT_ONLY","CELL_ONLY","NOT_REPORTED_IN_CHECKED_SET","PENDING_EXPANSION")
 cols <- c(FUNCTIONAL="#08519c", BODY_READOUT="#6baed6", ABSTRACT_ONLY="#fcae91",
-          CELL_ONLY="#c994c7", PENDING_EXPANSION="#efefef")
+          CELL_ONLY="#c994c7", NOT_REPORTED_IN_CHECKED_SET="#ffffff", PENDING_EXPANSION="#efefef")
 labs <- c(FUNCTIONAL="Functional participation (loss-of-function)",
           BODY_READOUT="Body readout (in vivo / ex vivo / human)",
-          ABSTRACT_ONLY="Abstract-only / unresolved",
+          ABSTRACT_ONLY="Abstract-level candidate (expansion; needs full-text review)",
           CELL_ONLY="Cell-only evidence (not in vivo)",
-          PENDING_EXPANSION="Pending expansion (not yet systematically checked)")
+          NOT_REPORTED_IN_CHECKED_SET="Searched: no qualifying primary study",
+          PENDING_EXPANSION="Pending expansion (not yet checked)")
+n_solid <- sum(mat$cell_state %in% c("FUNCTIONAL","BODY_READOUT"))
+n_abs <- sum(mat$cell_state=="ABSTRACT_ONLY")
+n_cell <- sum(mat$cell_state=="CELL_ONLY")
+n_nr <- sum(mat$cell_state=="NOT_REPORTED_IN_CHECKED_SET")
+n_pend <- sum(mat$cell_state=="PENDING_EXPANSION")
 
 mat$compound <- factor(mat$compound, levels = comp_order)
 mat$xlab <- factor(unname(short[as.character(mat$compound)]), levels = comp_lab)
@@ -52,7 +58,7 @@ p_mat <- ggplot(mat, aes(x=xlab, y=plab)) +
   labs(title="figure1_C  Top-down antioxidant pathway framework (provisional)",
        subtitle="Curated universe U1-U14 (Reactome/KEGG-anchored) x 12 retained candidates; cells graded from checked mechanism evidence",
        x=NULL, y=NULL, fill="Cell state",
-       caption="122 of 168 cells are PENDING_EXPANSION (to be filled in batches). Absence of evidence is not evidence of non-participation. All observations NOT_REVIEWED; hesperetin Fig. 8a-dependent claims excluded. Source: 07_pathway_framework_matrix.csv.") +
+       caption=paste0(n_solid," solid cells; ",n_abs," abstract-level candidates; ",n_cell," cell-only; ",n_nr," searched-no-report; ",n_pend," pending. Abstract candidates are NOT_REVIEWED and need full-text/identity/context verification (mixture, formulation or computational studies flagged at review). Absence of evidence is not evidence of non-participation. Source: 07_pathway_framework_matrix.csv.")) +
   theme_minimal(base_size=11, base_family="sans") +
   theme(axis.text.x=element_text(angle=45,hjust=0,vjust=0.5,size=9),
         axis.text.y=element_text(size=8), panel.grid=element_blank(),
@@ -60,24 +66,30 @@ p_mat <- ggplot(mat, aes(x=xlab, y=plab)) +
         legend.box="vertical", plot.caption=element_text(size=7.5,color="grey30"),
         plot.title=element_text(face="bold"))
 
-# right-margin: solid compounds per pathway (answers "how many share each pathway")
-cnt <- aggregate(solid_included ~ pathway_code, data=mat, FUN=function(x) sum(x=="YES"))
-names(cnt)[2] <- "n"
+# right-margin: compounds with any evidence (incl. abstract) vs solid, per pathway
+any_ev <- mat$cell_state %in% c("FUNCTIONAL","BODY_READOUT","ABSTRACT_ONLY","CELL_ONLY")
+cnt <- data.frame(pathway_code=rep(U,2),
+                  scope=rep(c("Any evidence (incl. abstract)","Solid only"), each=length(U)),
+                  n=c(sapply(U, function(p) sum(any_ev & mat$pathway_code==p)),
+                      sapply(U, function(p) sum(mat$solid_included=="YES" & mat$pathway_code==p))))
 cnt$plab <- factor(ulab[cnt$pathway_code], levels=rev(ulab[U]))
 cnt$cl <- ifelse(uclass[cnt$pathway_code]=="CORE_ANTIOXIDANT","Core antioxidant / redox defense","Broader redox-linked signaling")
 cnt$cl <- factor(cnt$cl, levels=c("Core antioxidant / redox defense","Broader redox-linked signaling"))
-p_cnt <- ggplot(cnt, aes(x=n, y=plab)) +
-  geom_col(fill="#08519c", width=0.6, orientation="y") +
-  geom_text(aes(label=n), hjust=-0.3, size=3) +
+cnt$scope <- factor(cnt$scope, levels=c("Any evidence (incl. abstract)","Solid only"))
+p_cnt <- ggplot(cnt, aes(x=n, y=plab, fill=scope)) +
+  geom_col(position=position_dodge(width=0.7), width=0.62, orientation="y") +
+  geom_text(aes(label=n), position=position_dodge(width=0.7), hjust=-0.3, size=2.5) +
   facet_wrap(~cl, scales="free_y", ncol=1) +
-  scale_x_continuous(expand=expansion(mult=c(0,0.25)), breaks=0:12) +
-  labs(x="Solid compounds", y=NULL, title="Shared-pathway counts") +
+  scale_fill_manual(values=c("Any evidence (incl. abstract)"="#fcae91","Solid only"="#08519c")) +
+  scale_x_continuous(expand=expansion(mult=c(0,0.35)), breaks=0:12) +
+  labs(x="Compounds", y=NULL, title="Coverage per pathway", fill=NULL) +
   theme_minimal(base_size=10, base_family="sans") +
   theme(axis.text.y=element_blank(), panel.grid.major.y=element_blank(),
-        strip.text=element_text(face="bold",size=9), plot.title=element_text(face="bold",size=10))
+        strip.text=element_text(face="bold",size=9), plot.title=element_text(face="bold",size=10),
+        legend.position="bottom")
 
 p_C <- (p_mat | p_cnt) + plot_layout(widths=c(3.2,1)) +
-  plot_annotation(caption="Provisional framework; pending-expansion cells tracked in Pathway_Expansion_Register.csv.",
+  plot_annotation(caption="Provisional framework; abstract-level candidates (need full-text review) and searched-no-report cells tracked in Pathway_Expansion_Register.csv.",
                   theme=theme(plot.caption=element_text(size=7.5,color="grey30")))
 
 save_pair <- function(plot, path, w, h) {
