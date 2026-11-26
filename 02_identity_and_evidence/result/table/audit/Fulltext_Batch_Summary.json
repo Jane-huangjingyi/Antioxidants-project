@@ -1,24 +1,24 @@
 {
   "priority_reports": 567,
   "all_access_routes": {
-    "PMC_XML_ACCESS_PENDING": 284,
+    "PMC_XML_ACCESS_PENDING": 272,
     "PUBLISHER_OR_REPOSITORY_LOOKUP": 207,
     "SOURCE_ID_CONFLICT": 1,
-    "XML_TABLE_PRIORITY": 24,
-    "XML_TEXT_PRIORITY": 51
+    "XML_TABLE_PRIORITY": 28,
+    "XML_TEXT_PRIORITY": 59
   },
   "pending_routes": {
-    "PMC_XML_ACCESS_PENDING": 274,
+    "PMC_XML_ACCESS_PENDING": 262,
     "PUBLISHER_OR_REPOSITORY_LOOKUP": 204,
     "SOURCE_ID_CONFLICT": 1
   },
   "batch_size": 25,
   "number_of_pending_batches": 21,
-  "source_identity_checked_local_xml": 75,
+  "source_identity_checked_local_xml": 87,
   "review_status": {
-    "CACHED_XML_SCOPE_RECORDED": 10,
+    "CACHED_XML_SCOPE_RECORDED": 22,
     "EXISTING_ACCESS_OR_SCOPE_QUEUE": 26,
-    "PENDING_NEW_SCOPE": 453,
+    "PENDING_NEW_SCOPE": 441,
     "PUBLIC_FULLTEXT_SCOPE_RECORDED": 4,
     "REUSE_RECORDED_SCOPE": 69,
     "SCOPED_REVIEW_THIS_BATCH": 5

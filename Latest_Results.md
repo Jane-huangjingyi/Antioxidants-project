@@ -29,7 +29,9 @@ The [R script](06_manuscript/code/02_render_manuscript_panels.R) exposes colors,
 
 - [In vivo mechanism evidence for the 12 retained candidates](02_identity_and_evidence/result/table/04_candidate_in_vivo_mechanism_evidence.md) and [DOI-linked evidence table](02_identity_and_evidence/result/table/04_candidate_in_vivo_mechanism_evidence.csv).
 
-The [targeted evidence update](03_candidate_selection/12_evidence_expansion/README.md) records 88 of 567 priority reports with a logged source-review scope and 479 pending. The [conditional four-phenolic-acid trial](03_candidate_selection/12_evidence_expansion/Trial_Phenolic_Acid_Rank_Comparison.csv) tests one additional report using its table's stated unit. The Part 1 manuscript and primary ranking preserve the first-round checkpoint.
+The [targeted evidence update](03_candidate_selection/12_evidence_expansion/README.md) records 100 of 567 priority reports with a logged source-review scope and 467 pending. The [conditional four-phenolic-acid trial](03_candidate_selection/12_evidence_expansion/Trial_Phenolic_Acid_Rank_Comparison.csv) tests one additional report using its table's stated unit. The Part 1 manuscript and primary ranking preserve the first-round checkpoint.
+
+- The [2026-11-26 full-text tranche](02_identity_and_evidence/inputs/provenance/ORAC_Tranche1_Observations_2026-11-26.csv) logged 12 further scope records; its seven pure-compound rows remain held and no model input was released. The [P0 mechanism adjudication worksheet](02_identity_and_evidence/result/table/audit/P0_Mechanism_Adjudication_Worksheet_2026-11-26.md) prepares the quercetin, chlorogenic-acid and hesperetin review verdicts.
 
 - [Candidate coverage](02_identity_and_evidence/result/table/01_candidate_report_coverage.csv)
 - [Quantitative DOI crosswalk](02_identity_and_evidence/result/table/03_quantitative_report_crosswalk.csv)

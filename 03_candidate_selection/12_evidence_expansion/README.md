@@ -1,6 +1,6 @@
 # Targeted ORAC-FL evidence update
 
-The first-round fit remains anchored to commit `e4c300c`. At the current queue checkpoint, 88 of 567 priority reports have a logged source-review scope, and 479 are pending. The targeted searches below also recovered studies outside that queue. Sixteen numerical observations are held, one supports an external diagnostic, and four entered an isolated conditional trial.
+The first-round fit remains anchored to commit `e4c300c`. At the current queue checkpoint, 100 of 567 priority reports have a logged source-review scope, and 467 are pending; the 2026-11-26 tranche added 12 records whose held numerical rows are in [ORAC_Tranche1_Observations_2026-11-26.csv](../../02_identity_and_evidence/inputs/provenance/ORAC_Tranche1_Observations_2026-11-26.csv). The targeted searches below also recovered studies outside that queue. Sixteen numerical observations are held, one supports an external diagnostic, and four entered an isolated conditional trial.
 
 | Source and locator | Finding and disposition |
 |---|---|
