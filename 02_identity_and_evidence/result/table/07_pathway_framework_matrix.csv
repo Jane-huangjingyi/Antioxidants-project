@@ -27,12 +27,12 @@ AFF-0001,Catechin,U11,MAPK stress signaling (TAK1/p38/JNK),BROADER_REDOX_LINKED,
 AFF-0001,Catechin,U12,HIF-1 hypoxia response,BROADER_REDOX_LINKED,PENDING_EXPANSION,,NO,,0,,,,
 AFF-0001,Catechin,U13,PGC-1alpha / transcriptional activation of mitochondrial biogenesis,BROADER_REDOX_LINKED,PENDING_EXPANSION,,NO,,0,,,,
 AFF-0001,Catechin,U14,CFTR-dependent chloride/GSH transport disposition,BROADER_REDOX_LINKED,PENDING_EXPANSION,,NO,,0,,,,
-AFF-0031,Hesperetin,U1,KEAP1-NRF2/ARE transcriptional antioxidant response,CORE_ANTIOXIDANT,ABSTRACT_ONLY,ABSTRACT_ONLY,NO,FIG8A_CONCERN,1,ME12-05,10.1007/s12035-019-1512-7,ME12-05:Abstract,NRF2/KEAP1/ARE node
+AFF-0031,Hesperetin,U1,KEAP1-NRF2/ARE transcriptional antioxidant response,CORE_ANTIOXIDANT,BODY_READOUT,BODY_READOUT,NO,FIG8A_CONCERN,1,ME12-05,10.1007/s12035-019-1512-7,ME12-05:Fig. 2 (Nrf2/HO-1 WB+IF); Methods Mice Groups and Treatments; Fig. 8a (behavioral escape-latency bar graph),NRF2/KEAP1/ARE node
 AFF-0031,Hesperetin,U2,Detoxification of reactive oxygen species (SOD/CAT/GPx/PRDX/TXN),CORE_ANTIOXIDANT,PENDING_EXPANSION,,NO,,0,,,,
 AFF-0031,Hesperetin,U3,Glutathione synthesis and recycling,CORE_ANTIOXIDANT,BODY_READOUT,BODY_READOUT,YES,,1,ME12-18,10.1038/s41598-018-27614-8,ME12-18:Animal experiments; Fig. 5h–j; separate Fig. 4a–e,GSH/GSSG content or GCL synthesis
-AFF-0031,Hesperetin,U4,Cellular response to oxidative stress,CORE_ANTIOXIDANT,ABSTRACT_ONLY,ABSTRACT_ONLY,NO,FIG8A_CONCERN,1,ME12-05,10.1007/s12035-019-1512-7,ME12-05:Abstract,ROS generation/scavenging or oxidative-stress readout
+AFF-0031,Hesperetin,U4,Cellular response to oxidative stress,CORE_ANTIOXIDANT,BODY_READOUT,BODY_READOUT,NO,FIG8A_CONCERN,1,ME12-05,10.1007/s12035-019-1512-7,ME12-05:Fig. 2 (Nrf2/HO-1 WB+IF); Methods Mice Groups and Treatments; Fig. 8a (behavioral escape-latency bar graph),ROS generation/scavenging or oxidative-stress readout
 AFF-0031,Hesperetin,U5,Thioredoxin/peroxiredoxin system,CORE_ANTIOXIDANT,PENDING_EXPANSION,,NO,,0,,,,
-AFF-0031,Hesperetin,U6,Ferroptosis / lipid peroxidation defense,CORE_ANTIOXIDANT,BODY_READOUT,BODY_READOUT,NO,FIG8A_CONCERN,2,ME12-05;ME12-19,10.1007/s12035-019-1512-7;10.1038/s41598-026-51280-w,ME12-05:Abstract;ME12-19:Animal Methods; Fig. 3J–N; separate cell Fig. 2,ferroptosis (GPX4/ACSL4) or lipid-peroxidation marker
+AFF-0031,Hesperetin,U6,Ferroptosis / lipid peroxidation defense,CORE_ANTIOXIDANT,BODY_READOUT,BODY_READOUT,NO,FIG8A_CONCERN,2,ME12-05;ME12-19,10.1007/s12035-019-1512-7;10.1038/s41598-026-51280-w,ME12-05:Fig. 2 (Nrf2/HO-1 WB+IF); Methods Mice Groups and Treatments; Fig. 8a (behavioral escape-latency bar graph);ME12-19:Animal Methods; Fig. 3J–N; separate cell Fig. 2,ferroptosis (GPX4/ACSL4) or lipid-peroxidation marker
 AFF-0031,Hesperetin,U7,Ascorbate and aldarate metabolism (vitamin C recycling),CORE_ANTIOXIDANT,PENDING_EXPANSION,,NO,,0,,,,
 AFF-0031,Hesperetin,U8,NADPH oxidase / ROS generation (vascular),CORE_ANTIOXIDANT,PENDING_EXPANSION,,NO,,0,,,,
 AFF-0031,Hesperetin,U9,NF-kB / TLR4 inflammatory signaling,BROADER_REDOX_LINKED,PENDING_EXPANSION,,NO,,0,,,,
