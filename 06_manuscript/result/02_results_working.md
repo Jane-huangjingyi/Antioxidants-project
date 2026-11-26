@@ -2,7 +2,7 @@
 
 ## Evidence discovery and screening coverage
 
-The available exports yielded 76,383 provisional report records after identifier reconciliation (Fig. 1a). Automated screening used titles and abstracts for 65,424 records and titles alone for 10,959. It linked 185 of 193 compound profiles to at least one report. The priority ORAC queue contained 567 records. At the analysis checkpoint, 86 had a documented source-review scope and 481 remained pending. Targeted extraction also used original reports from earlier source-recovery work. See the [candidate evidence coverage table](../../02_identity_and_evidence/result/table/01_candidate_report_coverage.csv) and [full-text batch summary](../../02_identity_and_evidence/result/table/audit/Fulltext_Batch_Summary.json).
+The available exports yielded 76,383 provisional report records after identifier reconciliation (Fig. 1a). Automated screening used titles and abstracts for 65,424 records and titles alone for 10,959. It linked 185 of 193 compound profiles to at least one report. The priority ORAC queue contained 567 records. At the analysis checkpoint, 88 had a documented source-review scope and 479 remained pending. Targeted extraction also used original reports from earlier source-recovery work. See the [candidate evidence coverage table](../../02_identity_and_evidence/result/table/01_candidate_report_coverage.csv) and [full-text batch summary](../../02_identity_and_evidence/result/table/audit/Fulltext_Batch_Summary.json).
 
 ## Conditional ORAC-FL ranking
 

@@ -2,7 +2,7 @@
 
 ## A. Search, verification and model
 
-Show the workflow from compound discovery and database exports through title and abstract screening, full-text review, unit harmonization and conditional ORAC-FL fitting. Label each count by its denominator. The current snapshots have 204 discovery records, 193 compound profiles, 76,383 provisional reports, 567 priority ORAC leads and 86 recorded review scopes. In a separate model-input box, show 125 observations from 14 DOI reports and 51 compounds. The model evidence includes prior targeted sources beyond the current full-text queue.
+Show the workflow from compound discovery and database exports through title and abstract screening, full-text review, unit harmonization and conditional ORAC-FL fitting. Label each count by its denominator. The current snapshots have 204 discovery records, 193 compound profiles, 76,383 provisional reports, 567 priority ORAC leads and 88 recorded review scopes. In a separate model-input box, show 125 observations from 14 DOI reports and 51 compounds. The model evidence includes prior targeted sources beyond the current full-text queue.
 
 Summarize the model as log molar Trolox-equivalent capacity with compound and protocol-block effects, block shrinkage, report-balanced weights and a reported relative-SD sensitivity. Show whole-DOI holdout. The matched 81-row comparison and structural Ridge sensitivity belong in the model box or caption. See [Working Methods](01_methods_working.md) and the [working Results](result/02_results_working.md).
 

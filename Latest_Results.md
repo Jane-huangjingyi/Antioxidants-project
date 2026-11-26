@@ -1,5 +1,7 @@
 # Latest results
 
+New to the project? Start with the [project handoff and next actions](README.md#start-here).
+
 ## Manuscript Part 1
 
 - [Part 1 manuscript (Word)](06_manuscript/result/Manuscript_Part1_Nature_Communications.docx)
@@ -24,6 +26,8 @@
 The [R script](06_manuscript/code/02_render_manuscript_panels.R) exposes colors, font, sizes and geometry. The draft exports above are component previews for the single Figure 1 specified in the panel order.
 
 ## Evidence status
+
+- [In vivo mechanism evidence for the 12 retained candidates](02_identity_and_evidence/result/table/04_candidate_in_vivo_mechanism_evidence.md) and [DOI-linked evidence table](02_identity_and_evidence/result/table/04_candidate_in_vivo_mechanism_evidence.csv).
 
 The [targeted evidence update](03_candidate_selection/12_evidence_expansion/README.md) records 88 of 567 priority reports with a logged source-review scope and 479 pending. The [conditional four-phenolic-acid trial](03_candidate_selection/12_evidence_expansion/Trial_Phenolic_Acid_Rank_Comparison.csv) tests one additional report using its table's stated unit. The Part 1 manuscript and primary ranking preserve the first-round checkpoint.
 
