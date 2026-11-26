@@ -7772,7 +7772,7 @@
     },
     {
       "path": "03_candidate_selection/01_activity_model/inputs/source_resolution.json",
-      "sha256": "eab0630dd435c3376969305040cd68840e25613abca5f9ba38bf9abe7b0941e5",
+      "sha256": "60a791b86269ac074ecb593488b798370028d342f1642bdbe45bb280a811fcfe",
       "role": "CURATED_CAPACITY_SOURCE_OR_METHOD_REFERENCE",
       "bundled": true,
       "source_language": "ENGLISH_STRUCTURED_EXTRACTION",
@@ -7788,7 +7788,7 @@
     },
     {
       "path": "03_candidate_selection/01_activity_model/inputs/recovered_capacity_rows.json",
-      "sha256": "466ff4999b16ee6c8b32cd8bc63fffd6ba7d90ae2f908ec04561ae9015ce832a",
+      "sha256": "42e31d517188f9dbb241c9efd37037fba108483c349690633439ea084f8cf20e",
       "role": "CURATED_CAPACITY_SOURCE_OR_METHOD_REFERENCE",
       "bundled": true,
       "source_language": "ENGLISH_STRUCTURED_EXTRACTION",
@@ -7796,7 +7796,7 @@
     },
     {
       "path": "03_candidate_selection/01_activity_model/inputs/source_recovery/access_log.json",
-      "sha256": "48a9d6584f15dc243f1f180849752f7733a03d1986d2f6e2b0adbcf69d4d75d6",
+      "sha256": "708858c55393500e3b4331e8077a0dcee9ecf6485ab697689f6c6c7b37045b8f",
       "role": "CURATED_CAPACITY_SOURCE_OR_METHOD_REFERENCE",
       "bundled": true,
       "source_language": "ENGLISH_STRUCTURED_EXTRACTION",
@@ -7860,7 +7860,7 @@
     },
     {
       "path": "02_identity_and_evidence/inputs/provenance/results1_v1.0/evidence_data_dictionary.csv",
-      "sha256": "cf6d41a32a7b2d9d71603c2cbfeb9bb520feda25584713c78cf81059e3d113d1",
+      "sha256": "d6fd8ccb5120a246720f0f5f18f9275e3d424737c720539b053018a9bb93a529",
       "role": "FROZEN_REFERENCE_RESULTS1_V1_0",
       "bundled": true,
       "source_language": "ENGLISH",

@@ -53,7 +53,7 @@ def main():
     picture = document.add_paragraph()
     picture.alignment = WD_ALIGN_PARAGRAPH.CENTER
     picture.add_run().add_picture(
-        str(HERE / "result/figure/figure1_evidence_screening_and_ranking.png"), width=Inches(6.5)
+        str(HERE / "result/figure/figure1_composite.png"), height=Inches(8.7)
     )
     add_body(document, sections["Figure legends"])
     document.core_properties.title = title

@@ -1,0 +1,12 @@
+pathway_code,pathway_name,pathway_class,n_compounds_all_recorded,compounds_all_recorded,n_compounds_solid,compounds_solid
+P1,NRF2-KEAP1/ARE antioxidant response,SIGNALING,10,Quercetin; Catechin; Hesperetin; Genistein; Hesperidin; Myricetin; p-Coumaric acid; Chlorogenic acid; Gallic acid; Syringic acid,7,Quercetin; Genistein; Hesperidin; Myricetin; Chlorogenic acid; Gallic acid; Syringic acid
+P2,NF-kB / TLR4 inflammatory signaling,SIGNALING,1,Myricetin,1,Myricetin
+P3,PI3K/AKT signaling,SIGNALING,1,Syringic acid,1,Syringic acid
+P4,MAPK stress signaling,SIGNALING,1,Myricetin,1,Myricetin
+P5,Ferroptosis regulation,SIGNALING,1,Hesperetin,1,Hesperetin
+P6,HIF1A hypoxia response,SIGNALING,1,Hesperetin,1,Hesperetin
+P7,PGC-1alpha mitochondrial biogenesis,SIGNALING,0,,0,
+P8,CFTR-dependent GSH transport/disposition,SIGNALING,1,Glutathione,1,Glutathione
+R1,Glutathione redox (GSH/GSSG/GCL/GPx),REDOX_PROCESS,9,Quercetin; Catechin; Hesperetin; Genistein; Hesperidin; Myricetin; p-Coumaric acid; Syringic acid; Glutathione,9,Quercetin; Catechin; Hesperetin; Genistein; Hesperidin; Myricetin; p-Coumaric acid; Syringic acid; Glutathione
+R2,Lipid peroxidation defense,REDOX_PROCESS,10,Quercetin; Catechin; Hesperetin; Genistein; Hesperidin; Myricetin; Gallic acid; Syringic acid; L-Ascorbic acid; Glutathione,9,Quercetin; Catechin; Genistein; Hesperidin; Myricetin; Gallic acid; Syringic acid; L-Ascorbic acid; Glutathione
+R3,ROS/NO vascular redox balance,REDOX_PROCESS,5,Quercetin; Hesperetin; Genistein; Hesperidin; Chlorogenic acid,4,Quercetin; Genistein; Hesperidin; Chlorogenic acid

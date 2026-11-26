@@ -1,27 +1,33 @@
-# Figure 1. Evidence screening, model and candidate priorities
+# Figure 1. Independent parts and composite
 
-## A. Search, verification and model
+Figure 1 is delivered as **independent part-figures** plus an **assembled composite**. Naming convention: `figure1_<Part>.<slug>.png` + `.svg` (editable vector pair). The current counts are 204 discovery records, 193 compound profiles, 76,383 provisional reports, 567 priority ORAC leads, 100 recorded review scopes and 467 pending; the conditional model uses 125 observations from 14 DOI reports across 51 compounds.
 
-Show the workflow from compound discovery and database exports through title and abstract screening, full-text review, unit harmonization and conditional ORAC-FL fitting. Label each count by its denominator. The current snapshots have 204 discovery records, 193 compound profiles, 76,383 provisional reports, 567 priority ORAC leads and 100 recorded review scopes. In a separate model-input box, show 125 observations from 14 DOI reports and 51 compounds. The model evidence includes prior targeted sources beyond the current full-text queue.
+## figure1_A.flow_chart
 
-Summarize the model as log molar Trolox-equivalent capacity with compound and protocol-block effects, block shrinkage, report-balanced weights and a reported relative-SD sensitivity. Show whole-DOI holdout. The matched 81-row comparison and structural Ridge sensitivity belong in the model box or caption. See [Working Methods](01_methods_working.md) and the [working Results](result/02_results_working.md).
+The detailed screening workflow: compound discovery and database exports → title/abstract screening → full-text review → unit harmonization → conditional ORAC-FL fitting, with example search-term routes (assay, compound-class, named-compound), counts labeled by denominator, and a model-input box. Generator: [06_render_screening_workflow.R](code/06_render_screening_workflow.R). Standalone tall flow (10 × 14.7 in).
 
-## B. Component rankings
+## figure1_B.evidence_screening_and_ranking
 
-Panels B and C show the twelve retained candidates and two illustrative hold cases, ordered by conditional rank. Panel B labels the observed ORAC-FL percentile, typed-SD report fraction and distinct DOI count. The [shared data table](../03_candidate_selection/result/table/04_figure1_candidate_ranks.csv) contains all 193 candidate profiles, including the 51 with fitted conditional ranks.
+Panel b (literature evidence by compound: observed ORAC-FL percentile, typed-SD report fraction, distinct model DOI count) + panel c (conditional rank and stability). Shows the twelve retained candidates and two illustrative hold cases, ordered by conditional rank. Generator: [04_render_figure1.R](code/04_render_figure1.R). Data: [candidate rank table](../03_candidate_selection/result/table/04_figure1_candidate_ranks.csv) (193 profiles, 51 fitted conditional ranks).
 
 | Component | Value and order |
 |---|---|
-| B1 Observed relative ORAC-FL | Within each DOI and protocol block with at least two compounds, calculate the fraction below the candidate plus half the tied peers. Take the median across blocks within each DOI, then across DOIs. Larger values rank higher. The comparison compounds vary by report. |
-| B2 Documented uncertainty | Rank by the proportion of model DOI reports with an explicit SD. Show numerator and denominator, particularly for single-report compounds. This is an auditable reporting dimension. The broader quality-weighted rank remains pending. |
-| B3 Research support | Rank by distinct DOI reports in the conditional ORAC-FL model. The table preserves wider search coverage and previously confirmed independent H-ORAC studies in separate columns. |
+| B1 Observed relative ORAC-FL | Within each DOI and protocol block with at least two compounds, fraction below the candidate plus half the tied peers; median across blocks within each DOI, then across DOIs. Larger ranks higher. |
+| B2 Documented uncertainty | Proportion of model DOI reports with an explicit SD; numerator and denominator shown. Auditable reporting dimension; quality-weighted rank pending. |
+| B3 Research support | Distinct DOI reports in the conditional ORAC-FL model; wider search coverage and previously confirmed independent H-ORAC studies kept in separate columns. |
 
-Ties share the same component rank. Blank ranks indicate unavailable comparable data. Report counts and SD coverage describe the evidence supporting the fit. The manuscript should label the components as descriptive evidence and keep model weights in A.
+## figure1_C.pathway_framework (provisional)
 
-## C. Conditional capacity rank and experimental priorities
+Top-down antioxidant pathway framework: a curated universe U1–U14 (Reactome/KEGG-anchored, see [Pathway_Universe_Curated.csv](../02_identity_and_evidence/result/table/audit/Pathway_Universe_Curated.csv)) × the 12 retained candidates. Cells are graded from the checked mechanism evidence (functional / body readout / abstract-only / cell-only); **122 of 168 cells are PENDING_EXPANSION** and tracked in [Pathway_Expansion_Register.csv](../02_identity_and_evidence/result/table/audit/Pathway_Expansion_Register.csv). Absence of evidence is not evidence of non-participation. Generator: [07_render_figure1_C_pathway.R](code/07_render_figure1_C_pathway.R); data: [07_pathway_framework_matrix.csv](../02_identity_and_evidence/result/table/07_pathway_framework_matrix.csv). A supplementary [top-down UpSet](result/figure/supplementary/figure1_C_pathway_upset.png) shows shared-pathway intersections. **figure1_C is an independent main figure; it is appended to the composite only after evidence expansion fills enough cells.** All mechanism observations remain NOT_REVIEWED.
 
-Order compounds by the expanded conditional ORAC-FL fit. Show the combined best and worst available positions across fit scenarios and whole-DOI-deletion bounds. Use the status label when a deletion leaves no estimable rank. Use the expanded conditional rank as the reference for each candidate.
+## figure1_composite
 
-Retain a candidate when every position in that combined range is within ten places of its reference rank. Hold candidates that exceed the limit or disappear in any deletion. The rule applies at every conditional rank. Under the current snapshot, 12 of 51 candidates meet the joint criterion, 21 exceed the displacement limit and 18 lose their rank after at least one deletion.
+Assembled [figure1_A](result/figure/figure1_A.flow_chart.png) (detailed flow) + [figure1_B](result/figure/figure1_B.evidence_screening_and_ranking.png) (evidence/ranking), stacked vertically; the Word manuscript embeds this composite. Generator: [08_render_figure1_composite.R](code/08_render_figure1_composite.R). The layout reserves space to append figure1_C later. Vector-only (no embedded raster).
 
-Use [the rank table](../03_candidate_selection/result/table/04_figure1_candidate_ranks.csv) for both B and C. It is generated by the [ranking script](../03_candidate_selection/code/04_build_figure1_ranks.py) in the literature pipeline. The current manuscript uses a single Figure 1 for the selection workflow. The assembled figure is available as [PNG](result/figure/figure1_evidence_screening_and_ranking.png) and [editable SVG](result/figure/figure1_evidence_screening_and_ranking.svg), generated by [R](code/04_render_figure1.R).
+## Retention rule (unchanged)
+
+Retain a candidate when every position in the combined fit-scenario and whole-DOI-deletion range is within ten places of its expanded conditional rank; hold candidates that exceed the limit or disappear in any deletion. Under the current snapshot, 12 of 51 candidates meet the joint criterion, 21 exceed the displacement limit and 18 lose their rank after at least one deletion. The first-round fit is anchored to commit `e4c300c`; the manuscript and primary ranking preserve that checkpoint.
+
+## Supplementary previews
+
+Legacy component previews (figure1-1 candidate discovery, figure1-2 literature screening, figure2-1 model validation, figure2-2 rank stability), the prior detailed screening workflow (figure1a) and the prior a/b/c composite are preserved in [supplementary/](result/figure/supplementary/). The [component R script](code/02_render_manuscript_panels.R) now exports to supplementary.

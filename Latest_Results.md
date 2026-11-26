@@ -11,19 +11,22 @@ New to the project? Start with the [project handoff and next actions](README.md#
 - [Figure 1 panel order](06_manuscript/03_figure1_panel_order.md) and [component and conditional rankings](03_candidate_selection/result/table/04_figure1_candidate_ranks.csv)
 - [Compound evidence inclusion](03_candidate_selection/result/table/05_compound_evidence_inclusion.csv) and [first-round versus updated ranking](03_candidate_selection/result/table/06_round_rank_comparison.csv). The first-round fit is available. Updated rank fields await admissible new observations and a refit.
 
-- Figure 1 | [PNG](06_manuscript/result/figure/figure1_evidence_screening_and_ranking.png) | [Editable SVG](06_manuscript/result/figure/figure1_evidence_screening_and_ranking.svg)
-- Screening workflow (standalone view of Figure 1a) | [PNG](06_manuscript/result/figure/figure1a_screening_workflow.png) | [Editable SVG](06_manuscript/result/figure/figure1a_screening_workflow.svg)
+- Figure 1 composite (detailed flow + evidence/ranking) | [PNG](06_manuscript/result/figure/figure1_composite.png) | [Editable SVG](06_manuscript/result/figure/figure1_composite.svg)
+- figure1_A.flow_chart (detailed screening workflow) | [PNG](06_manuscript/result/figure/figure1_A.flow_chart.png) | [SVG](06_manuscript/result/figure/figure1_A.flow_chart.svg)
+- figure1_B.evidence_screening_and_ranking | [PNG](06_manuscript/result/figure/figure1_B.evidence_screening_and_ranking.png) | [SVG](06_manuscript/result/figure/figure1_B.evidence_screening_and_ranking.svg)
+- figure1_C.pathway_framework (provisional top-down pathway framework) | [PNG](06_manuscript/result/figure/figure1_C.pathway_framework.png) | [SVG](06_manuscript/result/figure/figure1_C.pathway_framework.svg)
 
-## Supporting component previews
+## Supporting component previews (supplementary)
 
 | Panel | PNG | Editable SVG |
 |---|---|---|
-| Figure 1-1. Candidate discovery | [PNG](06_manuscript/result/figure/figure1-1_candidate_discovery.png) | [SVG](06_manuscript/result/figure/figure1-1_candidate_discovery.svg) |
-| Figure 1-2. Literature screening | [PNG](06_manuscript/result/figure/figure1-2_literature_screening.png) | [SVG](06_manuscript/result/figure/figure1-2_literature_screening.svg) |
-| Figure 2-1. Model validation | [PNG](06_manuscript/result/figure/figure2-1_model_validation.png) | [SVG](06_manuscript/result/figure/figure2-1_model_validation.svg) |
-| Figure 2-2. Rank stability | [PNG](06_manuscript/result/figure/figure2-2_candidate_rank_stability.png) | [SVG](06_manuscript/result/figure/figure2-2_candidate_rank_stability.svg) |
+| Figure 1-1. Candidate discovery | [PNG](06_manuscript/result/figure/supplementary/figure1-1_candidate_discovery.png) | [SVG](06_manuscript/result/figure/supplementary/figure1-1_candidate_discovery.svg) |
+| Figure 1-2. Literature screening | [PNG](06_manuscript/result/figure/supplementary/figure1-2_literature_screening.png) | [SVG](06_manuscript/result/figure/supplementary/figure1-2_literature_screening.svg) |
+| Figure 2-1. Model validation | [PNG](06_manuscript/result/figure/supplementary/figure2-1_model_validation.png) | [SVG](06_manuscript/result/figure/supplementary/figure2-1_model_validation.svg) |
+| Figure 2-2. Rank stability | [PNG](06_manuscript/result/figure/supplementary/figure2-2_candidate_rank_stability.png) | [SVG](06_manuscript/result/figure/supplementary/figure2-2_candidate_rank_stability.svg) |
+| Pathway UpSet (top-down, solid) | [PNG](06_manuscript/result/figure/supplementary/figure1_C_pathway_upset.png) | [SVG](06_manuscript/result/figure/supplementary/figure1_C_pathway_upset.svg) |
 
-The [R script](06_manuscript/code/02_render_manuscript_panels.R) exposes colors, font, sizes and geometry. The draft exports above are component previews for the single Figure 1 specified in the panel order.
+figure1_A/B/C are independent part-figures; [figure1_composite](06_manuscript/result/figure/figure1_composite.png) assembles A+B (C is appended after evidence expansion). The [panel order](06_manuscript/03_figure1_panel_order.md) describes the scheme. Legacy component previews and the prior composite are preserved in [supplementary](06_manuscript/result/figure/supplementary/); the [component R script](06_manuscript/code/02_render_manuscript_panels.R) now exports there.
 
 ## Evidence status
 

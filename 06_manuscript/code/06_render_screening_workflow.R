@@ -216,10 +216,12 @@ draw <- function() {
   popViewport()
 }
 
-output <- "06_manuscript/result/figure/figure1a_screening_workflow"
-png(paste0(output, ".png"), width = WIDTH, height = HEIGHT, units = "in", res = DPI, bg = "white")
-draw()
-invisible(dev.off())
-svglite::svglite(paste0(output, ".svg"), width = WIDTH, height = HEIGHT, bg = "white")
-draw()
-invisible(dev.off())
+if (!exists("FIG1_COMPOSITE_BUILD")) {
+  output <- "06_manuscript/result/figure/figure1_A.flow_chart"
+  png(paste0(output, ".png"), width = WIDTH, height = HEIGHT, units = "in", res = DPI, bg = "white")
+  draw()
+  invisible(dev.off())
+  svglite::svglite(paste0(output, ".svg"), width = WIDTH, height = HEIGHT, bg = "white")
+  draw()
+  invisible(dev.off())
+}

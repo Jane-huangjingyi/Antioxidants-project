@@ -1,6 +1,7 @@
 # Editable black-text Figure 1. Run from the repository root.
 local_lib <- "04_05_experimental_validation/local_library"
 if (dir.exists(local_lib)) .libPaths(c(normalizePath(local_lib), .libPaths()))
+suppressPackageStartupMessages({ library(ggplot2); library(patchwork); library(svglite) })
 FONT <- "sans"
 BLUE <- "#176382"
 GREEN <- "#267457"
@@ -23,8 +24,7 @@ plot_panel <- function(xlim, ylim) {
   plot.new()
   plot.window(xlim, ylim, xaxs = "i", yaxs = "i")
 }
-draw <- function() {
-  layout(matrix(c(1,1,2,3), nrow = 2, byrow = TRUE), widths = c(1.18,1), heights = c(0.32,0.68))
+panel_a <- function() {
   par(family = FONT, mar = c(0,0.4,0.2,0.4))
   plot_panel(c(0,100), c(0,34))
   text(0.5, 31, "a   Evidence screening and conditional model", adj = 0, font = 2, cex = 1.05)
@@ -40,35 +40,62 @@ draw <- function() {
   text(x, 21, titles, font = 2, cex = 0.76)
   text(x, 12, bodies, cex = 0.72)
   arrows(x[-4]+11.4, 15, x[-1]-11.4, 15, length = 0.06, col = GRAY)
-
-  par(mar = c(3.2, 0.4, 2.6, 0.5))
-  plot_panel(c(0,100), c(0.4,nrow(d)+1.25))
-  title(main = "b   Literature evidence by compound", adj = 0, cex.main = 1.05)
-  text(c(54,74,92), nrow(d)+0.65, c("ORAC\npercentile", "Reports\nwith SD", "Model\nDOIs"), cex = 0.73, font = 2)
-  abline(h = y-0.46, col = "#E2E8EC")
-  text(0.8,y,d$compound,adj=0,cex=0.72)
-  text(54,y,sprintf("%.0f%%",100*d$observed_orac_within_block_percentile),cex=0.74)
-  text(74,y,paste0(d$typed_sd_doi_reports,"/",d$conditional_orac_doi_reports),cex=0.74)
-  text(92,y,d$conditional_orac_doi_reports,cex=0.74)
-
-  par(mar = c(3.2,0,2.6,0.9))
-  plot_panel(c(0,58), c(0.4,nrow(d)+1.25))
-  title(main = "c   Conditional rank and stability", adj = 0, cex.main = 1.05)
-  axis(1, at = c(1,10,20,30,40,51), cex.axis = 0.77)
-  mtext("Rank (higher capacity at left)", side = 1, line = 2.2, cex = 0.76)
-  abline(h = y-0.46, col = "#E2E8EC")
-  ok <- !is.na(d$max_absolute_rank_shift)
-  kept <- d$validation_review_status == "RETAIN_STABLE_WITHIN_10"
-  rect(pmax(1,d$conditional_rank-10),y-0.30,pmin(fit$compounds,d$conditional_rank+10),y+0.30,col=PALE,border=NA)
-  segments(d$best_rank_across_fits_and_deletions[ok],y[ok],
-           d$worst_rank_across_fits_and_deletions[ok],y[ok],col=ifelse(kept[ok],GREEN,GRAY),lwd=1.5)
-  points(d$conditional_rank,y,pch=ifelse(kept,16,1),col=ifelse(kept,GREEN,GRAY),cex=0.78)
-  text(57,y,ifelse(kept,"Retain",ifelse(ok,"Hold","Rank lost")),adj=1,cex=0.63,col=ifelse(kept,GREEN,GRAY))
 }
-out <- "06_manuscript/result/figure/figure1_evidence_screening_and_ranking"
-png(paste0(out,".png"),width=WIDTH,height=HEIGHT,units="in",res=DPI,bg="white")
-draw()
-invisible(dev.off())
-svglite::svglite(paste0(out,".svg"),width=WIDTH,height=HEIGHT,bg="white")
-draw()
-invisible(dev.off())
+d$ypos <- y
+# figure1_B panels as ggplot (reliable grob conversion for the composite).
+panel_b_gg <- function() {
+  db <- data.frame(ypos = d$ypos, compound = d$compound,
+                   pct = sprintf("%.0f%%", 100 * d$observed_orac_within_block_percentile),
+                   sd = paste0(d$typed_sd_doi_reports, "/", d$conditional_orac_doi_reports),
+                   dois = d$conditional_orac_doi_reports)
+  ggplot(db, aes(y = ypos)) +
+    geom_hline(yintercept = d$ypos - 0.46, color = "#E2E8EC", linewidth = 0.3) +
+    geom_text(aes(x = 0.02, label = compound), hjust = 0, size = 2.5) +
+    geom_text(aes(x = 0.56, label = pct), size = 2.5) +
+    geom_text(aes(x = 0.76, label = sd), size = 2.5) +
+    geom_text(aes(x = 0.94, label = dois), size = 2.5) +
+    annotate("text", x = c(0.56, 0.76, 0.94), y = nrow(d) + 0.9,
+             label = c("ORAC\npercentile", "Reports\nwith SD", "Model\nDOIs"),
+             size = 2.4, fontface = 2, lineheight = 0.9) +
+    scale_x_continuous(limits = c(0, 1), expand = c(0, 0)) +
+    scale_y_continuous(limits = c(0.4, nrow(d) + 1.6), breaks = d$ypos, labels = NULL, expand = c(0, 0)) +
+    labs(title = "b   Literature evidence by compound", x = NULL, y = NULL) +
+    theme_minimal(base_size = 9, base_family = FONT) +
+    theme(panel.grid = element_blank(), axis.ticks = element_blank(),
+          plot.title = element_text(face = "bold", size = 10),
+          plot.margin = margin(4, 6, 4, 6))
+}
+panel_c_gg <- function() {
+  dc <- d
+  dc$kept <- dc$validation_review_status == "RETAIN_STABLE_WITHIN_10"
+  dc$ok <- !is.na(dc$max_absolute_rank_shift)
+  dc$status <- ifelse(dc$kept, "Retain", ifelse(dc$ok, "Hold", "Rank lost"))
+  dc$col <- ifelse(dc$kept, GREEN, GRAY)
+  ggplot(dc, aes(y = ypos)) +
+    geom_hline(yintercept = dc$ypos - 0.46, color = "#E2E8EC", linewidth = 0.3) +
+    geom_rect(aes(xmin = pmax(1, conditional_rank - 10), xmax = pmin(fit$compounds, conditional_rank + 10),
+                  ymin = ypos - 0.30, ymax = ypos + 0.30), fill = PALE, inherit.aes = FALSE) +
+    geom_segment(data = dc[dc$ok, ], aes(x = best_rank_across_fits_and_deletions,
+                 xend = worst_rank_across_fits_and_deletions, y = ypos, yend = ypos, color = col),
+                 linewidth = 0.6, inherit.aes = FALSE) +
+    geom_point(aes(x = conditional_rank, color = col, shape = kept), size = 1.9) +
+    geom_text(aes(x = 57.5, label = status, color = col), hjust = 1, size = 2.2) +
+    scale_color_identity() +
+    scale_shape_manual(values = c("TRUE" = 16, "FALSE" = 1)) +
+    scale_x_continuous(limits = c(0, 58), breaks = c(1, 10, 20, 30, 40, 51), expand = c(0, 0)) +
+    scale_y_continuous(limits = c(0.4, nrow(d) + 1.6), breaks = d$ypos, labels = NULL, expand = c(0, 0)) +
+    labs(title = "c   Conditional rank and stability", x = "Rank (higher capacity at left)", y = NULL) +
+    theme_minimal(base_size = 9, base_family = FONT) +
+    theme(panel.grid.major.y = element_blank(), panel.grid.minor = element_blank(),
+          axis.text.y = element_blank(), axis.ticks.y = element_blank(),
+          plot.title = element_text(face = "bold", size = 10), legend.position = "none",
+          plot.margin = margin(4, 6, 4, 6))
+}
+build_B <- function() { panel_b_gg() + panel_c_gg() + plot_layout(widths = c(1.18, 1)) }
+if (!exists("FIG1_COMPOSITE_BUILD")) {
+  out <- "06_manuscript/result/figure/figure1_B.evidence_screening_and_ranking"
+  pB <- build_B()
+  ggsave(paste0(out, ".png"), pB, width = 9.2, height = 5.6, dpi = DPI, bg = "white")
+  svglite::svglite(paste0(out, ".svg"), width = 9.2, height = 5.6, bg = "white")
+  print(pB); invisible(dev.off())
+}

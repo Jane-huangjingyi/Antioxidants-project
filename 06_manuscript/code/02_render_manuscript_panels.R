@@ -11,7 +11,7 @@ RANK_PANEL_HEIGHT <- 7
 DPI <- 300
 COLOR <- c(evidence = "#165A7C", candidate = "#236B58", prior = "#64748B",
            sensitivity = "#AA6329", ink = "#183143", line = "#CBD5E1")
-OUT <- "06_manuscript/result/figure"
+OUT <- "06_manuscript/result/figure/supplementary"
 dir.create(OUT, recursive = TRUE, showWarnings = FALSE)
 theme_set(theme_minimal(base_family = FONT, base_size = FONT_SIZE) +
             theme(panel.grid.minor = element_blank(), text = element_text(color = COLOR[["ink"]]),

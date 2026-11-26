@@ -1,0 +1,12 @@
+pathway_code,pathway_name,pathway_class,node_basis
+P1,NRF2-KEAP1/ARE antioxidant response,SIGNALING,NFE2L2; KEAP1; SQSTM1/p62; HMOX1; NQO1; GCLC/GCLM
+P2,NF-kB / TLR4 inflammatory signaling,SIGNALING,TLR4; p-NF-kB; NF-kB
+P3,PI3K/AKT signaling,SIGNALING,PI3K; AKT
+P4,MAPK stress signaling,SIGNALING,TAK1; p38; JNK1/2
+P5,Ferroptosis regulation,SIGNALING,GPX4; ACSL4
+P6,HIF1A hypoxia response,SIGNALING,HIF1A
+P7,PGC-1alpha mitochondrial biogenesis,SIGNALING,PGC-1alpha (cell-only in current records)
+P8,CFTR-dependent GSH transport/disposition,SIGNALING,CFTR (disposition modifier; not a binding target)
+R1,Glutathione redox (GSH/GSSG/GCL/GPx),REDOX_PROCESS,GSH; GSSG; GCL; GPx; GSH stores
+R2,Lipid peroxidation defense,REDOX_PROCESS,MDA; 4-HNE; HPNE; F2-isoprostanes; oxidized LDL
+R3,ROS/NO vascular redox balance,REDOX_PROCESS,DHE; DAF-2DA/NO; NADPH oxidase subunits; nitrotyrosine; FMD

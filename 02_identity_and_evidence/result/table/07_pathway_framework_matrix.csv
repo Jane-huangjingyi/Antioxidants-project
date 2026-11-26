@@ -1,0 +1,169 @@
+candidate_id,compound,pathway_code,pathway_name,pathway_class,cell_state,evidence_grade,solid_included,integrity_flag,n_observations,observations,dois,source_locators,mapping_basis
+AFF-0009,Quercetin,U1,KEAP1-NRF2/ARE transcriptional antioxidant response,CORE_ANTIOXIDANT,FUNCTIONAL,FUNCTIONAL,YES,,2,ME12-01;ME12-02,10.1038/s41401-018-0024-8,ME12-01:Methods; Fig. 7c–h;ME12-02:Methods; Fig. 8a–c,NRF2/KEAP1/ARE node
+AFF-0009,Quercetin,U2,Detoxification of reactive oxygen species (SOD/CAT/GPx/PRDX/TXN),CORE_ANTIOXIDANT,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0009,Quercetin,U3,Glutathione synthesis and recycling,CORE_ANTIOXIDANT,BODY_READOUT,BODY_READOUT,YES,,1,ME12-01,10.1038/s41401-018-0024-8,ME12-01:Methods; Fig. 7c–h,GSH/GSSG content or GCL synthesis
+AFF-0009,Quercetin,U4,Cellular response to oxidative stress,CORE_ANTIOXIDANT,BODY_READOUT,BODY_READOUT,YES,,1,ME12-01,10.1038/s41401-018-0024-8,ME12-01:Methods; Fig. 7c–h,ROS generation/scavenging or oxidative-stress readout
+AFF-0009,Quercetin,U5,Thioredoxin/peroxiredoxin system,CORE_ANTIOXIDANT,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0009,Quercetin,U6,Ferroptosis / lipid peroxidation defense,CORE_ANTIOXIDANT,BODY_READOUT,BODY_READOUT,YES,,3,ME12-01;ME12-24;ME12-25,10.1017/s0007114509359127;10.1038/s41401-018-0024-8;10.1093/jn/138.9.1615,ME12-01:Methods; Fig. 7c–h;ME12-24:Study design; Table 4; results on oxidized LDL and plasma antioxidant capacity;ME12-25:Study design and capsule composition; Table 2; Results on antioxidant capacity and oxidized LDL,ferroptosis (GPX4/ACSL4) or lipid-peroxidation marker
+AFF-0009,Quercetin,U7,Ascorbate and aldarate metabolism (vitamin C recycling),CORE_ANTIOXIDANT,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0009,Quercetin,U8,NADPH oxidase / ROS generation (vascular),CORE_ANTIOXIDANT,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0009,Quercetin,U9,NF-kB / TLR4 inflammatory signaling,BROADER_REDOX_LINKED,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0009,Quercetin,U10,PI3K/AKT signaling,BROADER_REDOX_LINKED,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0009,Quercetin,U11,MAPK stress signaling (TAK1/p38/JNK),BROADER_REDOX_LINKED,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0009,Quercetin,U12,HIF-1 hypoxia response,BROADER_REDOX_LINKED,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0009,Quercetin,U13,PGC-1alpha / transcriptional activation of mitochondrial biogenesis,BROADER_REDOX_LINKED,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0009,Quercetin,U14,CFTR-dependent chloride/GSH transport disposition,BROADER_REDOX_LINKED,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0001,Catechin,U1,KEAP1-NRF2/ARE transcriptional antioxidant response,CORE_ANTIOXIDANT,ABSTRACT_ONLY,ABSTRACT_ONLY,NO,,1,ME12-04,10.1080/10715762.2018.1437914,ME12-04:Abstract,NRF2/KEAP1/ARE node
+AFF-0001,Catechin,U2,Detoxification of reactive oxygen species (SOD/CAT/GPx/PRDX/TXN),CORE_ANTIOXIDANT,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0001,Catechin,U3,Glutathione synthesis and recycling,CORE_ANTIOXIDANT,BODY_READOUT,BODY_READOUT,YES,,2,ME12-03;ME12-04,10.1080/10715762.2018.1437914,ME12-03:Mehra et al. 2013 pp. 823–827; Fig. 1; Methods;ME12-04:Abstract,GSH/GSSG content or GCL synthesis
+AFF-0001,Catechin,U4,Cellular response to oxidative stress,CORE_ANTIOXIDANT,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0001,Catechin,U5,Thioredoxin/peroxiredoxin system,CORE_ANTIOXIDANT,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0001,Catechin,U6,Ferroptosis / lipid peroxidation defense,CORE_ANTIOXIDANT,BODY_READOUT,BODY_READOUT,YES,,1,ME12-03,,ME12-03:Mehra et al. 2013 pp. 823–827; Fig. 1; Methods,ferroptosis (GPX4/ACSL4) or lipid-peroxidation marker
+AFF-0001,Catechin,U7,Ascorbate and aldarate metabolism (vitamin C recycling),CORE_ANTIOXIDANT,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0001,Catechin,U8,NADPH oxidase / ROS generation (vascular),CORE_ANTIOXIDANT,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0001,Catechin,U9,NF-kB / TLR4 inflammatory signaling,BROADER_REDOX_LINKED,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0001,Catechin,U10,PI3K/AKT signaling,BROADER_REDOX_LINKED,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0001,Catechin,U11,MAPK stress signaling (TAK1/p38/JNK),BROADER_REDOX_LINKED,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0001,Catechin,U12,HIF-1 hypoxia response,BROADER_REDOX_LINKED,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0001,Catechin,U13,PGC-1alpha / transcriptional activation of mitochondrial biogenesis,BROADER_REDOX_LINKED,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0001,Catechin,U14,CFTR-dependent chloride/GSH transport disposition,BROADER_REDOX_LINKED,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0031,Hesperetin,U1,KEAP1-NRF2/ARE transcriptional antioxidant response,CORE_ANTIOXIDANT,ABSTRACT_ONLY,ABSTRACT_ONLY,NO,FIG8A_CONCERN,1,ME12-05,10.1007/s12035-019-1512-7,ME12-05:Abstract,NRF2/KEAP1/ARE node
+AFF-0031,Hesperetin,U2,Detoxification of reactive oxygen species (SOD/CAT/GPx/PRDX/TXN),CORE_ANTIOXIDANT,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0031,Hesperetin,U3,Glutathione synthesis and recycling,CORE_ANTIOXIDANT,BODY_READOUT,BODY_READOUT,YES,,1,ME12-18,10.1038/s41598-018-27614-8,ME12-18:Animal experiments; Fig. 5h–j; separate Fig. 4a–e,GSH/GSSG content or GCL synthesis
+AFF-0031,Hesperetin,U4,Cellular response to oxidative stress,CORE_ANTIOXIDANT,ABSTRACT_ONLY,ABSTRACT_ONLY,NO,FIG8A_CONCERN,1,ME12-05,10.1007/s12035-019-1512-7,ME12-05:Abstract,ROS generation/scavenging or oxidative-stress readout
+AFF-0031,Hesperetin,U5,Thioredoxin/peroxiredoxin system,CORE_ANTIOXIDANT,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0031,Hesperetin,U6,Ferroptosis / lipid peroxidation defense,CORE_ANTIOXIDANT,BODY_READOUT,BODY_READOUT,NO,FIG8A_CONCERN,2,ME12-05;ME12-19,10.1007/s12035-019-1512-7;10.1038/s41598-026-51280-w,ME12-05:Abstract;ME12-19:Animal Methods; Fig. 3J–N; separate cell Fig. 2,ferroptosis (GPX4/ACSL4) or lipid-peroxidation marker
+AFF-0031,Hesperetin,U7,Ascorbate and aldarate metabolism (vitamin C recycling),CORE_ANTIOXIDANT,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0031,Hesperetin,U8,NADPH oxidase / ROS generation (vascular),CORE_ANTIOXIDANT,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0031,Hesperetin,U9,NF-kB / TLR4 inflammatory signaling,BROADER_REDOX_LINKED,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0031,Hesperetin,U10,PI3K/AKT signaling,BROADER_REDOX_LINKED,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0031,Hesperetin,U11,MAPK stress signaling (TAK1/p38/JNK),BROADER_REDOX_LINKED,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0031,Hesperetin,U12,HIF-1 hypoxia response,BROADER_REDOX_LINKED,BODY_READOUT,BODY_READOUT,YES,,1,ME12-19,10.1038/s41598-026-51280-w,ME12-19:Animal Methods; Fig. 3J–N; separate cell Fig. 2,HIF1A node
+AFF-0031,Hesperetin,U13,PGC-1alpha / transcriptional activation of mitochondrial biogenesis,BROADER_REDOX_LINKED,CELL_ONLY,CELL_ONLY,NO,CELL_ONLY,1,ME12-18,10.1038/s41598-018-27614-8,ME12-18:cell-only Fig. 4a-e (myotubes),PGC-1alpha cell-only linkage; not in vivo
+AFF-0031,Hesperetin,U14,CFTR-dependent chloride/GSH transport disposition,BROADER_REDOX_LINKED,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0052,Genistein,U1,KEAP1-NRF2/ARE transcriptional antioxidant response,CORE_ANTIOXIDANT,BODY_READOUT,BODY_READOUT,YES,,2,ME12-06;ME12-07,10.21037/atm-21-4958;10.3390/medicina57101028,ME12-06:Methods; Figs. 4A–C and 5A–B;ME12-07:Experimental Protocol; Results on protein carbonyls and gene expression,NRF2/KEAP1/ARE node
+AFF-0052,Genistein,U2,Detoxification of reactive oxygen species (SOD/CAT/GPx/PRDX/TXN),CORE_ANTIOXIDANT,BODY_READOUT,BODY_READOUT,YES,,1,ME12-07,10.3390/medicina57101028,ME12-07:Experimental Protocol; Results on protein carbonyls and gene expression,SOD/CAT/GPx/GST detox enzyme activity
+AFF-0052,Genistein,U3,Glutathione synthesis and recycling,CORE_ANTIOXIDANT,BODY_READOUT,BODY_READOUT,YES,,1,ME12-06,10.21037/atm-21-4958,ME12-06:Methods; Figs. 4A–C and 5A–B,GSH/GSSG content or GCL synthesis
+AFF-0052,Genistein,U4,Cellular response to oxidative stress,CORE_ANTIOXIDANT,BODY_READOUT,BODY_READOUT,YES,,2,ME12-06;ME12-07,10.21037/atm-21-4958;10.3390/medicina57101028,ME12-06:Methods; Figs. 4A–C and 5A–B;ME12-07:Experimental Protocol; Results on protein carbonyls and gene expression,ROS generation/scavenging or oxidative-stress readout
+AFF-0052,Genistein,U5,Thioredoxin/peroxiredoxin system,CORE_ANTIOXIDANT,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0052,Genistein,U6,Ferroptosis / lipid peroxidation defense,CORE_ANTIOXIDANT,BODY_READOUT,BODY_READOUT,YES,,1,ME12-06,10.21037/atm-21-4958,ME12-06:Methods; Figs. 4A–C and 5A–B,ferroptosis (GPX4/ACSL4) or lipid-peroxidation marker
+AFF-0052,Genistein,U7,Ascorbate and aldarate metabolism (vitamin C recycling),CORE_ANTIOXIDANT,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0052,Genistein,U8,NADPH oxidase / ROS generation (vascular),CORE_ANTIOXIDANT,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0052,Genistein,U9,NF-kB / TLR4 inflammatory signaling,BROADER_REDOX_LINKED,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0052,Genistein,U10,PI3K/AKT signaling,BROADER_REDOX_LINKED,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0052,Genistein,U11,MAPK stress signaling (TAK1/p38/JNK),BROADER_REDOX_LINKED,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0052,Genistein,U12,HIF-1 hypoxia response,BROADER_REDOX_LINKED,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0052,Genistein,U13,PGC-1alpha / transcriptional activation of mitochondrial biogenesis,BROADER_REDOX_LINKED,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0052,Genistein,U14,CFTR-dependent chloride/GSH transport disposition,BROADER_REDOX_LINKED,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0036,Hesperidin,U1,KEAP1-NRF2/ARE transcriptional antioxidant response,CORE_ANTIOXIDANT,BODY_READOUT,BODY_READOUT,YES,,1,ME12-08,10.1039/d2fo00298a,ME12-08:Methods 2.3; Results on oxidative stress; Fig. 8A–D,NRF2/KEAP1/ARE node
+AFF-0036,Hesperidin,U2,Detoxification of reactive oxygen species (SOD/CAT/GPx/PRDX/TXN),CORE_ANTIOXIDANT,BODY_READOUT,BODY_READOUT,YES,,1,ME12-08,10.1039/d2fo00298a,ME12-08:Methods 2.3; Results on oxidative stress; Fig. 8A–D,SOD/CAT/GPx/GST detox enzyme activity
+AFF-0036,Hesperidin,U3,Glutathione synthesis and recycling,CORE_ANTIOXIDANT,BODY_READOUT,BODY_READOUT,YES,,1,ME12-08,10.1039/d2fo00298a,ME12-08:Methods 2.3; Results on oxidative stress; Fig. 8A–D,GSH/GSSG content or GCL synthesis
+AFF-0036,Hesperidin,U4,Cellular response to oxidative stress,CORE_ANTIOXIDANT,BODY_READOUT,BODY_READOUT,YES,,1,ME12-08,10.1039/d2fo00298a,ME12-08:Methods 2.3; Results on oxidative stress; Fig. 8A–D,ROS generation/scavenging or oxidative-stress readout
+AFF-0036,Hesperidin,U5,Thioredoxin/peroxiredoxin system,CORE_ANTIOXIDANT,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0036,Hesperidin,U6,Ferroptosis / lipid peroxidation defense,CORE_ANTIOXIDANT,BODY_READOUT,BODY_READOUT,YES,,2,ME12-08;ME12-26,10.1002/ptr.5881;10.1039/d2fo00298a,ME12-08:Methods 2.3; Results on oxidative stress; Fig. 8A–D;ME12-26:Abstract; adjusted between-arm comparisons,ferroptosis (GPX4/ACSL4) or lipid-peroxidation marker
+AFF-0036,Hesperidin,U7,Ascorbate and aldarate metabolism (vitamin C recycling),CORE_ANTIOXIDANT,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0036,Hesperidin,U8,NADPH oxidase / ROS generation (vascular),CORE_ANTIOXIDANT,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0036,Hesperidin,U9,NF-kB / TLR4 inflammatory signaling,BROADER_REDOX_LINKED,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0036,Hesperidin,U10,PI3K/AKT signaling,BROADER_REDOX_LINKED,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0036,Hesperidin,U11,MAPK stress signaling (TAK1/p38/JNK),BROADER_REDOX_LINKED,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0036,Hesperidin,U12,HIF-1 hypoxia response,BROADER_REDOX_LINKED,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0036,Hesperidin,U13,PGC-1alpha / transcriptional activation of mitochondrial biogenesis,BROADER_REDOX_LINKED,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0036,Hesperidin,U14,CFTR-dependent chloride/GSH transport disposition,BROADER_REDOX_LINKED,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0011,Myricetin,U1,KEAP1-NRF2/ARE transcriptional antioxidant response,CORE_ANTIOXIDANT,BODY_READOUT,BODY_READOUT,YES,,2,ME12-09;ME12-20,10.1155/2017/8370593;10.1155/2019/6304058,ME12-09:Methods 2.2; in vivo Results on NRF2 downstream genes and 4-HNE;ME12-20:Methods 2.2; cardiac signaling and Nrf2 knockdown Results,NRF2/KEAP1/ARE node
+AFF-0011,Myricetin,U2,Detoxification of reactive oxygen species (SOD/CAT/GPx/PRDX/TXN),CORE_ANTIOXIDANT,BODY_READOUT,BODY_READOUT,YES,,1,ME12-09,10.1155/2017/8370593,ME12-09:Methods 2.2; in vivo Results on NRF2 downstream genes and 4-HNE,SOD/CAT/GPx/GST detox enzyme activity
+AFF-0011,Myricetin,U3,Glutathione synthesis and recycling,CORE_ANTIOXIDANT,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0011,Myricetin,U4,Cellular response to oxidative stress,CORE_ANTIOXIDANT,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0011,Myricetin,U5,Thioredoxin/peroxiredoxin system,CORE_ANTIOXIDANT,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0011,Myricetin,U6,Ferroptosis / lipid peroxidation defense,CORE_ANTIOXIDANT,BODY_READOUT,BODY_READOUT,YES,,1,ME12-09,10.1155/2017/8370593,ME12-09:Methods 2.2; in vivo Results on NRF2 downstream genes and 4-HNE,ferroptosis (GPX4/ACSL4) or lipid-peroxidation marker
+AFF-0011,Myricetin,U7,Ascorbate and aldarate metabolism (vitamin C recycling),CORE_ANTIOXIDANT,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0011,Myricetin,U8,NADPH oxidase / ROS generation (vascular),CORE_ANTIOXIDANT,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0011,Myricetin,U9,NF-kB / TLR4 inflammatory signaling,BROADER_REDOX_LINKED,BODY_READOUT,BODY_READOUT,YES,,1,ME12-20,10.1155/2019/6304058,ME12-20:Methods 2.2; cardiac signaling and Nrf2 knockdown Results,NF-kB/TLR4 node
+AFF-0011,Myricetin,U10,PI3K/AKT signaling,BROADER_REDOX_LINKED,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0011,Myricetin,U11,MAPK stress signaling (TAK1/p38/JNK),BROADER_REDOX_LINKED,BODY_READOUT,BODY_READOUT,YES,,1,ME12-20,10.1155/2019/6304058,ME12-20:Methods 2.2; cardiac signaling and Nrf2 knockdown Results,MAPK stress node
+AFF-0011,Myricetin,U12,HIF-1 hypoxia response,BROADER_REDOX_LINKED,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0011,Myricetin,U13,PGC-1alpha / transcriptional activation of mitochondrial biogenesis,BROADER_REDOX_LINKED,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0011,Myricetin,U14,CFTR-dependent chloride/GSH transport disposition,BROADER_REDOX_LINKED,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0071,p-Coumaric acid,U1,KEAP1-NRF2/ARE transcriptional antioxidant response,CORE_ANTIOXIDANT,ABSTRACT_ONLY,ABSTRACT_ONLY,NO,,1,ME12-10,10.1016/j.biopha.2018.12.074,ME12-10:Abstract,NRF2/KEAP1/ARE node
+AFF-0071,p-Coumaric acid,U2,Detoxification of reactive oxygen species (SOD/CAT/GPx/PRDX/TXN),CORE_ANTIOXIDANT,BODY_READOUT,BODY_READOUT,YES,,2,ME12-10;ME12-23,10.1016/j.biopha.2018.12.074,ME12-10:Abstract;ME12-23:Animal Methods; Fig. 3A–C,SOD/CAT/GPx/GST detox enzyme activity
+AFF-0071,p-Coumaric acid,U3,Glutathione synthesis and recycling,CORE_ANTIOXIDANT,BODY_READOUT,BODY_READOUT,YES,,2,ME12-10;ME12-23,10.1016/j.biopha.2018.12.074,ME12-10:Abstract;ME12-23:Animal Methods; Fig. 3A–C,GSH/GSSG content or GCL synthesis
+AFF-0071,p-Coumaric acid,U4,Cellular response to oxidative stress,CORE_ANTIOXIDANT,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0071,p-Coumaric acid,U5,Thioredoxin/peroxiredoxin system,CORE_ANTIOXIDANT,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0071,p-Coumaric acid,U6,Ferroptosis / lipid peroxidation defense,CORE_ANTIOXIDANT,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0071,p-Coumaric acid,U7,Ascorbate and aldarate metabolism (vitamin C recycling),CORE_ANTIOXIDANT,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0071,p-Coumaric acid,U8,NADPH oxidase / ROS generation (vascular),CORE_ANTIOXIDANT,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0071,p-Coumaric acid,U9,NF-kB / TLR4 inflammatory signaling,BROADER_REDOX_LINKED,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0071,p-Coumaric acid,U10,PI3K/AKT signaling,BROADER_REDOX_LINKED,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0071,p-Coumaric acid,U11,MAPK stress signaling (TAK1/p38/JNK),BROADER_REDOX_LINKED,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0071,p-Coumaric acid,U12,HIF-1 hypoxia response,BROADER_REDOX_LINKED,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0071,p-Coumaric acid,U13,PGC-1alpha / transcriptional activation of mitochondrial biogenesis,BROADER_REDOX_LINKED,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0071,p-Coumaric acid,U14,CFTR-dependent chloride/GSH transport disposition,BROADER_REDOX_LINKED,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0076,Chlorogenic acid,U1,KEAP1-NRF2/ARE transcriptional antioxidant response,CORE_ANTIOXIDANT,FUNCTIONAL,FUNCTIONAL,YES,,2,ME12-11;ME12-12,10.1177/0300060520985363,ME12-11:Animal Methods; Figs. 6d–g and 8;ME12-12:Aortic-ring experiments; Figs. 4–5,NRF2/KEAP1/ARE node
+AFF-0076,Chlorogenic acid,U2,Detoxification of reactive oxygen species (SOD/CAT/GPx/PRDX/TXN),CORE_ANTIOXIDANT,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0076,Chlorogenic acid,U3,Glutathione synthesis and recycling,CORE_ANTIOXIDANT,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0076,Chlorogenic acid,U4,Cellular response to oxidative stress,CORE_ANTIOXIDANT,FUNCTIONAL,FUNCTIONAL,YES,,2,ME12-11;ME12-12,10.1177/0300060520985363,ME12-11:Animal Methods; Figs. 6d–g and 8;ME12-12:Aortic-ring experiments; Figs. 4–5,ROS generation/scavenging or oxidative-stress readout
+AFF-0076,Chlorogenic acid,U5,Thioredoxin/peroxiredoxin system,CORE_ANTIOXIDANT,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0076,Chlorogenic acid,U6,Ferroptosis / lipid peroxidation defense,CORE_ANTIOXIDANT,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0076,Chlorogenic acid,U7,Ascorbate and aldarate metabolism (vitamin C recycling),CORE_ANTIOXIDANT,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0076,Chlorogenic acid,U8,NADPH oxidase / ROS generation (vascular),CORE_ANTIOXIDANT,BODY_READOUT,BODY_READOUT,YES,,1,ME12-11,10.1177/0300060520985363,ME12-11:Animal Methods; Figs. 6d–g and 8,NADPH oxidase subunit/NOX
+AFF-0076,Chlorogenic acid,U9,NF-kB / TLR4 inflammatory signaling,BROADER_REDOX_LINKED,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0076,Chlorogenic acid,U10,PI3K/AKT signaling,BROADER_REDOX_LINKED,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0076,Chlorogenic acid,U11,MAPK stress signaling (TAK1/p38/JNK),BROADER_REDOX_LINKED,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0076,Chlorogenic acid,U12,HIF-1 hypoxia response,BROADER_REDOX_LINKED,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0076,Chlorogenic acid,U13,PGC-1alpha / transcriptional activation of mitochondrial biogenesis,BROADER_REDOX_LINKED,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0076,Chlorogenic acid,U14,CFTR-dependent chloride/GSH transport disposition,BROADER_REDOX_LINKED,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0060,Gallic acid,U1,KEAP1-NRF2/ARE transcriptional antioxidant response,CORE_ANTIOXIDANT,BODY_READOUT,BODY_READOUT,YES,,1,ME12-13,10.2147/DDDT.S86345,ME12-13:Methods; colonic oxidative stress Results; Fig. 6,NRF2/KEAP1/ARE node
+AFF-0060,Gallic acid,U2,Detoxification of reactive oxygen species (SOD/CAT/GPx/PRDX/TXN),CORE_ANTIOXIDANT,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0060,Gallic acid,U3,Glutathione synthesis and recycling,CORE_ANTIOXIDANT,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0060,Gallic acid,U4,Cellular response to oxidative stress,CORE_ANTIOXIDANT,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0060,Gallic acid,U5,Thioredoxin/peroxiredoxin system,CORE_ANTIOXIDANT,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0060,Gallic acid,U6,Ferroptosis / lipid peroxidation defense,CORE_ANTIOXIDANT,BODY_READOUT,BODY_READOUT,YES,,2,ME12-13;ME12-28,10.1002/mnfr.201700482;10.2147/DDDT.S86345,ME12-13:Methods; colonic oxidative stress Results; Fig. 6;ME12-28:Abstract; Methods and Results,ferroptosis (GPX4/ACSL4) or lipid-peroxidation marker
+AFF-0060,Gallic acid,U7,Ascorbate and aldarate metabolism (vitamin C recycling),CORE_ANTIOXIDANT,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0060,Gallic acid,U8,NADPH oxidase / ROS generation (vascular),CORE_ANTIOXIDANT,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0060,Gallic acid,U9,NF-kB / TLR4 inflammatory signaling,BROADER_REDOX_LINKED,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0060,Gallic acid,U10,PI3K/AKT signaling,BROADER_REDOX_LINKED,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0060,Gallic acid,U11,MAPK stress signaling (TAK1/p38/JNK),BROADER_REDOX_LINKED,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0060,Gallic acid,U12,HIF-1 hypoxia response,BROADER_REDOX_LINKED,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0060,Gallic acid,U13,PGC-1alpha / transcriptional activation of mitochondrial biogenesis,BROADER_REDOX_LINKED,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0060,Gallic acid,U14,CFTR-dependent chloride/GSH transport disposition,BROADER_REDOX_LINKED,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0064,Syringic acid,U1,KEAP1-NRF2/ARE transcriptional antioxidant response,CORE_ANTIOXIDANT,BODY_READOUT,BODY_READOUT,YES,,1,ME12-14,10.3390/ijms26167779,ME12-14:Sections on hepatic oxidative stress and signaling; Table 5,NRF2/KEAP1/ARE node
+AFF-0064,Syringic acid,U2,Detoxification of reactive oxygen species (SOD/CAT/GPx/PRDX/TXN),CORE_ANTIOXIDANT,BODY_READOUT,BODY_READOUT,YES,,1,ME12-14,10.3390/ijms26167779,ME12-14:Sections on hepatic oxidative stress and signaling; Table 5,SOD/CAT/GPx/GST detox enzyme activity
+AFF-0064,Syringic acid,U3,Glutathione synthesis and recycling,CORE_ANTIOXIDANT,BODY_READOUT,BODY_READOUT,YES,,1,ME12-14,10.3390/ijms26167779,ME12-14:Sections on hepatic oxidative stress and signaling; Table 5,GSH/GSSG content or GCL synthesis
+AFF-0064,Syringic acid,U4,Cellular response to oxidative stress,CORE_ANTIOXIDANT,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0064,Syringic acid,U5,Thioredoxin/peroxiredoxin system,CORE_ANTIOXIDANT,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0064,Syringic acid,U6,Ferroptosis / lipid peroxidation defense,CORE_ANTIOXIDANT,BODY_READOUT,BODY_READOUT,YES,,1,ME12-14,10.3390/ijms26167779,ME12-14:Sections on hepatic oxidative stress and signaling; Table 5,ferroptosis (GPX4/ACSL4) or lipid-peroxidation marker
+AFF-0064,Syringic acid,U7,Ascorbate and aldarate metabolism (vitamin C recycling),CORE_ANTIOXIDANT,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0064,Syringic acid,U8,NADPH oxidase / ROS generation (vascular),CORE_ANTIOXIDANT,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0064,Syringic acid,U9,NF-kB / TLR4 inflammatory signaling,BROADER_REDOX_LINKED,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0064,Syringic acid,U10,PI3K/AKT signaling,BROADER_REDOX_LINKED,BODY_READOUT,BODY_READOUT,YES,,1,ME12-14,10.3390/ijms26167779,ME12-14:Sections on hepatic oxidative stress and signaling; Table 5,PI3K/AKT node
+AFF-0064,Syringic acid,U11,MAPK stress signaling (TAK1/p38/JNK),BROADER_REDOX_LINKED,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0064,Syringic acid,U12,HIF-1 hypoxia response,BROADER_REDOX_LINKED,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0064,Syringic acid,U13,PGC-1alpha / transcriptional activation of mitochondrial biogenesis,BROADER_REDOX_LINKED,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0064,Syringic acid,U14,CFTR-dependent chloride/GSH transport disposition,BROADER_REDOX_LINKED,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0104,L-Ascorbic acid,U1,KEAP1-NRF2/ARE transcriptional antioxidant response,CORE_ANTIOXIDANT,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0104,L-Ascorbic acid,U2,Detoxification of reactive oxygen species (SOD/CAT/GPx/PRDX/TXN),CORE_ANTIOXIDANT,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0104,L-Ascorbic acid,U3,Glutathione synthesis and recycling,CORE_ANTIOXIDANT,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0104,L-Ascorbic acid,U4,Cellular response to oxidative stress,CORE_ANTIOXIDANT,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0104,L-Ascorbic acid,U5,Thioredoxin/peroxiredoxin system,CORE_ANTIOXIDANT,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0104,L-Ascorbic acid,U6,Ferroptosis / lipid peroxidation defense,CORE_ANTIOXIDANT,BODY_READOUT,BODY_READOUT,YES,,2,ME12-15;ME12-22,10.1016/j.brainres.2010.05.090;10.1016/j.freeradbiomed.2011.01.004,ME12-15:Materials and Methods; Results on MDA;ME12-22:Methods on study design and urine measurements; Results on HPNE metabolites,ferroptosis (GPX4/ACSL4) or lipid-peroxidation marker
+AFF-0104,L-Ascorbic acid,U7,Ascorbate and aldarate metabolism (vitamin C recycling),CORE_ANTIOXIDANT,BODY_READOUT,BODY_READOUT,YES,,1,ME12-15,10.1016/j.brainres.2010.05.090,ME12-15:Materials and Methods; Results on MDA,ascorbate metabolism/disposition
+AFF-0104,L-Ascorbic acid,U8,NADPH oxidase / ROS generation (vascular),CORE_ANTIOXIDANT,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0104,L-Ascorbic acid,U9,NF-kB / TLR4 inflammatory signaling,BROADER_REDOX_LINKED,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0104,L-Ascorbic acid,U10,PI3K/AKT signaling,BROADER_REDOX_LINKED,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0104,L-Ascorbic acid,U11,MAPK stress signaling (TAK1/p38/JNK),BROADER_REDOX_LINKED,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0104,L-Ascorbic acid,U12,HIF-1 hypoxia response,BROADER_REDOX_LINKED,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0104,L-Ascorbic acid,U13,PGC-1alpha / transcriptional activation of mitochondrial biogenesis,BROADER_REDOX_LINKED,PENDING_EXPANSION,,NO,,0,,,,
+AFF-0104,L-Ascorbic acid,U14,CFTR-dependent chloride/GSH transport disposition,BROADER_REDOX_LINKED,PENDING_EXPANSION,,NO,,0,,,,
+NEW-GSH,Glutathione,U1,KEAP1-NRF2/ARE transcriptional antioxidant response,CORE_ANTIOXIDANT,PENDING_EXPANSION,,NO,,0,,,,
+NEW-GSH,Glutathione,U2,Detoxification of reactive oxygen species (SOD/CAT/GPx/PRDX/TXN),CORE_ANTIOXIDANT,PENDING_EXPANSION,,NO,,0,,,,
+NEW-GSH,Glutathione,U3,Glutathione synthesis and recycling,CORE_ANTIOXIDANT,FUNCTIONAL,FUNCTIONAL,YES,,3,ME12-16;ME12-17;ME12-21,10.1007/s00394-014-0706-z;10.1089/acm.2010.0716;10.1152/ajplung.00365.2006,ME12-16:Oral GSH administration; Results on CFTR genotype comparison;ME12-17:Experimental Procedure; Results; Figs. 2–3;ME12-21:Methods; Figs. 2–4; Results on oxidized glutathione,GSH/GSSG content or GCL synthesis
+NEW-GSH,Glutathione,U4,Cellular response to oxidative stress,CORE_ANTIOXIDANT,PENDING_EXPANSION,,NO,,0,,,,
+NEW-GSH,Glutathione,U5,Thioredoxin/peroxiredoxin system,CORE_ANTIOXIDANT,PENDING_EXPANSION,,NO,,0,,,,
+NEW-GSH,Glutathione,U6,Ferroptosis / lipid peroxidation defense,CORE_ANTIOXIDANT,BODY_READOUT,BODY_READOUT,YES,,1,ME12-17,10.1089/acm.2010.0716,ME12-17:Experimental Procedure; Results; Figs. 2–3,ferroptosis (GPX4/ACSL4) or lipid-peroxidation marker
+NEW-GSH,Glutathione,U7,Ascorbate and aldarate metabolism (vitamin C recycling),CORE_ANTIOXIDANT,PENDING_EXPANSION,,NO,,0,,,,
+NEW-GSH,Glutathione,U8,NADPH oxidase / ROS generation (vascular),CORE_ANTIOXIDANT,PENDING_EXPANSION,,NO,,0,,,,
+NEW-GSH,Glutathione,U9,NF-kB / TLR4 inflammatory signaling,BROADER_REDOX_LINKED,PENDING_EXPANSION,,NO,,0,,,,
+NEW-GSH,Glutathione,U10,PI3K/AKT signaling,BROADER_REDOX_LINKED,PENDING_EXPANSION,,NO,,0,,,,
+NEW-GSH,Glutathione,U11,MAPK stress signaling (TAK1/p38/JNK),BROADER_REDOX_LINKED,PENDING_EXPANSION,,NO,,0,,,,
+NEW-GSH,Glutathione,U12,HIF-1 hypoxia response,BROADER_REDOX_LINKED,PENDING_EXPANSION,,NO,,0,,,,
+NEW-GSH,Glutathione,U13,PGC-1alpha / transcriptional activation of mitochondrial biogenesis,BROADER_REDOX_LINKED,PENDING_EXPANSION,,NO,,0,,,,
+NEW-GSH,Glutathione,U14,CFTR-dependent chloride/GSH transport disposition,BROADER_REDOX_LINKED,FUNCTIONAL,FUNCTIONAL,YES,,1,ME12-16,10.1152/ajplung.00365.2006,ME12-16:Oral GSH administration; Results on CFTR genotype comparison,CFTR disposition node
