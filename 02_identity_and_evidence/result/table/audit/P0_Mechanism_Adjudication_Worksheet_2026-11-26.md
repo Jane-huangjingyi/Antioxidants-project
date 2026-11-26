@@ -1,6 +1,8 @@
 # P0 mechanism-evidence adjudication worksheet (2026-11-26)
 
-**Status: proposal-only preparation.** All observations remain `NOT_REVIEWED` and `change_applied=NO`. Nothing here edits the evidence map or releases a claim. The researcher returns, per row: observation ID + verdict + original figure/page locator. Mechanism evidence stays separate from the ORAC-FL capacity model; no scoring or model input is proposed.
+**Status: proposal-only preparation.** All observations remain `NOT_REVIEWED` and `change_applied=NO`. Nothing here edits the evidence map or releases a claim. The researcher returns, per row: observation ID + verdict + original figure/page locator.
+
+**Update 2026-11-26 (researcher decisions):** ME12-01/02 (quercetin) and ME12-11/12 (chlorogenic acid) were **CONFIRMED** (attribution as recorded) and are now `REVIEWED` in the map; see the [adjudication record](Researcher_Adjudication_Record_2026-11-26.csv). ME12-05 (hesperetin) remains **KEEP_OUT_PENDING_VERIFICATION**; the researcher is supplying the Springer PDF (Fig. 8a + legend + citing Results + dose/route). Mechanism evidence stays separate from the ORAC-FL capacity model; no scoring or model input is proposed.
 
 Sources verified in this pass:
 - Quercetin: PMC6318309 article content (PMC HTML page; the Europe PMC JATS REST endpoint returned persistent HTTP 500 during this session, so captions/results were verified from the PMC full-text HTML instead — a clean JATS re-check is optional, not required for the attributions below).

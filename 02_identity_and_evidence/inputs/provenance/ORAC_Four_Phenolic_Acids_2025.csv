@@ -1,5 +1,5 @@
 doi,candidate_id,reported_material,source_locator,raw_mean,raw_error,raw_unit,error_definition,reported_repeats,independent_n,model_disposition
-10.3390/foods14193404,AFF-0070,Ferulic acid,Table 1 ORAC column,7.99,0.24,mmol TE/mmol,SEM,3 to 7 study-wide,,CONDITIONAL_TRIAL_TABLE_UNIT
-10.3390/foods14193404,AFF-0071,p-Coumaric acid,Table 1 ORAC column,9.64,0.27,mmol TE/mmol,SEM,3 to 7 study-wide,,CONDITIONAL_TRIAL_TABLE_UNIT
-10.3390/foods14193404,AFF-0060,Gallic acid,Table 1 ORAC column,20.12,0.74,mmol TE/mmol,SEM,3 to 7 study-wide,,CONDITIONAL_TRIAL_TABLE_UNIT
-10.3390/foods14193404,AFF-0061,Protocatechuic acid,Table 1 ORAC column,6.63,0.09,mmol TE/mmol,SEM,3 to 7 study-wide,,CONDITIONAL_TRIAL_TABLE_UNIT
+10.3390/foods14193404,AFF-0070,Ferulic acid,Table 1 ORAC column,7.99,0.24,mmol TE/mmol,SEM,3 to 7 study-wide,,TABLE_UNIT_RESEARCHER_CONFIRMED_INDEPENDENCE_PENDING
+10.3390/foods14193404,AFF-0071,p-Coumaric acid,Table 1 ORAC column,9.64,0.27,mmol TE/mmol,SEM,3 to 7 study-wide,,TABLE_UNIT_RESEARCHER_CONFIRMED_INDEPENDENCE_PENDING
+10.3390/foods14193404,AFF-0060,Gallic acid,Table 1 ORAC column,20.12,0.74,mmol TE/mmol,SEM,3 to 7 study-wide,,TABLE_UNIT_RESEARCHER_CONFIRMED_INDEPENDENCE_PENDING
+10.3390/foods14193404,AFF-0061,Protocatechuic acid,Table 1 ORAC column,6.63,0.09,mmol TE/mmol,SEM,3 to 7 study-wide,,TABLE_UNIT_RESEARCHER_CONFIRMED_INDEPENDENCE_PENDING

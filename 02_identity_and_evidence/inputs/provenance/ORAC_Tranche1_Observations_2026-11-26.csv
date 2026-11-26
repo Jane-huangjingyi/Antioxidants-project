@@ -1,6 +1,6 @@
 doi,candidate_id,reported_material,source_locator,raw_mean,raw_error,raw_unit,error_definition,reported_repeats,independent_n,model_disposition
-10.1016/j.jsps.2024.102106,AFF-0019,Astragalin (kaempferol-3-O-glucoside) isolated compound 4,Table 3 ORAC column and antioxidant capacity methods,10894,442,µM TE/mM sample,SD_STATED_FOR_IC50_ONLY_ORAC_ROWS_UNRESOLVED,,,HOLD_PROTOCOL_AND_ERROR_DEFINITION
-10.1016/j.jsps.2024.102106,AFF-0062,p-Hydroxybenzoic acid (4-hydroxybenzoic acid) isolated compound 1,Table 3 ORAC column,5643,333,µM TE/mM sample,SD_STATED_FOR_IC50_ONLY_ORAC_ROWS_UNRESOLVED,,,HOLD_PROTOCOL_AND_ERROR_DEFINITION
+10.1016/j.jsps.2024.102106,AFF-0019,Astragalin (kaempferol-3-O-glucoside) isolated compound 4,Table 3 ORAC column and antioxidant capacity methods,10894,442,µM TE/mM sample,SD_TABLE3_FOOTER_N6,6,,PROTOCOL_ASSUMED_PH74_37C_REVIEWER_ACCEPTED_INDEPENDENCE_PENDING
+10.1016/j.jsps.2024.102106,AFF-0062,p-Hydroxybenzoic acid (4-hydroxybenzoic acid) isolated compound 1,Table 3 ORAC column,5643,333,µM TE/mM sample,SD_TABLE3_FOOTER_N6,6,,PROTOCOL_ASSUMED_PH74_37C_REVIEWER_ACCEPTED_INDEPENDENCE_PENDING
 10.3390/life14081037,AFF-0169,Carvacrol (Sigma-Aldrich 99%),Section 3.3 ORAC results text,3.535,0.127,mmol TE/g,UNRESOLVED_NO_STATISTICS_SECTION,,,HOLD_MASS_BASIS_ERROR_AND_HIGH_AAPH_PROTOCOL
 10.3390/life14081037,AFF-0170,Thymol (Sigma-Aldrich 98.5%),Section 3.3 ORAC results text,2.341,0.009,mmol TE/g,UNRESOLVED_NO_STATISTICS_SECTION,,,HOLD_MASS_BASIS_ERROR_AND_HIGH_AAPH_PROTOCOL
 10.3390/antiox9111149,AFF-0003,EGCG reference standard,Section 3.2.3 antioxidant activity text,3.98,0.00,mM TE/g in Results vs µM TE/mg in Methods,SD_STATED_TRIPPLICATE_TECHNICAL,3,,HOLD_METHODS_RESULTS_UNIT_CONFLICT
