@@ -102,15 +102,26 @@ def screen(hit, compound, code):
     model_ok = bool(MODEL.search(ab))
     return comp_in_title and path_ok and model_ok and not is_review
 
-def best_hit(compound, code):
+def screen_relaxed(hit, compound, code):
+    title = hit.get("title", "") or ""; ab = hit.get("abstractText", "") or ""
+    text = (title + " " + ab).lower()
+    comp_ok = any(_match(t, text) for t in COMPOUND[compound])
+    path_ok = any(_match(t, text) for t in PATHWAY[code])
+    plist = [p.strip().lower() for p in hit.get("pubTypeList", {}).get("pubType", [])]
+    is_review = any(p in ("review", "review-article") for p in plist)
+    model_ok = bool(MODEL.search(ab))
+    return comp_ok and path_ok and model_ok and not is_review
+
+def best_hit(compound, code, relaxed=False):
     query, hits = search(compound, code)
-    passed = [h for h in hits if screen(h, compound, code)]
+    fn = screen_relaxed if relaxed else screen
+    passed = [h for h in hits if fn(h, compound, code)]
     return query, hits, passed
 
 FIELDS = ["compound","pathway_code","status","doi","pmid","title","cited_by","pub_type","abstract","query","n_hits","n_passed"]
 
-def row_for(compound, code):
-    query, hits, passed = best_hit(compound, code)
+def row_for(compound, code, relaxed=False):
+    query, hits, passed = best_hit(compound, code, relaxed=relaxed)
     if passed:
         h = passed[0]
         return dict(compound=compound, pathway_code=code, status="ABSTRACT_CANDIDATE",
@@ -131,17 +142,19 @@ if __name__ == "__main__":
                 print(f"  [{h.get('pmid')}] {h.get('doi')} | type={h.get('pubTypeList',{}).get('pubType')}", flush=True)
                 print(f"    {h.get('title','')[:130]}", flush=True)
                 print(f"    AB: {(h.get('abstractText','') or '')[:240]}", flush=True)
-    elif mode == "all":
+    elif mode in ("all", "deep"):
+        state_filter = "PENDING_EXPANSION" if mode == "all" else "NOT_REPORTED_IN_CHECKED_SET"
+        relaxed = (mode == "deep")
         mat = list(csv.DictReader((TBL / "07_pathway_framework_matrix.csv").open(encoding="utf-8-sig", newline="")))
-        pending = [(m["compound"], m["pathway_code"]) for m in mat if m["cell_state"] == "PENDING_EXPANSION"]
-        print("pending cells:", len(pending), flush=True)
+        pending = [(m["compound"], m["pathway_code"]) for m in mat if m["cell_state"] == state_filter]
+        print("mode", mode, "cells:", len(pending), flush=True)
         out = []; dest = TBL / "audit" / "Pathway_Expansion_Search_Results.csv"
         existing = {}
         if dest.exists():
             for r in csv.DictReader(dest.open(encoding="utf-8-sig", newline="")):
                 existing[(r["compound"], r["pathway_code"])] = r
         for i, (compound, code) in enumerate(pending, 1):
-            existing[(compound, code)] = row_for(compound, code)
+            existing[(compound, code)] = row_for(compound, code, relaxed=relaxed)
             if i % 10 == 0 or i == len(pending):
                 with dest.open("w", encoding="utf-8", newline="") as f:
                     w = csv.DictWriter(f, fieldnames=FIELDS, lineterminator="\n"); w.writeheader(); w.writerows(list(existing.values()))
