@@ -1,0 +1,9 @@
+{
+  "worksheet_rows": 26,
+  "all_gates_pending": true,
+  "decision_pending": true,
+  "prescreen": {
+    "LIKELY_SINGLE": 26
+  },
+  "note": "Researcher must fill value/unit/independent_n/error/protocol and set six gates PASS + APPROVED_FOR_NEXT_ANALYSIS before 03_update_evidence intake/refit."
+}
