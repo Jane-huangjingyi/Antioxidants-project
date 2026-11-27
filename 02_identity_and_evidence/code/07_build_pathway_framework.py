@@ -164,6 +164,9 @@ if ver_path.exists():
         elif act == "FORMULATION_CONTEXT" and key in mdict:
             mdict[key]["integrity_flag"] = "FORMULATION_CONTEXT"
             mdict[key]["mapping_basis"] = "full-text reviewed 2026-11-26: formulation context; abstract pending review. " + reason
+        elif act == "NO_ACCESS" and key in mdict:
+            mdict[key]["integrity_flag"] = "NO_FULLTEXT_ACCESS"
+            mdict[key]["mapping_basis"] = "full-text unavailable (institutional access blocked); abstract pending. " + reason
 
 # Rebuild expansion register from the final matrix (remaining follow-up work).
 register = []
