@@ -19,17 +19,17 @@ MATRIX = re.compile(r"\bpulp|fruit|fern|frond|peptide|hydrolys|extract|PlantCrys
 ORAC = re.compile(r"ORAC|oxygen radical absorbance", re.I)
 PURE = re.compile(r"pure|standard|reference compound|Trolox equivalent.* (ascorbic|gallic|caffeic|ferulic|coumaric|chlorogenic|catechin|quercetin|curcumin|naringenin|hesperidin)", re.I)
 ver = []; downloaded_dois = set(); downloaded_pmids = set()
+norm = lambda s: re.sub(r"[^a-z0-9]", "", s.lower())
+by_norm = {norm(r["doi"]): r for r in listrows}
 for p in sorted(PDFDIR.glob("*.pdf")):
-    if not p.stem.isdigit():
-        continue
-    pmid = p.stem
+    pmid = p.stem if p.stem.isdigit() else ""
     try:
         doc = pymupdf.open(str(p)); txt = re.sub(r"\s+", " ", "\n".join(pg.get_text() for pg in doc))
     except Exception:
         continue
     dm = re.search(r"10\.\d{4,9}/[^\s\"<>]+", txt)
     doi = (dm.group(0).rstrip(".;,") if dm else "").lower()
-    matched = by_pmid.get(pmid) or by_doi.get(doi)
+    matched = by_pmid.get(pmid) or by_doi.get(doi) or by_norm.get(norm(p.stem))
     if not matched:
         continue
     downloaded_dois.add(matched["doi"].lower()); downloaded_pmids.add(pmid)
