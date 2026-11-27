@@ -1,0 +1,11 @@
+{
+  "total": 567,
+  "scope_counts": {
+    "MIXTURE_EXTRACT_FOOD": 316,
+    "METHOD_DEVELOPMENT": 8,
+    "MULTI_COMPOUND_UNCLEAR": 105,
+    "SINGLE_COMPOUND_CANDIDATE": 138
+  },
+  "eligible_single_compound": 138,
+  "note": "Title-based scope triage; single-compound subset eligible for next full-text extraction + six-gate intake. Mixtures/extracts/methods out of scope for single-compound capacity model."
+}
