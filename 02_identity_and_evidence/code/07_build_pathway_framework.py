@@ -137,7 +137,7 @@ for m in matrix:
         m["mapping_basis"] = "systematic expansion search; no qualifying primary study found"
 
 # Apply full-text verification verdicts (upgrade / reject / reassign / formulation-context).
-ver_path = AUDIT / "Pathway_Fulltext_Verification_2026-11-26.csv"
+ver_path = AUDIT / "Pathway_Fulltext_Verification_2026-11-27.csv"
 if ver_path.exists():
     mdict = {(m["compound"], m["pathway_code"]): m for m in matrix}
     def _upgrade(cell, grade, doi, src, title, reason):
@@ -164,6 +164,9 @@ if ver_path.exists():
         elif act == "FORMULATION_CONTEXT" and key in mdict:
             mdict[key]["integrity_flag"] = "FORMULATION_CONTEXT"
             mdict[key]["mapping_basis"] = "full-text reviewed 2026-11-26: formulation context; abstract pending review. " + reason
+        elif act == "NO_ACCESS" and key in mdict:
+            mdict[key]["integrity_flag"] = "NO_FULLTEXT_ACCESS"
+            mdict[key]["mapping_basis"] = "full-text unavailable (institutional access blocked); abstract pending. " + reason
 
 # Rebuild expansion register from the final matrix (remaining follow-up work).
 register = []

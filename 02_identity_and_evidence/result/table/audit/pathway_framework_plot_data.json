@@ -1,0 +1,570 @@
+{
+  "comp_order": [
+    "Quercetin",
+    "Catechin",
+    "Hesperetin",
+    "Genistein",
+    "Hesperidin",
+    "Myricetin",
+    "p-Coumaric acid",
+    "Chlorogenic acid",
+    "Gallic acid",
+    "Syringic acid",
+    "L-Ascorbic acid",
+    "Glutathione"
+  ],
+  "ucodes": [
+    "U1",
+    "U2",
+    "U3",
+    "U4",
+    "U5",
+    "U6",
+    "U7",
+    "U8",
+    "U9",
+    "U10",
+    "U11",
+    "U12",
+    "U13",
+    "U14",
+    "U15",
+    "U16",
+    "U17",
+    "U18",
+    "U19",
+    "U20"
+  ],
+  "uname": {
+    "U1": "KEAP1-NRF2/ARE transcriptional antioxidant response",
+    "U2": "Detoxification of reactive oxygen species (SOD/CAT/GPx/PRDX/TXN)",
+    "U3": "Glutathione synthesis and recycling",
+    "U4": "Cellular response to oxidative stress",
+    "U5": "Thioredoxin/peroxiredoxin system",
+    "U6": "Ferroptosis / lipid peroxidation defense",
+    "U7": "Ascorbate and aldarate metabolism (vitamin C recycling)",
+    "U8": "NADPH oxidase / ROS generation (vascular)",
+    "U9": "NF-kB / TLR4 inflammatory signaling",
+    "U10": "PI3K/AKT signaling",
+    "U11": "MAPK stress signaling (TAK1/p38/JNK)",
+    "U12": "HIF-1 hypoxia response",
+    "U13": "PGC-1alpha / transcriptional activation of mitochondrial biogenesis",
+    "U14": "CFTR-dependent chloride/GSH transport disposition",
+    "U15": "AMPK signaling (energy/redox sensing)",
+    "U16": "FoxO signaling (stress resistance)",
+    "U17": "Apoptosis (regulated cell death)",
+    "U18": "Autophagy / mitophagy (organelle quality control)",
+    "U19": "NLRP3 inflammasome (ROS/inflammation)",
+    "U20": "ER stress / unfolded protein response"
+  },
+  "uclass": {
+    "U1": "CORE_ANTIOXIDANT",
+    "U2": "CORE_ANTIOXIDANT",
+    "U3": "CORE_ANTIOXIDANT",
+    "U4": "CORE_ANTIOXIDANT",
+    "U5": "CORE_ANTIOXIDANT",
+    "U6": "CORE_ANTIOXIDANT",
+    "U7": "CORE_ANTIOXIDANT",
+    "U8": "CORE_ANTIOXIDANT",
+    "U9": "BROADER_REDOX_LINKED",
+    "U10": "BROADER_REDOX_LINKED",
+    "U11": "BROADER_REDOX_LINKED",
+    "U12": "BROADER_REDOX_LINKED",
+    "U13": "BROADER_REDOX_LINKED",
+    "U14": "BROADER_REDOX_LINKED",
+    "U15": "BROADER_REDOX_LINKED",
+    "U16": "BROADER_REDOX_LINKED",
+    "U17": "BROADER_REDOX_LINKED",
+    "U18": "BROADER_REDOX_LINKED",
+    "U19": "BROADER_REDOX_LINKED",
+    "U20": "BROADER_REDOX_LINKED"
+  },
+  "grid": {
+    "U1": {
+      "Quercetin": "FUNCTIONAL",
+      "Catechin": "BODY_READOUT",
+      "Hesperetin": "BODY_READOUT",
+      "Genistein": "BODY_READOUT",
+      "Hesperidin": "BODY_READOUT",
+      "Myricetin": "BODY_READOUT",
+      "p-Coumaric acid": "BODY_READOUT",
+      "Chlorogenic acid": "FUNCTIONAL",
+      "Gallic acid": "BODY_READOUT",
+      "Syringic acid": "BODY_READOUT",
+      "L-Ascorbic acid": "BODY_READOUT",
+      "Glutathione": "ABSTRACT_ONLY"
+    },
+    "U2": {
+      "Quercetin": "BODY_READOUT",
+      "Catechin": "NOT_REPORTED_IN_CHECKED_SET",
+      "Hesperetin": "ABSTRACT_ONLY",
+      "Genistein": "BODY_READOUT",
+      "Hesperidin": "BODY_READOUT",
+      "Myricetin": "BODY_READOUT",
+      "p-Coumaric acid": "BODY_READOUT",
+      "Chlorogenic acid": "ABSTRACT_ONLY",
+      "Gallic acid": "NOT_REPORTED_IN_CHECKED_SET",
+      "Syringic acid": "BODY_READOUT",
+      "L-Ascorbic acid": "CELL_ONLY",
+      "Glutathione": "NOT_REPORTED_IN_CHECKED_SET"
+    },
+    "U3": {
+      "Quercetin": "BODY_READOUT",
+      "Catechin": "BODY_READOUT",
+      "Hesperetin": "BODY_READOUT",
+      "Genistein": "BODY_READOUT",
+      "Hesperidin": "BODY_READOUT",
+      "Myricetin": "BODY_READOUT",
+      "p-Coumaric acid": "BODY_READOUT",
+      "Chlorogenic acid": "ABSTRACT_ONLY",
+      "Gallic acid": "CELL_ONLY",
+      "Syringic acid": "NOT_REPORTED_IN_CHECKED_SET",
+      "L-Ascorbic acid": "NOT_REPORTED_IN_CHECKED_SET",
+      "Glutathione": "FUNCTIONAL"
+    },
+    "U4": {
+      "Quercetin": "BODY_READOUT",
+      "Catechin": "NOT_REPORTED_IN_CHECKED_SET",
+      "Hesperetin": "BODY_READOUT",
+      "Genistein": "BODY_READOUT",
+      "Hesperidin": "BODY_READOUT",
+      "Myricetin": "BODY_READOUT",
+      "p-Coumaric acid": "NOT_REPORTED_IN_CHECKED_SET",
+      "Chlorogenic acid": "FUNCTIONAL",
+      "Gallic acid": "NOT_REPORTED_IN_CHECKED_SET",
+      "Syringic acid": "BODY_READOUT",
+      "L-Ascorbic acid": "NOT_REPORTED_IN_CHECKED_SET",
+      "Glutathione": "ABSTRACT_ONLY"
+    },
+    "U5": {
+      "Quercetin": "NOT_REPORTED_IN_CHECKED_SET",
+      "Catechin": "NOT_REPORTED_IN_CHECKED_SET",
+      "Hesperetin": "BODY_READOUT",
+      "Genistein": "NOT_REPORTED_IN_CHECKED_SET",
+      "Hesperidin": "NOT_REPORTED_IN_CHECKED_SET",
+      "Myricetin": "CELL_ONLY",
+      "p-Coumaric acid": "NOT_REPORTED_IN_CHECKED_SET",
+      "Chlorogenic acid": "CELL_ONLY",
+      "Gallic acid": "BODY_READOUT",
+      "Syringic acid": "NOT_REPORTED_IN_CHECKED_SET",
+      "L-Ascorbic acid": "BODY_READOUT",
+      "Glutathione": "NOT_REPORTED_IN_CHECKED_SET"
+    },
+    "U6": {
+      "Quercetin": "BODY_READOUT",
+      "Catechin": "BODY_READOUT",
+      "Hesperetin": "BODY_READOUT",
+      "Genistein": "BODY_READOUT",
+      "Hesperidin": "BODY_READOUT",
+      "Myricetin": "BODY_READOUT",
+      "p-Coumaric acid": "NOT_REPORTED_IN_CHECKED_SET",
+      "Chlorogenic acid": "BODY_READOUT",
+      "Gallic acid": "BODY_READOUT",
+      "Syringic acid": "BODY_READOUT",
+      "L-Ascorbic acid": "BODY_READOUT",
+      "Glutathione": "BODY_READOUT"
+    },
+    "U7": {
+      "Quercetin": "NOT_REPORTED_IN_CHECKED_SET",
+      "Catechin": "NOT_REPORTED_IN_CHECKED_SET",
+      "Hesperetin": "NOT_REPORTED_IN_CHECKED_SET",
+      "Genistein": "NOT_REPORTED_IN_CHECKED_SET",
+      "Hesperidin": "NOT_REPORTED_IN_CHECKED_SET",
+      "Myricetin": "NOT_REPORTED_IN_CHECKED_SET",
+      "p-Coumaric acid": "NOT_REPORTED_IN_CHECKED_SET",
+      "Chlorogenic acid": "NOT_REPORTED_IN_CHECKED_SET",
+      "Gallic acid": "NOT_REPORTED_IN_CHECKED_SET",
+      "Syringic acid": "NOT_REPORTED_IN_CHECKED_SET",
+      "L-Ascorbic acid": "BODY_READOUT",
+      "Glutathione": "NOT_REPORTED_IN_CHECKED_SET"
+    },
+    "U8": {
+      "Quercetin": "BODY_READOUT",
+      "Catechin": "NOT_REPORTED_IN_CHECKED_SET",
+      "Hesperetin": "NOT_REPORTED_IN_CHECKED_SET",
+      "Genistein": "BODY_READOUT",
+      "Hesperidin": "NOT_REPORTED_IN_CHECKED_SET",
+      "Myricetin": "NOT_REPORTED_IN_CHECKED_SET",
+      "p-Coumaric acid": "NOT_REPORTED_IN_CHECKED_SET",
+      "Chlorogenic acid": "BODY_READOUT",
+      "Gallic acid": "BODY_READOUT",
+      "Syringic acid": "CELL_ONLY",
+      "L-Ascorbic acid": "BODY_READOUT",
+      "Glutathione": "NOT_REPORTED_IN_CHECKED_SET"
+    },
+    "U9": {
+      "Quercetin": "NOT_REPORTED_IN_CHECKED_SET",
+      "Catechin": "NOT_REPORTED_IN_CHECKED_SET",
+      "Hesperetin": "BODY_READOUT",
+      "Genistein": "NOT_REPORTED_IN_CHECKED_SET",
+      "Hesperidin": "NOT_REPORTED_IN_CHECKED_SET",
+      "Myricetin": "BODY_READOUT",
+      "p-Coumaric acid": "BODY_READOUT",
+      "Chlorogenic acid": "BODY_READOUT",
+      "Gallic acid": "BODY_READOUT",
+      "Syringic acid": "BODY_READOUT",
+      "L-Ascorbic acid": "NOT_REPORTED_IN_CHECKED_SET",
+      "Glutathione": "ABSTRACT_ONLY"
+    },
+    "U10": {
+      "Quercetin": "NOT_REPORTED_IN_CHECKED_SET",
+      "Catechin": "NOT_REPORTED_IN_CHECKED_SET",
+      "Hesperetin": "NOT_REPORTED_IN_CHECKED_SET",
+      "Genistein": "FUNCTIONAL",
+      "Hesperidin": "BODY_READOUT",
+      "Myricetin": "NOT_REPORTED_IN_CHECKED_SET",
+      "p-Coumaric acid": "NOT_REPORTED_IN_CHECKED_SET",
+      "Chlorogenic acid": "BODY_READOUT",
+      "Gallic acid": "BODY_READOUT",
+      "Syringic acid": "NOT_REPORTED_IN_CHECKED_SET",
+      "L-Ascorbic acid": "BODY_READOUT",
+      "Glutathione": "NOT_REPORTED_IN_CHECKED_SET"
+    },
+    "U11": {
+      "Quercetin": "NOT_REPORTED_IN_CHECKED_SET",
+      "Catechin": "NOT_REPORTED_IN_CHECKED_SET",
+      "Hesperetin": "BODY_READOUT",
+      "Genistein": "NOT_REPORTED_IN_CHECKED_SET",
+      "Hesperidin": "NOT_REPORTED_IN_CHECKED_SET",
+      "Myricetin": "BODY_READOUT",
+      "p-Coumaric acid": "NOT_REPORTED_IN_CHECKED_SET",
+      "Chlorogenic acid": "NOT_REPORTED_IN_CHECKED_SET",
+      "Gallic acid": "NOT_REPORTED_IN_CHECKED_SET",
+      "Syringic acid": "BODY_READOUT",
+      "L-Ascorbic acid": "BODY_READOUT",
+      "Glutathione": "NOT_REPORTED_IN_CHECKED_SET"
+    },
+    "U12": {
+      "Quercetin": "NOT_REPORTED_IN_CHECKED_SET",
+      "Catechin": "NOT_REPORTED_IN_CHECKED_SET",
+      "Hesperetin": "BODY_READOUT",
+      "Genistein": "NOT_REPORTED_IN_CHECKED_SET",
+      "Hesperidin": "NOT_REPORTED_IN_CHECKED_SET",
+      "Myricetin": "BODY_READOUT",
+      "p-Coumaric acid": "NOT_REPORTED_IN_CHECKED_SET",
+      "Chlorogenic acid": "NOT_REPORTED_IN_CHECKED_SET",
+      "Gallic acid": "ABSTRACT_ONLY",
+      "Syringic acid": "NOT_REPORTED_IN_CHECKED_SET",
+      "L-Ascorbic acid": "BODY_READOUT",
+      "Glutathione": "ABSTRACT_ONLY"
+    },
+    "U13": {
+      "Quercetin": "BODY_READOUT",
+      "Catechin": "NOT_REPORTED_IN_CHECKED_SET",
+      "Hesperetin": "CELL_ONLY",
+      "Genistein": "BODY_READOUT",
+      "Hesperidin": "BODY_READOUT",
+      "Myricetin": "BODY_READOUT",
+      "p-Coumaric acid": "NOT_REPORTED_IN_CHECKED_SET",
+      "Chlorogenic acid": "NOT_REPORTED_IN_CHECKED_SET",
+      "Gallic acid": "ABSTRACT_ONLY",
+      "Syringic acid": "BODY_READOUT",
+      "L-Ascorbic acid": "CELL_ONLY",
+      "Glutathione": "NOT_REPORTED_IN_CHECKED_SET"
+    },
+    "U14": {
+      "Quercetin": "BODY_READOUT",
+      "Catechin": "NOT_REPORTED_IN_CHECKED_SET",
+      "Hesperetin": "NOT_REPORTED_IN_CHECKED_SET",
+      "Genistein": "NOT_REPORTED_IN_CHECKED_SET",
+      "Hesperidin": "BODY_READOUT",
+      "Myricetin": "NOT_REPORTED_IN_CHECKED_SET",
+      "p-Coumaric acid": "NOT_REPORTED_IN_CHECKED_SET",
+      "Chlorogenic acid": "BODY_READOUT",
+      "Gallic acid": "NOT_REPORTED_IN_CHECKED_SET",
+      "Syringic acid": "NOT_REPORTED_IN_CHECKED_SET",
+      "L-Ascorbic acid": "NOT_REPORTED_IN_CHECKED_SET",
+      "Glutathione": "FUNCTIONAL"
+    },
+    "U15": {
+      "Quercetin": "NOT_REPORTED_IN_CHECKED_SET",
+      "Catechin": "NOT_REPORTED_IN_CHECKED_SET",
+      "Hesperetin": "FUNCTIONAL",
+      "Genistein": "BODY_READOUT",
+      "Hesperidin": "BODY_READOUT",
+      "Myricetin": "ABSTRACT_ONLY",
+      "p-Coumaric acid": "BODY_READOUT",
+      "Chlorogenic acid": "NOT_REPORTED_IN_CHECKED_SET",
+      "Gallic acid": "BODY_READOUT",
+      "Syringic acid": "BODY_READOUT",
+      "L-Ascorbic acid": "NOT_REPORTED_IN_CHECKED_SET",
+      "Glutathione": "NOT_REPORTED_IN_CHECKED_SET"
+    },
+    "U16": {
+      "Quercetin": "ABSTRACT_ONLY",
+      "Catechin": "NOT_REPORTED_IN_CHECKED_SET",
+      "Hesperetin": "ABSTRACT_ONLY",
+      "Genistein": "CELL_ONLY",
+      "Hesperidin": "NOT_REPORTED_IN_CHECKED_SET",
+      "Myricetin": "BODY_READOUT",
+      "p-Coumaric acid": "NOT_REPORTED_IN_CHECKED_SET",
+      "Chlorogenic acid": "BODY_READOUT",
+      "Gallic acid": "BODY_READOUT",
+      "Syringic acid": "BODY_READOUT",
+      "L-Ascorbic acid": "NOT_REPORTED_IN_CHECKED_SET",
+      "Glutathione": "NOT_REPORTED_IN_CHECKED_SET"
+    },
+    "U17": {
+      "Quercetin": "NOT_REPORTED_IN_CHECKED_SET",
+      "Catechin": "NOT_REPORTED_IN_CHECKED_SET",
+      "Hesperetin": "NOT_REPORTED_IN_CHECKED_SET",
+      "Genistein": "NOT_REPORTED_IN_CHECKED_SET",
+      "Hesperidin": "BODY_READOUT",
+      "Myricetin": "BODY_READOUT",
+      "p-Coumaric acid": "BODY_READOUT",
+      "Chlorogenic acid": "ABSTRACT_ONLY",
+      "Gallic acid": "NOT_REPORTED_IN_CHECKED_SET",
+      "Syringic acid": "BODY_READOUT",
+      "L-Ascorbic acid": "NOT_REPORTED_IN_CHECKED_SET",
+      "Glutathione": "ABSTRACT_ONLY"
+    },
+    "U18": {
+      "Quercetin": "NOT_REPORTED_IN_CHECKED_SET",
+      "Catechin": "NOT_REPORTED_IN_CHECKED_SET",
+      "Hesperetin": "BODY_READOUT",
+      "Genistein": "NOT_REPORTED_IN_CHECKED_SET",
+      "Hesperidin": "NOT_REPORTED_IN_CHECKED_SET",
+      "Myricetin": "BODY_READOUT",
+      "p-Coumaric acid": "NOT_REPORTED_IN_CHECKED_SET",
+      "Chlorogenic acid": "BODY_READOUT",
+      "Gallic acid": "ABSTRACT_ONLY",
+      "Syringic acid": "BODY_READOUT",
+      "L-Ascorbic acid": "NOT_REPORTED_IN_CHECKED_SET",
+      "Glutathione": "ABSTRACT_ONLY"
+    },
+    "U19": {
+      "Quercetin": "BODY_READOUT",
+      "Catechin": "NOT_REPORTED_IN_CHECKED_SET",
+      "Hesperetin": "BODY_READOUT",
+      "Genistein": "BODY_READOUT",
+      "Hesperidin": "ABSTRACT_ONLY",
+      "Myricetin": "NOT_REPORTED_IN_CHECKED_SET",
+      "p-Coumaric acid": "BODY_READOUT",
+      "Chlorogenic acid": "BODY_READOUT",
+      "Gallic acid": "CELL_ONLY",
+      "Syringic acid": "BODY_READOUT",
+      "L-Ascorbic acid": "BODY_READOUT",
+      "Glutathione": "ABSTRACT_ONLY"
+    },
+    "U20": {
+      "Quercetin": "NOT_REPORTED_IN_CHECKED_SET",
+      "Catechin": "NOT_REPORTED_IN_CHECKED_SET",
+      "Hesperetin": "NOT_REPORTED_IN_CHECKED_SET",
+      "Genistein": "BODY_READOUT",
+      "Hesperidin": "NOT_REPORTED_IN_CHECKED_SET",
+      "Myricetin": "NOT_REPORTED_IN_CHECKED_SET",
+      "p-Coumaric acid": "BODY_READOUT",
+      "Chlorogenic acid": "NOT_REPORTED_IN_CHECKED_SET",
+      "Gallic acid": "NOT_REPORTED_IN_CHECKED_SET",
+      "Syringic acid": "BODY_READOUT",
+      "L-Ascorbic acid": "BODY_READOUT",
+      "Glutathione": "NOT_REPORTED_IN_CHECKED_SET"
+    }
+  },
+  "intersections": [
+    {
+      "pathways": [
+        "U1",
+        "U10",
+        "U11",
+        "U12",
+        "U19",
+        "U20",
+        "U5",
+        "U6",
+        "U7",
+        "U8"
+      ],
+      "size": 1,
+      "compounds": [
+        "L-Ascorbic acid"
+      ]
+    },
+    {
+      "pathways": [
+        "U1",
+        "U10",
+        "U13",
+        "U14",
+        "U15",
+        "U17",
+        "U2",
+        "U3",
+        "U4",
+        "U6"
+      ],
+      "size": 1,
+      "compounds": [
+        "Hesperidin"
+      ]
+    },
+    {
+      "pathways": [
+        "U1",
+        "U10",
+        "U13",
+        "U15",
+        "U19",
+        "U2",
+        "U20",
+        "U3",
+        "U4",
+        "U6",
+        "U8"
+      ],
+      "size": 1,
+      "compounds": [
+        "Genistein"
+      ]
+    },
+    {
+      "pathways": [
+        "U1",
+        "U10",
+        "U14",
+        "U16",
+        "U18",
+        "U19",
+        "U4",
+        "U6",
+        "U8",
+        "U9"
+      ],
+      "size": 1,
+      "compounds": [
+        "Chlorogenic acid"
+      ]
+    },
+    {
+      "pathways": [
+        "U1",
+        "U10",
+        "U15",
+        "U16",
+        "U5",
+        "U6",
+        "U8",
+        "U9"
+      ],
+      "size": 1,
+      "compounds": [
+        "Gallic acid"
+      ]
+    },
+    {
+      "pathways": [
+        "U1",
+        "U11",
+        "U12",
+        "U13",
+        "U16",
+        "U17",
+        "U18",
+        "U2",
+        "U3",
+        "U4",
+        "U6",
+        "U9"
+      ],
+      "size": 1,
+      "compounds": [
+        "Myricetin"
+      ]
+    },
+    {
+      "pathways": [
+        "U1",
+        "U11",
+        "U13",
+        "U15",
+        "U16",
+        "U17",
+        "U18",
+        "U19",
+        "U2",
+        "U20",
+        "U4",
+        "U6",
+        "U9"
+      ],
+      "size": 1,
+      "compounds": [
+        "Syringic acid"
+      ]
+    },
+    {
+      "pathways": [
+        "U1",
+        "U13",
+        "U14",
+        "U19",
+        "U2",
+        "U3",
+        "U4",
+        "U6",
+        "U8"
+      ],
+      "size": 1,
+      "compounds": [
+        "Quercetin"
+      ]
+    },
+    {
+      "pathways": [
+        "U1",
+        "U15",
+        "U17",
+        "U19",
+        "U2",
+        "U20",
+        "U3",
+        "U9"
+      ],
+      "size": 1,
+      "compounds": [
+        "p-Coumaric acid"
+      ]
+    },
+    {
+      "pathways": [
+        "U1",
+        "U3",
+        "U6"
+      ],
+      "size": 1,
+      "compounds": [
+        "Catechin"
+      ]
+    },
+    {
+      "pathways": [
+        "U11",
+        "U12",
+        "U15",
+        "U18",
+        "U19",
+        "U3",
+        "U5",
+        "U9"
+      ],
+      "size": 1,
+      "compounds": [
+        "Hesperetin"
+      ]
+    },
+    {
+      "pathways": [
+        "U14",
+        "U3",
+        "U6"
+      ],
+      "size": 1,
+      "compounds": [
+        "Glutathione"
+      ]
+    }
+  ],
+  "no_solid": [],
+  "n_pending": 123,
+  "n_cells": 240
+}

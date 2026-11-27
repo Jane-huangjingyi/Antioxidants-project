@@ -1,0 +1,582 @@
+{
+  "comp_order": [
+    "Quercetin",
+    "Catechin",
+    "Hesperetin",
+    "Genistein",
+    "Hesperidin",
+    "Myricetin",
+    "p-Coumaric acid",
+    "Chlorogenic acid",
+    "Gallic acid",
+    "Syringic acid",
+    "L-Ascorbic acid",
+    "Glutathione"
+  ],
+  "pathways": [
+    "P1",
+    "P2",
+    "P3",
+    "P4",
+    "P5",
+    "P6",
+    "P7",
+    "P8",
+    "R1",
+    "R2",
+    "R3"
+  ],
+  "signaling": [
+    "P1",
+    "P2",
+    "P3",
+    "P4",
+    "P5",
+    "P6",
+    "P7",
+    "P8"
+  ],
+  "pnames": {
+    "P1": "NRF2-KEAP1/ARE antioxidant response",
+    "P2": "NF-kB / TLR4 inflammatory signaling",
+    "P3": "PI3K/AKT signaling",
+    "P4": "MAPK stress signaling",
+    "P5": "Ferroptosis regulation",
+    "P6": "HIF1A hypoxia response",
+    "P7": "PGC-1alpha mitochondrial biogenesis",
+    "P8": "CFTR-dependent GSH transport/disposition",
+    "R1": "Glutathione redox (GSH/GSSG/GCL/GPx)",
+    "R2": "Lipid peroxidation defense",
+    "R3": "ROS/NO vascular redox balance"
+  },
+  "matrix_all": {
+    "P1": {
+      "Quercetin": "FUNCTIONAL",
+      "Catechin": "ABSTRACT_ONLY",
+      "Hesperetin": "ABSTRACT_ONLY",
+      "Genistein": "BODY_READOUT",
+      "Hesperidin": "BODY_READOUT",
+      "Myricetin": "BODY_READOUT",
+      "p-Coumaric acid": "ABSTRACT_ONLY",
+      "Chlorogenic acid": "FUNCTIONAL",
+      "Gallic acid": "BODY_READOUT",
+      "Syringic acid": "BODY_READOUT",
+      "L-Ascorbic acid": "",
+      "Glutathione": ""
+    },
+    "P2": {
+      "Quercetin": "",
+      "Catechin": "",
+      "Hesperetin": "",
+      "Genistein": "",
+      "Hesperidin": "",
+      "Myricetin": "BODY_READOUT",
+      "p-Coumaric acid": "",
+      "Chlorogenic acid": "",
+      "Gallic acid": "",
+      "Syringic acid": "",
+      "L-Ascorbic acid": "",
+      "Glutathione": ""
+    },
+    "P3": {
+      "Quercetin": "",
+      "Catechin": "",
+      "Hesperetin": "",
+      "Genistein": "",
+      "Hesperidin": "",
+      "Myricetin": "",
+      "p-Coumaric acid": "",
+      "Chlorogenic acid": "",
+      "Gallic acid": "",
+      "Syringic acid": "BODY_READOUT",
+      "L-Ascorbic acid": "",
+      "Glutathione": ""
+    },
+    "P4": {
+      "Quercetin": "",
+      "Catechin": "",
+      "Hesperetin": "",
+      "Genistein": "",
+      "Hesperidin": "",
+      "Myricetin": "BODY_READOUT",
+      "p-Coumaric acid": "",
+      "Chlorogenic acid": "",
+      "Gallic acid": "",
+      "Syringic acid": "",
+      "L-Ascorbic acid": "",
+      "Glutathione": ""
+    },
+    "P5": {
+      "Quercetin": "",
+      "Catechin": "",
+      "Hesperetin": "BODY_READOUT",
+      "Genistein": "",
+      "Hesperidin": "",
+      "Myricetin": "",
+      "p-Coumaric acid": "",
+      "Chlorogenic acid": "",
+      "Gallic acid": "",
+      "Syringic acid": "",
+      "L-Ascorbic acid": "",
+      "Glutathione": ""
+    },
+    "P6": {
+      "Quercetin": "",
+      "Catechin": "",
+      "Hesperetin": "BODY_READOUT",
+      "Genistein": "",
+      "Hesperidin": "",
+      "Myricetin": "",
+      "p-Coumaric acid": "",
+      "Chlorogenic acid": "",
+      "Gallic acid": "",
+      "Syringic acid": "",
+      "L-Ascorbic acid": "",
+      "Glutathione": ""
+    },
+    "P7": {
+      "Quercetin": "",
+      "Catechin": "",
+      "Hesperetin": "",
+      "Genistein": "",
+      "Hesperidin": "",
+      "Myricetin": "",
+      "p-Coumaric acid": "",
+      "Chlorogenic acid": "",
+      "Gallic acid": "",
+      "Syringic acid": "",
+      "L-Ascorbic acid": "",
+      "Glutathione": ""
+    },
+    "P8": {
+      "Quercetin": "",
+      "Catechin": "",
+      "Hesperetin": "",
+      "Genistein": "",
+      "Hesperidin": "",
+      "Myricetin": "",
+      "p-Coumaric acid": "",
+      "Chlorogenic acid": "",
+      "Gallic acid": "",
+      "Syringic acid": "",
+      "L-Ascorbic acid": "",
+      "Glutathione": "FUNCTIONAL"
+    },
+    "R1": {
+      "Quercetin": "BODY_READOUT",
+      "Catechin": "BODY_READOUT",
+      "Hesperetin": "BODY_READOUT",
+      "Genistein": "BODY_READOUT",
+      "Hesperidin": "BODY_READOUT",
+      "Myricetin": "BODY_READOUT",
+      "p-Coumaric acid": "BODY_READOUT",
+      "Chlorogenic acid": "",
+      "Gallic acid": "",
+      "Syringic acid": "BODY_READOUT",
+      "L-Ascorbic acid": "",
+      "Glutathione": "FUNCTIONAL"
+    },
+    "R2": {
+      "Quercetin": "BODY_READOUT",
+      "Catechin": "BODY_READOUT",
+      "Hesperetin": "ABSTRACT_ONLY",
+      "Genistein": "BODY_READOUT",
+      "Hesperidin": "BODY_READOUT",
+      "Myricetin": "BODY_READOUT",
+      "p-Coumaric acid": "",
+      "Chlorogenic acid": "",
+      "Gallic acid": "BODY_READOUT",
+      "Syringic acid": "BODY_READOUT",
+      "L-Ascorbic acid": "BODY_READOUT",
+      "Glutathione": "BODY_READOUT"
+    },
+    "R3": {
+      "Quercetin": "BODY_READOUT",
+      "Catechin": "",
+      "Hesperetin": "ABSTRACT_ONLY",
+      "Genistein": "BODY_READOUT",
+      "Hesperidin": "BODY_READOUT",
+      "Myricetin": "",
+      "p-Coumaric acid": "",
+      "Chlorogenic acid": "FUNCTIONAL",
+      "Gallic acid": "",
+      "Syringic acid": "",
+      "L-Ascorbic acid": "",
+      "Glutathione": ""
+    }
+  },
+  "matrix_solid": {
+    "P1": {
+      "Quercetin": "FUNCTIONAL",
+      "Catechin": "",
+      "Hesperetin": "",
+      "Genistein": "BODY_READOUT",
+      "Hesperidin": "BODY_READOUT",
+      "Myricetin": "BODY_READOUT",
+      "p-Coumaric acid": "",
+      "Chlorogenic acid": "FUNCTIONAL",
+      "Gallic acid": "BODY_READOUT",
+      "Syringic acid": "BODY_READOUT",
+      "L-Ascorbic acid": "",
+      "Glutathione": ""
+    },
+    "P2": {
+      "Quercetin": "",
+      "Catechin": "",
+      "Hesperetin": "",
+      "Genistein": "",
+      "Hesperidin": "",
+      "Myricetin": "BODY_READOUT",
+      "p-Coumaric acid": "",
+      "Chlorogenic acid": "",
+      "Gallic acid": "",
+      "Syringic acid": "",
+      "L-Ascorbic acid": "",
+      "Glutathione": ""
+    },
+    "P3": {
+      "Quercetin": "",
+      "Catechin": "",
+      "Hesperetin": "",
+      "Genistein": "",
+      "Hesperidin": "",
+      "Myricetin": "",
+      "p-Coumaric acid": "",
+      "Chlorogenic acid": "",
+      "Gallic acid": "",
+      "Syringic acid": "BODY_READOUT",
+      "L-Ascorbic acid": "",
+      "Glutathione": ""
+    },
+    "P4": {
+      "Quercetin": "",
+      "Catechin": "",
+      "Hesperetin": "",
+      "Genistein": "",
+      "Hesperidin": "",
+      "Myricetin": "BODY_READOUT",
+      "p-Coumaric acid": "",
+      "Chlorogenic acid": "",
+      "Gallic acid": "",
+      "Syringic acid": "",
+      "L-Ascorbic acid": "",
+      "Glutathione": ""
+    },
+    "P5": {
+      "Quercetin": "",
+      "Catechin": "",
+      "Hesperetin": "BODY_READOUT",
+      "Genistein": "",
+      "Hesperidin": "",
+      "Myricetin": "",
+      "p-Coumaric acid": "",
+      "Chlorogenic acid": "",
+      "Gallic acid": "",
+      "Syringic acid": "",
+      "L-Ascorbic acid": "",
+      "Glutathione": ""
+    },
+    "P6": {
+      "Quercetin": "",
+      "Catechin": "",
+      "Hesperetin": "BODY_READOUT",
+      "Genistein": "",
+      "Hesperidin": "",
+      "Myricetin": "",
+      "p-Coumaric acid": "",
+      "Chlorogenic acid": "",
+      "Gallic acid": "",
+      "Syringic acid": "",
+      "L-Ascorbic acid": "",
+      "Glutathione": ""
+    },
+    "P7": {
+      "Quercetin": "",
+      "Catechin": "",
+      "Hesperetin": "",
+      "Genistein": "",
+      "Hesperidin": "",
+      "Myricetin": "",
+      "p-Coumaric acid": "",
+      "Chlorogenic acid": "",
+      "Gallic acid": "",
+      "Syringic acid": "",
+      "L-Ascorbic acid": "",
+      "Glutathione": ""
+    },
+    "P8": {
+      "Quercetin": "",
+      "Catechin": "",
+      "Hesperetin": "",
+      "Genistein": "",
+      "Hesperidin": "",
+      "Myricetin": "",
+      "p-Coumaric acid": "",
+      "Chlorogenic acid": "",
+      "Gallic acid": "",
+      "Syringic acid": "",
+      "L-Ascorbic acid": "",
+      "Glutathione": "FUNCTIONAL"
+    },
+    "R1": {
+      "Quercetin": "BODY_READOUT",
+      "Catechin": "BODY_READOUT",
+      "Hesperetin": "BODY_READOUT",
+      "Genistein": "BODY_READOUT",
+      "Hesperidin": "BODY_READOUT",
+      "Myricetin": "BODY_READOUT",
+      "p-Coumaric acid": "BODY_READOUT",
+      "Chlorogenic acid": "",
+      "Gallic acid": "",
+      "Syringic acid": "BODY_READOUT",
+      "L-Ascorbic acid": "",
+      "Glutathione": "FUNCTIONAL"
+    },
+    "R2": {
+      "Quercetin": "BODY_READOUT",
+      "Catechin": "BODY_READOUT",
+      "Hesperetin": "",
+      "Genistein": "BODY_READOUT",
+      "Hesperidin": "BODY_READOUT",
+      "Myricetin": "BODY_READOUT",
+      "p-Coumaric acid": "",
+      "Chlorogenic acid": "",
+      "Gallic acid": "BODY_READOUT",
+      "Syringic acid": "BODY_READOUT",
+      "L-Ascorbic acid": "BODY_READOUT",
+      "Glutathione": "BODY_READOUT"
+    },
+    "R3": {
+      "Quercetin": "BODY_READOUT",
+      "Catechin": "",
+      "Hesperetin": "",
+      "Genistein": "BODY_READOUT",
+      "Hesperidin": "BODY_READOUT",
+      "Myricetin": "",
+      "p-Coumaric acid": "",
+      "Chlorogenic acid": "FUNCTIONAL",
+      "Gallic acid": "",
+      "Syringic acid": "",
+      "L-Ascorbic acid": "",
+      "Glutathione": ""
+    }
+  },
+  "size_all": [
+    {
+      "pathway_code": "P1",
+      "pathway_name": "NRF2-KEAP1/ARE antioxidant response",
+      "pathway_class": "SIGNALING",
+      "n_compounds": 10,
+      "compounds": "Quercetin; Catechin; Hesperetin; Genistein; Hesperidin; Myricetin; p-Coumaric acid; Chlorogenic acid; Gallic acid; Syringic acid"
+    },
+    {
+      "pathway_code": "P2",
+      "pathway_name": "NF-kB / TLR4 inflammatory signaling",
+      "pathway_class": "SIGNALING",
+      "n_compounds": 1,
+      "compounds": "Myricetin"
+    },
+    {
+      "pathway_code": "P3",
+      "pathway_name": "PI3K/AKT signaling",
+      "pathway_class": "SIGNALING",
+      "n_compounds": 1,
+      "compounds": "Syringic acid"
+    },
+    {
+      "pathway_code": "P4",
+      "pathway_name": "MAPK stress signaling",
+      "pathway_class": "SIGNALING",
+      "n_compounds": 1,
+      "compounds": "Myricetin"
+    },
+    {
+      "pathway_code": "P5",
+      "pathway_name": "Ferroptosis regulation",
+      "pathway_class": "SIGNALING",
+      "n_compounds": 1,
+      "compounds": "Hesperetin"
+    },
+    {
+      "pathway_code": "P6",
+      "pathway_name": "HIF1A hypoxia response",
+      "pathway_class": "SIGNALING",
+      "n_compounds": 1,
+      "compounds": "Hesperetin"
+    },
+    {
+      "pathway_code": "P7",
+      "pathway_name": "PGC-1alpha mitochondrial biogenesis",
+      "pathway_class": "SIGNALING",
+      "n_compounds": 0,
+      "compounds": ""
+    },
+    {
+      "pathway_code": "P8",
+      "pathway_name": "CFTR-dependent GSH transport/disposition",
+      "pathway_class": "SIGNALING",
+      "n_compounds": 1,
+      "compounds": "Glutathione"
+    },
+    {
+      "pathway_code": "R1",
+      "pathway_name": "Glutathione redox (GSH/GSSG/GCL/GPx)",
+      "pathway_class": "REDOX_PROCESS",
+      "n_compounds": 9,
+      "compounds": "Quercetin; Catechin; Hesperetin; Genistein; Hesperidin; Myricetin; p-Coumaric acid; Syringic acid; Glutathione"
+    },
+    {
+      "pathway_code": "R2",
+      "pathway_name": "Lipid peroxidation defense",
+      "pathway_class": "REDOX_PROCESS",
+      "n_compounds": 10,
+      "compounds": "Quercetin; Catechin; Hesperetin; Genistein; Hesperidin; Myricetin; Gallic acid; Syringic acid; L-Ascorbic acid; Glutathione"
+    },
+    {
+      "pathway_code": "R3",
+      "pathway_name": "ROS/NO vascular redox balance",
+      "pathway_class": "REDOX_PROCESS",
+      "n_compounds": 5,
+      "compounds": "Quercetin; Hesperetin; Genistein; Hesperidin; Chlorogenic acid"
+    }
+  ],
+  "size_solid": [
+    {
+      "pathway_code": "P1",
+      "pathway_name": "NRF2-KEAP1/ARE antioxidant response",
+      "pathway_class": "SIGNALING",
+      "n_compounds": 7,
+      "compounds": "Quercetin; Genistein; Hesperidin; Myricetin; Chlorogenic acid; Gallic acid; Syringic acid"
+    },
+    {
+      "pathway_code": "P2",
+      "pathway_name": "NF-kB / TLR4 inflammatory signaling",
+      "pathway_class": "SIGNALING",
+      "n_compounds": 1,
+      "compounds": "Myricetin"
+    },
+    {
+      "pathway_code": "P3",
+      "pathway_name": "PI3K/AKT signaling",
+      "pathway_class": "SIGNALING",
+      "n_compounds": 1,
+      "compounds": "Syringic acid"
+    },
+    {
+      "pathway_code": "P4",
+      "pathway_name": "MAPK stress signaling",
+      "pathway_class": "SIGNALING",
+      "n_compounds": 1,
+      "compounds": "Myricetin"
+    },
+    {
+      "pathway_code": "P5",
+      "pathway_name": "Ferroptosis regulation",
+      "pathway_class": "SIGNALING",
+      "n_compounds": 1,
+      "compounds": "Hesperetin"
+    },
+    {
+      "pathway_code": "P6",
+      "pathway_name": "HIF1A hypoxia response",
+      "pathway_class": "SIGNALING",
+      "n_compounds": 1,
+      "compounds": "Hesperetin"
+    },
+    {
+      "pathway_code": "P7",
+      "pathway_name": "PGC-1alpha mitochondrial biogenesis",
+      "pathway_class": "SIGNALING",
+      "n_compounds": 0,
+      "compounds": ""
+    },
+    {
+      "pathway_code": "P8",
+      "pathway_name": "CFTR-dependent GSH transport/disposition",
+      "pathway_class": "SIGNALING",
+      "n_compounds": 1,
+      "compounds": "Glutathione"
+    },
+    {
+      "pathway_code": "R1",
+      "pathway_name": "Glutathione redox (GSH/GSSG/GCL/GPx)",
+      "pathway_class": "REDOX_PROCESS",
+      "n_compounds": 9,
+      "compounds": "Quercetin; Catechin; Hesperetin; Genistein; Hesperidin; Myricetin; p-Coumaric acid; Syringic acid; Glutathione"
+    },
+    {
+      "pathway_code": "R2",
+      "pathway_name": "Lipid peroxidation defense",
+      "pathway_class": "REDOX_PROCESS",
+      "n_compounds": 9,
+      "compounds": "Quercetin; Catechin; Genistein; Hesperidin; Myricetin; Gallic acid; Syringic acid; L-Ascorbic acid; Glutathione"
+    },
+    {
+      "pathway_code": "R3",
+      "pathway_name": "ROS/NO vascular redox balance",
+      "pathway_class": "REDOX_PROCESS",
+      "n_compounds": 4,
+      "compounds": "Quercetin; Genistein; Hesperidin; Chlorogenic acid"
+    }
+  ],
+  "intersections": [
+    {
+      "pathways": [
+        "P1"
+      ],
+      "size": 5,
+      "compounds": [
+        "Quercetin",
+        "Genistein",
+        "Hesperidin",
+        "Chlorogenic acid",
+        "Gallic acid"
+      ]
+    },
+    {
+      "pathways": [
+        "P1",
+        "P2",
+        "P4"
+      ],
+      "size": 1,
+      "compounds": [
+        "Myricetin"
+      ]
+    },
+    {
+      "pathways": [
+        "P1",
+        "P3"
+      ],
+      "size": 1,
+      "compounds": [
+        "Syringic acid"
+      ]
+    },
+    {
+      "pathways": [
+        "P5",
+        "P6"
+      ],
+      "size": 1,
+      "compounds": [
+        "Hesperetin"
+      ]
+    },
+    {
+      "pathways": [
+        "P8"
+      ],
+      "size": 1,
+      "compounds": [
+        "Glutathione"
+      ]
+    }
+  ],
+  "no_signaling_solid": [
+    "Catechin",
+    "p-Coumaric acid",
+    "L-Ascorbic acid"
+  ]
+}
