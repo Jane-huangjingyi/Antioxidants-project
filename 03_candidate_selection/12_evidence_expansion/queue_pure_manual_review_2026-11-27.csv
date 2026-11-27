@@ -1,0 +1,5 @@
+doi,candidate_id,verdict,reason
+10.1007/s11356-025-35893-8,NEW-GSH,NOT_ADMISSIBLE,"ORAC on Baltic clam tissue homogenate (ecotoxicology biomarker), not a pure GSH standard"
+10.1080/14756366.2022.2041627,AFF-0030,PENDING_RESEARCHER,pure naringenin skeleton ORAC 5.2 eq (Table 4) but row-level n/error not extracted; outside retained set; derivative-focused paper
+10.1371/journal.pone.0291000,AFF-0159,PENDING_RESEARCHER,curcumin control ORAC (fluorescein 75mM PB 37C AAPH) but technical triplicate only; outside retained set; pulsed-light treatment study
+10.3389/fnut.2020.584900,AFF-0036,NOT_ADMISSIBLE,"ORAC of purified finger-citron flavonoid fraction (FFC), a mixture not a single pure compound"
