@@ -1,0 +1,18 @@
+{
+  "prepared_rows": 2,
+  "doi": "10.1016/j.jsps.2024.102106",
+  "gate_rationale": {
+    "identity_review": "isolated compounds 1/4 matched to AFF-0062/AFF-0019",
+    "food_review": "isolated pure standards, not food matrix",
+    "original_review": "Table 3 ORAC column read from source",
+    "protocol_review": "researcher-accepted pH7.4/37C fluorescein assumption (2026-11-26)",
+    "independence_review": "SD n=6 confirmed Table 3 footer; researcher confirmed 2026-11-27",
+    "quality_review": "molar unit clean; SD not SEM"
+  },
+  "conversion": "model_mean_molar = raw_mean * 1e-3",
+  "held_this_round": {
+    "Wang_2025": "row-level independent_n unknown (SEM 3-7 study-wide); researcher kept held 2026-11-27",
+    "other_tranche_rows": "HOLD error-type/unit-conflict/graphical/concentration-scale"
+  },
+  "first_public_date_note": "year-level 2024-01-01 from DOI; exact date pending"
+}

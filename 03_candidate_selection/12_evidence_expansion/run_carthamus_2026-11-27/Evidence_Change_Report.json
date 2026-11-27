@@ -1,0 +1,41 @@
+{
+  "released": false,
+  "added_observations": 2,
+  "new_report_DOIs": [
+    "10.1016/j.jsps.2024.102106"
+  ],
+  "independent_study_count_change": "Requires scientific adjudication",
+  "affected_candidates": [
+    "AFF-0019",
+    "AFF-0062"
+  ],
+  "added_model_rows": 2,
+  "old_model_metrics": {
+    "scored": 75,
+    "model_RMSE": 0.6305533163766923,
+    "baseline_RMSE": 0.6755082499450418
+  },
+  "new_model_metrics": {
+    "scored": 95,
+    "model_RMSE": 0.8642358424409912,
+    "baseline_RMSE": 0.9001351376561891
+  },
+  "protocol_blocks": 21,
+  "model_entry": [],
+  "model_exit": [],
+  "changed_rank_rows": [
+    {
+      "source_id": "SRC-CARTHAMUS2024-AFF-0019",
+      "old_rank": "",
+      "new_rank": 1
+    },
+    {
+      "source_id": "SRC-CARTHAMUS2024-AFF-0062",
+      "old_rank": "",
+      "new_rank": 2
+    }
+  ],
+  "holds": [],
+  "stability_status": "REVIEW_REQUIRED",
+  "automatic_tier_changes": 0
+}
