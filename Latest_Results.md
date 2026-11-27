@@ -11,7 +11,7 @@ New to the project? Start with the [project handoff and next actions](README.md#
 - [Figure 1 panel order](06_manuscript/03_figure1_panel_order.md) and [component and conditional rankings](03_candidate_selection/result/table/04_figure1_candidate_ranks.csv)
 - [Compound evidence inclusion](03_candidate_selection/result/table/05_compound_evidence_inclusion.csv) and [first-round versus updated ranking](03_candidate_selection/result/table/06_round_rank_comparison.csv). The first-round fit is available. Updated rank fields await admissible new observations and a refit.
 
-- Figure 1 composite (detailed flow + evidence/ranking) | [PNG](06_manuscript/result/figure/figure1_composite.png) | [Editable SVG](06_manuscript/result/figure/figure1_composite.svg)
+- Figure 1 ordered independent parts A/B/C (no composite) | [A](06_manuscript/result/figure/figure1_A.flow_chart.png) | [B](06_manuscript/result/figure/figure1_B.evidence_screening_and_ranking.png) | [C](06_manuscript/result/figure/figure1_C.pathway_framework.png)
 - figure1_A.flow_chart (detailed screening workflow) | [PNG](06_manuscript/result/figure/figure1_A.flow_chart.png) | [SVG](06_manuscript/result/figure/figure1_A.flow_chart.svg)
 - figure1_B.evidence_screening_and_ranking | [PNG](06_manuscript/result/figure/figure1_B.evidence_screening_and_ranking.png) | [SVG](06_manuscript/result/figure/figure1_B.evidence_screening_and_ranking.svg)
 - figure1_C.pathway_framework (provisional top-down pathway framework) | [PNG](06_manuscript/result/figure/figure1_C.pathway_framework.png) | [SVG](06_manuscript/result/figure/figure1_C.pathway_framework.svg)
@@ -26,7 +26,7 @@ New to the project? Start with the [project handoff and next actions](README.md#
 | Figure 2-2. Rank stability | [PNG](06_manuscript/result/figure/supplementary/figure2-2_candidate_rank_stability.png) | [SVG](06_manuscript/result/figure/supplementary/figure2-2_candidate_rank_stability.svg) |
 | Pathway UpSet (top-down, solid) | [PNG](06_manuscript/result/figure/supplementary/figure1_C_pathway_upset.png) | [SVG](06_manuscript/result/figure/supplementary/figure1_C_pathway_upset.svg) |
 
-figure1_A/B/C are independent part-figures; [figure1_composite](06_manuscript/result/figure/figure1_composite.png) assembles A+B (C is appended after evidence expansion). The [panel order](06_manuscript/03_figure1_panel_order.md) describes the scheme. Legacy component previews and the prior composite are preserved in [supplementary](06_manuscript/result/figure/supplementary/); the [component R script](06_manuscript/code/02_render_manuscript_panels.R) now exports there.
+figure1_A/B/C are independent part-figures delivered in assembly order (A→B→C; no composite). The [panel order](06_manuscript/03_figure1_panel_order.md) describes the scheme. Legacy component previews and the prior composite are preserved in [supplementary](06_manuscript/result/figure/supplementary/); the [component R script](06_manuscript/code/02_render_manuscript_panels.R) now exports there.
 
 ## Evidence status
 

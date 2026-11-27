@@ -230,7 +230,7 @@ python 04_05_experimental_validation/code/search_methods.py
 | 模型诊断 | [02_whole_doi_validation.json](03_candidate_selection/result/model/02_whole_doi_validation.json) |
 | 证据扩展 / 酚酸试验 | [12_evidence_expansion README](03_candidate_selection/12_evidence_expansion/README.md) |
 | 体内机制证据图（新，未提交） | [04_candidate_in_vivo_mechanism_evidence.md](02_identity_and_evidence/result/table/04_candidate_in_vivo_mechanism_evidence.md) |
-| 论文与图 | [Part 1 docx](06_manuscript/result/Manuscript_Part1_Nature_Communications.docx) · [Figure 1 组合图](06_manuscript/result/figure/figure1_composite.png) · [Working Methods](06_manuscript/01_methods_working.md) |
+| 论文与图 | [Part 1 docx](06_manuscript/result/Manuscript_Part1_Nature_Communications.docx) · Figure 1 按序分图 [A](06_manuscript/result/figure/figure1_A.flow_chart.png)·[B](06_manuscript/result/figure/figure1_B.evidence_screening_and_ranking.png)·[C](06_manuscript/result/figure/figure1_C.pathway_framework.png)（无复合图） · [Working Methods](06_manuscript/01_methods_working.md) |
 | 实验设计 | [04_05 README](04_05_experimental_validation/README.md) · [01_endpoint_definition](04_05_experimental_validation/01_endpoint_definition/README.md) |
 | QC 状态 | [workflow_qc.json](07_quality_control/workflow_qc.json) · [Workflow_QC.md](07_quality_control/Workflow_QC.md) |
 | 来源哈希 / 冻结参考 | [source_manifest.json](02_identity_and_evidence/source_manifest.json) · [results1_v1.0 README](02_identity_and_evidence/inputs/provenance/results1_v1.0/README.md) |

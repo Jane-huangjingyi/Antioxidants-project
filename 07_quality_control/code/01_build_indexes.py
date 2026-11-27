@@ -66,7 +66,7 @@ for p in sorted((ROOT/'06_manuscript/result/figure').rglob('*.png')):
  generator = figure_generators[role]
  if role != 'WORKING_MANUSCRIPT_PANEL':
   generator = '04_05_experimental_validation/code/figure_support/' + generator
-  main_gen={'figure1_A.flow_chart':('WORKING_MANUSCRIPT_FIGURE','06_manuscript/code/06_render_screening_workflow.R'),'figure1_B.evidence_screening_and_ranking':('WORKING_MANUSCRIPT_FIGURE','06_manuscript/code/04_render_figure1.R'),'figure1_C.pathway_framework':('WORKING_MANUSCRIPT_FIGURE','06_manuscript/code/07_render_figure1_C_pathway.R'),'figure1_composite':('WORKING_MANUSCRIPT_FIGURE','06_manuscript/code/08_render_figure1_composite.R'),'figure1_C_pathway_upset':('SUPPLEMENTARY_PATHWAY_ANALYSIS','06_manuscript/code/07_render_figure1_C_pathway.R')}
+  main_gen={'figure1_A.flow_chart':('WORKING_MANUSCRIPT_FIGURE','06_manuscript/code/06_render_screening_workflow.R'),'figure1_B.evidence_screening_and_ranking':('WORKING_MANUSCRIPT_FIGURE','06_manuscript/code/04_render_figure1.R'),'figure1_C.pathway_framework':('WORKING_MANUSCRIPT_FIGURE','06_manuscript/code/07_render_figure1_C_pathway.R'),'figure1_C_pathway_upset':('SUPPLEMENTARY_PATHWAY_ANALYSIS','06_manuscript/code/07_render_figure1_C_pathway.R')}
   if p.stem in main_gen: role,generator=main_gen[p.stem]
   if p.stem.startswith(('figure1-','figure2-')): role='SUPPLEMENTARY_COMPONENT_PREVIEW'
  fig.append({'figure_name':p.stem,'role':role,'png_path':p.relative_to(ROOT).as_posix(),'svg_path':svg.relative_to(ROOT).as_posix(),'generator':generator,'png_sha256':sha(p),'svg_sha256':sha(svg)})

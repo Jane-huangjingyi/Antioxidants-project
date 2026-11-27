@@ -50,11 +50,12 @@ def main():
             text = path.read_text(encoding="utf-8-sig").partition("\n")[2]
             add_body(document, text)
     document.add_page_break()
-    picture = document.add_paragraph()
-    picture.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    picture.add_run().add_picture(
-        str(HERE / "result/figure/figure1_composite.png"), height=Inches(8.7)
-    )
+    for part in ("figure1_A.flow_chart", "figure1_B.evidence_screening_and_ranking",
+                 "figure1_C.pathway_framework"):
+        picture = document.add_paragraph()
+        picture.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        picture.add_run().add_picture(str(HERE / f"result/figure/{part}.png"), width=Inches(6.5))
+        document.add_page_break()
     add_body(document, sections["Figure legends"])
     document.core_properties.title = title
     document.core_properties.author = ""
