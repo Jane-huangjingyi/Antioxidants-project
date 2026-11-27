@@ -1,0 +1,11 @@
+{
+  "ready": 26,
+  "study_type": {
+    "EPIDEMIOLOGY_HUMAN": 6,
+    "MATRIX_FOOD": 15,
+    "PURE_STANDARD": 4,
+    "UNCLEAR": 1
+  },
+  "admissible": 4,
+  "note": "Matrix/food/epidemiology/method studies are NOT admissible for single-compound capacity intake even if they link one compound."
+}
