@@ -103,12 +103,15 @@
 - `code/`：01_build_indexes、02_validate_workflow（+1）；`result/table/audit/`：branch_inventory.json、descriptive_summary.json、determinism_qc.json、figure_export_registry.csv、workbook 导出 QC。
 - `R_session_info.txt` 记录 R 会话 / 包版本；`local/`、`previews/` 被忽略。
 
-### download_raw — 本地原始与过程数据（整体 git 忽略，199.5 MB）
-- 根部：用户提供的原始 PDF（Food Chemistry、zhang2013、DPPH revisited、ORAC-FL 扩展适用性等）+ 60 黄酮补充材料 docx；Repository_Cleanup_Local_Inventory.csv（1.9 MB 清理盘点）；Results1 清理前快照 / 合成更新 / 预览。
-- `layout_migration/`（2,874 文件，134 MB）：布局迁移回放（results1_replay / merge / retirement 系列）、retired_runtime_chem、source_review_derivatives、path_map.json、迁移脚本与日志。
-- `stage2_machine_screening/`（33.5 MB）：**机筛全量输出** Report_Screening.csv（24 MB）、Candidate_Report_Links.csv（9 MB）、ORAC_Fulltext_Batches.csv、Recall_Audit_Sample.csv。
-- `stage2_institutional/`（6.7 MB）：WoS 机构导出规范化记录（500 条）与本地 QC / 对账。
-- `manuscript_part1_qa/`、`Results1_post_cleanup_*`、`Results1_update_dry_check/`：论文 QA 与更新演练产物。
+### download_raw — 本地原始与过程数据（整体 git 忽略，约73 MB；2026-11-27 按步骤重组为 8 个文件夹）
+- `01_文献下载与全文提取_2026-11-26`：原始 PDF（Food Chemistry、zhang2013、DPPH revisited、ORAC-FL 扩展适用性等）+ 60 黄酮补充材料 docx；ORAC/摘要提取脚本与 txt、fulltext XML。
+- `02_机制证据与P0裁决_2026-11-26`：ikram2019、机制 P0 审查、closure 草稿。
+- `03_通路扩展检索_2026-11-27`：检索/分析/分诊脚本、expansion 结果。
+- `04_通路全文核实与交付_2026-11-27`：核实脚本、verification 记录、pathway_pdfs(87)、pathway_fulltexts(42)、Excel/清单生成器。
+- `05_清单哈希与QC修复_2026-11-26`：哈希审计/对账脚本、Repository_Cleanup_Local_Inventory.csv。
+- `06_容量模型Results1复算_2026-11-26`：Results1 复算目录与 json/csv/预览。
+- `07_机构与机器筛选_2026-11-26`：stage2 机筛全量输出（Report_Screening 24MB 等）+ 机构 WoS 规范化记录。
+- `08_论文QA与布局迁移_2026-11-26`：论文 QA、layout_migration（results1 回放/merge/retirement 系列、source_review_derivatives、迁移脚本与日志）。**retired_runtime_chem（退役 numpy/PIL/rdkit，126.5MB）已于 2026-11-27 清理**。
 
 ---
 
