@@ -1,0 +1,14 @@
+{
+  "released": true,
+  "release_date": "2026-11-27",
+  "reviewer": "researcher",
+  "top20_membership_changed": false,
+  "tier_assignments": {
+    "AFF-0019": "B",
+    "AFF-0062": "C"
+  },
+  "kept_tiers": 24,
+  "added_observations": 2,
+  "model_rows": "113->115",
+  "note": "Researcher confirmed release 2026-11-27; existing tiers kept; AFF-0019=B, AFF-0062=C; Top20 unchanged."
+}
