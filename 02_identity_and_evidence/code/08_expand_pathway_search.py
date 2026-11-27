@@ -35,6 +35,12 @@ PATHWAY = {
  "U12": ["HIF1A", '"HIF-1"', '"hypoxia-inducible factor"'],
  "U13": ['"PGC-1"', "PPARGC1A", '"mitochondrial biogenesis"'],
  "U14": ["CFTR", '"cystic fibrosis transmembrane"'],
+ "U15": ["AMPK", "PRKAA", "STK11", "LKB1"],
+ "U16": ["FoxO", "FOXO1", "FOXO3"],
+ "U17": ["apoptosis", "Bcl-2", "BAX", "caspase-3", "cleaved caspase"],
+ "U18": ["autophagy", "mitophagy", "LC3", "Beclin", "PINK1", "Parkin"],
+ "U19": ["NLRP3", "inflammasome", "caspase-1"],
+ "U20": ["endoplasmic reticulum stress", "ER stress", "unfolded protein", "XBP1", "PERK", "ATF6", "GRP78"],
 }
 MODEL = re.compile(r"\b(cell|cells|mice|mouse|rat|rats|in vivo|in vitro|neuron|hepatocyte|macrophage|endotheli|hippocamp|cortex|zebrafish|C\. elegans|animal|murine)\b", re.I)
 
@@ -130,13 +136,18 @@ if __name__ == "__main__":
         pending = [(m["compound"], m["pathway_code"]) for m in mat if m["cell_state"] == "PENDING_EXPANSION"]
         print("pending cells:", len(pending), flush=True)
         out = []; dest = TBL / "audit" / "Pathway_Expansion_Search_Results.csv"
+        existing = {}
+        if dest.exists():
+            for r in csv.DictReader(dest.open(encoding="utf-8-sig", newline="")):
+                existing[(r["compound"], r["pathway_code"])] = r
         for i, (compound, code) in enumerate(pending, 1):
-            out.append(row_for(compound, code))
+            existing[(compound, code)] = row_for(compound, code)
             if i % 10 == 0 or i == len(pending):
                 with dest.open("w", encoding="utf-8", newline="") as f:
-                    w = csv.DictWriter(f, fieldnames=FIELDS, lineterminator="\n"); w.writeheader(); w.writerows(out)
+                    w = csv.DictWriter(f, fieldnames=FIELDS, lineterminator="\n"); w.writeheader(); w.writerows(list(existing.values()))
                 print(f"  {i}/{len(pending)} saved", flush=True)
             time.sleep(0.35)
+        out = list(existing.values())
         from collections import Counter
         print("status counts:", dict(Counter(r["status"] for r in out)), flush=True)
         print("wrote expansion_results.csv", flush=True)
