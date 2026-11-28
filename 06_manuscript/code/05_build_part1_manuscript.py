@@ -4,6 +4,7 @@ from pathlib import Path
 
 from docx import Document
 from docx.enum.text import WD_ALIGN_PARAGRAPH
+from docx.image.image import Image
 from docx.shared import Inches, Pt, RGBColor
 
 HERE = Path(__file__).resolve().parents[1]
@@ -54,7 +55,13 @@ def main():
                  "figure1_C.pathway_framework"):
         picture = document.add_paragraph()
         picture.alignment = WD_ALIGN_PARAGRAPH.CENTER
-        picture.add_run().add_picture(str(HERE / f"result/figure/{part}.png"), width=Inches(6.5))
+        path = HERE / f"result/figure/{part}.png"
+        image = Image.from_file(str(path))
+        section = document.sections[-1]
+        available_width = section.page_width - section.left_margin - section.right_margin
+        available_height = section.page_height - section.top_margin - section.bottom_margin - Inches(0.45)
+        width = min(available_width, available_height * image.px_width / image.px_height)
+        picture.add_run().add_picture(str(path), width=int(width))
         document.add_page_break()
     add_body(document, sections["Figure legends"])
     document.core_properties.title = title

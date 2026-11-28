@@ -47,7 +47,7 @@ stages <- list(
        body = c("Original figure or table,\nmaterial identity and repeats",
                 "Probe, pH, temperature, AUC,\nTrolox basis and dispersion",
                 "Convert to mol TE/mol where valid.\nLog holds and other assay endpoints.")),
-  list(label = "Model", title = "Estimate conditional ORAC-FL capacity",
+  list(label = "Model", title = "Estimate first-round conditional ORAC-FL capacity",
        heads = c(count(fit$rows, "observations"), "Weighted ridge regression",
                  count(fit$compounds, "ranked compounds")),
        body = c(sprintf("%d DOI reports | mol TE/mol", fit$dois),
@@ -62,7 +62,7 @@ stages <- list(
 
 search_terms <- list(
   titles = c("Assay terms", "Compound classes", "Compound names and aliases"),
-  examples = c("ORAC / oxygen radical absorbance capacity\nPyrogallol red, crocin bleaching\nABTS, DPPH, FRAP, CUPRAC",
+  examples = c("ORAC (oxygen radical\nabsorbance capacity)\nPyrogallol red, crocin bleaching\nABTS, DPPH, FRAP, CUPRAC",
                "Phenolics, flavonoids, carotenoids,\nlignans, vitamins, thiols, alkaloids\n+ antioxidant / radical scavenging",
                "Quercetin, rosmarinic acid,\nL-ascorbic acid / vitamin C\npaired with assay terms")
 )

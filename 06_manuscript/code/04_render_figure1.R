@@ -59,9 +59,9 @@ panel_b_gg <- function() {
              size = 2.4, fontface = 2, lineheight = 0.9) +
     scale_x_continuous(limits = c(0, 1), expand = c(0, 0)) +
     scale_y_continuous(limits = c(0.4, nrow(d) + 1.6), breaks = d$ypos, labels = NULL, expand = c(0, 0)) +
-    labs(title = "b   Literature evidence by compound", x = NULL, y = NULL) +
+    labs(title = "Literature evidence by compound", x = NULL, y = NULL) +
     theme_minimal(base_size = 9, base_family = FONT) +
-    theme(panel.grid = element_blank(), axis.ticks = element_blank(),
+    theme(panel.grid = element_blank(), axis.ticks = element_blank(), axis.text.x = element_blank(),
           plot.title = element_text(face = "bold", size = 10),
           plot.margin = margin(4, 6, 4, 6))
 }
@@ -84,14 +84,22 @@ panel_c_gg <- function() {
     scale_shape_manual(values = c("TRUE" = 16, "FALSE" = 1)) +
     scale_x_continuous(limits = c(0, 58), breaks = c(1, 10, 20, 30, 40, 51), expand = c(0, 0)) +
     scale_y_continuous(limits = c(0.4, nrow(d) + 1.6), breaks = d$ypos, labels = NULL, expand = c(0, 0)) +
-    labs(title = "c   Conditional rank and stability", x = "Rank (higher capacity at left)", y = NULL) +
+    labs(title = "Conditional rank and stability", x = "Rank (higher capacity at left)", y = NULL) +
     theme_minimal(base_size = 9, base_family = FONT) +
     theme(panel.grid.major.y = element_blank(), panel.grid.minor = element_blank(),
           axis.text.y = element_blank(), axis.ticks.y = element_blank(),
           plot.title = element_text(face = "bold", size = 10), legend.position = "none",
           plot.margin = margin(4, 6, 4, 6))
 }
-build_B <- function() { panel_b_gg() + panel_c_gg() + plot_layout(widths = c(1.18, 1)) }
+build_B <- function() {
+  panel_b_gg() + panel_c_gg() + plot_layout(widths = c(1.18, 1)) +
+    plot_annotation(
+      caption = paste("First-round conditional fit. Point: fitted rank. Line: sensitivity range.",
+                      "Shaded band: ranks within \u00b110 positions of the fitted rank."),
+      theme = theme(plot.caption = element_text(size = 8, hjust = 0),
+                    plot.margin = margin(4, 6, 6, 6))
+    )
+}
 if (!exists("FIG1_COMPOSITE_BUILD")) {
   out <- "06_manuscript/result/figure/figure1_B.evidence_screening_and_ranking"
   pB <- build_B()
