@@ -1,5 +1,1 @@
 compound,pathway_code,pathway_name,doi,pmid,title,doi_url,pubmed_url
-Quercetin,U16,FoxO signaling (stress resistance),10.1142/S0192415X2650093X,43095799,Quercetin Activates SIRT1-Mediated Ferroptosis Signaling Pathway to Improve Alzheimer's Disease.,https://doi.org/10.1142/S0192415X2650093X,https://pubmed.ncbi.nlm.nih.gov/43095799/
-Hesperetin,U16,FoxO signaling (stress resistance),10.2174/0109298673283888231217174702,38357946,Hesperetin Inhibits Bladder Cancer Cell Proliferation and Promotes Apoptosis and Cycle Arrest by PI3K/AKT/FoxO,https://doi.org/10.2174/0109298673283888231217174702,https://pubmed.ncbi.nlm.nih.gov/38357946/
-Hesperidin,U19,NLRP3 inflammasome (ROS/inflammation),10.3791/72823,42775776,"Hesperidin Mitigates Skeletal Muscle Ischemia-Reperfusion Injury via Nrf2, NF-κB, and NLRP3 Pathways.",https://doi.org/10.3791/72823,https://pubmed.ncbi.nlm.nih.gov/42775776/
-Chlorogenic acid,U17,Apoptosis (regulated cell death),,43017712,[Chlorogenic acid combined with vitamin D inhibits tumor growth in castration-resistant prostate cancer mice by regulating the STAT3/PPARγ pathway].,,https://pubmed.ncbi.nlm.nih.gov/43017712/
